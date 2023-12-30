@@ -1,18 +1,20 @@
 
-module conv(img,flt,out);
+module conv(img,flt,bias, out);
 
 parameter N=5;
+parameter B=8;
 parameter C=1;
 parameter F=3;
 parameter S=1;
 parameter P=0;
-parameter bias=0;
+//parameter bias=0;
 parameter indatawidth=8;
 parameter outdatawidth=8;
 
 
 input [indatawidth-1:0] img [N-1:0][N-1:0][C-1:0];
 input [indatawidth-1:0] flt [F-1:0][F-1:0][C-1:0];
+input [B-1:0] bias;
 
 output reg [outdatawidth-1:0] out [ ( N - F + 2*P ) / S + 1 - 1 :0] [ ( N - F + 2*P ) / S + 1 - 1 :0];
 
