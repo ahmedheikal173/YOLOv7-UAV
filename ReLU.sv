@@ -26,7 +26,12 @@ integer i,j,k;
 		for (i=0;i<N;i=i+1) begin
 			for (i=0;i<N;i=i+1) begin
 				for (i=0;i<N;i=i+1) begin
-					out[i][j][k]<=in[i][j][k];
+					if (in[i][j][k]<0) begin
+						out[i][j][k]<=0;
+					end
+					else begin
+						out[i][j][k]<=in[i][j][k];
+					end
 				end
 			end
 		end
