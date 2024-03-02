@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/19/2024 04:42:53 PM
+// Create Date: 02/27/2024 11:05:27 PM
 // Design Name: 
-// Module Name: CBS1_5X5_Trial
+// Module Name: Adder_16_3
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,12 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module CBS1_5X5_Trial(
-    input [239:0]img,
-    input [71:0]filter,
-    output [15:0]conv_result1,conv_result2
+module Adder_16_3(
+    input [15:0] A,B,C,
+    input Cin,
+    output [15:0] Out,
+    output Cout
+
     );
-    conv3_3 con1(filter[71:0], {img[95:72],img[63:40],img[31:8]}, conv_result1);
-    conv3_3 con2(filter[71:0], {img[87:64],img[55:32],img[23:0]}, conv_result2);
+    wire [15:0] Out_step;
+    wire Cout_step;
+    sixteen_Bit_Adder add1(A,B,Cin,Out_step,Cout_step);
+    sixteen_Bit_Adder add2(Out_step,C,Cout_step,Out,Cout);
 endmodule
-//000000010000000100000001000000010000000100000001000000010000000100000001

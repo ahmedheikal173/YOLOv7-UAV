@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/02/2024 06:25:05 PM
+// Create Date: 02/03/2024 12:05:57 AM
 // Design Name: 
-// Module Name: Test_Conv3
+// Module Name: FSM_Counter_640_3
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -18,26 +18,24 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
-module Test_Conv3(
-    input  [71:0]filter,
-    input  [71:0]img,
-    input clk,rst,
-    output [15:0]conv_res
+module counter_640(
+    input clk,
+    input reset,
+    output reg [9:0] count
 );
-    wire [15:0]conv_result;
-    conv3_3(filter, img, conv_result);
-    always @(posedge clk ) 
-    begin
-        if(rst)
+
+always @(posedge clk or posedge reset ) 
+begin
+    if(reset) 
         begin
-            //conv_res <= 16'b0;
+            count <= 10'b0;
         end
-        else 
+    else
         begin
-            //conv_res <= conv_result;
+            if(count == 639)
+                count <= 10'b0;
+            else
+                count <= count + 1;
         end
-        
-    end
+end
 endmodule
