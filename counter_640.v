@@ -1,39 +1,25 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/03/2024 12:05:57 AM
-// Design Name: 
-// Module Name: FSM_Counter_640_3
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 module counter_640(
     input clk,
     input reset,
-    output reg [9:0] count
+    output reg [14:0] count,
+    output reg finish
 );
 
 always @(posedge clk or posedge reset ) 
 begin
     if(reset) 
         begin
-            count <= 10'b0;
+            count <= 15'b0;
+            finish <= 0;
         end
     else
         begin
-            if(count == 639)
-                count <= 10'b0;
+            if(count == 638)
+            begin
+                count <= 15'b0;
+                finish <= 1'b1;
+            end
             else
                 count <= count + 1;
         end

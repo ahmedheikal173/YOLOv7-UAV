@@ -2,7 +2,8 @@
 module CBS1_Trial_1Layer(
     input [71:0]filter,
     input clk,rst,
-    output [15:0] res1,res2,res3,res4,res5,res6,res7,res8
+    output [15:0] res1,res2,res3,res4,res5,res6,res7,res8,
+    output carry1,carry2,carry3,carry4,carry5,carry6,carry7,carry8
     );
     wire [79:0]img_R1,img_R2,img_R3;
     wire [79:0]img_R1_2,img_R2_2,img_R3_2;
@@ -16,34 +17,28 @@ module CBS1_Trial_1Layer(
     reg [25:0]Needed_Addr;
     reg we,need_Data;
     wire finish,enable_reg;
-    reg[5:0] addr;
+    reg[19:0] addr;
     wire [7:0] data_stored;
     reg [7:0] store_in ;
-    Adder_16_3 add1(conv_result1,conv_result1_2,conv_result1_3,1'b0,res1);
-    Adder_16_3 add2(conv_result2,conv_result2_2,conv_result2_3,1'b0,res2);
-    Adder_16_3 add3(conv_result3,conv_result3_2,conv_result3_3,1'b0,res3);
-    Adder_16_3 add4(conv_result4,conv_result4_2,conv_result4_3,1'b0,res4);
-    Adder_16_3 add5(conv_result5,conv_result5_2,conv_result5_3,1'b0,res5);
-    Adder_16_3 add6(conv_result6,conv_result6_2,conv_result6_3,1'b0,res6);
-    Adder_16_3 add7(conv_result7,conv_result7_2,conv_result7_3,1'b0,res7);
-    Adder_16_3 add8(conv_result8,conv_result8_2,conv_result8_3,1'b0,res8);
+    Adder_16_3 add1(conv_result1,conv_result1_2,conv_result1_3,1'b0,res1,carry1);
+    Adder_16_3 add2(conv_result2,conv_result2_2,conv_result2_3,1'b0,res2,carry2);
+    Adder_16_3 add3(conv_result3,conv_result3_2,conv_result3_3,1'b0,res3,carry3);
+    Adder_16_3 add4(conv_result4,conv_result4_2,conv_result4_3,1'b0,res4,carry4);
+    Adder_16_3 add5(conv_result5,conv_result5_2,conv_result5_3,1'b0,res5,carry5);
+    Adder_16_3 add6(conv_result6,conv_result6_2,conv_result6_3,1'b0,res6,carry6);
+    Adder_16_3 add7(conv_result7,conv_result7_2,conv_result7_3,1'b0,res7,carry7);
+    Adder_16_3 add8(conv_result8,conv_result8_2,conv_result8_3,1'b0,res8,carry8);
+
+ram_param inst7( 
+.clk(clk), 
+.we(we), 
+.clear(rst),
+.addr(addr),
+.data_in({res1,res2,res3,res4,res5,res6,res7,res8}), 
+.data_out({img_R1,img_R2,img_R3,img_R1_2,img_R2_2,img_R3_2,img_R1_3,img_R2_3,img_R3_3})
+);
 
 
-Single_Asynch_RAM inst6(
-        .clk(clk),
-        .we(we),
-        .rst(rst),
-        .addr(addr),
-        .data_in({res1,res2,res3,res4,res5,res6,res7,res8}),
-        .need_Data(need_Data),
-        .Needed_Addr(Needed_Addr),
-        .finish(finish),
-        .counter_row(counter_row),
-        .counter_col(counter_col),
-        .data_out({img_R1,img_R2,img_R3,img_R1_2,img_R2_2,img_R3_2,img_R1_3,img_R2_3,img_R3_3})
-        //.data_out2({}),
-        //.data_out3({})
-    );
 
 
     counter_640 inst1(
@@ -63,7 +58,6 @@ Single_Asynch_RAM inst6(
             .img_R2(img_R2_2),
             .img_R3(img_R3_2),
             .filter(filter),
-            .clk(clk),
             .conv_result1(conv_result1_2),
             .conv_result2(conv_result2_2),
             .conv_result3(conv_result3_2),
@@ -79,7 +73,6 @@ Single_Asynch_RAM inst6(
                 .img_R2(img_R2_3),
                 .img_R3(img_R3_3),
                 .filter(filter),
-                .clk(clk),
                 .conv_result1(conv_result1_3),
                 .conv_result2(conv_result2_3),
                 .conv_result3(conv_result3_3),
@@ -95,7 +88,6 @@ Single_Asynch_RAM inst6(
         .img_R2(img_R2),
         .img_R3(img_R3),
         .filter(filter),
-        .clk(clk),
         .conv_result1(conv_result1),
         .conv_result2(conv_result2),
         .conv_result3(conv_result3),

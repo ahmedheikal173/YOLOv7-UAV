@@ -1,25 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 12/16/2023 12:52:27 PM
-// Design Name: 
-// Module Name: Eight_Bit_Mul
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module Eight_Bit_Mul(
     input [7:0] A,
     input [7:0] B,
@@ -54,7 +33,4 @@ module Eight_Bit_Mul(
 
     assign Carry = cout3;
     assign Out = {Add3,Add2[3:0],mul1[3:0]};
-
-
-    
 endmodule
