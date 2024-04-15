@@ -52,7 +52,7 @@ begin
     end 
     else begin
         state_out <= current_state;
-        final_state_reached <= (current_state == STATE_1282) ? 1 : 0;
+        final_state_reached <= (current_state == STATE_0) ? 1 : 0;
     end
 end
 
