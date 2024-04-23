@@ -47,7 +47,7 @@
 #ifndef __AC_COMPLEX_H
 #define __AC_COMPLEX_H
 
-#include <ac_float.h>
+#include "./ac_float.h"
 
 #ifdef __AC_NAMESPACE
 namespace __AC_NAMESPACE {

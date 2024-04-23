@@ -42,7 +42,7 @@
 #error SystemC header file needs to be included before the ac_sc is included
 #endif
 
-#include <ac_complex.h>
+#include "./ac_complex.h"
 
 #ifdef __AC_NAMESPACE
 namespace __AC_NAMESPACE {

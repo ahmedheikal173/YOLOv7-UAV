@@ -42,7 +42,7 @@
 # error C++ is required to include this header file
 #endif
 
-#include <ac_bank_array.h>
+#include "./ac_bank_array.h"
 
 template <typename B, size_t FirstDim, size_t InterleaveFactor>
 class ac_interleave_array_1D

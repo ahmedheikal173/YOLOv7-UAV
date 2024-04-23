@@ -38,7 +38,7 @@
 #ifndef __AC_SYNC_H
 #define __AC_SYNC_H
 
-#include <ac_channel.h>
+#include "./ac_channel.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Class: ac_sync

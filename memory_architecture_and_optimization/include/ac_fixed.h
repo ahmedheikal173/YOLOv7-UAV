@@ -40,7 +40,7 @@
 #ifndef __AC_FIXED_H
 #define __AC_FIXED_H
 
-#include "ac_int.h"
+#include "./ac_int.h"
 
 #if (defined(__GNUC__) && __GNUC__ < 3 && !defined(__EDG__))
 #error GCC version 3 or greater is required to include this header file

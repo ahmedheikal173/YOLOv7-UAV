@@ -38,7 +38,7 @@
 #ifndef __AC_FLOAT_H
 #define __AC_FLOAT_H
 
-#include <ac_fixed.h>
+#include "./ac_fixed.h"
 
 #ifndef __SYNTHESIS__
 #include <cmath>
