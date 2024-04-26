@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "../imports"
 		},
 		{
-			"path": "../../new"
+			"path": "."
 		}
 	]
 }

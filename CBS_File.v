@@ -4,12 +4,16 @@ module CBS_File(
     output [11:0] state_out,
     output final_state_reached,cout2,
     output [24:0]S,
-    output [7:0]Out_Memory
+    output [7:0]Out_Memory,
+    output [71:0]Out_Memory_9
+    
     );
     wire clk_db,finish_flag,finish_Img,finish_row;
+    wire final_state_reached_9;
+    wire [3:0]state_out_address;
     wire [24:0]Add_Gen;
     reg [24:0]Add_Gen_sum;
-    wire c_out;
+    wire c_out,For_Memory;
     wire [14:0] counter_Row;
     wire [14:0] counter_Col;
 
@@ -20,6 +24,7 @@ module CBS_File(
                     .count(counter_Col),
                     .finish(finish_row)
     );
+    
     counter_640 inst_col(
                     .clk(finish_row),
                     .reset(reset),
@@ -42,26 +47,43 @@ module CBS_File(
                     .clk(finish_flag),
                     .reset(reset),
                     .state_out(state_out),
-                    .final_state_reached(final_state_reached)
+                    .final_state_reached(final_state_reached),
+                    .For_Memory(For_Memory)
      );
 
      c_addsub_0 instsum(
                         .A(Add_Gen),
                         .B({13'b0,state_out}),
-                        .CLK(finish_flag),
+                        .CLK(clk),
                         .SCLR(reset),
                         .C_OUT(cout2),
                         .S(S)
      );
     image_page1 inst_img(
                     .addr1_1(S),
-                    .r_enable(finish_flag),
+                    .r_enable(1'b1),
                     .we(1'b0),
-                    .clk(clk),
+                    .clk(finish_flag),
                     .rst(reset),
                     .data_out1_1(Out_Memory)
     );
-
+    FSM_9 inst_FSM_9(
+                    .clk(finish_flag),
+                    .main_clk(clk),
+                    .reset(reset),
+                    .For_Memory(For_Memory),
+                    .state_out(state_out_address),
+                    .final_state_reached(final_state_reached_9)
+    );
+    Storage_Conv_Mem Storage_Conv_Mem_inst(
+                    .clk(clk_db),
+                    .reset(reset),
+                    .we(For_Memory),
+                    .re(final_state_reached_9),
+                    .address(state_out_address),
+                    .In_Memory(Out_Memory),
+                    .Out_Memory(Out_Memory_9)
+    );
      always @(posedge clk , posedge reset) begin
         if(reset)
             Add_Gen_sum<=0;

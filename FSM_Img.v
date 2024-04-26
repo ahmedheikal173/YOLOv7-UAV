@@ -2,7 +2,8 @@ module FSM_Img(
     input wire clk,
     input wire reset,
     output reg [11:0] state_out,
-    output reg final_state_reached
+    output reg final_state_reached,
+    output reg For_Memory
 );
 
 // State parameters
@@ -49,10 +50,12 @@ begin
     if (reset) begin
         state_out <= STATE_0;
         final_state_reached <= 0;
+        For_Memory<=0;
     end 
     else begin
         state_out <= current_state;
         final_state_reached <= (current_state == STATE_0) ? 1 : 0;
+        For_Memory <= (current_state == STATE_1)? 1:For_Memory;
     end
 end
 

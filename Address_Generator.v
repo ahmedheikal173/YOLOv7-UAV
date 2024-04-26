@@ -40,14 +40,19 @@ module Address_Generator(
                finish_flag<=0;
                counter_in <= 0;
             end
-        else if(counter_in<2)
+        else if(counter_in==0)
+            begin
+                finish_flag<=1;
+                counter_in<=counter_in+1;
+            end
+        else if(counter_in<3)
             begin
                 finish_flag<=0;
                 counter_in<=counter_in+1;
             end
         else
              begin
-                finish_flag<=1;
+                finish_flag<=0;
                 counter_in<=0;
              end
      end
