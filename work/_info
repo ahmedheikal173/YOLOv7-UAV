@@ -1,0 +1,431 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Program Files/qsim_2021_1/examples
+T_opt
+!s110 1709982664
+V:2AY>R@TO7]4HJ33>7NfF2
+04 17 4 work CBS1_Trial_1Layer fast 0
+=1-80e82c22e513-65ec43c7-287-4738
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vAdder_16_3
+Z1 !s110 1709982537
+!i10b 1
+!s100 l^dEF;4Old5aXNcHg`_CR0
+IJI1oXMmi^Jif_WKaN6P822
+Z2 dD:/GP/YOLOv7-UAV
+Z3 w1709488204
+8D:/GP/YOLOv7-UAV/Adder_16_3.v
+FD:/GP/YOLOv7-UAV/Adder_16_3.v
+!i122 0
+Z4 L0 23 12
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1709982537.000000
+!s107 D:/GP/YOLOv7-UAV/Adder_16_3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/Adder_16_3.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@adder_16_3
+vbit_adder120
+!s110 1709982629
+!i10b 1
+!s100 YzB;f8YRSQSlgC4M<ZDN82
+I5^G3zm@Rj0i8913zGY`9W3
+R2
+w1709982608
+8D:\GP\YOLOv7-UAV\120_bit_adder.v
+FD:\GP\YOLOv7-UAV\120_bit_adder.v
+!i122 17
+L0 23 65
+R5
+R6
+r1
+!s85 0
+31
+!s108 1709982629.000000
+!s107 D:\GP\YOLOv7-UAV\120_bit_adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:\GP\YOLOv7-UAV\120_bit_adder.v|
+!i113 0
+R8
+R0
+vCBS1
+R1
+!i10b 1
+!s100 H^a1KD4@FkTd03Sl?b3[^0
+ICO:WiA0iA1z?_22]b?ROV1
+R2
+R3
+8D:/GP/YOLOv7-UAV/CBS1.v
+FD:/GP/YOLOv7-UAV/CBS1.v
+!i122 1
+L0 2 17
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/GP/YOLOv7-UAV/CBS1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/CBS1.v|
+!i113 0
+R8
+R0
+n@c@b@s1
+vCBS1_5X5_Trial
+R1
+!i10b 1
+!s100 QEd7ZJORMAWH2zK;B=e^S1
+I44:mOfR_N7MI4L[759l7l3
+R2
+R3
+8D:/GP/YOLOv7-UAV/CBS1_5X5_Trial.v
+FD:/GP/YOLOv7-UAV/CBS1_5X5_Trial.v
+!i122 2
+L0 23 8
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/GP/YOLOv7-UAV/CBS1_5X5_Trial.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/CBS1_5X5_Trial.v|
+!i113 0
+R8
+R0
+n@c@b@s1_5@x5_@trial
+vCBS1_Trial_1Layer
+Z9 !s110 1709982538
+!i10b 1
+!s100 6e]^]8<:z?k>QMR8ll_P?0
+IJio6z?5Mf1NiT4Yb:B7hA1
+R2
+R3
+8D:/GP/YOLOv7-UAV/CBS1_Trial_1Layer.v
+FD:/GP/YOLOv7-UAV/CBS1_Trial_1Layer.v
+!i122 3
+L0 2 136
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/GP/YOLOv7-UAV/CBS1_Trial_1Layer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/CBS1_Trial_1Layer.v|
+!i113 0
+R8
+R0
+n@c@b@s1_@trial_1@layer
+vconv3_3
+R9
+!i10b 1
+!s100 VcX^YTiD20PYnCKmRnWO>1
+Ig@?]0;USLiGjD6Bm??ojZ0
+R2
+R3
+8D:/GP/YOLOv7-UAV/conv3_3.v
+FD:/GP/YOLOv7-UAV/conv3_3.v
+!i122 4
+L0 2 40
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1709982538.000000
+!s107 D:/GP/YOLOv7-UAV/conv3_3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/conv3_3.v|
+!i113 0
+R8
+R0
+vCounter_2
+R9
+!i10b 1
+!s100 Vbn:UXo7jTjXMB?oBcX2B1
+I3dnVM]PzO@IK8hjG1k[fL1
+R2
+R3
+8D:/GP/YOLOv7-UAV/Counter_2.v
+FD:/GP/YOLOv7-UAV/Counter_2.v
+!i122 5
+L0 2 27
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/GP/YOLOv7-UAV/Counter_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/Counter_2.v|
+!i113 0
+R8
+R0
+n@counter_2
+vcounter_640
+R9
+!i10b 1
+!s100 1W6WJEN^lQXZQ<V7P@:`h3
+IGzdIn3Bd]C^3gA=F`af2b1
+R2
+R3
+8D:/GP/YOLOv7-UAV/counter_640.v
+FD:/GP/YOLOv7-UAV/counter_640.v
+!i122 6
+L0 21 21
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/GP/YOLOv7-UAV/counter_640.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/counter_640.v|
+!i113 0
+R8
+R0
+vEight_Bit_Adder
+Z11 !s110 1709982539
+!i10b 1
+!s100 NYF3F]f09C;B>jbQ?K9dM0
+IOa6Gi=X:R>GYnEHQ::TXf2
+R2
+Z12 w1702755000
+8D:/GP/YOLOv7-UAV/Eight_Bit_Adder.v
+FD:/GP/YOLOv7-UAV/Eight_Bit_Adder.v
+!i122 7
+Z13 L0 23 14
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/GP/YOLOv7-UAV/Eight_Bit_Adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/Eight_Bit_Adder.v|
+!i113 0
+R8
+R0
+n@eight_@bit_@adder
+vEight_Bit_Mul
+R11
+!i10b 1
+!s100 XdTH4`ZRJNAYP8=P_d59Y1
+IB[SJ]2W:XGkT@2[XJ7S=K0
+R2
+R12
+8D:/GP/YOLOv7-UAV/Eight_Bit_Mul.v
+FD:/GP/YOLOv7-UAV/Eight_Bit_Mul.v
+!i122 8
+L0 23 38
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1709982539.000000
+!s107 D:/GP/YOLOv7-UAV/Eight_Bit_Mul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/Eight_Bit_Mul.v|
+!i113 0
+R8
+R0
+n@eight_@bit_@mul
+vfour_Bit_Adder
+R11
+!i10b 1
+!s100 ^MU>4]l4hFZ];_=;dWo[n2
+Ii9X:AKl@_1MmUa8:?zmd71
+R2
+R12
+8D:/GP/YOLOv7-UAV/four_Bit_Adder.v
+FD:/GP/YOLOv7-UAV/four_Bit_Adder.v
+!i122 9
+R13
+R5
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/GP/YOLOv7-UAV/four_Bit_Adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/four_Bit_Adder.v|
+!i113 0
+R8
+R0
+nfour_@bit_@adder
+vfour_Bit_Mul
+R11
+!i10b 1
+!s100 U9]7]QFGJPzdAdzbIFfBm2
+I:k`A7fMhkN05APdjT81J[3
+R2
+R12
+8D:/GP/YOLOv7-UAV/four_Bit_Mul.v
+FD:/GP/YOLOv7-UAV/four_Bit_Mul.v
+!i122 10
+L0 23 61
+R5
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/GP/YOLOv7-UAV/four_Bit_Mul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/four_Bit_Mul.v|
+!i113 0
+R8
+R0
+nfour_@bit_@mul
+vfullAdder
+R11
+!i10b 1
+!s100 PL9NX;okSn]dG:?W]GmK81
+I8Tdz^QdB55T>eTXW[o1G?1
+R2
+R12
+8D:/GP/YOLOv7-UAV/fullAdder.v
+FD:/GP/YOLOv7-UAV/fullAdder.v
+!i122 11
+L0 23 7
+R5
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/GP/YOLOv7-UAV/fullAdder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/fullAdder.v|
+!i113 0
+R8
+R0
+nfull@adder
+vone20_bit_adder
+Z15 !s110 1709982540
+!i10b 1
+!s100 WScHGM;EZXASWC=E8f2Rb1
+I?P^K;3dFO@H@lEMRH_2^F0
+R2
+R3
+8D:/GP/YOLOv7-UAV/one20_bit_adder.v
+FD:/GP/YOLOv7-UAV/one20_bit_adder.v
+!i122 12
+L0 23 66
+R5
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/GP/YOLOv7-UAV/one20_bit_adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/one20_bit_adder.v|
+!i113 0
+R8
+R0
+vregister_8bit
+R15
+!i10b 1
+!s100 dcHem1T_b4=fO=YgW05<o3
+I:a<3[9:mf`PIEceb836OF1
+R2
+R3
+8D:/GP/YOLOv7-UAV/register_8bit.v
+FD:/GP/YOLOv7-UAV/register_8bit.v
+!i122 13
+L0 1 18
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1709982540.000000
+!s107 D:/GP/YOLOv7-UAV/register_8bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/register_8bit.v|
+!i113 0
+R8
+R0
+vSingle_Asynch_RAM
+R15
+!i10b 1
+!s100 b5^VYU_BSY4X<faVlM24k1
+IONR><7]Y6;DUgMgkX1:2i2
+R2
+R3
+8D:/GP/YOLOv7-UAV/Single_Asynch_RAM.v
+FD:/GP/YOLOv7-UAV/Single_Asynch_RAM.v
+!i122 14
+L0 3 34
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 D:/GP/YOLOv7-UAV/Single_Asynch_RAM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/Single_Asynch_RAM.v|
+!i113 0
+R8
+R0
+n@single_@asynch_@r@a@m
+vsixteen_Bit_Adder
+Z17 !s110 1709982541
+!i10b 1
+!s100 liFbjCEd`Y:0]g6Kc3mW10
+Ia;E4N3EO>@TXzC7VBXM7b0
+R2
+R3
+8D:/GP/YOLOv7-UAV/sixteen_Bit_Adder.v
+FD:/GP/YOLOv7-UAV/sixteen_Bit_Adder.v
+!i122 15
+R4
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 D:/GP/YOLOv7-UAV/sixteen_Bit_Adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/sixteen_Bit_Adder.v|
+!i113 0
+R8
+R0
+nsixteen_@bit_@adder
+vTest_Conv3
+R17
+!i10b 1
+!s100 TOIloTad]C49@ihD8]KW[0
+I]4_bOWoB;P:k46]DBLhP43
+R2
+R3
+8D:/GP/YOLOv7-UAV/Test_Conv3.v
+FD:/GP/YOLOv7-UAV/Test_Conv3.v
+!i122 16
+L0 23 21
+R5
+R6
+r1
+!s85 0
+31
+!s108 1709982541.000000
+!s107 D:/GP/YOLOv7-UAV/Test_Conv3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/GP/YOLOv7-UAV/Test_Conv3.v|
+!i113 0
+R8
+R0
+n@test_@conv3
