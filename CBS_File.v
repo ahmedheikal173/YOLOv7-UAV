@@ -5,7 +5,8 @@ module CBS_File(
     output final_state_reached,cout2,
     output [24:0]S,
     output [7:0]Out_Memory,
-    output [71:0]Out_Memory_9
+    output [109:0]Out_Memory_9,
+    output [71:0]to_conv
     
     );
     wire clk_db,finish_flag,finish_Img,finish_row;
@@ -16,20 +17,25 @@ module CBS_File(
     wire c_out,For_Memory;
     wire [14:0] counter_Row;
     wire [14:0] counter_Col;
+    wire zero_col,zero_row,final_col,final_row;
 
 
-    counter_640 inst_row(
+    counter_640_Col inst_row(
                     .clk(final_state_reached),
                     .reset(reset),
                     .count(counter_Col),
-                    .finish(finish_row)
+                    .finish(finish_row),
+                    .zero_col(zero_col),
+                    .final_col(final_col)
     );
     
-    counter_640 inst_col(
+    counter_640_Row inst_col(
                     .clk(finish_row),
                     .reset(reset),
                     .count(counter_Row),
-                    .finish(finish_Img)
+                    .finish(finish_Img),
+                    .zero_row(zero_row),
+                    .final_row(final_row)
     );
 
     Address_Generator inst(
@@ -76,13 +82,25 @@ module CBS_File(
                     .final_state_reached(final_state_reached_9)
     );
     Storage_Conv_Mem Storage_Conv_Mem_inst(
-                    .clk(clk_db),
+                    .clk(clk),
                     .reset(reset),
                     .we(For_Memory),
                     .re(final_state_reached_9),
                     .address(state_out_address),
+                    .counter_col_640(counter_Col),
+                    .counter_Row_640(counter_Row),
                     .In_Memory(Out_Memory),
+                    .zero_col(zero_col),
+                    .zero_row(zero_row),
+                    .final_col(final_col),
+                    .final_row(final_row),
                     .Out_Memory(Out_Memory_9)
+    );
+    Padding_CBS_File padding_inst(
+                    .clk(final_state_reached),
+                    .reset(reset),
+                    .from_9_Reg(Out_Memory_9),
+                    .to_conv(to_conv)
     );
      always @(posedge clk , posedge reset) begin
         if(reset)

@@ -3,9 +3,10 @@ module counter_640(
     input clk,
     input reset,
     output reg [14:0] count,
-    output reg finish
+    output reg finish,
+    output reg counter_2
 );
-reg counter_2;
+
 always @(posedge clk or posedge reset ) 
 begin
     if(reset) 
