@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'circular_shift_reg_Pipeline_WRITE'
+================================================================
+* Date:           Sat Jun  1 16:39:23 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        w71
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.918 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        6|        6|  60.000 ns|  60.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- WRITE   |        4|        4|         2|          1|          1|     4|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.91>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%shiftreg = alloca i32 1"   --->   Operation 5 'alloca' 'shiftreg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %regs_mem, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%add_ln70_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %add_ln70"   --->   Operation 8 'read' 'add_ln70_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.46ns)   --->   "%store_ln0 = store i3 0, i3 %i"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 10 [1/1] (0.46ns)   --->   "%store_ln0 = store i128 0, i128 %shiftreg"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN14circular_shiftIiLi4EEixE7ap_uintILi16EE.exit"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i_1 = load i3 %i"   --->   Operation 12 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 13 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.56ns)   --->   "%icmp_ln31 = icmp_eq  i3 %i_1, i3 4" [../src/shift_reg.cpp:31]   --->   Operation 14 'icmp' 'icmp_ln31' <Predicate = true> <Delay = 0.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.56> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4"   --->   Operation 15 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.71ns)   --->   "%i_2 = add i3 %i_1, i3 1" [../src/shift_reg.cpp:31]   --->   Operation 16 'add' 'i_2' <Predicate = true> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln31 = br i1 %icmp_ln31, void %_ZN14circular_shiftIiLi4EEixE7ap_uintILi16EE.exit.split, void %.exitStub" [../src/shift_reg.cpp:31]   --->   Operation 17 'br' 'br_ln31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%idx_V = trunc i3 %i_1"   --->   Operation 18 'trunc' 'idx_V' <Predicate = (!icmp_ln31)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.62ns)   --->   "%sub_ln1072 = sub i2 %add_ln70_read, i2 %idx_V"   --->   Operation 19 'sub' 'sub_ln1072' <Predicate = (!icmp_ln31)> <Delay = 0.62> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln587 = zext i2 %sub_ln1072"   --->   Operation 20 'zext' 'zext_ln587' <Predicate = (!icmp_ln31)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%regs_mem_addr = getelementptr i32 %regs_mem, i64 0, i64 %zext_ln587" [../src/./circular_shift.h:35]   --->   Operation 21 'getelementptr' 'regs_mem_addr' <Predicate = (!icmp_ln31)> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (1.29ns)   --->   "%regs_mem_load = load i2 %regs_mem_addr" [../src/./circular_shift.h:35]   --->   Operation 22 'load' 'regs_mem_load' <Predicate = (!icmp_ln31)> <Delay = 1.29> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 4> <RAM>
+ST_1 : Operation 23 [1/1] (0.46ns)   --->   "%store_ln31 = store i3 %i_2, i3 %i" [../src/shift_reg.cpp:31]   --->   Operation 23 'store' 'store_ln31' <Predicate = (!icmp_ln31)> <Delay = 0.46>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%shiftreg_load = load i128 %shiftreg"   --->   Operation 31 'load' 'shiftreg_load' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i128P0A, i128 %shiftreg_out, i128 %shiftreg_load"   --->   Operation 32 'write' 'write_ln0' <Predicate = (icmp_ln31)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = (icmp_ln31)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.75>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%shiftreg_load_1 = load i128 %shiftreg" [../src/shift_reg.cpp:32]   --->   Operation 24 'load' 'shiftreg_load_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11"   --->   Operation 25 'specloopname' 'specloopname_ln321' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/2] (1.29ns)   --->   "%regs_mem_load = load i2 %regs_mem_addr" [../src/./circular_shift.h:35]   --->   Operation 26 'load' 'regs_mem_load' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 4> <RAM>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i96 @_ssdm_op_PartSelect.i96.i128.i32.i32, i128 %shiftreg_load_1, i32 32, i32 127" [../src/shift_reg.cpp:32]   --->   Operation 27 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i128 @_ssdm_op_BitConcatenate.i128.i32.i96, i32 %regs_mem_load, i96 %lshr_ln" [../src/shift_reg.cpp:32]   --->   Operation 28 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.46ns)   --->   "%store_ln32 = store i128 %or_ln, i128 %shiftreg" [../src/shift_reg.cpp:32]   --->   Operation 29 'store' 'store_ln32' <Predicate = true> <Delay = 0.46>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN14circular_shiftIiLi4EEixE7ap_uintILi16EE.exit"   --->   Operation 30 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.92ns
+The critical path consists of the following:
+	'alloca' operation ('i') [5]  (0 ns)
+	'load' operation ('val') on local variable 'i' [12]  (0 ns)
+	'sub' operation ('sub_ln1072') [22]  (0.621 ns)
+	'getelementptr' operation ('regs_mem_addr', ../src/./circular_shift.h:35) [24]  (0 ns)
+	'load' operation ('regs_mem_load', ../src/./circular_shift.h:35) on array 'regs_mem' [25]  (1.3 ns)
+
+ <State 2>: 1.76ns
+The critical path consists of the following:
+	'load' operation ('regs_mem_load', ../src/./circular_shift.h:35) on array 'regs_mem' [25]  (1.3 ns)
+	'store' operation ('store_ln32', ../src/shift_reg.cpp:32) of variable 'or_ln', ../src/shift_reg.cpp:32 on local variable 'shiftreg' [29]  (0.46 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ww_write_mem.hpp" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\src\ww_write_mem.hpp"/>
+    <originFiles name="ww_read_mem.hpp" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\src\ww_read_mem.hpp"/>
+    <originFiles name="word_width_mem.hpp" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\src\word_width_mem.hpp"/>
+    <originFiles name="word_width_manual.cpp" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\src\word_width_manual.cpp"/>
+    <originFiles name="word_width.h" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\src\word_width.h"/>
+    <originFiles name="word_width.cpp" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\src\word_width.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_word_width.cpp" path="C:\Users\hisha\OneDrive\Desktop\ba3s\wareeny\hls-bluebook-memory-architectures-main\hls-bluebook-memory-architectures-main\7.3-Widening_the_Word_Width_of_Memories\tb\tb_word_width.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
