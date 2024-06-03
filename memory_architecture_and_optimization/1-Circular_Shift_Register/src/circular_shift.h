@@ -4,7 +4,9 @@
 #include "../include/ap_int.h"
 #include <cmath>
 
-#define ADDRESS_BITWIDTH (16)
+#define ADDRESS_BITWIDTH (21) //1228800 locations
+
+//#define ADDRESS_BITWIDTH (24) //9830400 locations
 
 template <typename T, int N>
 class circular_shift {

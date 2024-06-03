@@ -1,7 +1,7 @@
 #ifndef __INTERLEAVE_MEM_SEQ__
 #define __INTERLEAVE_MEM_SEQ__
 
-#define ADDRESS_BITWIDTH (16)
+#define ADDRESS_BITWIDTH (21)
 
 #include "../include/ap_int.h"
 

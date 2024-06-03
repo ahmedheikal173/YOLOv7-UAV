@@ -1,8 +1,6 @@
 #include <cstdio>
 #include "../src/shift_reg.h"
 
-# define USE_CIRCULAR_SHIFT 0
-
 int main(int argc, char **argv){
 
 	dType sw_out[N_REGS];
@@ -18,13 +16,9 @@ int main(int argc, char **argv){
 			else sw_out[i] = sw_out[i-1];
 		}
 
-#if USE_CIRCULAR_SHIFT
 		// Hardware Shift
 		circular_shift_reg(in, hw_out);
-#else
-		// Hardware Shift
-		shift_reg(in, hw_out);
-#endif
+
 
 		if (i > N_REGS){
 			// Compare

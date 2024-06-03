@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="word_width.cpp" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\src\word_width.cpp"/>
+    <originFiles name="word_width.h" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\src\word_width.h"/>
+    <originFiles name="word_width_manual.cpp" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\src\word_width_manual.cpp"/>
+    <originFiles name="word_width_mem.hpp" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\src\word_width_mem.hpp"/>
+    <originFiles name="ww_read_mem.hpp" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\src\ww_read_mem.hpp"/>
+    <originFiles name="ww_write_mem.hpp" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\src\ww_write_mem.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_word_width.cpp" path="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\tb\tb_word_width.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

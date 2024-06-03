@@ -1,0 +1,89 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'hisha' on host 'hisham-dell' (Windows NT_amd64 version 6.2) on Mon Jun 03 15:47:49 +0300 2024
+INFO: [HLS 200-10] In directory 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41'
+Sourcing Tcl script 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project m41 
+INFO: [HLS 200-10] Opening project 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41'.
+INFO: [HLS 200-1510] Running: set_top window_avg 
+INFO: [HLS 200-1510] Running: add_files ../src/shift_class.hpp 
+INFO: [HLS 200-10] Adding design file '../src/shift_class.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/window_1d.h 
+INFO: [HLS 200-10] Adding design file '../src/window_1d.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/window_1d_sliding.cpp 
+INFO: [HLS 200-10] Adding design file '../src/window_1d_sliding.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../tb/test_window_1d.cpp 
+INFO: [HLS 200-10] Adding test bench file '../tb/test_window_1d.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
+INFO: [HLS 200-10] Opening solution 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../tb/test_window_1d.cpp in debug mode
+csim.mk:76: recipe for target 'obj/test_window_1d.o' failed
+In file included from C:/Xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from ../../../../../tb/../src/../include/ap_int.h:55,
+                 from ../../../../../tb/../src/window_1d.h:4,
+                 from ../../../../../tb/test_window_1d.cpp:2:
+C:/Xilinx/Vitis_HLS/2021.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189:0,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from C:/Xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from ../../../../../tb/../src/../include/ap_int.h:55,
+                 from ../../../../../tb/../src/window_1d.h:4,
+                 from ../../../../../tb/test_window_1d.cpp:2:
+C:/Xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from ../../../../../tb/test_window_1d.cpp:2:0:
+../../../../../tb/../src/window_1d.h:11:18: error: variable or field 'clip_window' declared void
+ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,int i, ap_uint<8> window[3]);
+                  ^~~~~~~~~~~
+../../../../../tb/../src/window_1d.h:11:18: error: 'shift_class' was not declared in this scope
+../../../../../tb/../src/window_1d.h:11:40: error: expected primary-expression before ',' token
+ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,int i, ap_uint<8> window[3]);
+                                        ^
+../../../../../tb/../src/window_1d.h:11:45: error: 'shift_reg' was not declared in this scope
+ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,int i, ap_uint<8> window[3]);
+                                             ^~~~~~~~~
+../../../../../tb/../src/window_1d.h:11:55: error: expected primary-expression before 'int'
+ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,int i, ap_uint<8> window[3]);
+                                                       ^~~
+../../../../../tb/../src/window_1d.h:11:73: error: expected primary-expression before 'window'
+ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,int i, ap_uint<8> window[3]);
+                                                                         ^~~~~~
+make: *** [obj/test_window_1d.o] Error 1
+ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.457 seconds; current allocated memory: 0.000 MB.
+5
+    while executing
+"source D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/solution1/csim.tcl"
+    invoked from within
+"hls::main D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.546 seconds; peak allocated memory: 1.174 GB.

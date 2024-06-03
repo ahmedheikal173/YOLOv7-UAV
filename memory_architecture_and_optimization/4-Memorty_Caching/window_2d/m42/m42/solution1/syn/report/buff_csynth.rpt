@@ -1,0 +1,204 @@
+
+
+================================================================
+== Vitis HLS Report for 'buff'
+================================================================
+* Date:           Mon Jun  3 16:11:05 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        m42
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.677 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  20.000 ns|  20.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       63|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        2|     -|        0|        0|    -|
+|Multiplexer          |        -|     -|        -|      342|    -|
+|Register             |        -|     -|      123|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        2|     0|      123|      405|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3072|   864000|   432000|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |       ~0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9216|  2592000|  1296000|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |       ~0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------------+-----------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |     Memory    |               Module              | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------+-----------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |buff1_ram_V_U  |buff_buff1_ram_V_RAM_1P_BRAM_1R1W  |        1|  0|   0|    0|   320|   16|     1|         5120|
+    |buff0_ram_V_U  |buff_buff1_ram_V_RAM_1P_BRAM_1R1W  |        1|  0|   0|    0|   320|   16|     1|         5120|
+    +---------------+-----------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total          |                                   |        2|  0|   0|    0|   640|   32|     2|        10240|
+    +---------------+-----------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |ap_condition_156       |       and|   0|  0|   2|           1|           1|
+    |ap_condition_169       |       and|   0|  0|   2|           1|           1|
+    |ap_condition_262       |       and|   0|  0|   2|           1|           1|
+    |ap_condition_273       |       and|   0|  0|   2|           1|           1|
+    |icmp_ln30_fu_344_p2    |      icmp|   0|  0|  11|          10|           1|
+    |ap_condition_268       |        or|   0|  0|   2|           1|           1|
+    |ap_condition_291       |        or|   0|  0|   2|           1|           1|
+    |ret_4_fu_496_p3        |    select|   0|  0|  16|           1|          16|
+    |select_ln37_fu_559_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln38_fu_567_p3  |    select|   0|  0|   8|           1|           8|
+    |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
+    |xor_ln885_1_fu_521_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln885_2_fu_354_p2  |       xor|   0|  0|   2|           1|           2|
+    |xor_ln885_fu_417_p2    |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  63|          23|          47|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------------+----+-----------+-----+-----------+
+    |                        Name                       | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_buff0_write_data_V_loc_0_phi_fu_285_p4  |  14|          3|   16|         48|
+    |ap_phi_mux_empty_19_phi_fu_207_p4                  |  14|          3|    1|          3|
+    |ap_phi_mux_empty_20_phi_fu_273_p4                  |  14|          3|    1|          3|
+    |ap_phi_mux_empty_phi_fu_117_p4                     |  14|          3|    1|          3|
+    |ap_phi_mux_p_ph_phi_fu_240_p4                      |  14|          3|    1|          3|
+    |ap_phi_mux_sel_flag_1_phi_fu_142_p4                |   9|          2|    1|          2|
+    |ap_phi_mux_sel_flag_2_phi_fu_164_p4                |   9|          2|    1|          2|
+    |ap_phi_mux_sel_flag_3_phi_fu_185_p4                |  14|          3|    1|          3|
+    |ap_phi_mux_sel_flag_4_phi_fu_218_p4                |  14|          3|    1|          3|
+    |ap_phi_mux_sel_flag_5_phi_fu_251_p4                |  14|          3|    1|          3|
+    |ap_phi_mux_sel_new_1_phi_fu_153_p4                 |   9|          2|    1|          2|
+    |ap_phi_mux_sel_new_2_phi_fu_175_p4                 |   9|          2|    1|          2|
+    |ap_phi_mux_sel_new_3_phi_fu_196_p4                 |  14|          3|    1|          3|
+    |ap_phi_mux_sel_new_4_phi_fu_229_p4                 |  14|          3|    1|          3|
+    |ap_phi_mux_sel_new_5_phi_fu_262_p4                 |  14|          3|    1|          3|
+    |ap_phi_mux_tmp_5_phi_fu_304_p4                     |  14|          3|    8|         24|
+    |ap_phi_reg_pp0_iter1_sel_flag_0_reg_125            |  14|          3|    1|          3|
+    |ap_phi_reg_pp0_iter1_sel_flag_1_reg_138            |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter1_sel_flag_2_reg_160            |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter1_sel_new_1_reg_150             |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter1_sel_new_2_reg_172             |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter2_tmp_4_reg_292                 |  14|          3|    8|         24|
+    |ap_sig_allocacmp_sel_load                          |   9|          2|    1|          2|
+    |buff0_ram_V_address0                               |  14|          3|    9|         27|
+    |buff1_ram_V_address0                               |  14|          3|    9|         27|
+    |buff1_write_data_V                                 |   9|          2|   16|         32|
+    |empty_20_reg_270                                   |  14|          3|    1|          3|
+    |empty_reg_114                                      |  14|          3|    1|          3|
+    +---------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                              | 342|         74|   88|        239|
+    +---------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |                         Name                        | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                              |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_sel_flag_0_reg_125              |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_sel_flag_1_reg_138              |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_sel_flag_2_reg_160              |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_sel_new_1_reg_150               |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_sel_new_2_reg_172               |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_tmp_4_reg_292                   |   8|   0|    8|          0|
+    |ap_phi_reg_pp0_iter2_tmp_4_reg_292                   |   8|   0|    8|          0|
+    |buff0_cnt_V                                          |   1|   0|    1|          0|
+    |buff0_cnt_V_load_reg_636                             |   1|   0|    1|          0|
+    |buff0_read_data_V                                    |  16|   0|   16|          0|
+    |buff0_write_data_V                                   |  16|   0|   16|          0|
+    |buff1_cnt_V                                          |   1|   0|    1|          0|
+    |buff1_cnt_V_load_reg_611                             |   1|   0|    1|          0|
+    |buff1_read_data_V                                    |  16|   0|   16|          0|
+    |buff1_write_data_V                                   |  16|   0|   16|          0|
+    |c_read_reg_592                                       |  10|   0|   10|          0|
+    |din_read_reg_597                                     |   8|   0|    8|          0|
+    |din_read_reg_597_pp0_iter1_reg                       |   8|   0|    8|          0|
+    |empty_20_reg_270                                     |   1|   0|    1|          0|
+    |empty_reg_114                                        |   1|   0|    1|          0|
+    |guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel  |   1|   0|    1|          0|
+    |icmp_ln30_reg_607                                    |   1|   0|    1|          0|
+    |sel                                                  |   1|   0|    1|          0|
+    +-----------------------------------------------------+----+----+-----+-----------+
+    |Total                                                | 123|   0|  123|          0|
+    +-----------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------+-----+-----+------------+--------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_ce        |   in|    1|  ap_ctrl_hs|          buff|  return value|
+|ap_return_0  |  out|    8|  ap_ctrl_hs|          buff|  return value|
+|ap_return_1  |  out|    8|  ap_ctrl_hs|          buff|  return value|
+|ap_return_2  |  out|    8|  ap_ctrl_hs|          buff|  return value|
+|din          |   in|    8|     ap_none|           din|        scalar|
+|c            |   in|   10|     ap_none|             c|        scalar|
++-------------+-----+-----+------------+--------------+--------------+
+

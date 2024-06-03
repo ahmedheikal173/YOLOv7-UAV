@@ -1,0 +1,159 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.989 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.386 seconds; peak allocated memory: 1.109 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Analyzing design file '../src/shift_reg.cpp' ... 
+WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./circular_shift.h:20:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.146 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 958.564 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 960.783 seconds; peak allocated memory: 1.173 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 1008.273 MB.
+INFO: [HLS 200-10] Analyzing design file '../src/shift_reg.cpp' ... 
+WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./circular_shift.h:20:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.465 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<22, true>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>& ap_int_base<22, true>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<22, true>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<22, true>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::operator long long() const' into 'circular_shift<int, 16>::operator<<(int)' (../src/./circular_shift.h:29:9)
+INFO: [HLS 214-131] Inlining function 'bool operator==<22, true>(ap_int_base<22, true> const&, int)' into 'circular_shift<int, 16>::operator<<(int)' (../src/./circular_shift.h:31:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::operator++(int)' into 'circular_shift<int, 16>::operator<<(int)' (../src/./circular_shift.h:30:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<22, true>(ap_int_base<22, true> const&)' into 'ap_int_base<22, true>::RType<32, true>::minus operator-<22, true, 32, true>(ap_int_base<22, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<22, true>::RType<32, true>::minus operator-<22, true, 32, true>(ap_int_base<22, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<22, true>::RType<($_0)32, true>::minus operator-<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::RType<32, true>::minus operator-<22, true, 32, true>(ap_int_base<22, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<22, true>::RType<($_0)32, true>::minus operator-<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<33, true>::RType<21, false>::minus operator-<33, true, 21, false>(ap_int_base<33, true> const&, ap_int_base<21, false> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<21, false>(ap_int_base<21, false> const&)' into 'ap_int_base<33, true>::RType<21, false>::minus operator-<33, true, 21, false>(ap_int_base<33, true> const&, ap_int_base<21, false> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<22, true>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:711)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<22, true>(ap_int_base<22, true> const&)' into 'ap_int_base<22, true>::RType<32, true>::plus operator+<22, true, 32, true>(ap_int_base<22, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<22, true>::RType<32, true>::plus operator+<22, true, 32, true>(ap_int_base<22, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<22, true>::RType<($_0)32, true>::plus operator+<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::RType<32, true>::plus operator+<22, true, 32, true>(ap_int_base<22, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<22, true>::RType<($_0)32, true>::plus operator+<22, true>(ap_int_base<22, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::RType<($_0)32, true>::minus operator-<22, true>(ap_int_base<22, true> const&, int)' into 'circular_shift<int, 16>::operator[](ap_uint<21>)' (../src/./circular_shift.h:35:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::operator long long() const' into 'circular_shift<int, 16>::operator[](ap_uint<21>)' (../src/./circular_shift.h:37:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<22, true>::RType<($_0)32, true>::plus operator+<22, true>(ap_int_base<22, true> const&, int)' into 'circular_shift<int, 16>::operator[](ap_uint<21>)' (../src/./circular_shift.h:36:31)
+INFO: [HLS 214-131] Inlining function 'bool operator<<22, true>(ap_int_base<22, true> const&, int)' into 'circular_shift<int, 16>::operator[](ap_uint<21>)' (../src/./circular_shift.h:36:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<21, false>::minus operator-<33, true, 21, false>(ap_int_base<33, true> const&, ap_int_base<21, false> const&)' into 'circular_shift<int, 16>::operator[](ap_uint<21>)' (../src/./circular_shift.h:35:22)
+INFO: [HLS 214-178] Inlining function 'circular_shift<int, 16>::operator<<(int)' into 'circular_shift_reg(int, int*)' (../src/shift_reg.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'circular_shift<int, 16>::operator[](ap_uint<21>)' into 'circular_shift_reg(int, int*)' (../src/shift_reg.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.355 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.173 GB.
+INFO: [XFORM 203-510] Pipelining loop 'WRITE' in function 'circular_shift_reg' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'regs.mem' (../src/./circular_shift.h:29:15)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'circular_shift_reg' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'circular_shift_reg_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'WRITE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'circular_shift_reg' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.252 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'circular_shift_reg_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'circular_shift_reg_Pipeline_WRITE' pipeline 'WRITE' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'circular_shift_reg_Pipeline_WRITE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'circular_shift_reg' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_shift_reg/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_shift_reg/din' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_shift_reg/dout' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'circular_shift_reg' to 's_axilite & ap_ctrl_chain'.
+WARNING: [RTGEN 206-101] Register 'regs_wptr_V' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'din', 'dout' and 'ap_local_deadlock' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'circular_shift_reg'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 1.173 GB.
+INFO: [RTMG 210-278] Implementing memory 'circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W_ram (RAM_1P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.512 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.549 seconds; current allocated memory: 1.173 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for circular_shift_reg.
+INFO: [VLOG 209-307] Generating Verilog RTL for circular_shift_reg.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.355 seconds; current allocated memory: 206.766 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 0 seconds. Total elapsed time: 13.95 seconds; peak allocated memory: 1.173 GB.

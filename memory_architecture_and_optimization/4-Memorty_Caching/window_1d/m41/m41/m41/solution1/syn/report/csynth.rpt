@@ -1,0 +1,140 @@
+
+
+================================================================
+== Synthesis Summary Report of 'window_avg'
+================================================================
++ General Information: 
+    * Date:           Mon Jun  3 15:58:56 2024
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        m41
+    * Solution:       solution1 (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------+--------+-------+---------+-----------+----------+---------+---------+----------+---------+----+------------+------------+-----+
+    |    Modules   |  Issue |       | Latency |  Latency  | Iteration|         |   Trip  |          |         |    |            |            |     |
+    |    & Loops   |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|  BRAM   | DSP|     FF     |     LUT    | URAM|
+    +--------------+--------+-------+---------+-----------+----------+---------+---------+----------+---------+----+------------+------------+-----+
+    |+ window_avg  |  Timing|  -0.00|  1228943|  1.229e+07|         -|  1228944|        -|        no|  2 (~0%)|   -|  1587 (~0%)|  1618 (~0%)|    -|
+    | o COMP       |       -|   7.30|  1228941|  1.229e+07|       142|        1|  1228801|       yes|        -|   -|           -|           -|    -|
+    +--------------+--------+-------+---------+-----------+----------+---------+---------+----------+---------+----+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | 8 -> 8     | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=2            |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                             |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                               |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN                           |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST                           |
+| s_axi_control | din_1    | 0x10   | 32    | W      | Data signal of din               |                                                                        |
+| s_axi_control | din_2    | 0x14   | 32    | W      | Data signal of din               |                                                                        |
+| s_axi_control | dout_1   | 0x1c   | 32    | W      | Data signal of dout              |                                                                        |
+| s_axi_control | dout_2   | 0x20   | 32    | W      | Data signal of dout              |                                                                        |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| din      | inout     | ap_uint<8>* |
+| dout     | inout     | ap_uint<8>* |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
++----------+---------------+-----------+----------+----------------------------------+
+| din      | m_axi_gmem    | interface |          |                                  |
+| din      | s_axi_control | register  | offset   | name=din_1 offset=0x10 range=32  |
+| din      | s_axi_control | register  | offset   | name=din_2 offset=0x14 range=32  |
+| dout     | m_axi_gmem    | interface |          |                                  |
+| dout     | s_axi_control | register  | offset   | name=dout_1 offset=0x1c range=32 |
+| dout     | s_axi_control | register  | offset   | name=dout_2 offset=0x20 range=32 |
++----------+---------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Bursts and Widening Missed
++--------------+----------+------+-------------------------------------------+------------+--------------------------------------+
+| HW Interface | Variable | Loop | Problem                                   | Resolution | Location                             |
++--------------+----------+------+-------------------------------------------+------------+--------------------------------------+
+| m_axi_gmem   | din      | COMP | Access load is in the conditional branch  | 214-232    | ../../src/window_1d_sliding.cpp:31:5 |
+| m_axi_gmem   | dout     | COMP | Access store is in the conditional branch | 214-232    | ../../src/window_1d_sliding.cpp:31:5 |
++--------------+----------+------+-------------------------------------------+------------+--------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------+-----+--------+------------+-----+--------+---------+
+| Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++------------------------+-----+--------+------------+-----+--------+---------+
+| + window_avg           | 0   |        |            |     |        |         |
+|   add_ln31_fu_154_p2   | -   |        | add_ln31   | add | fabric | 0       |
+|   add_ln34_fu_170_p2   | -   |        | add_ln34   | add | fabric | 0       |
+|   ret_V_fu_268_p2      | -   |        | ret_V      | add | tadder | 0       |
+|   ret_V_1_fu_278_p2    | -   |        | ret_V_1    | add | tadder | 0       |
+|   add_ln39_fu_200_p2   | -   |        | add_ln39   | add | fabric | 0       |
+|   add_ln39_1_fu_210_p2 | -   |        | add_ln39_1 | add | fabric | 0       |
++------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+--------------------------------------------------+
+| Type     | Options | Location                                         |
++----------+---------+--------------------------------------------------+
+| pipeline | II=1    | ../../src/window_1d_sliding.cpp:32 in window_avg |
++----------+---------+--------------------------------------------------+
+
+

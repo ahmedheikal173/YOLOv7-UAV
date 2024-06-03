@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_interleave_manual_rnd_ap_int_8_ap_int_8_bool_x' is power-on initialization." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.556+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.496+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARUSER' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.286+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARREGION' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.276+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARQOS' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.266+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARPROT' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.256+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARCACHE' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.246+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARLOCK' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.226+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARBURST' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.216+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARSIZE' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.206+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARLEN' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.206+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARID' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.186+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARADDR' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.176+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/m_axi_gmem_ARVALID' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.166+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_BREADY' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:07.016+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWUSER' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.996+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWREGION' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.987+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWQOS' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.975+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWPROT' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.965+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWCACHE' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.954+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWLOCK' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.941+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWBURST' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.928+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWSIZE' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.902+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWLEN' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.892+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWID' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.863+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWADDR' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.837+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_WRITE/m_axi_gmem_AWVALID' to 0." projectName="m2" solutionName="solution1" date="2024-06-03T14:09:06.827+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 214-185] The resource pragma (storage) on function argument, in 'call' is unsupported (../src/interleave_manual_rnd.cpp:6:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:09:05.106+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 214-185] The resource pragma (storage) on function argument, in 'call' is unsupported (../src/interleave_manual_rnd.cpp:5:104)" projectName="m2" solutionName="solution1" date="2024-06-03T14:09:05.096+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave.cpp:11:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:09:00.494+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave.cpp:8:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:57.214+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave.cpp:7:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:57.204+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave_manual_rnd.cpp:7:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:56.553+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave_manual_rnd.cpp:6:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:53.179+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./interleave_mem_rnd.hpp:19:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:53.161+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./interleave_mem_rnd.hpp:18:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:53.149+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./interleave_mem_rnd.hpp:17:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:53.139+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave_manual_seq.cpp:7:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:52.469+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/interleave_manual_seq.cpp:6:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:49.449+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./interleave_mem_seq.hpp:21:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:49.429+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./interleave_mem_seq.hpp:20:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:49.419+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./interleave_mem_seq.hpp:19:9)" projectName="m2" solutionName="solution1" date="2024-06-03T14:08:49.409+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

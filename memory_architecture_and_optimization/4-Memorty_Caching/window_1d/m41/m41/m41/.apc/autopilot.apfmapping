@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="shift_class.hpp" path="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\src\shift_class.hpp"/>
+    <originFiles name="window_1d.h" path="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\src\window_1d.h"/>
+    <originFiles name="window_1d_sliding.cpp" path="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\src\window_1d_sliding.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_window_1d.cpp" path="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\tb\test_window_1d.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,7 +1,7 @@
 #ifndef __INTERLEAVE_H__
 #define __INTERLEAVE_H__
 
-#define NUM_WORDS 9
+#define NUM_WORDS 1228800
 
 #include "../include/ap_int.h"
 

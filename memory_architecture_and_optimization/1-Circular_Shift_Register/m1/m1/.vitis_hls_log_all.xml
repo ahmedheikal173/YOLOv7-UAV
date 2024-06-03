@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'regs_wptr_V' is power-on initialization." projectName="m1" solutionName="solution1" date="2024-06-03T13:48:29.308+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m1" solutionName="solution1" date="2024-06-03T13:48:29.268+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5523] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (../src/./circular_shift.h:20:9)" projectName="m1" solutionName="solution1" date="2024-06-03T13:48:23.564+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
