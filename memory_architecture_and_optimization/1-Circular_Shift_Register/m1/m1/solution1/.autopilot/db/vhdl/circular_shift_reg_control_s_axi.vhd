@@ -32,7 +32,7 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    din                   :out  STD_LOGIC_VECTOR(31 downto 0);
+    din                   :out  STD_LOGIC_VECTOR(7 downto 0);
     dout                  :out  STD_LOGIC_VECTOR(63 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
@@ -66,7 +66,8 @@ end entity circular_shift_reg_control_s_axi;
 --        bit 5 - ap_local_deadlock (COR/TOW)
 --        others - reserved
 -- 0x10 : Data signal of din
---        bit 31~0 - din[31:0] (Read/Write)
+--        bit 7~0 - din[7:0] (Read/Write)
+--        others  - reserved
 -- 0x14 : reserved
 -- 0x18 : Data signal of dout
 --        bit 31~0 - dout[31:0] (Read/Write)
@@ -117,7 +118,7 @@ architecture behave of circular_shift_reg_control_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(5 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(5 downto 0) := (others => '0');
-    signal int_din             : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_din             : UNSIGNED(7 downto 0) := (others => '0');
     signal int_dout            : UNSIGNED(63 downto 0) := (others => '0');
 
 
@@ -248,7 +249,7 @@ begin
                     when ADDR_ISR =>
                         rdata_data(5 downto 0) <= int_isr;
                     when ADDR_DIN_DATA_0 =>
-                        rdata_data <= RESIZE(int_din(31 downto 0), 32);
+                        rdata_data <= RESIZE(int_din(7 downto 0), 32);
                     when ADDR_DOUT_DATA_0 =>
                         rdata_data <= RESIZE(int_dout(31 downto 0), 32);
                     when ADDR_DOUT_DATA_1 =>
@@ -473,7 +474,7 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DIN_DATA_0) then
-                    int_din(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_din(31 downto 0));
+                    int_din(7 downto 0) <= (UNSIGNED(WDATA(7 downto 0)) and wmask(7 downto 0)) or ((not wmask(7 downto 0)) and int_din(7 downto 0));
                 end if;
             end if;
         end if;

@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="window_avg" name="m42">
+<project xmlns="com.autoesl.autopilot.project" name="m42" top="window_avg">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

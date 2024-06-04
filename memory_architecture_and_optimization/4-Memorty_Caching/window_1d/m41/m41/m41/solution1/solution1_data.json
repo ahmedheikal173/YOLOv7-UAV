@@ -83,7 +83,10 @@
       "config_interface -default_interface=kernel",
       "config_rtl -register_reset_num=3"
     ],
-    "DirectiveTcl": ["set_directive_top window_avg -name window_avg"],
+    "DirectiveTcl": [
+      "set_directive_top window_avg -name window_avg",
+      "set_directive_top window_avg -name window_avg"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "window_avg"
@@ -905,7 +908,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-03 15:58:56 +0300",
+    "Time": "2024-06-05 00:38:24 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

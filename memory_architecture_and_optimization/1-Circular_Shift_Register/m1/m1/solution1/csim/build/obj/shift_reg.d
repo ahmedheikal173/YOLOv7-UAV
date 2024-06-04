@@ -1,5 +1,5 @@
 obj/shift_reg.o: ../../../../../src/shift_reg.cpp \
- ../../../../../src/./shift_reg.h ../../../../../src/./circular_shift.h \
+ ../../../../../src/./shift_reg.h \
  ../../../../../src/./../include/ap_int.h \
  C:/Xilinx/Vitis_HLS/2021.2/include/ap_common.h \
  C:/Xilinx/Vitis_HLS/2021.2/include/ap_decl.h \
@@ -21,4 +21,5 @@ obj/shift_reg.o: ../../../../../src/shift_reg.cpp \
  C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed_base.h \
  C:/Xilinx/Vitis_HLS/2021.2/include/ap_int.h \
  C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed_ref.h \
- C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed_special.h
+ C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed_special.h \
+ ../../../../../src/./circular_shift.h

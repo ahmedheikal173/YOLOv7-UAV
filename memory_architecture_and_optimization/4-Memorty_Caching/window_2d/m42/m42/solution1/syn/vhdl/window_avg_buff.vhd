@@ -130,11 +130,11 @@ attribute shreg_extract : string;
     signal ap_phi_mux_tmp_5_phi_fu_304_p4 : STD_LOGIC_VECTOR (7 downto 0);
     signal trunc_ln674_3_fu_539_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_phi_reg_pp0_iter2_tmp_5_reg_301 : STD_LOGIC_VECTOR (7 downto 0);
-    signal zext_ln55_fu_407_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln56_fu_407_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal zext_ln51_fu_412_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln51_1_fu_511_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln55_1_fu_516_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln52_fu_412_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln52_1_fu_511_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln56_2_fu_516_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_sig_allocacmp_sel_load : STD_LOGIC_VECTOR (0 downto 0);
     signal xor_ln885_fu_417_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ret_1_fu_374_p3 : STD_LOGIC_VECTOR (15 downto 0);
@@ -162,7 +162,7 @@ attribute shreg_extract : string;
     signal ap_condition_291 : BOOLEAN;
     signal ap_ce_reg : STD_LOGIC;
 
-    component window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W IS
+    component window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -180,7 +180,7 @@ attribute shreg_extract : string;
 
 
 begin
-    buff1_ram_V_U : component window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W
+    buff1_ram_V_U : component window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W
     generic map (
         DataWidth => 16,
         AddressRange => 320,
@@ -194,7 +194,7 @@ begin
         d0 => buff1_ram_V_d0,
         q0 => buff1_ram_V_q0);
 
-    buff0_ram_V_U : component window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W
+    buff0_ram_V_U : component window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W
     generic map (
         DataWidth => 16,
         AddressRange => 320,
@@ -783,13 +783,13 @@ begin
 
     buff0_cnt_V_load_load_fu_453_p1 <= buff0_cnt_V;
 
-    buff0_ram_V_address0_assign_proc : process(buff0_cnt_V_load_load_fu_453_p1, ap_phi_mux_empty_20_phi_fu_273_p4, zext_ln51_1_fu_511_p1, zext_ln55_1_fu_516_p1, ap_condition_273)
+    buff0_ram_V_address0_assign_proc : process(buff0_cnt_V_load_load_fu_453_p1, ap_phi_mux_empty_20_phi_fu_273_p4, zext_ln52_1_fu_511_p1, zext_ln56_2_fu_516_p1, ap_condition_273)
     begin
         if ((ap_const_boolean_1 = ap_condition_273)) then
             if (((ap_phi_mux_empty_20_phi_fu_273_p4 = ap_const_lv1_0) and (buff0_cnt_V_load_load_fu_453_p1 = ap_const_lv1_1))) then 
-                buff0_ram_V_address0 <= zext_ln55_1_fu_516_p1(9 - 1 downto 0);
+                buff0_ram_V_address0 <= zext_ln56_2_fu_516_p1(9 - 1 downto 0);
             elsif ((buff0_cnt_V_load_load_fu_453_p1 = ap_const_lv1_0)) then 
-                buff0_ram_V_address0 <= zext_ln51_1_fu_511_p1(9 - 1 downto 0);
+                buff0_ram_V_address0 <= zext_ln52_1_fu_511_p1(9 - 1 downto 0);
             else 
                 buff0_ram_V_address0 <= "XXXXXXXXX";
             end if;
@@ -820,13 +820,13 @@ begin
 
     buff1_cnt_V_load_load_fu_350_p1 <= buff1_cnt_V;
 
-    buff1_ram_V_address0_assign_proc : process(buff1_cnt_V_load_load_fu_350_p1, zext_ln55_fu_407_p1, zext_ln51_fu_412_p1, ap_condition_268, ap_condition_262)
+    buff1_ram_V_address0_assign_proc : process(buff1_cnt_V_load_load_fu_350_p1, zext_ln56_fu_407_p1, zext_ln52_fu_412_p1, ap_condition_268, ap_condition_262)
     begin
         if ((ap_const_boolean_1 = ap_condition_262)) then
             if ((buff1_cnt_V_load_load_fu_350_p1 = ap_const_lv1_0)) then 
-                buff1_ram_V_address0 <= zext_ln51_fu_412_p1(9 - 1 downto 0);
+                buff1_ram_V_address0 <= zext_ln52_fu_412_p1(9 - 1 downto 0);
             elsif ((ap_const_boolean_1 = ap_condition_268)) then 
-                buff1_ram_V_address0 <= zext_ln55_fu_407_p1(9 - 1 downto 0);
+                buff1_ram_V_address0 <= zext_ln56_fu_407_p1(9 - 1 downto 0);
             else 
                 buff1_ram_V_address0 <= "XXXXXXXXX";
             end if;
@@ -882,8 +882,8 @@ begin
     xor_ln885_1_fu_521_p2 <= (buff0_cnt_V xor ap_const_lv1_1);
     xor_ln885_2_fu_354_p2 <= (ap_phi_mux_empty_phi_fu_117_p4 xor ap_const_lv1_1);
     xor_ln885_fu_417_p2 <= (buff1_cnt_V xor ap_const_lv1_1);
-    zext_ln51_1_fu_511_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_320_p4),64));
-    zext_ln51_fu_412_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_310_p4),64));
-    zext_ln55_1_fu_516_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_320_p4),64));
-    zext_ln55_fu_407_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_310_p4),64));
+    zext_ln52_1_fu_511_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_320_p4),64));
+    zext_ln52_fu_412_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_310_p4),64));
+    zext_ln56_2_fu_516_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_320_p4),64));
+    zext_ln56_fu_407_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_310_p4),64));
 end behav;

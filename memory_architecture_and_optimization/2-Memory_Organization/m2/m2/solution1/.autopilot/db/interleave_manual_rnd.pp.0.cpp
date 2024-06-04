@@ -5704,9 +5704,12 @@ class interleave_mem_rnd {
 
  public:
   interleave_mem_rnd() {
-#pragma HLS RESOURCE variable=x0 core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=x1 core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=x2 core=RAM_1P_BRAM
+
+
+
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=AUTO
  }
 
   void write_rnd(ap_uint<(21)> i, T x_in[N]);
@@ -5741,7 +5744,7 @@ T interleave_mem_rnd<T, N>::read_rnd(ap_uint<(21)> i,
   }
   return tmp;
 }
-# 26 "../src/./interleave_mem_rnd.hpp" 2
+# 29 "../src/./interleave_mem_rnd.hpp" 2
 # 1 "../src/./write_mem_rnd.hpp" 1
 
 
@@ -5765,7 +5768,7 @@ void interleave_mem_rnd<T, N>::write_rnd(ap_uint<(21)> i,
       break;
   }
 }
-# 27 "../src/./interleave_mem_rnd.hpp" 2
+# 30 "../src/./interleave_mem_rnd.hpp" 2
 # 3 "../src/interleave_manual_rnd.cpp" 2
 
 __attribute__((sdx_kernel("interleave_manual_rnd", 0))) void interleave_manual_rnd(ap_int<8> x_in[1228800],
@@ -5773,8 +5776,10 @@ __attribute__((sdx_kernel("interleave_manual_rnd", 0))) void interleave_manual_r
 #pragma HLSDIRECTIVE TOP name=interleave_manual_rnd
 # 5 "../src/interleave_manual_rnd.cpp"
 
-#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
+
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
+
+#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
 
  static interleave_mem_rnd<ap_int<8>, 1228800> x;
   int idx = 0;

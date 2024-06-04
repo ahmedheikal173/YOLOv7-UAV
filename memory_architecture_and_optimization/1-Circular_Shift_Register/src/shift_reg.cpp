@@ -11,6 +11,8 @@ SHIFT:
 
 WRITE:
   for (int i = 0; i < N_REGS; i++) {
+//	#pragma HLS unroll
+	#pragma HLS pipeline
 	dout[i] = regs[i];
   }
 }

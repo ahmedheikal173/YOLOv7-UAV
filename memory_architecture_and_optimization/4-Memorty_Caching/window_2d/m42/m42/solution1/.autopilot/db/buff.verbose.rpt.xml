@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'buff'" level="0">
-<item name = "Date">Mon Jun  3 16:11:05 2024
+<item name = "Date">Wed Jun  5 00:39:32 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m42</item>
@@ -50,7 +50,7 @@
 <column name="Expression">-, -, 0, 63, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
-<column name="Memory">2, -, 0, 0, -</column>
+<column name="Memory">2, -, 0, 0, 0</column>
 <column name="Multiplexer">-, -, -, 342, -</column>
 <column name="Register">-, -, 123, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
@@ -71,8 +71,8 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="buff1_ram_V_U">buff_buff1_ram_V_RAM_1P_BRAM_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
-<column name="buff0_ram_V_U">buff_buff1_ram_V_RAM_1P_BRAM_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
+<column name="buff1_ram_V_U">buff_buff1_ram_V_RAM_1P_AUTO_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
+<column name="buff0_ram_V_U">buff_buff1_ram_V_RAM_1P_AUTO_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">

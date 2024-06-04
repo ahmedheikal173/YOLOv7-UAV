@@ -1,17 +1,17 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'hisha' on host 'hisham-dell' (Windows NT_amd64 version 6.2) on Mon Jun 03 15:58:43 +0300 2024
+INFO: [HLS 200-10] For user 'hisha' on host 'hisham-dell' (Windows NT_amd64 version 6.2) on Wed Jun 05 00:38:11 +0300 2024
 INFO: [HLS 200-10] In directory 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41'
 Sourcing Tcl script 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/m41/solution1/csynth.tcl'
 INFO: [HLS 200-1510] Running: open_project m41 
 INFO: [HLS 200-10] Opening project 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/m41'.
 INFO: [HLS 200-1510] Running: set_top window_avg 
-INFO: [HLS 200-1510] Running: add_files ../../src/shift_class.hpp 
-INFO: [HLS 200-10] Adding design file '../../src/shift_class.hpp' to the project
-INFO: [HLS 200-1510] Running: add_files ../../src/window_1d.h 
-INFO: [HLS 200-10] Adding design file '../../src/window_1d.h' to the project
 INFO: [HLS 200-1510] Running: add_files ../../src/window_1d_sliding.cpp 
 INFO: [HLS 200-10] Adding design file '../../src/window_1d_sliding.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb ../../tb/test_window_1d.cpp 
+INFO: [HLS 200-1510] Running: add_files ../../src/window_1d.h 
+INFO: [HLS 200-10] Adding design file '../../src/window_1d.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/shift_class.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/shift_class.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../tb/test_window_1d.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file '../../tb/test_window_1d.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
 INFO: [HLS 200-10] Opening solution 'D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_1d/m41/m41/m41/solution1'.
@@ -28,10 +28,11 @@ INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
 INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: set_directive_top -name window_avg window_avg 
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-10] Analyzing design file '../../src/window_1d_sliding.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.467 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.515 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
 INFO: [HLS 214-284] Auto array partition mode is set into default.
 INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341)
@@ -91,14 +92,14 @@ INFO: [HLS 214-270] Starting automatic array partition analysis...
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ssdm_int<8, false>s' into '_llvm.fpga.unpack.none.s_struct.ap_uint<8>s.i8.1'
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<8>s.i8.1' into 'window_avg(ap_uint<8>*, ap_uint<8>*)' (../../src/window_1d_sliding.cpp:34:21)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint<8>s' into 'window_avg(ap_uint<8>*, ap_uint<8>*)' (../../src/window_1d_sliding.cpp:39:25)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.391 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.586 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 1.173 GB.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 1.173 GB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'window_avg' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -108,13 +109,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'COMP'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 142, loop 'COMP'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.288 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.301 seconds; current allocated memory: 1.173 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.443 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.467 seconds; current allocated memory: 1.173 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'window_avg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -127,12 +128,12 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'window_avg' pipel
 INFO: [RTGEN 206-100] Bundling port 'din', 'dout' and 'ap_local_deadlock' to AXI-Lite port control.
 INFO: [RTGEN 206-104] Estimated max fanout for 'window_avg' is 5043 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
 INFO: [RTGEN 206-100] Finished creating RTL model for 'window_avg'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.272 seconds; current allocated memory: 1.173 GB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.752 seconds; current allocated memory: 1.173 GB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.547 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.284 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.782 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.555 seconds; current allocated memory: 1.173 GB.
 INFO: [VHDL 208-304] Generating VHDL RTL for window_avg.
 INFO: [VLOG 209-307] Generating Verilog RTL for window_avg.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 11.6 seconds; current allocated memory: 0.000 MB.
-INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.404 seconds; peak allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.948 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.785 seconds; peak allocated memory: 1.173 GB.

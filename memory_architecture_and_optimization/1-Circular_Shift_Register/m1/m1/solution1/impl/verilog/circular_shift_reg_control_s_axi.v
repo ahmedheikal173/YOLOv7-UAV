@@ -29,7 +29,7 @@ module circular_shift_reg_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [31:0]                   din,
+    output wire [7:0]                    din,
     output wire [63:0]                   dout,
     output wire                          ap_start,
     input  wire                          ap_done,
@@ -61,7 +61,8 @@ module circular_shift_reg_control_s_axi
 //        bit 5 - ap_local_deadlock (COR/TOW)
 //        others - reserved
 // 0x10 : Data signal of din
-//        bit 31~0 - din[31:0] (Read/Write)
+//        bit 7~0 - din[7:0] (Read/Write)
+//        others  - reserved
 // 0x14 : reserved
 // 0x18 : Data signal of dout
 //        bit 31~0 - dout[31:0] (Read/Write)
@@ -117,7 +118,7 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [5:0]                    int_ier = 6'b0;
     reg  [5:0]                    int_isr = 6'b0;
-    reg  [31:0]                   int_din = 'b0;
+    reg  [7:0]                    int_din = 'b0;
     reg  [63:0]                   int_dout = 'b0;
 
 //------------------------Instantiation------------------
@@ -229,7 +230,7 @@ always @(posedge ACLK) begin
                     rdata <= int_isr;
                 end
                 ADDR_DIN_DATA_0: begin
-                    rdata <= int_din[31:0];
+                    rdata <= int_din[7:0];
                 end
                 ADDR_DOUT_DATA_0: begin
                     rdata <= int_dout[31:0];
@@ -404,13 +405,13 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_din[31:0]
+// int_din[7:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_din[31:0] <= 0;
+        int_din[7:0] <= 0;
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_DIN_DATA_0)
-            int_din[31:0] <= (WDATA[31:0] & wmask) | (int_din[31:0] & ~wmask);
+            int_din[7:0] <= (WDATA[31:0] & wmask) | (int_din[7:0] & ~wmask);
     end
 end
 

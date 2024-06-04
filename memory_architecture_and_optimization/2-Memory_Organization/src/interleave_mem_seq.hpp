@@ -16,9 +16,12 @@ class interleave_mem_seq {
 
  public:
   interleave_mem_seq() {
-#pragma HLS RESOURCE variable = x0 core = RAM_1P_BRAM
-#pragma HLS RESOURCE variable = x1 core = RAM_1P_BRAM
-#pragma HLS RESOURCE variable = x2 core = RAM_1P_BRAM
+// #pragma HLS RESOURCE variable = x0 core = RAM_1P_BRAM
+// #pragma HLS RESOURCE variable = x1 core = RAM_1P_BRAM
+// #pragma HLS RESOURCE variable = x2 core = RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=AUTO
 
 	idx = 0;
     sel = 0;

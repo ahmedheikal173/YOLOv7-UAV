@@ -3,8 +3,10 @@
 
 void interleave_manual_seq(ap_int<8> x_in[NUM_WORDS],
                            ap_int<8> y[NUM_WORDS / 3], bool load) {
-#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
+//#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
+//#pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
 
   static interleave_mem_seq<ap_int<8>, NUM_WORDS> x;
   int idx = 0;

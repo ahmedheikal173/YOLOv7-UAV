@@ -40,8 +40,10 @@ void buff(ap_uint<8> din, int c, ap_uint<8> window[3]) {
 }
 
 void window_avg(ap_uint<8> din[NUM_ROW][NUM_COL], ap_uint<8> dout[NUM_ROW][NUM_COL]) {
-#pragma HLS RESOURCE variable=din core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=dout core=RAM_1P_BRAM
+// #pragma HLS RESOURCE variable=din core=RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=din type=RAM_T2P impl=AUTO
+// #pragma HLS RESOURCE variable=dout core=RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=dout type=RAM_T2P impl=AUTO
     const ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
     ap_fixed<13, 11> tmp;
     ap_uint<8> w[3];

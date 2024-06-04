@@ -83,7 +83,10 @@
       "config_interface -default_interface=kernel",
       "config_rtl -register_reset_num=3"
     ],
-    "DirectiveTcl": ["set_directive_top window_avg -name window_avg"],
+    "DirectiveTcl": [
+      "set_directive_top window_avg -name window_avg",
+      "set_directive_top window_avg -name window_avg"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "window_avg"
@@ -113,6 +116,7 @@
     "CSource": ["..\/..\/..\/src\/window_2d.cpp"],
     "Vhdl": [
       "impl\/vhdl\/window_avg_buff.vhd",
+      "impl\/vhdl\/window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W.vhd",
       "impl\/vhdl\/window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W.vhd",
       "impl\/vhdl\/window_avg_control_s_axi.vhd",
       "impl\/vhdl\/window_avg_flow_control_loop_pipe.vhd",
@@ -121,6 +125,8 @@
     ],
     "Verilog": [
       "impl\/verilog\/window_avg_buff.v",
+      "impl\/verilog\/window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W.dat",
+      "impl\/verilog\/window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W.v",
       "impl\/verilog\/window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W.dat",
       "impl\/verilog\/window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W.v",
       "impl\/verilog\/window_avg_control_s_axi.v",
@@ -907,12 +913,12 @@
           "LUT": "405",
           "AVAIL_LUT": "1296000",
           "UTIL_LUT": "~0",
-          "DSP": "0",
-          "AVAIL_DSP": "9216",
-          "UTIL_DSP": "0",
           "URAM": "0",
           "AVAIL_URAM": "960",
-          "UTIL_URAM": "0"
+          "UTIL_URAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "9216",
+          "UTIL_DSP": "0"
         }
       },
       "window_avg": {
@@ -959,7 +965,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-03 16:11:07 +0300",
+    "Time": "2024-06-05 00:39:34 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

@@ -24,7 +24,8 @@ class singleport_ram {
 
    public:
     singleport_ram (): addr_int(0), cnt(0), read_data(0), write_data(0) {
-#pragma HLS RESOURCE variable=ram core=RAM_1P_BRAM
+// #pragma HLS RESOURCE variable=ram core=RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=AUTO
     }
     // implement read/write method for the class (data_in => ram => return)
     // return type: ap_int<W, S> (sampe as original data type)

@@ -2,26 +2,26 @@
       "name": "",
       "directive": [
         {
-          "functionName": "word_width_manual",
+          "functionName": "word_width",
           "label": "",
           "functionLabel": "",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "word_width_manual"
+                "value": "word_width"
               }]
           }
         },
         {
-          "functionName": "word_width_manual",
+          "functionName": "word_width",
           "label": "",
           "functionLabel": "",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "word_width_manual"
+                "value": "word_width"
               }]
           }
         }

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'interleave_manual_rnd'
 ================================================================
 + General Information: 
-    * Date:           Mon Jun  3 15:09:07 2024
+    * Date:           Wed Jun  5 00:15:32 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m2
     * Solution:       solution1 (Vitis Kernel Flow Target)
@@ -106,8 +106,8 @@
 +--------------+-----------+--------+-------+---------------------------------------+
 | HW Interface | Direction | Length | Width | Location                              |
 +--------------+-----------+--------+-------+---------------------------------------+
-| m_axi_gmem   | read      | 19200  | 512   | ../src/interleave_manual_rnd.cpp:14:5 |
-| m_axi_gmem   | write     | 6400   | 512   | ../src/interleave_manual_rnd.cpp:19:5 |
+| m_axi_gmem   | read      | 19200  | 512   | ../src/interleave_manual_rnd.cpp:16:5 |
+| m_axi_gmem   | write     | 6400   | 512   | ../src/interleave_manual_rnd.cpp:21:5 |
 +--------------+-----------+--------+-------+---------------------------------------+
 
 
@@ -122,13 +122,13 @@
 |    indvars_iv_next_fu_170_p2            | -   |        | indvars_iv_next | add | fabric | 0       |
 |    add_ln70_fu_214_p2                   | -   |        | add_ln70        | add | tadder | 0       |
 |    add_ln70_1_fu_220_p2                 | -   |        | add_ln70_1      | add | tadder | 0       |
-|    add_ln21_fu_187_p2                   | -   |        | add_ln21        | add | fabric | 0       |
+|    add_ln23_fu_187_p2                   | -   |        | add_ln23        | add | fabric | 0       |
 |  + interleave_manual_rnd_Pipeline_LOAD  | 0   |        |                 |     |        |         |
 |    i_fu_212_p2                          | -   |        | i               | add | fabric | 0       |
 |    add_ln10_fu_280_p2                   | -   |        | add_ln10        | add | fabric | 0       |
 |    add_ln10_1_fu_286_p2                 | -   |        | add_ln10_1      | add | fabric | 0       |
 |    add_ln10_2_fu_292_p2                 | -   |        | add_ln10_2      | add | fabric | 0       |
-|    add_ln14_1_fu_346_p2                 | -   |        | add_ln14_1      | add | fabric | 0       |
+|    add_ln16_1_fu_346_p2                 | -   |        | add_ln16_1      | add | fabric | 0       |
 +-----------------------------------------+-----+--------+-----------------+-----+--------+---------+
 
 
@@ -139,9 +139,9 @@
 | Name                    | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
 +-------------------------+------+------+--------+----------+---------+------+---------+
 | + interleave_manual_rnd | 658  | 0    |        |          |         |      |         |
-|   x_x0_V_U              | 200  | -    | pragma | x_x0_V   | ram_1p  | bram | 1       |
-|   x_x1_V_U              | 200  | -    | pragma | x_x1_V   | ram_1p  | bram | 1       |
-|   x_x2_V_U              | 200  | -    | pragma | x_x2_V   | ram_1p  | bram | 1       |
+|   x_x0_V_U              | 200  | -    | pragma | x_x0_V   | ram_t2p | bram | 1       |
+|   x_x1_V_U              | 200  | -    | pragma | x_x1_V   | ram_t2p | bram | 1       |
+|   x_x2_V_U              | 200  | -    | pragma | x_x2_V   | ram_t2p | bram | 1       |
 +-------------------------+------+------+--------+----------+---------+------+---------+
 
 
@@ -149,37 +149,36 @@
 == User Pragma Report
 ================================================================
 * Pragmas with Warnings
-+----------+----------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------------------+
-| Type     | Options                          | Location                                                           | Messages                                                                     |
-+----------+----------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------------------+
-| resource | variable=x0 core=RAM_1P_BRAM     | ../src/./interleave_mem_rnd.hpp:17 in interleave_mem_rnd<t, n>, x0 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=x1 core=RAM_1P_BRAM     | ../src/./interleave_mem_rnd.hpp:18 in interleave_mem_rnd<t, n>, x1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=x2 core=RAM_1P_BRAM     | ../src/./interleave_mem_rnd.hpp:19 in interleave_mem_rnd<t, n>, x2 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable = x0 core = RAM_1P_BRAM | ../src/./interleave_mem_seq.hpp:19 in interleave_mem_seq<t, n>     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable = x1 core = RAM_1P_BRAM | ../src/./interleave_mem_seq.hpp:20 in interleave_mem_seq<t, n>     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable = x2 core = RAM_1P_BRAM | ../src/./interleave_mem_seq.hpp:21 in interleave_mem_seq<t, n>     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=x_in core=RAM_1P_BRAM   | ../src/interleave.cpp:7 in interleave, x_in                        | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=y core=RAM_1P_BRAM      | ../src/interleave.cpp:8 in interleave, y                           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=x core=RAM_1P_BRAM      | ../src/interleave.cpp:11 in interleave, x                          | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=x_in core=RAM_1P_BRAM   | ../src/interleave_manual_rnd.cpp:6 in interleave_manual_rnd, x_in  | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-|          |                                  |                                                                    | The resource pragma (storage) on function argument, in 'call' is unsupported |
-| resource | variable=y core=RAM_1P_BRAM      | ../src/interleave_manual_rnd.cpp:7 in interleave_manual_rnd, y     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=x_in core=RAM_1P_BRAM   | ../src/interleave_manual_seq.cpp:6 in interleave_manual_seq, x_in  | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-| resource | variable=y core=RAM_1P_BRAM      | ../src/interleave_manual_seq.cpp:7 in interleave_manual_seq, y     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead   |
-+----------+----------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------------------+
++--------------+--------------------------------------+-------------------------------------------------------------------+------------------------------------------------------------------------------+
+| Type         | Options                              | Location                                                          | Messages                                                                     |
++--------------+--------------------------------------+-------------------------------------------------------------------+------------------------------------------------------------------------------+
+| bind_storage | variable=x_in type=RAM_T2P impl=AUTO | ../src/interleave_manual_rnd.cpp:7 in interleave_manual_rnd, x_in | The resource pragma (storage) on function argument, in 'call' is unsupported |
++--------------+--------------------------------------+-------------------------------------------------------------------+------------------------------------------------------------------------------+
 
 * Valid Pragma Syntax
-+-----------------+----------------------------------+--------------------------------------------------------------+
-| Type            | Options                          | Location                                                     |
-+-----------------+----------------------------------+--------------------------------------------------------------+
-| inline          |                                  | ../src/./read_mem_rnd.hpp:11 in read_rnd                     |
-| array_partition | variable=x cyclic factor=3 dim=1 | ../src/interleave.cpp:12 in interleave, x                    |
-| pipeline        | II=1                             | ../src/interleave.cpp:19 in interleave                       |
-| pipeline        | II=1                             | ../src/interleave.cpp:24 in interleave                       |
-| pipeline        | II=1                             | ../src/interleave_manual_rnd.cpp:15 in interleave_manual_rnd |
-| pipeline        | II=1                             | ../src/interleave_manual_rnd.cpp:20 in interleave_manual_rnd |
-| pipeline        | II=1                             | ../src/interleave_manual_seq.cpp:15 in interleave_manual_seq |
-| pipeline        | II=1                             | ../src/interleave_manual_seq.cpp:20 in interleave_manual_seq |
-+-----------------+----------------------------------+--------------------------------------------------------------+
++-----------------+--------------------------------------+--------------------------------------------------------------------+
+| Type            | Options                              | Location                                                           |
++-----------------+--------------------------------------+--------------------------------------------------------------------+
+| bind_storage    | variable=x0 type=RAM_T2P impl=AUTO   | ../src/./interleave_mem_rnd.hpp:20 in interleave_mem_rnd<t, n>, x0 |
+| bind_storage    | variable=x1 type=RAM_T2P impl=AUTO   | ../src/./interleave_mem_rnd.hpp:21 in interleave_mem_rnd<t, n>, x1 |
+| bind_storage    | variable=x2 type=RAM_T2P impl=AUTO   | ../src/./interleave_mem_rnd.hpp:22 in interleave_mem_rnd<t, n>, x2 |
+| bind_storage    | variable=x0 type=RAM_T2P impl=AUTO   | ../src/./interleave_mem_seq.hpp:22 in interleave_mem_seq<t, n>, x0 |
+| bind_storage    | variable=x1 type=RAM_T2P impl=AUTO   | ../src/./interleave_mem_seq.hpp:23 in interleave_mem_seq<t, n>, x1 |
+| bind_storage    | variable=x2 type=RAM_T2P impl=AUTO   | ../src/./interleave_mem_seq.hpp:24 in interleave_mem_seq<t, n>, x2 |
+| inline          |                                      | ../src/./read_mem_rnd.hpp:11 in read_rnd                           |
+| bind_storage    | variable=x_in type=RAM_T2P impl=AUTO | ../src/interleave.cpp:9 in interleave, x_in                        |
+| bind_storage    | variable=y type=RAM_T2P impl=AUTO    | ../src/interleave.cpp:10 in interleave, y                          |
+| bind_storage    | variable=x type=RAM_T2P impl=AUTO    | ../src/interleave.cpp:14 in interleave, x                          |
+| array_partition | variable=x cyclic factor=3 dim=1     | ../src/interleave.cpp:15 in interleave, x                          |
+| pipeline        | II=1                                 | ../src/interleave.cpp:22 in interleave                             |
+| pipeline        | II=1                                 | ../src/interleave.cpp:27 in interleave                             |
+| bind_storage    | variable=y type=RAM_T2P impl=AUTO    | ../src/interleave_manual_rnd.cpp:9 in interleave_manual_rnd, y     |
+| pipeline        | II=1                                 | ../src/interleave_manual_rnd.cpp:17 in interleave_manual_rnd       |
+| pipeline        | II=1                                 | ../src/interleave_manual_rnd.cpp:22 in interleave_manual_rnd       |
+| bind_storage    | variable=x_in type=RAM_T2P impl=AUTO | ../src/interleave_manual_seq.cpp:7 in interleave_manual_seq, x_in  |
+| bind_storage    | variable=y type=RAM_T2P impl=AUTO    | ../src/interleave_manual_seq.cpp:9 in interleave_manual_seq, y     |
+| pipeline        | II=1                                 | ../src/interleave_manual_seq.cpp:17 in interleave_manual_seq       |
+| pipeline        | II=1                                 | ../src/interleave_manual_seq.cpp:22 in interleave_manual_seq       |
++-----------------+--------------------------------------+--------------------------------------------------------------------+
 
 

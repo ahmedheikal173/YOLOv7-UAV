@@ -8,18 +8,18 @@
   "FunctionProtocol": "ap_ctrl_chain",
   "ResetStyle": "control",
   "Target": {
-    "Family": "virtexuplus",
-    "Device": "xcvu11p",
-    "Package": "-flga2577",
-    "Speed": "-1-e",
+    "Family": "zynquplus",
+    "Device": "xczu7ev",
+    "Package": "-ffvc1156",
+    "Speed": "-2-e",
     "Triple": "fpga64-xilinx-none"
   },
   "Args": {
     "din": {
       "index": "0",
       "direction": "in",
-      "srcType": "int",
-      "srcSize": "32",
+      "srcType": "ap_uint<8>",
+      "srcSize": "8",
       "hwRefs": [{
           "type": "register",
           "interface": "s_axi_control",
@@ -31,8 +31,8 @@
     "dout": {
       "index": "1",
       "direction": "out",
-      "srcType": "int*",
-      "srcSize": "32",
+      "srcType": "ap_uint<8>*",
+      "srcSize": "8",
       "hwRefs": [
         {
           "type": "interface",
@@ -61,13 +61,16 @@
   "HlsSolution": {
     "FlowTarget": "vitis",
     "ConfigTcl": [
-      "config_interface -m_axi_latency=64",
-      "config_interface -m_axi_alignment_byte_size=64",
-      "config_interface -m_axi_max_widen_bitwidth=512",
       "config_interface -default_interface=kernel",
+      "config_interface -m_axi_alignment_byte_size=64",
+      "config_interface -m_axi_latency=64",
+      "config_interface -m_axi_max_widen_bitwidth=512",
       "config_rtl -register_reset_num=3"
     ],
-    "DirectiveTcl": ["set_directive_top circular_shift_reg -name circular_shift_reg"],
+    "DirectiveTcl": [
+      "set_directive_top circular_shift_reg -name circular_shift_reg",
+      "set_directive_top circular_shift_reg -name circular_shift_reg"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "circular_shift_reg"
@@ -77,8 +80,8 @@
     "ClockPeriod": "10",
     "Uncertainty": "2.7",
     "IsCombinational": "0",
-    "II": "90",
-    "Latency": "89"
+    "II": "76",
+    "Latency": "75"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -100,7 +103,8 @@
       "impl\/vhdl\/circular_shift_reg_control_s_axi.vhd",
       "impl\/vhdl\/circular_shift_reg_flow_control_loop_pipe_sequential_init.vhd",
       "impl\/vhdl\/circular_shift_reg_gmem_m_axi.vhd",
-      "impl\/vhdl\/circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W.vhd",
+      "impl\/vhdl\/circular_shift_reg_regs_mem_V_RAM_1P_BRAM_1R1W.vhd",
+      "impl\/vhdl\/circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W.vhd",
       "impl\/vhdl\/circular_shift_reg.vhd"
     ],
     "Verilog": [
@@ -108,8 +112,10 @@
       "impl\/verilog\/circular_shift_reg_control_s_axi.v",
       "impl\/verilog\/circular_shift_reg_flow_control_loop_pipe_sequential_init.v",
       "impl\/verilog\/circular_shift_reg_gmem_m_axi.v",
-      "impl\/verilog\/circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W.dat",
-      "impl\/verilog\/circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W.v",
+      "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_1P_BRAM_1R1W.dat",
+      "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_1P_BRAM_1R1W.v",
+      "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W.dat",
+      "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W.v",
       "impl\/verilog\/circular_shift_reg.v"
     ],
     "SwDriver": [
@@ -360,13 +366,22 @@
           "access": "W",
           "description": "Data signal of din",
           "range": "32",
-          "fields": [{
+          "fields": [
+            {
               "offset": "0",
-              "width": "32",
+              "width": "8",
               "name": "din",
               "access": "W",
-              "description": "Bit 31 to 0 of din"
-            }]
+              "description": "Bit 7 to 0 of din"
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
         },
         {
           "offset": "0x18",
@@ -446,7 +461,7 @@
       "type": "axi4full",
       "busTypeName": "aximm",
       "mode": "master",
-      "dataWidth": "512",
+      "dataWidth": "128",
       "addrWidth": "64",
       "portPrefix": "m_axi_gmem_",
       "paramPrefix": "C_M_AXI_GMEM_",
@@ -525,8 +540,8 @@
         },
         {
           "constraint_type": "bitwidth",
-          "orig_bitwidth": "32",
-          "final_bitwidth": "512",
+          "orig_bitwidth": "8",
+          "final_bitwidth": "128",
           "argName": "dout"
         }
       ]
@@ -682,11 +697,11 @@
     },
     "m_axi_gmem_WDATA": {
       "dir": "out",
-      "width": "512"
+      "width": "128"
     },
     "m_axi_gmem_WSTRB": {
       "dir": "out",
-      "width": "64"
+      "width": "16"
     },
     "m_axi_gmem_WLAST": {
       "dir": "out",
@@ -766,7 +781,7 @@
     },
     "m_axi_gmem_RDATA": {
       "dir": "in",
-      "width": "512"
+      "width": "128"
     },
     "m_axi_gmem_RLAST": {
       "dir": "in",
@@ -810,75 +825,20 @@
     }
   },
   "ModuleInfo": {
-    "Hierarchy": {
-      "ModuleName": "circular_shift_reg",
-      "Instances": [{
-          "ModuleName": "circular_shift_reg_Pipeline_WRITE",
-          "InstanceName": "grp_circular_shift_reg_Pipeline_WRITE_fu_132"
-        }]
-    },
-    "Info": {
-      "circular_shift_reg_Pipeline_WRITE": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "0",
-        "isPipelined": "1",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "circular_shift_reg": {
+    "Hierarchy": {"ModuleName": "circular_shift_reg"},
+    "Info": {"circular_shift_reg": {
         "FunctionProtocol": "ap_ctrl_chain",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
-      }
-    },
-    "Metrics": {
-      "circular_shift_reg_Pipeline_WRITE": {
+      }},
+    "Metrics": {"circular_shift_reg": {
         "Latency": {
-          "LatencyBest": "18",
-          "LatencyAvg": "18",
-          "LatencyWorst": "18",
-          "PipelineII": "18",
-          "PipelineDepth": "",
-          "PipelineType": "no"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.70",
-          "Estimate": "2.106"
-        },
-        "Loops": [{
-            "Name": "WRITE",
-            "TripCount": "16",
-            "Latency": "16",
-            "PipelineII": "1",
-            "PipelineDepth": "2"
-          }],
-        "Area": {
-          "FF": "520",
-          "AVAIL_FF": "2592000",
-          "UTIL_FF": "~0",
-          "LUT": "81",
-          "AVAIL_LUT": "1296000",
-          "UTIL_LUT": "~0",
-          "BRAM_18K": "0",
-          "AVAIL_BRAM": "4032",
-          "UTIL_BRAM": "0",
-          "DSP": "0",
-          "AVAIL_DSP": "9216",
-          "UTIL_DSP": "0",
-          "URAM": "0",
-          "AVAIL_URAM": "960",
-          "UTIL_URAM": "0"
-        }
-      },
-      "circular_shift_reg": {
-        "Latency": {
-          "LatencyBest": "89",
-          "LatencyAvg": "89",
-          "LatencyWorst": "89",
-          "PipelineII": "90",
+          "LatencyBest": "75",
+          "LatencyAvg": "75",
+          "LatencyWorst": "75",
+          "PipelineII": "76",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
@@ -888,29 +848,28 @@
           "Estimate": "7.300"
         },
         "Area": {
-          "BRAM_18K": "59",
-          "AVAIL_BRAM": "4032",
-          "UTIL_BRAM": "1",
-          "FF": "2251",
-          "AVAIL_FF": "2592000",
+          "BRAM_18K": "17",
+          "AVAIL_BRAM": "624",
+          "UTIL_BRAM": "2",
+          "FF": "978",
+          "AVAIL_FF": "460800",
           "UTIL_FF": "~0",
-          "LUT": "2375",
-          "AVAIL_LUT": "1296000",
+          "LUT": "1764",
+          "AVAIL_LUT": "230400",
           "UTIL_LUT": "~0",
           "URAM": "0",
-          "AVAIL_URAM": "960",
+          "AVAIL_URAM": "96",
           "UTIL_URAM": "0",
           "DSP": "0",
-          "AVAIL_DSP": "9216",
+          "AVAIL_DSP": "1728",
           "UTIL_DSP": "0"
         }
-      }
-    }
+      }}
   },
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-03 14:48:30 +0300",
+    "Time": "2024-06-05 00:10:08 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

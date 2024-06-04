@@ -1,5 +1,5 @@
 
-set TopModule "word_width_manual"
+set TopModule "word_width"
 set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 3
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix word_width_manual_
+set RtlSubPrefix word_width_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}

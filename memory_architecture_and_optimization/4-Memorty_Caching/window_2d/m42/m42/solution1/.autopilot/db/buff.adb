@@ -70,7 +70,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1397508191</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -352,7 +352,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1633836900</coreId>
+              <coreId>1013281633</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -709,10 +709,10 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>br_ln40</name>
+              <name>br_ln41</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>40</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -728,7 +728,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>40</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -824,10 +824,10 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>br_ln40</name>
+              <name>br_ln41</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>40</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -843,7 +843,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>40</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -1042,10 +1042,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>br_ln41</name>
+              <name>br_ln42</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>41</lineNumber>
+              <lineNumber>42</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1061,7 +1061,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>41</second>
+                      <second>42</second>
                     </item>
                   </second>
                 </item>
@@ -1132,7 +1132,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1013281633</coreId>
+              <coreId>1633836900</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1217,10 +1217,10 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>buff1_write_data_V_write_ln42</name>
+              <name>buff1_write_data_V_write_ln43</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1236,7 +1236,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -1275,10 +1275,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>br_ln50</name>
+              <name>br_ln51</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>50</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1294,7 +1294,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>50</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -1445,10 +1445,10 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>buff1_write_data_V_write_ln45</name>
+              <name>buff1_write_data_V_write_ln46</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>45</lineNumber>
+              <lineNumber>46</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1464,7 +1464,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>45</second>
+                      <second>46</second>
                     </item>
                   </second>
                 </item>
@@ -1506,7 +1506,7 @@
               <name>lshr_ln</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
+              <lineNumber>56</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1522,7 +1522,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>55</second>
+                      <second>56</second>
                     </item>
                   </second>
                 </item>
@@ -1562,10 +1562,10 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>zext_ln55</name>
+              <name>zext_ln56</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
+              <lineNumber>56</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1581,13 +1581,13 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>55</second>
+                      <second>56</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln55_fu_407_p1</rtlName>
+              <rtlName>zext_ln56_fu_407_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -1621,7 +1621,7 @@
               <name>buff1_ram_V_addr</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
+              <lineNumber>56</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1637,7 +1637,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>55</second>
+                      <second>56</second>
                     </item>
                   </second>
                 </item>
@@ -1676,64 +1676,7 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>buff1_ram_V_addr_write_ln55</name>
-              <fileName>../src/./singleport_ram.hpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
-              <contextFuncName>exec</contextFuncName>
-              <contextNormFuncName>exec</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../src/./singleport_ram.hpp</first>
-                        <second>exec</second>
-                      </first>
-                      <second>55</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control>auto</control>
-              <opType>ram_1p</opType>
-              <implIndex>bram</implIndex>
-              <coreName>RAM_1P_BRAM</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>90</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>226</item>
-            <item>227</item>
-          </oprand_edges>
-          <opcode>store</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.29</m_delay>
-          <m_topoIndex>25</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_33">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>52</id>
-              <name>br_ln56</name>
+              <name>buff1_ram_V_addr_write_ln56</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>56</lineNumber>
@@ -1759,13 +1702,70 @@
               </inlineStackInfo>
               <originalName/>
               <rtlName/>
+              <control>auto</control>
+              <opType>ram_1p</opType>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>88</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>226</item>
+            <item>227</item>
+          </oprand_edges>
+          <opcode>store</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.29</m_delay>
+          <m_topoIndex>25</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_33">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>52</id>
+              <name>br_ln57</name>
+              <fileName>../src/./singleport_ram.hpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>57</lineNumber>
+              <contextFuncName>exec</contextFuncName>
+              <contextNormFuncName>exec</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>../src/./singleport_ram.hpp</first>
+                        <second>exec</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1970236793</coreId>
+              <coreId>1013281633</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1807,7 +1807,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>795766637</coreId>
+              <coreId>1601134448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1866,7 +1866,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1869635878</coreId>
+              <coreId>1601134448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1893,10 +1893,10 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>br_ln50</name>
+              <name>br_ln51</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>50</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -1912,7 +1912,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>50</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -1925,7 +1925,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1768843590</coreId>
+              <coreId>1834970975</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1969,7 +1969,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1919950848</coreId>
+              <coreId>997420912</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2028,7 +2028,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>539109688</coreId>
+              <coreId>1869375856</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2073,7 +2073,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>997420912</coreId>
+              <coreId>875443744</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2103,7 +2103,7 @@
               <name>lshr_ln1</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -2119,7 +2119,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -2132,7 +2132,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1713384497</coreId>
+              <coreId>1869375856</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -2159,10 +2159,10 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>zext_ln51</name>
+              <name>zext_ln52</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -2178,20 +2178,20 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln51_fu_412_p1</rtlName>
+              <rtlName>zext_ln52_fu_412_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>795766637</coreId>
+              <coreId>1834970975</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2218,7 +2218,7 @@
               <name>buff1_ram_V_addr_1</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -2234,7 +2234,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -2247,7 +2247,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508187</coreId>
+              <coreId>1953459305</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -2276,7 +2276,7 @@
               <name>p_Val2_2</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -2292,7 +2292,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -2301,11 +2301,11 @@
               <rtlName/>
               <control>auto</control>
               <opType>ram_1p</opType>
-              <implIndex>bram</implIndex>
-              <coreName>RAM_1P_BRAM</coreName>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>90</coreId>
+              <coreId>88</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -2329,10 +2329,10 @@
             <Obj>
               <type>0</type>
               <id>65</id>
-              <name>buff1_read_data_V_write_ln51</name>
+              <name>buff1_read_data_V_write_ln52</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -2348,7 +2348,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -2361,7 +2361,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>573649713</coreId>
+              <coreId>1768976244</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2418,7 +2418,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1935762015</coreId>
+              <coreId>941632568</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2442,10 +2442,10 @@
             <Obj>
               <type>0</type>
               <id>67</id>
-              <name>br_ln61</name>
+              <name>br_ln62</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -2461,7 +2461,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>61</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -2474,7 +2474,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1848535907</coreId>
+              <coreId>1633836900</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2516,7 +2516,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1869182069</coreId>
+              <coreId>1013281633</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2575,7 +2575,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1631286127</coreId>
+              <coreId>1600415096</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2620,7 +2620,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1600415096</coreId>
+              <coreId>1953459305</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2679,7 +2679,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1919950882</coreId>
+              <coreId>1797268061</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -2735,7 +2735,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2020173413</coreId>
+              <coreId>1563703346</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2780,7 +2780,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1601134448</coreId>
+              <coreId>2020173407</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -2822,7 +2822,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>845117295</coreId>
+              <coreId>1869375856</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2881,7 +2881,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>640688172</coreId>
+              <coreId>1702063201</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2926,7 +2926,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>691614769</coreId>
+              <coreId>1633836900</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2985,7 +2985,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1885415031</coreId>
+              <coreId>1013281633</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3101,7 +3101,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953060399</coreId>
+              <coreId>1633836900</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3159,7 +3159,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1601200442</coreId>
+              <coreId>941632568</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3201,7 +3201,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>640236400</coreId>
+              <coreId>1633836900</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3259,7 +3259,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>570451809</coreId>
+              <coreId>1601134448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3303,7 +3303,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1668444975</coreId>
+              <coreId>1702063201</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3359,7 +3359,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>976302906</coreId>
+              <coreId>1918857313</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -3383,10 +3383,10 @@
             <Obj>
               <type>0</type>
               <id>89</id>
-              <name>br_ln40</name>
+              <name>br_ln41</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>40</lineNumber>
+              <lineNumber>41</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -3402,7 +3402,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>40</second>
+                      <second>41</second>
                     </item>
                   </second>
                 </item>
@@ -3415,7 +3415,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1936290921</coreId>
+              <coreId>1650422894</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3473,7 +3473,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>791817777</coreId>
+              <coreId>1663984690</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3529,7 +3529,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>960116528</coreId>
+              <coreId>1634082860</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -3587,7 +3587,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953392991</coreId>
+              <coreId>1601200442</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3646,7 +3646,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>6107443</coreId>
+              <coreId>1868767266</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -3730,10 +3730,10 @@
             <Obj>
               <type>0</type>
               <id>96</id>
-              <name>buff0_write_data_V_write_ln42</name>
+              <name>buff0_write_data_V_write_ln43</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -3749,7 +3749,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -3762,7 +3762,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1834970975</coreId>
+              <coreId>858860852</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3788,10 +3788,10 @@
             <Obj>
               <type>0</type>
               <id>97</id>
-              <name>br_ln47</name>
+              <name>br_ln48</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>47</lineNumber>
+              <lineNumber>48</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -3807,7 +3807,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>47</second>
+                      <second>48</second>
                     </item>
                   </second>
                 </item>
@@ -3820,7 +3820,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>744846188</coreId>
+              <coreId>1814441330</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3862,7 +3862,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>741424229</coreId>
+              <coreId>572669294</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -3889,10 +3889,10 @@
             <Obj>
               <type>0</type>
               <id>100</id>
-              <name>br_ln50</name>
+              <name>br_ln51</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>50</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -3908,7 +3908,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>50</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -3921,7 +3921,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>825368659</coreId>
+              <coreId>1226980729</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3947,10 +3947,10 @@
             <Obj>
               <type>0</type>
               <id>102</id>
-              <name>lshr_ln51_1</name>
+              <name>lshr_ln52_1</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -3966,7 +3966,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -3979,7 +3979,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702035557</coreId>
+              <coreId>1702129263</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -4006,10 +4006,10 @@
             <Obj>
               <type>0</type>
               <id>103</id>
-              <name>zext_ln51_1</name>
+              <name>zext_ln52_1</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4025,20 +4025,20 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln51_1_fu_511_p1</rtlName>
+              <rtlName>zext_ln52_1_fu_511_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1767862369</coreId>
+              <coreId>1881176417</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -4065,7 +4065,7 @@
               <name>buff0_ram_V_addr</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4081,7 +4081,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -4094,7 +4094,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1935762015</coreId>
+              <coreId>1701867322</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -4123,7 +4123,7 @@
               <name>buff0_ram_V_load</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4139,7 +4139,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -4148,11 +4148,11 @@
               <rtlName/>
               <control>auto</control>
               <opType>ram_1p</opType>
-              <implIndex>bram</implIndex>
-              <coreName>RAM_1P_BRAM</coreName>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>90</coreId>
+              <coreId>88</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -4176,10 +4176,10 @@
             <Obj>
               <type>0</type>
               <id>106</id>
-              <name>buff0_read_data_V_write_ln51</name>
+              <name>buff0_read_data_V_write_ln52</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>51</lineNumber>
+              <lineNumber>52</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4195,7 +4195,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>51</second>
+                      <second>52</second>
                     </item>
                   </second>
                 </item>
@@ -4208,7 +4208,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1713384504</coreId>
+              <coreId>539111470</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -4265,7 +4265,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>539568244</coreId>
+              <coreId>1601399156</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4289,10 +4289,10 @@
             <Obj>
               <type>0</type>
               <id>108</id>
-              <name>br_ln61</name>
+              <name>br_ln62</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>62</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4308,7 +4308,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>61</second>
+                      <second>62</second>
                     </item>
                   </second>
                 </item>
@@ -4321,7 +4321,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1734439968</coreId>
+              <coreId>1684367475</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -4345,10 +4345,10 @@
             <Obj>
               <type>0</type>
               <id>110</id>
-              <name>br_ln54</name>
+              <name>br_ln55</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>54</lineNumber>
+              <lineNumber>55</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4364,7 +4364,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>54</second>
+                      <second>55</second>
                     </item>
                   </second>
                 </item>
@@ -4377,7 +4377,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>977167733</coreId>
+              <coreId>1650422894</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -4403,10 +4403,10 @@
             <Obj>
               <type>0</type>
               <id>112</id>
-              <name>lshr_ln55_1</name>
+              <name>lshr_ln56_1</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
+              <lineNumber>56</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4422,7 +4422,7 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>55</second>
+                      <second>56</second>
                     </item>
                   </second>
                 </item>
@@ -4435,7 +4435,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1650422894</coreId>
+              <coreId>1952917093</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -4462,10 +4462,10 @@
             <Obj>
               <type>0</type>
               <id>113</id>
-              <name>zext_ln55_1</name>
+              <name>zext_ln56_2</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
+              <lineNumber>56</lineNumber>
               <contextFuncName>exec</contextFuncName>
               <contextNormFuncName>exec</contextNormFuncName>
               <inlineStackInfo>
@@ -4481,20 +4481,20 @@
                         <first>../src/./singleport_ram.hpp</first>
                         <second>exec</second>
                       </first>
-                      <second>55</second>
+                      <second>56</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln55_1_fu_516_p1</rtlName>
+              <rtlName>zext_ln56_2_fu_516_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1769299824</coreId>
+              <coreId>1601465961</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -4519,121 +4519,6 @@
               <type>0</type>
               <id>114</id>
               <name>buff0_ram_V_addr_1</name>
-              <fileName>../src/./singleport_ram.hpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
-              <contextFuncName>exec</contextFuncName>
-              <contextNormFuncName>exec</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../src/./singleport_ram.hpp</first>
-                        <second>exec</second>
-                      </first>
-                      <second>55</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>1953852527</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>9</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>328</item>
-            <item>329</item>
-            <item>330</item>
-          </oprand_edges>
-          <opcode>getelementptr</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>78</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_85">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>115</id>
-              <name>buff0_ram_V_addr_1_write_ln55</name>
-              <fileName>../src/./singleport_ram.hpp</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>55</lineNumber>
-              <contextFuncName>exec</contextFuncName>
-              <contextNormFuncName>exec</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>../src/./singleport_ram.hpp</first>
-                        <second>exec</second>
-                      </first>
-                      <second>55</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control>auto</control>
-              <opType>ram_1p</opType>
-              <implIndex>bram</implIndex>
-              <coreName>RAM_1P_BRAM</coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>90</coreId>
-              <rtlModuleName/>
-            </Obj>
-            <bitwidth>0</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>331</item>
-            <item>332</item>
-          </oprand_edges>
-          <opcode>store</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.29</m_delay>
-          <m_topoIndex>79</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_86">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>116</id>
-              <name>br_ln56</name>
               <fileName>../src/./singleport_ram.hpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>56</lineNumber>
@@ -4665,7 +4550,122 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852795252</coreId>
+              <coreId>1629890919</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>9</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>328</item>
+            <item>329</item>
+            <item>330</item>
+          </oprand_edges>
+          <opcode>getelementptr</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>78</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_85">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>115</id>
+              <name>buff0_ram_V_addr_1_write_ln56</name>
+              <fileName>../src/./singleport_ram.hpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>56</lineNumber>
+              <contextFuncName>exec</contextFuncName>
+              <contextNormFuncName>exec</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>../src/./singleport_ram.hpp</first>
+                        <second>exec</second>
+                      </first>
+                      <second>56</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control>auto</control>
+              <opType>ram_1p</opType>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>88</coreId>
+              <rtlModuleName/>
+            </Obj>
+            <bitwidth>0</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>331</item>
+            <item>332</item>
+          </oprand_edges>
+          <opcode>store</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>1.29</m_delay>
+          <m_topoIndex>79</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_86">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>116</id>
+              <name>br_ln57</name>
+              <fileName>../src/./singleport_ram.hpp</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>57</lineNumber>
+              <contextFuncName>exec</contextFuncName>
+              <contextNormFuncName>exec</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>../src/./singleport_ram.hpp</first>
+                        <second>exec</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>574453865</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -4721,7 +4721,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1668444975</coreId>
+              <coreId>1397508187</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -4777,7 +4777,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>909195828</coreId>
+              <coreId>997420912</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4822,7 +4822,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>892549744</coreId>
+              <coreId>1952917093</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -4878,7 +4878,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>691156019</coreId>
+              <coreId>825372722</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4994,7 +4994,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1650418789</coreId>
+              <coreId>1279795773</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5168,7 +5168,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1850286592</coreId>
+              <coreId>644183410</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -5225,7 +5225,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1948254257</coreId>
+              <coreId>1769235310</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -5282,7 +5282,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>543649385</coreId>
+              <coreId>1763720051</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -5339,7 +5339,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>875639328</coreId>
+              <coreId>1769170276</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5377,12 +5377,12 @@
               <rtlName>buff1_ram_V_U</rtlName>
               <control>pragma</control>
               <opType>ram_1p</opType>
-              <implIndex>bram</implIndex>
-              <coreName>RAM_1P_BRAM</coreName>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
               <isStorage>1</isStorage>
               <storageDepth>320</storageDepth>
-              <coreId>90</coreId>
-              <rtlModuleName>window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W</rtlModuleName>
+              <coreId>88</coreId>
+              <rtlModuleName>window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -5418,12 +5418,12 @@
               <rtlName>buff0_ram_V_U</rtlName>
               <control>pragma</control>
               <opType>ram_1p</opType>
-              <implIndex>bram</implIndex>
-              <coreName>RAM_1P_BRAM</coreName>
+              <implIndex>auto</implIndex>
+              <coreName>RAM_1P</coreName>
               <isStorage>1</isStorage>
               <storageDepth>320</storageDepth>
-              <coreId>90</coreId>
-              <rtlModuleName>window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W</rtlModuleName>
+              <coreId>88</coreId>
+              <rtlModuleName>window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -5467,7 +5467,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1397508191</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -5529,7 +5529,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508191</coreId>
+              <coreId>1953391988</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -5560,7 +5560,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508191</coreId>
+              <coreId>1953391988</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5591,7 +5591,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1043276322</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5622,7 +5622,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508191</coreId>
+              <coreId>1769235310</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5653,7 +5653,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508191</coreId>
+              <coreId>575620686</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5684,7 +5684,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508191</coreId>
+              <coreId>1701978146</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -5715,7 +5715,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508191</coreId>
+              <coreId>574454117</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>24</bitwidth>
@@ -5784,7 +5784,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -5816,7 +5816,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1601399156</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -5851,7 +5851,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>774976048</coreId>
+            <coreId>1601399156</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -5882,7 +5882,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -5914,7 +5914,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>774976048</coreId>
+            <coreId>1601399156</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6053,7 +6053,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>1601399156</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6093,7 +6093,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6167,7 +6167,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1601399156</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6199,7 +6199,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1601399156</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6231,7 +6231,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>774976048</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6268,7 +6268,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1601399156</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6337,7 +6337,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>774976048</coreId>
+            <coreId>1601399156</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6368,7 +6368,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1601399156</coreId>
+            <coreId>774976048</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -6403,7 +6403,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1601399156</coreId>
+            <coreId>0</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -9233,7 +9233,7 @@
         <item>
           <first>buff0_ram_V_U</first>
           <second>
-            <count>7</count>
+            <count>8</count>
             <item_version>0</item_version>
             <item>
               <first>(0Words)</first>
@@ -9261,6 +9261,10 @@
             </item>
             <item>
               <first>LUT</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>URAM</first>
               <second>0</second>
             </item>
           </second>
@@ -9268,7 +9272,7 @@
         <item>
           <first>buff1_ram_V_U</first>
           <second>
-            <count>7</count>
+            <count>8</count>
             <item_version>0</item_version>
             <item>
               <first>(0Words)</first>
@@ -9296,6 +9300,10 @@
             </item>
             <item>
               <first>LUT</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>URAM</first>
               <second>0</second>
             </item>
           </second>
@@ -12377,7 +12385,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln51_1_fu_511</first>
+        <first>zext_ln52_1_fu_511</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12385,7 +12393,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln51_fu_412</first>
+        <first>zext_ln52_fu_412</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12393,7 +12401,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln55_1_fu_516</first>
+        <first>zext_ln56_2_fu_516</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12401,7 +12409,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln55_fu_407</first>
+        <first>zext_ln56_fu_407</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12513,7 +12521,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln42_store_fu_382</first>
+        <first>store_ln43_store_fu_382</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12521,7 +12529,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln42_store_fu_505</first>
+        <first>store_ln43_store_fu_505</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12529,7 +12537,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln45_store_fu_401</first>
+        <first>store_ln46_store_fu_401</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12537,7 +12545,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln51_store_fu_429</first>
+        <first>store_ln52_store_fu_429</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12545,7 +12553,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln51_store_fu_533</first>
+        <first>store_ln52_store_fu_533</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13438,14 +13446,14 @@
         <first>51</first>
         <second>
           <first>27</first>
-          <second>18</second>
+          <second>17</second>
         </second>
       </item>
       <item>
         <first>64</first>
         <second>
           <first>27</first>
-          <second>18</second>
+          <second>17</second>
         </second>
       </item>
       <item>
@@ -13466,14 +13474,14 @@
         <first>105</first>
         <second>
           <first>27</first>
-          <second>18</second>
+          <second>17</second>
         </second>
       </item>
       <item>
         <first>115</first>
         <second>
           <first>27</first>
-          <second>18</second>
+          <second>17</second>
         </second>
       </item>
       <item>

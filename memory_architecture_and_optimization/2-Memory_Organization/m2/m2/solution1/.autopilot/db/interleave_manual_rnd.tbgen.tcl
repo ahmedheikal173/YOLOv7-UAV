@@ -224,7 +224,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln19", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln21", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_x0_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "x_x1_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "x_x2_V", "Type" : "Memory", "Direction" : "I"}],
@@ -250,7 +250,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "gmem_blk_n_R", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln14", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln16", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_x0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "x_x1_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "x_x2_V", "Type" : "Memory", "Direction" : "O"}],
@@ -275,13 +275,13 @@ set ArgLastReadFirstWriteLatency {
 		ap_local_deadlock {Type O LastRead -1 FirstWrite -1}}
 	interleave_manual_rnd_Pipeline_WRITE {
 		gmem {Type O LastRead -1 FirstWrite 3}
-		sext_ln19 {Type I LastRead 0 FirstWrite -1}
+		sext_ln21 {Type I LastRead 0 FirstWrite -1}
 		x_x0_V {Type I LastRead 1 FirstWrite -1}
 		x_x1_V {Type I LastRead 1 FirstWrite -1}
 		x_x2_V {Type I LastRead 1 FirstWrite -1}}
 	interleave_manual_rnd_Pipeline_LOAD {
 		gmem {Type I LastRead 1 FirstWrite -1}
-		sext_ln14 {Type I LastRead 0 FirstWrite -1}
+		sext_ln16 {Type I LastRead 0 FirstWrite -1}
 		x_x0_V {Type O LastRead -1 FirstWrite 2}
 		x_x1_V {Type O LastRead -1 FirstWrite 2}
 		x_x2_V {Type O LastRead -1 FirstWrite 2}}}

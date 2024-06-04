@@ -5691,11 +5691,14 @@ void interleave(
   ap_int<8> x_in[1228800],
   ap_int<8> y[1228800 / 3],
   bool load) {
-#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
+
+
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
 
  static ap_int<8> x[1228800];
-#pragma HLS RESOURCE variable=x core=RAM_1P_BRAM
+
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=AUTO
 #pragma HLS ARRAY_PARTITION variable=x cyclic factor=3 dim=1
 
  int idx = 0;

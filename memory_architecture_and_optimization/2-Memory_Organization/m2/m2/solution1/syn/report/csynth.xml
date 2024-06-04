@@ -827,14 +827,14 @@
                     <ModuleName>interleave_manual_rnd_Pipeline_WRITE</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>121</ID>
-                    <BindInstances>indvars_iv_next_fu_170_p2 add_ln70_fu_214_p2 add_ln70_1_fu_220_p2 add_ln21_fu_187_p2</BindInstances>
+                    <BindInstances>indvars_iv_next_fu_170_p2 add_ln70_fu_214_p2 add_ln70_1_fu_220_p2 add_ln23_fu_187_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_interleave_manual_rnd_Pipeline_LOAD_fu_134</InstName>
                     <ModuleName>interleave_manual_rnd_Pipeline_LOAD</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>134</ID>
-                    <BindInstances>i_fu_212_p2 add_ln10_fu_280_p2 add_ln10_1_fu_286_p2 add_ln10_2_fu_292_p2 add_ln14_1_fu_346_p2</BindInstances>
+                    <BindInstances>i_fu_212_p2 add_ln10_fu_280_p2 add_ln10_1_fu_286_p2 add_ln10_2_fu_292_p2 add_ln16_1_fu_346_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>x_x0_V_U x_x1_V_U x_x2_V_U</BindInstances>
@@ -898,7 +898,7 @@
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="indvars_iv_next_fu_170_p2" SOURCE="" URAM="0" VARIABLE="indvars_iv_next"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_214_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_220_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_fu_187_p2" SOURCE="../src/interleave_manual_rnd.cpp:21" URAM="0" VARIABLE="add_ln21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_187_p2" SOURCE="../src/interleave_manual_rnd.cpp:23" URAM="0" VARIABLE="add_ln23"/>
             </BindNodes>
         </Module>
         <Module>
@@ -955,11 +955,11 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_212_p2" SOURCE="../src/interleave_manual_rnd.cpp:14" URAM="0" VARIABLE="i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_212_p2" SOURCE="../src/interleave_manual_rnd.cpp:16" URAM="0" VARIABLE="i"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln10_fu_280_p2" SOURCE="../src/./write_mem_rnd.hpp:10" URAM="0" VARIABLE="add_ln10"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln10_1_fu_286_p2" SOURCE="../src/./write_mem_rnd.hpp:10" URAM="0" VARIABLE="add_ln10_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln10_2_fu_292_p2" SOURCE="../src/./write_mem_rnd.hpp:10" URAM="0" VARIABLE="add_ln10_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_1_fu_346_p2" SOURCE="../src/interleave_manual_rnd.cpp:14" URAM="0" VARIABLE="add_ln14_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln16_1_fu_346_p2" SOURCE="../src/interleave_manual_rnd.cpp:16" URAM="0" VARIABLE="add_ln16_1"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1001,9 +1001,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x0_V_U" SOURCE="../src/interleave_manual_rnd.cpp:9" URAM="0" VARIABLE="x_x0_V"/>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x1_V_U" SOURCE="../src/interleave_manual_rnd.cpp:9" URAM="0" VARIABLE="x_x1_V"/>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x2_V_U" SOURCE="../src/interleave_manual_rnd.cpp:9" URAM="0" VARIABLE="x_x2_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x0_V_U" SOURCE="../src/interleave_manual_rnd.cpp:11" URAM="0" VARIABLE="x_x0_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x1_V_U" SOURCE="../src/interleave_manual_rnd.cpp:11" URAM="0" VARIABLE="x_x1_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x2_V_U" SOURCE="../src/interleave_manual_rnd.cpp:11" URAM="0" VARIABLE="x_x2_V"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -1292,61 +1292,36 @@
             <item name="Inferred Burst Summary">
                 <table>
                     <keys size="5">HW Interface, Direction, Length, Width, Location</keys>
-                    <column name="m_axi_gmem">read, 19200, 512, ../src/interleave_manual_rnd.cpp:14:5</column>
-                    <column name="m_axi_gmem">write, 6400, 512, ../src/interleave_manual_rnd.cpp:19:5</column>
+                    <column name="m_axi_gmem">read, 19200, 512, ../src/interleave_manual_rnd.cpp:16:5</column>
+                    <column name="m_axi_gmem">write, 6400, 512, ../src/interleave_manual_rnd.cpp:21:5</column>
                 </table>
             </item>
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="resource" location="../src/./interleave_mem_rnd.hpp:17" status="warning" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/./interleave_mem_rnd.hpp:18" status="warning" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/./interleave_mem_rnd.hpp:19" status="warning" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/./interleave_mem_seq.hpp:19" status="warning" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="" isDirective="0" options="variable = x0 core = RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/./interleave_mem_seq.hpp:20" status="warning" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="" isDirective="0" options="variable = x1 core = RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/./interleave_mem_seq.hpp:21" status="warning" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="" isDirective="0" options="variable = x2 core = RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
+        <Pragma type="bind_storage" location="../src/./interleave_mem_rnd.hpp:20" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/./interleave_mem_rnd.hpp:21" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/./interleave_mem_rnd.hpp:22" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/./interleave_mem_seq.hpp:22" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/./interleave_mem_seq.hpp:23" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/./interleave_mem_seq.hpp:24" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 type=RAM_T2P impl=AUTO"/>
         <Pragma type="inline" location="../src/./read_mem_rnd.hpp:11" status="valid" parentFunction="read_rnd" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../src/interleave.cpp:7" status="warning" parentFunction="interleave" variable="x_in" isDirective="0" options="variable=x_in core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/interleave.cpp:8" status="warning" parentFunction="interleave" variable="y" isDirective="0" options="variable=y core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/interleave.cpp:11" status="warning" parentFunction="interleave" variable="x" isDirective="0" options="variable=x core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="array_partition" location="../src/interleave.cpp:12" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x cyclic factor=3 dim=1"/>
-        <Pragma type="pipeline" location="../src/interleave.cpp:19" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/interleave.cpp:24" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="resource" location="../src/interleave_manual_rnd.cpp:6" status="warning" parentFunction="interleave_manual_rnd" variable="x_in" isDirective="0" options="variable=x_in core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+        <Pragma type="bind_storage" location="../src/interleave.cpp:9" status="valid" parentFunction="interleave" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/interleave.cpp:10" status="valid" parentFunction="interleave" variable="y" isDirective="0" options="variable=y type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/interleave.cpp:14" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=AUTO"/>
+        <Pragma type="array_partition" location="../src/interleave.cpp:15" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x cyclic factor=3 dim=1"/>
+        <Pragma type="pipeline" location="../src/interleave.cpp:22" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/interleave.cpp:27" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../src/interleave_manual_rnd.cpp:7" status="warning" parentFunction="interleave_manual_rnd" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=AUTO">
             <Msg msg_id="214-185" msg_severity="WARNING" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported"/>
         </Pragma>
-        <Pragma type="resource" location="../src/interleave_manual_rnd.cpp:7" status="warning" parentFunction="interleave_manual_rnd" variable="y" isDirective="0" options="variable=y core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:15" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:20" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="resource" location="../src/interleave_manual_seq.cpp:6" status="warning" parentFunction="interleave_manual_seq" variable="x_in" isDirective="0" options="variable=x_in core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/interleave_manual_seq.cpp:7" status="warning" parentFunction="interleave_manual_seq" variable="y" isDirective="0" options="variable=y core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:15" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:20" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../src/interleave_manual_rnd.cpp:9" status="valid" parentFunction="interleave_manual_rnd" variable="y" isDirective="0" options="variable=y type=RAM_T2P impl=AUTO"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:17" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:22" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../src/interleave_manual_seq.cpp:7" status="valid" parentFunction="interleave_manual_seq" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/interleave_manual_seq.cpp:9" status="valid" parentFunction="interleave_manual_seq" variable="y" isDirective="0" options="variable=y type=RAM_T2P impl=AUTO"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:17" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:22" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

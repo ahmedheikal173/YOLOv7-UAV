@@ -41,7 +41,7 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xcvu11p:-flga2577:-1-e
+set TargetInfo xczu7ev:-ffvc1156:-2-e
 set SourceFiles {sc {} c ../../../src/shift_reg.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/1-Circular_Shift_Register/m1/m1/solution1/solution1.directive
@@ -61,5 +61,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynquplus/zynquplus}}}
 set HPFPO 0

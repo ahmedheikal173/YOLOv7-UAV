@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vitis HLS Report for 'word_width_Pipeline_LOAD'
+================================================================
+* Date:           Wed Jun  5 00:33:02 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        m3
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  1228803|  1228803|  12.288 ms|  12.288 ms|  1228803|  1228803|       no|
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- LOAD    |  1228801|  1228801|         3|          1|          1|  1228800|       yes|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%phi_urem = alloca i32 1"   --->   Operation 6 'alloca' 'phi_urem' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 7 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%shiftreg = alloca i32 1"   --->   Operation 8 'alloca' 'shiftreg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 9 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln20_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %sext_ln20"   --->   Operation 10 'read' 'sext_ln20_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln20_cast = sext i58 %sext_ln20_read"   --->   Operation 11 'sext' 'sext_ln20_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i24 %word_width_ap_int_8_ap_int_8_bool_x, i64 666, i64 210, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.46ns)   --->   "%store_ln0 = store i21 0, i21 %i"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 15 [1/1] (0.46ns)   --->   "%store_ln0 = store i504 0, i504 %shiftreg"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 16 [1/1] (0.46ns)   --->   "%store_ln0 = store i42 0, i42 %phi_mul"   --->   Operation 16 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 17 [1/1] (0.46ns)   --->   "%store_ln0 = store i21 0, i21 %phi_urem"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%i_2 = load i21 %i" [../src/word_width.cpp:20]   --->   Operation 19 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.90ns)   --->   "%icmp_ln20 = icmp_eq  i21 %i_2, i21 1228800" [../src/word_width.cpp:20]   --->   Operation 20 'icmp' 'icmp_ln20' <Predicate = true> <Delay = 0.90> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (1.12ns)   --->   "%add_ln20 = add i21 %i_2, i21 1" [../src/word_width.cpp:20]   --->   Operation 21 'add' 'add_ln20' <Predicate = true> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln20 = br i1 %icmp_ln20, void %.split, void %.loopexit.loopexit.exitStub" [../src/word_width.cpp:20]   --->   Operation 22 'br' 'br_ln20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln20 = trunc i21 %i_2" [../src/word_width.cpp:20]   --->   Operation 23 'trunc' 'trunc_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.71ns)   --->   "%icmp_ln22 = icmp_eq  i6 %trunc_ln20, i6 0" [../src/word_width.cpp:22]   --->   Operation 24 'icmp' 'icmp_ln22' <Predicate = (!icmp_ln20)> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.46ns)   --->   "%store_ln20 = store i21 %add_ln20, i21 %i" [../src/word_width.cpp:20]   --->   Operation 25 'store' 'store_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i512 %gmem"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i512 %gmem, i64 %sext_ln20_cast" [../src/word_width.cpp:20]   --->   Operation 27 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1228800, i64 1228800, i64 1228800"   --->   Operation 28 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (7.30ns)   --->   "%gmem_addr_read = read i512 @_ssdm_op_Read.m_axi.p1i512, i512 %gmem_addr" [../src/word_width.cpp:22]   --->   Operation 29 'read' 'gmem_addr_read' <Predicate = (!icmp_ln20 & icmp_ln22)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 76 'ret' 'ret_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.86>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%shiftreg_load = load i504 %shiftreg" [../src/word_width.cpp:20]   --->   Operation 30 'load' 'shiftreg_load' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln20 = zext i504 %shiftreg_load" [../src/word_width.cpp:20]   --->   Operation 31 'zext' 'zext_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [../src/word_width.cpp:20]   --->   Operation 32 'specpipeline' 'specpipeline_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [../src/word_width.cpp:20]   --->   Operation 33 'specloopname' 'specloopname_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.46ns)   --->   "%br_ln22 = br i1 %icmp_ln22, void %.split._crit_edge, void" [../src/word_width.cpp:22]   --->   Operation 34 'br' 'br_ln22' <Predicate = (!icmp_ln20)> <Delay = 0.46>
+ST_3 : Operation 35 [1/1] (0.46ns)   --->   "%br_ln22 = br void %.split._crit_edge" [../src/word_width.cpp:22]   --->   Operation 35 'br' 'br_ln22' <Predicate = (!icmp_ln20 & icmp_ln22)> <Delay = 0.46>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%empty_30 = phi i512 %gmem_addr_read, void, i512 %zext_ln20, void %.split" [../src/word_width.cpp:22]   --->   Operation 36 'phi' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%phi_urem_load = load i21 %phi_urem" [../src/word_width.cpp:22]   --->   Operation 37 'load' 'phi_urem_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%phi_mul_load = load i42 %phi_mul" [../src/word_width.cpp:22]   --->   Operation 38 'load' 'phi_mul_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (1.12ns)   --->   "%add_ln22 = add i21 %phi_urem_load, i21 1" [../src/word_width.cpp:22]   --->   Operation 39 'add' 'add_ln22' <Predicate = true> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.90ns)   --->   "%icmp_ln22_1 = icmp_ult  i21 %add_ln22, i21 3" [../src/word_width.cpp:22]   --->   Operation 40 'icmp' 'icmp_ln22_1' <Predicate = true> <Delay = 0.90> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (0.39ns)   --->   "%select_ln22 = select i1 %icmp_ln22_1, i21 %add_ln22, i21 0" [../src/word_width.cpp:22]   --->   Operation 41 'select' 'select_ln22' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.31> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node shl_ln22)   --->   "%trunc_ln22 = trunc i512 %empty_30" [../src/word_width.cpp:22]   --->   Operation 42 'trunc' 'trunc_ln22' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%trunc_ln22_1 = partselect i504 @_ssdm_op_PartSelect.i504.i512.i32.i32, i512 %empty_30, i32 8, i32 511" [../src/word_width.cpp:22]   --->   Operation 43 'partselect' 'trunc_ln22_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (1.20ns)   --->   "%add_ln22_1 = add i42 %phi_mul_load, i42 2796203" [../src/word_width.cpp:22]   --->   Operation 44 'add' 'add_ln22_1' <Predicate = true> <Delay = 1.20> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%tmp = partselect i19 @_ssdm_op_PartSelect.i19.i42.i32.i32, i42 %phi_mul_load, i32 23, i32 41" [../src/word_width.cpp:22]   --->   Operation 45 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln22 = zext i19 %tmp" [../src/word_width.cpp:22]   --->   Operation 46 'zext' 'zext_ln22' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%word_width_ap_int_8_ap_int_8_bool_x_addr = getelementptr i24 %word_width_ap_int_8_ap_int_8_bool_x, i64 0, i64 %zext_ln22" [../src/word_width.cpp:22]   --->   Operation 47 'getelementptr' 'word_width_ap_int_8_ap_int_8_bool_x_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln22_2 = trunc i21 %phi_urem_load" [../src/word_width.cpp:22]   --->   Operation 48 'trunc' 'trunc_ln22_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %trunc_ln22_2, i3 0" [../src/word_width.cpp:22]   --->   Operation 49 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%or_ln22 = or i5 %shl_ln, i5 7" [../src/word_width.cpp:22]   --->   Operation 50 'or' 'or_ln22' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.72ns)   --->   "%icmp_ln22_2 = icmp_ugt  i5 %shl_ln, i5 %or_ln22" [../src/word_width.cpp:22]   --->   Operation 51 'icmp' 'icmp_ln22_2' <Predicate = true> <Delay = 0.72> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node shl_ln22)   --->   "%zext_ln22_1 = zext i8 %trunc_ln22" [../src/word_width.cpp:22]   --->   Operation 52 'zext' 'zext_ln22_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.82ns)   --->   "%sub_ln22 = sub i5 23, i5 %shl_ln" [../src/word_width.cpp:22]   --->   Operation 53 'sub' 'sub_ln22' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node sub_ln22_1)   --->   "%select_ln22_1 = select i1 %icmp_ln22_2, i5 %shl_ln, i5 %or_ln22" [../src/word_width.cpp:22]   --->   Operation 54 'select' 'select_ln22_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.31> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.00ns) (grouped into LUT with out node and_ln22)   --->   "%select_ln22_2 = select i1 %icmp_ln22_2, i5 %or_ln22, i5 %shl_ln" [../src/word_width.cpp:22]   --->   Operation 55 'select' 'select_ln22_2' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.31> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.00ns) (grouped into LUT with out node shl_ln22)   --->   "%select_ln22_3 = select i1 %icmp_ln22_2, i5 %sub_ln22, i5 %shl_ln" [../src/word_width.cpp:22]   --->   Operation 56 'select' 'select_ln22_3' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.31> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 57 [1/1] (0.82ns) (out node of the LUT)   --->   "%sub_ln22_1 = sub i5 23, i5 %select_ln22_1" [../src/word_width.cpp:22]   --->   Operation 57 'sub' 'sub_ln22_1' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (0.00ns) (grouped into LUT with out node shl_ln22)   --->   "%zext_ln22_2 = zext i5 %select_ln22_3" [../src/word_width.cpp:22]   --->   Operation 58 'zext' 'zext_ln22_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node and_ln22)   --->   "%zext_ln22_3 = zext i5 %select_ln22_2" [../src/word_width.cpp:22]   --->   Operation 59 'zext' 'zext_ln22_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node and_ln22)   --->   "%zext_ln22_4 = zext i5 %sub_ln22_1" [../src/word_width.cpp:22]   --->   Operation 60 'zext' 'zext_ln22_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.79ns) (out node of the LUT)   --->   "%shl_ln22 = shl i24 %zext_ln22_1, i24 %zext_ln22_2" [../src/word_width.cpp:22]   --->   Operation 61 'shl' 'shl_ln22' <Predicate = true> <Delay = 0.79> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node and_ln22_1)   --->   "%tmp_1 = partselect i24 @llvm.part.select.i24, i24 %shl_ln22, i32 23, i32 0" [../src/word_width.cpp:22]   --->   Operation 62 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node and_ln22_1)   --->   "%select_ln22_4 = select i1 %icmp_ln22_2, i24 %tmp_1, i24 %shl_ln22" [../src/word_width.cpp:22]   --->   Operation 63 'select' 'select_ln22_4' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.31> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node and_ln22)   --->   "%shl_ln22_1 = shl i24 16777215, i24 %zext_ln22_3" [../src/word_width.cpp:22]   --->   Operation 64 'shl' 'shl_ln22_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 65 [1/1] (0.00ns) (grouped into LUT with out node and_ln22)   --->   "%lshr_ln22 = lshr i24 16777215, i24 %zext_ln22_4" [../src/word_width.cpp:22]   --->   Operation 65 'lshr' 'lshr_ln22' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 66 [1/1] (0.70ns) (out node of the LUT)   --->   "%and_ln22 = and i24 %shl_ln22_1, i24 %lshr_ln22" [../src/word_width.cpp:22]   --->   Operation 66 'and' 'and_ln22' <Predicate = true> <Delay = 0.70> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 67 [1/1] (0.31ns) (out node of the LUT)   --->   "%and_ln22_1 = and i24 %select_ln22_4, i24 %and_ln22" [../src/word_width.cpp:22]   --->   Operation 67 'and' 'and_ln22_1' <Predicate = true> <Delay = 0.31> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%specbramwithbyteenable_ln22 = specbramwithbyteenable void @_ssdm_op_SpecBRAMWithByteEnable, i24 %word_width_ap_int_8_ap_int_8_bool_x" [../src/word_width.cpp:22]   --->   Operation 68 'specbramwithbyteenable' 'specbramwithbyteenable_ln22' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%zext_ln22_5 = zext i2 %trunc_ln22_2" [../src/word_width.cpp:22]   --->   Operation 69 'zext' 'zext_ln22_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.58ns)   --->   "%shl_ln22_2 = shl i3 1, i3 %zext_ln22_5" [../src/word_width.cpp:22]   --->   Operation 70 'shl' 'shl_ln22_2' <Predicate = true> <Delay = 0.58> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 71 [1/1] (1.29ns)   --->   "%store_ln22 = store void @_ssdm_op_Write.bram.i24, i19 %word_width_ap_int_8_ap_int_8_bool_x_addr, i24 %and_ln22_1, i3 %shl_ln22_2" [../src/word_width.cpp:22]   --->   Operation 71 'store' 'store_ln22' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 409600> <RAM>
+ST_3 : Operation 72 [1/1] (0.46ns)   --->   "%store_ln22 = store i504 %trunc_ln22_1, i504 %shiftreg" [../src/word_width.cpp:22]   --->   Operation 72 'store' 'store_ln22' <Predicate = true> <Delay = 0.46>
+ST_3 : Operation 73 [1/1] (0.46ns)   --->   "%store_ln22 = store i42 %add_ln22_1, i42 %phi_mul" [../src/word_width.cpp:22]   --->   Operation 73 'store' 'store_ln22' <Predicate = true> <Delay = 0.46>
+ST_3 : Operation 74 [1/1] (0.46ns)   --->   "%store_ln22 = store i21 %select_ln22, i21 %phi_urem" [../src/word_width.cpp:22]   --->   Operation 74 'store' 'store_ln22' <Predicate = true> <Delay = 0.46>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 75 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	'alloca' operation ('i') [6]  (0 ns)
+	'load' operation ('i', ../src/word_width.cpp:20) on local variable 'i' [17]  (0 ns)
+	'add' operation ('add_ln20', ../src/word_width.cpp:20) [22]  (1.13 ns)
+	'store' operation ('store_ln20', ../src/word_width.cpp:20) of variable 'add_ln20', ../src/word_width.cpp:20 on local variable 'i' [72]  (0.46 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	'getelementptr' operation ('gmem_addr', ../src/word_width.cpp:20) [19]  (0 ns)
+	bus read operation ('gmem_addr_read', ../src/word_width.cpp:22) on port 'gmem' (../src/word_width.cpp:22) [33]  (7.3 ns)
+
+ <State 3>: 3.86ns
+The critical path consists of the following:
+	'load' operation ('phi_urem_load', ../src/word_width.cpp:22) on local variable 'phi_urem' [37]  (0 ns)
+	'icmp' operation ('icmp_ln22_2', ../src/word_width.cpp:22) [51]  (0.72 ns)
+	'select' operation ('select_ln22_1', ../src/word_width.cpp:22) [54]  (0 ns)
+	'sub' operation ('sub_ln22_1', ../src/word_width.cpp:22) [57]  (0.825 ns)
+	'lshr' operation ('lshr_ln22', ../src/word_width.cpp:22) [65]  (0 ns)
+	'and' operation ('and_ln22', ../src/word_width.cpp:22) [66]  (0.703 ns)
+	'and' operation ('and_ln22_1', ../src/word_width.cpp:22) [67]  (0.319 ns)
+	'store' operation ('store_ln22', ../src/word_width.cpp:22) of constant <constant:_ssdm_op_Write.bram.i24> on array 'word_width_ap_int_8_ap_int_8_bool_x' [71]  (1.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

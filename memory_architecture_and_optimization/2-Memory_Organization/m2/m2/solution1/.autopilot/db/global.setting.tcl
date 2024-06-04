@@ -42,7 +42,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu11p:-flga2577:-1-e
-set SourceFiles {sc {} c {../../../src/interleave_manual_seq.cpp ../../../src/interleave_manual_rnd.cpp ../../../src/interleave.cpp}}
+set SourceFiles {sc {} c {../../../src/interleave.cpp ../../../src/interleave_manual_rnd.cpp ../../../src/interleave_manual_seq.cpp}}
 set SourceFlags {sc {} c {{} {} {}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/2-Memory_Organization/m2/m2/solution1/solution1.directive
 set TBFiles {verilog ../../../tb/tb_interleave.cpp bc ../../../tb/tb_interleave.cpp vhdl ../../../tb/tb_interleave.cpp sc ../../../tb/tb_interleave.cpp cas ../../../tb/tb_interleave.cpp c {}}

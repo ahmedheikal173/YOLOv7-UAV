@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'interleave_manual_rnd_Pipeline_WRITE'" level="0">
-<item name = "Date">Mon Jun  3 15:09:07 2024
+<item name = "Date">Wed Jun  5 00:15:31 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m2</item>
@@ -80,15 +80,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln21_fu_187_p2">+, 0, 0, 26, 19, 1</column>
+<column name="add_ln23_fu_187_p2">+, 0, 0, 26, 19, 1</column>
 <column name="add_ln70_1_fu_220_p2">+, 0, 0, 19, 8, 8</column>
 <column name="add_ln70_fu_214_p2">+, 0, 0, 19, 8, 8</column>
 <column name="indvars_iv_next_fu_170_p2">+, 0, 0, 26, 19, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state4_io">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln19_fu_164_p2">icmp, 0, 0, 14, 19, 18</column>
-<column name="icmp_ln21_fu_193_p2">icmp, 0, 0, 10, 6, 2</column>
-<column name="select_ln21_fu_257_p3">select, 0, 0, 492, 1, 1</column>
+<column name="icmp_ln21_fu_164_p2">icmp, 0, 0, 14, 19, 18</column>
+<column name="icmp_ln23_fu_193_p2">icmp, 0, 0, 10, 6, 2</column>
+<column name="select_ln23_fu_257_p3">select, 0, 0, 492, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -100,7 +100,7 @@
 <column name="gmem_blk_n_W">9, 2, 1, 2</column>
 <column name="idx_fu_78">9, 2, 19, 38</column>
 <column name="indvars_iv_fu_82">9, 2, 19, 38</column>
-<column name="phi_ln21_fu_74">9, 2, 504, 1008</column>
+<column name="phi_ln23_fu_74">9, 2, 504, 1008</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -112,12 +112,12 @@
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
-<column name="icmp_ln19_reg_296">1, 0, 1, 0</column>
-<column name="icmp_ln21_reg_315">1, 0, 1, 0</column>
-<column name="icmp_ln21_reg_315_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="icmp_ln21_reg_296">1, 0, 1, 0</column>
+<column name="icmp_ln23_reg_315">1, 0, 1, 0</column>
+<column name="icmp_ln23_reg_315_pp0_iter2_reg">1, 0, 1, 0</column>
 <column name="idx_fu_78">19, 0, 19, 0</column>
 <column name="indvars_iv_fu_82">19, 0, 19, 0</column>
-<column name="phi_ln21_fu_74">504, 0, 504, 0</column>
+<column name="phi_ln23_fu_74">504, 0, 504, 0</column>
 </table>
 </item>
 </section>
@@ -179,7 +179,7 @@
 <column name="m_axi_gmem_BRESP">in, 2, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_BID">in, 1, m_axi, gmem, pointer</column>
 <column name="m_axi_gmem_BUSER">in, 1, m_axi, gmem, pointer</column>
-<column name="sext_ln19">in, 58, ap_none, sext_ln19, scalar</column>
+<column name="sext_ln21">in, 58, ap_none, sext_ln21, scalar</column>
 <column name="x_x0_V_address0">out, 19, ap_memory, x_x0_V, array</column>
 <column name="x_x0_V_ce0">out, 1, ap_memory, x_x0_V, array</column>
 <column name="x_x0_V_q0">in, 8, ap_memory, x_x0_V, array</column>

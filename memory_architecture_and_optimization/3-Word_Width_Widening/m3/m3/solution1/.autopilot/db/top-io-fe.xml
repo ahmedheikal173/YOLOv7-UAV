@@ -1,5 +1,5 @@
 <root versionMajor = "1" versionMinor = "5">
-  <kernel src_name="word_width_manual" language="c" hwCtrl="ap_ctrl_chain" mem_layout="fpga64-xilinx-none">
+  <kernel src_name="word_width" language="c" hwCtrl="ap_ctrl_chain" mem_layout="fpga64-xilinx-none">
     <args>
       <arg id="0" access_type="rw" src_name="x_in" src_type="ap_int&lt;8&gt;*" src_isptr="1" src_bitwidth="8" src_size_or_depth="1228800">
         <hw hw_usage="data" hw_interface="MAXI" hw_name="gmem" hw_bitwidth="512" hw_size_or_depth="0">

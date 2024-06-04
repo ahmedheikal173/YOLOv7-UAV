@@ -170,10 +170,11 @@ static bool RTLOutputCheckAndReplacement(std::string &AESL_token, std::string Po
     err = true, AESL_token.replace(x_found, 1, "0");
   
   return err;}
-struct __cosim_s40__ { char data[64]; };
-extern "C" void circular_shift_reg_hw_stub_wrapper(int, volatile void *);
+struct __cosim_s1__ { char data[1]; };
+struct __cosim_s10__ { char data[16]; };
+extern "C" void circular_shift_reg_hw_stub_wrapper(__cosim_s1__*, volatile void *);
 
-extern "C" void apatb_circular_shift_reg_hw(int __xlx_apatb_param_din, volatile void * __xlx_apatb_param_dout) {
+extern "C" void apatb_circular_shift_reg_hw(__cosim_s1__* __xlx_apatb_param_din, volatile void * __xlx_apatb_param_dout) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -205,7 +206,7 @@ static AESL_FILE_HANDLER aesl_fh;
           exit(1);
         }
         if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
-          std::vector<sc_bv<512> > gmem_pc_buffer(1);
+          std::vector<sc_bv<128> > gmem_pc_buffer(1);
           int i = 0;
           bool has_unknown_value = false;
           rtl_tv_out_file >> AESL_token; //data
@@ -231,14 +232,8 @@ static AESL_FILE_HANDLER aesl_fh;
   
           if (i > 0) {{
             int i = 0;
-            for (int j = 0, e = 1; j < e; j += 1, ++i) {((long long*)__xlx_apatb_param_dout)[j*8+0] = gmem_pc_buffer[i].range(63,0).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+1] = gmem_pc_buffer[i].range(127,64).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+2] = gmem_pc_buffer[i].range(191,128).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+3] = gmem_pc_buffer[i].range(255,192).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+4] = gmem_pc_buffer[i].range(319,256).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+5] = gmem_pc_buffer[i].range(383,320).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+6] = gmem_pc_buffer[i].range(447,384).to_int64();
-((long long*)__xlx_apatb_param_dout)[j*8+7] = gmem_pc_buffer[i].range(511,448).to_int64();
+            for (int j = 0, e = 1; j < e; j += 1, ++i) {((long long*)__xlx_apatb_param_dout)[j*2+0] = gmem_pc_buffer[i].range(63,0).to_int64();
+((long long*)__xlx_apatb_param_dout)[j*2+1] = gmem_pc_buffer[i].range(127,64).to_int64();
 }}}
         } // end transaction
       } // end file is good
@@ -257,18 +252,12 @@ unsigned __xlx_offset_byte_param_dout = 0;
 {
 aesl_fh.write(AUTOTB_TVIN_gmem, begin_str(AESL_transaction));
 {
-  __xlx_offset_byte_param_dout = 0*64;
+  __xlx_offset_byte_param_dout = 0*16;
   if (__xlx_apatb_param_dout) {
     for (int j = 0  - 0, e = 1 - 0; j != e; ++j) {
-sc_bv<512> __xlx_tmp_lv;
-__xlx_tmp_lv.range(63,0) = ((long long*)__xlx_apatb_param_dout)[j*8+0];
-__xlx_tmp_lv.range(127,64) = ((long long*)__xlx_apatb_param_dout)[j*8+1];
-__xlx_tmp_lv.range(191,128) = ((long long*)__xlx_apatb_param_dout)[j*8+2];
-__xlx_tmp_lv.range(255,192) = ((long long*)__xlx_apatb_param_dout)[j*8+3];
-__xlx_tmp_lv.range(319,256) = ((long long*)__xlx_apatb_param_dout)[j*8+4];
-__xlx_tmp_lv.range(383,320) = ((long long*)__xlx_apatb_param_dout)[j*8+5];
-__xlx_tmp_lv.range(447,384) = ((long long*)__xlx_apatb_param_dout)[j*8+6];
-__xlx_tmp_lv.range(511,448) = ((long long*)__xlx_apatb_param_dout)[j*8+7];
+sc_bv<128> __xlx_tmp_lv;
+__xlx_tmp_lv.range(63,0) = ((long long*)__xlx_apatb_param_dout)[j*2+0];
+__xlx_tmp_lv.range(127,64) = ((long long*)__xlx_apatb_param_dout)[j*2+1];
 aesl_fh.write(AUTOTB_TVIN_gmem, __xlx_tmp_lv.to_string(SC_HEX)+string("\n"));
     }
   }
@@ -282,7 +271,7 @@ aesl_fh.write(AUTOTB_TVIN_gmem, end_str());
 {
 aesl_fh.write(AUTOTB_TVIN_din, begin_str(AESL_transaction));
 {
-    sc_bv<32> __xlx_tmp_lv = *((int*)&__xlx_apatb_param_din);
+    sc_bv<8> __xlx_tmp_lv = *((char*)__xlx_apatb_param_din);
 aesl_fh.write(AUTOTB_TVIN_din, __xlx_tmp_lv.to_string(SC_HEX)+string("\n"));
 }
   tcl_file.set_num(1, &tcl_file.din_depth);
@@ -307,18 +296,12 @@ CodeState = DUMP_OUTPUTS;
 {
 aesl_fh.write(AUTOTB_TVOUT_gmem, begin_str(AESL_transaction));
 {
-  __xlx_offset_byte_param_dout = 0*64;
+  __xlx_offset_byte_param_dout = 0*16;
   if (__xlx_apatb_param_dout) {
     for (int j = 0  - 0, e = 1 - 0; j != e; ++j) {
-sc_bv<512> __xlx_tmp_lv;
-__xlx_tmp_lv.range(63,0) = ((long long*)__xlx_apatb_param_dout)[j*8+0];
-__xlx_tmp_lv.range(127,64) = ((long long*)__xlx_apatb_param_dout)[j*8+1];
-__xlx_tmp_lv.range(191,128) = ((long long*)__xlx_apatb_param_dout)[j*8+2];
-__xlx_tmp_lv.range(255,192) = ((long long*)__xlx_apatb_param_dout)[j*8+3];
-__xlx_tmp_lv.range(319,256) = ((long long*)__xlx_apatb_param_dout)[j*8+4];
-__xlx_tmp_lv.range(383,320) = ((long long*)__xlx_apatb_param_dout)[j*8+5];
-__xlx_tmp_lv.range(447,384) = ((long long*)__xlx_apatb_param_dout)[j*8+6];
-__xlx_tmp_lv.range(511,448) = ((long long*)__xlx_apatb_param_dout)[j*8+7];
+sc_bv<128> __xlx_tmp_lv;
+__xlx_tmp_lv.range(63,0) = ((long long*)__xlx_apatb_param_dout)[j*2+0];
+__xlx_tmp_lv.range(127,64) = ((long long*)__xlx_apatb_param_dout)[j*2+1];
 aesl_fh.write(AUTOTB_TVOUT_gmem, __xlx_tmp_lv.to_string(SC_HEX)+string("\n"));
     }
   }

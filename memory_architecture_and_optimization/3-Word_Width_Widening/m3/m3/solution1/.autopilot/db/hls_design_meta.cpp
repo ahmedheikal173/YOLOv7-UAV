@@ -67,4 +67,4 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("s_axi_control_BRESP", 2, hls_out, -1, "", "", 1),
 	Port_Property("interrupt", 1, hls_out, -1, "", "", 1),
 };
-const char* HLS_Design_Meta::dut_name = "word_width_manual";
+const char* HLS_Design_Meta::dut_name = "word_width";

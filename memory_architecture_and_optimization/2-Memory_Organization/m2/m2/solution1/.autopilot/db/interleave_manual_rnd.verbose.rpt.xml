@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'interleave_manual_rnd'" level="0">
-<item name = "Date">Mon Jun  3 15:09:07 2024
+<item name = "Date">Wed Jun  5 00:15:32 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m2</item>
@@ -77,9 +77,9 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="x_x0_V_U">x_x0_V_RAM_1P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
-<column name="x_x1_V_U">x_x0_V_RAM_1P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
-<column name="x_x2_V_U">x_x0_V_RAM_1P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
+<column name="x_x0_V_U">x_x0_V_RAM_T2P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
+<column name="x_x1_V_U">x_x0_V_RAM_T2P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
+<column name="x_x2_V_U">x_x0_V_RAM_T2P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">

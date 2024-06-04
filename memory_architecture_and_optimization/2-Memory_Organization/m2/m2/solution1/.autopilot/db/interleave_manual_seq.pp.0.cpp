@@ -5706,9 +5706,12 @@ class interleave_mem_seq {
 
  public:
   interleave_mem_seq() {
-#pragma HLS RESOURCE variable = x0 core = RAM_1P_BRAM
-#pragma HLS RESOURCE variable = x1 core = RAM_1P_BRAM
-#pragma HLS RESOURCE variable = x2 core = RAM_1P_BRAM
+
+
+
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=AUTO
 
  idx = 0;
     sel = 0;
@@ -5743,7 +5746,7 @@ T interleave_mem_seq<T, N>::read_seq(ap_uint<(21)> i,
 
   return tmp;
 }
-# 31 "../src/./interleave_mem_seq.hpp" 2
+# 34 "../src/./interleave_mem_seq.hpp" 2
 # 1 "../src/./write_mem_seq.hpp" 1
 
 
@@ -5770,13 +5773,15 @@ void interleave_mem_seq<T, N>::write_seq(ap_uint<(21)> i,
   if (idx == N / 3) idx = 0;
   if (sel == 3) sel = 0;
 }
-# 32 "../src/./interleave_mem_seq.hpp" 2
+# 35 "../src/./interleave_mem_seq.hpp" 2
 # 3 "../src/interleave_manual_seq.cpp" 2
 
 void interleave_manual_seq(ap_int<8> x_in[1228800],
                            ap_int<8> y[1228800 / 3], bool load) {
-#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
-#pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
+
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
+
+#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
 
  static interleave_mem_seq<ap_int<8>, 1228800> x;
   int idx = 0;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717419536241">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717537103708">
   <ports id="1" name="gmem" type="PortType" coreId="1397508191" bitwidth="8" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
@@ -143,7 +143,7 @@
   <blocks id="71" name="block_71" type="BlockType">
     <controlInputObjs>block_27</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="_ln41" lineNumber="41" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1814455667" contextFuncName="window_avg" opcode="ret" nodeLabel="140.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="_ln41" lineNumber="41" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="892613169" contextFuncName="window_avg" opcode="ret" nodeLabel="140.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="41" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
     </node_objs>
     <fileValidLineNumbers fileName="../../src/window_1d_sliding.cpp">
@@ -158,7 +158,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_71</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i_1" lineNumber="39" originalName="i" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" bitwidth="21" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i_1" lineNumber="39" originalName="i" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" bitwidth="21" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="39" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -170,7 +170,7 @@
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="din_tmp_2" lineNumber="1171" originalName="din_tmp" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1633836900" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="load" nodeLabel="71.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="din_tmp_2" lineNumber="1171" originalName="din_tmp" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1013281633" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="load" nodeLabel="71.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1171" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="operator*&amp;lt;3, 1, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -209,7 +209,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_40</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="zext_ln31" lineNumber="31" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." rtlName="zext_ln31_fu_160_p1" coreId="1013281633" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="zext_ln31" lineNumber="31" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." rtlName="zext_ln31_fu_160_p1" coreId="4250098392" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="31" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -220,7 +220,7 @@
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln33" lineNumber="33" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1312563210" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln33" lineNumber="33" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="33" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
@@ -241,7 +241,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="gmem_addr" lineNumber="34" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1394614841" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="gmem_addr" lineNumber="34" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="34" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>gmem</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
@@ -259,12 +259,12 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="r_V_1_write_ln34" lineNumber="34" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1702256484" contextFuncName="window_avg" opcode="store" nodeLabel="71.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="r_V_1_write_ln34" lineNumber="34" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="store" nodeLabel="71.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="34" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln34" lineNumber="34" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="171844204" contextFuncName="window_avg" opcode="br" nodeLabel="71.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln34" lineNumber="34" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="br" nodeLabel="71.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="34" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
       </node_objs>
@@ -279,12 +279,12 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlOutputObjs>
       <controlOutputObjs>block_65</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="shift_reg_regs_V_load" lineNumber="9" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1969972088" contextFuncName="clip_window" bitwidth="8" opcode="load" nodeLabel="72.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="shift_reg_regs_V_load" lineNumber="9" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="clip_window" bitwidth="8" opcode="load" nodeLabel="72.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="9" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="clip_window"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="shift_reg_regs_V_3" lineNumber="11" originalName="shift_reg.regs.V" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1835357216" contextFuncName="clip_window" bitwidth="8" opcode="load" nodeLabel="72.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="shift_reg_regs_V_3" lineNumber="11" originalName="shift_reg.regs.V" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="clip_window" bitwidth="8" opcode="load" nodeLabel="72.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="11" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="clip_window"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -315,18 +315,18 @@
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="r_V" lineNumber="1171" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_253_p3" coreId="1768632184" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="bitconcatenate" nodeLabel="72.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="r_V" lineNumber="1171" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_253_p3" coreId="1953459305" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="bitconcatenate" nodeLabel="72.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1171" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="operator*&amp;lt;3, 1, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln1245" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_fu_260_p1" coreId="3094901552" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln1245" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_fu_260_p1" coreId="4294967292" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1245" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="operator+&amp;lt;11, 9, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="zext_ln1245_1" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_1_fu_264_p1" coreId="1647194166" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="zext_ln1245_1" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_1_fu_264_p1" coreId="826041715" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1245" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="operator+&amp;lt;11, 9, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -337,7 +337,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln1245_2" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_2_fu_274_p1" coreId="1344283222" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln1245_2" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_2_fu_274_p1" coreId="3087184976" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="72.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1245" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="operator+&amp;lt;11, 9, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -354,7 +354,7 @@
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln38" lineNumber="38" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="2019914862" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln38" lineNumber="38" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="4294967292" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="38" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>block_65</controlInputObjs>
@@ -374,7 +374,7 @@
       <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="trunc_ln" lineNumber="321" fileName="../../src/../include/ap_int.h" fileDirectory=".." rtlName="trunc_ln_reg_360" coreId="1769484147" contextFuncName="ap_uint" bitwidth="8" opcode="partselect" nodeLabel="72.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="trunc_ln" lineNumber="321" fileName="../../src/../include/ap_int.h" fileDirectory=".." rtlName="trunc_ln_reg_360" coreId="3088450992" contextFuncName="ap_uint" bitwidth="8" opcode="partselect" nodeLabel="72.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/../include/ap_int.h" linenumber="321" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="ap_uint"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
@@ -386,7 +386,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln39" lineNumber="39" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." rtlName="zext_ln39_fu_206_p1" coreId="2016377204" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln39" lineNumber="39" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." rtlName="zext_ln39_fu_206_p1" coreId="1834970975" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="39" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -397,7 +397,7 @@
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="gmem_addr_1" lineNumber="39" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1632644924" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="gmem_addr_1" lineNumber="39" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="1701867296" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="39" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>gmem</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
@@ -421,7 +421,7 @@
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="39" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln39" lineNumber="39" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="540767335" contextFuncName="window_avg" opcode="br" nodeLabel="141.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln39" lineNumber="39" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="542329928" contextFuncName="window_avg" opcode="br" nodeLabel="141.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="39" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlInputObjs>
       </node_objs>
@@ -438,17 +438,17 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_27</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_write_ln31" lineNumber="31" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="540767087" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_write_ln31" lineNumber="31" fileName="../../src/window_1d_sliding.cpp" fileDirectory=".." coreId="6645601" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/window_1d_sliding.cpp" linenumber="31" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="shift_reg_regs_V_write_ln1171" lineNumber="1171" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1868771122" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" opcode="store" nodeLabel="72.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="shift_reg_regs_V_write_ln1171" lineNumber="1171" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1852399472" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" opcode="store" nodeLabel="72.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1171" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_1d\m41\m41" functionName="operator*&amp;lt;3, 1, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="1730569589" opcode="br" nodeLabel="72.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="1868771122" opcode="br" nodeLabel="72.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
         <controlInputObjs>block_27</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h">

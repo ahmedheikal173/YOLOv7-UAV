@@ -1,13 +1,13 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 4
+set ID 1
 set hasByteEnable 0
-set MemName circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W
+set MemName circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W
 set CoreName ap_simcore_mem
-set PortList { 2 }
-set DataWd 32
-set AddrRange 16
+set PortList { 2 1 }
+set DataWd 8
+set AddrRange 9
 set AddrWd 4
 set impl_style block
 set TrueReset 0
@@ -16,7 +16,7 @@ set ROMData { }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
-set DelayBudget 1.297
+set DelayBudget 1.237
 set ClkPeriod 10
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -29,7 +29,7 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
     reset_level 1 \
     sync_rst true \
     stage_num ${NumOfStage}  \
-    port_num 1 \
+    port_num 2 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -48,11 +48,11 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {ram_1p} IMPL {bram} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {ram_t2p} IMPL {bram} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
-set CoreName RAM_1P_BRAM
+set CoreName RAM_T2P_BRAM
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
 if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
     eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
@@ -64,7 +64,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
     reset_level 1 \
     sync_rst true \
     stage_num ${NumOfStage}  \
-    port_num 1 \
+    port_num 2 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -93,7 +93,7 @@ set axilite_register_dict [dict create]
 set port_control {
 din { 
 	dir I
-	width 32
+	width 8
 	depth 1
 	mode ap_none
 	offset 16
@@ -138,7 +138,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 5 \
+			id 2 \
 			corename circular_shift_reg_control_axilite \
 			name circular_shift_reg_control_s_axi \
 			ports {$port_control} \
@@ -160,7 +160,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 6 \
+    id 3 \
     corename {m_axi} \
     op interface \
     delay_budget 7.3 \ 

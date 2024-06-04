@@ -5,6 +5,11 @@
                 <option name="name" value="circular_shift_reg"/>
             </pragma>
         </directive>
+        <directive functionName="circular_shift_reg" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="circular_shift_reg"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

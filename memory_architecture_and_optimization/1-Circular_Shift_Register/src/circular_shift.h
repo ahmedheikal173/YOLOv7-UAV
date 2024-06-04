@@ -4,9 +4,11 @@
 #include "../include/ap_int.h"
 #include <cmath>
 
-#define ADDRESS_BITWIDTH (21) //1228800 locations
+//#define ADDRESS_BITWIDTH (21) //1228800 locations
+#define ADDRESS_BITWIDTH (4) //1228800 locations
 
 //#define ADDRESS_BITWIDTH (24) //9830400 locations
+
 
 template <typename T, int N>
 class circular_shift {
@@ -17,12 +19,17 @@ class circular_shift {
 
  public:
   circular_shift() {
-#pragma HLS RESOURCE variable=mem core=RAM_1P_BRAM
+//#pragma HLS RESOURCE variable=mem core=RAM_1P_BRAM
+#pragma HLS BIND_STORAGE variable=mem type=RAM_T2P impl=AUTO
 
 	T dummy;
     wptr = 0;
     rptr = 0;
-    for (int i = 0; i < N; i++) mem[i] = dummy;
+    for (int i = 0; i < N; i++){
+//      #pragma HLS unroll
+	#pragma HLS pipeline
+     mem[i] = dummy;
+    }
   }
 
   void operator<<(T data) {

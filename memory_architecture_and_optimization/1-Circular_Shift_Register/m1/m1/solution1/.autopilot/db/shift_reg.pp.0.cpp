@@ -156,12 +156,6 @@ extern "C" {
 # 2 "<built-in>" 2
 # 1 "../src/shift_reg.cpp" 2
 # 1 "../src/./shift_reg.h" 1
-# 12 "../src/./shift_reg.h"
-typedef int dType;
-
-__attribute__((sdx_kernel("circular_shift_reg", 0))) void circular_shift_reg(dType din, dType dout[16]);
-# 2 "../src/shift_reg.cpp" 2
-# 1 "../src/./circular_shift.h" 1
 
 
 
@@ -5681,6 +5675,17 @@ inline bool operator!=(
 }
 # 412 "C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\\ap_fixed.h" 2
 # 395 "../src/../include/ap_int.h" 2
+# 5 "../src/./shift_reg.h" 2
+# 19 "../src/./shift_reg.h"
+typedef ap_uint<8> dType;
+
+__attribute__((sdx_kernel("circular_shift_reg", 0))) void circular_shift_reg(dType din, dType dout[9]);
+# 2 "../src/shift_reg.cpp" 2
+# 1 "../src/./circular_shift.h" 1
+
+
+
+# 1 "../src/../include/ap_int.h" 1
 # 5 "../src/./circular_shift.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\cmath" 1 3
 # 40 "C:/Xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\cmath" 3
@@ -8349,21 +8354,28 @@ namespace std
 
 
 
+
+
 template <typename T, int N>
 class circular_shift {
  private:
   T mem[N];
-  ap_int<(21)+1> wptr;
-  ap_int<(21)+1> rptr;
+  ap_int<(4)+1> wptr;
+  ap_int<(4)+1> rptr;
 
  public:
   circular_shift() {
-#pragma HLS RESOURCE variable=mem core=RAM_1P_BRAM
+
+#pragma HLS BIND_STORAGE variable=mem type=RAM_T2P impl=AUTO
 
  T dummy;
     wptr = 0;
     rptr = 0;
-    VITIS_LOOP_25_1: for (int i = 0; i < N; i++) mem[i] = dummy;
+    VITIS_LOOP_28_1: for (int i = 0; i < N; i++){
+#pragma HLS unroll
+
+ mem[i] = dummy;
+    }
   }
 
   void operator<<(T data) {
@@ -8372,7 +8384,7 @@ class circular_shift {
     if (wptr == N) wptr = 0;
   }
 
-  T operator[](ap_uint<(21)> idx) {
+  T operator[](ap_uint<(4)> idx) {
     rptr = (wptr - 1 - idx);
     if (rptr < 0) rptr = rptr + N;
     return mem[rptr];
@@ -8382,18 +8394,20 @@ class circular_shift {
 # 3 "../src/shift_reg.cpp" 2
 
 
-__attribute__((sdx_kernel("circular_shift_reg", 0))) void circular_shift_reg(dType din, dType dout[16]) {_ssdm_SpecArrayDimSize(dout, 16);
+__attribute__((sdx_kernel("circular_shift_reg", 0))) void circular_shift_reg(dType din, dType dout[9]) {_ssdm_SpecArrayDimSize(dout, 9);
 #pragma HLSDIRECTIVE TOP name=circular_shift_reg
 # 5 "../src/shift_reg.cpp"
 
 
-  static circular_shift<dType, 16> regs;
+  static circular_shift<dType, 9> regs;
 
 SHIFT:
   regs << din;
 
 WRITE:
-  for (int i = 0; i < 16; i++) {
+  for (int i = 0; i < 9; i++) {
+#pragma HLS unroll
+
  dout[i] = regs[i];
   }
 }

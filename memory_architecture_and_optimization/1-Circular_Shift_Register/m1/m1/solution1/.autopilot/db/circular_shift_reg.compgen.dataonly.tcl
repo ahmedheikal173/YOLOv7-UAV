@@ -4,7 +4,7 @@ set axilite_register_dict [dict create]
 set port_control {
 din { 
 	dir I
-	width 32
+	width 8
 	depth 1
 	mode ap_none
 	offset 16

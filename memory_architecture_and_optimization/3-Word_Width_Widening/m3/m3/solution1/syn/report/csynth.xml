@@ -6,7 +6,7 @@
         <unit>ns</unit>
         <ProductFamily>virtexuplus</ProductFamily>
         <Part>xcvu11p-flga2577-1-e</Part>
-        <TopModelName>word_width_manual</TopModelName>
+        <TopModelName>word_width</TopModelName>
         <TargetClockPeriod>10.00</TargetClockPeriod>
         <ClockUncertainty>2.70</ClockUncertainty>
         <FlowTarget>vitis</FlowTarget>
@@ -20,20 +20,20 @@
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
             <Best-caseLatency>409675</Best-caseLatency>
-            <Average-caseLatency>819276</Average-caseLatency>
-            <Worst-caseLatency>1228876</Worst-caseLatency>
+            <Average-caseLatency>819275</Average-caseLatency>
+            <Worst-caseLatency>1228875</Worst-caseLatency>
             <Best-caseRealTimeLatency>4.097 ms</Best-caseRealTimeLatency>
             <Average-caseRealTimeLatency>8.193 ms</Average-caseRealTimeLatency>
             <Worst-caseRealTimeLatency>12.289 ms</Worst-caseRealTimeLatency>
             <Interval-min>409676</Interval-min>
-            <Interval-max>1228877</Interval-max>
+            <Interval-max>1228876</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>608</BRAM_18K>
-            <FF>3676</FF>
-            <LUT>4589</LUT>
+            <FF>3519</FF>
+            <LUT>4246</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -235,7 +235,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_local_block</name>
-            <Object>word_width_manual</Object>
+            <Object>word_width</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_chain</IOProtocol>
@@ -246,7 +246,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_clk</name>
-            <Object>word_width_manual</Object>
+            <Object>word_width</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_chain</IOProtocol>
@@ -257,7 +257,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_rst_n</name>
-            <Object>word_width_manual</Object>
+            <Object>word_width</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_chain</IOProtocol>
@@ -268,7 +268,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>interrupt</name>
-            <Object>word_width_manual</Object>
+            <Object>word_width</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_chain</IOProtocol>
@@ -820,29 +820,29 @@
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="3">
-            <ModuleName>word_width_manual</ModuleName>
+            <ModuleName>word_width</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_word_width_manual_Pipeline_WRITE_fu_153</InstName>
-                    <ModuleName>word_width_manual_Pipeline_WRITE</ModuleName>
+                    <InstName>grp_word_width_Pipeline_WRITE_fu_115</InstName>
+                    <ModuleName>word_width_Pipeline_WRITE</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>153</ID>
-                    <BindInstances>i_fu_229_p2 add_ln885_fu_269_p2 add_ln885_1_fu_307_p2 add_ln885_2_fu_351_p2 add_ln70_fu_429_p2 add_ln70_1_fu_435_p2</BindInstances>
+                    <ID>115</ID>
+                    <BindInstances>add_ln27_fu_136_p2 add_ln70_fu_191_p2 add_ln70_1_fu_197_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_word_width_manual_Pipeline_LOAD_fu_167</InstName>
-                    <ModuleName>word_width_manual_Pipeline_LOAD</ModuleName>
+                    <InstName>grp_word_width_Pipeline_LOAD_fu_124</InstName>
+                    <ModuleName>word_width_Pipeline_LOAD</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>167</ID>
-                    <BindInstances>i_2_fu_270_p2 sub_ln414_fu_419_p2 sub_ln414_1_fu_449_p2 add_ln885_1_fu_303_p2 add_ln885_fu_323_p2</BindInstances>
+                    <ID>124</ID>
+                    <BindInstances>add_ln20_fu_177_p2 add_ln22_fu_218_p2 add_ln22_1_fu_252_p2 sub_ln22_fu_301_p2 sub_ln22_1_fu_331_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>x_x_V_U</BindInstances>
+            <BindInstances>word_width_ap_int_8_ap_int_8_bool_x_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>word_width_manual_Pipeline_WRITE</Name>
+            <Name>word_width_Pipeline_WRITE</Name>
             <Loops>
                 <WRITE/>
             </Loops>
@@ -877,10 +877,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>591</FF>
+                    <FF>539</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>876</LUT>
+                    <LUT>640</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -895,16 +895,13 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_229_p2" SOURCE="../src/word_width_manual.cpp:22" URAM="0" VARIABLE="i"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_fu_269_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_1_fu_307_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_2_fu_351_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_429_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_435_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln27_fu_136_p2" SOURCE="../src/word_width.cpp:27" URAM="0" VARIABLE="add_ln27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_191_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_197_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>word_width_manual_Pipeline_LOAD</Name>
+            <Name>word_width_Pipeline_LOAD</Name>
             <Loops>
                 <LOAD/>
             </Loops>
@@ -939,10 +936,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>1140</FF>
+                    <FF>1109</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>706</LUT>
+                    <LUT>602</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -957,15 +954,15 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_270_p2" SOURCE="../src/word_width_manual.cpp:15" URAM="0" VARIABLE="i_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln414_fu_419_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:414" URAM="0" VARIABLE="sub_ln414"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln414_1_fu_449_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:414" URAM="0" VARIABLE="sub_ln414_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_1_fu_303_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_fu_323_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln20_fu_177_p2" SOURCE="../src/word_width.cpp:20" URAM="0" VARIABLE="add_ln20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln22_fu_218_p2" SOURCE="../src/word_width.cpp:22" URAM="0" VARIABLE="add_ln22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln22_1_fu_252_p2" SOURCE="../src/word_width.cpp:22" URAM="0" VARIABLE="add_ln22_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln22_fu_301_p2" SOURCE="../src/word_width.cpp:22" URAM="0" VARIABLE="sub_ln22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln22_1_fu_331_p2" SOURCE="../src/word_width.cpp:22" URAM="0" VARIABLE="sub_ln22_1"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>word_width_manual</Name>
+            <Name>word_width</Name>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -974,12 +971,12 @@
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>409675</Best-caseLatency>
-                    <Average-caseLatency>819276</Average-caseLatency>
-                    <Worst-caseLatency>1228876</Worst-caseLatency>
+                    <Average-caseLatency>819275</Average-caseLatency>
+                    <Worst-caseLatency>1228875</Worst-caseLatency>
                     <Best-caseRealTimeLatency>4.097 ms</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>8.193 ms</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>12.289 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>409676 ~ 1228877</PipelineInitiationInterval>
+                    <PipelineInitiationInterval>409676 ~ 1228876</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
@@ -988,10 +985,10 @@
                     <BRAM_18K>608</BRAM_18K>
                     <AVAIL_BRAM>4032</AVAIL_BRAM>
                     <UTIL_BRAM>15</UTIL_BRAM>
-                    <FF>3676</FF>
+                    <FF>3519</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>4589</LUT>
+                    <LUT>4246</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -1003,7 +1000,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="550" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x_V_U" SOURCE="../src/word_width_manual.cpp:9" URAM="0" VARIABLE="x_x_V"/>
+                <BindNode BINDTYPE="storage" BRAM="550" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="word_width_ap_int_8_ap_int_8_bool_x_U" SOURCE="../src/word_width.cpp:12" URAM="0" VARIABLE="word_width_ap_int_8_ap_int_8_bool_x"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -1292,38 +1289,26 @@
             <item name="Inferred Burst Summary">
                 <table>
                     <keys size="5">HW Interface, Direction, Length, Width, Location</keys>
-                    <column name="m_axi_gmem">read, 19200, 512, ../src/word_width_manual.cpp:15:5</column>
-                    <column name="m_axi_gmem">write, 6400, 512, ../src/word_width_manual.cpp:20:5</column>
+                    <column name="m_axi_gmem">read, 19200, 512, ../src/word_width.cpp:20:2</column>
+                    <column name="m_axi_gmem">write, 6400, 512, ../src/word_width.cpp:25:2</column>
                 </table>
             </item>
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="resource" location="../src/./word_width_mem.hpp:20" status="warning" parentFunction="word_width_mem&lt;w, n&gt;" variable="x" isDirective="0" options="variable=x core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/word_width.cpp:6" status="warning" parentFunction="word_width" variable="x_in" isDirective="0" options="variable=x_in core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="resource" location="../src/word_width.cpp:7" status="warning" parentFunction="word_width" variable="y" isDirective="0" options="variable=y core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="array_reshape" location="../src/word_width.cpp:10" status="valid" parentFunction="word_width" variable="x" isDirective="0" options="variable=x cyclic factor=3 dim=1"/>
-        <Pragma type="resource" location="../src/word_width.cpp:11" status="warning" parentFunction="word_width" variable="x" isDirective="0" options="variable=x core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="pipeline" location="../src/word_width.cpp:18" status="valid" parentFunction="word_width" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/word_width.cpp:23" status="valid" parentFunction="word_width" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="resource" location="../src/word_width_manual.cpp:6" status="warning" parentFunction="word_width_manual" variable="x_in" isDirective="0" options="variable=x_in core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+        <Pragma type="bind_storage" location="../src/./word_width_mem.hpp:21" status="valid" parentFunction="word_width_mem&lt;w, n&gt;" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/word_width.cpp:8" status="warning" parentFunction="word_width" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=AUTO">
             <Msg msg_id="214-185" msg_severity="WARNING" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported"/>
         </Pragma>
-        <Pragma type="resource" location="../src/word_width_manual.cpp:7" status="warning" parentFunction="word_width_manual" variable="y" isDirective="0" options="variable=y core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="pipeline" location="../src/word_width_manual.cpp:16" status="valid" parentFunction="word_width_manual" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/word_width_manual.cpp:21" status="valid" parentFunction="word_width_manual" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../src/word_width.cpp:9" status="valid" parentFunction="word_width" variable="y" isDirective="0" options="variable=y type=RAM_T2P impl=AUTO"/>
+        <Pragma type="array_reshape" location="../src/word_width.cpp:12" status="valid" parentFunction="word_width" variable="x" isDirective="0" options="variable=x cyclic factor=3 dim=1"/>
+        <Pragma type="bind_storage" location="../src/word_width.cpp:14" status="valid" parentFunction="word_width" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=AUTO"/>
+        <Pragma type="pipeline" location="../src/word_width.cpp:21" status="valid" parentFunction="word_width" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/word_width.cpp:26" status="valid" parentFunction="word_width" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../src/word_width_manual.cpp:7" status="valid" parentFunction="word_width_manual" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/word_width_manual.cpp:9" status="valid" parentFunction="word_width_manual" variable="y" isDirective="0" options="variable=y type=RAM_T2P impl=AUTO"/>
+        <Pragma type="pipeline" location="../src/word_width_manual.cpp:18" status="valid" parentFunction="word_width_manual" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/word_width_manual.cpp:23" status="valid" parentFunction="word_width_manual" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

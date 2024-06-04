@@ -126,11 +126,11 @@ reg   [7:0] ap_phi_reg_pp0_iter2_tmp_4_reg_292;
 reg   [7:0] ap_phi_mux_tmp_5_phi_fu_304_p4;
 wire   [7:0] trunc_ln674_3_fu_539_p1;
 wire   [7:0] ap_phi_reg_pp0_iter2_tmp_5_reg_301;
-wire   [63:0] zext_ln55_fu_407_p1;
+wire   [63:0] zext_ln56_fu_407_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln51_fu_412_p1;
-wire   [63:0] zext_ln51_1_fu_511_p1;
-wire   [63:0] zext_ln55_1_fu_516_p1;
+wire   [63:0] zext_ln52_fu_412_p1;
+wire   [63:0] zext_ln52_1_fu_511_p1;
+wire   [63:0] zext_ln56_2_fu_516_p1;
 reg   [0:0] ap_sig_allocacmp_sel_load;
 wire   [0:0] xor_ln885_fu_417_p2;
 wire   [15:0] ret_1_fu_374_p3;
@@ -173,7 +173,7 @@ initial begin
 #0 buff0_read_data_V = 16'd0;
 end
 
-window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W #(
+window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W #(
     .DataWidth( 16 ),
     .AddressRange( 320 ),
     .AddressWidth( 9 ))
@@ -187,7 +187,7 @@ buff1_ram_V_U(
     .q0(buff1_ram_V_q0)
 );
 
-window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W #(
+window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W #(
     .DataWidth( 16 ),
     .AddressRange( 320 ),
     .AddressWidth( 9 ))
@@ -592,9 +592,9 @@ end
 always @ (*) begin
     if ((1'b1 == ap_condition_273)) begin
         if (((ap_phi_mux_empty_20_phi_fu_273_p4 == 1'd0) & (buff0_cnt_V_load_load_fu_453_p1 == 1'd1))) begin
-            buff0_ram_V_address0 = zext_ln55_1_fu_516_p1;
+            buff0_ram_V_address0 = zext_ln56_2_fu_516_p1;
         end else if ((buff0_cnt_V_load_load_fu_453_p1 == 1'd0)) begin
-            buff0_ram_V_address0 = zext_ln51_1_fu_511_p1;
+            buff0_ram_V_address0 = zext_ln52_1_fu_511_p1;
         end else begin
             buff0_ram_V_address0 = 'bx;
         end
@@ -622,9 +622,9 @@ end
 always @ (*) begin
     if ((1'b1 == ap_condition_262)) begin
         if ((buff1_cnt_V_load_load_fu_350_p1 == 1'd0)) begin
-            buff1_ram_V_address0 = zext_ln51_fu_412_p1;
+            buff1_ram_V_address0 = zext_ln52_fu_412_p1;
         end else if ((1'b1 == ap_condition_268)) begin
-            buff1_ram_V_address0 = zext_ln55_fu_407_p1;
+            buff1_ram_V_address0 = zext_ln56_fu_407_p1;
         end else begin
             buff1_ram_V_address0 = 'bx;
         end
@@ -792,12 +792,12 @@ assign xor_ln885_2_fu_354_p2 = (ap_phi_mux_empty_phi_fu_117_p4 ^ 1'd1);
 
 assign xor_ln885_fu_417_p2 = (buff1_cnt_V ^ 1'd1);
 
-assign zext_ln51_1_fu_511_p1 = grp_fu_320_p4;
+assign zext_ln52_1_fu_511_p1 = grp_fu_320_p4;
 
-assign zext_ln51_fu_412_p1 = grp_fu_310_p4;
+assign zext_ln52_fu_412_p1 = grp_fu_310_p4;
 
-assign zext_ln55_1_fu_516_p1 = grp_fu_320_p4;
+assign zext_ln56_2_fu_516_p1 = grp_fu_320_p4;
 
-assign zext_ln55_fu_407_p1 = grp_fu_310_p4;
+assign zext_ln56_fu_407_p1 = grp_fu_310_p4;
 
 endmodule //window_avg_buff

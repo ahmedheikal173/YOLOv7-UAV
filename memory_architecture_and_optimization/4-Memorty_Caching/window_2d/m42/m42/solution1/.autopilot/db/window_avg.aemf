@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717420266823">
-  <ports id="1" name="gmem" type="PortType" coreId="2956668576" bitwidth="8" direction="DirInOut" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717537173688">
+  <ports id="1" name="gmem" type="PortType" coreId="1397508191" bitwidth="8" direction="DirInOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -160,7 +160,7 @@
   <edges id="-224" source_obj="//@regions.0/@basic_blocks.4/@node_objs.4" sink_obj="//@ports.0"/>
   <blocks id="35" name="block_35" type="BlockType">
     <controlOutputObjs>block_48</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="c" originalName="c" coreId="1633836900" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="c" originalName="c" coreId="1013281633" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -178,52 +178,52 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="din_tmp" originalName="din_tmp" coreId="1013281633" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="din_tmp" originalName="din_tmp" coreId="1633836900" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="dout_read" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="no" coreId="122" contextFuncName="window_avg" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="dout_read" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="no" coreId="122" contextFuncName="window_avg" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
       <dataInputObjs>dout</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="din_read" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="no" coreId="122" contextFuncName="window_avg" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="din_read" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="s_axilite" implIndex="UNSUPPORTED" control="no" coreId="122" contextFuncName="window_avg" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
       <dataInputObjs>din</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="indvar_flatten_write_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="indvar_flatten_write_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="r_write_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="r_write_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="c_write_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="c_write_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
       <controlInputObjs>block_48</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="../src/window_2d.cpp">
-      <validLinenumbers>52</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="114" name="block_114" type="BlockType">
     <controlInputObjs>block_48</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="_ln65" lineNumber="65" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1702129263" contextFuncName="window_avg" opcode="ret" nodeLabel="142.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="65" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="_ln67" lineNumber="67" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1701867322" contextFuncName="window_avg" opcode="ret" nodeLabel="142.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="67" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
     </node_objs>
     <fileValidLineNumbers fileName="../src/window_2d.cpp">
-      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>67</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="803" pipe_depth="144" RegionName="ROW_COL">
@@ -234,8 +234,8 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_114</controlOutputObjs>
       <controlOutputObjs>.split3</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="r_1" lineNumber="52" originalName="r" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" bitwidth="10" opcode="load" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="r_1" lineNumber="54" originalName="r" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" bitwidth="10" opcode="load" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -245,75 +245,75 @@
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="indvar_flatten_load" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" bitwidth="19" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="indvar_flatten_load" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" bitwidth="19" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="cmp3" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp3_fu_235_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="13" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="cmp3" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp3_fu_235_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="cmp18" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp18_fu_241_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="cmp18" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp18_fu_241_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="cmp3_i" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp3_i_fu_247_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="cmp3_i" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp3_i_fu_247_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="shl_ln" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln_fu_253_p3" coreId="1013281633" contextFuncName="window_avg" bitwidth="19" opcode="bitconcatenate" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="shl_ln" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln_fu_253_p3" coreId="1013281633" contextFuncName="window_avg" bitwidth="19" opcode="bitconcatenate" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="shl_ln62_1" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln62_1_fu_261_p3" coreId="1013281633" contextFuncName="window_avg" bitwidth="17" opcode="bitconcatenate" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="shl_ln64_1" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln64_1_fu_261_p3" coreId="1013281633" contextFuncName="window_avg" bitwidth="17" opcode="bitconcatenate" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln62" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln62_fu_269_p1" coreId="1013281633" contextFuncName="window_avg" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln64" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln64_fu_269_p1" coreId="385206016" contextFuncName="window_avg" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln62" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln62_fu_273_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln64" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln64_fu_273_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="icmp_ln52_fu_279_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.92" m_topoIndex="20" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="icmp_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="icmp_ln54_fu_279_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.92" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="add_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln52_fu_285_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="21" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="add_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln54_fu_285_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="0" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1013281633" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split3</controlInputObjs>
         <controlInputObjs>block_114</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/window_2d.cpp">
-        <validLinenumbers>52</validLinenumbers>
-        <validLinenumbers>62</validLinenumbers>
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>64</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="73" name=".split3" type="BlockType">
@@ -321,14 +321,14 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
       <controlOutputObjs>block_81</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="c_load" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="45" contextFuncName="window_avg" bitwidth="10" opcode="load" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="c_load" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="151666223" contextFuncName="window_avg" bitwidth="10" opcode="load" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="56" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="icmp_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="icmp_ln54_fu_294_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="24" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="icmp_ln56" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="icmp_ln56_fu_294_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="56" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -338,8 +338,8 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="select_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln52_fu_300_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="10" opcode="select" m_display="0" m_delay="0.37" m_topoIndex="25" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="select_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln54_fu_300_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="10" opcode="select" m_display="0" m_delay="0.37" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
@@ -348,8 +348,8 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln52_2" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln52_2_fu_308_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="10" opcode="add" m_display="0" m_delay="0.93" m_topoIndex="26" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln54_2" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln54_2_fu_308_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="10" opcode="add" m_display="0" m_delay="0.93" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -358,157 +358,157 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="cmp3_mid1" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp3_mid1_fu_314_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="27" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="cmp3_mid1" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp3_mid1_fu_314_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="select_ln52_1" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln52_1_fu_320_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="1" opcode="select" m_display="0" m_delay="0.34" m_topoIndex="28" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="select_ln54_1" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln54_1_fu_320_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="1" opcode="select" m_display="0" m_delay="0.34" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="cmp18_mid1" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp18_mid1_fu_328_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="29" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="cmp18_mid1" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="cmp18_mid1_fu_328_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="window_avg" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="select_ln52_2" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln52_2_fu_334_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="1" opcode="select" m_display="0" m_delay="0.34" m_topoIndex="30" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="select_ln54_2" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln54_2_fu_334_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="1" opcode="select" m_display="0" m_delay="0.34" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="select_ln52_3" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln52_3_fu_342_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="1" opcode="select" m_display="0" m_delay="0.34" m_topoIndex="31" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="select_ln54_3" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln54_3_fu_342_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="1" opcode="select" m_display="0" m_delay="0.34" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>icmp</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="shl_ln62_mid1" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln62_mid1_fu_350_p3" coreId="0" contextFuncName="window_avg" bitwidth="19" opcode="bitconcatenate" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="shl_ln64_mid1" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln64_mid1_fu_350_p3" coreId="1936018748" contextFuncName="window_avg" bitwidth="19" opcode="bitconcatenate" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="shl_ln62_1_mid1" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln62_1_mid1_fu_358_p3" coreId="2944978384" contextFuncName="window_avg" bitwidth="17" opcode="bitconcatenate" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="shl_ln64_1_mid1" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="shl_ln64_1_mid1_fu_358_p3" coreId="1601465961" contextFuncName="window_avg" bitwidth="17" opcode="bitconcatenate" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln62_1" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln62_1_fu_366_p1" coreId="0" contextFuncName="window_avg" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln64_1" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln64_1_fu_366_p1" coreId="1919950882" contextFuncName="window_avg" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="add_ln62_1" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln62_1_fu_370_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="35" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="add_ln64_1" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln64_1_fu_370_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="select_ln52_4" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln52_4_fu_376_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="19" opcode="select" m_display="0" m_delay="0.39" m_topoIndex="36" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="select_ln54_4" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln54_4_fu_376_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="19" opcode="select" m_display="0" m_delay="0.39" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="zext_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln52_fu_384_p1" coreId="1650422894" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="zext_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln54_fu_384_p1" coreId="1601200442" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln52_1" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln52_1_fu_388_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="38" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln54_1" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln54_1_fu_388_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="select_ln52_5" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln52_5_fu_394_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="10" opcode="select" m_display="0" m_delay="0.37" m_topoIndex="39" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="select_ln54_5" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="select_ln54_5_fu_394_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="window_avg" bitwidth="10" opcode="select" m_display="0" m_delay="0.37" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln54_fu_402_p1" coreId="892155696" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
-        <dataInputObjs>select</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="zext_ln54_1" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln54_1_fu_406_p1" coreId="574451311" contextFuncName="window_avg" bitwidth="11" opcode="zext" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
-        <dataInputObjs>select</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln56" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1936683105" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln56" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln56_fu_402_p1" coreId="1699560457" contextFuncName="window_avg" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="56" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="zext_ln56_1" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="zext_ln56_1_fu_406_p1" coreId="1013281633" contextFuncName="window_avg" bitwidth="11" opcode="zext" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="56" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln58" lineNumber="58" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1633836900" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="58" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>select</dataInputObjs>
         <controlInputObjs>block_81</controlInputObjs>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/window_2d.cpp">
-        <validLinenumbers>54</validLinenumbers>
-        <validLinenumbers>52</validLinenumbers>
-        <validLinenumbers>62</validLinenumbers>
         <validLinenumbers>56</validLinenumbers>
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>64</validLinenumbers>
+        <validLinenumbers>58</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="81" name="block_81" type="BlockType">
       <controlInputObjs>.split3</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="add_ln57" lineNumber="57" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln57_fu_410_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="add" coreId="10" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="add_ln59" lineNumber="59" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln59_fu_410_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="add" coreId="10" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="add_ln57_1" lineNumber="57" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln57_1_fu_416_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="add" coreId="10" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_delay="1.05" m_topoIndex="44" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="add_ln59_1" lineNumber="59" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln59_1_fu_416_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="add" coreId="10" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_delay="1.05" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="gmem_addr" lineNumber="57" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1952917048" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="gmem_addr" lineNumber="59" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1953459305" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>gmem</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>readreq</dataOutputObjs>
         <dataOutputObjs>read</dataOutputObjs>
         <dataOutputObjs>gmem</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="din_tmp_2_req" lineNumber="57" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="readreq" coreId="121" contextFuncName="window_avg" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="69" m_display="0" m_delay="7.3" m_topoIndex="56" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="din_tmp_2_req" lineNumber="59" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="readreq" coreId="121" contextFuncName="window_avg" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="69" m_display="0" m_delay="7.3" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="din_tmp_2" lineNumber="57" originalName="din_tmp" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="121" contextFuncName="window_avg" bitwidth="8" opcode="read" nodeLabel="71.0" m_display="0" m_delay="7.3" m_topoIndex="57" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="din_tmp_2" lineNumber="59" originalName="din_tmp" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="121" contextFuncName="window_avg" bitwidth="8" opcode="read" nodeLabel="71.0" m_display="0" m_delay="7.3" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="din_tmp_write_ln57" lineNumber="57" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="2036821868" contextFuncName="window_avg" opcode="store" nodeLabel="71.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="din_tmp_write_ln59" lineNumber="59" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1397508187" contextFuncName="window_avg" opcode="store" nodeLabel="71.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>read</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln57" lineNumber="57" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1635000354" contextFuncName="window_avg" opcode="br" nodeLabel="71.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="57" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln59" lineNumber="59" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1952917093" contextFuncName="window_avg" opcode="br" nodeLabel="71.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="59" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/window_2d.cpp">
-        <validLinenumbers>57</validLinenumbers>
+        <validLinenumbers>59</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="96" name="_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" type="BlockType">
@@ -518,13 +518,13 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlOutputObjs>
       <controlOutputObjs>_ZNK13ap_fixed_baseILi13ELi11ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE7to_uintEv.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="din_tmp_3" lineNumber="58" originalName="din_tmp" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="825980012" contextFuncName="window_avg" bitwidth="8" opcode="load" nodeLabel="72.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="58" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="din_tmp_3" lineNumber="60" originalName="din_tmp" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1702129263" contextFuncName="window_avg" bitwidth="8" opcode="load" nodeLabel="72.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="60" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="buff_ret" lineNumber="58" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="grp_buff_fu_188" coreId="1767862369" contextFuncName="window_avg" bitwidth="24" opcode="call" nodeLabel="72.0" nodeLatency="2" m_display="0" m_delay="2.06" m_topoIndex="61" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="58" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="buff_ret" lineNumber="60" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="grp_buff_fu_188" coreId="1633836900" contextFuncName="window_avg" bitwidth="24" opcode="call" nodeLabel="72.0" nodeLatency="2" m_display="0" m_delay="2.06" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="60" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>load</dataInputObjs>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
@@ -532,20 +532,20 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <constName>buff</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="w_V_0" lineNumber="58" originalName="w.V[0]" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1734439795" contextFuncName="window_avg" bitwidth="8" opcode="extractvalue" nodeLabel="74.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="58" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="w_V_0" lineNumber="60" originalName="w.V[0]" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="875639328" contextFuncName="window_avg" bitwidth="8" opcode="extractvalue" nodeLabel="74.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="60" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="w_V_1" lineNumber="58" originalName="w.V[1]" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1936942413" contextFuncName="window_avg" bitwidth="8" opcode="extractvalue" nodeLabel="74.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="58" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="w_V_1" lineNumber="60" originalName="w.V[1]" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1699560457" contextFuncName="window_avg" bitwidth="8" opcode="extractvalue" nodeLabel="74.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="60" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="w_V_2" lineNumber="58" originalName="w.V[2]" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1936683105" contextFuncName="window_avg" bitwidth="8" opcode="extractvalue" nodeLabel="74.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="2">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="58" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="w_V_2" lineNumber="60" originalName="w.V[2]" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1948265522" contextFuncName="window_avg" bitwidth="8" opcode="extractvalue" nodeLabel="74.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="60" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
@@ -563,18 +563,18 @@
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="r_V" lineNumber="1171" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_506_p3" coreId="539769716" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="bitconcatenate" nodeLabel="74.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="r_V" lineNumber="1171" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="r_V_fu_506_p3" coreId="1650422894" contextFuncName="operator_mul_3_1_false_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="bitconcatenate" nodeLabel="74.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1171" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="operator*&amp;lt;3, 1, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="zext_ln1245" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_fu_514_p1" coreId="645097844" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="74.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="zext_ln1245" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_fu_514_p1" coreId="1919950882" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="74.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1245" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="operator+&amp;lt;11, 9, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="zext_ln1245_1" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_1_fu_518_p1" coreId="539109689" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="74.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="zext_ln1245_1" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_1_fu_518_p1" coreId="997420912" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="74.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1245" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="operator+&amp;lt;11, 9, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -585,7 +585,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="zext_ln1245_2" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_2_fu_528_p1" coreId="1735355450" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="74.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="zext_ln1245_2" lineNumber="1245" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1245_2_fu_528_p1" coreId="1702129263" contextFuncName="operator_add_11_9_false_AP_TRN_AP_WRAP_0" bitwidth="10" opcode="zext" nodeLabel="74.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1245" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="operator+&amp;lt;11, 9, false, AP_TRN, AP_WRAP, 0&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -596,8 +596,8 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln61" lineNumber="61" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1852142702" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="61" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln63" lineNumber="63" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1918857313" contextFuncName="window_avg" opcode="br" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="63" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>select</dataInputObjs>
         <controlInputObjs>_ZNK13ap_fixed_baseILi13ELi11ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE7to_uintEv.exit</controlInputObjs>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlInputObjs>
@@ -607,41 +607,41 @@
         <validLinenumbers>1245</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="../src/window_2d.cpp">
-        <validLinenumbers>58</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
         <validLinenumbers>13</validLinenumbers>
         <validLinenumbers>15</validLinenumbers>
-        <validLinenumbers>61</validLinenumbers>
+        <validLinenumbers>63</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="106" name="_ZNK13ap_fixed_baseILi13ELi11ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE7to_uintEv.exit" type="BlockType">
       <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="trunc_ln" lineNumber="322" fileName="../src/../include/ap_int.h" fileDirectory=".." rtlName="trunc_ln_reg_610" coreId="842675248" contextFuncName="ap_uint" bitwidth="8" opcode="partselect" nodeLabel="74.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="trunc_ln" lineNumber="322" fileName="../src/../include/ap_int.h" fileDirectory=".." rtlName="trunc_ln_reg_610" coreId="1601200442" contextFuncName="ap_uint" bitwidth="8" opcode="partselect" nodeLabel="74.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/../include/ap_int.h" linenumber="322" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="ap_uint"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="add_ln62_3" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln62_3_fu_428_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="11" opcode="add" m_display="0" m_delay="0.96" m_topoIndex="47" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="add_ln64_3" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln64_3_fu_428_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="11" opcode="add" m_display="0" m_delay="0.96" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="sext_ln62" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="sext_ln62_fu_434_p1" coreId="1214215017" contextFuncName="window_avg" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="sext_ln64" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="sext_ln64_fu_434_p1" coreId="1663984690" contextFuncName="window_avg" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="add_ln62_2" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln62_2_fu_438_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="49" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="add_ln64_2" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln64_2_fu_438_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="64" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="gmem_addr_1" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="875639328" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="gmem_addr_1" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="151666223" contextFuncName="window_avg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>gmem</dataInputObjs>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>writereq</dataOutputObjs>
@@ -649,30 +649,30 @@
         <dataOutputObjs>writeresp</dataOutputObjs>
         <dataOutputObjs>gmem</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="gmem_addr_1_req" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="121" contextFuncName="window_avg" bitwidth="1" opcode="writereq" nodeLabel="74.0" m_display="0" m_delay="7.3" m_topoIndex="74" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="gmem_addr_1_req" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="121" contextFuncName="window_avg" bitwidth="1" opcode="writereq" nodeLabel="74.0" m_display="0" m_delay="7.3" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="gmem_addr_1_write_ln62" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="121" contextFuncName="window_avg" opcode="write" nodeLabel="75.0" m_display="0" m_delay="7.3" m_topoIndex="75" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="gmem_addr_1_write_ln64" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="121" contextFuncName="window_avg" opcode="write" nodeLabel="75.0" m_display="0" m_delay="7.3" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="gmem_addr_1_resp" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="121" contextFuncName="window_avg" bitwidth="1" opcode="writeresp" nodeLabel="76.0" nodeLatency="67" m_display="0" m_delay="7.3" m_topoIndex="76" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="gmem_addr_1_resp" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="121" contextFuncName="window_avg" bitwidth="1" opcode="writeresp" nodeLabel="76.0" nodeLatency="67" m_display="0" m_delay="7.3" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln62" lineNumber="62" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="795766637" contextFuncName="window_avg" opcode="br" nodeLabel="143.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="62" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="br_ln64" lineNumber="64" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="574453865" contextFuncName="window_avg" opcode="br" nodeLabel="143.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="64" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <controlInputObjs>_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/../include/ap_int.h">
         <validLinenumbers>322</validLinenumbers>
       </fileValidLineNumbers>
       <fileValidLineNumbers fileName="../src/window_2d.cpp">
-        <validLinenumbers>62</validLinenumbers>
+        <validLinenumbers>64</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
     <basic_blocks id="112" name="_ZmlILi3ELi1ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0ELi8ELb0EEN13ap_fixed_baseIXT5_EXT5_EXT6_ELS0_5ELS1_3ELi0EE5RTypeIXT_EXT0_EXT1_EE4multERK11ap_int_baseIXT5_EXT6_EERKS2_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit._crit_edge" type="BlockType">
@@ -681,33 +681,33 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>block_48</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="add_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln54_fu_450_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="10" opcode="add" m_display="0" m_delay="0.93" m_topoIndex="51" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="add_ln56" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." rtlName="add_ln56_fu_450_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="window_avg" bitwidth="10" opcode="add" m_display="0" m_delay="0.93" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="56" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="indvar_flatten_write_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1735289198" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="52" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="r_write_ln52" lineNumber="52" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1886352501" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="53" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="52" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
-        <dataInputObjs>select</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="c_write_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="2087874420" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="indvar_flatten_write_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="858860852" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="52" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="br_ln0" coreId="1043276322" opcode="br" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="r_write_ln54" lineNumber="54" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="1650422894" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="54" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="c_write_ln56" lineNumber="56" fileName="../src/window_2d.cpp" fileDirectory=".." coreId="572669294" contextFuncName="window_avg" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/window_2d.cpp" linenumber="56" fileDirectory="D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42" functionName="window_avg"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="br_ln0" coreId="825372722" opcode="br" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
         <controlInputObjs>block_48</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/window_2d.cpp">
+        <validLinenumbers>56</validLinenumbers>
         <validLinenumbers>54</validLinenumbers>
-        <validLinenumbers>52</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -855,35 +855,35 @@
   <ScheduleInfo time="141"/>
   <ScheduleInfo time="142"/>
   <ScheduleInfo time="143"/>
-  <regnodes realName="icmp_ln52_reg_575">
-    <nodeIds>45</nodeIds>
+  <regnodes realName="select_ln54_1_reg_584">
+    <nodeIds>56</nodeIds>
   </regnodes>
   <regnodes realName="trunc_ln_reg_610">
     <nodeIds>97</nodeIds>
   </regnodes>
-  <regnodes realName="select_ln52_3_reg_593">
-    <nodeIds>59</nodeIds>
-  </regnodes>
   <regnodes realName="gmem_addr_reg_598">
     <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln54_3_reg_593">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln54_2_reg_589">
+    <nodeIds>58</nodeIds>
   </regnodes>
   <regnodes realName="gmem_addr_1_reg_604">
     <nodeIds>101</nodeIds>
   </regnodes>
-  <regnodes realName="select_ln52_reg_579">
-    <nodeIds>53</nodeIds>
-  </regnodes>
   <regnodes realName="din_tmp_reg_569">
     <nodeIds>17</nodeIds>
   </regnodes>
-  <regnodes realName="select_ln52_2_reg_589">
-    <nodeIds>58</nodeIds>
+  <regnodes realName="icmp_ln54_reg_575">
+    <nodeIds>45</nodeIds>
   </regnodes>
   <regnodes realName="r_reg_555">
     <nodeIds>15</nodeIds>
   </regnodes>
-  <regnodes realName="select_ln52_1_reg_584">
-    <nodeIds>56</nodeIds>
+  <regnodes realName="select_ln54_reg_579">
+    <nodeIds>53</nodeIds>
   </regnodes>
   <regnodes realName="c_reg_548">
     <nodeIds>14</nodeIds>
@@ -894,26 +894,26 @@
   <expressionNodes realName="din_tmp_fu_144">
     <nodeIds>17</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln54_1_fu_406">
-    <nodeIds>69</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="zext_ln1245_2_fu_528">
     <nodeIds>93</nodeIds>
   </expressionNodes>
   <expressionNodes realName="w_V_0_1_fu_492">
     <nodeIds>87</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln52_5_fu_394">
-    <nodeIds>67</nodeIds>
+  <expressionNodes realName="add_ln54_fu_285">
+    <nodeIds>46</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln52_1_fu_388">
-    <nodeIds>66</nodeIds>
+  <expressionNodes realName="add_ln64_1_fu_370">
+    <nodeIds>63</nodeIds>
   </expressionNodes>
   <expressionNodes realName="c_fu_132">
     <nodeIds>14</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln52_2_fu_308">
-    <nodeIds>54</nodeIds>
+  <expressionNodes realName="select_ln54_4_fu_376">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln54_2_fu_334">
+    <nodeIds>58</nodeIds>
   </expressionNodes>
   <expressionNodes realName="r_V_fu_506">
     <nodeIds>89</nodeIds>
@@ -921,14 +921,14 @@
   <expressionNodes realName="w_V_2_fu_488">
     <nodeIds>86</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln62_2_fu_438">
-    <nodeIds>100</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="shl_ln62_1_fu_261">
-    <nodeIds>42</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="trunc_ln_fu_538">
     <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln64_1_mid1_fu_358">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln64_fu_269">
+    <nodeIds>43</nodeIds>
   </expressionNodes>
   <expressionNodes realName="gmem_addr_fu_422">
     <nodeIds>76</nodeIds>
@@ -939,32 +939,32 @@
   <expressionNodes realName="w_V_1_fu_484">
     <nodeIds>85</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln52_1_fu_320">
-    <nodeIds>56</nodeIds>
+  <expressionNodes realName="add_ln59_fu_410">
+    <nodeIds>74</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln62_fu_269">
-    <nodeIds>43</nodeIds>
+  <expressionNodes realName="shl_ln64_1_fu_261">
+    <nodeIds>42</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln54_fu_402">
+  <expressionNodes realName="shl_ln64_mid1_fu_350">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_fu_402">
     <nodeIds>68</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln62_3_fu_428">
-    <nodeIds>98</nodeIds>
   </expressionNodes>
   <expressionNodes realName="r_fu_136">
     <nodeIds>15</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="shl_ln62_mid1_fu_350">
-    <nodeIds>60</nodeIds>
+  <expressionNodes realName="select_ln54_3_fu_342">
+    <nodeIds>59</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln62_fu_434">
+  <expressionNodes realName="sext_ln64_fu_434">
     <nodeIds>99</nodeIds>
   </expressionNodes>
   <expressionNodes realName="ret_V_1_fu_532">
     <nodeIds>94</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln52_4_fu_376">
-    <nodeIds>64</nodeIds>
+  <expressionNodes realName="add_ln54_1_fu_388">
+    <nodeIds>66</nodeIds>
   </expressionNodes>
   <expressionNodes realName="indvar_flatten_fu_140">
     <nodeIds>16</nodeIds>
@@ -972,47 +972,41 @@
   <expressionNodes realName="w_V_2_1_fu_499">
     <nodeIds>88</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln52_2_fu_334">
-    <nodeIds>58</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln62_1_fu_370">
-    <nodeIds>63</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="shl_ln_fu_253">
     <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_2_fu_308">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_2_fu_438">
+    <nodeIds>100</nodeIds>
   </expressionNodes>
   <expressionNodes realName="cmp18_mid1_fu_328">
     <nodeIds>57</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln54_fu_294">
-    <nodeIds>52</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln57_fu_410">
-    <nodeIds>74</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln62_fu_273">
-    <nodeIds>44</nodeIds>
+  <expressionNodes realName="add_ln59_1_fu_416">
+    <nodeIds>75</nodeIds>
   </expressionNodes>
   <expressionNodes realName="gmem_addr_1_fu_444">
     <nodeIds>101</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln52_fu_300">
+  <expressionNodes realName="zext_ln64_1_fu_366">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln54_fu_300">
     <nodeIds>53</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln52_fu_279">
-    <nodeIds>45</nodeIds>
+  <expressionNodes realName="icmp_ln56_fu_294">
+    <nodeIds>52</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln57_1_fu_416">
-    <nodeIds>75</nodeIds>
+  <expressionNodes realName="select_ln54_5_fu_394">
+    <nodeIds>67</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln52_fu_384">
+  <expressionNodes realName="zext_ln54_fu_384">
     <nodeIds>65</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="shl_ln62_1_mid1_fu_358">
-    <nodeIds>61</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln52_fu_285">
-    <nodeIds>46</nodeIds>
+  <expressionNodes realName="icmp_ln54_fu_279">
+    <nodeIds>45</nodeIds>
   </expressionNodes>
   <expressionNodes realName="w_V_0_fu_480">
     <nodeIds>84</nodeIds>
@@ -1020,20 +1014,26 @@
   <expressionNodes realName="cmp3_fu_235">
     <nodeIds>38</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln52_3_fu_342">
-    <nodeIds>59</nodeIds>
+  <expressionNodes realName="add_ln64_3_fu_428">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_1_fu_406">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln56_fu_450">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_fu_273">
+    <nodeIds>44</nodeIds>
   </expressionNodes>
   <expressionNodes realName="ret_V_fu_522">
     <nodeIds>92</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln54_fu_450">
-    <nodeIds>107</nodeIds>
+  <expressionNodes realName="select_ln54_1_fu_320">
+    <nodeIds>56</nodeIds>
   </expressionNodes>
   <expressionNodes realName="zext_ln1245_fu_514">
     <nodeIds>90</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln62_1_fu_366">
-    <nodeIds>62</nodeIds>
   </expressionNodes>
   <expressionNodes realName="cmp3_i_fu_247">
     <nodeIds>40</nodeIds>
@@ -1053,25 +1053,22 @@
   <ioNodes realName="din_tmp_3_load_fu_476">
     <nodeIds>82</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln52_store_fu_224">
-    <nodeIds>33</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln57_store_fu_471">
+  <ioNodes realName="store_ln59_store_fu_471">
     <nodeIds>79</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln52_store_fu_214">
+  <ioNodes realName="store_ln54_store_fu_214">
     <nodeIds>31</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln52_store_fu_456">
+  <ioNodes realName="store_ln54_store_fu_456">
     <nodeIds>108</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln54_store_fu_466">
-    <nodeIds>110</nodeIds>
+  <ioNodes realName="store_ln54_store_fu_224">
+    <nodeIds>33</nodeIds>
   </ioNodes>
   <ioNodes realName="indvar_flatten_load_load_fu_232">
     <nodeIds>37</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln52_store_fu_219">
+  <ioNodes realName="store_ln54_store_fu_219">
     <nodeIds>32</nodeIds>
   </ioNodes>
   <ioNodes realName="din_tmp_2_read_fu_167">
@@ -1084,20 +1081,23 @@
     <nodeIds>102</nodeIds>
     <nodeIds>104</nodeIds>
   </ioNodes>
+  <ioNodes realName="write_ln64_write_fu_179">
+    <nodeIds>103</nodeIds>
+  </ioNodes>
   <ioNodes realName="dout_read_read_fu_148">
     <nodeIds>29</nodeIds>
   </ioNodes>
   <ioNodes realName="r_1_load_fu_229">
     <nodeIds>36</nodeIds>
   </ioNodes>
-  <ioNodes realName="write_ln62_write_fu_179">
-    <nodeIds>103</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln52_store_fu_461">
-    <nodeIds>109</nodeIds>
-  </ioNodes>
   <ioNodes realName="din_read_read_fu_154">
     <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln54_store_fu_461">
+    <nodeIds>109</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_466">
+    <nodeIds>110</nodeIds>
   </ioNodes>
   <memoryPorts dataString="buff0_ram_V" portID="100">
     <nodeIds>83</nodeIds>

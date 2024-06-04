@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>virtexuplus</ProductFamily>
-<Part>xcvu11p-flga2577-1-e</Part>
+<ProductFamily>zynquplus</ProductFamily>
+<Part>xczu7ev-ffvc1156-2-e</Part>
 <TopModelName>circular_shift_reg</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
@@ -22,31 +22,31 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>89</Best-caseLatency>
-<Average-caseLatency>89</Average-caseLatency>
-<Worst-caseLatency>89</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.890 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.890 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.890 us</Worst-caseRealTimeLatency>
-<Interval-min>90</Interval-min>
-<Interval-max>90</Interval-max>
+<Best-caseLatency>75</Best-caseLatency>
+<Average-caseLatency>75</Average-caseLatency>
+<Worst-caseLatency>75</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.750 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.750 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.750 us</Worst-caseRealTimeLatency>
+<Interval-min>76</Interval-min>
+<Interval-max>76</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>59</BRAM_18K>
-<FF>2251</FF>
-<LUT>2375</LUT>
+<BRAM_18K>17</BRAM_18K>
+<FF>978</FF>
+<LUT>1764</LUT>
 <URAM>0</URAM>
 <DSP>0</DSP>
 </Resources>
 <AvailableResources>
-<BRAM_18K>4032</BRAM_18K>
-<DSP>9216</DSP>
-<FF>2592000</FF>
-<LUT>1296000</LUT>
-<URAM>960</URAM>
+<BRAM_18K>624</BRAM_18K>
+<DSP>1728</DSP>
+<FF>460800</FF>
+<LUT>230400</LUT>
+<URAM>96</URAM>
 </AvailableResources>
 </AreaEstimates>
 
@@ -470,7 +470,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>512</Bits>
+<Bits>128</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -482,7 +482,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>64</Bits>
+<Bits>16</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -710,7 +710,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>512</Bits>
+<Bits>128</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>

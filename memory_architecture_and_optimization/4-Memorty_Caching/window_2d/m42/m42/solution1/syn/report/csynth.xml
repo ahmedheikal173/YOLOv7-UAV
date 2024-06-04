@@ -840,7 +840,7 @@
                     <BindInstances>buff1_ram_V_U buff0_ram_V_U</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>add_ln62_fu_273_p2 add_ln52_fu_285_p2 add_ln52_2_fu_308_p2 add_ln62_1_fu_370_p2 add_ln52_1_fu_388_p2 add_ln57_fu_410_p2 add_ln57_1_fu_416_p2 ret_V_fu_522_p2 ret_V_1_fu_532_p2 add_ln62_3_fu_428_p2 add_ln62_2_fu_438_p2 add_ln54_fu_450_p2</BindInstances>
+            <BindInstances>add_ln64_fu_273_p2 add_ln54_fu_285_p2 add_ln54_2_fu_308_p2 add_ln64_1_fu_370_p2 add_ln54_1_fu_388_p2 add_ln59_fu_410_p2 add_ln59_1_fu_416_p2 ret_V_fu_522_p2 ret_V_1_fu_532_p2 add_ln64_3_fu_428_p2 add_ln64_2_fu_438_p2 add_ln56_fu_450_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -876,17 +876,17 @@
                     <LUT>405</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
-                    <DSP>0</DSP>
-                    <AVAIL_DSP>9216</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
                     <URAM>0</URAM>
                     <AVAIL_URAM>960</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="buff1_ram_V_U" SOURCE=":0" URAM="0" VARIABLE="buff1_ram_V"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="buff0_ram_V_U" SOURCE=":0" URAM="0" VARIABLE="buff0_ram_V"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="buff1_ram_V_U" SOURCE=":0" URAM="0" VARIABLE="buff1_ram_V"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="buff0_ram_V_U" SOURCE=":0" URAM="0" VARIABLE="buff0_ram_V"/>
             </BindNodes>
         </Module>
         <Module>
@@ -945,18 +945,18 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_fu_273_p2" SOURCE="../src/window_2d.cpp:62" URAM="0" VARIABLE="add_ln62"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_285_p2" SOURCE="../src/window_2d.cpp:52" URAM="0" VARIABLE="add_ln52"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_2_fu_308_p2" SOURCE="../src/window_2d.cpp:52" URAM="0" VARIABLE="add_ln52_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_1_fu_370_p2" SOURCE="../src/window_2d.cpp:62" URAM="0" VARIABLE="add_ln62_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_1_fu_388_p2" SOURCE="../src/window_2d.cpp:52" URAM="0" VARIABLE="add_ln52_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln57_fu_410_p2" SOURCE="../src/window_2d.cpp:57" URAM="0" VARIABLE="add_ln57"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln57_1_fu_416_p2" SOURCE="../src/window_2d.cpp:57" URAM="0" VARIABLE="add_ln57_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_fu_273_p2" SOURCE="../src/window_2d.cpp:64" URAM="0" VARIABLE="add_ln64"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_fu_285_p2" SOURCE="../src/window_2d.cpp:54" URAM="0" VARIABLE="add_ln54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_2_fu_308_p2" SOURCE="../src/window_2d.cpp:54" URAM="0" VARIABLE="add_ln54_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_1_fu_370_p2" SOURCE="../src/window_2d.cpp:64" URAM="0" VARIABLE="add_ln64_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_1_fu_388_p2" SOURCE="../src/window_2d.cpp:54" URAM="0" VARIABLE="add_ln54_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_fu_410_p2" SOURCE="../src/window_2d.cpp:59" URAM="0" VARIABLE="add_ln59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_1_fu_416_p2" SOURCE="../src/window_2d.cpp:59" URAM="0" VARIABLE="add_ln59_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_522_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_1_fu_532_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_3_fu_428_p2" SOURCE="../src/window_2d.cpp:62" URAM="0" VARIABLE="add_ln62_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln62_2_fu_438_p2" SOURCE="../src/window_2d.cpp:62" URAM="0" VARIABLE="add_ln62_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_fu_450_p2" SOURCE="../src/window_2d.cpp:54" URAM="0" VARIABLE="add_ln54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_3_fu_428_p2" SOURCE="../src/window_2d.cpp:64" URAM="0" VARIABLE="add_ln64_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_2_fu_438_p2" SOURCE="../src/window_2d.cpp:64" URAM="0" VARIABLE="add_ln64_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="ROW_COL" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_450_p2" SOURCE="../src/window_2d.cpp:56" URAM="0" VARIABLE="add_ln56"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -1230,25 +1230,20 @@
             <item name="Inferred Bursts and Widening Missed">
                 <table>
                     <keys size="6">HW Interface, Variable, Loop, Problem, Resolution, Location</keys>
-                    <column name="m_axi_gmem">din, COL, Access load is in the conditional branch, 214-232, ../src/window_2d.cpp:54:9</column>
-                    <column name="m_axi_gmem">dout, COL, Access store is in the conditional branch, 214-232, ../src/window_2d.cpp:54:9</column>
+                    <column name="m_axi_gmem">din, COL, Access load is in the conditional branch, 214-232, ../src/window_2d.cpp:56:9</column>
+                    <column name="m_axi_gmem">dout, COL, Access store is in the conditional branch, 214-232, ../src/window_2d.cpp:56:9</column>
                 </table>
             </item>
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="resource" location="../src/./singleport_ram.hpp:27" status="warning" parentFunction="singleport_ram&lt;n, w&gt;" variable="ram" isDirective="0" options="variable=ram core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="inline" location="../src/./singleport_ram.hpp:36" status="valid" parentFunction="exec" variable="" isDirective="0" options=""/>
-        <Pragma type="resource" location="../src/window_2d.cpp:43" status="warning" parentFunction="window_avg" variable="din" isDirective="0" options="variable=din core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+        <Pragma type="bind_storage" location="../src/./singleport_ram.hpp:28" status="valid" parentFunction="singleport_ram&lt;n, w&gt;" variable="ram" isDirective="0" options="variable=ram type=RAM_1P impl=AUTO"/>
+        <Pragma type="inline" location="../src/./singleport_ram.hpp:37" status="valid" parentFunction="exec" variable="" isDirective="0" options=""/>
+        <Pragma type="bind_storage" location="../src/window_2d.cpp:44" status="warning" parentFunction="window_avg" variable="din" isDirective="0" options="variable=din type=RAM_T2P impl=AUTO">
             <Msg msg_id="214-185" msg_severity="WARNING" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported"/>
         </Pragma>
-        <Pragma type="resource" location="../src/window_2d.cpp:44" status="warning" parentFunction="window_avg" variable="dout" isDirective="0" options="variable=dout core=RAM_1P_BRAM">
-            <Msg msg_id="207-5523" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
-        </Pragma>
-        <Pragma type="pipeline" location="../src/window_2d.cpp:55" status="valid" parentFunction="window_avg" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../src/window_2d.cpp:46" status="valid" parentFunction="window_avg" variable="dout" isDirective="0" options="variable=dout type=RAM_T2P impl=AUTO"/>
+        <Pragma type="pipeline" location="../src/window_2d.cpp:57" status="valid" parentFunction="window_avg" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

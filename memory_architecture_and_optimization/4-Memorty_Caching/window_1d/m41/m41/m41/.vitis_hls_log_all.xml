@@ -12,7 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m41" solutionName="solution1" date="2024-06-03T14:58:55.610+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m41" solutionName="solution1" date="2024-06-04T23:38:23.048+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

@@ -1,7 +1,7 @@
 set SynModuleInfo {
   {SRCNAME buff MODELNAME buff RTLNAME window_avg_buff
     SUBMODULES {
-      {MODELNAME window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W RTLNAME window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W BINDTYPE storage TYPE ram_1p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W RTLNAME window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W BINDTYPE storage TYPE ram_1p IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME window_avg MODELNAME window_avg RTLNAME window_avg IS_TOP 1

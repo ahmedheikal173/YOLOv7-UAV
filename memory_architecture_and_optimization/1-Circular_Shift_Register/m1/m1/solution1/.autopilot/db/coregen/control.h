@@ -20,7 +20,8 @@
 //        bit 5 - ap_local_deadlock (COR/TOW)
 //        others - reserved
 // 0x10 : Data signal of din
-//        bit 31~0 - din[31:0] (Read/Write)
+//        bit 7~0 - din[7:0] (Read/Write)
+//        others  - reserved
 // 0x14 : reserved
 // 0x18 : Data signal of dout
 //        bit 31~0 - dout[31:0] (Read/Write)
@@ -34,6 +35,6 @@
 #define CONTROL_ADDR_IER       0x08
 #define CONTROL_ADDR_ISR       0x0c
 #define CONTROL_ADDR_DIN_DATA  0x10
-#define CONTROL_BITS_DIN_DATA  32
+#define CONTROL_BITS_DIN_DATA  8
 #define CONTROL_ADDR_DOUT_DATA 0x18
 #define CONTROL_BITS_DOUT_DATA 64
