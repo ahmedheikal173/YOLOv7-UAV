@@ -1,7 +1,7 @@
 #ifndef __WORD_WIDTH__
 #define __WORD_WIDTH__
 
-#define NUM_WORDS (1228800)
+#define NUM_WORDS 1228800
 
 #include "../include/ap_int.h"
 

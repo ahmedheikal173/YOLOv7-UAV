@@ -5,7 +5,7 @@
 #include <cmath>
 
 //#define ADDRESS_BITWIDTH (21) //1228800 locations
-#define ADDRESS_BITWIDTH (4) //1228800 locations
+#define ADDRESS_BITWIDTH (4) //9 locations
 
 //#define ADDRESS_BITWIDTH (24) //9830400 locations
 

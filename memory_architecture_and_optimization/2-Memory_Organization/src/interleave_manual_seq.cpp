@@ -24,7 +24,6 @@ LOAD:
 WRITE:
     for (int i = 0; i < NUM_WORDS / 3; i += 1)
 #pragma HLS PIPELINE II=1
-    	// Some Modification Here
-    	// Follow the description in book but not code
+
     	y[idx++] = x.read_seq(i, 0) + x.read_seq(i, 1) + x.read_seq(i, 2);
 }
