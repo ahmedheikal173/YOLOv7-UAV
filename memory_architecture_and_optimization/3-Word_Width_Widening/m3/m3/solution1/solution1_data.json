@@ -95,8 +95,8 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/..\/src\/word_width.cpp",
-      "..\/..\/..\/src\/word_width_manual.cpp"
+      "..\/..\/..\/src\/word_width_manual.cpp",
+      "..\/..\/..\/src\/word_width.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/word_width_control_s_axi.vhd",
@@ -816,7 +816,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-05 16:27:52 +0300",
+    "Time": "2024-06-05 23:36:34 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

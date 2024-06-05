@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling test_window_2d.cpp_pre.cpp.tb.cpp
+   Compiling apatb_window_avg.cpp
+   Compiling window_2d.cpp_pre.cpp.tb.cpp
+   Compiling apatb_window_avg_ir.ll
+   Generating cosim.tv.exe

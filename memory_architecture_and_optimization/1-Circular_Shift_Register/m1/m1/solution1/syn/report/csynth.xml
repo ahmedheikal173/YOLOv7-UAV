@@ -1209,7 +1209,7 @@
         </section>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="bind_storage" location="../src/./circular_shift.h:23" status="valid" parentFunction="circular_shift&lt;t, n&gt;" variable="mem" isDirective="0" options="variable=mem type=RAM_T2P impl=AUTO"/>
+        <Pragma type="bind_storage" location="../src/./circular_shift.h:23" status="valid" parentFunction="circular_shift&lt;t, n&gt;" variable="mem" isDirective="0" options="variable=mem type=RAM_T2P impl=BRAM"/>
         <Pragma type="pipeline" location="../src/./circular_shift.h:30" status="valid" parentFunction="circular_shift&lt;t, n&gt;" variable="" isDirective="0" options=""/>
         <Pragma type="pipeline" location="../src/shift_reg.cpp:15" status="valid" parentFunction="circular_shift_reg" variable="" isDirective="0" options=""/>
     </PragmaReport>

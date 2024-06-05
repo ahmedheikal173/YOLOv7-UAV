@@ -5803,6 +5803,5 @@ WRITE:
     for (int i = 0; i < 1228800 / 3; i += 1)
 #pragma HLS PIPELINE II=1
 
-
  y[idx++] = x.read_seq(i, 0) + x.read_seq(i, 1) + x.read_seq(i, 2);
 }

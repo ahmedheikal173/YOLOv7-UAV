@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717570579502">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717618153736">
   <ports id="1" name="gmem" type="PortType" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="2" name="din" type="PortType" originalName="din" coreId="4294967295" bitwidth="8">
+  <ports id="2" name="din" type="PortType" originalName="din" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="dout" type="PortType" coreId="1031040613" bitwidth="64">
+  <ports id="3" name="dout" type="PortType" coreId="0" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="36" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -49,17 +49,17 @@
       <dataInputObjs>din</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="regs_wptr_V_load" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="1663050274" contextFuncName="operator_long_long" bitwidth="5" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="regs_wptr_V_load" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="4294967295" contextFuncName="operator_long_long" bitwidth="5" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="587" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator long long"/>
       <dataOutputObjs>zext</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="zext_ln587" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="zext_ln587_fu_124_p1" coreId="1685024032" contextFuncName="operator_long_long" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="zext_ln587" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="zext_ln587_fu_124_p1" coreId="4294967295" contextFuncName="operator_long_long" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="587" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator long long"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="regs_mem_V_addr" lineNumber="36" fileName="../src/./circular_shift.h" fileDirectory=".." coreId="1869635878" contextFuncName="operator_ls" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="regs_mem_V_addr" lineNumber="36" fileName="../src/./circular_shift.h" fileDirectory=".." coreId="0" contextFuncName="operator_ls" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../src/./circular_shift.h" linenumber="36" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator&amp;lt;&amp;lt;"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
@@ -91,11 +91,11 @@
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="regs_wptr_V_write_ln38" lineNumber="38" fileName="../src/./circular_shift.h" fileDirectory=".." coreId="1853187616" contextFuncName="operator_ls" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="regs_wptr_V_write_ln38" lineNumber="38" fileName="../src/./circular_shift.h" fileDirectory=".." coreId="0" contextFuncName="operator_ls" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../src/./circular_shift.h" linenumber="38" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator&amp;lt;&amp;lt;"/>
       <dataInputObjs>select</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="gmem_addr" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="83623344" contextFuncName="circular_shift_reg" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="gmem_addr" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="circular_shift_reg" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="13" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>gmem</dataOutputObjs>
@@ -113,7 +113,7 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="_ln5" lineNumber="5" fileName="../src/shift_reg.cpp" fileDirectory=".." rtlName="grp_circular_shift_reg_Pipeline_WRITE_fu_110" coreId="1162363731" contextFuncName="circular_shift_reg" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.21" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="_ln5" lineNumber="5" fileName="../src/shift_reg.cpp" fileDirectory=".." rtlName="grp_circular_shift_reg_Pipeline_WRITE_fu_110" coreId="0" contextFuncName="circular_shift_reg" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.21" m_topoIndex="14" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="5" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
       <dataInputObjs>read</dataInputObjs>
       <dataInputObjs>add</dataInputObjs>
@@ -124,7 +124,7 @@
       <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="18" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln18" lineNumber="18" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="644183410" contextFuncName="circular_shift_reg" opcode="ret" nodeLabel="71.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln18" lineNumber="18" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="circular_shift_reg" opcode="ret" nodeLabel="71.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="18" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
     </node_objs>
     <fileValidLineNumbers fileName="../src/../include/ap_int.h">

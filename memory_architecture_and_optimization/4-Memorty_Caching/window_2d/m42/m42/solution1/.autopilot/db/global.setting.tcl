@@ -45,12 +45,12 @@ set TargetInfo xcvu11p:-flga2577:-1-e
 set SourceFiles {sc {} c ../../../src/window_2d.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/m42/m42/solution1/solution1.directive
-set TBFiles {verilog {../../../tb/test_singleport_ram.cpp ../../../tb/test_window_2d.cpp} bc {../../../tb/test_singleport_ram.cpp ../../../tb/test_window_2d.cpp} sc {../../../tb/test_singleport_ram.cpp ../../../tb/test_window_2d.cpp} vhdl {../../../tb/test_singleport_ram.cpp ../../../tb/test_window_2d.cpp} c {} cas {../../../tb/test_singleport_ram.cpp ../../../tb/test_window_2d.cpp}}
+set TBFiles {verilog ../../../tb/test_window_2d.cpp bc ../../../tb/test_window_2d.cpp vhdl ../../../tb/test_window_2d.cpp sc ../../../tb/test_window_2d.cpp cas ../../../tb/test_window_2d.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
-set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

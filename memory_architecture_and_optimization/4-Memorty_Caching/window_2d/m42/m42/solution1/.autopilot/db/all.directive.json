@@ -1,6 +1,7 @@
 {"sourceFile": [{
       "name": "",
-      "directive": [{
+      "directive": [
+        {
           "functionName": "window_avg",
           "label": "",
           "functionLabel": "",
@@ -11,5 +12,18 @@
                 "value": "window_avg"
               }]
           }
-        }]
+        },
+        {
+          "functionName": "window_avg",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "window_avg"
+              }]
+          }
+        }
+      ]
     }]}

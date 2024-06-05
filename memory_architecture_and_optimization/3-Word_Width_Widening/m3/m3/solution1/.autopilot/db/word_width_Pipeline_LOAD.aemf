@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717594071440">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717619793285">
   <ports id="1" name="x_in" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="1228800">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="113" name="word_width_ap_int_8_ap_int_8_bool_x" type="PortType" coreName="RAM_T2P_BRAM" coreId="1330007625" bitwidth="24" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
+  <ports id="113" name="word_width_ap_int_8_ap_int_8_bool_x" type="PortType" coreName="RAM_T2P_BRAM" coreId="1953391988" bitwidth="24" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
   <edges id="69" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
@@ -90,37 +90,37 @@
   <edges id="244" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
   <blocks id="11" name="newFuncRoot" type="BlockType">
     <controlOutputObjs>.preheader6</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="2" name="phi_urem" coreId="1004722128" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="2" name="phi_urem" coreId="4294967295" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_mul" coreId="0" bitwidth="42" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_mul" coreId="6684783" bitwidth="42" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="0" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="7602223" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="i_write_ln0" coreId="513" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="i_write_ln0" coreId="96277488" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="phi_mul_write_ln0" coreId="152" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="phi_mul_write_ln0" coreId="7536756" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="phi_urem_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="phi_urem_write_ln0" coreId="152" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="1769234802" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="3735670" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <controlInputObjs>.preheader6</controlInputObjs>
     </node_objs>
   </blocks>
@@ -137,7 +137,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.loopexit.loopexit2.exitStub</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_2" lineNumber="22" originalName="i" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" bitwidth="21" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_2" lineNumber="22" originalName="i" fileName="../src/word_width.cpp" fileDirectory=".." coreId="6226034" contextFuncName="word_width" bitwidth="21" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -156,7 +156,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="br_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1936028192" contextFuncName="word_width" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="br_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="7995514" contextFuncName="word_width" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
@@ -170,13 +170,13 @@
       <controlInputObjs>.preheader6</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.preheader6</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="phi_urem_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="34" contextFuncName="word_width" bitwidth="21" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="phi_urem_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="4718592" contextFuncName="word_width" bitwidth="21" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="phi_mul_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" bitwidth="42" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="phi_mul_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1835627632" contextFuncName="word_width" bitwidth="42" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -202,12 +202,12 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_fu_139_p1" coreId="825634100" contextFuncName="word_width" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_fu_139_p1" coreId="4294967295" contextFuncName="word_width" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_in_addr" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1920295712" contextFuncName="word_width" bitwidth="21" opcode="getelementptr" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_in_addr" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="6881366" contextFuncName="word_width" bitwidth="21" opcode="getelementptr" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>x_in</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -225,31 +225,31 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="tmp_fu_181_p4" coreId="0" contextFuncName="word_width" bitwidth="19" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="tmp_fu_181_p4" coreId="6881367" contextFuncName="word_width" bitwidth="19" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_fu_191_p1" coreId="6775156" contextFuncName="word_width" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_fu_191_p1" coreId="6357092" contextFuncName="word_width" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="word_width_ap_int_8_ap_int_8_bool_x_addr" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="88" contextFuncName="word_width" bitwidth="19" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="word_width_ap_int_8_ap_int_8_bool_x_addr" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="997420912" contextFuncName="word_width" bitwidth="19" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>word_width_ap_int_8_ap_int_8_bool_x</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_196_p1" coreId="1667593263" contextFuncName="word_width" bitwidth="2" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_196_p1" coreId="1702035557" contextFuncName="word_width" bitwidth="2" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="shl_ln" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln_fu_200_p3" coreId="0" contextFuncName="word_width" bitwidth="5" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="shl_ln" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln_fu_200_p3" coreId="1969317477" contextFuncName="word_width" bitwidth="5" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
@@ -260,7 +260,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="or_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="or_ln24_fu_208_p2" coreId="1702035557" contextFuncName="word_width" bitwidth="5" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="or_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="or_ln24_fu_208_p2" coreId="796485487" contextFuncName="word_width" bitwidth="5" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -315,17 +315,17 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln24_2" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_2_fu_260_p1" coreId="1769170280" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln24_2" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_2_fu_260_p1" coreId="542462019" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln24_3" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_3_fu_264_p1" coreId="1953394531" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln24_3" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_3_fu_264_p1" coreId="774971450" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln24_4" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_4_fu_268_p1" coreId="979725673" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln24_4" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_4_fu_268_p1" coreId="0" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>lshr</dataOutputObjs>
@@ -374,7 +374,7 @@
         <dataInputObjs>and</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln24_5" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_5_fu_321_p1" coreId="0" contextFuncName="word_width" bitwidth="3" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln24_5" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_5_fu_321_p1" coreId="979725673" contextFuncName="word_width" bitwidth="3" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
@@ -396,7 +396,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="phi_mul_write_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.46" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="phi_mul_write_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="78" contextFuncName="word_width" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.46" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>

@@ -103,6 +103,7 @@
       "impl\/vhdl\/circular_shift_reg_control_s_axi.vhd",
       "impl\/vhdl\/circular_shift_reg_flow_control_loop_pipe_sequential_init.vhd",
       "impl\/vhdl\/circular_shift_reg_gmem_m_axi.vhd",
+      "impl\/vhdl\/circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W.vhd",
       "impl\/vhdl\/circular_shift_reg_regs_mem_V_RAM_1P_BRAM_1R1W.vhd",
       "impl\/vhdl\/circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W.vhd",
       "impl\/vhdl\/circular_shift_reg.vhd"
@@ -112,6 +113,8 @@
       "impl\/verilog\/circular_shift_reg_control_s_axi.v",
       "impl\/verilog\/circular_shift_reg_flow_control_loop_pipe_sequential_init.v",
       "impl\/verilog\/circular_shift_reg_gmem_m_axi.v",
+      "impl\/verilog\/circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W.dat",
+      "impl\/verilog\/circular_shift_reg_regs_mem_RAM_1P_BRAM_1R1W.v",
       "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_1P_BRAM_1R1W.dat",
       "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_1P_BRAM_1R1W.v",
       "impl\/verilog\/circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W.dat",
@@ -925,7 +928,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-05 09:56:20 +0300",
+    "Time": "2024-06-05 23:09:14 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

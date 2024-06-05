@@ -12,12 +12,12 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.542+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.532+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.483+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.268+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.259+0200" type="Warning"/>
-        <logs message="WARNING: [SYNCHK 200-23] ../src/word_width.cpp:24: variable-indexed range selection may cause suboptimal QoR." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:50.382+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.395+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.375+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.325+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.085+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.075+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] ../src/word_width.cpp:24: variable-indexed range selection may cause suboptimal QoR." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:32.017+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

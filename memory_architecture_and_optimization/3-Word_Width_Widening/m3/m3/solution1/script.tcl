@@ -5,12 +5,12 @@
 ############################################################
 open_project m3
 set_top word_width
-add_files ../src/ww_write_mem.hpp
-add_files ../src/ww_read_mem.hpp
-add_files ../src/word_width_mem.hpp
-add_files ../src/word_width_manual.cpp
-add_files ../src/word_width.h
 add_files ../src/word_width.cpp
+add_files ../src/word_width.h
+add_files ../src/word_width_manual.cpp
+add_files ../src/word_width_mem.hpp
+add_files ../src/ww_read_mem.hpp
+add_files ../src/ww_write_mem.hpp
 add_files -tb ../tb/tb_word_width.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vitis
 set_part {xcvu11p-flga2577-1-e}
@@ -20,5 +20,5 @@ config_rtl -register_reset_num 3
 #source "./m3/solution1/directives.tcl"
 csim_design -setup
 csynth_design
-cosim_design
+cosim_design -setup -O
 export_design -format ip_catalog

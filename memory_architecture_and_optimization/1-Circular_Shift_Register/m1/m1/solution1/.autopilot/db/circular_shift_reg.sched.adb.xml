@@ -2038,7 +2038,7 @@
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:12 %specmemcore_ln7 = specmemcore void @_ssdm_op_SpecMemCore, i8 %regs_mem_V, i64 666, i64 210, i64 18446744073709551615
+._crit_edge:12 %specmemcore_ln7 = specmemcore void @_ssdm_op_SpecMemCore, i8 %regs_mem_V, i64 666, i64 30, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln7"/></StgValue>

@@ -57,11 +57,6 @@
 			<location>D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/src/window_2d.h</location>
 		</link>
 		<link>
-			<name>testbench/test_singleport_ram.cpp</name>
-			<type>1</type>
-			<location>D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_singleport_ram.cpp</location>
-		</link>
-		<link>
 			<name>testbench/test_window_2d.cpp</name>
 			<type>1</type>
 			<location>D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp</location>

@@ -8366,7 +8366,7 @@ class circular_shift {
  public:
   circular_shift() {
 
-#pragma HLS BIND_STORAGE variable=mem type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=mem type=RAM_T2P impl=BRAM
 
  T dummy;
     wptr = 0;

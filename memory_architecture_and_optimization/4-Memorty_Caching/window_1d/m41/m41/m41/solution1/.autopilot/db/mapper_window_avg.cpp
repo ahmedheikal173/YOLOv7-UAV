@@ -32,38 +32,32 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
-extern "C" void window_avg(char*, char*);
+extern "C" void window_avg(char*, int, int);
 extern "C" void apatb_window_avg_hw(volatile void * __xlx_apatb_param_din, volatile void * __xlx_apatb_param_dout) {
-  // Collect __xlx_din__tmp_vec
-  vector<sc_bv<8> >__xlx_din__tmp_vec;
-  for (int j = 0, e = 1228800; j != e; ++j) {
-    __xlx_din__tmp_vec.push_back(((char*)__xlx_apatb_param_din)[j]);
+  // Collect __xlx_din_dout__tmp_vec
+  vector<sc_bv<8> >__xlx_din_dout__tmp_vec;
+  for (int j = 0, e = 409600; j != e; ++j) {
+    __xlx_din_dout__tmp_vec.push_back(((char*)__xlx_apatb_param_din)[j]);
   }
-  int __xlx_size_param_din = 1228800;
+  int __xlx_size_param_din = 409600;
   int __xlx_offset_param_din = 0;
   int __xlx_offset_byte_param_din = 0*1;
-  char* __xlx_din__input_buffer= new char[__xlx_din__tmp_vec.size()];
-  for (int i = 0; i < __xlx_din__tmp_vec.size(); ++i) {
-    __xlx_din__input_buffer[i] = __xlx_din__tmp_vec[i].range(7, 0).to_uint64();
+  for (int j = 0, e = 409600; j != e; ++j) {
+    __xlx_din_dout__tmp_vec.push_back(((char*)__xlx_apatb_param_dout)[j]);
   }
-  // Collect __xlx_dout__tmp_vec
-  vector<sc_bv<8> >__xlx_dout__tmp_vec;
-  for (int j = 0, e = 1228800; j != e; ++j) {
-    __xlx_dout__tmp_vec.push_back(((char*)__xlx_apatb_param_dout)[j]);
-  }
-  int __xlx_size_param_dout = 1228800;
-  int __xlx_offset_param_dout = 0;
-  int __xlx_offset_byte_param_dout = 0*1;
-  char* __xlx_dout__input_buffer= new char[__xlx_dout__tmp_vec.size()];
-  for (int i = 0; i < __xlx_dout__tmp_vec.size(); ++i) {
-    __xlx_dout__input_buffer[i] = __xlx_dout__tmp_vec[i].range(7, 0).to_uint64();
+  int __xlx_size_param_dout = 409600;
+  int __xlx_offset_param_dout = 409600;
+  int __xlx_offset_byte_param_dout = 409600*1;
+  char* __xlx_din_dout__input_buffer= new char[__xlx_din_dout__tmp_vec.size()];
+  for (int i = 0; i < __xlx_din_dout__tmp_vec.size(); ++i) {
+    __xlx_din_dout__input_buffer[i] = __xlx_din_dout__tmp_vec[i].range(7, 0).to_uint64();
   }
   // DUT call
-  window_avg(__xlx_din__input_buffer, __xlx_dout__input_buffer);
+  window_avg(__xlx_din_dout__input_buffer, __xlx_offset_byte_param_din, __xlx_offset_byte_param_dout);
 // print __xlx_apatb_param_din
   sc_bv<8>*__xlx_din_output_buffer = new sc_bv<8>[__xlx_size_param_din];
   for (int i = 0; i < __xlx_size_param_din; ++i) {
-    __xlx_din_output_buffer[i] = __xlx_din__input_buffer[i+__xlx_offset_param_din];
+    __xlx_din_output_buffer[i] = __xlx_din_dout__input_buffer[i+__xlx_offset_param_din];
   }
   for (int i = 0; i < __xlx_size_param_din; ++i) {
     ((char*)__xlx_apatb_param_din)[i] = __xlx_din_output_buffer[i].to_uint();
@@ -71,7 +65,7 @@ extern "C" void apatb_window_avg_hw(volatile void * __xlx_apatb_param_din, volat
 // print __xlx_apatb_param_dout
   sc_bv<8>*__xlx_dout_output_buffer = new sc_bv<8>[__xlx_size_param_dout];
   for (int i = 0; i < __xlx_size_param_dout; ++i) {
-    __xlx_dout_output_buffer[i] = __xlx_dout__input_buffer[i+__xlx_offset_param_dout];
+    __xlx_dout_output_buffer[i] = __xlx_din_dout__input_buffer[i+__xlx_offset_param_dout];
   }
   for (int i = 0; i < __xlx_size_param_dout; ++i) {
     ((char*)__xlx_apatb_param_dout)[i] = __xlx_dout_output_buffer[i].to_uint();

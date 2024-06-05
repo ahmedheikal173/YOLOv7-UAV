@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int mainn(int argc, char *argv[]) {
 	ap_uint<10> din1[360];
 	ap_uint<10> din2[360];
 	ap_uint<10> dout[360];

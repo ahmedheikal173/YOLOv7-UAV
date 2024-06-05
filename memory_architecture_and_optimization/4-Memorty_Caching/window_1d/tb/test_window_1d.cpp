@@ -15,24 +15,31 @@ static inline int clip(int i) {
 int main(int argc, char *argv[]) {
 	ap_uint<8> din[NUM_WORDS];
 	ap_uint<8> dout[NUM_WORDS];
+	ap_uint<8> answer[NUM_WORDS];
 
 	for (int i = 0; i < NUM_WORDS; i++) {
-		din[i] = i;
+		din[i] = rand();
+	}
+
+
+
+	
+	// din = {0, 1, 2, 3}
+	// dout = {0.25, 1, 2, 2.75}
+
+	ap_ufixed<13, 11> tmp;
+	ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
+	for (int i = 0; i < NUM_WORDS; i++) {
+		tmp = din[clip(i - 1)] * coeffs[0] + din[i] * coeffs[1] + din[clip(i + 1)] * coeffs[2];
+		answer[i] = tmp.to_uint();
 	}
 
 	window_avg(din, dout);
 
 	int pass = 1;
-
-	float coeffs[3] = {0.25, 0.5, 0.25};
-	// din = {0, 1, 2, 3}
-	// dout = {0.25, 1, 2, 2.75}
-
-	ap_ufixed<13, 11> tmp;
 	for (int i = 0; i < NUM_WORDS; i++) {
-		tmp = din[clip(i - 1)] * coeffs[0] + din[i] * coeffs[1] + din[clip(i + 1)] * coeffs[2];
-		cout << "dout[" << i << "]: " << dout[i] << ", tmp: " << tmp.to_float() << "\n";
-		if (dout[i] != tmp.to_int()) {
+		cout << "dout[" << i << "]: " << dout[i] << ", answer: " << tmp.to_float() << "\n";
+		if (dout[i] != answer[i]) {
 			pass = 0;
 		}
 	}

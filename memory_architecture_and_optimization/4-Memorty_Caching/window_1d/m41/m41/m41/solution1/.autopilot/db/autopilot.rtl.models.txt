@@ -1,3 +1,4 @@
 window_avg_control_s_axi
+window_avg_gmem_m_axi
 window_avg_flow_control_loop_pipe
 window_avg

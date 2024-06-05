@@ -2,8 +2,8 @@
 #include "../src/interleave.h"
 #include "../include/ap_int.h"
 
-#define AUTO 1
-#define RND 0
+#define AUTO 0
+#define RND 1
 #define SEQ 0
 
 int main(int argc, char **argv){

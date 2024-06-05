@@ -12,11 +12,12 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'window_avg/din_Din_A' to 0." projectName="m41" solutionName="solution1" date="2024-06-05T15:49:51.841+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'window_avg/din_WEN_A' to 0." projectName="m41" solutionName="solution1" date="2024-06-05T15:49:51.827+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m41" solutionName="solution1" date="2024-06-05T15:49:51.758+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m41" solutionName="solution1" date="2024-06-06T00:26:45.661+0200" type="Warning"/>
       </synLog>
-      <simLog/>
+      <simLog>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m41" solutionName="solution1" date="2024-06-06T00:29:23.370+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m41" solutionName="solution1" date="2024-06-06T00:27:15.718+0200" type="Warning"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="circular_shift.h" path="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\src\circular_shift.h"/>
-    <originFiles name="shift_reg.cpp" path="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\src\shift_reg.cpp"/>
     <originFiles name="shift_reg.h" path="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\src\shift_reg.h"/>
+    <originFiles name="shift_reg.cpp" path="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\src\shift_reg.cpp"/>
+    <originFiles name="circular_shift.h" path="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\src\circular_shift.h"/>
   </source>
   <testbench>
     <originFiles name="tb_shift_reg.cpp" path="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\tb\tb_shift_reg.cpp"/>

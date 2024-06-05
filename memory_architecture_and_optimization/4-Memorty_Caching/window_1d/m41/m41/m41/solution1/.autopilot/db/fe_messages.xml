@@ -1,13 +1,4 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/./shift_class.hpp:18:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="shift_class&lt;dataType, NUM_REGS&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=din type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/./shift_class.hpp:19:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="shift_class&lt;dataType, NUM_REGS&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=load_data type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/./shift_class.hpp:20:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="shift_class&lt;dataType, NUM_REGS&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=regs type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -17,23 +8,8 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:8:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="clip_window" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=shift_reg type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=window_avg" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:31:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=din" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:32:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=dout" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:35:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=shift_reg type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:37:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../src/window_1d_sliding.cpp:44:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
@@ -76,18 +52,6 @@
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:572:19" msg_body="Inlining function 'ap_int_base&lt;11, false&gt;::RType&lt;($_0)64, true&gt;::minus operator-&lt;11, false&gt;(ap_int_base&lt;11, false&gt; const&amp;, long)' into 'ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(double)'">
         <args Callee="ap_int_base&lt;11, false&gt;::RType&lt;($_0)64, true&gt;::minus operator-&lt;11, false&gt;(ap_int_base&lt;11, false&gt; const&amp;, long)" Caller="ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(double)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1174:30" msg_body="Inlining function 'ap_bit_ref&lt;8, false&gt;::ap_bit_ref(ap_int_base&lt;8, false&gt;*, int)' into 'ap_int_base&lt;8, false&gt;::operator[](int)'">
-        <args Callee="ap_bit_ref&lt;8, false&gt;::ap_bit_ref(ap_int_base&lt;8, false&gt;*, int)" Caller="ap_int_base&lt;8, false&gt;::operator[](int)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:409:19" msg_body="Inlining function 'ap_bit_ref&lt;8, false&gt;::operator bool() const' into 'ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, false&gt;(ap_bit_ref&lt;8, false&gt; const&amp;)'">
-        <args Callee="ap_bit_ref&lt;8, false&gt;::operator bool() const" Caller="ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, false&gt;(ap_bit_ref&lt;8, false&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../../src/../include/ap_int.h:258:90" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, false&gt;(ap_bit_ref&lt;8, false&gt; const&amp;)' into 'ap_uint&lt;8&gt;::ap_uint&lt;8, false&gt;(ap_bit_ref&lt;8, false&gt; const&amp;)'">
-        <args Callee="ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, false&gt;(ap_bit_ref&lt;8, false&gt; const&amp;)" Caller="ap_uint&lt;8&gt;::ap_uint&lt;8, false&gt;(ap_bit_ref&lt;8, false&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../../src/./shift_class.hpp:42:31" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::operator[](int)' into 'shift_class&lt;ap_uint&lt;8&gt;, 3&gt;::operator&lt;&lt;(ap_uint&lt;8&gt;)'">
-        <args Callee="ap_int_base&lt;8, false&gt;::operator[](int)" Caller="shift_class&lt;ap_uint&lt;8&gt;, 3&gt;::operator&lt;&lt;(ap_uint&lt;8&gt;)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:707:9" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const' into 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
         <args Callee="ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const" Caller="ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)"/>
@@ -190,6 +154,12 @@
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../../src/window_1d_sliding.cpp:22:0" msg_body="Inlining function 'clip_window(shift_class&lt;ap_uint&lt;8&gt;, 3&gt;, int, ap_uint&lt;8&gt;*)' into 'window_avg(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)'">
         <args Callee="clip_window(shift_class&lt;ap_uint&lt;8&gt;, 3&gt;, int, ap_uint&lt;8&gt;*)" Caller="window_avg(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../../src/window_1d_sliding.cpp:46:21" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8.1' into 'window_avg(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)'">
+        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8.1" Caller="window_avg(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../../src/window_1d_sliding.cpp:51:25" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into 'window_avg(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)'">
+        <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s" Caller="window_avg(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

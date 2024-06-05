@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717570579083">
-  <ports id="1" name="gmem" type="PortType" coreId="1031040613" bitwidth="8" direction="DirOut" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717618153426">
+  <ports id="1" name="gmem" type="PortType" coreId="1953391988" bitwidth="8" direction="DirOut" iftype="IfTypeFifo">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="2" name="dout" type="PortType" coreId="1031040613" bitwidth="64">
+  <ports id="2" name="dout" type="PortType" coreId="3160836466" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="add_ln70" type="PortType" coreId="1031040613" bitwidth="5">
+  <ports id="3" name="add_ln70" type="PortType" coreId="1953391988" bitwidth="5">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="regs_mem_V" type="PortType" coreName="RAM_T2P_BRAM" coreId="1031040613" bitwidth="8" iftype="IfTypeRegister" arraysize="9">
+  <ports id="4" name="regs_mem_V" type="PortType" coreName="RAM_T2P_BRAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <edges id="42" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -51,7 +51,7 @@
   <edges id="152" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
   <blocks id="12" name="newFuncRoot" type="BlockType">
     <controlOutputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="idx_V" originalName="idx.V" coreId="4294967295" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="idx_V" originalName="idx.V" coreId="0" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
@@ -61,22 +61,22 @@
       <dataInputObjs>add_ln70</dataInputObjs>
       <dataOutputObjs>sub</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="dout_read" coreId="4294967295" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="dout_read" coreId="0" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>dout</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="idx_V_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="idx_V_write_ln0" coreId="539915111" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln0" coreId="0" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln0" coreId="1953392991" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <controlInputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit</controlInputObjs>
     </node_objs>
   </blocks>
   <blocks id="37" name=".exitStub" type="BlockType">
     <controlInputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln0" coreId="1601399156" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln0" coreId="0" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1"/>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="125" pipe_depth="3" RegionName="WRITE">
     <basic_blocks id="20" name="_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit" type="BlockType">
@@ -86,14 +86,14 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.exitStub</controlOutputObjs>
       <controlOutputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="idx_V_1" lineNumber="13" originalName="val" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="circular_shift_reg" bitwidth="4" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="idx_V_1" lineNumber="13" originalName="val" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="1852399472" contextFuncName="circular_shift_reg" bitwidth="4" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="13" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="gmem_addr" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="0" contextFuncName="circular_shift_reg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="gmem_addr" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="1852399472" contextFuncName="circular_shift_reg" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="13" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>gmem</dataOutputObjs>
@@ -111,7 +111,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln13" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="1244233318" contextFuncName="circular_shift_reg" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln13" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="1869375856" contextFuncName="circular_shift_reg" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="13" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit.split</controlInputObjs>
@@ -125,7 +125,7 @@
       <controlInputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln70" lineNumber="70" fileName="../src/../include/ap_int.h" fileDirectory=".." rtlName="zext_ln70_fu_131_p1" coreId="42" contextFuncName="ap_int_34_s" bitwidth="5" opcode="zext" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln70" lineNumber="70" fileName="../src/../include/ap_int.h" fileDirectory=".." rtlName="zext_ln70_fu_131_p1" coreId="1869375856" contextFuncName="ap_int_34_s" bitwidth="5" opcode="zext" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/../include/ap_int.h" linenumber="70" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="ap_int&amp;lt;34&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -137,13 +137,13 @@
         <dataOutputObjs>trunc</dataOutputObjs>
         <dataOutputObjs>bitselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln1072" lineNumber="1072" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="trunc_ln1072_fu_141_p1" coreId="1730569589" contextFuncName="operator_lt_32_true" bitwidth="4" opcode="trunc" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln1072" lineNumber="1072" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="trunc_ln1072_fu_141_p1" coreId="1852399472" contextFuncName="operator_lt_32_true" bitwidth="4" opcode="trunc" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="1072" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp" lineNumber="1072" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_fu_145_p3" coreId="1769414756" contextFuncName="operator_lt_32_true" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp" lineNumber="1072" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_fu_145_p3" coreId="1763730533" contextFuncName="operator_lt_32_true" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="1072" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -162,12 +162,12 @@
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="zext_ln587" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="zext_ln587_fu_167_p1" coreId="1881154127" contextFuncName="operator_long_long" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="zext_ln587" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="zext_ln587_fu_167_p1" coreId="3573066656" contextFuncName="operator_long_long" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="587" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator long long"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="regs_mem_V_addr" lineNumber="44" fileName="../src/./circular_shift.h" fileDirectory=".." coreId="1931812965" contextFuncName="operator_s" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="regs_mem_V_addr" lineNumber="44" fileName="../src/./circular_shift.h" fileDirectory=".." coreId="0" contextFuncName="operator_s" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/./circular_shift.h" linenumber="44" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="operator[]"/>
         <dataInputObjs>regs_mem_V</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -185,12 +185,12 @@
         <dataInputObjs>load</dataInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="idx_V_write_ln13" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="997223777" contextFuncName="circular_shift_reg" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="idx_V_write_ln13" lineNumber="13" fileName="../src/shift_reg.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="circular_shift_reg" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/shift_reg.cpp" linenumber="13" fileDirectory="D:\gam3a\zzzzzzzzzz\1-Circular_Shift_Register\m1" functionName="circular_shift_reg"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln0" coreId="623386724" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln0" coreId="31" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <controlInputObjs>_ZN14circular_shiftI7ap_uintILi8EELi9EEixES0_ILi4EE.exit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/../include/ap_int.h">

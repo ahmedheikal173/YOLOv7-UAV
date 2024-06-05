@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'circular_shift_reg'
 ================================================================
 + General Information: 
-    * Date:           Wed Jun  5 09:56:19 2024
+    * Date:           Wed Jun  5 23:09:13 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m1
     * Solution:       solution1 (Vitis Kernel Flow Target)
@@ -144,7 +144,7 @@
 +--------------+-------------------------------------+-----------------------------------------------------------+
 | Type         | Options                             | Location                                                  |
 +--------------+-------------------------------------+-----------------------------------------------------------+
-| bind_storage | variable=mem type=RAM_T2P impl=AUTO | ../src/./circular_shift.h:23 in circular_shift<t, n>, mem |
+| bind_storage | variable=mem type=RAM_T2P impl=BRAM | ../src/./circular_shift.h:23 in circular_shift<t, n>, mem |
 | pipeline     |                                     | ../src/./circular_shift.h:30 in circular_shift<t, n>      |
 | pipeline     |                                     | ../src/shift_reg.cpp:15 in circular_shift_reg             |
 +--------------+-------------------------------------+-----------------------------------------------------------+

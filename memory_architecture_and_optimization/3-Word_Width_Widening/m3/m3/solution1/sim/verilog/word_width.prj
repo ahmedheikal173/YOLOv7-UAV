@@ -1,0 +1,13 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_autobram_x_in.v"
+sv xil_defaultlib "AESL_autobram_y.v"
+sv xil_defaultlib "AESL_axi_slave_control.v"
+sv xil_defaultlib "word_width.autotb.v"
+sv xil_defaultlib "word_width.v"
+sv xil_defaultlib "word_width_control_s_axi.v"
+sv xil_defaultlib "word_width_flow_control_loop_pipe_sequential_init.v"
+sv xil_defaultlib "word_width_word_width_ap_int_8_ap_int_8_bool_x_RAM_T2P_BRAM_1R1W.v"
+sv xil_defaultlib "word_width_word_width_Pipeline_LOAD.v"
+sv xil_defaultlib "word_width_word_width_Pipeline_WRITE.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

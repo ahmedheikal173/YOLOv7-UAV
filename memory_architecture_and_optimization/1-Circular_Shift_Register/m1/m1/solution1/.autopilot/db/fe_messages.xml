@@ -9,7 +9,7 @@
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./circular_shift.h:23:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="circular_shift&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="circular_shift&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./circular_shift.h:30:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="circular_shift&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>

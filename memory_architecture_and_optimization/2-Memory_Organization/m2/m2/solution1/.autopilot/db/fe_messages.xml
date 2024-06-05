@@ -8,23 +8,32 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:11:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x0 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:12:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x1 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:16:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x2 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:17:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x cyclic factor=3 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./write_mem_seq.hpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:24:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:29:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
@@ -77,32 +86,23 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:22:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x0 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:23:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x1 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:24:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x2 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./write_mem_seq.hpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="write_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x cyclic factor=3 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:8:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:11:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:15:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:21:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:26:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:2573" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::mod operator%&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)'">
         <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::mod operator%&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)"/>

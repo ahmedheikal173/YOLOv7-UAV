@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717594071694">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717619793576">
   <ports id="1" name="x_in" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="1228800">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="y" type="PortType" coreName="RAM" coreId="1528853351" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
+  <ports id="2" name="y" type="PortType" coreName="RAM" coreId="741" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="3" name="load" type="PortType" originalName="load" coreId="1953391988" bitwidth="1">
+  <ports id="3" name="load" type="PortType" originalName="load" coreId="865" bitwidth="1">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="30" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -46,7 +46,7 @@
     <controlInputObjs>block_19</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.loopexit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="_ln0" rtlName="grp_word_width_Pipeline_WRITE_fu_56" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="_ln0" rtlName="grp_word_width_Pipeline_WRITE_fu_56" coreId="1768448882" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>y</dataOutputObjs>
       <constName>word_width_Pipeline_WRITE</constName>
     </node_objs>
@@ -58,11 +58,11 @@
     <controlInputObjs>block_19</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>.loopexit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln0" rtlName="grp_word_width_Pipeline_LOAD_fu_64" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln0" rtlName="grp_word_width_Pipeline_LOAD_fu_64" coreId="690386035" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>x_in</dataInputObjs>
       <constName>word_width_Pipeline_LOAD</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln0" coreId="1599689281" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <controlInputObjs>.loopexit</controlInputObjs>
     </node_objs>
   </blocks>
@@ -71,7 +71,7 @@
     <controlInputObjs>.preheader6.preheader</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln30" lineNumber="30" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln30" lineNumber="30" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1869376609" contextFuncName="word_width" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="../src/word_width.cpp" linenumber="30" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
     </node_objs>
     <fileValidLineNumbers fileName="../src/word_width.cpp">

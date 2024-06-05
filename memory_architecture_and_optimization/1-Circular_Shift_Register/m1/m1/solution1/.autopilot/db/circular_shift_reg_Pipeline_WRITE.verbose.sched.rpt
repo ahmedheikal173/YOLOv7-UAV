@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'circular_shift_reg_Pipeline_WRITE'
 ================================================================
-* Date:           Wed Jun  5 09:56:17 2024
+* Date:           Wed Jun  5 23:09:12 2024
 
 * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        m1
@@ -87,7 +87,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 3.21>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%idx_V = alloca i32 1"   --->   Operation 6 'alloca' 'idx_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %regs_mem_V, i64 666, i64 210, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %regs_mem_V, i64 666, i64 30, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%add_ln70_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %add_ln70"   --->   Operation 9 'read' 'add_ln70_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%dout_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %dout"   --->   Operation 10 'read' 'dout_read' <Predicate = true> <Delay = 0.00>

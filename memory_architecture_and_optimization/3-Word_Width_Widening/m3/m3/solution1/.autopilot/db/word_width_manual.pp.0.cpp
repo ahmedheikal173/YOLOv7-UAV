@@ -5679,10 +5679,10 @@ inline bool operator!=(
 # 395 "../src/../include/ap_int.h" 2
 # 7 "../src/./word_width.h" 2
 
-void word_width(ap_int<8> x_in[(1228800)], ap_int<8> y[(1228800) / 3],
+void word_width(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                 bool load);
 
-void word_width_manual(ap_int<8> x_in[(1228800)], ap_int<8> y[(1228800) / 3],
+void word_width_manual(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                 bool load);
 # 2 "../src/word_width_manual.cpp" 2
 # 1 "../src/./word_width_mem.hpp" 1
@@ -5723,7 +5723,9 @@ class word_width_mem {
 template <int W, int N>
 ap_int<W> word_width_mem<W, N>::read(ap_uint<(21)> i,
                                      const int offset) {
-# 17 "../src/ww_read_mem.hpp"
+
+
+
  ap_int<W> tmp = 0;
 
   if (sel_rd++ == 0)
@@ -5772,7 +5774,7 @@ void word_width_mem<W, N>::write(ap_uint<(21)> i,
 # 28 "../src/./word_width_mem.hpp" 2
 # 3 "../src/word_width_manual.cpp" 2
 
-void word_width_manual(ap_int<8> x_in[(1228800)], ap_int<8> y[(1228800) / 3],
+void word_width_manual(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                        bool load) {
 
 
@@ -5782,18 +5784,18 @@ void word_width_manual(ap_int<8> x_in[(1228800)], ap_int<8> y[(1228800) / 3],
 #pragma HLS interface mode=BRAM port=x_in
 #pragma HLS interface mode=BRAM port=y
 
- static word_width_mem<8, (1228800)> x;
+ static word_width_mem<8, 1228800> x;
 
   int idx = 0;
 
   if (load)
 LOAD:
-    for (int i = 0; i < (1228800); i += 1)
+    for (int i = 0; i < 1228800; i += 1)
 #pragma HLS PIPELINE II=1
  x.write(i, x_in);
   else
 WRITE:
-    for (int i = 0; i < (1228800) / 3; i += 1){
+    for (int i = 0; i < 1228800 / 3; i += 1){
 #pragma HLS PIPELINE II=1
  y[idx++] = x.read(i, 0) + x.read(i, 1) + x.read(i, 2);
     }

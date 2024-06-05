@@ -15,7 +15,7 @@ static inline int clip(int i) {
     return tmp;
 }
 
-int mainn(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	ap_uint<8> din[NUM_ROW][NUM_COL];
 	ap_uint<8> dout[NUM_ROW][NUM_COL];
 	ap_uint<8> answer[NUM_ROW][NUM_COL];

@@ -8,12 +8,16 @@ class shift_class {
     bool en;
     bool sync_rst;
     bool ld;
-    dataType load_data;////////////////////////////////////
+    dataType *load_data;////////////////////////////////////
 
    public:
    
     shift_class() : en(true), sync_rst(false), ld(false) {}
     shift_class(dataType din[NUM_REGS]) : en(true), sync_rst(false), ld(false) {
+
+        //#pragma HLS BIND_STORAGE variable=din type=RAM_T2P impl=BRAM
+         //#pragma HLS BIND_STORAGE variable=load_data type=RAM_T2P impl=BRAM
+          //#pragma HLS BIND_STORAGE variable=regs type=RAM_T2P impl=BRAM
         
         load_data = din;
     }

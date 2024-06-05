@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'circular_shift_reg'
 ================================================================
-* Date:           Wed Jun  5 09:56:18 2024
+* Date:           Wed Jun  5 23:09:13 2024
 
 * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        m1
@@ -385,7 +385,7 @@ ST_72 : Operation 161 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterfac
 ST_72 : Operation 162 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %dout, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_7, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 162 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_72 : Operation 163 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %dout, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 163 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_72 : Operation 164 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 164 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_72 : Operation 165 [1/1] (0.00ns)   --->   "%specmemcore_ln7 = specmemcore void @_ssdm_op_SpecMemCore, i8 %regs_mem_V, i64 666, i64 210, i64 18446744073709551615" [../src/shift_reg.cpp:7]   --->   Operation 165 'specmemcore' 'specmemcore_ln7' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 165 [1/1] (0.00ns)   --->   "%specmemcore_ln7 = specmemcore void @_ssdm_op_SpecMemCore, i8 %regs_mem_V, i64 666, i64 30, i64 18446744073709551615" [../src/shift_reg.cpp:7]   --->   Operation 165 'specmemcore' 'specmemcore_ln7' <Predicate = true> <Delay = 0.00>
 ST_72 : Operation 166 [1/68] (7.30ns)   --->   "%empty_15 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i8, i8 %gmem_addr" [../src/shift_reg.cpp:18]   --->   Operation 166 'writeresp' 'empty_15' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_72 : Operation 167 [1/1] (0.00ns)   --->   "%ret_ln18 = ret" [../src/shift_reg.cpp:18]   --->   Operation 167 'ret' 'ret_ln18' <Predicate = true> <Delay = 0.00>
 
