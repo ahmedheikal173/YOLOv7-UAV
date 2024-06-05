@@ -15,35 +15,35 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.372</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>1228943</Best-caseLatency>
-            <Average-caseLatency>1228943</Average-caseLatency>
-            <Worst-caseLatency>1228943</Worst-caseLatency>
-            <Best-caseRealTimeLatency>12.289 ms</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>12.289 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>12.289 ms</Worst-caseRealTimeLatency>
-            <Interval-min>1228944</Interval-min>
-            <Interval-max>1228944</Interval-max>
+            <Best-caseLatency>1228804</Best-caseLatency>
+            <Average-caseLatency>1228804</Average-caseLatency>
+            <Worst-caseLatency>1228804</Worst-caseLatency>
+            <Best-caseRealTimeLatency>12.288 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>12.288 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>12.288 ms</Worst-caseRealTimeLatency>
+            <Interval-min>1228805</Interval-min>
+            <Interval-max>1228805</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency>
             <COMP>
                 <TripCount>1228801</TripCount>
-                <Latency>1228941</Latency>
-                <AbsoluteTimeLatency>12289410</AbsoluteTimeLatency>
+                <Latency>1228802</Latency>
+                <AbsoluteTimeLatency>12288020</AbsoluteTimeLatency>
                 <PipelineII>1</PipelineII>
-                <PipelineDepth>142</PipelineDepth>
+                <PipelineDepth>2</PipelineDepth>
                 <InstanceList/>
             </COMP>
         </SummaryOfLoopLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>2</BRAM_18K>
-            <FF>1587</FF>
-            <LUT>1618</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>110</FF>
+            <LUT>275</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -84,7 +84,7 @@
             <Type>scalar</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
-            <Bits>6</Bits>
+            <Bits>4</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
             <HasCtrl>1</HasCtrl>
@@ -161,7 +161,7 @@
             <Type>scalar</Type>
             <IOProtocol>s_axi</IOProtocol>
             <Dir>in</Dir>
-            <Bits>6</Bits>
+            <Bits>4</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
             <HasCtrl>1</HasCtrl>
@@ -288,550 +288,178 @@
             <Attribute>unknown</Attribute>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWVALID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_Addr_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWREADY</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWADDR</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>64</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWLEN</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>8</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWSIZE</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>3</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWBURST</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>2</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWLOCK</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>2</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWCACHE</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWPROT</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>3</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWQOS</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWREGION</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_AWUSER</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WVALID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WREADY</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WDATA</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>32</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WSTRB</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_EN_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WLAST</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_WEN_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WUSER</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_Din_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARVALID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARREADY</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARADDR</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>64</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARLEN</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>8</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARSIZE</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_Dout_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>3</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARBURST</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>2</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARLOCK</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>2</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARCACHE</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARPROT</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>3</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARQOS</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARREGION</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARUSER</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_RVALID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RREADY</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_Clk_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RDATA</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>din_Rst_A</name>
+            <Object>din</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
-            <Dir>in</Dir>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dout_Addr_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>bram</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
             <Bits>32</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RLAST</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>dout_EN_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_RID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_RUSER</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_RRESP</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>2</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_BVALID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_BREADY</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BRESP</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>dout_WEN_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>2</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_BID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
+            <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BUSER</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
+            <name>dout_Din_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
             <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
+            <IOProtocol>bram</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dout_Dout_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>bram</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dout_Clk_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>bram</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dout_Rst_A</name>
+            <Object>dout</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>bram</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>window_avg</ModuleName>
-            <BindInstances>add_ln31_fu_154_p2 add_ln34_fu_170_p2 ret_V_fu_268_p2 ret_V_1_fu_278_p2 add_ln39_fu_200_p2 add_ln39_1_fu_210_p2</BindInstances>
+            <BindInstances>add_ln43_fu_112_p2 ret_V_fu_195_p2 ret_V_1_fu_205_p2 add_ln51_fu_222_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -844,26 +472,26 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>4.372</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>1228943</Best-caseLatency>
-                    <Average-caseLatency>1228943</Average-caseLatency>
-                    <Worst-caseLatency>1228943</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>12.289 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>12.289 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>12.289 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>1228944</PipelineInitiationInterval>
+                    <Best-caseLatency>1228804</Best-caseLatency>
+                    <Average-caseLatency>1228804</Average-caseLatency>
+                    <Worst-caseLatency>1228804</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>12.288 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>12.288 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>12.288 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1228805</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <COMP>
                         <Name>COMP</Name>
                         <TripCount>1228801</TripCount>
-                        <Latency>1228941</Latency>
-                        <AbsoluteTimeLatency>12.289 ms</AbsoluteTimeLatency>
+                        <Latency>1228802</Latency>
+                        <AbsoluteTimeLatency>12.288 ms</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>142</PipelineDepth>
+                        <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
                     </COMP>
@@ -871,13 +499,13 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>2</BRAM_18K>
+                    <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>4032</AVAIL_BRAM>
-                    <UTIL_BRAM>~0</UTIL_BRAM>
-                    <FF>1587</FF>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>110</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1618</LUT>
+                    <LUT>275</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -889,35 +517,29 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln31_fu_154_p2" SOURCE="../../src/window_1d_sliding.cpp:31" URAM="0" VARIABLE="add_ln31"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_fu_170_p2" SOURCE="../../src/window_1d_sliding.cpp:34" URAM="0" VARIABLE="add_ln34"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_268_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_1_fu_278_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_200_p2" SOURCE="../../src/window_1d_sliding.cpp:39" URAM="0" VARIABLE="add_ln39"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_1_fu_210_p2" SOURCE="../../src/window_1d_sliding.cpp:39" URAM="0" VARIABLE="add_ln39_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_fu_112_p2" SOURCE="../../src/window_1d_sliding.cpp:43" URAM="0" VARIABLE="add_ln43"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_195_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_1_fu_205_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="COMP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln51_fu_222_p2" SOURCE="../../src/window_1d_sliding.cpp:51" URAM="0" VARIABLE="add_ln51"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands/>
     <Args>
-        <Arg ArgName="din" index="0" direction="inout" srcType="ap_uint&lt;8&gt;*" srcSize="8">
+        <Arg ArgName="din" index="0" direction="in" srcType="ap_uint&lt;8&gt;*" srcSize="8">
             <hwRefs>
-                <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="inout"/>
-                <hwRef type="register" interface="s_axi_control" name="din_1" usage="address" direction="in"/>
-                <hwRef type="register" interface="s_axi_control" name="din_2" usage="address" direction="in"/>
+                <hwRef type="interface" interface="din_PORTA" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dout" index="1" direction="inout" srcType="ap_uint&lt;8&gt;*" srcSize="8">
+        <Arg ArgName="dout" index="1" direction="out" srcType="ap_uint&lt;8&gt;*" srcSize="8">
             <hwRefs>
-                <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="inout"/>
-                <hwRef type="register" interface="s_axi_control" name="dout_1" usage="address" direction="in"/>
-                <hwRef type="register" interface="s_axi_control" name="dout_2" usage="address" direction="in"/>
+                <hwRef type="interface" interface="dout_PORTA" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
     </Args>
     <Interfaces>
-        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="4" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
             <ports>
                 <port>s_axi_control_ARADDR</port>
                 <port>s_axi_control_ARREADY</port>
@@ -976,35 +598,11 @@
                         <field offset="6" width="26" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
                     </fields>
                 </register>
-                <register offset="0x10" name="din_1" access="W" description="Data signal of din" range="32">
-                    <fields>
-                        <field offset="0" width="32" name="din" access="W" description="Bit 31 to 0 of din"/>
-                    </fields>
-                </register>
-                <register offset="0x14" name="din_2" access="W" description="Data signal of din" range="32">
-                    <fields>
-                        <field offset="0" width="32" name="din" access="W" description="Bit 63 to 32 of din"/>
-                    </fields>
-                </register>
-                <register offset="0x1c" name="dout_1" access="W" description="Data signal of dout" range="32">
-                    <fields>
-                        <field offset="0" width="32" name="dout" access="W" description="Bit 31 to 0 of dout"/>
-                    </fields>
-                </register>
-                <register offset="0x20" name="dout_2" access="W" description="Data signal of dout" range="32">
-                    <fields>
-                        <field offset="0" width="32" name="dout" access="W" description="Bit 63 to 32 of dout"/>
-                    </fields>
-                </register>
             </registers>
-            <constraints>
-                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="din"/>
-                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="28" argName="dout"/>
-            </constraints>
         </Interface>
         <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
             <busParams>
-                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:m_axi_gmem</busParam>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control</busParam>
                 <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
             </busParams>
             <portMaps>
@@ -1036,85 +634,69 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" preferredUsageValue="MEMORY">
+        <Interface InterfaceName="din_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="8" addrWidth="32" portPrefix="din_">
             <busParams>
-                <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
-                <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
-                <busParam busParamName="MAX_READ_BURST_LENGTH">16</busParam>
-                <busParam busParamName="MAX_WRITE_BURST_LENGTH">16</busParam>
-                <busParam busParamName="MAX_BURST_LENGTH">256</busParam>
-                <busParam busParamName="PROTOCOL">AXI4</busParam>
-                <busParam busParamName="READ_WRITE_MODE">READ_WRITE</busParam>
-                <busParam busParamName="HAS_BURST">0</busParam>
-                <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
+                <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
+                <busParam busParamName="MEM_WIDTH">8</busParam>
+                <busParam busParamName="MEM_SIZE">1</busParam>
             </busParams>
+            <portMaps>
+                <portMap portMapName="din_Addr_A">ADDR</portMap>
+                <portMap portMapName="din_EN_A">EN</portMap>
+                <portMap portMapName="din_WEN_A">WE</portMap>
+                <portMap portMapName="din_Din_A">DIN</portMap>
+                <portMap portMapName="din_Dout_A">DOUT</portMap>
+                <portMap portMapName="din_Clk_A">CLK</portMap>
+                <portMap portMapName="din_Rst_A">RST</portMap>
+            </portMaps>
             <ports>
-                <port>m_axi_gmem_ARADDR</port>
-                <port>m_axi_gmem_ARBURST</port>
-                <port>m_axi_gmem_ARCACHE</port>
-                <port>m_axi_gmem_ARID</port>
-                <port>m_axi_gmem_ARLEN</port>
-                <port>m_axi_gmem_ARLOCK</port>
-                <port>m_axi_gmem_ARPROT</port>
-                <port>m_axi_gmem_ARQOS</port>
-                <port>m_axi_gmem_ARREADY</port>
-                <port>m_axi_gmem_ARREGION</port>
-                <port>m_axi_gmem_ARSIZE</port>
-                <port>m_axi_gmem_ARUSER</port>
-                <port>m_axi_gmem_ARVALID</port>
-                <port>m_axi_gmem_AWADDR</port>
-                <port>m_axi_gmem_AWBURST</port>
-                <port>m_axi_gmem_AWCACHE</port>
-                <port>m_axi_gmem_AWID</port>
-                <port>m_axi_gmem_AWLEN</port>
-                <port>m_axi_gmem_AWLOCK</port>
-                <port>m_axi_gmem_AWPROT</port>
-                <port>m_axi_gmem_AWQOS</port>
-                <port>m_axi_gmem_AWREADY</port>
-                <port>m_axi_gmem_AWREGION</port>
-                <port>m_axi_gmem_AWSIZE</port>
-                <port>m_axi_gmem_AWUSER</port>
-                <port>m_axi_gmem_AWVALID</port>
-                <port>m_axi_gmem_BID</port>
-                <port>m_axi_gmem_BREADY</port>
-                <port>m_axi_gmem_BRESP</port>
-                <port>m_axi_gmem_BUSER</port>
-                <port>m_axi_gmem_BVALID</port>
-                <port>m_axi_gmem_RDATA</port>
-                <port>m_axi_gmem_RID</port>
-                <port>m_axi_gmem_RLAST</port>
-                <port>m_axi_gmem_RREADY</port>
-                <port>m_axi_gmem_RRESP</port>
-                <port>m_axi_gmem_RUSER</port>
-                <port>m_axi_gmem_RVALID</port>
-                <port>m_axi_gmem_WDATA</port>
-                <port>m_axi_gmem_WID</port>
-                <port>m_axi_gmem_WLAST</port>
-                <port>m_axi_gmem_WREADY</port>
-                <port>m_axi_gmem_WSTRB</port>
-                <port>m_axi_gmem_WUSER</port>
-                <port>m_axi_gmem_WVALID</port>
+                <port>din_Addr_A</port>
+                <port>din_Clk_A</port>
+                <port>din_Din_A</port>
+                <port>din_Dout_A</port>
+                <port>din_EN_A</port>
+                <port>din_Rst_A</port>
+                <port>din_WEN_A</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="64" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="din"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="8" final_bitwidth="8" argName="din"/>
-                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="64" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="dout"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="8" final_bitwidth="8" argName="dout"/>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="din"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dout_PORTA" type="bram" busTypeName="bram" mode="master" dataWidth="8" addrWidth="32" portPrefix="dout_">
+            <busParams>
+                <busParam busParamName="MASTER_TYPE">BRAM_CTRL</busParam>
+                <busParam busParamName="MEM_WIDTH">8</busParam>
+                <busParam busParamName="MEM_SIZE">1</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="dout_Addr_A">ADDR</portMap>
+                <portMap portMapName="dout_EN_A">EN</portMap>
+                <portMap portMapName="dout_WEN_A">WE</portMap>
+                <portMap portMapName="dout_Din_A">DIN</portMap>
+                <portMap portMapName="dout_Dout_A">DOUT</portMap>
+                <portMap portMapName="dout_Clk_A">CLK</portMap>
+                <portMap portMapName="dout_Rst_A">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>dout_Addr_A</port>
+                <port>dout_Clk_A</port>
+                <port>dout_Din_A</port>
+                <port>dout_Dout_A</port>
+                <port>dout_EN_A</port>
+                <port>dout_Rst_A</port>
+                <port>dout_WEN_A</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="bram" register_option="0" argName="dout"/>
             </constraints>
         </Interface>
     </Interfaces>
     <ReportHWInterface>
         <section name="HW Interfaces" level="0">
-            <item name="M_AXI">
-                <table isCollapsed="0">
-                    <keys size="12">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding, Resource Estimate</keys>
-                    <column name="m_axi_gmem">8 -&gt; 8, 64, 64, slave, 0, 512, 16, 16, 16, 16, BRAM=2</column>
-                </table>
-            </item>
             <item name="S_AXILITE Interfaces">
                 <table isCollapsed="0">
-                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
-                    <column name="s_axi_control">32, 6, 16, 0</column>
+                    <keys size="3">Interface, Data Width, Address Width</keys>
+                    <column name="s_axi_control">32, 4</column>
                 </table>
             </item>
             <item name="S_AXILITE Registers">
@@ -1124,10 +706,13 @@
                     <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
                     <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN</column>
                     <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST</column>
-                    <column name="s_axi_control">din_1, 0x10, 32, W, Data signal of din, </column>
-                    <column name="s_axi_control">din_2, 0x14, 32, W, Data signal of din, </column>
-                    <column name="s_axi_control">dout_1, 0x1c, 32, W, Data signal of dout, </column>
-                    <column name="s_axi_control">dout_2, 0x20, 32, W, Data signal of dout, </column>
+                </table>
+            </item>
+            <item name="BRAM">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Data Width, Address Width</keys>
+                    <column name="din_PORTA">8, 32</column>
+                    <column name="dout_PORTA">8, 32</column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -1146,36 +731,32 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="din">inout, ap_uint&lt;8&gt;*</column>
-                    <column name="dout">inout, ap_uint&lt;8&gt;*</column>
+                    <column name="din">in, ap_uint&lt;8&gt;*</column>
+                    <column name="dout">out, ap_uint&lt;8&gt;*</column>
                 </table>
             </item>
             <item name="SW-to-HW Mapping">
                 <table isCollapsed="1">
-                    <keys size="5">Argument, HW Interface, HW Type, HW Usage, HW Info</keys>
-                    <column name="din">m_axi_gmem, interface, , </column>
-                    <column name="din">s_axi_control, register, offset, name=din_1 offset=0x10 range=32</column>
-                    <column name="din">s_axi_control, register, offset, name=din_2 offset=0x14 range=32</column>
-                    <column name="dout">m_axi_gmem, interface, , </column>
-                    <column name="dout">s_axi_control, register, offset, name=dout_1 offset=0x1c range=32</column>
-                    <column name="dout">s_axi_control, register, offset, name=dout_2 offset=0x20 range=32</column>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="din">din_PORTA, interface</column>
+                    <column name="dout">dout_PORTA, interface</column>
                 </table>
             </item>
         </section>
     </ReportSWInterface>
     <ReportBurst>
-        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.">
-            <item name="Inferred Bursts and Widening Missed">
-                <table>
-                    <keys size="6">HW Interface, Variable, Loop, Problem, Resolution, Location</keys>
-                    <column name="m_axi_gmem">din, COMP, Access load is in the conditional branch, 214-232, ../../src/window_1d_sliding.cpp:31:5</column>
-                    <column name="m_axi_gmem">dout, COMP, Access store is in the conditional branch, 214-232, ../../src/window_1d_sliding.cpp:31:5</column>
-                </table>
-            </item>
-        </section>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="pipeline" location="../../src/window_1d_sliding.cpp:32" status="valid" parentFunction="window_avg" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_storage" location="../../src/./shift_class.hpp:18" status="valid" parentFunction="shift_class&lt;datatype, num_regs&gt;" variable="din" isDirective="0" options="variable=din type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./shift_class.hpp:19" status="valid" parentFunction="shift_class&lt;datatype, num_regs&gt;" variable="load_data" isDirective="0" options="variable=load_data type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./shift_class.hpp:20" status="valid" parentFunction="shift_class&lt;datatype, num_regs&gt;" variable="regs" isDirective="0" options="variable=regs type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/window_1d_sliding.cpp:8" status="valid" parentFunction="clip_window" variable="shift_reg" isDirective="0" options="variable=shift_reg type=RAM_T2P impl=BRAM"/>
+        <Pragma type="interface" location="../../src/window_1d_sliding.cpp:31" status="valid" parentFunction="window_avg" variable="din" isDirective="0" options="mode=BRAM port=din"/>
+        <Pragma type="interface" location="../../src/window_1d_sliding.cpp:32" status="valid" parentFunction="window_avg" variable="dout" isDirective="0" options="mode=BRAM port=dout"/>
+        <Pragma type="bind_storage" location="../../src/window_1d_sliding.cpp:35" status="valid" parentFunction="window_avg" variable="shift_reg" isDirective="0" options="variable=shift_reg type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/window_1d_sliding.cpp:37" status="valid" parentFunction="window_avg" variable="window" isDirective="0" options="variable=window type=RAM_T2P impl=BRAM"/>
+        <Pragma type="pipeline" location="../../src/window_1d_sliding.cpp:44" status="valid" parentFunction="window_avg" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

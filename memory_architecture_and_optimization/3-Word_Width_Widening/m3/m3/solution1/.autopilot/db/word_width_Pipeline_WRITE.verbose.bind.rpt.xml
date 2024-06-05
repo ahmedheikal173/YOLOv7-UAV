@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'word_width_Pipeline_WRITE'" level="0">
-<item name = "Date">Wed Jun  5 00:33:02 2024
+<item name = "Date">Wed Jun  5 16:27:50 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m3</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.621 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">409603, 409603, 4.096 ms, 4.096 ms, 409603, 409603, no</column>
+<column name="">409602, 409602, 4.096 ms, 4.096 ms, 409602, 409602, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- WRITE">409601, 409601, 3, 1, 1, 409600, yes</column>
+<column name="- WRITE">409600, 409600, 2, 1, 1, 409600, yes</column>
 </table>
 </item>
 </section>

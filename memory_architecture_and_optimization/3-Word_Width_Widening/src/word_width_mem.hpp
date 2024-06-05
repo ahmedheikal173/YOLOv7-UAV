@@ -18,7 +18,7 @@ class word_width_mem {
   public:
   word_width_mem():sel_rd(0), sel_wr(0){
 //#pragma HLS RESOURCE variable=x core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
   }
   void write(ap_uint<ADDRESS_BITWIDTH> i, ap_int<W> x_in[N]);
   ap_int<W> read(ap_uint<ADDRESS_BITWIDTH> i, const int offset);

@@ -88,10 +88,6 @@ void XWord_width_Continue(XWord_width *InstancePtr);
 void XWord_width_EnableAutoRestart(XWord_width *InstancePtr);
 void XWord_width_DisableAutoRestart(XWord_width *InstancePtr);
 
-void XWord_width_Set_x_in(XWord_width *InstancePtr, u64 Data);
-u64 XWord_width_Get_x_in(XWord_width *InstancePtr);
-void XWord_width_Set_y(XWord_width *InstancePtr, u64 Data);
-u64 XWord_width_Get_y(XWord_width *InstancePtr);
 void XWord_width_Set_load(XWord_width *InstancePtr, u32 Data);
 u32 XWord_width_Get_load(XWord_width *InstancePtr);
 

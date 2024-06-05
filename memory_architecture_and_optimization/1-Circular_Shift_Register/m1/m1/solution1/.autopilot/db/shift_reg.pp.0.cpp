@@ -8372,8 +8372,8 @@ class circular_shift {
     wptr = 0;
     rptr = 0;
     VITIS_LOOP_28_1: for (int i = 0; i < N; i++){
-#pragma HLS unroll
 
+#pragma HLS pipeline
  mem[i] = dummy;
     }
   }
@@ -8406,8 +8406,8 @@ SHIFT:
 
 WRITE:
   for (int i = 0; i < 9; i++) {
-#pragma HLS unroll
 
+#pragma HLS pipeline
  dout[i] = regs[i];
   }
 }

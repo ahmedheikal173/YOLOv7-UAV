@@ -9,7 +9,6 @@ set SynModuleInfo {
     SUBMODULES {
       {MODELNAME interleave_manual_rnd_x_x0_V_RAM_T2P_BRAM_1R1W RTLNAME interleave_manual_rnd_x_x0_V_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME interleave_manual_rnd_control_s_axi RTLNAME interleave_manual_rnd_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
-      {MODELNAME interleave_manual_rnd_gmem_m_axi RTLNAME interleave_manual_rnd_gmem_m_axi BINDTYPE interface TYPE interface_m_axi}
     }
   }
 }

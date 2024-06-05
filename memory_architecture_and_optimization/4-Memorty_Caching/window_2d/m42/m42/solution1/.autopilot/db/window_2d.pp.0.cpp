@@ -5719,7 +5719,7 @@ class singleport_ram {
    public:
     singleport_ram (): addr_int(0), cnt(0), read_data(0), write_data(0) {
 
-#pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=AUTO
+#pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=BRAM
  }
 
 
@@ -30252,8 +30252,12 @@ namespace std
 using namespace std;
 
 void clip_window(int r, ap_uint<8> window[3]) {
-    ap_uint<8> w[3];
-    VITIS_LOOP_11_1: for (int i = 0; i < 3; i++)
+
+#pragma HLS interface mode=BRAM port=window
+
+ ap_uint<8> w[3];
+    VITIS_LOOP_14_1: for (int i = 0; i < 3; i++)
+
         w[i] = window[i];
     window[0] = (r == 1) ? w[1] : w[0];
     window[1] = w[1];
@@ -30265,7 +30269,11 @@ void clip_window(int r, ap_uint<8> window[3]) {
 
 
 void buff(ap_uint<8> din, int c, ap_uint<8> window[3]) {
-    static singleport_ram<640, 8> buff0;
+
+
+#pragma HLS interface mode=BRAM port=window
+
+ static singleport_ram<640, 8> buff0;
     static singleport_ram<640, 8> buff1;
     ap_uint<8> t0, t1;
 
@@ -30286,13 +30294,10 @@ void buff(ap_uint<8> din, int c, ap_uint<8> window[3]) {
 
 __attribute__((sdx_kernel("window_avg", 0))) void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]) {_ssdm_SpecArrayDimSize(din, 640);_ssdm_SpecArrayDimSize(dout, 640);
 #pragma HLSDIRECTIVE TOP name=window_avg
-# 42 "../src/window_2d.cpp"
+# 50 "../src/window_2d.cpp"
 
 
-#pragma HLS BIND_STORAGE variable=din type=RAM_T2P impl=AUTO
-
-#pragma HLS BIND_STORAGE variable=dout type=RAM_T2P impl=AUTO
- const ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
+    const ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
     ap_fixed<13, 11> tmp;
     ap_uint<8> w[3];
     ap_uint<8> din_tmp;

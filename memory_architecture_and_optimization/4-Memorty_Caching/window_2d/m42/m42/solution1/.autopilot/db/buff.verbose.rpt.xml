@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'buff'" level="0">
-<item name = "Date">Wed Jun  5 00:39:32 2024
+<item name = "Date">Wed Jun  5 17:26:43 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m42</item>
@@ -50,7 +50,7 @@
 <column name="Expression">-, -, 0, 63, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
-<column name="Memory">2, -, 0, 0, 0</column>
+<column name="Memory">2, -, 0, 0, -</column>
 <column name="Multiplexer">-, -, -, 342, -</column>
 <column name="Register">-, -, 123, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
@@ -71,8 +71,8 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="buff1_ram_V_U">buff_buff1_ram_V_RAM_1P_AUTO_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
-<column name="buff0_ram_V_U">buff_buff1_ram_V_RAM_1P_AUTO_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
+<column name="buff1_ram_V_U">buff_buff1_ram_V_RAM_1P_BRAM_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
+<column name="buff0_ram_V_U">buff_buff1_ram_V_RAM_1P_BRAM_1R1W, 1, 0, 0, 0, 320, 16, 1, 5120</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -85,12 +85,12 @@
 <column name="ap_condition_169">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_262">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_273">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln30_fu_344_p2">icmp, 0, 0, 11, 10, 1</column>
+<column name="icmp_ln38_fu_344_p2">icmp, 0, 0, 11, 10, 1</column>
 <column name="ap_condition_268">or, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_291">or, 0, 0, 2, 1, 1</column>
 <column name="ret_4_fu_496_p3">select, 0, 0, 16, 1, 16</column>
-<column name="select_ln37_fu_559_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln38_fu_567_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln45_fu_559_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln46_fu_567_p3">select, 0, 0, 8, 1, 8</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln885_1_fu_521_p2">xor, 0, 0, 2, 1, 2</column>
 <column name="xor_ln885_2_fu_354_p2">xor, 0, 0, 2, 1, 2</column>
@@ -155,7 +155,7 @@
 <column name="empty_20_reg_270">1, 0, 1, 0</column>
 <column name="empty_reg_114">1, 0, 1, 0</column>
 <column name="guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel">1, 0, 1, 0</column>
-<column name="icmp_ln30_reg_607">1, 0, 1, 0</column>
+<column name="icmp_ln38_reg_607">1, 0, 1, 0</column>
 <column name="sel">1, 0, 1, 0</column>
 </table>
 </item>

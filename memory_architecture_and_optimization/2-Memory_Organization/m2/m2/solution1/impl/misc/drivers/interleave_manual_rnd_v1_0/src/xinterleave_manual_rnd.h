@@ -88,10 +88,6 @@ void XInterleave_manual_rnd_Continue(XInterleave_manual_rnd *InstancePtr);
 void XInterleave_manual_rnd_EnableAutoRestart(XInterleave_manual_rnd *InstancePtr);
 void XInterleave_manual_rnd_DisableAutoRestart(XInterleave_manual_rnd *InstancePtr);
 
-void XInterleave_manual_rnd_Set_x_in(XInterleave_manual_rnd *InstancePtr, u64 Data);
-u64 XInterleave_manual_rnd_Get_x_in(XInterleave_manual_rnd *InstancePtr);
-void XInterleave_manual_rnd_Set_y(XInterleave_manual_rnd *InstancePtr, u64 Data);
-u64 XInterleave_manual_rnd_Get_y(XInterleave_manual_rnd *InstancePtr);
 void XInterleave_manual_rnd_Set_load(XInterleave_manual_rnd *InstancePtr, u32 Data);
 u32 XInterleave_manual_rnd_Get_load(XInterleave_manual_rnd *InstancePtr);
 

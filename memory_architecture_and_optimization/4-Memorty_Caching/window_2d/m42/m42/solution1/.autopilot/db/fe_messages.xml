@@ -9,21 +9,21 @@
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./singleport_ram.hpp:28:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="singleport_ram&lt;N, W&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ram type=RAM_1P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="singleport_ram&lt;N, W&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ram type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./singleport_ram.hpp:37:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="exec" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:43:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clip_window" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=window" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="buff" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=window" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:51:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=window_avg" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:44:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=din type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:46:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=dout type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:57:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:62:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="window_avg" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341" msg_body="Inlining function 'ap_int_base&lt;65, true&gt;::ap_int_base&lt;11, false&gt;(ap_int_base&lt;11, false&gt; const&amp;)' into 'ap_int_base&lt;11, false&gt;::RType&lt;64, true&gt;::minus operator-&lt;11, false, 64, true&gt;(ap_int_base&lt;11, false&gt; const&amp;, ap_int_base&lt;64, true&gt; const&amp;)'">
@@ -131,25 +131,25 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./singleport_ram.hpp:43:54" msg_body="Inlining function 'ap_int_base&lt;16, false&gt;::range(int, int)' into 'singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)'">
         <args Callee="ap_int_base&lt;16, false&gt;::range(int, int)" Caller="singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:38:22" msg_body="Inlining function 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:46:22" msg_body="Inlining function 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:37:22" msg_body="Inlining function 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:45:22" msg_body="Inlining function 'bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="bool operator==&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;, int)" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:35:16" msg_body="Inlining function 'singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:43:16" msg_body="Inlining function 'singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:35:29" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator!() const' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:43:29" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator!() const' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;1, false&gt;::operator!() const" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:34:16" msg_body="Inlining function 'singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:42:16" msg_body="Inlining function 'singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="singleport_ram&lt;640, 8&gt;::exec(ap_uint&lt;8&gt;, int, bool)" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:34:29" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:42:29" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;1, false&gt;::operator unsigned long long() const" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:31:9" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator++(int)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:39:9" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator++(int)' into 'buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;1, false&gt;::operator++(int)" Caller="buff(ap_uint&lt;8&gt;, int, ap_uint&lt;8&gt;*)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:707:9" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator!() const' into 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp; ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator=&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
@@ -227,64 +227,58 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:922:92" msg_body="Inlining function 'ap_int_base&lt;11, true&gt;::to_uint() const' into 'ap_fixed_base&lt;13, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_uint() const'">
         <args Callee="ap_int_base&lt;11, true&gt;::to_uint() const" Caller="ap_fixed_base&lt;13, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_uint() const"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:47:37" msg_body="Inlining function 'ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:52:40" msg_body="Inlining function 'ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:47:43" msg_body="Inlining function 'ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:52:46" msg_body="Inlining function 'ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:47:48" msg_body="Inlining function 'ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:52:51" msg_body="Inlining function 'ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_ufixed&lt;3, 1, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_ufixed(double)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:62:24" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:67:24" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:64:38" msg_body="Inlining function 'ap_fixed_base&lt;13, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_uint() const' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:69:38" msg_body="Inlining function 'ap_fixed_base&lt;13, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_uint() const' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed_base&lt;13, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_uint() const" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:62:19" msg_body="Inlining function 'ap_fixed&lt;13, 11, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed&lt;13, 11, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;13, 11, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:67:19" msg_body="Inlining function 'ap_fixed&lt;13, 11, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed&lt;13, 11, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;13, 11, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed&lt;13, 11, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed&lt;13, 11, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;13, 11, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:62:55" msg_body="Inlining function 'ap_fixed_base&lt;12, 10, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;11, 9, false&gt;::plus ap_fixed_base&lt;12, 10, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator+&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:67:55" msg_body="Inlining function 'ap_fixed_base&lt;12, 10, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;11, 9, false&gt;::plus ap_fixed_base&lt;12, 10, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator+&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed_base&lt;12, 10, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;11, 9, false&gt;::plus ap_fixed_base&lt;12, 10, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator+&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:62:62" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:67:62" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:62:36" msg_body="Inlining function 'ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;11, 9, false&gt;::plus ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator+&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:67:36" msg_body="Inlining function 'ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;11, 9, false&gt;::plus ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator+&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;11, 9, false&gt;::plus ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator+&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;11, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:62:43" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:67:43" msg_body="Inlining function 'ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="ap_fixed_base&lt;8, 8, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;3, 1, false&gt;::mult operator*&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0, 8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;, ap_fixed_base&lt;3, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-185" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:42:149" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported">
-        <args Pragma="call"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/window_2d.cpp:14:22" msg_body="Loop 'VITIS_LOOP_14_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_14_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-185" msg_severity="WARNING" msg_loc="../src/window_2d.cpp:44:9" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported">
-        <args Pragma="call"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/window_2d.cpp:11:22" msg_body="Loop 'VITIS_LOOP_11_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_11_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/window_2d.cpp:10:16" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/window_2d.cpp:13:13" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/window_2d.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_11_1' (../src/window_2d.cpp:11:22) in function 'clip_window' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/window_2d.cpp:11:22" LoopName="VITIS_LOOP_11_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/window_2d.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_14_1' (../src/window_2d.cpp:14:22) in function 'clip_window' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/window_2d.cpp:14:22" LoopName="VITIS_LOOP_14_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/window_2d.cpp:9:0" msg_body="Unrolling loop 'anonymous' (../src/window_2d.cpp:10:16) in function 'clip_window' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/window_2d.cpp:10:16" LoopName="anonymous"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/window_2d.cpp:9:0" msg_body="Unrolling loop 'anonymous' (../src/window_2d.cpp:13:13) in function 'clip_window' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/window_2d.cpp:13:13" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/window_2d.cpp:42:0" msg_body="Inlining function 'clip_window(int, ap_uint&lt;8&gt;*)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/window_2d.cpp:50:0" msg_body="Inlining function 'clip_window(int, ap_uint&lt;8&gt;*)' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="clip_window(int, ap_uint&lt;8&gt;*)" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="AUTOMATION" msg_id="214-270" msg_severity="INFO" msg_loc="../src/window_2d.cpp:49:16" msg_body="Inferring complete partitioning for array 'w' on dimension 1">
+    <msg msg_groups="AUTOMATION" msg_id="214-270" msg_severity="INFO" msg_loc="../src/window_2d.cpp:54:16" msg_body="Inferring complete partitioning for array 'w' on dimension 1">
         <args Dim="1" Mode="complete" Name="w"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:59:25" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8.1' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:64:25" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8.1' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8.1" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:64:32" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/window_2d.cpp:69:32" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into 'window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])'">
         <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s" Caller="window_avg(ap_uint&lt;8&gt; (*) [640], ap_uint&lt;8&gt; (*) [640])"/>
     </msg>
 </xilinx:hls_fe_msgs>

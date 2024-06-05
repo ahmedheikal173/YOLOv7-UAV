@@ -188,7 +188,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
+						<coreId>1633836900</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -272,7 +272,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
+						<coreId>1013281633</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -299,7 +299,7 @@
 						<name>dout_read</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -315,7 +315,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -356,7 +356,7 @@
 						<name>din_read</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -372,7 +372,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -410,10 +410,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>indvar_flatten_write_ln54</name>
+						<name>indvar_flatten_write_ln59</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -429,7 +429,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -467,10 +467,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>r_write_ln54</name>
+						<name>r_write_ln59</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -486,7 +486,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -524,10 +524,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>c_write_ln54</name>
+						<name>c_write_ln59</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -543,7 +543,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -556,7 +556,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
+						<coreId>4199998608</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -581,2237 +581,6 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>br_ln54</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>133</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_14">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>36</id>
-						<name>r_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>r</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>134</item>
-					<item>492</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>11</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_15">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>37</id>
-						<name>indvar_flatten_load</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>135</item>
-					<item>491</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_16">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>38</id>
-						<name>cmp3</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>136</item>
-					<item>138</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>39</id>
-						<name>cmp18</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>139</item>
-					<item>140</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>14</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_18">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>40</id>
-						<name>cmp3_i</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>141</item>
-					<item>143</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>15</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_19">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>41</id>
-						<name>shl_ln</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>145</item>
-					<item>146</item>
-					<item>148</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_20">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>42</id>
-						<name>shl_ln64_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>17</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>150</item>
-					<item>151</item>
-					<item>153</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>43</id>
-						<name>zext_ln64</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>385206016</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>154</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>44</id>
-						<name>add_ln64</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>155</item>
-					<item>156</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.12</m_delay>
-				<m_topoIndex>19</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>45</id>
-						<name>icmp_ln54</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>157</item>
-					<item>159</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.92</m_delay>
-				<m_topoIndex>20</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_24">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>46</id>
-						<name>add_ln54</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>100</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>160</item>
-					<item>162</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.12</m_delay>
-				<m_topoIndex>21</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_25">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>47</id>
-						<name>br_ln54</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>163</item>
-					<item>164</item>
-					<item>165</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_26">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>49</id>
-						<name>c_load</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>151666223</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>249</item>
-					<item>493</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_27">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>52</id>
-						<name>icmp_ln56</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1918857313</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>250</item>
-					<item>251</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>24</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_28">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>53</id>
-						<name>select_ln54</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>875639328</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>252</item>
-					<item>253</item>
-					<item>254</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.37</m_delay>
-				<m_topoIndex>25</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_29">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>54</id>
-						<name>add_ln54_2</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2020173407</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>255</item>
-					<item>256</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.93</m_delay>
-				<m_topoIndex>26</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_30">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>55</id>
-						<name>cmp3_mid1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>257</item>
-					<item>258</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>27</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_31">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>56</id>
-						<name>select_ln54_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1869901417</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>259</item>
-					<item>260</item>
-					<item>261</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.34</m_delay>
-				<m_topoIndex>28</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_32">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>57</id>
-						<name>cmp18_mid1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1881176417</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>262</item>
-					<item>263</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>29</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_33">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>58</id>
-						<name>select_ln54_2</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>976894836</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>264</item>
-					<item>265</item>
-					<item>266</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.34</m_delay>
-				<m_topoIndex>30</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_34">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>59</id>
-						<name>select_ln54_3</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1650422894</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>267</item>
-					<item>268</item>
-					<item>269</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.34</m_delay>
-				<m_topoIndex>31</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_35">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>60</id>
-						<name>shl_ln64_mid1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1936018748</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>270</item>
-					<item>271</item>
-					<item>272</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_36">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>61</id>
-						<name>shl_ln64_1_mid1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1601465961</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>17</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>273</item>
-					<item>274</item>
-					<item>275</item>
-				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>33</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_37">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>62</id>
-						<name>zext_ln64_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1919950882</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>276</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>34</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_38">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>63</id>
-						<name>add_ln64_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>572669294</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>277</item>
-					<item>278</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.12</m_delay>
-				<m_topoIndex>35</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_39">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>64</id>
-						<name>select_ln54_4</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>858860852</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>19</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>279</item>
-					<item>280</item>
-					<item>281</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.39</m_delay>
-				<m_topoIndex>36</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_40">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>65</id>
-						<name>zext_ln54</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1601200442</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>282</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>37</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_41">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>66</id>
-						<name>add_ln54_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1650422894</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>283</item>
-					<item>284</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.36</m_delay>
-				<m_topoIndex>38</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_42">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>67</id>
-						<name>select_ln54_5</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>54</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>826041715</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>285</item>
-					<item>286</item>
-					<item>287</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.37</m_delay>
-				<m_topoIndex>39</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_43">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>68</id>
-						<name>zext_ln56</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1699560457</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>288</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>40</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_44">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>69</id>
-						<name>zext_ln56_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>56</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>56</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1013281633</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>289</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>41</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_45">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>72</id>
-						<name>br_ln58</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>58</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>58</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>290</item>
-					<item>291</item>
-					<item>292</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>42</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_46">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>74</id>
-						<name>add_ln59</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1953656688</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>166</item>
-					<item>167</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>43</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_47">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>75</id>
-						<name>add_ln59_1</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>2020173407</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>168</item>
-					<item>169</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.05</m_delay>
-				<m_topoIndex>44</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_48">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>76</id>
-						<name>gmem_addr</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1953459305</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>170</item>
-					<item>171</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>45</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_49">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>77</id>
-						<name>din_tmp_2_req</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1601134448</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>173</item>
-					<item>174</item>
-					<item>175</item>
-				</oprand_edges>
-				<opcode>readreq</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
-				<m_topoIndex>56</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_50">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>78</id>
-						<name>din_tmp_2</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>din_tmp</originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1629890919</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>177</item>
-					<item>178</item>
-					<item>488</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
-				<m_topoIndex>57</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_51">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>79</id>
-						<name>din_tmp_write_ln59</name>
-						<fileName>../src/window_2d.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>window_avg</contextFuncName>
-						<contextNormFuncName>window_avg</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/window_2d.cpp</first>
-											<second>window_avg</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1397508187</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>179</item>
-					<item>180</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>58</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_52">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>80</id>
 						<name>br_ln59</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
@@ -2844,7 +613,2238 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952917093</coreId>
+						<coreId>2289441776</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>133</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>10</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_14">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>36</id>
+						<name>r_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>r</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2292245520</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>134</item>
+					<item>492</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>11</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_15">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>37</id>
+						<name>indvar_flatten_load</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1869901312</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>135</item>
+					<item>491</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>12</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_16">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>38</id>
+						<name>cmp3</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>997420912</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>136</item>
+					<item>138</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.76</m_delay>
+				<m_topoIndex>13</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_17">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>39</id>
+						<name>cmp18</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>139</item>
+					<item>140</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.76</m_delay>
+				<m_topoIndex>14</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_18">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>40</id>
+						<name>cmp3_i</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>141</item>
+					<item>143</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.76</m_delay>
+				<m_topoIndex>15</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_19">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
+						<name>shl_ln</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>145</item>
+					<item>146</item>
+					<item>148</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>16</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_20">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>42</id>
+						<name>shl_ln69_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>17</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>150</item>
+					<item>151</item>
+					<item>153</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>17</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_21">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>43</id>
+						<name>zext_ln69</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>154</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>18</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_22">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>44</id>
+						<name>add_ln69</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2289441776</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>155</item>
+					<item>156</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.12</m_delay>
+				<m_topoIndex>19</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_23">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>icmp_ln59</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4199998608</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>157</item>
+					<item>159</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.92</m_delay>
+				<m_topoIndex>20</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_24">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>46</id>
+						<name>add_ln59</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>160</item>
+					<item>162</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.12</m_delay>
+				<m_topoIndex>21</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_25">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>47</id>
+						<name>br_ln59</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>694510592</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>163</item>
+					<item>164</item>
+					<item>165</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>22</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_26">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>49</id>
+						<name>c_load</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>249</item>
+					<item>493</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>23</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_27">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>52</id>
+						<name>icmp_ln61</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>250</item>
+					<item>251</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.76</m_delay>
+				<m_topoIndex>24</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_28">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>53</id>
+						<name>select_ln59</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>252</item>
+					<item>253</item>
+					<item>254</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.37</m_delay>
+				<m_topoIndex>25</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_29">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>54</id>
+						<name>add_ln59_2</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>255</item>
+					<item>256</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.93</m_delay>
+				<m_topoIndex>26</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_30">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>55</id>
+						<name>cmp3_mid1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1601200424</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>257</item>
+					<item>258</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.76</m_delay>
+				<m_topoIndex>27</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_31">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>56</id>
+						<name>select_ln59_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>259</item>
+					<item>260</item>
+					<item>261</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.34</m_delay>
+				<m_topoIndex>28</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_32">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>57</id>
+						<name>cmp18_mid1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2292245712</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>262</item>
+					<item>263</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.76</m_delay>
+				<m_topoIndex>29</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
+						<name>select_ln59_2</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>264</item>
+					<item>265</item>
+					<item>266</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.34</m_delay>
+				<m_topoIndex>30</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_34">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>59</id>
+						<name>select_ln59_3</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>540767232</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>267</item>
+					<item>268</item>
+					<item>269</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.34</m_delay>
+				<m_topoIndex>31</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_35">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>60</id>
+						<name>shl_ln69_mid1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>270</item>
+					<item>271</item>
+					<item>272</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>32</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_36">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>61</id>
+						<name>shl_ln69_1_mid1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>539768064</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>17</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>273</item>
+					<item>274</item>
+					<item>275</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>33</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_37">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>62</id>
+						<name>zext_ln69_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>276</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>34</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_38">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>63</id>
+						<name>add_ln69_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>277</item>
+					<item>278</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.12</m_delay>
+				<m_topoIndex>35</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_39">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>64</id>
+						<name>select_ln59_4</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>19</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>279</item>
+					<item>280</item>
+					<item>281</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.39</m_delay>
+				<m_topoIndex>36</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_40">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>65</id>
+						<name>zext_ln59</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>282</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>37</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_41">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>66</id>
+						<name>add_ln59_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2284632128</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>283</item>
+					<item>284</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.36</m_delay>
+				<m_topoIndex>38</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_42">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>67</id>
+						<name>select_ln59_5</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1986817907</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>10</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>285</item>
+					<item>286</item>
+					<item>287</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.37</m_delay>
+				<m_topoIndex>39</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_43">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>68</id>
+						<name>zext_ln61</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2284633472</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>288</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>40</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_44">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>69</id>
+						<name>zext_ln61_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>289</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>41</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_45">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>72</id>
+						<name>br_ln63</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>63</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>63</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1295780106</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>290</item>
+					<item>291</item>
+					<item>292</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>42</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_46">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>74</id>
+						<name>add_ln64</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>203</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>166</item>
+					<item>167</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>43</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_47">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>75</id>
+						<name>add_ln64_1</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>23</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>168</item>
+					<item>169</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.05</m_delay>
+				<m_topoIndex>44</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_48">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>76</id>
+						<name>gmem_addr</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>29554</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>170</item>
+					<item>171</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>45</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_49">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>77</id>
+						<name>din_tmp_2_req</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>14</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>173</item>
+					<item>174</item>
+					<item>175</item>
+				</oprand_edges>
+				<opcode>readreq</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>7.30</m_delay>
+				<m_topoIndex>56</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_50">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>78</id>
+						<name>din_tmp_2</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>din_tmp</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>2291708528</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>177</item>
+					<item>178</item>
+					<item>488</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>7.30</m_delay>
+				<m_topoIndex>57</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_51">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>79</id>
+						<name>din_tmp_write_ln64</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>179</item>
+					<item>180</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>58</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_52">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>80</id>
+						<name>br_ln64</name>
+						<fileName>../src/window_2d.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
+						<lineNumber>64</lineNumber>
+						<contextFuncName>window_avg</contextFuncName>
+						<contextNormFuncName>window_avg</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/window_2d.cpp</first>
+											<second>window_avg</second>
+										</first>
+										<second>64</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2871,7 +2871,7 @@
 						<name>din_tmp_3</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -2887,7 +2887,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>60</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -2900,7 +2900,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>27</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2928,7 +2928,7 @@
 						<name>buff_ret</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -2944,7 +2944,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>60</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -2957,7 +2957,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1633836900</coreId>
+						<coreId>1868721781</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>24</bitwidth>
@@ -2996,7 +2996,7 @@
 						<name>w_V_0</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3012,7 +3012,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>60</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3025,7 +3025,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>875639328</coreId>
+						<coreId>1936683105</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3052,7 +3052,7 @@
 						<name>w_V_1</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3068,7 +3068,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>60</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3081,7 +3081,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1699560457</coreId>
+						<coreId>1819242088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3108,7 +3108,7 @@
 						<name>w_V_2</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3124,7 +3124,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>60</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3137,7 +3137,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1948265522</coreId>
+						<coreId>1948265524</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3164,7 +3164,7 @@
 						<name>w_V_0_1</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>13</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>clip_window</contextFuncName>
 						<contextNormFuncName>clip_window</contextNormFuncName>
 						<inlineStackInfo>
@@ -3180,7 +3180,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>clip_window</second>
 										</first>
-										<second>13</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -3193,7 +3193,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1814441330</coreId>
+						<coreId>1397508187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3222,7 +3222,7 @@
 						<name>w_V_2_1</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>15</lineNumber>
+						<lineNumber>19</lineNumber>
 						<contextFuncName>clip_window</contextFuncName>
 						<contextNormFuncName>clip_window</contextNormFuncName>
 						<inlineStackInfo>
@@ -3238,7 +3238,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>clip_window</second>
 										</first>
-										<second>15</second>
+										<second>19</second>
 									</item>
 								</second>
 							</item>
@@ -3251,7 +3251,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>976894836</coreId>
+						<coreId>1313415741</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3309,7 +3309,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1650422894</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -3367,7 +3367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1919950882</coreId>
+						<coreId>644182892</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3423,7 +3423,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>997420912</coreId>
+						<coreId>1952917093</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3479,7 +3479,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1629890919</coreId>
+						<coreId>1631286127</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3536,7 +3536,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702129263</coreId>
+						<coreId>1767862369</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3592,7 +3592,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952917093</coreId>
+						<coreId>1701519394</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3617,10 +3617,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>br_ln63</name>
+						<name>br_ln68</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3636,7 +3636,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>63</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3649,7 +3649,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1918857313</coreId>
+						<coreId>997485606</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3707,7 +3707,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601200442</coreId>
+						<coreId>1852796269</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3734,10 +3734,10 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>add_ln64_3</name>
+						<name>add_ln69_3</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3753,7 +3753,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3766,7 +3766,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953656688</coreId>
+						<coreId>574106982</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3791,10 +3791,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>sext_ln64</name>
+						<name>sext_ln69</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3810,7 +3810,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3823,7 +3823,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1663984690</coreId>
+						<coreId>644182892</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -3847,10 +3847,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>add_ln64_2</name>
+						<name>add_ln69_2</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3866,7 +3866,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3879,7 +3879,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1226980729</coreId>
+						<coreId>644182892</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -3907,7 +3907,7 @@
 						<name>gmem_addr_1</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3923,7 +3923,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3936,7 +3936,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>151666223</coreId>
+						<coreId>1713384502</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3964,7 +3964,7 @@
 						<name>gmem_addr_1_req</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -3980,7 +3980,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -3993,7 +3993,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601465961</coreId>
+						<coreId>1210203513</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4019,10 +4019,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>gmem_addr_1_write_ln64</name>
+						<name>gmem_addr_1_write_ln69</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4038,7 +4038,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -4051,7 +4051,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1881176417</coreId>
+						<coreId>1936028192</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4083,7 +4083,7 @@
 						<name>gmem_addr_1_resp</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4099,7 +4099,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -4112,7 +4112,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936018748</coreId>
+						<coreId>1668183398</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4138,10 +4138,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>br_ln64</name>
+						<name>br_ln69</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4157,7 +4157,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>64</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
@@ -4170,7 +4170,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>574453865</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4194,10 +4194,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>add_ln56</name>
+						<name>add_ln61</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4213,7 +4213,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4226,7 +4226,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508187</coreId>
+						<coreId>1713384502</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -4251,10 +4251,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>indvar_flatten_write_ln54</name>
+						<name>indvar_flatten_write_ln59</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4270,7 +4270,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -4283,7 +4283,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858860852</coreId>
+						<coreId>1953244773</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4310,10 +4310,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>r_write_ln54</name>
+						<name>r_write_ln59</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>54</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4329,7 +4329,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>54</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -4342,7 +4342,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1650422894</coreId>
+						<coreId>544434464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4369,10 +4369,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>c_write_ln56</name>
+						<name>c_write_ln61</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>56</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4388,7 +4388,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>56</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4401,7 +4401,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>572669294</coreId>
+						<coreId>997485606</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4446,7 +4446,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>825372722</coreId>
+						<coreId>1818324545</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4470,10 +4470,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>_ln67</name>
+						<name>_ln72</name>
 						<fileName>../src/window_2d.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\4-Memorty_Caching\window_2d\m42</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>72</lineNumber>
 						<contextFuncName>window_avg</contextFuncName>
 						<contextNormFuncName>window_avg</contextNormFuncName>
 						<inlineStackInfo>
@@ -4489,7 +4489,7 @@
 											<first>../src/window_2d.cpp</first>
 											<second>window_avg</second>
 										</first>
-										<second>67</second>
+										<second>72</second>
 									</item>
 								</second>
 							</item>
@@ -4502,7 +4502,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701867322</coreId>
+						<coreId>1953244773</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4578,7 +4578,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508191</coreId>
+						<coreId>2291717600</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -4671,7 +4671,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508191</coreId>
+						<coreId>1031040613</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -4702,7 +4702,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>385206016</coreId>
+						<coreId>1397508191</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -4764,7 +4764,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1031040613</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -4795,7 +4795,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>575620686</coreId>
+						<coreId>997420912</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>19</bitwidth>
@@ -4826,7 +4826,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701080941</coreId>
+						<coreId>1885415456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>24</bitwidth>
@@ -4857,7 +4857,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1279811443</coreId>
+						<coreId>171847458</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4888,7 +4888,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601399156</coreId>
+						<coreId>1601200424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4919,7 +4919,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1769235310</coreId>
+						<coreId>1179535650</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4950,7 +4950,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1043276322</coreId>
+						<coreId>1953244773</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -4981,7 +4981,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701978146</coreId>
+						<coreId>1869182069</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5015,7 +5015,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>774976048</coreId>
+					<coreId>1601399156</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5097,7 +5097,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1601399156</coreId>
+					<coreId>774976048</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5184,7 +5184,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>774976048</coreId>
+					<coreId>1601399156</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5228,7 +5228,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1601399156</coreId>
+					<coreId>774976048</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5302,7 +5302,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>385206016</coreId>
+					<coreId>1601399156</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

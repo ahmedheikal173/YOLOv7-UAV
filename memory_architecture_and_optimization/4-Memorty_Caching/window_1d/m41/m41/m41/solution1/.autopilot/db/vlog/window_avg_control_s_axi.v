@@ -5,7 +5,7 @@
 `timescale 1ns/1ps
 module window_avg_control_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 6,
+    C_S_AXI_ADDR_WIDTH = 4,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -29,8 +29,6 @@ module window_avg_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [63:0]                   din,
-    output wire [63:0]                   dout,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -39,59 +37,43 @@ module window_avg_control_s_axi
     input  wire [0:0]                    ap_local_deadlock
 );
 //------------------------Address Info-------------------
-// 0x00 : Control signals
-//        bit 0  - ap_start (Read/Write/COH)
-//        bit 1  - ap_done (Read)
-//        bit 2  - ap_idle (Read)
-//        bit 3  - ap_ready (Read/COR)
-//        bit 4  - ap_continue (Read/Write/SC)
-//        bit 7  - auto_restart (Read/Write)
-//        others - reserved
-// 0x04 : Global Interrupt Enable Register
-//        bit 0  - Global Interrupt Enable (Read/Write)
-//        others - reserved
-// 0x08 : IP Interrupt Enable Register (Read/Write)
-//        bit 0 - enable ap_done interrupt (Read/Write)
-//        bit 1 - enable ap_ready interrupt (Read/Write)
-//        bit 5 - enable ap_local_deadlock interrupt (Read/Write)
-//        others - reserved
-// 0x0c : IP Interrupt Status Register (Read/TOW)
-//        bit 0 - ap_done (COR/TOW)
-//        bit 1 - ap_ready (COR/TOW)
-//        bit 5 - ap_local_deadlock (COR/TOW)
-//        others - reserved
-// 0x10 : Data signal of din
-//        bit 31~0 - din[31:0] (Read/Write)
-// 0x14 : Data signal of din
-//        bit 31~0 - din[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of dout
-//        bit 31~0 - dout[31:0] (Read/Write)
-// 0x20 : Data signal of dout
-//        bit 31~0 - dout[63:32] (Read/Write)
-// 0x24 : reserved
+// 0x0 : Control signals
+//       bit 0  - ap_start (Read/Write/COH)
+//       bit 1  - ap_done (Read)
+//       bit 2  - ap_idle (Read)
+//       bit 3  - ap_ready (Read/COR)
+//       bit 4  - ap_continue (Read/Write/SC)
+//       bit 7  - auto_restart (Read/Write)
+//       others - reserved
+// 0x4 : Global Interrupt Enable Register
+//       bit 0  - Global Interrupt Enable (Read/Write)
+//       others - reserved
+// 0x8 : IP Interrupt Enable Register (Read/Write)
+//       bit 0 - enable ap_done interrupt (Read/Write)
+//       bit 1 - enable ap_ready interrupt (Read/Write)
+//       bit 5 - enable ap_local_deadlock interrupt (Read/Write)
+//       others - reserved
+// 0xc : IP Interrupt Status Register (Read/TOW)
+//       bit 0 - ap_done (COR/TOW)
+//       bit 1 - ap_ready (COR/TOW)
+//       bit 5 - ap_local_deadlock (COR/TOW)
+//       others - reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL     = 6'h00,
-    ADDR_GIE         = 6'h04,
-    ADDR_IER         = 6'h08,
-    ADDR_ISR         = 6'h0c,
-    ADDR_DIN_DATA_0  = 6'h10,
-    ADDR_DIN_DATA_1  = 6'h14,
-    ADDR_DIN_CTRL    = 6'h18,
-    ADDR_DOUT_DATA_0 = 6'h1c,
-    ADDR_DOUT_DATA_1 = 6'h20,
-    ADDR_DOUT_CTRL   = 6'h24,
-    WRIDLE           = 2'd0,
-    WRDATA           = 2'd1,
-    WRRESP           = 2'd2,
-    WRRESET          = 2'd3,
-    RDIDLE           = 2'd0,
-    RDDATA           = 2'd1,
-    RDRESET          = 2'd2,
-    ADDR_BITS                = 6;
+    ADDR_AP_CTRL = 4'h0,
+    ADDR_GIE     = 4'h4,
+    ADDR_IER     = 4'h8,
+    ADDR_ISR     = 4'hc,
+    WRIDLE       = 2'd0,
+    WRDATA       = 2'd1,
+    WRRESP       = 2'd2,
+    WRRESET      = 2'd3,
+    RDIDLE       = 2'd0,
+    RDDATA       = 2'd1,
+    RDRESET      = 2'd2,
+    ADDR_BITS                = 4;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -120,8 +102,6 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [5:0]                    int_ier = 6'b0;
     reg  [5:0]                    int_isr = 6'b0;
-    reg  [63:0]                   int_din = 'b0;
-    reg  [63:0]                   int_dout = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -231,18 +211,6 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
-                ADDR_DIN_DATA_0: begin
-                    rdata <= int_din[31:0];
-                end
-                ADDR_DIN_DATA_1: begin
-                    rdata <= int_din[63:32];
-                end
-                ADDR_DOUT_DATA_0: begin
-                    rdata <= int_dout[31:0];
-                end
-                ADDR_DOUT_DATA_1: begin
-                    rdata <= int_dout[63:32];
-                end
             endcase
         end
     end
@@ -255,8 +223,6 @@ assign ap_start      = int_ap_start;
 assign task_ap_done  = (ap_done && !auto_restart_status) || auto_restart_done;
 assign task_ap_ready = ap_ready && !int_auto_restart;
 assign ap_continue   = int_ap_continue || auto_restart_status;
-assign din           = int_din;
-assign dout          = int_dout;
 // int_ap_start
 always @(posedge ACLK) begin
     if (ARESET)
@@ -407,46 +373,6 @@ always @(posedge ACLK) begin
             int_isr[5] <= 1'b1;
         else if (w_hs && waddr == ADDR_ISR && WSTRB[0])
             int_isr[5] <= int_isr[5] ^ WDATA[5]; // toggle on write
-    end
-end
-
-// int_din[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_din[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_DIN_DATA_0)
-            int_din[31:0] <= (WDATA[31:0] & wmask) | (int_din[31:0] & ~wmask);
-    end
-end
-
-// int_din[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_din[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_DIN_DATA_1)
-            int_din[63:32] <= (WDATA[31:0] & wmask) | (int_din[63:32] & ~wmask);
-    end
-end
-
-// int_dout[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_dout[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_DOUT_DATA_0)
-            int_dout[31:0] <= (WDATA[31:0] & wmask) | (int_dout[31:0] & ~wmask);
-    end
-end
-
-// int_dout[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_dout[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_DOUT_DATA_1)
-            int_dout[63:32] <= (WDATA[31:0] & wmask) | (int_dout[63:32] & ~wmask);
     end
 end
 

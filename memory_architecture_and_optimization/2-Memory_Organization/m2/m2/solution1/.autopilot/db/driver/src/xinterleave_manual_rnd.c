@@ -83,44 +83,6 @@ void XInterleave_manual_rnd_DisableAutoRestart(XInterleave_manual_rnd *InstanceP
     XInterleave_manual_rnd_WriteReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XInterleave_manual_rnd_Set_x_in(XInterleave_manual_rnd *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XInterleave_manual_rnd_WriteReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_X_IN_DATA, (u32)(Data));
-    XInterleave_manual_rnd_WriteReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_X_IN_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XInterleave_manual_rnd_Get_x_in(XInterleave_manual_rnd *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XInterleave_manual_rnd_ReadReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_X_IN_DATA);
-    Data += (u64)XInterleave_manual_rnd_ReadReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_X_IN_DATA + 4) << 32;
-    return Data;
-}
-
-void XInterleave_manual_rnd_Set_y(XInterleave_manual_rnd *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XInterleave_manual_rnd_WriteReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_Y_DATA, (u32)(Data));
-    XInterleave_manual_rnd_WriteReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_Y_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XInterleave_manual_rnd_Get_y(XInterleave_manual_rnd *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XInterleave_manual_rnd_ReadReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_Y_DATA);
-    Data += (u64)XInterleave_manual_rnd_ReadReg(InstancePtr->Control_BaseAddress, XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_Y_DATA + 4) << 32;
-    return Data;
-}
-
 void XInterleave_manual_rnd_Set_load(XInterleave_manual_rnd *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

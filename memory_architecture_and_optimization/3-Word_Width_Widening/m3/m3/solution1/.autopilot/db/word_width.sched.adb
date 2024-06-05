@@ -9,14 +9,14 @@
 		<module_structure>Sequential</module_structure>
 		<ret_bitwidth>0</ret_bitwidth>
 		<ports class_id="2" tracking_level="0" version="0">
-			<count>4</count>
+			<count>3</count>
 			<item_version>0</item_version>
 			<item class_id="3" tracking_level="1" version="0" object_id="_1">
 				<Value class_id="4" tracking_level="0" version="0">
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>gmem</name>
+						<name>x_in</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -37,11 +37,11 @@
 						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>512</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
-				<direction>2</direction>
-				<if_type>4</if_type>
-				<array_size>0</array_size>
+				<direction>0</direction>
+				<if_type>1</if_type>
+				<array_size>1228800</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -52,42 +52,6 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>x_in</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_3">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>3</id>
 						<name>y</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -106,24 +70,24 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1043406909</coreId>
+						<coreId>1528853351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
+				<direction>1</direction>
+				<if_type>1</if_type>
+				<array_size>409600</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_4">
+			<item class_id_reference="3" object_id="_3">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>4</id>
+						<id>3</id>
 						<name>load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -142,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -157,13 +121,13 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>18</count>
+			<count>7</count>
 			<item_version>0</item_version>
-			<item class_id="9" tracking_level="1" version="0" object_id="_5">
+			<item class_id="9" tracking_level="1" version="0" object_id="_4">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>19</id>
+						<id>16</id>
 						<name>load_read</name>
 						<fileName>../src/word_width.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
@@ -196,7 +160,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1043267618</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -204,8 +168,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>43</item>
-					<item>44</item>
+					<item>29</item>
+					<item>30</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -216,15 +180,15 @@
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_6">
+			<item class_id_reference="9" object_id="_5">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>20</id>
-						<name>y_read</name>
+						<id>18</id>
+						<name>br_ln20</name>
 						<fileName>../src/word_width.cpp</fileName>
 						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>5</lineNumber>
+						<lineNumber>20</lineNumber>
 						<contextFuncName>word_width</contextFuncName>
 						<contextNormFuncName>word_width</contextNormFuncName>
 						<inlineStackInfo>
@@ -240,7 +204,7 @@
 											<first>../src/word_width.cpp</first>
 											<second>word_width</second>
 										</first>
-										<second>5</second>
+										<second>20</second>
 									</item>
 								</second>
 							</item>
@@ -253,24 +217,69 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>114</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>46</item>
-					<item>47</item>
+					<item>31</item>
+					<item>32</item>
+					<item>33</item>
 				</oprand_edges>
-				<opcode>read</opcode>
+				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.00</m_delay>
+				<m_delay>0.00</m_delay>
 				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_6">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>20</id>
+						<name>_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>39</item>
+					<item>40</item>
+					<item>43</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_7">
@@ -278,815 +287,6 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>x_in_read</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>5</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>5</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>48</item>
-					<item>49</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.00</m_delay>
-				<m_topoIndex>3</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_8">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>23</id>
-						<name>br_ln18</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>18</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>18</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>50</item>
-					<item>51</item>
-					<item>52</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>4</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_9">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>25</id>
-						<name>trunc_ln1</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>25</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>25</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>58</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>73</item>
-					<item>74</item>
-					<item>75</item>
-					<item>76</item>
-				</oprand_edges>
-				<opcode>partselect</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>5</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_10">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>26</id>
-						<name>sext_ln25</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>25</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>25</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>77</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>7</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_11">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>27</id>
-						<name>gmem_addr_1</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>25</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>25</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1061566320</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>512</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>78</item>
-					<item>79</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>8</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_12">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>28</id>
-						<name>empty_31</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>25</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>25</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1053335472</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>81</item>
-					<item>82</item>
-					<item>84</item>
-				</oprand_edges>
-				<opcode>writereq</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
-				<m_topoIndex>9</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_13">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>29</id>
-						<name>_ln25</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>25</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>25</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>5</count>
-					<item_version>0</item_version>
-					<item>86</item>
-					<item>87</item>
-					<item>88</item>
-					<item>94</item>
-					<item>290</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>10</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_14">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>30</id>
-						<name>empty_32</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>28</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>28</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>90</item>
-					<item>91</item>
-					<item>289</item>
-				</oprand_edges>
-				<opcode>writeresp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
-				<m_topoIndex>11</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_15">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>31</id>
-						<name>br_ln28</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>28</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>28</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>92</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_16">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>33</id>
-						<name>trunc_ln</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>20</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>20</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>58</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>54</item>
-					<item>55</item>
-					<item>57</item>
-					<item>59</item>
-				</oprand_edges>
-				<opcode>partselect</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>6</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_17">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>34</id>
-						<name>sext_ln20</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>20</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>20</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>60</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_18">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>35</id>
-						<name>gmem_addr</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>20</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>20</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1078490752</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>512</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>61</item>
-					<item>62</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_19">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>36</id>
-						<name>empty</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>20</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>20</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>64</item>
-					<item>65</item>
-					<item>67</item>
-				</oprand_edges>
-				<opcode>readreq</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
-				<m_topoIndex>15</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_20">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>37</id>
-						<name>_ln20</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>20</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>20</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>5</count>
-					<item_version>0</item_version>
-					<item>69</item>
-					<item>70</item>
-					<item>71</item>
-					<item>93</item>
-					<item>291</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_21">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>38</id>
 						<name>br_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1113,7 +313,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>72</item>
+					<item>41</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1121,136 +321,15 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>17</m_topoIndex>
+				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_22">
+			<item class_id_reference="9" object_id="_8">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>40</id>
-						<name>_ln28</name>
-						<fileName>../src/word_width.cpp</fileName>
-						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
-						<lineNumber>28</lineNumber>
-						<contextFuncName>word_width</contextFuncName>
-						<contextNormFuncName>word_width</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/word_width.cpp</first>
-											<second>word_width</second>
-										</first>
-										<second>28</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1061568944</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>0</count>
-					<item_version>0</item_version>
-				</oprand_edges>
-				<opcode>ret</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-		</nodes>
-		<consts class_id="15" tracking_level="0" version="0">
-			<count>6</count>
-			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_23">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>56</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>6</content>
-			</item>
-			<item class_id_reference="16" object_id="_24">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>58</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>671281</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>63</content>
-			</item>
-			<item class_id_reference="16" object_id="_25">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>66</id>
-						<name>empty</name>
+						<id>23</id>
+						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1271,16 +350,130 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>0</bitwidth>
 				</Value>
-				<const_type>0</const_type>
-				<content>19200</content>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>35</item>
+					<item>36</item>
+					<item>42</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>4</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="16" object_id="_26">
+			<item class_id_reference="9" object_id="_9">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>24</id>
+						<name>br_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>37</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>6</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_10">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>26</id>
+						<name>_ln30</name>
+						<fileName>../src/word_width.cpp</fileName>
+						<fileDirectory>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</fileDirectory>
+						<lineNumber>30</lineNumber>
+						<contextFuncName>word_width</contextFuncName>
+						<contextNormFuncName>word_width</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/word_width.cpp</first>
+											<second>word_width</second>
+										</first>
+										<second>30</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>0</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>0</count>
+					<item_version>0</item_version>
+				</oprand_edges>
+				<opcode>ret</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>7</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+		</nodes>
+		<consts class_id="15" tracking_level="0" version="0">
+			<count>2</count>
+			<item_version>0</item_version>
+			<item class_id="16" tracking_level="1" version="0" object_id="_11">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>68</id>
+						<id>34</id>
 						<name>word_width_Pipeline_LOAD</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1307,42 +500,11 @@
 				<const_type>6</const_type>
 				<content>&lt;constant:word_width_Pipeline_LOAD&gt;</content>
 			</item>
-			<item class_id_reference="16" object_id="_27">
+			<item class_id_reference="16" object_id="_12">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>83</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>16843009</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>6400</content>
-			</item>
-			<item class_id_reference="16" object_id="_28">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>85</id>
+						<id>38</id>
 						<name>word_width_Pipeline_WRITE</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1361,7 +523,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1373,10 +535,10 @@
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>4</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_29">
+			<item class_id="18" tracking_level="1" version="0" object_id="_13">
 				<Obj>
 					<type>3</type>
-					<id>24</id>
+					<id>19</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1399,91 +561,80 @@
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
-					<count>4</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>19</item>
+					<item>16</item>
+					<item>18</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="18" object_id="_14">
+				<Obj>
+					<type>3</type>
+					<id>22</id>
+					<name>.preheader.preheader</name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<contextNormFuncName></contextNormFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<control></control>
+					<opType></opType>
+					<implIndex></implIndex>
+					<coreName></coreName>
+					<isStorage>0</isStorage>
+					<storageDepth>0</storageDepth>
+					<coreId>0</coreId>
+					<rtlModuleName></rtlModuleName>
+				</Obj>
+				<node_objs>
+					<count>2</count>
+					<item_version>0</item_version>
 					<item>20</item>
 					<item>21</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="18" object_id="_15">
+				<Obj>
+					<type>3</type>
+					<id>25</id>
+					<name>.preheader6.preheader</name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<contextNormFuncName></contextNormFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<control></control>
+					<opType></opType>
+					<implIndex></implIndex>
+					<coreName></coreName>
+					<isStorage>0</isStorage>
+					<storageDepth>0</storageDepth>
+					<coreId>0</coreId>
+					<rtlModuleName></rtlModuleName>
+				</Obj>
+				<node_objs>
+					<count>2</count>
+					<item_version>0</item_version>
 					<item>23</item>
+					<item>24</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_30">
+			<item class_id_reference="18" object_id="_16">
 				<Obj>
 					<type>3</type>
-					<id>32</id>
-					<name>codeRepl1</name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<contextNormFuncName></contextNormFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<control></control>
-					<opType></opType>
-					<implIndex></implIndex>
-					<coreName></coreName>
-					<isStorage>0</isStorage>
-					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
-					<rtlModuleName></rtlModuleName>
-				</Obj>
-				<node_objs>
-					<count>7</count>
-					<item_version>0</item_version>
-					<item>25</item>
-					<item>26</item>
-					<item>27</item>
-					<item>28</item>
-					<item>29</item>
-					<item>30</item>
-					<item>31</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_31">
-				<Obj>
-					<type>3</type>
-					<id>39</id>
-					<name>codeRepl</name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<contextNormFuncName></contextNormFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<control></control>
-					<opType></opType>
-					<implIndex></implIndex>
-					<coreName></coreName>
-					<isStorage>0</isStorage>
-					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
-					<rtlModuleName></rtlModuleName>
-				</Obj>
-				<node_objs>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item>33</item>
-					<item>34</item>
-					<item>35</item>
-					<item>36</item>
-					<item>37</item>
-					<item>38</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_32">
-				<Obj>
-					<type>3</type>
-					<id>41</id>
+					<id>27</id>
 					<name>.loopexit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -1508,291 +659,123 @@
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>40</item>
+					<item>26</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>40</count>
+			<count>16</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_33">
-				<id>44</id>
-				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
-				<sink_obj>19</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_34">
-				<id>47</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_17">
+				<id>30</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
+				<sink_obj>16</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_18">
+				<id>31</id>
+				<edge_type>1</edge_type>
+				<source_obj>16</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_19">
+				<id>32</id>
+				<edge_type>2</edge_type>
+				<source_obj>22</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_20">
+				<id>33</id>
+				<edge_type>2</edge_type>
+				<source_obj>25</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_21">
+				<id>35</id>
+				<edge_type>1</edge_type>
+				<source_obj>34</source_obj>
+				<sink_obj>23</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_22">
+				<id>36</id>
+				<edge_type>1</edge_type>
+				<source_obj>1</source_obj>
+				<sink_obj>23</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_23">
+				<id>37</id>
+				<edge_type>2</edge_type>
+				<source_obj>27</source_obj>
+				<sink_obj>24</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_24">
+				<id>39</id>
+				<edge_type>1</edge_type>
+				<source_obj>38</source_obj>
 				<sink_obj>20</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_35">
-				<id>49</id>
+			<item class_id_reference="20" object_id="_25">
+				<id>40</id>
 				<edge_type>1</edge_type>
 				<source_obj>2</source_obj>
+				<sink_obj>20</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_26">
+				<id>41</id>
+				<edge_type>2</edge_type>
+				<source_obj>27</source_obj>
 				<sink_obj>21</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_36">
-				<id>50</id>
+			<item class_id_reference="20" object_id="_27">
+				<id>42</id>
 				<edge_type>1</edge_type>
+				<source_obj>4</source_obj>
+				<sink_obj>23</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_28">
+				<id>43</id>
+				<edge_type>1</edge_type>
+				<source_obj>4</source_obj>
+				<sink_obj>20</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_29">
+				<id>179</id>
+				<edge_type>2</edge_type>
 				<source_obj>19</source_obj>
-				<sink_obj>23</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_37">
-				<id>51</id>
-				<edge_type>2</edge_type>
-				<source_obj>32</source_obj>
-				<sink_obj>23</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_38">
-				<id>52</id>
-				<edge_type>2</edge_type>
-				<source_obj>39</source_obj>
-				<sink_obj>23</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_39">
-				<id>55</id>
-				<edge_type>1</edge_type>
-				<source_obj>21</source_obj>
-				<sink_obj>33</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_40">
-				<id>57</id>
-				<edge_type>1</edge_type>
-				<source_obj>56</source_obj>
-				<sink_obj>33</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_41">
-				<id>59</id>
-				<edge_type>1</edge_type>
-				<source_obj>58</source_obj>
-				<sink_obj>33</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_42">
-				<id>60</id>
-				<edge_type>1</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>34</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_43">
-				<id>61</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>35</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_44">
-				<id>62</id>
-				<edge_type>1</edge_type>
-				<source_obj>34</source_obj>
-				<sink_obj>35</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_45">
-				<id>65</id>
-				<edge_type>1</edge_type>
-				<source_obj>35</source_obj>
-				<sink_obj>36</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_46">
-				<id>67</id>
-				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>36</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_47">
-				<id>69</id>
-				<edge_type>1</edge_type>
-				<source_obj>68</source_obj>
-				<sink_obj>37</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_48">
-				<id>70</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>37</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_49">
-				<id>71</id>
-				<edge_type>1</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>37</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_50">
-				<id>72</id>
-				<edge_type>2</edge_type>
-				<source_obj>41</source_obj>
-				<sink_obj>38</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_51">
-				<id>74</id>
-				<edge_type>1</edge_type>
-				<source_obj>20</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_52">
-				<id>75</id>
-				<edge_type>1</edge_type>
-				<source_obj>56</source_obj>
-				<sink_obj>25</sink_obj>
+			<item class_id_reference="20" object_id="_30">
+				<id>180</id>
+				<edge_type>2</edge_type>
+				<source_obj>19</source_obj>
+				<sink_obj>22</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_53">
-				<id>76</id>
-				<edge_type>1</edge_type>
-				<source_obj>58</source_obj>
-				<sink_obj>25</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_54">
-				<id>77</id>
-				<edge_type>1</edge_type>
-				<source_obj>25</source_obj>
-				<sink_obj>26</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_55">
-				<id>78</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
+			<item class_id_reference="20" object_id="_31">
+				<id>181</id>
+				<edge_type>2</edge_type>
+				<source_obj>22</source_obj>
 				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_56">
-				<id>79</id>
-				<edge_type>1</edge_type>
-				<source_obj>26</source_obj>
-				<sink_obj>27</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_57">
-				<id>82</id>
-				<edge_type>1</edge_type>
-				<source_obj>27</source_obj>
-				<sink_obj>28</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_58">
-				<id>84</id>
-				<edge_type>1</edge_type>
-				<source_obj>83</source_obj>
-				<sink_obj>28</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_59">
-				<id>86</id>
-				<edge_type>1</edge_type>
-				<source_obj>85</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_60">
-				<id>87</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_61">
-				<id>88</id>
-				<edge_type>1</edge_type>
+			<item class_id_reference="20" object_id="_32">
+				<id>182</id>
+				<edge_type>2</edge_type>
 				<source_obj>25</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_62">
-				<id>91</id>
-				<edge_type>1</edge_type>
-				<source_obj>27</source_obj>
-				<sink_obj>30</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_63">
-				<id>92</id>
-				<edge_type>2</edge_type>
-				<source_obj>41</source_obj>
-				<sink_obj>31</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_64">
-				<id>93</id>
-				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
-				<sink_obj>37</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_65">
-				<id>94</id>
-				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_66">
-				<id>285</id>
-				<edge_type>2</edge_type>
-				<source_obj>24</source_obj>
-				<sink_obj>39</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_67">
-				<id>286</id>
-				<edge_type>2</edge_type>
-				<source_obj>24</source_obj>
-				<sink_obj>32</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_68">
-				<id>287</id>
-				<edge_type>2</edge_type>
-				<source_obj>32</source_obj>
-				<sink_obj>41</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_69">
-				<id>288</id>
-				<edge_type>2</edge_type>
-				<source_obj>39</source_obj>
-				<sink_obj>41</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_70">
-				<id>289</id>
-				<edge_type>4</edge_type>
-				<source_obj>29</source_obj>
-				<sink_obj>30</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_71">
-				<id>290</id>
-				<edge_type>4</edge_type>
-				<source_obj>28</source_obj>
-				<sink_obj>29</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_72">
-				<id>291</id>
-				<edge_type>4</edge_type>
-				<source_obj>36</source_obj>
-				<sink_obj>37</sink_obj>
+				<sink_obj>27</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -1800,7 +783,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_73">
+		<item class_id="22" tracking_level="1" version="0" object_id="_33">
 			<mId>1</mId>
 			<mTag>word_width</mTag>
 			<mNormTag>word_width</mNormTag>
@@ -1812,17 +795,17 @@
 			<basic_blocks>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>24</item>
-				<item>32</item>
-				<item>39</item>
-				<item>41</item>
+				<item>19</item>
+				<item>22</item>
+				<item>25</item>
+				<item>27</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>409675</mMinLatency>
-			<mMaxLatency>1228875</mMaxLatency>
+			<mMinLatency>409603</mMinLatency>
+			<mMaxLatency>1228803</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1830,11 +813,18 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>18</count>
+		<count>7</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>19</first>
+			<first>16</first>
 			<second class_id="28" tracking_level="0" version="0">
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>18</first>
+			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
@@ -1843,13 +833,13 @@
 			<first>20</first>
 			<second>
 				<first>0</first>
-				<second>0</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>21</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1857,13 +847,13 @@
 			<first>23</first>
 			<second>
 				<first>0</first>
-				<second>0</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>25</first>
+			<first>24</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1874,120 +864,36 @@
 				<second>0</second>
 			</second>
 		</item>
-		<item>
-			<first>27</first>
-			<second>
-				<first>1</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>28</first>
-			<second>
-				<first>1</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>29</first>
-			<second>
-				<first>2</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>30</first>
-			<second>
-				<first>4</first>
-				<second>67</second>
-			</second>
-		</item>
-		<item>
-			<first>31</first>
-			<second>
-				<first>71</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>33</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>34</first>
-			<second>
-				<first>72</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>35</first>
-			<second>
-				<first>72</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>36</first>
-			<second>
-				<first>72</first>
-				<second>69</second>
-			</second>
-		</item>
-		<item>
-			<first>37</first>
-			<second>
-				<first>142</first>
-				<second>1</second>
-			</second>
-		</item>
-		<item>
-			<first>38</first>
-			<second>
-				<first>143</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>40</first>
-			<second>
-				<first>143</first>
-				<second>0</second>
-			</second>
-		</item>
 	</node_label_latency>
 	<bblk_ent_exit class_id="29" tracking_level="0" version="0">
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>24</first>
+			<first>19</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>32</first>
+			<first>22</first>
 			<second>
 				<first>0</first>
-				<second>71</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>39</first>
+			<first>25</first>
 			<second>
 				<first>0</first>
-				<second>72</second>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>41</first>
+			<first>27</first>
 			<second>
-				<first>72</first>
-				<second>72</second>
+				<first>1</first>
+				<second>1</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

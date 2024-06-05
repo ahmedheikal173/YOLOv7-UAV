@@ -2,29 +2,13 @@
 
 set axilite_register_dict [dict create]
 set port_control {
-x_in { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 16
-	offset_end 27
-}
-y { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 28
-	offset_end 39
-}
 load { 
 	dir I
 	width 1
 	depth 1
 	mode ap_none
-	offset 40
-	offset_end 47
+	offset 16
+	offset_end 23
 }
 ap_start {
 	mailbox_input_ctrl 0

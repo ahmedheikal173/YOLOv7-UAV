@@ -5707,7 +5707,7 @@ class word_width_mem {
   public:
   word_width_mem():sel_rd(0), sel_wr(0){
 
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
  }
   void write(ap_uint<(21)> i, ap_int<W> x_in[N]);
   ap_int<W> read(ap_uint<(21)> i, const int offset);
@@ -5775,9 +5775,12 @@ void word_width_mem<W, N>::write(ap_uint<(21)> i,
 void word_width_manual(ap_int<8> x_in[(1228800)], ap_int<8> y[(1228800) / 3],
                        bool load) {
 
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
 
-#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
+
+
+
+#pragma HLS interface mode=BRAM port=x_in
+#pragma HLS interface mode=BRAM port=y
 
  static word_width_mem<8, (1228800)> x;
 

@@ -7,8 +7,12 @@
 using namespace std;
 
 void clip_window(int r, ap_uint<8> window[3]) {
+    //#pragma HLS BIND_STORAGE variable=window type=RAM_T2P impl=BRAM
+	#pragma HLS interface mode=BRAM port=window //[OPTIONS]
+
     ap_uint<8> w[3];
     for (int i = 0; i < 3; i++)
+
         w[i] = window[i];
     window[0] = (r == 1) ? w[1] : w[0];
     window[1] = w[1];
@@ -20,6 +24,10 @@ void clip_window(int r, ap_uint<8> window[3]) {
 //      c: current address or column position
 //      window: column aligned data
 void buff(ap_uint<8> din, int c, ap_uint<8> window[3]) {
+
+//#pragma HLS BIND_STORAGE variable=window type=RAM_T2P impl=BRAM
+#pragma HLS interface mode=BRAM port=window //[OPTIONS]
+
     static singleport_ram<NUM_COL, 8> buff0;
     static singleport_ram<NUM_COL, 8> buff1;
     ap_uint<8> t0, t1;
@@ -40,10 +48,7 @@ void buff(ap_uint<8> din, int c, ap_uint<8> window[3]) {
 }
 
 void window_avg(ap_uint<8> din[NUM_ROW][NUM_COL], ap_uint<8> dout[NUM_ROW][NUM_COL]) {
-// #pragma HLS RESOURCE variable=din core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=din type=RAM_T2P impl=AUTO
-// #pragma HLS RESOURCE variable=dout core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=dout type=RAM_T2P impl=AUTO
+
     const ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
     ap_fixed<13, 11> tmp;
     ap_uint<8> w[3];

@@ -15,11 +15,6 @@
                 <option name="name" value="interleave_manual_rnd"/>
             </pragma>
         </directive>
-        <directive functionName="interleave_manual_rnd" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="interleave_manual_rnd"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

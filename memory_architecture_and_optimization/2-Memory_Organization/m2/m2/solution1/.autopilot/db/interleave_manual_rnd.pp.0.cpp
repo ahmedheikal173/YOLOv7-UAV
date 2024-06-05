@@ -5707,9 +5707,9 @@ class interleave_mem_rnd {
 
 
 
-#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=AUTO
-#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=AUTO
-#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=BRAM
  }
 
   void write_rnd(ap_uint<(21)> i, T x_in[N]);
@@ -5755,7 +5755,10 @@ T interleave_mem_rnd<T, N>::read_rnd(ap_uint<(21)> i,
 template <typename T, int N>
 void interleave_mem_rnd<T, N>::write_rnd(ap_uint<(21)> i,
                                  T x_in[N]) {
-  T tmp = x_in[i];
+
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+
+ T tmp = x_in[i];
   switch (i % 3) {
     case 0:
       x0[i / 3] = tmp;
@@ -5777,12 +5780,20 @@ __attribute__((sdx_kernel("interleave_manual_rnd", 0))) void interleave_manual_r
 # 5 "../src/interleave_manual_rnd.cpp"
 
 
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
 
-#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
+
+
+
+
+#pragma HLS interface mode=BRAM port=x_in
+
+
+#pragma HLS interface mode=BRAM port=y
 
  static interleave_mem_rnd<ap_int<8>, 1228800> x;
-  int idx = 0;
+
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+ int idx = 0;
 
   if (load)
 LOAD:

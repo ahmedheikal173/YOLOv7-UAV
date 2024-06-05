@@ -9,22 +9,6 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 set axilite_register_dict [dict create]
 set port_control {
-din { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 16
-	offset_end 27
-}
-dout { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 28
-	offset_end 39
-}
 ap_start {
 	mailbox_input_ctrl 0
 	mailbox_output_ctrl 0
@@ -72,27 +56,6 @@ if {${::AESL::PGuard_simmodel_gen}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler window_avg_control_s_axi BINDTYPE interface TYPE interface_s_axilite
-}
-
-# Native M_AXI:
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
-eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 2 \
-    corename {m_axi} \
-    op interface \
-    delay_budget 7.3 \ 
-    is_flushable 0 \ 
-    mem_style block \ 
-    name {window_avg_gmem_m_axi} \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'gmem'"
-}
-}
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler window_avg_gmem_m_axi BINDTYPE interface TYPE interface_m_axi
 }
 
 

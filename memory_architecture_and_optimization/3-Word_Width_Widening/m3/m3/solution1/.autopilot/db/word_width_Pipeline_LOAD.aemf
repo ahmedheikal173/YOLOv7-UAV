@@ -1,368 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717536783600">
-  <ports id="1" name="gmem" type="PortType" coreId="1767324704" bitwidth="512" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717594071440">
+  <ports id="1" name="x_in" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="1228800">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="2" name="sext_ln20" type="PortType" coreId="16843009" bitwidth="58">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <ports id="146" name="word_width_ap_int_8_ap_int_8_bool_x" type="PortType" coreName="RAM_T2P_BRAM" coreId="1953391988" bitwidth="24" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
+  <ports id="113" name="word_width_ap_int_8_ap_int_8_bool_x" type="PortType" coreName="RAM_T2P_BRAM" coreId="1330007625" bitwidth="24" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <edges id="87" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="88" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="91" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="94" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.7"/>
-  <edges id="97" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
-  <edges id="99" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
-  <edges id="100" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.10"/>
-  <edges id="101" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="102" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="103" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
-  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
-  <edges id="111" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
-  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
-  <edges id="113" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
-  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
-  <edges id="115" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
-  <edges id="116" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
-  <edges id="117" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
-  <edges id="118" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
-  <edges id="119" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
-  <edges id="121" source_obj="//@regions.0/@basic_blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.4"/>
-  <edges id="124" source_obj="//@regions.0/@basic_blocks.3/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.5"/>
-  <edges id="125" source_obj="//@regions.0/@basic_blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.5"/>
-  <edges id="127" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.6"/>
-  <edges id="130" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.7"/>
-  <edges id="135" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.8"/>
-  <edges id="140" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.9"/>
-  <edges id="145" source_obj="//@regions.0/@basic_blocks.3/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.10"/>
-  <edges id="147" source_obj="//@regions.0/@basic_blocks.3/@node_objs.11" sink_obj="//@ports.2"/>
-  <edges id="150" source_obj="//@regions.0/@basic_blocks.3/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.11"/>
-  <edges id="151" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.12"/>
-  <edges id="154" source_obj="//@regions.0/@basic_blocks.3/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.13"/>
-  <edges id="157" source_obj="//@regions.0/@basic_blocks.3/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.14"/>
-  <edges id="160" source_obj="//@regions.0/@basic_blocks.3/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.15"/>
-  <edges id="161" source_obj="//@regions.0/@basic_blocks.3/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.15"/>
-  <edges id="162" source_obj="//@regions.0/@basic_blocks.3/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.16"/>
-  <edges id="165" source_obj="//@regions.0/@basic_blocks.3/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.17"/>
-  <edges id="166" source_obj="//@regions.0/@basic_blocks.3/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.18"/>
-  <edges id="167" source_obj="//@regions.0/@basic_blocks.3/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.18"/>
-  <edges id="168" source_obj="//@regions.0/@basic_blocks.3/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.18"/>
-  <edges id="169" source_obj="//@regions.0/@basic_blocks.3/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.19"/>
-  <edges id="170" source_obj="//@regions.0/@basic_blocks.3/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.19"/>
-  <edges id="171" source_obj="//@regions.0/@basic_blocks.3/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.19"/>
-  <edges id="172" source_obj="//@regions.0/@basic_blocks.3/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.20"/>
-  <edges id="173" source_obj="//@regions.0/@basic_blocks.3/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.20"/>
-  <edges id="174" source_obj="//@regions.0/@basic_blocks.3/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.20"/>
-  <edges id="176" source_obj="//@regions.0/@basic_blocks.3/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.21"/>
-  <edges id="177" source_obj="//@regions.0/@basic_blocks.3/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.22"/>
-  <edges id="178" source_obj="//@regions.0/@basic_blocks.3/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.23"/>
-  <edges id="179" source_obj="//@regions.0/@basic_blocks.3/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.24"/>
-  <edges id="180" source_obj="//@regions.0/@basic_blocks.3/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.25"/>
-  <edges id="181" source_obj="//@regions.0/@basic_blocks.3/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.25"/>
-  <edges id="184" source_obj="//@regions.0/@basic_blocks.3/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.26"/>
-  <edges id="188" source_obj="//@regions.0/@basic_blocks.3/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.27"/>
-  <edges id="189" source_obj="//@regions.0/@basic_blocks.3/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.27"/>
-  <edges id="190" source_obj="//@regions.0/@basic_blocks.3/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.27"/>
-  <edges id="193" source_obj="//@regions.0/@basic_blocks.3/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.28"/>
-  <edges id="195" source_obj="//@regions.0/@basic_blocks.3/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.29"/>
-  <edges id="196" source_obj="//@regions.0/@basic_blocks.3/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.30"/>
-  <edges id="197" source_obj="//@regions.0/@basic_blocks.3/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.30"/>
-  <edges id="198" source_obj="//@regions.0/@basic_blocks.3/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.31"/>
-  <edges id="199" source_obj="//@regions.0/@basic_blocks.3/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.31"/>
-  <edges id="200" source_obj="//@regions.0/@basic_blocks.3/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.32"/>
-  <edges id="203" source_obj="//@regions.0/@basic_blocks.3/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.33"/>
-  <edges id="206" source_obj="//@regions.0/@basic_blocks.3/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.34"/>
-  <edges id="207" source_obj="//@regions.0/@basic_blocks.3/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.34"/>
-  <edges id="208" source_obj="//@regions.0/@basic_blocks.3/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.34"/>
-  <edges id="209" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.35"/>
-  <edges id="210" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.35"/>
-  <edges id="211" source_obj="//@regions.0/@basic_blocks.3/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.36"/>
-  <edges id="212" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.36"/>
-  <edges id="213" source_obj="//@regions.0/@basic_blocks.3/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.37"/>
-  <edges id="214" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.37"/>
-  <edges id="215" source_obj="//@regions.0/@basic_blocks.3/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.38"/>
-  <edges id="216" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.38"/>
-  <edges id="217" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.39"/>
-  <edges id="218" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
-  <edges id="219" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
-  <edges id="220" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
-  <edges id="221" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
-  <edges id="224" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
-  <edges id="225" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
-  <edges id="226" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
-  <edges id="229" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
-  <edges id="230" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
-  <edges id="287" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
-  <edges id="288" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="289" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
-  <edges id="290" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
-  <edges id="291" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
-  <edges id="292" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
-  <edges id="293" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
-  <edges id="294" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.37"/>
-  <edges id="295" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.38"/>
-  <edges id="296" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="297" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
-  <edges id="298" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.35"/>
-  <edges id="299" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.36"/>
-  <edges id="300" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
-  <edges id="301" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.37"/>
-  <edges id="302" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
-  <edges id="303" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.38"/>
-  <edges id="304" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.35"/>
-  <edges id="305" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.36"/>
-  <blocks id="16" name="newFuncRoot" type="BlockType">
-    <controlOutputObjs>block_24</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_urem" coreId="0" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+  <edges id="69" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="85" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="97" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@ports.1"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="176" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="180" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="232" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="233" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="234" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="235" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="236" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="237" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="238" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="239" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="240" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="241" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="242" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="243" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="244" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <blocks id="11" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>.preheader6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="2" name="phi_urem" coreId="1004722128" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="phi_mul" coreId="0" bitwidth="42" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_mul" coreId="0" bitwidth="42" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="shiftreg" coreId="0" bitwidth="504" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <dataOutputObjs>store</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <dataOutputObjs>load</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="i" originalName="i" coreId="0" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="0" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="sext_ln20_read" coreId="0" bitwidth="58" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <dataInputObjs>sext_ln20</dataInputObjs>
-      <dataOutputObjs>sext</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="sext_ln20_cast" coreId="0" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <dataInputObjs>read</dataInputObjs>
-      <dataOutputObjs>getelementptr</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="i_write_ln0" coreId="513" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="shiftreg_write_ln0" coreId="1667593263" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="phi_mul_write_ln0" coreId="152" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="phi_mul_write_ln0" coreId="1701344105" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="phi_urem_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="phi_urem_write_ln0" coreId="2036689696" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <dataInputObjs>alloca</dataInputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln0" coreId="997420912" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <controlInputObjs>block_24</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="1769234802" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader6</controlInputObjs>
     </node_objs>
   </blocks>
-  <blocks id="79" name=".loopexit.loopexit.exitStub" type="BlockType">
-    <controlInputObjs>block_24</controlInputObjs>
+  <blocks id="62" name=".loopexit.loopexit2.exitStub" type="BlockType">
+    <controlInputObjs>.preheader6</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="_ln0" coreId="1852400750" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="_ln0" coreId="0" opcode="ret" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1"/>
   </blocks>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="311" pipe_depth="3" RegionName="LOAD">
-    <basic_blocks id="24" name="block_24" type="BlockType">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="248" pipe_depth="2" RegionName="LOAD">
+    <basic_blocks id="17" name=".preheader6" type="BlockType">
       <controlInputObjs>newFuncRoot</controlInputObjs>
-      <controlInputObjs>.split._crit_edge</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>.loopexit.loopexit.exitStub</controlOutputObjs>
+      <controlOutputObjs>.loopexit.loopexit2.exitStub</controlOutputObjs>
       <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i_2" lineNumber="20" originalName="i" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1919242274" contextFuncName="word_width" bitwidth="21" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_2" lineNumber="22" originalName="i" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" bitwidth="21" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
-        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="gmem_addr" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1969317477" contextFuncName="word_width" bitwidth="512" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>gmem</dataInputObjs>
-        <dataInputObjs>sext</dataInputObjs>
-        <dataOutputObjs>read</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln20" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln20_fu_171_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.9" m_topoIndex="13" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln22_fu_127_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.9" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="add_ln20" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="add_ln20_fu_177_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="word_width" bitwidth="21" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="add_ln22_fu_133_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="word_width" bitwidth="21" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln20" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." coreId="574452846" contextFuncName="word_width" opcode="br" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="br_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1936028192" contextFuncName="word_width" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split</controlInputObjs>
-        <controlInputObjs>.loopexit.loopexit.exitStub</controlInputObjs>
+        <controlInputObjs>.loopexit.loopexit2.exitStub</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/word_width.cpp">
-        <validLinenumbers>20</validLinenumbers>
+        <validLinenumbers>22</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
-    <basic_blocks id="32" name=".split" type="BlockType">
-      <controlInputObjs>block_24</controlInputObjs>
+    <basic_blocks id="60" name=".split" type="BlockType">
+      <controlInputObjs>.preheader6</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>phi</controlOutputObjs>
-      <controlOutputObjs>block_35</controlOutputObjs>
-      <controlOutputObjs>.split._crit_edge</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="shiftreg_load" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" bitwidth="504" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <controlOutputObjs>.preheader6</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="phi_urem_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="34" contextFuncName="word_width" bitwidth="21" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>alloca</dataInputObjs>
-        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="zext_ln20" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln20_fu_207_p1" coreId="0" contextFuncName="word_width" bitwidth="512" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>load</dataInputObjs>
-        <dataOutputObjs>phi</dataOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="phi_mul_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" bitwidth="42" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="trunc_ln20" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="trunc_ln20_fu_183_p1" coreId="0" contextFuncName="word_width" bitwidth="6" opcode="trunc" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="add_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="add_ln22_1_fu_155_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="word_width" bitwidth="21" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.12" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="icmp_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln22_fu_187_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.71" m_topoIndex="17" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>trunc</dataInputObjs>
-        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1986360096" contextFuncName="word_width" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.46" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln22_1_fu_161_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.9" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="select_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln22_fu_167_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="21" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.39" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
-        <controlInputObjs>.split._crit_edge</controlInputObjs>
-        <controlInputObjs>block_35</controlInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
       </node_objs>
-      <fileValidLineNumbers fileName="../src/word_width.cpp">
-        <validLinenumbers>20</validLinenumbers>
-        <validLinenumbers>22</validLinenumbers>
-      </fileValidLineNumbers>
-    </basic_blocks>
-    <basic_blocks id="35" name="block_35" type="BlockType">
-      <controlInputObjs>.split</controlInputObjs>
-      <controlOutputObjs>phi</controlOutputObjs>
-      <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>.split._crit_edge</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="gmem_addr_read" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="121" contextFuncName="word_width" bitwidth="512" opcode="read" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_fu_139_p1" coreId="825634100" contextFuncName="word_width" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>getelementptr</dataInputObjs>
-        <dataOutputObjs>phi</dataOutputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.46" m_topoIndex="25" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <controlInputObjs>.split._crit_edge</controlInputObjs>
-      </node_objs>
-      <fileValidLineNumbers fileName="../src/word_width.cpp">
-        <validLinenumbers>22</validLinenumbers>
-      </fileValidLineNumbers>
-    </basic_blocks>
-    <basic_blocks id="77" name=".split._crit_edge" type="BlockType">
-      <controlInputObjs>.split</controlInputObjs>
-      <controlInputObjs>block_35</controlInputObjs>
-      <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>block_24</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="empty_30" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1701669236" contextFuncName="word_width" bitwidth="512" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>read</dataInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_in_addr" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1920295712" contextFuncName="word_width" bitwidth="21" opcode="getelementptr" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+        <dataInputObjs>x_in</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
-        <dataOutputObjs>trunc</dataOutputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <controlInputObjs>block_35</controlInputObjs>
-        <controlInputObjs>.split</controlInputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="phi_urem_load" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1953722997" contextFuncName="word_width" bitwidth="21" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <dataOutputObjs>trunc</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="phi_mul_load" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1919903264" contextFuncName="word_width" bitwidth="42" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="add_ln22_fu_218_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="word_width" bitwidth="21" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.12" m_topoIndex="29" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>load</dataInputObjs>
-        <dataOutputObjs>icmp</dataOutputObjs>
-        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="icmp_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln22_1_fu_224_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.9" m_topoIndex="30" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>select</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="select_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln22_fu_230_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="21" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.39" m_topoIndex="31" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>icmp</dataInputObjs>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>store</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="trunc_ln22_fu_238_p1" coreId="0" contextFuncName="word_width" bitwidth="8" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>phi</dataInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="x_in_load" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="word_width" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="trunc_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shiftreg_fu_104" coreId="757935405" contextFuncName="word_width" bitwidth="504" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>phi</dataInputObjs>
-        <dataOutputObjs>store</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="add_ln22_1_fu_252_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="word_width" bitwidth="42" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.2" m_topoIndex="34" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="add_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="add_ln24_fu_175_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="word_width" bitwidth="42" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.2" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="tmp" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="tmp_fu_258_p4" coreId="0" contextFuncName="word_width" bitwidth="19" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="tmp_fu_181_p4" coreId="0" contextFuncName="word_width" bitwidth="19" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="zext_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_fu_268_p1" coreId="1634082920" contextFuncName="word_width" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_fu_191_p1" coreId="6775156" contextFuncName="word_width" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="word_width_ap_int_8_ap_int_8_bool_x_addr" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1970040691" contextFuncName="word_width" bitwidth="19" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="word_width_ap_int_8_ap_int_8_bool_x_addr" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="88" contextFuncName="word_width" bitwidth="19" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>word_width_ap_int_8_ap_int_8_bool_x</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="trunc_ln22_2" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="trunc_ln22_2_fu_273_p1" coreId="1852402798" contextFuncName="word_width" bitwidth="2" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="trunc_ln24_fu_196_p1" coreId="1667593263" contextFuncName="word_width" bitwidth="2" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="shl_ln" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln_fu_277_p3" coreId="570453615" contextFuncName="word_width" bitwidth="5" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="shl_ln" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln_fu_200_p3" coreId="0" contextFuncName="word_width" bitwidth="5" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -372,16 +260,16 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="or_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="or_ln22_fu_285_p2" coreId="0" contextFuncName="word_width" bitwidth="5" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="or_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="or_ln24_fu_208_p2" coreId="1702035557" contextFuncName="word_width" bitwidth="5" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="icmp_ln22_2" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln22_2_fu_291_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.72" m_topoIndex="41" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="icmp_ln24_fu_214_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="word_width" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.72" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -389,370 +277,312 @@
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="zext_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_1_fu_297_p1" coreId="0" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>trunc</dataInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="zext_ln24_1" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_1_fu_220_p1" coreId="0" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+        <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="sub_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="sub_ln22_fu_301_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="word_width" bitwidth="5" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="0.82" m_topoIndex="43" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="sub_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="sub_ln24_fu_224_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="word_width" bitwidth="5" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="0.82" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="select_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln22_1_fu_307_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="5" opcode="select" nodeLabel="2.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="2">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="select_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln24_fu_230_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="5" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="select_ln22_2" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln22_2_fu_315_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="5" opcode="select" nodeLabel="2.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="3">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="select_ln24_1" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln24_1_fu_238_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="5" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>or</dataInputObjs>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="select_ln22_3" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln22_3_fu_323_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="5" opcode="select" nodeLabel="2.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="select_ln24_2" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln24_2_fu_246_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="5" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>sub</dataInputObjs>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="sub_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="sub_ln22_1_fu_331_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="word_width" bitwidth="5" opcode="sub" nodeLabel="2.0" m_display="0" m_delay="0.82" m_topoIndex="47" m_clusterGroupNumber="2">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="sub_ln24_1" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="sub_ln24_1_fu_254_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="word_width" bitwidth="5" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="0.82" m_topoIndex="35" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln22_2" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_2_fu_337_p1" coreId="1734439968" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln24_2" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_2_fu_260_p1" coreId="1769170280" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="zext_ln22_3" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_3_fu_341_p1" coreId="536883507" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="3">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln24_3" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_3_fu_264_p1" coreId="1953394531" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="zext_ln22_4" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_4_fu_345_p1" coreId="0" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="3">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln24_4" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_4_fu_268_p1" coreId="979725673" contextFuncName="word_width" bitwidth="24" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>lshr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="shl_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln22_fu_349_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="word_width" bitwidth="24" opcode="shl" nodeLabel="2.0" m_display="0" m_delay="0.79" m_topoIndex="51" m_clusterGroupNumber="1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="shl_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln24_fu_272_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="word_width" bitwidth="24" opcode="shl" nodeLabel="1.0" m_display="0" m_delay="0.79" m_topoIndex="39" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tmp_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="tmp_1_fu_355_p4" coreId="1735289203" contextFuncName="word_width" bitwidth="24" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="4">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_1" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="tmp_1_fu_278_p4" coreId="0" contextFuncName="word_width" bitwidth="24" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>shl</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="select_ln22_4" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln22_4_fu_365_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="24" opcode="select" nodeLabel="2.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="4">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="select_ln24_3" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="select_ln24_3_fu_288_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="word_width" bitwidth="24" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>icmp</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataInputObjs>shl</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="shl_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln22_1_fu_373_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="word_width" bitwidth="24" opcode="shl" nodeLabel="2.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="3">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="shl_ln24_1" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln24_1_fu_296_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="word_width" bitwidth="24" opcode="shl" nodeLabel="1.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="lshr_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="lshr_ln22_fu_379_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="lshr" coreId="75" contextFuncName="word_width" bitwidth="24" opcode="lshr" nodeLabel="2.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="3">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="lshr_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="lshr_ln24_fu_302_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="lshr" coreId="75" contextFuncName="word_width" bitwidth="24" opcode="lshr" nodeLabel="1.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="and_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="and_ln22_fu_385_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="word_width" bitwidth="24" opcode="and" nodeLabel="2.0" m_display="0" m_delay="0.7" m_topoIndex="56" m_clusterGroupNumber="3">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="and_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="and_ln24_fu_308_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="word_width" bitwidth="24" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.7" m_topoIndex="44" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>shl</dataInputObjs>
         <dataInputObjs>lshr</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="and_ln22_1" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="word_width_ap_int_8_ap_int_8_bool_x_d0" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="word_width" bitwidth="24" opcode="and" nodeLabel="2.0" m_display="0" m_delay="0.31" m_topoIndex="57" m_clusterGroupNumber="4">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="and_ln24_1" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="word_width_ap_int_8_ap_int_8_bool_x_d0" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="word_width" bitwidth="24" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.31" m_topoIndex="45" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>and</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="zext_ln22_5" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln22_5_fu_398_p1" coreId="1702127986" contextFuncName="word_width" bitwidth="3" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln24_5" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="zext_ln24_5_fu_321_p1" coreId="0" contextFuncName="word_width" bitwidth="3" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="shl_ln22_2" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln22_2_fu_402_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="word_width" bitwidth="3" opcode="shl" nodeLabel="2.0" m_display="0" m_delay="0.58" m_topoIndex="59" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="shl_ln24_2" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." rtlName="shl_ln24_2_fu_325_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="word_width" bitwidth="3" opcode="shl" nodeLabel="1.0" m_display="0" m_delay="0.58" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="word_width_ap_int_8_ap_int_8_bool_x_addr_write_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreName="RAM_T2P_BRAM" implIndex="bram" control="no" opType="ram_t2p" coreId="99" contextFuncName="word_width" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.29" m_topoIndex="60" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="word_width_ap_int_8_ap_int_8_bool_x_addr_write_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreName="RAM_T2P_BRAM" implIndex="bram" control="no" opType="ram_t2p" coreId="99" contextFuncName="word_width" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.29" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataInputObjs>and</dataInputObjs>
         <dataInputObjs>shl</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="i_write_ln20" lineNumber="20" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1129536290" contextFuncName="word_width" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="18" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="20" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="shiftreg_write_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="536888653" contextFuncName="word_width" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.46" m_topoIndex="61" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="phi_mul_write_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="570451809" contextFuncName="word_width" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.46" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="i_write_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="phi_urem_write_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="1769109280" contextFuncName="word_width" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.46" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="phi_mul_write_ln24" lineNumber="24" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.46" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/word_width.cpp" linenumber="24" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="phi_urem_write_ln22" lineNumber="22" fileName="../src/word_width.cpp" fileDirectory=".." coreId="0" contextFuncName="word_width" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.46" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../src/word_width.cpp" linenumber="22" fileDirectory="D:\gam3a\zzzzzzzzzz\3-Word_Width_Widening\m3" functionName="word_width"/>
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="br_ln0" coreId="757935405" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
-        <controlInputObjs>block_24</controlInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <controlInputObjs>.preheader6</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../src/word_width.cpp">
+        <validLinenumbers>24</validLinenumbers>
         <validLinenumbers>22</validLinenumbers>
-        <validLinenumbers>20</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
   <ScheduleInfo time="0"/>
   <ScheduleInfo time="1"/>
-  <ScheduleInfo time="2"/>
-  <regnodes realName="shiftreg_reg_438">
-    <nodeIds>5</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln22_reg_461">
-    <nodeIds>30</nodeIds>
-  </regnodes>
-  <regnodes realName="phi_mul_reg_431">
+  <regnodes realName="i_reg_356">
     <nodeIds>4</nodeIds>
   </regnodes>
-  <regnodes realName="phi_urem_reg_424">
+  <regnodes realName="phi_mul_reg_349">
     <nodeIds>3</nodeIds>
   </regnodes>
-  <regnodes realName="empty_30_reg_135">
-    <nodeIds>36</nodeIds>
+  <regnodes realName="phi_urem_reg_342">
+    <nodeIds>2</nodeIds>
   </regnodes>
-  <regnodes realName="i_reg_445">
-    <nodeIds>6</nodeIds>
+  <regnodes realName="x_in_addr_reg_366">
+    <nodeIds>26</nodeIds>
   </regnodes>
-  <regnodes realName="sext_ln20_cast_reg_452">
-    <nodeIds>8</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln20_reg_457">
-    <nodeIds>20</nodeIds>
-  </regnodes>
-  <regnodes realName="gmem_addr_read_reg_465">
-    <nodeIds>33</nodeIds>
-  </regnodes>
-  <expressionNodes realName="shl_ln22_2_fu_402">
-    <nodeIds>70</nodeIds>
+  <expressionNodes realName="select_ln24_fu_230">
+    <nodeIds>38</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln20_fu_207">
+  <expressionNodes realName="x_in_addr_gep_fu_84">
     <nodeIds>26</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln22_fu_187">
-    <nodeIds>30</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_1_fu_355">
-    <nodeIds>62</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln22_1_fu_242">
-    <nodeIds>43</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sext_ln20_cast_fu_144">
-    <nodeIds>8</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp_fu_258">
-    <nodeIds>45</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="shl_ln22_fu_349">
-    <nodeIds>61</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="phi_mul_fu_100">
-    <nodeIds>4</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="shl_ln_fu_277">
-    <nodeIds>49</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="empty_30_phi_fu_138">
-    <nodeIds>36</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln22_1_fu_224">
+  <expressionNodes realName="select_ln24_2_fu_246">
     <nodeIds>40</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln22_fu_230">
-    <nodeIds>41</nodeIds>
+  <expressionNodes realName="icmp_ln22_1_fu_161">
+    <nodeIds>21</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln22_3_fu_341">
-    <nodeIds>59</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln22_5_fu_398">
-    <nodeIds>69</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="select_ln22_2_fu_315">
-    <nodeIds>55</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="and_ln22_1_fu_391">
-    <nodeIds>67</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln22_fu_268">
+  <expressionNodes realName="tmp_1_fu_278">
     <nodeIds>46</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln20_fu_183">
-    <nodeIds>27</nodeIds>
+  <expressionNodes realName="phi_urem_fu_72">
+    <nodeIds>2</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="lshr_ln22_fu_379">
-    <nodeIds>65</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sub_ln22_fu_301">
-    <nodeIds>53</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="select_ln22_1_fu_307">
-    <nodeIds>54</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln22_fu_238">
-    <nodeIds>42</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln22_2_fu_337">
-    <nodeIds>58</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="i_fu_108">
-    <nodeIds>6</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln22_2_fu_273">
-    <nodeIds>48</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln22_2_fu_291">
-    <nodeIds>51</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="shl_ln22_1_fu_373">
-    <nodeIds>64</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="shiftreg_fu_104">
-    <nodeIds>5</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln22_fu_285">
-    <nodeIds>50</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln20_fu_171">
-    <nodeIds>20</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln22_1_fu_297">
-    <nodeIds>52</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="select_ln22_3_fu_323">
-    <nodeIds>56</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sub_ln22_1_fu_331">
-    <nodeIds>57</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="word_width_ap_int_8_ap_int_8_bool_x_addr_gep_fu_123">
+  <expressionNodes realName="select_ln24_3_fu_288">
     <nodeIds>47</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln22_4_fu_345">
-    <nodeIds>60</nodeIds>
+  <expressionNodes realName="zext_ln24_fu_191">
+    <nodeIds>30</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln22_fu_218">
-    <nodeIds>39</nodeIds>
+  <expressionNodes realName="lshr_ln24_fu_302">
+    <nodeIds>49</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="phi_urem_fu_96">
-    <nodeIds>3</nodeIds>
+  <expressionNodes realName="i_fu_80">
+    <nodeIds>4</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="gmem_addr_fu_198">
-    <nodeIds>19</nodeIds>
+  <expressionNodes realName="shl_ln24_2_fu_325">
+    <nodeIds>54</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="and_ln22_fu_385">
-    <nodeIds>66</nodeIds>
+  <expressionNodes realName="sub_ln24_1_fu_254">
+    <nodeIds>41</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="select_ln22_4_fu_365">
-    <nodeIds>63</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln20_fu_177">
-    <nodeIds>22</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln22_1_fu_252">
+  <expressionNodes realName="zext_ln24_4_fu_268">
     <nodeIds>44</nodeIds>
   </expressionNodes>
-  <ioNodes realName="store_ln20_store_fu_193">
-    <nodeIds>72</nodeIds>
+  <expressionNodes realName="sub_ln24_fu_224">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln24_fu_214">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln24_fu_208">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln24_1_fu_238">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln22_fu_167">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_200">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_181">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="phi_mul_fu_76">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln24_fu_272">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln24_fu_308">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln22_fu_127">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln24_1_fu_296">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln24_5_fu_321">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln24_fu_175">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln24_2_fu_260">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln22_1_fu_155">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln24_3_fu_264">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln22_fu_133">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln24_1_fu_314">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln24_1_fu_220">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln24_fu_196">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="word_width_ap_int_8_ap_int_8_bool_x_addr_gep_fu_97">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln22_fu_139">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln24_store_fu_332">
+    <nodeIds>57</nodeIds>
   </ioNodes>
-  <ioNodes realName="sext_ln20_read_read_fu_112">
+  <ioNodes realName="phi_urem_load_load_fu_149">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="phi_mul_load_load_fu_152">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln22_store_fu_337">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_109">
     <nodeIds>7</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln0_store_fu_158">
-    <nodeIds>13</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln0_store_fu_148">
-    <nodeIds>11</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln0_store_fu_153">
+  <ioNodes realName="i_2_load_fu_124">
     <nodeIds>12</nodeIds>
   </ioNodes>
-  <ioNodes realName="gmem_addr_read_read_fu_118">
-    <nodeIds>33</nodeIds>
+  <ioNodes realName="store_ln0_store_fu_119">
+    <nodeIds>9</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln0_store_fu_163">
-    <nodeIds>14</nodeIds>
+  <ioNodes realName="store_ln0_store_fu_114">
+    <nodeIds>8</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln22_store_fu_414">
-    <nodeIds>74</nodeIds>
-  </ioNodes>
-  <ioNodes realName="phi_urem_load_load_fu_212">
-    <nodeIds>37</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln22_store_fu_409">
-    <nodeIds>73</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln22_store_fu_419">
-    <nodeIds>75</nodeIds>
-  </ioNodes>
-  <ioNodes realName="i_2_load_fu_168">
-    <nodeIds>17</nodeIds>
-  </ioNodes>
-  <ioNodes realName="phi_mul_load_load_fu_215">
-    <nodeIds>38</nodeIds>
-  </ioNodes>
-  <ioNodes realName="shiftreg_load_load_fu_204">
-    <nodeIds>25</nodeIds>
+  <ioNodes realName="store_ln22_store_fu_144">
+    <nodeIds>56</nodeIds>
   </ioNodes>
   <memoryPorts dataString="word_width_ap_int_8_ap_int_8_bool_x">
-    <nodeIds>71</nodeIds>
+    <nodeIds>55</nodeIds>
   </memoryPorts>
-  <ioPorts name="gmem">
-    <contents name="read">
-      <nodeIds>33</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="sext_ln20">
-    <contents name="read">
-      <nodeIds>7</nodeIds>
-    </contents>
-  </ioPorts>
+  <memoryPorts dataString="x_in">
+    <nodeIds>27</nodeIds>
+  </memoryPorts>
   <ioPorts name="word_width_ap_int_8_ap_int_8_bool_x(p0)">
     <contents name="store">
-      <nodeIds>71</nodeIds>
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x_in(p0)">
+    <contents name="load">
+      <nodeIds>27</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
     <states id="1">
+      <operations id="2" stage="1" latency="1"/>
       <operations id="3" stage="1" latency="1"/>
       <operations id="4" stage="1" latency="1"/>
       <operations id="5" stage="1" latency="1"/>
@@ -761,33 +591,34 @@
       <operations id="8" stage="1" latency="1"/>
       <operations id="9" stage="1" latency="1"/>
       <operations id="10" stage="1" latency="1"/>
-      <operations id="11" stage="1" latency="1"/>
       <operations id="12" stage="1" latency="1"/>
       <operations id="13" stage="1" latency="1"/>
       <operations id="14" stage="1" latency="1"/>
       <operations id="15" stage="1" latency="1"/>
-      <operations id="17" stage="1" latency="1"/>
-      <operations id="20" stage="1" latency="1"/>
-      <operations id="22" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
       <operations id="23" stage="1" latency="1"/>
-      <operations id="27" stage="1" latency="1"/>
-      <operations id="30" stage="1" latency="1"/>
-      <operations id="72" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="2" latency="2"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
     </states>
     <states id="2">
       <operations id="18" stage="1" latency="1"/>
       <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
       <operations id="21" stage="1" latency="1"/>
-      <operations id="33" stage="1" latency="1"/>
-      <operations id="78" stage="1" latency="1"/>
-    </states>
-    <states id="3">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
       <operations id="25" stage="1" latency="1"/>
-      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="2"/>
       <operations id="28" stage="1" latency="1"/>
       <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
       <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
       <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
       <operations id="36" stage="1" latency="1"/>
       <operations id="37" stage="1" latency="1"/>
       <operations id="38" stage="1" latency="1"/>
@@ -808,54 +639,32 @@
       <operations id="53" stage="1" latency="1"/>
       <operations id="54" stage="1" latency="1"/>
       <operations id="55" stage="1" latency="1"/>
-      <operations id="56" stage="1" latency="1"/>
       <operations id="57" stage="1" latency="1"/>
       <operations id="58" stage="1" latency="1"/>
       <operations id="59" stage="1" latency="1"/>
-      <operations id="60" stage="1" latency="1"/>
-      <operations id="61" stage="1" latency="1"/>
-      <operations id="62" stage="1" latency="1"/>
-      <operations id="63" stage="1" latency="1"/>
-      <operations id="64" stage="1" latency="1"/>
-      <operations id="65" stage="1" latency="1"/>
-      <operations id="66" stage="1" latency="1"/>
-      <operations id="67" stage="1" latency="1"/>
-      <operations id="68" stage="1" latency="1"/>
-      <operations id="69" stage="1" latency="1"/>
-      <operations id="70" stage="1" latency="1"/>
-      <operations id="71" stage="1" latency="1"/>
-      <operations id="73" stage="1" latency="1"/>
-      <operations id="74" stage="1" latency="1"/>
-      <operations id="75" stage="1" latency="1"/>
-      <operations id="76" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="2" outState="3">
-      <condition id="-1"/>
-    </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="word_width_Pipeline_LOAD" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1228803" mMaxLatency="1228803">
+    <cfgRegions mId="1" mTag="word_width_Pipeline_LOAD" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1228802" mMaxLatency="1228802">
       <subRegions>2</subRegions>
       <subRegions>3</subRegions>
       <subRegions>4</subRegions>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>16</basicBlocks>
+      <basicBlocks>11</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="3" mTag="LOAD" mII="1" mDepth="3" mMinTripCount="1228800" mMaxTripCount="1228800" mMinLatency="1228801" mMaxLatency="1228801" mType="1">
-      <basicBlocks>24</basicBlocks>
-      <basicBlocks>32</basicBlocks>
-      <basicBlocks>35</basicBlocks>
-      <basicBlocks>77</basicBlocks>
+    <cfgRegions mId="3" mTag="LOAD" mII="1" mDepth="2" mMinTripCount="1228800" mMaxTripCount="1228800" mMinLatency="1228800" mMaxLatency="1228800" mType="1">
+      <basicBlocks>17</basicBlocks>
+      <basicBlocks>60</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>79</basicBlocks>
+      <basicBlocks>62</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

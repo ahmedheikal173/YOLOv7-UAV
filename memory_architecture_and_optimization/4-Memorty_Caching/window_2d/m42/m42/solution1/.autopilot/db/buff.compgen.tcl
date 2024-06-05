@@ -3,13 +3,13 @@
 # Memory (RAM/ROM)  definition:
 set ID 1
 set hasByteEnable 0
-set MemName window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W
+set MemName window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W
 set CoreName ap_simcore_mem
 set PortList { 2 }
 set DataWd 16
 set AddrRange 320
 set AddrWd 9
-set impl_style auto
+set impl_style block
 set TrueReset 0
 set IsROM 0
 set ROMData { }
@@ -48,11 +48,11 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {ram_1p} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {ram_1p} IMPL {bram} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
-set CoreName RAM_1P
+set CoreName RAM_1P_BRAM
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
 if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
     eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \

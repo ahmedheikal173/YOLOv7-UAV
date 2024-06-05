@@ -24,30 +24,16 @@
 //        bit 1 - ap_ready (COR/TOW)
 //        bit 5 - ap_local_deadlock (COR/TOW)
 //        others - reserved
-// 0x10 : Data signal of x_in
-//        bit 31~0 - x_in[31:0] (Read/Write)
-// 0x14 : Data signal of x_in
-//        bit 31~0 - x_in[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of y
-//        bit 31~0 - y[31:0] (Read/Write)
-// 0x20 : Data signal of y
-//        bit 31~0 - y[63:32] (Read/Write)
-// 0x24 : reserved
-// 0x28 : Data signal of load
+// 0x10 : Data signal of load
 //        bit 0  - load[0] (Read/Write)
 //        others - reserved
-// 0x2c : reserved
+// 0x14 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_AP_CTRL   0x00
 #define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_GIE       0x04
 #define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_IER       0x08
 #define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_ISR       0x0c
-#define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_X_IN_DATA 0x10
-#define XINTERLEAVE_MANUAL_RND_CONTROL_BITS_X_IN_DATA 64
-#define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_Y_DATA    0x1c
-#define XINTERLEAVE_MANUAL_RND_CONTROL_BITS_Y_DATA    64
-#define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_LOAD_DATA 0x28
+#define XINTERLEAVE_MANUAL_RND_CONTROL_ADDR_LOAD_DATA 0x10
 #define XINTERLEAVE_MANUAL_RND_CONTROL_BITS_LOAD_DATA 1
 

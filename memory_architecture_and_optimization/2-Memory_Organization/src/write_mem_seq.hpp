@@ -6,6 +6,9 @@
 template <typename T, int N>
 void interleave_mem_seq<T, N>::write_seq(ap_uint<ADDRESS_BITWIDTH> i,
                                          T x_in[N]) {
+                                          
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+
   int tmp = x_in[i];
   switch (sel++) {
     case 0:

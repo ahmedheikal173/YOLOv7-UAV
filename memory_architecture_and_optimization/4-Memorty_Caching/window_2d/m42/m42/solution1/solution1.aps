@@ -7,13 +7,12 @@
     </downStreamTool>
     <synthesis askAgain="true"/>
     <config>
-        <config_interface m_axi_latency="64" m_axi_alignment_byte_size="64" m_axi_max_widen_bitwidth="512" default_interface="kernel"/>
+        <config_interface default_interface="kernel" m_axi_alignment_byte_size="64" m_axi_latency="64" m_axi_max_widen_bitwidth="512"/>
         <config_rtl register_reset_num="3"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
-            <Platform>xilinx/Versal AI Core Series/Versal AI Core Series</Platform>
-            <Platform>xilinx/Versal AI Core Series/Versal AI Core Series_fpv7</Platform>
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
+            <Platform>xilinx/virtexuplus/virtexuplus</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -48,6 +47,7 @@
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
+        <Format formatName="xo"/>
     </ExportDesign>
     <Simulation>
         <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
@@ -70,7 +70,7 @@
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="10"/>
+        <clock name="default" default="false" period="10"/>
     </clockList>
 </solution>
 

@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 11
+set ID 7
 set hasByteEnable 0
 set MemName interleave_manual_rnd_x_x0_V_RAM_T2P_BRAM_1R1W
 set CoreName ap_simcore_mem
@@ -91,29 +91,13 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 set axilite_register_dict [dict create]
 set port_control {
-x_in { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 16
-	offset_end 27
-}
-y { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 28
-	offset_end 39
-}
 load { 
 	dir I
 	width 1
 	depth 1
 	mode ap_none
-	offset 40
-	offset_end 47
+	offset 16
+	offset_end 23
 }
 ap_start {
 	mailbox_input_ctrl 0
@@ -146,7 +130,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 12 \
+			id 8 \
 			corename interleave_manual_rnd_control_axilite \
 			name interleave_manual_rnd_control_s_axi \
 			ports {$port_control} \
@@ -162,27 +146,6 @@ if {${::AESL::PGuard_simmodel_gen}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler interleave_manual_rnd_control_s_axi BINDTYPE interface TYPE interface_s_axilite
-}
-
-# Native M_AXI:
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
-eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 13 \
-    corename {m_axi} \
-    op interface \
-    delay_budget 7.3 \ 
-    is_flushable 0 \ 
-    mem_style block \ 
-    name {interleave_manual_rnd_gmem_m_axi} \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'gmem'"
-}
-}
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler interleave_manual_rnd_gmem_m_axi BINDTYPE interface TYPE interface_m_axi
 }
 
 

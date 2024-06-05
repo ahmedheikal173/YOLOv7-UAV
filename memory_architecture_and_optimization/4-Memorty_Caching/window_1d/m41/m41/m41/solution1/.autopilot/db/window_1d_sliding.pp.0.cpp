@@ -173,7 +173,11 @@ class shift_class {
     shift_class() : en(true), sync_rst(false), ld(false) {}
     shift_class(dataType din[NUM_REGS]) : en(true), sync_rst(false), ld(false) {
 
-        load_data = din;
+#pragma HLS BIND_STORAGE variable=din type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=load_data type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=regs type=RAM_T2P impl=BRAM
+
+ load_data = din;
     }
     void set_sync_rst(bool srst) {
         sync_rst = srst;
@@ -5748,8 +5752,10 @@ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,
                  int i, ap_uint<8> window[3]) {
 
 
+#pragma HLS BIND_STORAGE variable=shift_reg type=RAM_T2P impl=BRAM
 
-    window[0] = (i == 1) ? shift_reg[1] : shift_reg[2];
+
+ window[0] = (i == 1) ? shift_reg[1] : shift_reg[2];
     window[1] = shift_reg[1];
     window[2] = (i == 1228800) ? shift_reg[1] : shift_reg[0];
 }
@@ -5762,7 +5768,7 @@ void clip_window(shift_class<ap_uint<8>, 3> shift_reg,
 __attribute__((sdx_kernel("window_avg", 0))) void window_avg(ap_uint<8> din[1228800],
                 ap_uint<8> dout[1228800]) {_ssdm_SpecArrayDimSize(din, 1228800);_ssdm_SpecArrayDimSize(dout, 1228800);
 #pragma HLSDIRECTIVE TOP name=window_avg
-# 20 "../../src/window_1d_sliding.cpp"
+# 22 "../../src/window_1d_sliding.cpp"
 
     const ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
 
@@ -5771,6 +5777,16 @@ __attribute__((sdx_kernel("window_avg", 0))) void window_avg(ap_uint<8> din[1228
     ap_uint<8> window[3];
     ap_ufixed<13, 11> mac;
     ap_uint<8> din_tmp;
+
+#pragma HLS interface mode=BRAM port=din
+#pragma HLS interface mode=BRAM port=dout
+
+
+#pragma HLS BIND_STORAGE variable=shift_reg type=RAM_T2P impl=BRAM
+
+#pragma HLS BIND_STORAGE variable=window type=RAM_T2P impl=BRAM
+
+
 
 COMP:
 

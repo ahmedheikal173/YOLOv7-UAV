@@ -8,22 +8,22 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:9:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=y type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:14:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:15:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:17:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x cyclic factor=3 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:22:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:24:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:27:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave.cpp:29:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
@@ -36,30 +36,36 @@
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_rnd.hpp:20:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_rnd&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x0 type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="interleave_mem_rnd&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x0 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_rnd.hpp:21:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_rnd&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x1 type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="interleave_mem_rnd&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x1 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_rnd.hpp:22:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_rnd&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x2 type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="interleave_mem_rnd&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x2 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./read_mem_rnd.hpp:11:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read_rnd" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./write_mem_rnd.hpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=interleave_manual_rnd" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:7:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:9:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=y type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:17:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:25:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:22:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:30:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave_manual_rnd" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
@@ -72,24 +78,30 @@
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:22:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x0 type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x0 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:23:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x1 type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x1 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./interleave_mem_seq.hpp:24:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x2 type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="interleave_mem_seq&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x2 type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:7:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./write_mem_seq.hpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_in type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:9:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=y type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:17:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:21:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:22:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/interleave_manual_seq.cpp:26:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="interleave_manual_seq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:2573" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::mod operator%&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)'">
@@ -104,8 +116,14 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:2050" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::RType&lt;32, true&gt;::div operator/&lt;21, false, 32, true&gt;(ap_int_base&lt;21, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)'">
         <args Callee="ap_int_base&lt;21, false&gt;::RType&lt;32, true&gt;::div operator/&lt;21, false, 32, true&gt;(ap_int_base&lt;21, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:9:16" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:12:15" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;21, false&gt;::operator unsigned long long() const" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:21:10" msg_body="Inlining function 'ap_int_base&lt;22, true&gt;::operator long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;22, true&gt;::operator long long() const" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:21:12" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:18:10" msg_body="Inlining function 'ap_int_base&lt;22, true&gt;::operator long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;22, true&gt;::operator long long() const" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
@@ -119,16 +137,10 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:15:12" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:12:10" msg_body="Inlining function 'ap_int_base&lt;22, true&gt;::operator long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
-        <args Callee="ap_int_base&lt;22, true&gt;::operator long long() const" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:12:12" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
-        <args Callee="ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::div operator/&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:10:11" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:13:11" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;21, false&gt;::operator unsigned long long() const" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:10:13" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::mod operator%&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:13:13" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::mod operator%&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
         <args Callee="ap_int_base&lt;21, false&gt;::RType&lt;($_0)32, true&gt;::mod operator%&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)" Caller="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./read_mem_rnd.hpp:22:16" msg_body="Inlining function 'ap_int_base&lt;22, true&gt;::operator long long() const' into 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)'">
@@ -161,35 +173,26 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427" msg_body="Inlining function 'ap_int_base&lt;10, true&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)' into 'ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)'">
         <args Callee="ap_int_base&lt;10, true&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)" Caller="ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:23:49" msg_body="Inlining function 'ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:31:49" msg_body="Inlining function 'ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
         <args Callee="ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:23:53" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:31:53" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
         <args Callee="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:23:30" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:31:30" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
         <args Callee="ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:23:34" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:31:34" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
         <args Callee="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:23:15" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:31:15" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
         <args Callee="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::read_rnd(ap_uint&lt;21&gt;, int)" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-185" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:5:104" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported">
-        <args Pragma="call"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-185" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:7:9" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-185" msg_severity="WARNING" msg_loc="../src/interleave_manual_rnd.cpp:26:4" msg_body="The resource pragma (storage) on function argument, in 'call' is unsupported">
         <args Pragma="call"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:5:0" msg_body="Inlining function 'interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
         <args Callee="interleave_mem_rnd&lt;ap_int&lt;8&gt;, 1228800&gt;::write_rnd(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./write_mem_rnd.hpp:9:11" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_int&lt;8&gt;s.i8.1' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
-        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_int&lt;8&gt;s.i8.1" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/interleave_manual_rnd.cpp:23:11" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_int&lt;8&gt;s' into 'interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
-        <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_int&lt;8&gt;s" Caller="interleave_manual_rnd(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

@@ -1,11 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 1
+set ID 5
 set hasByteEnable 0
 set MemName circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W
 set CoreName ap_simcore_mem
-set PortList { 2 1 }
+set PortList { 2 3 }
 set DataWd 8
 set AddrRange 9
 set AddrWd 4
@@ -138,7 +138,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 2 \
+			id 6 \
 			corename circular_shift_reg_control_axilite \
 			name circular_shift_reg_control_s_axi \
 			ports {$port_control} \
@@ -160,7 +160,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 3 \
+    id 7 \
     corename {m_axi} \
     op interface \
     delay_budget 7.3 \ 

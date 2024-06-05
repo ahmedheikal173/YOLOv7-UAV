@@ -77,16 +77,13 @@
   "HlsSolution": {
     "FlowTarget": "vitis",
     "ConfigTcl": [
-      "config_interface -m_axi_latency=64",
-      "config_interface -m_axi_alignment_byte_size=64",
-      "config_interface -m_axi_max_widen_bitwidth=512",
       "config_interface -default_interface=kernel",
+      "config_interface -m_axi_alignment_byte_size=64",
+      "config_interface -m_axi_latency=64",
+      "config_interface -m_axi_max_widen_bitwidth=512",
       "config_rtl -register_reset_num=3"
     ],
-    "DirectiveTcl": [
-      "set_directive_top window_avg -name window_avg",
-      "set_directive_top window_avg -name window_avg"
-    ],
+    "DirectiveTcl": ["set_directive_top window_avg -name window_avg"],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "window_avg"
@@ -115,6 +112,16 @@
   "Files": {
     "CSource": ["..\/..\/..\/src\/window_2d.cpp"],
     "Vhdl": [
+      "impl\/vhdl\/buff.vhd",
+      "impl\/vhdl\/buff_buff1_ram_V_RAM_1P_BRAM_1R1W.vhd",
+      "impl\/vhdl\/buff_control_s_axi.vhd",
+      "impl\/vhdl\/buff_gmem_m_axi.vhd",
+      "impl\/vhdl\/clip_window.vhd",
+      "impl\/vhdl\/clip_window_clip_window_Pipeline_VITIS_LOOP_13_1.vhd",
+      "impl\/vhdl\/clip_window_clip_window_Pipeline_VITIS_LOOP_14_1.vhd",
+      "impl\/vhdl\/clip_window_control_s_axi.vhd",
+      "impl\/vhdl\/clip_window_flow_control_loop_pipe_sequential_init.vhd",
+      "impl\/vhdl\/clip_window_gmem_m_axi.vhd",
       "impl\/vhdl\/window_avg_buff.vhd",
       "impl\/vhdl\/window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W.vhd",
       "impl\/vhdl\/window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W.vhd",
@@ -124,6 +131,17 @@
       "impl\/vhdl\/window_avg.vhd"
     ],
     "Verilog": [
+      "impl\/verilog\/buff.v",
+      "impl\/verilog\/buff_buff1_ram_V_RAM_1P_BRAM_1R1W.dat",
+      "impl\/verilog\/buff_buff1_ram_V_RAM_1P_BRAM_1R1W.v",
+      "impl\/verilog\/buff_control_s_axi.v",
+      "impl\/verilog\/buff_gmem_m_axi.v",
+      "impl\/verilog\/clip_window.v",
+      "impl\/verilog\/clip_window_clip_window_Pipeline_VITIS_LOOP_13_1.v",
+      "impl\/verilog\/clip_window_clip_window_Pipeline_VITIS_LOOP_14_1.v",
+      "impl\/verilog\/clip_window_control_s_axi.v",
+      "impl\/verilog\/clip_window_flow_control_loop_pipe_sequential_init.v",
+      "impl\/verilog\/clip_window_gmem_m_axi.v",
       "impl\/verilog\/window_avg_buff.v",
       "impl\/verilog\/window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W.dat",
       "impl\/verilog\/window_avg_buff_buff1_ram_V_RAM_1P_AUTO_1R1W.v",
@@ -150,7 +168,11 @@
     "KernelXml": "..\/kernel.xml",
     "Xo": "",
     "XoHlsDir": "",
-    "ProtoInst": [".debug\/window_avg.protoinst"]
+    "ProtoInst": [
+      ".debug\/buff.protoinst",
+      ".debug\/clip_window.protoinst",
+      ".debug\/window_avg.protoinst"
+    ]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -913,12 +935,12 @@
           "LUT": "405",
           "AVAIL_LUT": "1296000",
           "UTIL_LUT": "~0",
-          "URAM": "0",
-          "AVAIL_URAM": "960",
-          "UTIL_URAM": "0",
           "DSP": "0",
           "AVAIL_DSP": "9216",
-          "UTIL_DSP": "0"
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "960",
+          "UTIL_URAM": "0"
         }
       },
       "window_avg": {
@@ -965,7 +987,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-05 00:39:34 +0300",
+    "Time": "2024-06-05 17:26:45 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

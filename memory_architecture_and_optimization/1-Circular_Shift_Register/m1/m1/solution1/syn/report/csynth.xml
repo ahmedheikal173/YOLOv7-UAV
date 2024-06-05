@@ -19,21 +19,21 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>75</Best-caseLatency>
-            <Average-caseLatency>75</Average-caseLatency>
-            <Worst-caseLatency>75</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.750 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>0.750 us</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>0.750 us</Worst-caseRealTimeLatency>
-            <Interval-min>76</Interval-min>
-            <Interval-max>76</Interval-max>
+            <Best-caseLatency>83</Best-caseLatency>
+            <Average-caseLatency>83</Average-caseLatency>
+            <Worst-caseLatency>83</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.830 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.830 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.830 us</Worst-caseRealTimeLatency>
+            <Interval-min>84</Interval-min>
+            <Interval-max>84</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>17</BRAM_18K>
-            <FF>978</FF>
-            <LUT>1764</LUT>
+            <BRAM_18K>3</BRAM_18K>
+            <FF>779</FF>
+            <LUT>1602</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -465,7 +465,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>128</Bits>
+            <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -477,7 +477,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>16</Bits>
+            <Bits>4</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -705,7 +705,7 @@
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>128</Bits>
+            <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -819,12 +819,80 @@
         </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
-        <TopModule MAX_DEPTH="2">
+        <TopModule MAX_DEPTH="3">
             <ModuleName>circular_shift_reg</ModuleName>
-            <BindInstances>add_ln885_fu_261_p2 add_ln70_fu_290_p2 add_ln1072_fu_296_p2 add_ln70_1_fu_329_p2 add_ln43_fu_350_p2 add_ln70_2_fu_360_p2 add_ln43_1_fu_381_p2 add_ln70_3_fu_391_p2 add_ln43_2_fu_412_p2 add_ln70_4_fu_422_p2 add_ln43_3_fu_443_p2 add_ln70_5_fu_453_p2 add_ln43_4_fu_474_p2 add_ln70_6_fu_484_p2 add_ln43_5_fu_505_p2 add_ln70_7_fu_515_p2 add_ln70_8_fu_528_p2 add_ln70_9_fu_540_p2 add_ln1072_1_fu_545_p2 regs_mem_V_U</BindInstances>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_circular_shift_reg_Pipeline_WRITE_fu_110</InstName>
+                    <ModuleName>circular_shift_reg_Pipeline_WRITE</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>110</ID>
+                    <BindInstances>i_fu_125_p2 sub_ln70_fu_135_p2 add_ln70_1_fu_153_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>add_ln885_fu_135_p2 add_ln70_fu_160_p2 regs_mem_V_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
+        <Module>
+            <Name>circular_shift_reg_Pipeline_WRITE</Name>
+            <Loops>
+                <WRITE/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>12</Best-caseLatency>
+                    <Average-caseLatency>12</Average-caseLatency>
+                    <Worst-caseLatency>12</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.120 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.120 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.120 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>12</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <WRITE>
+                        <Name>WRITE</Name>
+                        <TripCount>9</TripCount>
+                        <Latency>10</Latency>
+                        <AbsoluteTimeLatency>0.100 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </WRITE>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>17</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>98</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_125_p2" SOURCE="../src/shift_reg.cpp:13" URAM="0" VARIABLE="i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln70_fu_135_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="sub_ln70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_153_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
+            </BindNodes>
+        </Module>
         <Module>
             <Name>circular_shift_reg</Name>
             <PerformanceEstimates>
@@ -834,25 +902,25 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>75</Best-caseLatency>
-                    <Average-caseLatency>75</Average-caseLatency>
-                    <Worst-caseLatency>75</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.750 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.750 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.750 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>76</PipelineInitiationInterval>
+                    <Best-caseLatency>83</Best-caseLatency>
+                    <Average-caseLatency>83</Average-caseLatency>
+                    <Worst-caseLatency>83</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.830 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.830 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.830 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>84</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>17</BRAM_18K>
+                    <BRAM_18K>3</BRAM_18K>
                     <AVAIL_BRAM>624</AVAIL_BRAM>
-                    <UTIL_BRAM>2</UTIL_BRAM>
-                    <FF>978</FF>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <FF>779</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1764</LUT>
+                    <LUT>1602</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -864,25 +932,8 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_fu_261_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_290_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1072_fu_296_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1072" URAM="0" VARIABLE="add_ln1072"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_329_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_fu_350_p2" SOURCE="../src/./circular_shift.h:43" URAM="0" VARIABLE="add_ln43"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_2_fu_360_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_1_fu_381_p2" SOURCE="../src/./circular_shift.h:43" URAM="0" VARIABLE="add_ln43_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_3_fu_391_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_2_fu_412_p2" SOURCE="../src/./circular_shift.h:43" URAM="0" VARIABLE="add_ln43_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_4_fu_422_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_3_fu_443_p2" SOURCE="../src/./circular_shift.h:43" URAM="0" VARIABLE="add_ln43_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_5_fu_453_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_4_fu_474_p2" SOURCE="../src/./circular_shift.h:43" URAM="0" VARIABLE="add_ln43_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_6_fu_484_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln43_5_fu_505_p2" SOURCE="../src/./circular_shift.h:43" URAM="0" VARIABLE="add_ln43_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_7_fu_515_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_8_fu_528_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_8"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_9_fu_540_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_9"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1072_1_fu_545_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1072" URAM="0" VARIABLE="add_ln1072_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_fu_135_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_160_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="regs_mem_V_U" SOURCE="../src/shift_reg.cpp:7" URAM="0" VARIABLE="regs_mem_V"/>
             </BindNodes>
         </Module>
@@ -1019,7 +1070,7 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="128" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" preferredUsageValue="MEMORY">
+        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" preferredUsageValue="MEMORY">
             <busParams>
                 <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
                 <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
@@ -1080,7 +1131,7 @@
             </ports>
             <constraints>
                 <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="64" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="dout"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="8" final_bitwidth="128" argName="dout"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="8" final_bitwidth="8" argName="dout"/>
             </constraints>
         </Interface>
     </Interfaces>
@@ -1089,7 +1140,7 @@
             <item name="M_AXI">
                 <table isCollapsed="0">
                     <keys size="12">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding, Resource Estimate</keys>
-                    <column name="m_axi_gmem">8 -&gt; 128, 64, 64, slave, 0, 512, 16, 16, 16, 16, BRAM=16</column>
+                    <column name="m_axi_gmem">8 -&gt; 8, 64, 64, slave, 0, 512, 16, 16, 16, 16, BRAM=2</column>
                 </table>
             </item>
             <item name="S_AXILITE Interfaces">
@@ -1143,18 +1194,24 @@
     </ReportSWInterface>
     <ReportBurst>
         <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.">
+            <item name="Inferred Burst Summary">
+                <table>
+                    <keys size="6">HW Interface, Loop, Direction, Length, Width, Location</keys>
+                    <column name="m_axi_gmem">WRITE, write, 9, 8, ../src/shift_reg.cpp:13:3</column>
+                </table>
+            </item>
             <item name="Inferred Bursts and Widening Missed">
                 <table>
-                    <keys size="5">HW Interface, Variable, Problem, Resolution, Location</keys>
-                    <column name="m_axi_gmem">dout, Sequential access length is not divisible by 2, 214-234, ../src/shift_reg.cpp:13:12</column>
+                    <keys size="6">HW Interface, Variable, Loop, Problem, Resolution, Location</keys>
+                    <column name="m_axi_gmem">dout, WRITE, Sequential access length is not divisible by 2, 214-234, ../src/shift_reg.cpp:13:3</column>
                 </table>
             </item>
         </section>
     </ReportBurst>
     <PragmaReport>
         <Pragma type="bind_storage" location="../src/./circular_shift.h:23" status="valid" parentFunction="circular_shift&lt;t, n&gt;" variable="mem" isDirective="0" options="variable=mem type=RAM_T2P impl=AUTO"/>
-        <Pragma type="unroll" location="../src/./circular_shift.h:29" status="valid" parentFunction="circular_shift&lt;t, n&gt;" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="../src/shift_reg.cpp:14" status="valid" parentFunction="circular_shift_reg" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../src/./circular_shift.h:30" status="valid" parentFunction="circular_shift&lt;t, n&gt;" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../src/shift_reg.cpp:15" status="valid" parentFunction="circular_shift_reg" variable="" isDirective="0" options=""/>
     </PragmaReport>
 </profile>
 

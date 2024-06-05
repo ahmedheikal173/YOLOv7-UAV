@@ -5693,12 +5693,14 @@ void interleave(
   bool load) {
 
 
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
-#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
+
+
+#pragma HLS interface mode=BRAM port=x_in
+#pragma HLS interface mode=BRAM port=y
 
  static ap_int<8> x[1228800];
 
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
 #pragma HLS ARRAY_PARTITION variable=x cyclic factor=3 dim=1
 
  int idx = 0;

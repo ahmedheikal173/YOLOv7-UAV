@@ -83,44 +83,6 @@ void XWindow_avg_DisableAutoRestart(XWindow_avg *InstancePtr) {
     XWindow_avg_WriteReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XWindow_avg_Set_din(XWindow_avg *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XWindow_avg_WriteReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DIN_DATA, (u32)(Data));
-    XWindow_avg_WriteReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DIN_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XWindow_avg_Get_din(XWindow_avg *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XWindow_avg_ReadReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DIN_DATA);
-    Data += (u64)XWindow_avg_ReadReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DIN_DATA + 4) << 32;
-    return Data;
-}
-
-void XWindow_avg_Set_dout(XWindow_avg *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XWindow_avg_WriteReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DOUT_DATA, (u32)(Data));
-    XWindow_avg_WriteReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DOUT_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XWindow_avg_Get_dout(XWindow_avg *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XWindow_avg_ReadReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DOUT_DATA);
-    Data += (u64)XWindow_avg_ReadReg(InstancePtr->Control_BaseAddress, XWINDOW_AVG_CONTROL_ADDR_DOUT_DATA + 4) << 32;
-    return Data;
-}
-
 void XWindow_avg_InterruptGlobalEnable(XWindow_avg *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

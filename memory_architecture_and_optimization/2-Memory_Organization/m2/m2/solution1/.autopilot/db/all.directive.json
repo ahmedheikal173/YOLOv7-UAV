@@ -36,18 +36,6 @@
                 "value": "interleave_manual_rnd"
               }]
           }
-        },
-        {
-          "functionName": "interleave_manual_rnd",
-          "label": "",
-          "functionLabel": "",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "interleave_manual_rnd"
-              }]
-          }
         }
       ]
     }]}

@@ -4,9 +4,12 @@
 void word_width_manual(ap_int<8> x_in[NUM_WORDS], ap_int<8> y[NUM_WORDS / 3],
                        bool load) {
 // #pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
+//#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
 // #pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
+//#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=BRAM
+
+#pragma HLS interface mode=BRAM port=x_in //[OPTIONS]
+#pragma HLS interface mode=BRAM port=y //[OPTIONS]
 
   static word_width_mem<8, NUM_WORDS> x;
 

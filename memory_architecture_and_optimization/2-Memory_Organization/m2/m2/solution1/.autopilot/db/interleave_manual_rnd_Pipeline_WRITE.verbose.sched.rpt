@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'interleave_manual_rnd_Pipeline_WRITE'
 ================================================================
-* Date:           Wed Jun  5 00:15:30 2024
+* Date:           Wed Jun  5 16:24:55 2024
 
 * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        m2
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  3.621 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
     |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
     +---------+---------+----------+----------+--------+--------+---------+
-    |   409603|   409603|  4.096 ms|  4.096 ms|  409603|  409603|       no|
+    |   409602|   409602|  4.096 ms|  4.096 ms|  409602|  409602|       no|
     +---------+---------+----------+----------+--------+--------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
         | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
         +----------+---------+---------+----------+-----------+-----------+--------+----------+
-        |- WRITE   |   409601|   409601|         3|          1|          1|  409600|       yes|
+        |- WRITE   |   409600|   409600|         2|          1|          1|  409600|       yes|
         +----------+---------+---------+----------+-----------+-----------+--------+----------+
 
 ============================================================
@@ -67,84 +67,66 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 4
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 4
+* Number of FSM states : 3
 * Pipeline : 1
-  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
-3 --> 4 
-4 --> 
+3 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.46>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%phi_ln23 = alloca i32 1"   --->   Operation 6 'alloca' 'phi_ln23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%idx = alloca i32 1"   --->   Operation 7 'alloca' 'idx' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%indvars_iv = alloca i32 1"   --->   Operation 8 'alloca' 'indvars_iv' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln21_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %sext_ln21"   --->   Operation 9 'read' 'sext_ln21_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln21_cast = sext i58 %sext_ln21_read"   --->   Operation 10 'sext' 'sext_ln21_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 210, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 210, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 210, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.46ns)   --->   "%store_ln0 = store i19 0, i19 %indvars_iv"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
-ST_1 : Operation 16 [1/1] (0.46ns)   --->   "%store_ln0 = store i19 0, i19 %idx"   --->   Operation 16 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
-ST_1 : Operation 17 [1/1] (0.46ns)   --->   "%store_ln0 = store i504 0, i504 %phi_ln23"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%idx = alloca i32 1"   --->   Operation 5 'alloca' 'idx' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%indvars_iv = alloca i32 1"   --->   Operation 6 'alloca' 'indvars_iv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 30, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 30, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %y, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.46ns)   --->   "%store_ln0 = store i19 0, i19 %indvars_iv"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 12 [1/1] (0.46ns)   --->   "%store_ln0 = store i19 0, i19 %idx"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 1.58>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%idx_1 = load i19 %idx" [../src/interleave_manual_rnd.cpp:21]   --->   Operation 19 'load' 'idx_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%indvars_iv_load = load i19 %indvars_iv"   --->   Operation 20 'load' 'indvars_iv_load' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.92ns)   --->   "%icmp_ln21 = icmp_eq  i19 %idx_1, i19 409600" [../src/interleave_manual_rnd.cpp:21]   --->   Operation 21 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 0.92> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 22 [1/1] (1.12ns)   --->   "%indvars_iv_next = add i19 %indvars_iv_load, i19 1"   --->   Operation 22 'add' 'indvars_iv_next' <Predicate = true> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln21 = br i1 %icmp_ln21, void %.split4, void %.loopexit.loopexit2.exitStub" [../src/interleave_manual_rnd.cpp:21]   --->   Operation 23 'br' 'br_ln21' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln21 = trunc i19 %idx_1" [../src/interleave_manual_rnd.cpp:21]   --->   Operation 24 'trunc' 'trunc_ln21' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln587 = zext i19 %indvars_iv_load"   --->   Operation 25 'zext' 'zext_ln587' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%x_x0_V_addr = getelementptr i8 %x_x0_V, i64 0, i64 %zext_ln587" [../src/./read_mem_rnd.hpp:16]   --->   Operation 26 'getelementptr' 'x_x0_V_addr' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_2 : Operation 27 [2/2] (1.29ns)   --->   "%tmp_V = load i19 %x_x0_V_addr" [../src/./read_mem_rnd.hpp:16]   --->   Operation 27 'load' 'tmp_V' <Predicate = (!icmp_ln21)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%x_x1_V_addr = getelementptr i8 %x_x1_V, i64 0, i64 %zext_ln587" [../src/./read_mem_rnd.hpp:19]   --->   Operation 28 'getelementptr' 'x_x1_V_addr' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_2 : Operation 29 [2/2] (1.29ns)   --->   "%tmp_V_1 = load i19 %x_x1_V_addr" [../src/./read_mem_rnd.hpp:19]   --->   Operation 29 'load' 'tmp_V_1' <Predicate = (!icmp_ln21)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%x_x2_V_addr = getelementptr i8 %x_x2_V, i64 0, i64 %zext_ln587" [../src/./read_mem_rnd.hpp:22]   --->   Operation 30 'getelementptr' 'x_x2_V_addr' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_2 : Operation 31 [2/2] (1.29ns)   --->   "%tmp_V_2 = load i19 %x_x2_V_addr" [../src/./read_mem_rnd.hpp:22]   --->   Operation 31 'load' 'tmp_V_2' <Predicate = (!icmp_ln21)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
-ST_2 : Operation 32 [1/1] (1.12ns)   --->   "%add_ln23 = add i19 %idx_1, i19 1" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 32 'add' 'add_ln23' <Predicate = (!icmp_ln21)> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 33 [1/1] (0.71ns)   --->   "%icmp_ln23 = icmp_eq  i6 %trunc_ln21, i6 63" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 33 'icmp' 'icmp_ln23' <Predicate = (!icmp_ln21)> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln23 = br i1 %icmp_ln23, void %.split4._crit_edge, void" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 34 'br' 'br_ln23' <Predicate = (!icmp_ln21)> <Delay = 0.00>
-ST_2 : Operation 35 [1/1] (0.46ns)   --->   "%store_ln0 = store i19 %indvars_iv_next, i19 %indvars_iv"   --->   Operation 35 'store' 'store_ln0' <Predicate = (!icmp_ln21)> <Delay = 0.46>
-ST_2 : Operation 36 [1/1] (0.46ns)   --->   "%store_ln23 = store i19 %add_ln23, i19 %idx" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 36 'store' 'store_ln23' <Predicate = (!icmp_ln21)> <Delay = 0.46>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%idx_1 = load i19 %idx" [../src/interleave_manual_rnd.cpp:31]   --->   Operation 14 'load' 'idx_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%indvars_iv_load = load i19 %indvars_iv"   --->   Operation 15 'load' 'indvars_iv_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.92ns)   --->   "%icmp_ln29 = icmp_eq  i19 %idx_1, i19 409600" [../src/interleave_manual_rnd.cpp:29]   --->   Operation 16 'icmp' 'icmp_ln29' <Predicate = true> <Delay = 0.92> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.92> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 409600, i64 409600, i64 409600"   --->   Operation 17 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.12ns)   --->   "%indvars_iv_next = add i19 %indvars_iv_load, i19 1"   --->   Operation 18 'add' 'indvars_iv_next' <Predicate = true> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %icmp_ln29, void %.split3, void %.loopexit.loopexit.exitStub" [../src/interleave_manual_rnd.cpp:29]   --->   Operation 19 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln587 = zext i19 %indvars_iv_load"   --->   Operation 20 'zext' 'zext_ln587' <Predicate = (!icmp_ln29)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%x_x0_V_addr = getelementptr i8 %x_x0_V, i64 0, i64 %zext_ln587" [../src/./read_mem_rnd.hpp:16]   --->   Operation 21 'getelementptr' 'x_x0_V_addr' <Predicate = (!icmp_ln29)> <Delay = 0.00>
+ST_2 : Operation 22 [2/2] (1.29ns)   --->   "%tmp_V = load i19 %x_x0_V_addr" [../src/./read_mem_rnd.hpp:16]   --->   Operation 22 'load' 'tmp_V' <Predicate = (!icmp_ln29)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%x_x1_V_addr = getelementptr i8 %x_x1_V, i64 0, i64 %zext_ln587" [../src/./read_mem_rnd.hpp:19]   --->   Operation 23 'getelementptr' 'x_x1_V_addr' <Predicate = (!icmp_ln29)> <Delay = 0.00>
+ST_2 : Operation 24 [2/2] (1.29ns)   --->   "%tmp_V_1 = load i19 %x_x1_V_addr" [../src/./read_mem_rnd.hpp:19]   --->   Operation 24 'load' 'tmp_V_1' <Predicate = (!icmp_ln29)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%x_x2_V_addr = getelementptr i8 %x_x2_V, i64 0, i64 %zext_ln587" [../src/./read_mem_rnd.hpp:22]   --->   Operation 25 'getelementptr' 'x_x2_V_addr' <Predicate = (!icmp_ln29)> <Delay = 0.00>
+ST_2 : Operation 26 [2/2] (1.29ns)   --->   "%tmp_V_2 = load i19 %x_x2_V_addr" [../src/./read_mem_rnd.hpp:22]   --->   Operation 26 'load' 'tmp_V_2' <Predicate = (!icmp_ln29)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_2 : Operation 27 [1/1] (1.12ns)   --->   "%add_ln31 = add i19 %idx_1, i19 1" [../src/interleave_manual_rnd.cpp:31]   --->   Operation 27 'add' 'add_ln31' <Predicate = (!icmp_ln29)> <Delay = 1.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.46ns)   --->   "%store_ln0 = store i19 %indvars_iv_next, i19 %indvars_iv"   --->   Operation 28 'store' 'store_ln0' <Predicate = (!icmp_ln29)> <Delay = 0.46>
+ST_2 : Operation 29 [1/1] (0.46ns)   --->   "%store_ln31 = store i19 %add_ln31, i19 %idx" [../src/interleave_manual_rnd.cpp:31]   --->   Operation 29 'store' 'store_ln31' <Predicate = (!icmp_ln29)> <Delay = 0.46>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 41 'ret' 'ret_ln0' <Predicate = (icmp_ln29)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 2.32>
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i512 %gmem"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i512 %gmem, i64 %sext_ln21_cast" [../src/interleave_manual_rnd.cpp:21]   --->   Operation 38 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 409600, i64 409600, i64 409600"   --->   Operation 39 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 40 [1/2] (1.29ns)   --->   "%tmp_V = load i19 %x_x0_V_addr" [../src/./read_mem_rnd.hpp:16]   --->   Operation 40 'load' 'tmp_V' <Predicate = (!icmp_ln21)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
-ST_3 : Operation 41 [1/2] (1.29ns)   --->   "%tmp_V_1 = load i19 %x_x1_V_addr" [../src/./read_mem_rnd.hpp:19]   --->   Operation 41 'load' 'tmp_V_1' <Predicate = (!icmp_ln21)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
-ST_3 : Operation 42 [1/2] (1.29ns)   --->   "%tmp_V_2 = load i19 %x_x2_V_addr" [../src/./read_mem_rnd.hpp:22]   --->   Operation 42 'load' 'tmp_V_2' <Predicate = (!icmp_ln21)> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
-ST_3 : Operation 43 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln70 = add i8 %tmp_V_1, i8 %tmp_V"   --->   Operation 43 'add' 'add_ln70' <Predicate = (!icmp_ln21)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.51> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_3 : Operation 44 [1/1] (1.02ns) (root node of TernaryAdder)   --->   "%add_ln70_1 = add i8 %add_ln70, i8 %tmp_V_2"   --->   Operation 44 'add' 'add_ln70_1' <Predicate = (!icmp_ln21)> <Delay = 1.02> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.51> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 57 'ret' 'ret_ln0' <Predicate = (icmp_ln21)> <Delay = 0.00>
-
-State 4 <SV = 3> <Delay = 7.30>
-ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%phi_ln23_load_1 = load i504 %phi_ln23" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 45 'load' 'phi_ln23_load_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln321 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 46 'specpipeline' 'specpipeline_ln321' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13"   --->   Operation 47 'specloopname' 'specloopname_ln321' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i8.i504, i8 %add_ln70_1, i504 %phi_ln23_load_1" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 48 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 49 [1/1] (7.30ns)   --->   "%write_ln23 = write void @_ssdm_op_Write.m_axi.p1i512, i512 %gmem_addr, i512 %or_ln, i64 18446744073709551615" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 49 'write' 'write_ln23' <Predicate = (icmp_ln23)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln23 = br void %.split4._crit_edge" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 50 'br' 'br_ln23' <Predicate = (icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%phi_ln23_load = load i504 %phi_ln23"   --->   Operation 51 'load' 'phi_ln23_load' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%tmp = partselect i496 @_ssdm_op_PartSelect.i496.i504.i32.i32, i504 %phi_ln23_load, i32 8, i32 503"   --->   Operation 52 'partselect' 'tmp' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_1 = bitconcatenate i504 @_ssdm_op_BitConcatenate.i504.i8.i496, i8 %add_ln70_1, i496 %tmp"   --->   Operation 53 'bitconcatenate' 'tmp_1' <Predicate = (!icmp_ln23)> <Delay = 0.00>
-ST_4 : Operation 54 [1/1] (0.60ns)   --->   "%select_ln23 = select i1 %icmp_ln23, i504 0, i504 %tmp_1" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 54 'select' 'select_ln23' <Predicate = true> <Delay = 0.60> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.60> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 55 [1/1] (0.46ns)   --->   "%store_ln23 = store i504 %select_ln23, i504 %phi_ln23" [../src/interleave_manual_rnd.cpp:23]   --->   Operation 55 'store' 'store_ln23' <Predicate = true> <Delay = 0.46>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 56 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 3.62>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i19 %idx_1" [../src/interleave_manual_rnd.cpp:29]   --->   Operation 30 'zext' 'zext_ln29' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%specpipeline_ln321 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 31 'specpipeline' 'specpipeline_ln321' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8"   --->   Operation 32 'specloopname' 'specloopname_ln321' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/2] (1.29ns)   --->   "%tmp_V = load i19 %x_x0_V_addr" [../src/./read_mem_rnd.hpp:16]   --->   Operation 33 'load' 'tmp_V' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_3 : Operation 34 [1/2] (1.29ns)   --->   "%tmp_V_1 = load i19 %x_x1_V_addr" [../src/./read_mem_rnd.hpp:19]   --->   Operation 34 'load' 'tmp_V_1' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_3 : Operation 35 [1/2] (1.29ns)   --->   "%tmp_V_2 = load i19 %x_x2_V_addr" [../src/./read_mem_rnd.hpp:22]   --->   Operation 35 'load' 'tmp_V_2' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM_T2P_BRAM">   --->   Core 99 'RAM_T2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_3 : Operation 36 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln70 = add i8 %tmp_V, i8 %tmp_V_2"   --->   Operation 36 'add' 'add_ln70' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.51> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 37 [1/1] (1.02ns) (root node of TernaryAdder)   --->   "%add_ln70_1 = add i8 %add_ln70, i8 %tmp_V_1"   --->   Operation 37 'add' 'add_ln70_1' <Predicate = true> <Delay = 1.02> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.51> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%y_addr = getelementptr i8 %y, i64 0, i64 %zext_ln29" [../src/interleave_manual_rnd.cpp:31]   --->   Operation 38 'getelementptr' 'y_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (1.29ns)   --->   "%store_ln31 = store i8 %add_ln70_1, i19 %y_addr" [../src/interleave_manual_rnd.cpp:31]   --->   Operation 39 'store' 'store_ln31' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 409600> <RAM>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 40 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -154,25 +136,21 @@ Target clock period: 10ns, clock uncertainty: 2.7ns.
 
  <State 1>: 0.46ns
 The critical path consists of the following:
-	'alloca' operation ('indvars_iv') [8]  (0 ns)
-	'store' operation ('store_ln0') of constant 0 on local variable 'indvars_iv' [15]  (0.46 ns)
+	'alloca' operation ('indvars_iv') [6]  (0 ns)
+	'store' operation ('store_ln0') of constant 0 on local variable 'indvars_iv' [11]  (0.46 ns)
 
  <State 2>: 1.58ns
 The critical path consists of the following:
-	'load' operation ('indvars_iv_load') on local variable 'indvars_iv' [21]  (0 ns)
-	'add' operation ('indvars_iv_next') [26]  (1.12 ns)
-	'store' operation ('store_ln0') of variable 'indvars_iv_next' on local variable 'indvars_iv' [54]  (0.46 ns)
+	'load' operation ('indvars_iv_load') on local variable 'indvars_iv' [16]  (0 ns)
+	'add' operation ('indvars_iv_next') [19]  (1.12 ns)
+	'store' operation ('store_ln0') of variable 'indvars_iv_next' on local variable 'indvars_iv' [37]  (0.46 ns)
 
- <State 3>: 2.32ns
+ <State 3>: 3.62ns
 The critical path consists of the following:
-	'load' operation ('tmp.V', ../src/./read_mem_rnd.hpp:16) on array 'x_x0_V' [35]  (1.3 ns)
-	'add' operation ('add_ln70') [40]  (0 ns)
-	'add' operation ('add_ln70_1') [41]  (1.03 ns)
-
- <State 4>: 7.3ns
-The critical path consists of the following:
-	'load' operation ('phi_ln23_load_1', ../src/interleave_manual_rnd.cpp:23) on local variable 'phi_ln23' [29]  (0 ns)
-	bus write operation ('write_ln23', ../src/interleave_manual_rnd.cpp:23) on port 'gmem' (../src/interleave_manual_rnd.cpp:23) [47]  (7.3 ns)
+	'load' operation ('tmp.V', ../src/./read_mem_rnd.hpp:16) on array 'x_x0_V' [27]  (1.3 ns)
+	'add' operation ('add_ln70') [32]  (0 ns)
+	'add' operation ('add_ln70_1') [33]  (1.03 ns)
+	'store' operation ('store_ln31', ../src/interleave_manual_rnd.cpp:31) of variable 'add_ln70_1' on array 'y' [36]  (1.3 ns)
 
 
 ============================================================
@@ -186,7 +164,6 @@ N/A
 	State 1
 	State 2
 	State 3
-	State 4
 
 
 ============================================================

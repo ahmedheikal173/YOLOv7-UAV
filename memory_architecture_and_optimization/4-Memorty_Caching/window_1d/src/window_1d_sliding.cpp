@@ -4,6 +4,8 @@
 void clip_window(shift_class<ap_uint<8>, 3> shift_reg,
                  int i, ap_uint<8> window[3]) {
 
+//#pragma HLS interface mode=BRAM port=shift_reg //[OPTIONS]
+#pragma HLS BIND_STORAGE variable=shift_reg type=RAM_T2P impl=BRAM
 //#pragma HLS disaggregate variable = shift_reg
                    
     window[0] = (i == 1) ? shift_reg[1] : shift_reg[2];
@@ -25,6 +27,16 @@ void window_avg(ap_uint<8> din[NUM_WORDS],
     ap_uint<8> window[3];
     ap_ufixed<13, 11> mac;
     ap_uint<8> din_tmp;
+
+#pragma HLS interface mode=BRAM port=din //[OPTIONS]
+#pragma HLS interface mode=BRAM port=dout //[OPTIONS]
+
+//#pragma HLS interface mode=BRAM port=shift_reg //[OPTIONS]
+#pragma HLS BIND_STORAGE variable=shift_reg type=RAM_T2P impl=BRAM
+//#pragma HLS interface mode=BRAM port=window //[OPTIONS]
+#pragma HLS BIND_STORAGE variable=window type=RAM_T2P impl=BRAM
+
+
 
 COMP:
     // NUM_WORDS + 1 : "dout[0]" requires additional two reads from "din"

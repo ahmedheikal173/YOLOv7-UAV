@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'circular_shift_reg'
 ================================================================
 + General Information: 
-    * Date:           Wed Jun  5 00:10:07 2024
+    * Date:           Wed Jun  5 09:56:19 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m1
     * Solution:       solution1 (Vitis Kernel Flow Target)
@@ -15,12 +15,14 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +----------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
-    |        Modules       |  Issue |       | Latency | Latency | Iteration|         | Trip |          |         |    |           |            |     |
-    |        & Loops       |  Type  | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |     LUT    | URAM|
-    +----------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
-    |+ circular_shift_reg  |  Timing|  -0.00|       75|  750.000|         -|       76|     -|        no|  17 (2%)|   -|  978 (~0%)|  1764 (~0%)|    -|
-    +----------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    +--------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    |                Modules               |  Issue |       | Latency | Latency | Iteration|         | Trip |          |         |    |           |            |     |
+    |                & Loops               |  Type  | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |     LUT    | URAM|
+    +--------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    |+ circular_shift_reg                  |  Timing|  -0.00|       83|  830.000|         -|       84|     -|        no|  3 (~0%)|   -|  779 (~0%)|  1602 (~0%)|    -|
+    | + circular_shift_reg_Pipeline_WRITE  |  Timing|  -0.00|       12|  120.000|         -|       12|     -|        no|        -|   -|   17 (~0%)|    98 (~0%)|    -|
+    |  o WRITE                             |       -|   7.30|       10|  100.000|         3|        1|     9|       yes|        -|   -|          -|           -|    -|
+    +--------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
 
 
 ================================================================
@@ -31,7 +33,7 @@
 | Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
 |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
 +------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| m_axi_gmem | 8 -> 128   | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=16           |
+| m_axi_gmem | 8 -> 8     | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=2            |
 +------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
 
 * S_AXILITE Interfaces
@@ -92,42 +94,36 @@
 ================================================================
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
+* Inferred Burst Summary
++--------------+-------+-----------+--------+-------+---------------------------+
+| HW Interface | Loop  | Direction | Length | Width | Location                  |
++--------------+-------+-----------+--------+-------+---------------------------+
+| m_axi_gmem   | WRITE | write     | 9      | 8     | ../src/shift_reg.cpp:13:3 |
++--------------+-------+-----------+--------+-------+---------------------------+
+
 * Inferred Bursts and Widening Missed
-+--------------+----------+------------------------------------------------+------------+----------------------------+
-| HW Interface | Variable | Problem                                        | Resolution | Location                   |
-+--------------+----------+------------------------------------------------+------------+----------------------------+
-| m_axi_gmem   | dout     | Sequential access length is not divisible by 2 | 214-234    | ../src/shift_reg.cpp:13:12 |
-+--------------+----------+------------------------------------------------+------------+----------------------------+
++--------------+----------+-------+------------------------------------------------+------------+---------------------------+
+| HW Interface | Variable | Loop  | Problem                                        | Resolution | Location                  |
++--------------+----------+-------+------------------------------------------------+------------+---------------------------+
+| m_axi_gmem   | dout     | WRITE | Sequential access length is not divisible by 2 | 214-234    | ../src/shift_reg.cpp:13:3 |
++--------------+----------+-------+------------------------------------------------+------------+---------------------------+
 
     * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+--------------------------+-----+--------+--------------+-----+--------+---------+
-| Name                     | DSP | Pragma | Variable     | Op  | Impl   | Latency |
-+--------------------------+-----+--------+--------------+-----+--------+---------+
-| + circular_shift_reg     | 0   |        |              |     |        |         |
-|   add_ln885_fu_261_p2    | -   |        | add_ln885    | add | fabric | 0       |
-|   add_ln70_fu_290_p2     | -   |        | add_ln70     | add | fabric | 0       |
-|   add_ln1072_fu_296_p2   | -   |        | add_ln1072   | add | fabric | 0       |
-|   add_ln70_1_fu_329_p2   | -   |        | add_ln70_1   | add | fabric | 0       |
-|   add_ln43_fu_350_p2     | -   |        | add_ln43     | add | fabric | 0       |
-|   add_ln70_2_fu_360_p2   | -   |        | add_ln70_2   | add | fabric | 0       |
-|   add_ln43_1_fu_381_p2   | -   |        | add_ln43_1   | add | fabric | 0       |
-|   add_ln70_3_fu_391_p2   | -   |        | add_ln70_3   | add | fabric | 0       |
-|   add_ln43_2_fu_412_p2   | -   |        | add_ln43_2   | add | fabric | 0       |
-|   add_ln70_4_fu_422_p2   | -   |        | add_ln70_4   | add | fabric | 0       |
-|   add_ln43_3_fu_443_p2   | -   |        | add_ln43_3   | add | fabric | 0       |
-|   add_ln70_5_fu_453_p2   | -   |        | add_ln70_5   | add | fabric | 0       |
-|   add_ln43_4_fu_474_p2   | -   |        | add_ln43_4   | add | fabric | 0       |
-|   add_ln70_6_fu_484_p2   | -   |        | add_ln70_6   | add | fabric | 0       |
-|   add_ln43_5_fu_505_p2   | -   |        | add_ln43_5   | add | fabric | 0       |
-|   add_ln70_7_fu_515_p2   | -   |        | add_ln70_7   | add | fabric | 0       |
-|   add_ln70_8_fu_528_p2   | -   |        | add_ln70_8   | add | fabric | 0       |
-|   add_ln70_9_fu_540_p2   | -   |        | add_ln70_9   | add | fabric | 0       |
-|   add_ln1072_1_fu_545_p2 | -   |        | add_ln1072_1 | add | fabric | 0       |
-+--------------------------+-----+--------+--------------+-----+--------+---------+
++--------------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                                 | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++--------------------------------------+-----+--------+------------+-----+--------+---------+
+| + circular_shift_reg                 | 0   |        |            |     |        |         |
+|   add_ln885_fu_135_p2                | -   |        | add_ln885  | add | fabric | 0       |
+|   add_ln70_fu_160_p2                 | -   |        | add_ln70   | add | fabric | 0       |
+|  + circular_shift_reg_Pipeline_WRITE | 0   |        |            |     |        |         |
+|    i_fu_125_p2                       | -   |        | i          | add | fabric | 0       |
+|    sub_ln70_fu_135_p2                | -   |        | sub_ln70   | sub | fabric | 0       |
+|    add_ln70_1_fu_153_p2              | -   |        | add_ln70_1 | add | fabric | 0       |
++--------------------------------------+-----+--------+------------+-----+--------+---------+
 
 
 ================================================================
@@ -136,7 +132,7 @@
 +----------------------+------+------+--------+------------+---------+------+---------+
 | Name                 | BRAM | URAM | Pragma | Variable   | Storage | Impl | Latency |
 +----------------------+------+------+--------+------------+---------+------+---------+
-| + circular_shift_reg | 17   | 0    |        |            |         |      |         |
+| + circular_shift_reg | 3    | 0    |        |            |         |      |         |
 |   regs_mem_V_U       | 1    | -    | pragma | regs_mem_V | ram_t2p | bram | 1       |
 +----------------------+------+------+--------+------------+---------+------+---------+
 
@@ -149,8 +145,8 @@
 | Type         | Options                             | Location                                                  |
 +--------------+-------------------------------------+-----------------------------------------------------------+
 | bind_storage | variable=mem type=RAM_T2P impl=AUTO | ../src/./circular_shift.h:23 in circular_shift<t, n>, mem |
-| unroll       |                                     | ../src/./circular_shift.h:29 in circular_shift<t, n>      |
-| unroll       |                                     | ../src/shift_reg.cpp:14 in circular_shift_reg             |
+| pipeline     |                                     | ../src/./circular_shift.h:30 in circular_shift<t, n>      |
+| pipeline     |                                     | ../src/shift_reg.cpp:15 in circular_shift_reg             |
 +--------------+-------------------------------------+-----------------------------------------------------------+
 
 

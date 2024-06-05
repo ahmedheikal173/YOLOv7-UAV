@@ -11,14 +11,14 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./circular_shift.h:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="circular_shift&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem type=RAM_T2P impl=AUTO" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./circular_shift.h:29:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="circular_shift&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./circular_shift.h:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="circular_shift&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="circular_shift_reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=circular_shift_reg" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:14:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="circular_shift_reg" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="circular_shift_reg" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;5, true&gt;::operator++(int)'">
         <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;5, true&gt;::operator++(int)"/>
@@ -91,9 +91,6 @@
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/./circular_shift.h:42:22" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;4, false&gt;::minus operator-&lt;33, true, 4, false&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;4, false&gt; const&amp;)' into 'circular_shift&lt;ap_uint&lt;8&gt;, 9&gt;::operator[](ap_uint&lt;4&gt;)'">
         <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;4, false&gt;::minus operator-&lt;33, true, 4, false&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;4, false&gt; const&amp;)" Caller="circular_shift&lt;ap_uint&lt;8&gt;, 9&gt;::operator[](ap_uint&lt;4&gt;)"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/shift_reg.cpp:5:0" msg_body="Unrolling loop 'WRITE' (../src/shift_reg.cpp:13:3) in function 'circular_shift_reg' completely with a factor of 9">
-        <args Factor="9" LoopLoc="../src/shift_reg.cpp:13:3" LoopName="WRITE"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/shift_reg.cpp:5:0" msg_body="Inlining function 'circular_shift&lt;ap_uint&lt;8&gt;, 9&gt;::operator&lt;&lt;(ap_uint&lt;8&gt;)' into 'circular_shift_reg(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;*)'">
         <args Callee="circular_shift&lt;ap_uint&lt;8&gt;, 9&gt;::operator&lt;&lt;(ap_uint&lt;8&gt;)" Caller="circular_shift_reg(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;*)"/>

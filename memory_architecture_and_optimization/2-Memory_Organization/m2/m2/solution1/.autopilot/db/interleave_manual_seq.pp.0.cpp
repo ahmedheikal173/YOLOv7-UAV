@@ -5709,9 +5709,9 @@ class interleave_mem_seq {
 
 
 
-#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=AUTO
-#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=AUTO
-#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=BRAM
 
  idx = 0;
     sel = 0;
@@ -5757,7 +5757,10 @@ T interleave_mem_seq<T, N>::read_seq(ap_uint<(21)> i,
 template <typename T, int N>
 void interleave_mem_seq<T, N>::write_seq(ap_uint<(21)> i,
                                          T x_in[N]) {
-  int tmp = x_in[i];
+
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+
+ int tmp = x_in[i];
   switch (sel++) {
     case 0:
       x0[idx] = tmp;
@@ -5779,12 +5782,16 @@ void interleave_mem_seq<T, N>::write_seq(ap_uint<(21)> i,
 void interleave_manual_seq(ap_int<8> x_in[1228800],
                            ap_int<8> y[1228800 / 3], bool load) {
 
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
 
-#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
+#pragma HLS interface mode=BRAM port=x_in
+
+
+#pragma HLS interface mode=BRAM port=y
+
 
  static interleave_mem_seq<ap_int<8>, 1228800> x;
-  int idx = 0;
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+ int idx = 0;
 
   if (load)
 LOAD:

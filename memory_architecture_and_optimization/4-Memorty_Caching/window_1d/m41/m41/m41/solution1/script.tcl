@@ -5,9 +5,9 @@
 ############################################################
 open_project m41
 set_top window_avg
-add_files ../../src/window_1d_sliding.cpp
-add_files ../../src/window_1d.h
 add_files ../../src/shift_class.hpp
+add_files ../../src/window_1d.h
+add_files ../../src/window_1d_sliding.cpp
 add_files -tb ../../tb/test_window_1d.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vitis
 set_part {xcvu11p-flga2577-1-e}

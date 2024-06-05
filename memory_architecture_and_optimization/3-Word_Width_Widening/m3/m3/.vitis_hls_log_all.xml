@@ -12,35 +12,12 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.640+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARUSER' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.400+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARREGION' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.390+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARQOS' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.380+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARPROT' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.380+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARCACHE' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.370+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARLOCK' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.360+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARBURST' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.350+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARSIZE' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.340+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARLEN' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.330+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARID' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.320+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARADDR' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.310+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/m_axi_gmem_ARVALID' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.300+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_BREADY' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.160+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWUSER' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.150+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWREGION' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.140+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWQOS' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.130+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWPROT' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.130+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWCACHE' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.120+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWLOCK' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.110+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWBURST' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.100+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWSIZE' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.090+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWLEN' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.090+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWID' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.070+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWADDR' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.060+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_WRITE/m_axi_gmem_AWVALID' to 0." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:03.050+0200" type="Warning"/>
-        <logs message="WARNING: [SYNCHK 200-23] ../src/word_width.cpp:22: variable-indexed range selection may cause suboptimal QoR." projectName="m3" solutionName="solution1" date="2024-06-04T23:33:01.720+0200" type="Warning"/>
-        <logs message="WARNING: [HLS 214-185] The resource pragma (storage) on function argument, in 'call' is unsupported (../src/word_width.cpp:8:9)" projectName="m3" solutionName="solution1" date="2024-06-04T23:33:01.510+0200" type="Warning"/>
-        <logs message="WARNING: [HLS 214-185] The resource pragma (storage) on function argument, in 'call' is unsupported (../src/word_width.cpp:5:74)" projectName="m3" solutionName="solution1" date="2024-06-04T23:33:01.500+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.542+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.532+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.483+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.268+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:51.259+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] ../src/word_width.cpp:24: variable-indexed range selection may cause suboptimal QoR." projectName="m3" solutionName="solution1" date="2024-06-05T15:27:50.382+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

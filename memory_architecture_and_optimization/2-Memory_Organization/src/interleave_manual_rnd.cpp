@@ -3,12 +3,20 @@
 
 void interleave_manual_rnd(ap_int<8> x_in[NUM_WORDS],
                            ap_int<8> y[NUM_WORDS / 3], bool load) {
+// #pragma HLS disaggregate variable = x_in
+// #pragma HLS disaggregate variable = y
+
+
 //#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=AUTO
+//#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+#pragma HLS interface mode=BRAM port=x_in //[OPTIONS]
 //#pragma HLS RESOURCE variable=y core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=AUTO
+//#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=BRAM
+#pragma HLS interface mode=BRAM port=y //[OPTIONS]
 
   static interleave_mem_rnd<ap_int<8>, NUM_WORDS> x;
+  
+#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
   int idx = 0;
 
   if (load)

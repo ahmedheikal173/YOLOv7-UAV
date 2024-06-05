@@ -20,7 +20,7 @@ class circular_shift {
  public:
   circular_shift() {
 //#pragma HLS RESOURCE variable=mem core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=mem type=RAM_T2P impl=AUTO
+#pragma HLS BIND_STORAGE variable=mem type=RAM_T2P impl=BRAM
 
 	T dummy;
     wptr = 0;

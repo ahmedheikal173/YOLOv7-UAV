@@ -61,7 +61,7 @@
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %buff1_ram_V, i64 666, i64 207, i64 18446744073709551615
+._crit_edge:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %buff1_ram_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -76,7 +76,7 @@
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %buff0_ram_V, i64 666, i64 207, i64 18446744073709551615
+._crit_edge:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %buff0_ram_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -121,10 +121,10 @@
 
 <Node id="19" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-._crit_edge:6 %br_ln27 = br i1 %guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel_load, void, void %thread-pre-split1
+._crit_edge:6 %br_ln35 = br i1 %guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel_load, void, void %thread-pre-split1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln27"/></StgValue>
+<StgValue><ssdm name="br_ln35"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -153,10 +153,10 @@
 
 <Node id="22" bw="0" op_0_bw="0">
 <![CDATA[
-:1 %br_ln27 = br void %thread-pre-split1
+:1 %br_ln35 = br void %thread-pre-split1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln27"/></StgValue>
+<StgValue><ssdm name="br_ln35"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -183,10 +183,10 @@ thread-pre-split1:1 %empty = phi i1 1, void, i1 %sel_load, void %._crit_edge
 
 <Node id="26" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-thread-pre-split1:2 %icmp_ln30 = icmp_eq  i10 %c_read, i10 0
+thread-pre-split1:2 %icmp_ln38 = icmp_eq  i10 %c_read, i10 0
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln30"/></StgValue>
+<StgValue><ssdm name="icmp_ln38"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -213,17 +213,17 @@ thread-pre-split1:3 %buff1_cnt_V_load = load i1 %buff1_cnt_V
 
 <Node id="28" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-thread-pre-split1:4 %br_ln30 = br i1 %icmp_ln30, void %thread-pre-split, void
+thread-pre-split1:4 %br_ln38 = br i1 %icmp_ln38, void %thread-pre-split, void
 
 ]]></Node>
-<StgValue><ssdm name="br_ln30"/></StgValue>
+<StgValue><ssdm name="br_ln38"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -239,7 +239,7 @@ thread-pre-split1:4 %br_ln30 = br i1 %icmp_ln30, void %thread-pre-split, void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -255,9 +255,9 @@ thread-pre-split1:4 %br_ln30 = br i1 %icmp_ln30, void %thread-pre-split, void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -274,9 +274,9 @@ thread-pre-split._crit_edge:2 %p_Val2_s = load i16 %buff1_write_data_V
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -293,10 +293,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -314,10 +314,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -335,10 +335,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -356,10 +356,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -377,10 +377,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -398,10 +398,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -419,10 +419,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -440,10 +440,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -461,10 +461,10 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -479,13 +479,13 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 </operation>
 
 <operation id="30" st_id="1" stage="1" lat="1">
-<core>RAM_1P</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -548,7 +548,7 @@ thread-pre-split._crit_edge:3 %br_ln42 = br i1 %buff1_cnt_V_load, void %.thread6
 </operation>
 
 <operation id="34" st_id="1" stage="2" lat="2">
-<core>RAM_1P</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="buff1_cnt_V_load" val="0"/>
@@ -615,7 +615,7 @@ thread-pre-split1:0 %sel_flag_0 = phi i1 1, void, i1 0, void %._crit_edge
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -631,9 +631,9 @@ thread-pre-split:0 %br_ln41 = br i1 %empty, void %thread-pre-split._crit_edge4, 
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -650,9 +650,9 @@ thread-pre-split._crit_edge:0 %sel_flag_1 = phi i1 1, void, i1 %sel_flag_0, void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -669,10 +669,10 @@ thread-pre-split._crit_edge:1 %sel_new_1 = phi i1 %xor_ln885_2, void, i1 1, void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -690,10 +690,10 @@ thread-pre-split._crit_edge:1 %sel_new_1 = phi i1 %xor_ln885_2, void, i1 1, void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -711,9 +711,9 @@ thread-pre-split._crit_edge:1 %sel_new_1 = phi i1 %xor_ln885_2, void, i1 1, void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -730,9 +730,9 @@ thread-pre-split._crit_edge4:0 %sel_flag_2 = phi i1 1, void, i1 %sel_flag_0, voi
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -749,9 +749,9 @@ thread-pre-split._crit_edge4:1 %sel_new_2 = phi i1 %xor_ln885_2, void, i1 1, voi
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -813,7 +813,7 @@ thread-pre-split._crit_edge4:2 %br_ln51 = br i1 %buff1_cnt_V_load, void %._crit_
 </operation>
 
 <operation id="49" st_id="2" stage="1" lat="2">
-<core>RAM_1P</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="buff1_cnt_V_load" val="0"/>
@@ -1300,7 +1300,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit153._crit_edge:1 %br_l
 </operation>
 
 <operation id="80" st_id="2" stage="2" lat="2">
-<core>RAM_1P</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="buff0_cnt_V_load" val="0"/>
@@ -1359,10 +1359,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit153._crit_edge:1 %br_l
 
 <Node id="113" bw="64" op_0_bw="9">
 <![CDATA[
-:1 %zext_ln56_2 = zext i9 %lshr_ln56_1
+:1 %zext_ln56_1 = zext i9 %lshr_ln56_1
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln56_2"/></StgValue>
+<StgValue><ssdm name="zext_ln56_1"/></StgValue>
 </operation>
 
 <operation id="84" st_id="2" stage="1" lat="1">
@@ -1376,14 +1376,14 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit153._crit_edge:1 %br_l
 
 <Node id="114" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:2 %buff0_ram_V_addr_1 = getelementptr i16 %buff0_ram_V, i64 0, i64 %zext_ln56_2
+:2 %buff0_ram_V_addr_1 = getelementptr i16 %buff0_ram_V, i64 0, i64 %zext_ln56_1
 
 ]]></Node>
 <StgValue><ssdm name="buff0_ram_V_addr_1"/></StgValue>
 </operation>
 
 <operation id="85" st_id="2" stage="1" lat="1">
-<core>RAM_1P</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="empty_20" val="0"/>
@@ -1465,7 +1465,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit153:3 %tmp_4 = phi i8 
 </operation>
 
 <operation id="90" st_id="3" stage="1" lat="2">
-<core>RAM_1P</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="buff0_cnt_V_load" val="0"/>
@@ -1600,10 +1600,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:0 %tmp_5 = phi i8 %tr
 
 <Node id="125" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:3 %select_ln37 = select i1 %empty_20, i8 %tmp_4, i8 %tmp_5
+_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:3 %select_ln45 = select i1 %empty_20, i8 %tmp_4, i8 %tmp_5
 
 ]]></Node>
-<StgValue><ssdm name="select_ln37"/></StgValue>
+<StgValue><ssdm name="select_ln45"/></StgValue>
 </operation>
 
 <operation id="99" st_id="3" stage="1" lat="1">
@@ -1615,10 +1615,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:3 %select_ln37 = sele
 
 <Node id="126" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:4 %select_ln38 = select i1 %empty_20, i8 %tmp_5, i8 %tmp_4
+_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:4 %select_ln46 = select i1 %empty_20, i8 %tmp_5, i8 %tmp_4
 
 ]]></Node>
-<StgValue><ssdm name="select_ln38"/></StgValue>
+<StgValue><ssdm name="select_ln46"/></StgValue>
 </operation>
 
 <operation id="100" st_id="3" stage="1" lat="1">
@@ -1630,7 +1630,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:4 %select_ln38 = sele
 
 <Node id="127" bw="24" op_0_bw="24" op_1_bw="8">
 <![CDATA[
-_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:5 %mrv = insertvalue i24 <undef>, i8 %select_ln37
+_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:5 %mrv = insertvalue i24 <undef>, i8 %select_ln45
 
 ]]></Node>
 <StgValue><ssdm name="mrv"/></StgValue>
@@ -1645,7 +1645,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:5 %mrv = insertvalue 
 
 <Node id="128" bw="24" op_0_bw="24" op_1_bw="8">
 <![CDATA[
-_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:6 %mrv_1 = insertvalue i24 %mrv, i8 %select_ln38
+_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:6 %mrv_1 = insertvalue i24 %mrv, i8 %select_ln46
 
 ]]></Node>
 <StgValue><ssdm name="mrv_1"/></StgValue>
@@ -1675,10 +1675,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:7 %mrv_2 = insertvalu
 
 <Node id="130" bw="0" op_0_bw="24">
 <![CDATA[
-_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24 %mrv_2
+_ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln48 = ret i24 %mrv_2
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln40"/></StgValue>
+<StgValue><ssdm name="ret_ln48"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -1704,7 +1704,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 <core>NULL</core><StgValue><ssdm name="buff1_write_data_V"/></StgValue>
 </port>
 <port id="136" name="buff1_ram_V" dir="2" iftype="1">
-<core>RAM_1P</core><StgValue><ssdm name="buff1_ram_V"/><MemPortTyVec>2 </MemPortTyVec>
+<core>RAM_1P_BRAM</core><StgValue><ssdm name="buff1_ram_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="137" name="buff1_read_data_V" dir="2" iftype="0">
@@ -1717,7 +1717,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 <core>NULL</core><StgValue><ssdm name="buff0_write_data_V"/></StgValue>
 </port>
 <port id="140" name="buff0_ram_V" dir="2" iftype="1">
-<core>RAM_1P</core><StgValue><ssdm name="buff0_ram_V"/><MemPortTyVec>2 </MemPortTyVec>
+<core>RAM_1P_BRAM</core><StgValue><ssdm name="buff0_ram_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="141" name="buff0_read_data_V" dir="2" iftype="0">
@@ -1759,7 +1759,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="163" from="sel" to="sel_load" fromId="133" toId="9">
 </dataflow>
-<dataflow id="164" from="guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel_load" to="br_ln27" fromId="8" toId="10">
+<dataflow id="164" from="guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel_load" to="br_ln35" fromId="8" toId="10">
 </dataflow>
 <dataflow id="166" from="StgValue_165" to="store_ln0" fromId="165" toId="11">
 </dataflow>
@@ -1771,7 +1771,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="169" from="br_ln27" to="empty" fromId="12" toId="13">
+<dataflow id="169" from="br_ln35" to="empty" fromId="12" toId="13">
 </dataflow>
 <dataflow id="170" from="sel_load" to="empty" fromId="9" toId="13">
 <condition id="-1">
@@ -1779,15 +1779,15 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="171" from="br_ln27" to="empty" fromId="10" toId="13">
+<dataflow id="171" from="br_ln35" to="empty" fromId="10" toId="13">
 </dataflow>
-<dataflow id="172" from="c_read" to="icmp_ln30" fromId="4" toId="14">
+<dataflow id="172" from="c_read" to="icmp_ln38" fromId="4" toId="14">
 </dataflow>
-<dataflow id="174" from="StgValue_173" to="icmp_ln30" fromId="173" toId="14">
+<dataflow id="174" from="StgValue_173" to="icmp_ln38" fromId="173" toId="14">
 </dataflow>
 <dataflow id="175" from="buff1_cnt_V" to="buff1_cnt_V_load" fromId="134" toId="15">
 </dataflow>
-<dataflow id="176" from="icmp_ln30" to="br_ln30" fromId="14" toId="16">
+<dataflow id="176" from="icmp_ln38" to="br_ln38" fromId="14" toId="16">
 </dataflow>
 <dataflow id="177" from="empty" to="xor_ln885_2" fromId="13" toId="17">
 </dataflow>
@@ -1881,7 +1881,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="229" from="br_ln27" to="sel_flag_0" fromId="12" toId="37">
+<dataflow id="229" from="br_ln35" to="sel_flag_0" fromId="12" toId="37">
 </dataflow>
 <dataflow id="231" from="StgValue_230" to="sel_flag_0" fromId="230" toId="37">
 <condition id="-1">
@@ -1889,13 +1889,13 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="232" from="br_ln27" to="sel_flag_0" fromId="10" toId="37">
+<dataflow id="232" from="br_ln35" to="sel_flag_0" fromId="10" toId="37">
 </dataflow>
 <dataflow id="233" from="empty" to="br_ln41" fromId="13" toId="38">
 </dataflow>
 <dataflow id="234" from="StgValue_165" to="sel_flag_1" fromId="165" toId="39">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -1904,7 +1904,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="236" from="sel_flag_0" to="sel_flag_1" fromId="37" toId="39">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -1913,7 +1913,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="238" from="xor_ln885_2" to="sel_new_1" fromId="17" toId="40">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -1922,7 +1922,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="240" from="StgValue_165" to="sel_new_1" fromId="165" toId="40">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -1931,7 +1931,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="242" from="StgValue_165" to="sel_flag_2" fromId="165" toId="43">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -1940,7 +1940,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="244" from="sel_flag_0" to="sel_flag_2" fromId="37" toId="43">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -1949,7 +1949,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="246" from="xor_ln885_2" to="sel_new_2" fromId="17" toId="44">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -1958,7 +1958,7 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="248" from="StgValue_165" to="sel_new_2" fromId="165" toId="44">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -1969,10 +1969,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="251" from="sel_flag_2" to="sel_flag_3" fromId="43" toId="46">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -1982,10 +1982,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="253" from="sel_flag_1" to="sel_flag_3" fromId="39" toId="46">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -1995,10 +1995,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="255" from="sel_new_2" to="sel_new_3" fromId="44" toId="47">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -2008,10 +2008,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="257" from="sel_new_1" to="sel_new_3" fromId="40" toId="47">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -2021,10 +2021,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="259" from="StgValue_230" to="empty_19" fromId="230" toId="48">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -2034,10 +2034,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="261" from="StgValue_165" to="empty_19" fromId="165" toId="48">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="0"/>
 </and_exp></or_exp>
@@ -2055,10 +2055,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="267" from="sel_flag_2" to="sel_flag_4" fromId="43" toId="53">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -2068,10 +2068,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="269" from="sel_flag_1" to="sel_flag_4" fromId="39" toId="53">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -2081,10 +2081,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="271" from="sel_new_2" to="sel_new_4" fromId="44" toId="54">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -2094,10 +2094,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="273" from="sel_new_1" to="sel_new_4" fromId="40" toId="54">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -2107,10 +2107,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="275" from="StgValue_230" to="p_ph" fromId="230" toId="55">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -2120,10 +2120,10 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="277" from="StgValue_165" to="p_ph" fromId="165" toId="55">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln30" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln38" val="1"/>
 <literal name="empty" val="0"/>
 <literal name="buff1_cnt_V_load" val="1"/>
-</and_exp><and_exp><literal name="icmp_ln30" val="0"/>
+</and_exp><and_exp><literal name="icmp_ln38" val="0"/>
 <literal name="empty" val="1"/>
 <literal name="buff1_cnt_V_load" val="1"/>
 </and_exp></or_exp>
@@ -2279,13 +2279,13 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="336" from="StgValue_206" to="lshr_ln56_1" fromId="206" toId="82">
 </dataflow>
-<dataflow id="337" from="lshr_ln56_1" to="zext_ln56_2" fromId="82" toId="83">
+<dataflow id="337" from="lshr_ln56_1" to="zext_ln56_1" fromId="82" toId="83">
 </dataflow>
 <dataflow id="338" from="buff0_ram_V" to="buff0_ram_V_addr_1" fromId="140" toId="84">
 </dataflow>
 <dataflow id="339" from="StgValue_210" to="buff0_ram_V_addr_1" fromId="210" toId="84">
 </dataflow>
-<dataflow id="340" from="zext_ln56_2" to="buff0_ram_V_addr_1" fromId="83" toId="84">
+<dataflow id="340" from="zext_ln56_1" to="buff0_ram_V_addr_1" fromId="83" toId="84">
 </dataflow>
 <dataflow id="341" from="buff0_write_data_V_loc_0" to="store_ln56" fromId="75" toId="85">
 </dataflow>
@@ -2349,41 +2349,41 @@ _ZN14singleport_ramILi640ELi8EE4execE7ap_uintILi8EEib.exit:8 %ret_ln40 = ret i24
 </dataflow>
 <dataflow id="363" from="br_ln0" to="tmp_5" fromId="96" toId="97">
 </dataflow>
-<dataflow id="364" from="empty_20" to="select_ln37" fromId="61" toId="98">
+<dataflow id="364" from="empty_20" to="select_ln45" fromId="61" toId="98">
 </dataflow>
-<dataflow id="365" from="tmp_4" to="select_ln37" fromId="89" toId="98">
+<dataflow id="365" from="tmp_4" to="select_ln45" fromId="89" toId="98">
 </dataflow>
-<dataflow id="366" from="tmp_5" to="select_ln37" fromId="97" toId="98">
+<dataflow id="366" from="tmp_5" to="select_ln45" fromId="97" toId="98">
 </dataflow>
-<dataflow id="367" from="empty_20" to="select_ln38" fromId="61" toId="99">
+<dataflow id="367" from="empty_20" to="select_ln46" fromId="61" toId="99">
 </dataflow>
-<dataflow id="368" from="tmp_5" to="select_ln38" fromId="97" toId="99">
+<dataflow id="368" from="tmp_5" to="select_ln46" fromId="97" toId="99">
 </dataflow>
-<dataflow id="369" from="tmp_4" to="select_ln38" fromId="89" toId="99">
+<dataflow id="369" from="tmp_4" to="select_ln46" fromId="89" toId="99">
 </dataflow>
 <dataflow id="371" from="StgValue_370" to="mrv" fromId="370" toId="100">
 </dataflow>
-<dataflow id="372" from="select_ln37" to="mrv" fromId="98" toId="100">
+<dataflow id="372" from="select_ln45" to="mrv" fromId="98" toId="100">
 </dataflow>
 <dataflow id="373" from="mrv" to="mrv_1" fromId="100" toId="101">
 </dataflow>
-<dataflow id="374" from="select_ln38" to="mrv_1" fromId="99" toId="101">
+<dataflow id="374" from="select_ln46" to="mrv_1" fromId="99" toId="101">
 </dataflow>
 <dataflow id="375" from="mrv_1" to="mrv_2" fromId="101" toId="102">
 </dataflow>
 <dataflow id="376" from="din_read" to="mrv_2" fromId="5" toId="102">
 </dataflow>
-<dataflow id="377" from="mrv_2" to="ret_ln40" fromId="102" toId="103">
+<dataflow id="377" from="mrv_2" to="ret_ln48" fromId="102" toId="103">
 </dataflow>
 <dataflow id="378" from="guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel_load" to="StgValue_1" fromId="8" toId="1">
 </dataflow>
-<dataflow id="379" from="icmp_ln30" to="StgValue_1" fromId="14" toId="1">
+<dataflow id="379" from="icmp_ln38" to="StgValue_1" fromId="14" toId="1">
 </dataflow>
 <dataflow id="380" from="empty" to="StgValue_1" fromId="13" toId="1">
 </dataflow>
 <dataflow id="381" from="buff1_cnt_V_load" to="StgValue_1" fromId="15" toId="1">
 </dataflow>
-<dataflow id="382" from="icmp_ln30" to="StgValue_2" fromId="14" toId="2">
+<dataflow id="382" from="icmp_ln38" to="StgValue_2" fromId="14" toId="2">
 </dataflow>
 <dataflow id="383" from="empty" to="StgValue_2" fromId="13" toId="2">
 </dataflow>

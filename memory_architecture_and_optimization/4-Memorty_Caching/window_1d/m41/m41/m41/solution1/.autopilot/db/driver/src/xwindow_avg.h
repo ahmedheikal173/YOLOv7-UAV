@@ -88,10 +88,6 @@ void XWindow_avg_Continue(XWindow_avg *InstancePtr);
 void XWindow_avg_EnableAutoRestart(XWindow_avg *InstancePtr);
 void XWindow_avg_DisableAutoRestart(XWindow_avg *InstancePtr);
 
-void XWindow_avg_Set_din(XWindow_avg *InstancePtr, u64 Data);
-u64 XWindow_avg_Get_din(XWindow_avg *InstancePtr);
-void XWindow_avg_Set_dout(XWindow_avg *InstancePtr, u64 Data);
-u64 XWindow_avg_Get_dout(XWindow_avg *InstancePtr);
 
 void XWindow_avg_InterruptGlobalEnable(XWindow_avg *InstancePtr);
 void XWindow_avg_InterruptGlobalDisable(XWindow_avg *InstancePtr);

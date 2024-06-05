@@ -12,8 +12,21 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'regs_wptr_V' is power-on initialization." projectName="m1" solutionName="solution1" date="2024-06-04T23:10:07.202+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m1" solutionName="solution1" date="2024-06-04T23:10:07.162+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'regs_wptr_V' is power-on initialization." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:19.187+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:19.126+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_BREADY' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.881+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWUSER' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.869+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWREGION' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.851+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWQOS' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.834+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWPROT' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.820+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWCACHE' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.810+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWLOCK' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.790+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWBURST' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.780+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWSIZE' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.760+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWLEN' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.739+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWID' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.730+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWADDR' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.716+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'circular_shift_reg_Pipeline_WRITE/m_axi_gmem_AWVALID' to 0." projectName="m1" solutionName="solution1" date="2024-06-05T08:56:18.699+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
