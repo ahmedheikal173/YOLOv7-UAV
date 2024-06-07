@@ -20,12 +20,14 @@ void interleave(
 
   if (load)
 LOAD:
-    for (int i = 0; i < NUM_WORDS; i += 1)
+    for (int i = 0; i < NUM_WORDS; i += 1){
 #pragma HLS PIPELINE II=1
     	x[i] = x_in[i];
+    }
   else
 WRITE:
-    for (int i = 0; i < NUM_WORDS; i += 3)
+    for (int i = 0; i < NUM_WORDS; i += 3){
 #pragma HLS PIPELINE II=1
     	y[idx++] = x[i] + x[i + 1] + x[i + 2];
+    }
 }

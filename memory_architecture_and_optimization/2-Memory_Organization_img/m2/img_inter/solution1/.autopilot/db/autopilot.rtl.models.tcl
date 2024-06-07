@@ -1,0 +1,18 @@
+set SynModuleInfo {
+  {SRCNAME img_interleave_manual_seq_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3 MODELNAME img_interleave_manual_seq_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3 RTLNAME img_interleave_manual_seq_img_interleave_manual_seq_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3
+    SUBMODULES {
+      {MODELNAME img_interleave_manual_seq_flow_control_loop_pipe_sequential_init RTLNAME img_interleave_manual_seq_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME img_interleave_manual_seq_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME read_seq MODELNAME read_seq RTLNAME img_interleave_manual_seq_read_seq}
+  {SRCNAME img_interleave_manual_seq_Pipeline_LOAD MODELNAME img_interleave_manual_seq_Pipeline_LOAD RTLNAME img_interleave_manual_seq_img_interleave_manual_seq_Pipeline_LOAD}
+  {SRCNAME img_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3 MODELNAME img_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3 RTLNAME img_interleave_manual_seq_img_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3}
+  {SRCNAME img_interleave_manual_seq MODELNAME img_interleave_manual_seq RTLNAME img_interleave_manual_seq IS_TOP 1
+    SUBMODULES {
+      {MODELNAME img_interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W RTLNAME img_interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME img_interleave_manual_seq_tmpy_V_RAM_AUTO_1R1W RTLNAME img_interleave_manual_seq_tmpy_V_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME img_interleave_manual_seq_tmpx_V_RAM_T2P_BRAM_1R1W RTLNAME img_interleave_manual_seq_tmpx_V_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME img_interleave_manual_seq_control_s_axi RTLNAME img_interleave_manual_seq_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

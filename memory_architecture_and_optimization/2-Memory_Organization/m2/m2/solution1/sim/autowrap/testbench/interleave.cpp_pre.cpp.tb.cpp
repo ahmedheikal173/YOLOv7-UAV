@@ -1,7 +1,3 @@
-// ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-// ==============================================================
 # 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
@@ -11,7 +7,7 @@
 
 
 
-
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 1
 # 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
 # 55 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2021.2/include/ap_common.h" 1
@@ -55134,13 +55130,32 @@ inline bool operator!=(
 }
 # 412 "C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed.h" 2
 # 395 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 2
-# 7 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
+# 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 2
+
+
+
+
+
+
+typedef ap_int<8> mtype[640][640][3];
+typedef ap_int<8> mtypeI[640][640/3][3];
+# 24 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp"
+void frommatrix(mtype mm_in, ap_int<8> mm_out[1228800]);
+void tomatrix(ap_int<8> m_in[1228800],mtype m_out);
+
+
+void frommatrixI(mtypeI mmI_in, ap_int<8> mmI_out[1228800/3]);
+void tomatrixI(ap_int<8> mI_in[1228800/3],mtypeI mI_out);
+# 6 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
+
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
+# 8 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
 
 void interleave(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                 bool load);
-void interleave_manual_rnd(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void interleave_manual_rnd(mtype x_in, mtypeI y,
                        bool load);
-void interleave_manual_seq(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void interleave_manual_seq(mtype x_in, mtypeI y,
                        bool load);
 # 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.cpp" 2
 
@@ -55164,12 +55179,14 @@ void interleave(
 
   if (load)
 LOAD:
-    for (int i = 0; i < 1228800; i += 1)
+    for (int i = 0; i < 1228800; i += 1){
 #pragma HLS PIPELINE II=1
      x[i] = x_in[i];
+    }
   else
 WRITE:
-    for (int i = 0; i < 1228800; i += 3)
+    for (int i = 0; i < 1228800; i += 3){
 #pragma HLS PIPELINE II=1
      y[idx++] = x[i] + x[i + 1] + x[i + 2];
+    }
 }

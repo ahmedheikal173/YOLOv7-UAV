@@ -12,18 +12,18 @@ set isEnableWaveformDebug 1
 set C_modelName {interleave_manual_rnd_Pipeline_LOAD}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ x_in int 8 regular {bram 1228800 { 1 3 } 1 1 }  }
+	{ tmpx_V int 8 regular {array 1228800 { 1 3 } 1 1 }  }
 	{ x_x0_V int 8 regular {array 409600 { 0 3 } 0 1 } {global 1}  }
 	{ x_x1_V int 8 regular {array 409600 { 0 3 } 0 1 } {global 1}  }
 	{ x_x2_V int 8 regular {array 409600 { 0 3 } 0 1 } {global 1}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "x_in", "interface" : "bram", "bitwidth" : 8, "direction" : "READONLY"} , 
+	{ "Name" : "tmpx_V", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "x_x0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY", "extern" : 0} , 
  	{ "Name" : "x_x1_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY", "extern" : 0} , 
  	{ "Name" : "x_x2_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY", "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 23
+set portNum 21
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -31,11 +31,9 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ x_in_Addr_A sc_out sc_lv 32 signal 0 } 
-	{ x_in_EN_A sc_out sc_logic 1 signal 0 } 
-	{ x_in_WEN_A sc_out sc_lv 1 signal 0 } 
-	{ x_in_Din_A sc_out sc_lv 8 signal 0 } 
-	{ x_in_Dout_A sc_in sc_lv 8 signal 0 } 
+	{ tmpx_V_address0 sc_out sc_lv 21 signal 0 } 
+	{ tmpx_V_ce0 sc_out sc_logic 1 signal 0 } 
+	{ tmpx_V_q0 sc_in sc_lv 8 signal 0 } 
 	{ x_x0_V_address0 sc_out sc_lv 19 signal 1 } 
 	{ x_x0_V_ce0 sc_out sc_logic 1 signal 1 } 
 	{ x_x0_V_we0 sc_out sc_logic 1 signal 1 } 
@@ -56,11 +54,9 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "x_in_Addr_A", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x_in", "role": "Addr_A" }} , 
- 	{ "name": "x_in_EN_A", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x_in", "role": "EN_A" }} , 
- 	{ "name": "x_in_WEN_A", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "x_in", "role": "WEN_A" }} , 
- 	{ "name": "x_in_Din_A", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "x_in", "role": "Din_A" }} , 
- 	{ "name": "x_in_Dout_A", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "x_in", "role": "Dout_A" }} , 
+ 	{ "name": "tmpx_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":21, "type": "signal", "bundle":{"name": "tmpx_V", "role": "address0" }} , 
+ 	{ "name": "tmpx_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tmpx_V", "role": "ce0" }} , 
+ 	{ "name": "tmpx_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "tmpx_V", "role": "q0" }} , 
  	{ "name": "x_x0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":19, "type": "signal", "bundle":{"name": "x_x0_V", "role": "address0" }} , 
  	{ "name": "x_x0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x_x0_V", "role": "ce0" }} , 
  	{ "name": "x_x0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x_x0_V", "role": "we0" }} , 
@@ -90,7 +86,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "x_in", "Type" : "Bram", "Direction" : "I"},
+			{"Name" : "tmpx_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "x_x0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "x_x1_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "x_x2_V", "Type" : "Memory", "Direction" : "O"}],
@@ -102,7 +98,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	interleave_manual_rnd_Pipeline_LOAD {
-		x_in {Type I LastRead 1 FirstWrite -1}
+		tmpx_V {Type I LastRead 1 FirstWrite -1}
 		x_x0_V {Type O LastRead -1 FirstWrite 2}
 		x_x1_V {Type O LastRead -1 FirstWrite 2}
 		x_x2_V {Type O LastRead -1 FirstWrite 2}}}
@@ -119,7 +115,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	x_in { bram {  { x_in_Addr_A MemPortADDR2 1 32 }  { x_in_EN_A MemPortCE2 1 1 }  { x_in_WEN_A MemPortWE2 1 1 }  { x_in_Din_A MemPortDIN2 1 8 }  { x_in_Dout_A in_data 0 8 } } }
+	tmpx_V { ap_memory {  { tmpx_V_address0 mem_address 1 21 }  { tmpx_V_ce0 mem_ce 1 1 }  { tmpx_V_q0 in_data 0 8 } } }
 	x_x0_V { ap_memory {  { x_x0_V_address0 mem_address 1 19 }  { x_x0_V_ce0 mem_ce 1 1 }  { x_x0_V_we0 mem_we 1 1 }  { x_x0_V_d0 mem_din 1 8 } } }
 	x_x1_V { ap_memory {  { x_x1_V_address0 mem_address 1 19 }  { x_x1_V_ce0 mem_ce 1 1 }  { x_x1_V_we0 mem_we 1 1 }  { x_x1_V_d0 mem_din 1 8 } } }
 	x_x2_V { ap_memory {  { x_x2_V_address0 mem_address 1 19 }  { x_x2_V_ce0 mem_ce 1 1 }  { x_x2_V_we0 mem_we 1 1 }  { x_x2_V_d0 mem_din 1 8 } } }

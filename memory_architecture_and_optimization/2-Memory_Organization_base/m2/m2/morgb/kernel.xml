@@ -1,0 +1,12 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel name="interleave_manual_seq" language="c" vlnv="xilinx.com:hls:interleave_manual_seq:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="" hwControlProtocol="ap_ctrl_chain">
+    <ports>
+      <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x18" dataWidth="32"/>
+    </ports>
+    <args>
+    <arg id="2" name="load" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x10" size="0x4" type="unsigned int"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

@@ -1,0 +1,23 @@
+set SynModuleInfo {
+  {SRCNAME flt_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_46_2_VITIS_LOOP_48_3 MODELNAME flt_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_46_2_VITIS_LOOP_48_3 RTLNAME flt_interleave_manual_seq_flt_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_46_2_VITIS_LOOP_48_3
+    SUBMODULES {
+      {MODELNAME flt_interleave_manual_seq_ama_addmuladd_8s_4ns_6ns_6ns_12_4_1 RTLNAME flt_interleave_manual_seq_ama_addmuladd_8s_4ns_6ns_6ns_12_4_1 BINDTYPE op TYPE add IMPL dsp LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME flt_interleave_manual_seq_flow_control_loop_pipe_sequential_init RTLNAME flt_interleave_manual_seq_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME flt_interleave_manual_seq_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME flt_interleave_manual_seq_Pipeline_WRITE MODELNAME flt_interleave_manual_seq_Pipeline_WRITE RTLNAME flt_interleave_manual_seq_flt_interleave_manual_seq_Pipeline_WRITE}
+  {SRCNAME flt_interleave_manual_seq_Pipeline_LOAD MODELNAME flt_interleave_manual_seq_Pipeline_LOAD RTLNAME flt_interleave_manual_seq_flt_interleave_manual_seq_Pipeline_LOAD}
+  {SRCNAME flt_interleave_manual_seq_Pipeline_VITIS_LOOP_63_1_VITIS_LOOP_65_2 MODELNAME flt_interleave_manual_seq_Pipeline_VITIS_LOOP_63_1_VITIS_LOOP_65_2 RTLNAME flt_interleave_manual_seq_flt_interleave_manual_seq_Pipeline_VITIS_LOOP_63_1_VITIS_LOOP_65_2
+    SUBMODULES {
+      {MODELNAME flt_interleave_manual_seq_mac_muladd_4ns_6ns_6ns_9_4_1 RTLNAME flt_interleave_manual_seq_mac_muladd_4ns_6ns_6ns_9_4_1 BINDTYPE op TYPE add IMPL dsp LATENCY 3 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME flt_interleave_manual_seq MODELNAME flt_interleave_manual_seq RTLNAME flt_interleave_manual_seq IS_TOP 1
+    SUBMODULES {
+      {MODELNAME flt_interleave_manual_seq_x_x0_V_RAM_AUTO_1R1W RTLNAME flt_interleave_manual_seq_x_x0_V_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME flt_interleave_manual_seq_tmpy_V_RAM_AUTO_1R1W RTLNAME flt_interleave_manual_seq_tmpy_V_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME flt_interleave_manual_seq_tmpx_V_RAM_T2P_BRAM_1R1W RTLNAME flt_interleave_manual_seq_tmpx_V_RAM_T2P_BRAM_1R1W BINDTYPE storage TYPE ram_t2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME flt_interleave_manual_seq_control_s_axi RTLNAME flt_interleave_manual_seq_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

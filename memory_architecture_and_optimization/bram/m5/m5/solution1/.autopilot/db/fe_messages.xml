@@ -1,0 +1,90 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./BRAM_img.hpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bram_img" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mems type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./BRAM_flt.hpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bram_flt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mems type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tomatrixI" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=m_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tomatrixI" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=m_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tomatrixI" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="frommatrixI" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=mm_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="frommatrixI" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=mm_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="frommatrixI" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tomatrixF" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=mI_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tomatrixF" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=mI_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="tomatrixF" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="frommatrixF" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=mmI_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="frommatrixF" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=mmI_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/tomatrix.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="frommatrixF" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./BRAM_img.hpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bram_img" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mems type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./BRAM_flt.hpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bram_flt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mems type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=inn type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=outt type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/BRAM_img.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="BRAM_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

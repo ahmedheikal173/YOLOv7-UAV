@@ -187,10 +187,10 @@ static AESL_FILE_HANDLER aesl_fh;
     string AESL_num;
 #ifdef USE_BINARY_TV_FILE
 {
-transaction<8> tr(409600);
+transaction<8> tr(408960);
 aesl_fh.read(AUTOTB_TVOUT_PC_y, tr.p, tr.tbytes);
 tr.reorder();
-tr.send<1>((char*)__xlx_apatb_param_y, 409600);
+tr.send<1>((char*)__xlx_apatb_param_y, 408960);
 }
 #else
 {
@@ -212,7 +212,7 @@ tr.send<1>((char*)__xlx_apatb_param_y, 409600);
           exit(1);
         }
         if (atoi(AESL_num.c_str()) == AESL_transaction_pc) {
-          std::vector<sc_bv<8> > y_pc_buffer(409600);
+          std::vector<sc_bv<8> > y_pc_buffer(408960);
           int i = 0;
           bool has_unknown_value = false;
           rtl_tv_out_file >> AESL_token; //data
@@ -238,7 +238,7 @@ tr.send<1>((char*)__xlx_apatb_param_y, 409600);
   
           if (i > 0) {{
             int i = 0;
-            for (int j = 0, e = 409600; j < e; j += 1, ++i) {((char*)__xlx_apatb_param_y)[j*1+0] = y_pc_buffer[i].range(7, 0).to_int64();
+            for (int j = 0, e = 408960; j < e; j += 1, ++i) {((char*)__xlx_apatb_param_y)[j*1+0] = y_pc_buffer[i].range(7, 0).to_int64();
 }}}
         } // end transaction
       } // end file is good
@@ -290,16 +290,16 @@ unsigned __xlx_offset_byte_param_y = 0;
 #ifdef USE_BINARY_TV_FILE
 {
 aesl_fh.touch(AUTOTB_TVIN_y, 'b');
-transaction<8> tr(409600);
+transaction<8> tr(408960);
   __xlx_offset_byte_param_y = 0*1;
   if (__xlx_apatb_param_y) {
-tr.import<1>((char*)__xlx_apatb_param_y, 409600, 0);
+tr.import<1>((char*)__xlx_apatb_param_y, 408960, 0);
   }
 tr.reorder();
 aesl_fh.write(AUTOTB_TVIN_y, tr.p, tr.tbytes);
 }
 
-  tcl_file.set_num(409600, &tcl_file.y_depth);
+  tcl_file.set_num(408960, &tcl_file.y_depth);
 #else
 // print y Transactions
 {
@@ -307,14 +307,14 @@ aesl_fh.write(AUTOTB_TVIN_y, begin_str(AESL_transaction));
 {
   __xlx_offset_byte_param_y = 0*1;
   if (__xlx_apatb_param_y) {
-    for (int j = 0  - 0, e = 409600 - 0; j != e; ++j) {
+    for (int j = 0  - 0, e = 408960 - 0; j != e; ++j) {
 sc_bv<8> __xlx_tmp_lv = ((char*)__xlx_apatb_param_y)[j];
 aesl_fh.write(AUTOTB_TVIN_y, __xlx_tmp_lv.to_string(SC_HEX)+string("\n"));
     }
   }
 }
 
-  tcl_file.set_num(409600, &tcl_file.y_depth);
+  tcl_file.set_num(408960, &tcl_file.y_depth);
 aesl_fh.write(AUTOTB_TVIN_y, end_str());
 }
 
@@ -336,16 +336,16 @@ CodeState = DUMP_OUTPUTS;
 #ifdef USE_BINARY_TV_FILE
 {
 aesl_fh.touch(AUTOTB_TVOUT_y, 'b');
-transaction<8> tr(409600);
+transaction<8> tr(408960);
   __xlx_offset_byte_param_y = 0*1;
   if (__xlx_apatb_param_y) {
-tr.import<1>((char*)__xlx_apatb_param_y, 409600, 0);
+tr.import<1>((char*)__xlx_apatb_param_y, 408960, 0);
   }
 tr.reorder();
 aesl_fh.write(AUTOTB_TVOUT_y, tr.p, tr.tbytes);
 }
 
-  tcl_file.set_num(409600, &tcl_file.y_depth);
+  tcl_file.set_num(408960, &tcl_file.y_depth);
 #else
 // print y Transactions
 {
@@ -353,14 +353,14 @@ aesl_fh.write(AUTOTB_TVOUT_y, begin_str(AESL_transaction));
 {
   __xlx_offset_byte_param_y = 0*1;
   if (__xlx_apatb_param_y) {
-    for (int j = 0  - 0, e = 409600 - 0; j != e; ++j) {
+    for (int j = 0  - 0, e = 408960 - 0; j != e; ++j) {
 sc_bv<8> __xlx_tmp_lv = ((char*)__xlx_apatb_param_y)[j];
 aesl_fh.write(AUTOTB_TVOUT_y, __xlx_tmp_lv.to_string(SC_HEX)+string("\n"));
     }
   }
 }
 
-  tcl_file.set_num(409600, &tcl_file.y_depth);
+  tcl_file.set_num(408960, &tcl_file.y_depth);
 aesl_fh.write(AUTOTB_TVOUT_y, end_str());
 }
 

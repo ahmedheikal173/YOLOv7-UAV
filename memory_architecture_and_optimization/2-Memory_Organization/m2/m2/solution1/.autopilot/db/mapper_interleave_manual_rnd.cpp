@@ -48,10 +48,10 @@ extern "C" void apatb_interleave_manual_rnd_hw(volatile void * __xlx_apatb_param
   }
   // Collect __xlx_y__tmp_vec
   vector<sc_bv<8> >__xlx_y__tmp_vec;
-  for (int j = 0, e = 409600; j != e; ++j) {
+  for (int j = 0, e = 408960; j != e; ++j) {
     __xlx_y__tmp_vec.push_back(((char*)__xlx_apatb_param_y)[j]);
   }
-  int __xlx_size_param_y = 409600;
+  int __xlx_size_param_y = 408960;
   int __xlx_offset_param_y = 0;
   int __xlx_offset_byte_param_y = 0*1;
   char* __xlx_y__input_buffer= new char[__xlx_y__tmp_vec.size()];

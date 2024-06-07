@@ -1,0 +1,25 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="flt_interleave_manual_seq" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="flt_interleave_manual_seq"/>
+            </pragma>
+        </directive>
+        <directive functionName="flt_interleave_manual_seq" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="flt_interleave_manual_seq"/>
+            </pragma>
+        </directive>
+        <directive functionName="flt_interleave_manual_seq" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="flt_interleave_manual_seq"/>
+            </pragma>
+        </directive>
+        <directive functionName="flt_interleave_manual_seq" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="flt_interleave_manual_seq"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -5,7 +5,10 @@
       <synLog/>
       <simLog/>
       <mgLog/>
-      <packageLog/>
+      <packageLog>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP." projectName="m1" solutionName="solution1" date="2024-06-06T16:45:47.881+0200"/>
+        <logs message="ERROR: '2406061745' is an invalid argument. Please specify an integer value.&#xD;&#xD;&#xA;    while executing&#xD;&#xD;&#xA;&quot;rdi::set_property core_revision 2406061745 {component component_1}&quot;&#xD;&#xD;&#xA;    invoked from within&#xD;&#xD;&#xA;&quot;set_property core_revision $Revision $core&quot;&#xD;&#xD;&#xA;    (file &quot;run_ippack.tcl&quot; line 1086)&#xD;" projectName="m1" solutionName="solution1" date="2024-06-06T16:45:47.860+0200"/>
+      </packageLog>
       <csimLog/>
     </logs>
   </errorLogs>

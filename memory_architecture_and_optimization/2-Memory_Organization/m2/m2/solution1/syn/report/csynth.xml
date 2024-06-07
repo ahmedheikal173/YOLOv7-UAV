@@ -15,27 +15,27 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>3.621</EstimatedClockPeriod>
+            <EstimatedClockPeriod>5.599</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>409603</Best-caseLatency>
-            <Average-caseLatency>819203</Average-caseLatency>
-            <Worst-caseLatency>1228803</Worst-caseLatency>
-            <Best-caseRealTimeLatency>4.096 ms</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>8.192 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>12.288 ms</Worst-caseRealTimeLatency>
-            <Interval-min>409604</Interval-min>
-            <Interval-max>1228804</Interval-max>
+            <Best-caseLatency>2047372</Best-caseLatency>
+            <Average-caseLatency>2456972</Average-caseLatency>
+            <Worst-caseLatency>2866572</Worst-caseLatency>
+            <Best-caseRealTimeLatency>20.474 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>24.570 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>28.666 ms</Worst-caseRealTimeLatency>
+            <Interval-min>2047373</Interval-min>
+            <Interval-max>2866573</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>600</BRAM_18K>
-            <FF>294</FF>
-            <LUT>661</LUT>
+            <BRAM_18K>1400</BRAM_18K>
+            <DSP>1</DSP>
+            <FF>637</FF>
+            <LUT>1856</LUT>
             <URAM>0</URAM>
-            <DSP>0</DSP>
         </Resources>
         <AvailableResources>
             <BRAM_18K>4032</BRAM_18K>
@@ -451,24 +451,106 @@
             <ModuleName>interleave_manual_rnd</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_interleave_manual_rnd_Pipeline_WRITE_fu_62</InstName>
-                    <ModuleName>interleave_manual_rnd_Pipeline_WRITE</ModuleName>
+                    <InstName>grp_interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3_fu_76</InstName>
+                    <ModuleName>interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>62</ID>
-                    <BindInstances>indvars_iv_next_fu_128_p2 add_ln70_fu_161_p2 y_Din_A add_ln31_fu_141_p2</BindInstances>
+                    <ID>76</ID>
+                    <BindInstances>add_ln32_2_fu_188_p2 add_ln32_fu_206_p2 add_ln32_1_fu_411_p2 add_ln33_fu_256_p2 add_ln33_1_fu_438_p2 add_ln35_fu_308_p2 add_ln35_1_fu_318_p2 sub_ln35_fu_340_p2 add_ln35_2_fu_346_p2 add_ln36_fu_463_p2 add_ln34_fu_357_p2 add_ln33_2_fu_363_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_interleave_manual_rnd_Pipeline_LOAD_fu_74</InstName>
+                    <InstName>grp_interleave_manual_rnd_Pipeline_WRITE_fu_84</InstName>
+                    <ModuleName>interleave_manual_rnd_Pipeline_WRITE</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>84</ID>
+                    <BindInstances>indvars_iv_next_fu_122_p2 add_ln70_fu_155_p2 temp_V_d0 add_ln40_fu_135_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_interleave_manual_rnd_Pipeline_LOAD_fu_95</InstName>
                     <ModuleName>interleave_manual_rnd_Pipeline_LOAD</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>74</ID>
-                    <BindInstances>i_fu_171_p2 add_ln13_fu_231_p2 add_ln13_1_fu_237_p2 add_ln13_2_fu_243_p2 add_ln24_1_fu_192_p2</BindInstances>
+                    <ID>95</ID>
+                    <BindInstances>i_fu_165_p2 add_ln13_fu_225_p2 add_ln13_1_fu_231_p2 add_ln13_2_fu_237_p2 add_ln32_3_fu_186_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_interleave_manual_rnd_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3_fu_106</InstName>
+                    <ModuleName>interleave_manual_rnd_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>106</ID>
+                    <BindInstances>add_ln44_2_fu_178_p2 add_ln44_fu_385_p2 add_ln44_1_fu_306_p2 add_ln45_fu_225_p2 add_ln45_1_fu_333_p2 mac_muladd_10ns_8ns_8ns_18_4_1_U10 mac_muladd_10ns_8ns_8ns_18_4_1_U10 sub_ln47_fu_416_p2 add_ln47_1_fu_422_p2 add_ln48_fu_361_p2 add_ln46_fu_257_p2 add_ln45_2_fu_263_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>x_x0_V_U x_x1_V_U x_x2_V_U</BindInstances>
+            <BindInstances>temp_V_U tmpx_V_U x_x0_V_U x_x1_V_U x_x2_V_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
+        <Module>
+            <Name>interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3</Name>
+            <Loops>
+                <VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.599</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1228802</Best-caseLatency>
+                    <Average-caseLatency>1228802</Average-caseLatency>
+                    <Worst-caseLatency>1228802</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>12.288 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>12.288 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>12.288 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1228802</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3>
+                        <Name>VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3</Name>
+                        <TripCount>1228800</TripCount>
+                        <Latency>1228800</Latency>
+                        <AbsoluteTimeLatency>12.288 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>132</FF>
+                    <AVAIL_FF>2592000</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>570</LUT>
+                    <AVAIL_LUT>1296000</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_2_fu_188_p2" SOURCE="../src/tomatrix.cpp:32" URAM="0" VARIABLE="add_ln32_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_206_p2" SOURCE="../src/tomatrix.cpp:32" URAM="0" VARIABLE="add_ln32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_1_fu_411_p2" SOURCE="../src/tomatrix.cpp:32" URAM="0" VARIABLE="add_ln32_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_256_p2" SOURCE="../src/tomatrix.cpp:33" URAM="0" VARIABLE="add_ln33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_1_fu_438_p2" SOURCE="../src/tomatrix.cpp:33" URAM="0" VARIABLE="add_ln33_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_fu_308_p2" SOURCE="../src/tomatrix.cpp:35" URAM="0" VARIABLE="add_ln35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_1_fu_318_p2" SOURCE="../src/tomatrix.cpp:35" URAM="0" VARIABLE="add_ln35_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="sub_ln35_fu_340_p2" SOURCE="../src/tomatrix.cpp:35" URAM="0" VARIABLE="sub_ln35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_2_fu_346_p2" SOURCE="../src/tomatrix.cpp:35" URAM="0" VARIABLE="add_ln35_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln36_fu_463_p2" SOURCE="../src/tomatrix.cpp:36" URAM="0" VARIABLE="add_ln36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln34_fu_357_p2" SOURCE="../src/tomatrix.cpp:34" URAM="0" VARIABLE="add_ln34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_2_fu_363_p2" SOURCE="../src/tomatrix.cpp:33" URAM="0" VARIABLE="add_ln33_2"/>
+            </BindNodes>
+        </Module>
         <Module>
             <Name>interleave_manual_rnd_Pipeline_WRITE</Name>
             <Loops>
@@ -523,10 +605,10 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="indvars_iv_next_fu_128_p2" SOURCE="" URAM="0" VARIABLE="indvars_iv_next"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_161_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="y_Din_A" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln31_fu_141_p2" SOURCE="../src/interleave_manual_rnd.cpp:31" URAM="0" VARIABLE="add_ln31"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="indvars_iv_next_fu_122_p2" SOURCE="" URAM="0" VARIABLE="indvars_iv_next"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_155_p2" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="temp_V_d0" SOURCE="../src/../include/ap_int.h:70" URAM="0" VARIABLE="add_ln70_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WRITE" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_fu_135_p2" SOURCE="../src/interleave_manual_rnd.cpp:40" URAM="0" VARIABLE="add_ln40"/>
             </BindNodes>
         </Module>
         <Module>
@@ -583,11 +665,79 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_171_p2" SOURCE="../src/interleave_manual_rnd.cpp:24" URAM="0" VARIABLE="i"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_231_p2" SOURCE="../src/./write_mem_rnd.hpp:13" URAM="0" VARIABLE="add_ln13"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_1_fu_237_p2" SOURCE="../src/./write_mem_rnd.hpp:13" URAM="0" VARIABLE="add_ln13_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_2_fu_243_p2" SOURCE="../src/./write_mem_rnd.hpp:13" URAM="0" VARIABLE="add_ln13_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln24_1_fu_192_p2" SOURCE="../src/interleave_manual_rnd.cpp:24" URAM="0" VARIABLE="add_ln24_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_165_p2" SOURCE="../src/interleave_manual_rnd.cpp:32" URAM="0" VARIABLE="i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_225_p2" SOURCE="../src/./write_mem_rnd.hpp:13" URAM="0" VARIABLE="add_ln13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_1_fu_231_p2" SOURCE="../src/./write_mem_rnd.hpp:13" URAM="0" VARIABLE="add_ln13_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_2_fu_237_p2" SOURCE="../src/./write_mem_rnd.hpp:13" URAM="0" VARIABLE="add_ln13_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="LOAD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_3_fu_186_p2" SOURCE="../src/interleave_manual_rnd.cpp:32" URAM="0" VARIABLE="add_ln32_3"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>interleave_manual_rnd_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3</Name>
+            <Loops>
+                <VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.618</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>408964</Best-caseLatency>
+                    <Average-caseLatency>408964</Average-caseLatency>
+                    <Worst-caseLatency>408964</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>4.090 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>4.090 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>4.090 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>408964</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3>
+                        <Name>VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3</Name>
+                        <TripCount>408960</TripCount>
+                        <Latency>408962</Latency>
+                        <AbsoluteTimeLatency>4.090 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>205</FF>
+                    <AVAIL_FF>2592000</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>528</LUT>
+                    <AVAIL_LUT>1296000</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_2_fu_178_p2" SOURCE="../src/tomatrix.cpp:44" URAM="0" VARIABLE="add_ln44_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_fu_385_p2" SOURCE="../src/tomatrix.cpp:44" URAM="0" VARIABLE="add_ln44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln44_1_fu_306_p2" SOURCE="../src/tomatrix.cpp:44" URAM="0" VARIABLE="add_ln44_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_225_p2" SOURCE="../src/tomatrix.cpp:45" URAM="0" VARIABLE="add_ln45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_1_fu_333_p2" SOURCE="../src/tomatrix.cpp:45" URAM="0" VARIABLE="add_ln45_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_10ns_8ns_8ns_18_4_1_U10" SOURCE="../src/tomatrix.cpp:47" URAM="0" VARIABLE="mul_ln47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_10ns_8ns_8ns_18_4_1_U10" SOURCE="../src/tomatrix.cpp:47" URAM="0" VARIABLE="add_ln47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="sub_ln47_fu_416_p2" SOURCE="../src/tomatrix.cpp:47" URAM="0" VARIABLE="sub_ln47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="tadder" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_1_fu_422_p2" SOURCE="../src/tomatrix.cpp:47" URAM="0" VARIABLE="add_ln47_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln48_fu_361_p2" SOURCE="../src/tomatrix.cpp:48" URAM="0" VARIABLE="add_ln48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_fu_257_p2" SOURCE="../src/tomatrix.cpp:46" URAM="0" VARIABLE="add_ln46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_2_fu_263_p2" SOURCE="../src/tomatrix.cpp:45" URAM="0" VARIABLE="add_ln45_2"/>
             </BindNodes>
         </Module>
         <Module>
@@ -596,42 +746,44 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>3.621</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>5.599</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>409603</Best-caseLatency>
-                    <Average-caseLatency>819203</Average-caseLatency>
-                    <Worst-caseLatency>1228803</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>4.096 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>8.192 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>12.288 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>409604 ~ 1228804</PipelineInitiationInterval>
+                    <Best-caseLatency>2047372</Best-caseLatency>
+                    <Average-caseLatency>2456972</Average-caseLatency>
+                    <Worst-caseLatency>2866572</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>20.474 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>24.570 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>28.666 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2047373 ~ 2866573</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>600</BRAM_18K>
+                    <BRAM_18K>1400</BRAM_18K>
                     <AVAIL_BRAM>4032</AVAIL_BRAM>
-                    <UTIL_BRAM>14</UTIL_BRAM>
-                    <FF>294</FF>
+                    <UTIL_BRAM>34</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>637</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>661</LUT>
+                    <LUT>1856</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>960</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
-                    <DSP>0</DSP>
-                    <AVAIL_DSP>9216</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x0_V_U" SOURCE="../src/interleave_manual_rnd.cpp:17" URAM="0" VARIABLE="x_x0_V"/>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x1_V_U" SOURCE="../src/interleave_manual_rnd.cpp:17" URAM="0" VARIABLE="x_x1_V"/>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x2_V_U" SOURCE="../src/interleave_manual_rnd.cpp:17" URAM="0" VARIABLE="x_x2_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_V_U" SOURCE="../src/interleave_manual_rnd.cpp:20" URAM="0" VARIABLE="temp_V"/>
+                <BindNode BINDTYPE="storage" BRAM="600" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="yes" RTLNAME="tmpx_V_U" SOURCE="../src/interleave_manual_rnd.cpp:21" URAM="0" VARIABLE="tmpx_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x0_V_U" SOURCE="../src/interleave_manual_rnd.cpp:25" URAM="0" VARIABLE="x_x0_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x1_V_U" SOURCE="../src/interleave_manual_rnd.cpp:25" URAM="0" VARIABLE="x_x1_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x2_V_U" SOURCE="../src/interleave_manual_rnd.cpp:25" URAM="0" VARIABLE="x_x2_V"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -890,17 +1042,17 @@
         <Pragma type="bind_storage" location="../src/interleave.cpp:16" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
         <Pragma type="array_partition" location="../src/interleave.cpp:17" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x cyclic factor=3 dim=1"/>
         <Pragma type="pipeline" location="../src/interleave.cpp:24" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/interleave.cpp:29" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="interface" location="../src/interleave_manual_rnd.cpp:12" status="valid" parentFunction="interleave_manual_rnd" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
-        <Pragma type="interface" location="../src/interleave_manual_rnd.cpp:15" status="valid" parentFunction="interleave_manual_rnd" variable="y" isDirective="0" options="mode=BRAM port=y"/>
-        <Pragma type="bind_storage" location="../src/interleave_manual_rnd.cpp:19" status="valid" parentFunction="interleave_manual_rnd" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
-        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:25" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:30" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="interface" location="../src/interleave_manual_seq.cpp:8" status="valid" parentFunction="interleave_manual_seq" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
-        <Pragma type="interface" location="../src/interleave_manual_seq.cpp:11" status="valid" parentFunction="interleave_manual_seq" variable="y" isDirective="0" options="mode=BRAM port=y"/>
-        <Pragma type="bind_storage" location="../src/interleave_manual_seq.cpp:15" status="valid" parentFunction="interleave_manual_seq" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
-        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:21" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:26" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/interleave.cpp:30" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="interface" location="../src/interleave_manual_rnd.cpp:13" status="valid" parentFunction="interleave_manual_rnd" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
+        <Pragma type="interface" location="../src/interleave_manual_rnd.cpp:16" status="valid" parentFunction="interleave_manual_rnd" variable="y" isDirective="0" options="mode=BRAM port=y"/>
+        <Pragma type="bind_storage" location="../src/interleave_manual_rnd.cpp:27" status="valid" parentFunction="interleave_manual_rnd" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:33" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_rnd.cpp:39" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="interface" location="../src/interleave_manual_seq.cpp:10" status="valid" parentFunction="interleave_manual_seq" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
+        <Pragma type="interface" location="../src/interleave_manual_seq.cpp:13" status="valid" parentFunction="interleave_manual_seq" variable="y" isDirective="0" options="mode=BRAM port=y"/>
+        <Pragma type="bind_storage" location="../src/interleave_manual_seq.cpp:21" status="valid" parentFunction="interleave_manual_seq" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:27" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/interleave_manual_seq.cpp:34" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

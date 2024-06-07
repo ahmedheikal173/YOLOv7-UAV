@@ -1,6 +1,7 @@
 #include <cstdio>
 #include "../src/interleave.h"
 #include "../include/ap_int.h"
+#include "../src/tomatrix.hpp"
 
 #define AUTO 0
 #define RND 1
@@ -14,13 +15,17 @@ int main(int argc, char **argv){
 
 	// Generate Input
 	for (int i=0; i<NUM_WORDS; i++)
-		in[i] = i;
+		in[i] = rand();
 
 	// Generate sw_out
 	for (int i=0; i<NUM_WORDS/3; i++)
 		sw_out[i] = in[i*3] +
 					in[i*3 + 1] +
 					in[i*3 + 2] ;
+
+	mtype hw_in;
+	tomatrix(in,hw_in);	
+	mtypeI hw_out_tmp;			
 
 	// Execution
 #if AUTO
@@ -29,13 +34,17 @@ int main(int argc, char **argv){
 #endif
 
 #if RND
-	interleave_manual_rnd(in, hw_out, true);
-	interleave_manual_rnd(in, hw_out, false);
+	interleave_manual_rnd(hw_in, hw_out_tmp, true);
+		//frommatrixI(hw_out_tmp,hw_out);
+	interleave_manual_rnd(hw_in, hw_out_tmp, false);
+		frommatrixI(hw_out_tmp,hw_out);
 #endif
 
 #if SEQ
-	interleave_manual_seq(in, hw_out, true);
-	interleave_manual_seq(in, hw_out, false);
+	interleave_manual_seq(hw_in, hw_out_tmp, true);
+		//frommatrixI(hw_out_tmp,hw_out);
+	interleave_manual_seq(hw_in, hw_out_tmp, false);
+		frommatrixI(hw_out_tmp,hw_out);
 #endif
 
 	// Compare

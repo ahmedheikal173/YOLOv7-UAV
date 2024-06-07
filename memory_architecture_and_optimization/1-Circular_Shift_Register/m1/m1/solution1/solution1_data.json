@@ -61,16 +61,16 @@
   "HlsSolution": {
     "FlowTarget": "vitis",
     "ConfigTcl": [
-      "config_interface -default_interface=kernel",
-      "config_interface -m_axi_alignment_byte_size=64",
+      "config_export -output=D:\/gam3a\/zzzzzzzzzz\/1-Circular_Shift_Register\/output",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog",
       "config_interface -m_axi_latency=64",
+      "config_interface -m_axi_alignment_byte_size=64",
       "config_interface -m_axi_max_widen_bitwidth=512",
+      "config_interface -default_interface=kernel",
       "config_rtl -register_reset_num=3"
     ],
-    "DirectiveTcl": [
-      "set_directive_top circular_shift_reg -name circular_shift_reg",
-      "set_directive_top circular_shift_reg -name circular_shift_reg"
-    ],
+    "DirectiveTcl": ["set_directive_top circular_shift_reg -name circular_shift_reg"],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "circular_shift_reg"
@@ -153,6 +153,7 @@
       "addrWidth": "6",
       "portPrefix": "s_axi_control_",
       "paramPrefix": "C_S_AXI_CONTROL_",
+      "offsetMasterName": "m_axi_gmem",
       "ports": [
         "s_axi_control_ARADDR",
         "s_axi_control_ARREADY",
@@ -468,6 +469,7 @@
       "addrWidth": "64",
       "portPrefix": "m_axi_gmem_",
       "paramPrefix": "C_M_AXI_GMEM_",
+      "offsetSlaveName": "s_axi_control",
       "preferredUsageValue": "MEMORY",
       "busParams": {
         "NUM_READ_OUTSTANDING": "16",
@@ -928,7 +930,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-05 23:09:14 +0300",
+    "Time": "2024-06-06 17:45:34 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

@@ -82,6 +82,16 @@
 			<location>D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/read_mem_seq.hpp</location>
 		</link>
 		<link>
+			<name>source/tomatrix.cpp</name>
+			<type>1</type>
+			<location>D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.cpp</location>
+		</link>
+		<link>
+			<name>source/tomatrix.hpp</name>
+			<type>1</type>
+			<location>D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp</location>
+		</link>
+		<link>
 			<name>source/write_mem_rnd.hpp</name>
 			<type>1</type>
 			<location>D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/write_mem_rnd.hpp</location>

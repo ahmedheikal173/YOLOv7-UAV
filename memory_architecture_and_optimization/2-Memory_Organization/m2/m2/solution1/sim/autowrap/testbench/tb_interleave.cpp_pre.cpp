@@ -1132,7 +1132,7 @@ namespace std
 
 
 
-
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 1
 # 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
 # 55 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2021.2/include/ap_common.h" 1
@@ -55138,17 +55138,55 @@ inline bool operator!=(
 }
 # 412 "C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed.h" 2
 # 395 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 2
-# 7 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
+# 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 2
+
+
+
+
+
+
+typedef ap_int<8> mtype[640][640][3];
+typedef ap_int<8> mtypeI[640][640/3][3];
+# 24 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp"
+void frommatrix(mtype mm_in, ap_int<8> mm_out[1228800]);
+void tomatrix(ap_int<8> m_in[1228800],mtype m_out);
+
+
+void frommatrixI(mtypeI mmI_in, ap_int<8> mmI_out[1228800/3]);
+void tomatrixI(ap_int<8> mI_in[1228800/3],mtypeI mI_out);
+# 6 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
+
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
+# 8 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
 
 void interleave(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                 bool load);
-void interleave_manual_rnd(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void interleave_manual_rnd(mtype x_in, mtypeI y,
                        bool load);
-void interleave_manual_seq(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void interleave_manual_seq(mtype x_in, mtypeI y,
                        bool load);
 # 3 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp" 2
 # 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
 # 4 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp" 2
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 1
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
+# 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 2
+
+
+
+
+
+
+typedef ap_int<8> mtype[640][640][3];
+typedef ap_int<8> mtypeI[640][640/3][3];
+# 24 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp"
+void frommatrix(mtype mm_in, ap_int<8> mm_out[1228800]);
+void tomatrix(ap_int<8> m_in[1228800],mtype m_out);
+
+
+void frommatrixI(mtypeI mmI_in, ap_int<8> mmI_out[1228800/3]);
+void tomatrixI(ap_int<8> mI_in[1228800/3],mtypeI mI_out);
+# 5 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp" 2
 
 
 
@@ -55162,17 +55200,23 @@ int main(int argc, char **argv){
 
 
  for (int i=0; i<1228800; i++)
-  in[i] = i;
+  in[i] = rand();
 
 
  for (int i=0; i<1228800/3; i++)
   sw_out[i] = in[i*3] +
      in[i*3 + 1] +
      in[i*3 + 2] ;
-# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp"
- interleave_manual_rnd(in, hw_out, true);
- interleave_manual_rnd(in, hw_out, false);
-# 42 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp"
+
+ mtype hw_in;
+ tomatrix(in,hw_in);
+ mtypeI hw_out_tmp;
+# 37 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp"
+ interleave_manual_rnd(hw_in, hw_out_tmp, true);
+
+ interleave_manual_rnd(hw_in, hw_out_tmp, false);
+  frommatrixI(hw_out_tmp,hw_out);
+# 51 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/tb/tb_interleave.cpp"
  bool pass = true;
  for (int i=0; i<1228800/3; i++){
   printf("sw= %d, hw= %d\n", sw_out[i].to_int(), hw_out[i].to_int());

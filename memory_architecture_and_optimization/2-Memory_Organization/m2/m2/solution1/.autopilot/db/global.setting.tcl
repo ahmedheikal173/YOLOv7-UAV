@@ -13,7 +13,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -42,8 +42,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu11p:-flga2577:-1-e
-set SourceFiles {sc {} c {../../../src/interleave_manual_seq.cpp ../../../src/interleave_manual_rnd.cpp ../../../src/interleave.cpp}}
-set SourceFlags {sc {} c {{} {} {}}}
+set SourceFiles {sc {} c {../../../src/tomatrix.cpp ../../../src/interleave_manual_seq.cpp ../../../src/interleave_manual_rnd.cpp ../../../src/interleave.cpp}}
+set SourceFlags {sc {} c {{} {} {} {}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/2-Memory_Organization/m2/m2/solution1/solution1.directive
 set TBFiles {verilog ../../../tb/tb_interleave.cpp bc ../../../tb/tb_interleave.cpp vhdl ../../../tb/tb_interleave.cpp sc ../../../tb/tb_interleave.cpp cas ../../../tb/tb_interleave.cpp c {}}
 set SpecLanguage C

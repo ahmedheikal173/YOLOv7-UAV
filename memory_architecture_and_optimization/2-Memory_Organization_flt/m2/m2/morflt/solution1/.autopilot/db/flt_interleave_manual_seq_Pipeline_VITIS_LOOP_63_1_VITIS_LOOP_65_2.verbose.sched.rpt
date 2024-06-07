@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vitis HLS Report for 'flt_interleave_manual_seq_Pipeline_VITIS_LOOP_63_1_VITIS_LOOP_65_2'
+================================================================
+* Date:           Fri Jun  7 17:45:51 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        morflt
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.651 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      400|      400|  4.000 us|  4.000 us|  400|  400|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_63_1_VITIS_LOOP_65_2  |      398|      398|         4|          1|          1|   396|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.18>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 7 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%idx = alloca i32 1"   --->   Operation 8 'alloca' 'idx' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%idx_1 = alloca i32 1"   --->   Operation 9 'alloca' 'idx_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%k = alloca i32 1"   --->   Operation 10 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%indvar_flatten23 = alloca i32 1"   --->   Operation 11 'alloca' 'indvar_flatten23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %y, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.46ns)   --->   "%store_ln0 = store i9 0, i9 %indvar_flatten23"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 14 [1/1] (0.46ns)   --->   "%store_ln0 = store i6 0, i6 %k"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 15 [1/1] (0.46ns)   --->   "%store_ln0 = store i9 0, i9 %idx_1"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 16 [1/1] (0.46ns)   --->   "%store_ln0 = store i9 0, i9 %idx"   --->   Operation 16 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 17 [1/1] (0.46ns)   --->   "%store_ln0 = store i4 0, i4 %i"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%indvar_flatten23_load = load i9 %indvar_flatten23" [../../src/tomatrix.cpp:63]   --->   Operation 19 'load' 'indvar_flatten23_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 20 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.73ns)   --->   "%icmp_ln63 = icmp_eq  i9 %indvar_flatten23_load, i9 396" [../../src/tomatrix.cpp:63]   --->   Operation 21 'icmp' 'icmp_ln63' <Predicate = true> <Delay = 0.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.90ns)   --->   "%add_ln63_2 = add i9 %indvar_flatten23_load, i9 1" [../../src/tomatrix.cpp:63]   --->   Operation 22 'add' 'add_ln63_2' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln63 = br i1 %icmp_ln63, void %.split3, void %_Z9tomatrixIP6ap_intILi16EEPA1_A44_S0_.exit.exitStub" [../../src/tomatrix.cpp:63]   --->   Operation 23 'br' 'br_ln63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%i_load = load i4 %i" [../../src/tomatrix.cpp:65]   --->   Operation 24 'load' 'i_load' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.72ns)   --->   "%icmp_ln65 = icmp_eq  i4 %i_load, i4 9" [../../src/tomatrix.cpp:65]   --->   Operation 25 'icmp' 'icmp_ln65' <Predicate = (!icmp_ln63)> <Delay = 0.72> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.18ns)   --->   "%select_ln63_1 = select i1 %icmp_ln65, i4 0, i4 %i_load" [../../src/tomatrix.cpp:63]   --->   Operation 26 'select' 'select_ln63_1' <Predicate = (!icmp_ln63)> <Delay = 0.18> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln69 = zext i4 %select_ln63_1" [../../src/tomatrix.cpp:69]   --->   Operation 27 'zext' 'zext_ln69' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_1 : Operation 28 [3/3] (1.08ns) (grouped into DSP with root node add_ln69)   --->   "%mul_ln69 = mul i9 %zext_ln69, i9 44" [../../src/tomatrix.cpp:69]   --->   Operation 28 'mul' 'mul_ln69' <Predicate = (!icmp_ln63)> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 29 [1/1] (0.80ns)   --->   "%add_ln65 = add i4 %select_ln63_1, i4 1" [../../src/tomatrix.cpp:65]   --->   Operation 29 'add' 'add_ln65' <Predicate = (!icmp_ln63)> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.46ns)   --->   "%store_ln63 = store i9 %add_ln63_2, i9 %indvar_flatten23" [../../src/tomatrix.cpp:63]   --->   Operation 30 'store' 'store_ln63' <Predicate = (!icmp_ln63)> <Delay = 0.46>
+ST_1 : Operation 31 [1/1] (0.46ns)   --->   "%store_ln65 = store i4 %add_ln65, i4 %i" [../../src/tomatrix.cpp:65]   --->   Operation 31 'store' 'store_ln65' <Predicate = (!icmp_ln63)> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 1.08>
+ST_2 : Operation 32 [2/3] (1.08ns) (grouped into DSP with root node add_ln69)   --->   "%mul_ln69 = mul i9 %zext_ln69, i9 44" [../../src/tomatrix.cpp:69]   --->   Operation 32 'mul' 'mul_ln69' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 3 <SV = 2> <Delay = 2.65>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%idx_load = load i9 %idx" [../../src/tomatrix.cpp:63]   --->   Operation 33 'load' 'idx_load' <Predicate = (!icmp_ln65)> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%idx_1_load = load i9 %idx_1" [../../src/tomatrix.cpp:63]   --->   Operation 34 'load' 'idx_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%k_load = load i6 %k" [../../src/tomatrix.cpp:63]   --->   Operation 35 'load' 'k_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.84ns)   --->   "%add_ln63 = add i6 %k_load, i6 1" [../../src/tomatrix.cpp:63]   --->   Operation 36 'add' 'add_ln63' <Predicate = (icmp_ln65)> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 37 [1/1] (0.90ns)   --->   "%add_ln63_1 = add i9 %idx_1_load, i9 9" [../../src/tomatrix.cpp:63]   --->   Operation 37 'add' 'add_ln63_1' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.38ns)   --->   "%select_ln63 = select i1 %icmp_ln65, i9 %add_ln63_1, i9 %idx_load" [../../src/tomatrix.cpp:63]   --->   Operation 38 'select' 'select_ln63' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.36ns)   --->   "%select_ln63_2 = select i1 %icmp_ln65, i6 %add_ln63, i6 %k_load" [../../src/tomatrix.cpp:63]   --->   Operation 39 'select' 'select_ln63_2' <Predicate = true> <Delay = 0.36> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%select_ln63_2_cast = zext i6 %select_ln63_2" [../../src/tomatrix.cpp:63]   --->   Operation 40 'zext' 'select_ln63_2_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.38ns)   --->   "%select_ln63_3 = select i1 %icmp_ln65, i9 %add_ln63_1, i9 %idx_1_load" [../../src/tomatrix.cpp:63]   --->   Operation 41 'select' 'select_ln63_3' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 42 [1/3] (0.00ns) (grouped into DSP with root node add_ln69)   --->   "%mul_ln69 = mul i9 %zext_ln69, i9 44" [../../src/tomatrix.cpp:69]   --->   Operation 42 'mul' 'mul_ln69' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 43 [2/2] (0.83ns) (root node of the DSP)   --->   "%add_ln69 = add i9 %mul_ln69, i9 %select_ln63_2_cast" [../../src/tomatrix.cpp:69]   --->   Operation 43 'add' 'add_ln69' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%idx_5_cast = zext i9 %select_ln63" [../../src/tomatrix.cpp:63]   --->   Operation 44 'zext' 'idx_5_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%tmpy_V_addr = getelementptr i11 %tmpy_V, i64 0, i64 %idx_5_cast" [../../src/tomatrix.cpp:69]   --->   Operation 45 'getelementptr' 'tmpy_V_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [2/2] (1.29ns)   --->   "%tmpy_V_load = load i9 %tmpy_V_addr" [../../src/tomatrix.cpp:69]   --->   Operation 46 'load' 'tmpy_V_load' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 396> <RAM>
+ST_3 : Operation 47 [1/1] (0.90ns)   --->   "%add_ln70 = add i9 %select_ln63, i9 1" [../../src/tomatrix.cpp:70]   --->   Operation 47 'add' 'add_ln70' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (0.46ns)   --->   "%store_ln63 = store i6 %select_ln63_2, i6 %k" [../../src/tomatrix.cpp:63]   --->   Operation 48 'store' 'store_ln63' <Predicate = true> <Delay = 0.46>
+ST_3 : Operation 49 [1/1] (0.46ns)   --->   "%store_ln63 = store i9 %select_ln63_3, i9 %idx_1" [../../src/tomatrix.cpp:63]   --->   Operation 49 'store' 'store_ln63' <Predicate = true> <Delay = 0.46>
+ST_3 : Operation 50 [1/1] (0.46ns)   --->   "%store_ln70 = store i9 %add_ln70, i9 %idx" [../../src/tomatrix.cpp:70]   --->   Operation 50 'store' 'store_ln70' <Predicate = true> <Delay = 0.46>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 62 'ret' 'ret_ln0' <Predicate = (icmp_ln63)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.59>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_63_1_VITIS_LOOP_65_2_str"   --->   Operation 51 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 396, i64 396, i64 396"   --->   Operation 52 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 53 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/2] (0.83ns) (root node of the DSP)   --->   "%add_ln69 = add i9 %mul_ln69, i9 %select_ln63_2_cast" [../../src/tomatrix.cpp:69]   --->   Operation 54 'add' 'add_ln69' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln69_1 = zext i9 %add_ln69" [../../src/tomatrix.cpp:69]   --->   Operation 55 'zext' 'zext_ln69_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%y_addr = getelementptr i16 %y, i64 0, i64 %zext_ln69_1" [../../src/tomatrix.cpp:69]   --->   Operation 56 'getelementptr' 'y_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%specloopname_ln62 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [../../src/tomatrix.cpp:62]   --->   Operation 57 'specloopname' 'specloopname_ln62' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 58 [1/2] (1.29ns)   --->   "%tmpy_V_load = load i9 %tmpy_V_addr" [../../src/tomatrix.cpp:69]   --->   Operation 58 'load' 'tmpy_V_load' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 396> <RAM>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%sext_ln69 = sext i11 %tmpy_V_load" [../../src/tomatrix.cpp:69]   --->   Operation 59 'sext' 'sext_ln69' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (1.29ns)   --->   "%store_ln69 = store i16 %sext_ln69, i9 %y_addr" [../../src/tomatrix.cpp:69]   --->   Operation 60 'store' 'store_ln69' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 396> <RAM>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 61 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 2.18ns
+The critical path consists of the following:
+	'alloca' operation ('i') [3]  (0 ns)
+	'load' operation ('i_load', ../../src/tomatrix.cpp:65) on local variable 'i' [22]  (0 ns)
+	'icmp' operation ('icmp_ln65', ../../src/tomatrix.cpp:65) [30]  (0.724 ns)
+	'select' operation ('select_ln63_1', ../../src/tomatrix.cpp:63) [32]  (0.187 ns)
+	'add' operation ('add_ln65', ../../src/tomatrix.cpp:65) [49]  (0.809 ns)
+	'store' operation ('store_ln65', ../../src/tomatrix.cpp:65) of variable 'add_ln65', ../../src/tomatrix.cpp:65 on local variable 'i' [54]  (0.46 ns)
+
+ <State 2>: 1.09ns
+The critical path consists of the following:
+	'mul' operation of DSP[39] ('mul_ln69', ../../src/tomatrix.cpp:69) [38]  (1.09 ns)
+
+ <State 3>: 2.65ns
+The critical path consists of the following:
+	'load' operation ('idx_1_load', ../../src/tomatrix.cpp:63) on local variable 'idx' [24]  (0 ns)
+	'add' operation ('add_ln63_1', ../../src/tomatrix.cpp:63) [27]  (0.902 ns)
+	'select' operation ('select_ln63', ../../src/tomatrix.cpp:63) [31]  (0.387 ns)
+	'add' operation ('add_ln70', ../../src/tomatrix.cpp:70) [48]  (0.902 ns)
+	'store' operation ('store_ln70', ../../src/tomatrix.cpp:70) of variable 'add_ln70', ../../src/tomatrix.cpp:70 on local variable 'idx' [53]  (0.46 ns)
+
+ <State 4>: 2.59ns
+The critical path consists of the following:
+	'load' operation ('tmpy_V_load', ../../src/tomatrix.cpp:69) on array 'tmpy_V' [45]  (1.3 ns)
+	'store' operation ('store_ln69', ../../src/tomatrix.cpp:69) of variable 'sext_ln69', ../../src/tomatrix.cpp:69 on array 'y' [47]  (1.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

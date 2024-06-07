@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../tb/tb_interleave.cpp ../../../../../src/interleave_manual_seq.cpp ../../../../../src/interleave_manual_rnd.cpp ../../../../../src/interleave.cpp
+HLS_SOURCES = ../../../../../tb/tb_interleave.cpp ../../../../../src/tomatrix.cpp ../../../../../src/interleave_manual_seq.cpp ../../../../../src/interleave_manual_rnd.cpp ../../../../../src/interleave.cpp
 
 override TARGET := csim.exe
 
@@ -77,6 +77,12 @@ $(ObjDir)/tb_interleave.o: ../../../../../tb/tb_interleave.cpp $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/tb_interleave.d
+
+$(ObjDir)/tomatrix.o: ../../../../../src/tomatrix.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../src/tomatrix.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/tomatrix.d
 
 $(ObjDir)/interleave_manual_seq.o: ../../../../../src/interleave_manual_seq.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../src/interleave_manual_seq.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

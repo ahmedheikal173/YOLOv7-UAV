@@ -1,5 +1,7 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../tb/tb_interleave.cpp in debug mode
+   Compiling ../../../../../src/tomatrix.cpp in debug mode
    Compiling ../../../../../src/interleave_manual_seq.cpp in debug mode
    Compiling ../../../../../src/interleave_manual_rnd.cpp in debug mode
    Compiling ../../../../../src/interleave.cpp in debug mode

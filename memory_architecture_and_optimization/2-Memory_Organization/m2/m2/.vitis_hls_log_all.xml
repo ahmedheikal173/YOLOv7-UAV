@@ -3,7 +3,11 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="m2" solutionName="solution1" date="2024-06-07T01:25:31.919+0200"/>
+        <logs message="ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim." projectName="m2" solutionName="solution1" date="2024-06-07T01:25:31.829+0200"/>
+        <logs message="ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed." projectName="m2" solutionName="solution1" date="2024-06-07T01:25:31.825+0200"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>
@@ -12,13 +16,12 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd/x_in_Din_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-05T22:29:21.858+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd/x_in_WEN_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-05T22:29:21.848+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_interleave_manual_rnd_ap_int_8_ap_int_8_bool_x' is power-on initialization." projectName="m2" solutionName="solution1" date="2024-06-05T22:29:21.828+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m2" solutionName="solution1" date="2024-06-05T22:29:21.778+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/x_in_Din_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-05T22:29:21.618+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_LOAD/x_in_WEN_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-05T22:29:21.608+0200" type="Warning"/>
-        <logs message="WARNING: [HLS 214-185] The resource pragma (storage) on function argument, in 'call' is unsupported (../src/interleave_manual_rnd.cpp:26:4)" projectName="m2" solutionName="solution1" date="2024-06-05T22:29:20.478+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd/x_in_Din_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-07T01:24:46.989+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd/x_in_WEN_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-07T01:24:46.969+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_interleave_manual_rnd_ap_int_8_640_3_ap_int_8_213_3_bool_x' is power-on initialization." projectName="m2" solutionName="solution1" date="2024-06-07T01:24:46.949+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m2" solutionName="solution1" date="2024-06-07T01:24:46.889+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3/x_in_Din_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-07T01:24:45.909+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3/x_in_WEN_A' to 0." projectName="m2" solutionName="solution1" date="2024-06-07T01:24:45.889+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

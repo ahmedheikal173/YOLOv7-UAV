@@ -1,0 +1,472 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'hisha' on host 'hisham-dell' (Windows NT_amd64 version 6.2) on Fri Jun 07 17:46:21 +0300 2024
+INFO: [HLS 200-10] In directory 'D:/gam3a/zzzzzzzzzz/2-Memory_Organization_flt/m2/m2'
+Sourcing Tcl script 'D:/gam3a/zzzzzzzzzz/2-Memory_Organization_flt/m2/m2/morflt/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: open_project morflt 
+INFO: [HLS 200-10] Opening project 'D:/gam3a/zzzzzzzzzz/2-Memory_Organization_flt/m2/m2/morflt'.
+INFO: [HLS 200-1510] Running: set_top flt_interleave_manual_seq 
+INFO: [HLS 200-1510] Running: add_files ../../src/interleave.cpp 
+INFO: [HLS 200-10] Adding design file '../../src/interleave.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/interleave.h 
+INFO: [HLS 200-10] Adding design file '../../src/interleave.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/interleave_manual_rnd.cpp 
+INFO: [HLS 200-10] Adding design file '../../src/interleave_manual_rnd.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/interleave_manual_seq.cpp 
+INFO: [HLS 200-10] Adding design file '../../src/interleave_manual_seq.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/interleave_mem_rnd.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/interleave_mem_rnd.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/interleave_mem_seq.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/interleave_mem_seq.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/read_mem_rnd.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/read_mem_rnd.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/read_mem_seq.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/read_mem_seq.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/tomatrix.cpp 
+INFO: [HLS 200-10] Adding design file '../../src/tomatrix.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/tomatrix.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/tomatrix.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/write_mem_rnd.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/write_mem_rnd.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/write_mem_seq.hpp 
+INFO: [HLS 200-10] Adding design file '../../src/write_mem_seq.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../tb/tb_interleave.cpp 
+INFO: [HLS 200-10] Adding test bench file '../../tb/tb_interleave.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
+INFO: [HLS 200-10] Opening solution 'D:/gam3a/zzzzzzzzzz/2-Memory_Organization_flt/m2/m2/morflt/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: cosim_design -setup -O 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling interleave.cpp_pre.cpp.tb.cpp
+   Compiling interleave_manual_rnd.cpp_pre.cpp.tb.cpp
+   Compiling interleave_manual_seq.cpp_pre.cpp.tb.cpp
+   Compiling apatb_flt_interleave_manual_seq.cpp
+   Compiling tb_interleave.cpp_pre.cpp.tb.cpp
+   Compiling tomatrix.cpp_pre.cpp.tb.cpp
+   Compiling apatb_flt_interleave_manual_seq_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+sw= 36, hw= 0
+sw= 45, hw= 0
+sw= 54, hw= 0
+sw= -39, hw= 0
+sw= -34, hw= 0
+sw= -90, hw= 0
+sw= -38, hw= 0
+sw= -7, hw= 0
+sw= -60, hw= 0
+sw= -34, hw= 0
+sw= 61, hw= 0
+sw= 94, hw= 0
+sw= 205, hw= 0
+sw= 199, hw= 0
+sw= 141, hw= 0
+sw= 88, hw= 0
+sw= 87, hw= 0
+sw= 140, hw= 0
+sw= 137, hw= 0
+sw= 42, hw= 0
+sw= -83, hw= 0
+sw= -194, hw= 0
+sw= -101, hw= 0
+sw= -44, hw= 0
+sw= 20, hw= 0
+sw= 20, hw= 0
+sw= -64, hw= 0
+sw= -61, hw= 0
+sw= -74, hw= 0
+sw= 51, hw= 0
+sw= 25, hw= 0
+sw= -68, hw= 0
+sw= -70, hw= 0
+sw= -134, hw= 0
+sw= -190, hw= 0
+sw= -106, hw= 0
+sw= -229, hw= 0
+sw= -216, hw= 0
+sw= -216, hw= 0
+sw= -190, hw= 0
+sw= -177, hw= 0
+sw= -174, hw= 0
+sw= -130, hw= 0
+sw= -73, hw= 0
+sw= -125, hw= 0
+sw= -2, hw= 0
+sw= -124, hw= 0
+sw= -124, hw= 0
+sw= -174, hw= 0
+sw= -187, hw= 0
+sw= -262, hw= 0
+sw= -306, hw= 0
+sw= -349, hw= 0
+sw= -297, hw= 0
+sw= -272, hw= 0
+sw= -149, hw= 0
+sw= -33, hw= 0
+sw= 18, hw= 0
+sw= 121, hw= 0
+sw= 196, hw= 0
+sw= 297, hw= 0
+sw= 340, hw= 0
+sw= 280, hw= 0
+sw= 256, hw= 0
+sw= 276, hw= 0
+sw= 162, hw= 0
+sw= 109, hw= 0
+sw= 7, hw= 0
+sw= 82, hw= 0
+sw= -18, hw= 0
+sw= 24, hw= 0
+sw= 85, hw= 0
+sw= 49, hw= 0
+sw= 28, hw= 0
+sw= -100, hw= 0
+sw= -48, hw= 0
+sw= -76, hw= 0
+sw= -152, hw= 0
+sw= -179, hw= 0
+sw= -222, hw= 0
+sw= -118, hw= 0
+sw= -83, hw= 0
+sw= -59, hw= 0
+sw= 67, hw= 0
+sw= 53, hw= 0
+sw= 79, hw= 0
+sw= 193, hw= 0
+sw= 219, hw= 0
+sw= 289, hw= 0
+sw= 184, hw= 0
+sw= 76, hw= 0
+sw= 52, hw= 0
+sw= 98, hw= 0
+sw= 112, hw= 0
+sw= 60, hw= 0
+sw= -55, hw= 0
+sw= -11, hw= 0
+sw= -81, hw= 0
+sw= -167, hw= 0
+sw= -59, hw= 0
+sw= -130, hw= 0
+sw= -176, hw= 0
+sw= -209, hw= 0
+sw= -156, hw= 0
+sw= -148, hw= 0
+sw= -191, hw= 0
+sw= -140, hw= 0
+sw= -53, hw= 0
+sw= -11, hw= 0
+sw= 61, hw= 0
+sw= -52, hw= 0
+sw= -18, hw= 0
+sw= 17, hw= 0
+sw= 11, hw= 0
+sw= -53, hw= 0
+sw= -104, hw= 0
+sw= -52, hw= 0
+sw= -93, hw= 0
+sw= -57, hw= 0
+sw= 57, hw= 0
+sw= 165, hw= 0
+sw= 131, hw= 0
+sw= 198, hw= 0
+sw= 262, hw= 0
+sw= 151, hw= 0
+sw= 99, hw= 0
+sw= -5, hw= 0
+sw= -41, hw= 0
+sw= 3, hw= 0
+sw= -105, hw= 0
+sw= -210, hw= 0
+sw= -277, hw= 0
+sw= -177, hw= 0
+sw= -65, hw= 0
+sw= -82, hw= 0
+sw= 21, hw= 0
+sw= -63, hw= 0
+sw= -108, hw= 0
+sw= -9, hw= 0
+sw= 95, hw= 0
+sw= 101, hw= 0
+sw= 0, hw= 0
+sw= -72, hw= 0
+sw= -57, hw= 0
+sw= 52, hw= 0
+sw= 134, hw= 0
+sw= 95, hw= 0
+sw= -6, hw= 0
+sw= -22, hw= 0
+sw= -30, hw= 0
+sw= 6, hw= 0
+sw= 77, hw= 0
+sw= 28, hw= 0
+sw= -82, hw= 0
+sw= -64, hw= 0
+sw= -25, hw= 0
+sw= -50, hw= 0
+sw= -35, hw= 0
+sw= 33, hw= 0
+sw= -3, hw= 0
+sw= -50, hw= 0
+sw= -1, hw= 0
+sw= 29, hw= 0
+sw= 12, hw= 0
+sw= 113, hw= 0
+sw= 139, hw= 0
+sw= 218, hw= 0
+sw= 151, hw= 0
+sw= 265, hw= 0
+sw= 312, hw= 0
+sw= 257, hw= 0
+sw= 228, hw= 0
+sw= 225, hw= 0
+sw= 124, hw= 0
+sw= 164, hw= 0
+sw= 87, hw= 0
+sw= 65, hw= 0
+sw= -49, hw= 0
+sw= 42, hw= 0
+sw= 99, hw= 0
+sw= 110, hw= 0
+sw= 114, hw= 0
+sw= 52, hw= 0
+sw= 12, hw= 0
+sw= -28, hw= 0
+sw= -6, hw= 0
+sw= -82, hw= 0
+sw= -173, hw= 0
+sw= -118, hw= 0
+sw= -129, hw= 0
+sw= -127, hw= 0
+sw= -65, hw= 0
+sw= -137, hw= 0
+sw= -99, hw= 0
+sw= -109, hw= 0
+sw= -34, hw= 0
+sw= -47, hw= 0
+sw= -104, hw= 0
+sw= -37, hw= 0
+sw= -40, hw= 0
+sw= -69, hw= 0
+sw= 2, hw= 0
+sw= -49, hw= 0
+sw= -40, hw= 0
+sw= -154, hw= 0
+sw= -142, hw= 0
+sw= -132, hw= 0
+sw= -199, hw= 0
+sw= -260, hw= 0
+sw= -232, hw= 0
+sw= -217, hw= 0
+sw= -165, hw= 0
+sw= -105, hw= 0
+sw= 10, hw= 0
+sw= 75, hw= 0
+sw= 66, hw= 0
+sw= -52, hw= 0
+sw= 9, hw= 0
+sw= -10, hw= 0
+sw= -24, hw= 0
+sw= -73, hw= 0
+sw= -132, hw= 0
+sw= -118, hw= 0
+sw= -181, hw= 0
+sw= -296, hw= 0
+sw= -177, hw= 0
+sw= -222, hw= 0
+sw= -201, hw= 0
+sw= -167, hw= 0
+sw= -116, hw= 0
+sw= -127, hw= 0
+sw= -140, hw= 0
+sw= -185, hw= 0
+sw= -69, hw= 0
+sw= -189, hw= 0
+sw= -143, hw= 0
+sw= -202, hw= 0
+sw= -235, hw= 0
+sw= -266, hw= 0
+sw= -254, hw= 0
+sw= -371, hw= 0
+sw= -326, hw= 0
+sw= -314, hw= 0
+sw= -194, hw= 0
+sw= -261, hw= 0
+sw= -203, hw= 0
+sw= -93, hw= 0
+sw= -64, hw= 0
+sw= -56, hw= 0
+sw= 60, hw= 0
+sw= 100, hw= 0
+sw= 87, hw= 0
+sw= -2, hw= 0
+sw= 64, hw= 0
+sw= 170, hw= 0
+sw= 59, hw= 0
+sw= 46, hw= 0
+sw= 36, hw= 0
+sw= 110, hw= 0
+sw= 69, hw= 0
+sw= 126, hw= 0
+sw= 214, hw= 0
+sw= 94, hw= 0
+sw= -12, hw= 0
+sw= -80, hw= 0
+sw= -67, hw= 0
+sw= -31, hw= 0
+sw= -104, hw= 0
+sw= -160, hw= 0
+sw= -217, hw= 0
+sw= -142, hw= 0
+sw= -22, hw= 0
+sw= -85, hw= 0
+sw= -17, hw= 0
+sw= 40, hw= 0
+sw= 6, hw= 0
+sw= 74, hw= 0
+sw= 131, hw= 0
+sw= 218, hw= 0
+sw= 144, hw= 0
+sw= 139, hw= 0
+sw= 202, hw= 0
+sw= 145, hw= 0
+sw= 88, hw= 0
+sw= -39, hw= 0
+sw= -108, hw= 0
+sw= -144, hw= 0
+sw= -231, hw= 0
+sw= -223, hw= 0
+sw= -217, hw= 0
+sw= -325, hw= 0
+sw= -268, hw= 0
+sw= -343, hw= 0
+sw= -217, hw= 0
+sw= -303, hw= 0
+sw= -268, hw= 0
+sw= -268, hw= 0
+sw= -277, hw= 0
+sw= -185, hw= 0
+sw= -76, hw= 0
+sw= 35, hw= 0
+sw= 111, hw= 0
+sw= 35, hw= 0
+sw= 122, hw= 0
+sw= 125, hw= 0
+sw= 127, hw= 0
+sw= 86, hw= 0
+sw= -6, hw= 0
+sw= 77, hw= 0
+sw= -32, hw= 0
+sw= 18, hw= 0
+sw= 96, hw= 0
+sw= 111, hw= 0
+sw= 110, hw= 0
+sw= 38, hw= 0
+sw= 80, hw= 0
+sw= 78, hw= 0
+sw= -5, hw= 0
+sw= -24, hw= 0
+sw= -74, hw= 0
+sw= -56, hw= 0
+sw= -70, hw= 0
+sw= -129, hw= 0
+sw= -58, hw= 0
+sw= 63, hw= 0
+sw= 65, hw= 0
+sw= 61, hw= 0
+sw= 78, hw= 0
+sw= -34, hw= 0
+sw= -54, hw= 0
+sw= -132, hw= 0
+sw= -75, hw= 0
+sw= -59, hw= 0
+sw= -180, hw= 0
+sw= -233, hw= 0
+sw= -230, hw= 0
+sw= -280, hw= 0
+sw= -169, hw= 0
+sw= -256, hw= 0
+sw= -180, hw= 0
+sw= -72, hw= 0
+sw= -89, hw= 0
+sw= -162, hw= 0
+sw= -110, hw= 0
+sw= -226, hw= 0
+sw= -176, hw= 0
+sw= -185, hw= 0
+sw= -98, hw= 0
+sw= 9, hw= 0
+sw= -98, hw= 0
+sw= -85, hw= 0
+sw= -12, hw= 0
+sw= -67, hw= 0
+sw= 49, hw= 0
+sw= -10, hw= 0
+sw= -1, hw= 0
+sw= -96, hw= 0
+sw= -203, hw= 0
+sw= -240, hw= 0
+sw= -253, hw= 0
+sw= -134, hw= 0
+sw= -79, hw= 0
+sw= -172, hw= 0
+sw= -113, hw= 0
+sw= -19, hw= 0
+sw= 76, hw= 0
+sw= 53, hw= 0
+sw= 88, hw= 0
+sw= -11, hw= 0
+sw= -132, hw= 0
+sw= -164, hw= 0
+sw= -72, hw= 0
+sw= -90, hw= 0
+sw= -185, hw= 0
+sw= -167, hw= 0
+sw= -144, hw= 0
+sw= -208, hw= 0
+sw= -110, hw= 0
+sw= -74, hw= 0
+sw= -42, hw= 0
+sw= -105, hw= 0
+sw= -88, hw= 0
+sw= -82, hw= 0
+sw= -100, hw= 0
+sw= -70, hw= 0
+sw= -5, hw= 0
+sw= 103, hw= 0
+sw= 68, hw= 0
+sw= 128, hw= 0
+sw= 192, hw= 0
+sw= 239, hw= 0
+sw= 234, hw= 0
+sw= 236, hw= 0
+sw= 206, hw= 0
+sw= 291, hw= 0
+sw= 184, hw= 0
+Test Fail!
+ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 19.2 seconds; current allocated memory: 2.559 MB.
+command 'ap_source' returned error code
+    while executing
+"source D:/gam3a/zzzzzzzzzz/2-Memory_Organization_flt/m2/m2/morflt/solution1/cosim.tcl"
+    invoked from within
+"hls::main D:/gam3a/zzzzzzzzzz/2-Memory_Organization_flt/m2/m2/morflt/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 21.449 seconds; peak allocated memory: 1.176 GB.

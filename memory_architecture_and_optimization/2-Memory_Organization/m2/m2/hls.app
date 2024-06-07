@@ -8,6 +8,8 @@
         <file name="../../../tb/tb_interleave.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
         <file name="../src/write_mem_seq.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="../src/write_mem_rnd.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="../src/tomatrix.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="../src/tomatrix.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="../src/read_mem_seq.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="../src/read_mem_rnd.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="../src/interleave_mem_seq.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>

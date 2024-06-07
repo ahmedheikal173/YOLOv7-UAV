@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'interleave_manual_rnd'
 ================================================================
 + General Information: 
-    * Date:           Wed Jun  5 23:29:21 2024
+    * Date:           Fri Jun  7 02:24:47 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m2
     * Solution:       solution1 (Vitis Kernel Flow Target)
@@ -15,16 +15,20 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +-----------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
-    |                 Modules                 | Issue|      | Latency |  Latency  | Iteration|         |   Trip  |          |           |    |           |           |     |
-    |                 & Loops                 | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|   BRAM    | DSP|     FF    |    LUT    | URAM|
-    +-----------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
-    |+ interleave_manual_rnd                  |     -|  3.68|  1228803|  1.229e+07|         -|  1228804|        -|        no|  600 (14%)|   -|  294 (~0%)|  661 (~0%)|    -|
-    | + interleave_manual_rnd_Pipeline_WRITE  |     -|  3.68|   409602|  4.096e+06|         -|   409602|        -|        no|          -|   -|   61 (~0%)|  151 (~0%)|    -|
-    |  o WRITE                                |     -|  7.30|   409600|  4.096e+06|         2|        1|   409600|       yes|          -|   -|          -|          -|    -|
-    | + interleave_manual_rnd_Pipeline_LOAD   |     -|  4.41|  1228802|  1.229e+07|         -|  1228802|        -|        no|          -|   -|  174 (~0%)|  328 (~0%)|    -|
-    |  o LOAD                                 |     -|  7.30|  1228800|  1.229e+07|         2|        1|  1228800|       yes|          -|   -|          -|          -|    -|
-    +-----------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
+    +-----------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+------------+---------+-----------+------------+-----+
+    |                                      Modules                                      | Issue|      | Latency |  Latency  | Iteration|         |   Trip  |          |            |         |           |            |     |
+    |                                      & Loops                                      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|    BRAM    |   DSP   |     FF    |     LUT    | URAM|
+    +-----------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+------------+---------+-----------+------------+-----+
+    |+ interleave_manual_rnd                                                            |     -|  1.70|  2866572|  2.867e+07|         -|  2866573|        -|        no|  1400 (34%)|  1 (~0%)|  637 (~0%)|  1856 (~0%)|    -|
+    | + interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3  |     -|  1.70|  1228802|  1.229e+07|         -|  1228802|        -|        no|           -|        -|  132 (~0%)|   570 (~0%)|    -|
+    |  o VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3                                |     -|  7.30|  1228800|  1.229e+07|         2|        1|  1228800|       yes|           -|        -|          -|           -|    -|
+    | + interleave_manual_rnd_Pipeline_WRITE                                            |     -|  3.68|   409602|  4.096e+06|         -|   409602|        -|        no|           -|        -|   61 (~0%)|   151 (~0%)|    -|
+    |  o WRITE                                                                          |     -|  7.30|   409600|  4.096e+06|         2|        1|   409600|       yes|           -|        -|          -|           -|    -|
+    | + interleave_manual_rnd_Pipeline_LOAD                                             |     -|  4.41|  1228802|  1.229e+07|         -|  1228802|        -|        no|           -|        -|  174 (~0%)|   328 (~0%)|    -|
+    |  o LOAD                                                                           |     -|  7.30|  1228800|  1.229e+07|         2|        1|  1228800|       yes|           -|        -|          -|           -|    -|
+    | + interleave_manual_rnd_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3  |     -|  2.68|   408964|  4.090e+06|         -|   408964|        -|        no|           -|  1 (~0%)|  205 (~0%)|   528 (~0%)|    -|
+    |  o VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3                                |     -|  7.30|   408962|  4.090e+06|         4|        1|   408960|       yes|           -|        -|          -|           -|    -|
+    +-----------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+------------+---------+-----------+------------+-----+
 
 
 ================================================================
@@ -99,22 +103,48 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+-----------------------------------------+-----+--------+-----------------+-----+--------+---------+
-| Name                                    | DSP | Pragma | Variable        | Op  | Impl   | Latency |
-+-----------------------------------------+-----+--------+-----------------+-----+--------+---------+
-| + interleave_manual_rnd                 | 0   |        |                 |     |        |         |
-|  + interleave_manual_rnd_Pipeline_WRITE | 0   |        |                 |     |        |         |
-|    indvars_iv_next_fu_128_p2            | -   |        | indvars_iv_next | add | fabric | 0       |
-|    add_ln70_fu_161_p2                   | -   |        | add_ln70        | add | tadder | 0       |
-|    y_Din_A                              | -   |        | add_ln70_1      | add | tadder | 0       |
-|    add_ln31_fu_141_p2                   | -   |        | add_ln31        | add | fabric | 0       |
-|  + interleave_manual_rnd_Pipeline_LOAD  | 0   |        |                 |     |        |         |
-|    i_fu_171_p2                          | -   |        | i               | add | fabric | 0       |
-|    add_ln13_fu_231_p2                   | -   |        | add_ln13        | add | fabric | 0       |
-|    add_ln13_1_fu_237_p2                 | -   |        | add_ln13_1      | add | fabric | 0       |
-|    add_ln13_2_fu_243_p2                 | -   |        | add_ln13_2      | add | fabric | 0       |
-|    add_ln24_1_fu_192_p2                 | -   |        | add_ln24_1      | add | fabric | 0       |
-+-----------------------------------------+-----+--------+-----------------+-----+--------+---------+
++-----------------------------------------------------------------------------------+-----+--------+-----------------+-----+--------+---------+
+| Name                                                                              | DSP | Pragma | Variable        | Op  | Impl   | Latency |
++-----------------------------------------------------------------------------------+-----+--------+-----------------+-----+--------+---------+
+| + interleave_manual_rnd                                                           | 1   |        |                 |     |        |         |
+|  + interleave_manual_rnd_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_VITIS_LOOP_34_3 | 0   |        |                 |     |        |         |
+|    add_ln32_2_fu_188_p2                                                           | -   |        | add_ln32_2      | add | fabric | 0       |
+|    add_ln32_fu_206_p2                                                             | -   |        | add_ln32        | add | fabric | 0       |
+|    add_ln32_1_fu_411_p2                                                           | -   |        | add_ln32_1      | add | fabric | 0       |
+|    add_ln33_fu_256_p2                                                             | -   |        | add_ln33        | add | fabric | 0       |
+|    add_ln33_1_fu_438_p2                                                           | -   |        | add_ln33_1      | add | fabric | 0       |
+|    add_ln35_fu_308_p2                                                             | -   |        | add_ln35        | add | tadder | 0       |
+|    add_ln35_1_fu_318_p2                                                           | -   |        | add_ln35_1      | add | tadder | 0       |
+|    sub_ln35_fu_340_p2                                                             | -   |        | sub_ln35        | add | tadder | 0       |
+|    add_ln35_2_fu_346_p2                                                           | -   |        | add_ln35_2      | add | tadder | 0       |
+|    add_ln36_fu_463_p2                                                             | -   |        | add_ln36        | add | fabric | 0       |
+|    add_ln34_fu_357_p2                                                             | -   |        | add_ln34        | add | fabric | 0       |
+|    add_ln33_2_fu_363_p2                                                           | -   |        | add_ln33_2      | add | fabric | 0       |
+|  + interleave_manual_rnd_Pipeline_WRITE                                           | 0   |        |                 |     |        |         |
+|    indvars_iv_next_fu_122_p2                                                      | -   |        | indvars_iv_next | add | fabric | 0       |
+|    add_ln70_fu_155_p2                                                             | -   |        | add_ln70        | add | tadder | 0       |
+|    temp_V_d0                                                                      | -   |        | add_ln70_1      | add | tadder | 0       |
+|    add_ln40_fu_135_p2                                                             | -   |        | add_ln40        | add | fabric | 0       |
+|  + interleave_manual_rnd_Pipeline_LOAD                                            | 0   |        |                 |     |        |         |
+|    i_fu_165_p2                                                                    | -   |        | i               | add | fabric | 0       |
+|    add_ln13_fu_225_p2                                                             | -   |        | add_ln13        | add | fabric | 0       |
+|    add_ln13_1_fu_231_p2                                                           | -   |        | add_ln13_1      | add | fabric | 0       |
+|    add_ln13_2_fu_237_p2                                                           | -   |        | add_ln13_2      | add | fabric | 0       |
+|    add_ln32_3_fu_186_p2                                                           | -   |        | add_ln32_3      | add | fabric | 0       |
+|  + interleave_manual_rnd_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_VITIS_LOOP_46_3 | 1   |        |                 |     |        |         |
+|    add_ln44_2_fu_178_p2                                                           | -   |        | add_ln44_2      | add | fabric | 0       |
+|    add_ln44_fu_385_p2                                                             | -   |        | add_ln44        | add | fabric | 0       |
+|    add_ln44_1_fu_306_p2                                                           | -   |        | add_ln44_1      | add | fabric | 0       |
+|    add_ln45_fu_225_p2                                                             | -   |        | add_ln45        | add | fabric | 0       |
+|    add_ln45_1_fu_333_p2                                                           | -   |        | add_ln45_1      | add | fabric | 0       |
+|    mac_muladd_10ns_8ns_8ns_18_4_1_U10                                             | 1   |        | mul_ln47        | mul | dsp    | 3       |
+|    mac_muladd_10ns_8ns_8ns_18_4_1_U10                                             | 1   |        | add_ln47        | add | dsp    | 3       |
+|    sub_ln47_fu_416_p2                                                             | -   |        | sub_ln47        | add | tadder | 0       |
+|    add_ln47_1_fu_422_p2                                                           | -   |        | add_ln47_1      | add | tadder | 0       |
+|    add_ln48_fu_361_p2                                                             | -   |        | add_ln48        | add | fabric | 0       |
+|    add_ln46_fu_257_p2                                                             | -   |        | add_ln46        | add | fabric | 0       |
+|    add_ln45_2_fu_263_p2                                                           | -   |        | add_ln45_2      | add | fabric | 0       |
++-----------------------------------------------------------------------------------+-----+--------+-----------------+-----+--------+---------+
 
 
 ================================================================
@@ -123,7 +153,9 @@
 +-------------------------+------+------+--------+----------+---------+------+---------+
 | Name                    | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
 +-------------------------+------+------+--------+----------+---------+------+---------+
-| + interleave_manual_rnd | 600  | 0    |        |          |         |      |         |
+| + interleave_manual_rnd | 1400 | 0    |        |          |         |      |         |
+|   temp_V_U              | 200  | -    |        | temp_V   | ram_1p  | auto | 1       |
+|   tmpx_V_U              | 600  | -    | yes    | tmpx_V   | ram_t2p | bram | 1       |
 |   x_x0_V_U              | 200  | -    | pragma | x_x0_V   | ram_t2p | bram | 1       |
 |   x_x1_V_U              | 200  | -    | pragma | x_x1_V   | ram_t2p | bram | 1       |
 |   x_x2_V_U              | 200  | -    | pragma | x_x2_V   | ram_t2p | bram | 1       |
@@ -151,17 +183,17 @@
 | bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../src/interleave.cpp:16 in interleave, x                          |
 | array_partition | variable=x cyclic factor=3 dim=1     | ../src/interleave.cpp:17 in interleave, x                          |
 | pipeline        | II=1                                 | ../src/interleave.cpp:24 in interleave                             |
-| pipeline        | II=1                                 | ../src/interleave.cpp:29 in interleave                             |
-| interface       | mode=BRAM port=x_in                  | ../src/interleave_manual_rnd.cpp:12 in interleave_manual_rnd, x_in |
-| interface       | mode=BRAM port=y                     | ../src/interleave_manual_rnd.cpp:15 in interleave_manual_rnd, y    |
-| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../src/interleave_manual_rnd.cpp:19 in interleave_manual_rnd, x    |
-| pipeline        | II=1                                 | ../src/interleave_manual_rnd.cpp:25 in interleave_manual_rnd       |
-| pipeline        | II=1                                 | ../src/interleave_manual_rnd.cpp:30 in interleave_manual_rnd       |
-| interface       | mode=BRAM port=x_in                  | ../src/interleave_manual_seq.cpp:8 in interleave_manual_seq, x_in  |
-| interface       | mode=BRAM port=y                     | ../src/interleave_manual_seq.cpp:11 in interleave_manual_seq, y    |
-| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../src/interleave_manual_seq.cpp:15 in interleave_manual_seq, x    |
-| pipeline        | II=1                                 | ../src/interleave_manual_seq.cpp:21 in interleave_manual_seq       |
-| pipeline        | II=1                                 | ../src/interleave_manual_seq.cpp:26 in interleave_manual_seq       |
+| pipeline        | II=1                                 | ../src/interleave.cpp:30 in interleave                             |
+| interface       | mode=BRAM port=x_in                  | ../src/interleave_manual_rnd.cpp:13 in interleave_manual_rnd, x_in |
+| interface       | mode=BRAM port=y                     | ../src/interleave_manual_rnd.cpp:16 in interleave_manual_rnd, y    |
+| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../src/interleave_manual_rnd.cpp:27 in interleave_manual_rnd, x    |
+| pipeline        | II=1                                 | ../src/interleave_manual_rnd.cpp:33 in interleave_manual_rnd       |
+| pipeline        | II=1                                 | ../src/interleave_manual_rnd.cpp:39 in interleave_manual_rnd       |
+| interface       | mode=BRAM port=x_in                  | ../src/interleave_manual_seq.cpp:10 in interleave_manual_seq, x_in |
+| interface       | mode=BRAM port=y                     | ../src/interleave_manual_seq.cpp:13 in interleave_manual_seq, y    |
+| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../src/interleave_manual_seq.cpp:21 in interleave_manual_seq, x    |
+| pipeline        | II=1                                 | ../src/interleave_manual_seq.cpp:27 in interleave_manual_seq       |
+| pipeline        | II=1                                 | ../src/interleave_manual_seq.cpp:34 in interleave_manual_seq       |
 +-----------------+--------------------------------------+--------------------------------------------------------------------+
 
 

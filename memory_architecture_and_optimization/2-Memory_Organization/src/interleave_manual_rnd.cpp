@@ -1,8 +1,9 @@
 #include "./interleave.h"
 #include "./interleave_mem_rnd.hpp"
+#include "./tomatrix.hpp"
 
-void interleave_manual_rnd(ap_int<8> x_in[NUM_WORDS],
-                           ap_int<8> y[NUM_WORDS / 3], bool load) {
+void interleave_manual_rnd(mtype x_in,
+                           mtypeI y, bool load) {
 // #pragma HLS disaggregate variable = x_in
 // #pragma HLS disaggregate variable = y
 
@@ -14,6 +15,13 @@ void interleave_manual_rnd(ap_int<8> x_in[NUM_WORDS],
 //#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=BRAM
 #pragma HLS interface mode=BRAM port=y //[OPTIONS]
 
+
+
+ap_int<8> temp[NUM_WORDS / 3];
+ap_int<8> tmpx[NUM_WORDS];
+
+frommatrix(x_in,tmpx);
+
   static interleave_mem_rnd<ap_int<8>, NUM_WORDS> x;
   
 #pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
@@ -21,12 +29,15 @@ void interleave_manual_rnd(ap_int<8> x_in[NUM_WORDS],
 
   if (load)
 LOAD:
-    for (int i = 0; i < NUM_WORDS; i += 1)
+    for (int i = 0; i < NUM_WORDS; i += 1){
 #pragma HLS PIPELINE II=1
-    	x.write_rnd(i, x_in);
+    	x.write_rnd(i, tmpx);
+    }
   else
 WRITE:
-    for (int i = 0; i < NUM_WORDS; i += 3)
+    for (int i = 0; i < NUM_WORDS; i += 3){
 #pragma HLS PIPELINE II=1
-      y[idx++] = x.read_rnd(i, 0) + x.read_rnd(i, 1) + x.read_rnd(i, 2);
+      temp[idx++] = x.read_rnd(i, 0) + x.read_rnd(i, 1) + x.read_rnd(i, 2);
+    }
+      tomatrixI(temp,y);
 }

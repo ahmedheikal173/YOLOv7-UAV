@@ -11,7 +11,7 @@
 
 
 
-
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 1
 # 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
 # 55 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h"
 # 1 "C:/Xilinx/Vitis_HLS/2021.2/include/ap_common.h" 1
@@ -55134,13 +55134,32 @@ inline bool operator!=(
 }
 # 412 "C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed.h" 2
 # 395 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 2
-# 7 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
+# 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 2
+
+
+
+
+
+
+typedef ap_int<8> mtype[640][640][3];
+typedef ap_int<8> mtypeI[640][640/3][3];
+# 24 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp"
+void frommatrix(mtype mm_in, ap_int<8> mm_out[1228800]);
+void tomatrix(ap_int<8> m_in[1228800],mtype m_out);
+
+
+void frommatrixI(mtypeI mmI_in, ap_int<8> mmI_out[1228800/3]);
+void tomatrixI(ap_int<8> mI_in[1228800/3],mtypeI mI_out);
+# 6 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
+
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
+# 8 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave.h" 2
 
 void interleave(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                 bool load);
-void interleave_manual_rnd(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void interleave_manual_rnd(mtype x_in, mtypeI y,
                        bool load);
-void interleave_manual_seq(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void interleave_manual_seq(mtype x_in, mtypeI y,
                        bool load);
 # 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_manual_rnd.cpp" 2
 # 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_mem_rnd.hpp" 1
@@ -55229,9 +55248,28 @@ void interleave_mem_rnd<T, N>::write_rnd(ap_uint<(21)> i,
 }
 # 30 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_mem_rnd.hpp" 2
 # 3 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_manual_rnd.cpp" 2
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 1
+# 1 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/include/ap_int.h" 1
+# 2 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp" 2
 
-void interleave_manual_rnd(ap_int<8> x_in[1228800],
-                           ap_int<8> y[1228800 / 3], bool load) {
+
+
+
+
+
+typedef ap_int<8> mtype[640][640][3];
+typedef ap_int<8> mtypeI[640][640/3][3];
+# 24 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/tomatrix.hpp"
+void frommatrix(mtype mm_in, ap_int<8> mm_out[1228800]);
+void tomatrix(ap_int<8> m_in[1228800],mtype m_out);
+
+
+void frommatrixI(mtypeI mmI_in, ap_int<8> mmI_out[1228800/3]);
+void tomatrixI(ap_int<8> mI_in[1228800/3],mtypeI mI_out);
+# 4 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_manual_rnd.cpp" 2
+
+void interleave_manual_rnd(mtype x_in,
+                           mtypeI y, bool load) {
 
 
 
@@ -55243,6 +55281,13 @@ void interleave_manual_rnd(ap_int<8> x_in[1228800],
 
 #pragma HLS interface mode=BRAM port=y
 
+
+
+ap_int<8> temp[1228800 / 3];
+ap_int<8> tmpx[1228800];
+
+frommatrix(x_in,tmpx);
+
   static interleave_mem_rnd<ap_int<8>, 1228800> x;
 
 #pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
@@ -55250,34 +55295,37 @@ void interleave_manual_rnd(ap_int<8> x_in[1228800],
 
   if (load)
 LOAD:
-    for (int i = 0; i < 1228800; i += 1)
+    for (int i = 0; i < 1228800; i += 1){
 #pragma HLS PIPELINE II=1
-     x.write_rnd(i, x_in);
+     x.write_rnd(i, tmpx);
+    }
   else
 WRITE:
-    for (int i = 0; i < 1228800; i += 3)
+    for (int i = 0; i < 1228800; i += 3){
 #pragma HLS PIPELINE II=1
-      y[idx++] = x.read_rnd(i, 0) + x.read_rnd(i, 1) + x.read_rnd(i, 2);
+      temp[idx++] = x.read_rnd(i, 0) + x.read_rnd(i, 1) + x.read_rnd(i, 2);
+    }
+      tomatrixI(temp,y);
 }
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_interleave_manual_rnd_ir(ap_int<8> *, ap_int<8> *, bool);
+void apatb_interleave_manual_rnd_ir(ap_int<8> (*)[640][3], ap_int<8> (*)[213][3], bool);
 #ifdef __cplusplus
 extern "C"
 #endif
-void interleave_manual_rnd_hw_stub(ap_int<8> *x_in, ap_int<8> *y, bool load){
+void interleave_manual_rnd_hw_stub(ap_int<8> (*x_in)[640][3], ap_int<8> (*y)[213][3], bool load){
 interleave_manual_rnd(x_in, y, load);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_interleave_manual_rnd_sw(ap_int<8> *x_in, ap_int<8> *y, bool load){
+void apatb_interleave_manual_rnd_sw(ap_int<8> (*x_in)[640][3], ap_int<8> (*y)[213][3], bool load){
 apatb_interleave_manual_rnd_ir(x_in, y, load);
 return ;
 }
 #endif
-# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_manual_rnd.cpp"
+# 43 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization/src/interleave_manual_rnd.cpp"
 

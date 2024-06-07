@@ -1,0 +1,43 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'hisha' on host 'hisham-dell' (Windows NT_amd64 version 6.2) on Fri Jun 07 23:23:13 +0300 2024
+INFO: [HLS 200-10] In directory 'D:/gam3a/zzzzzzzzzz/bram/m5'
+Sourcing Tcl script 'D:/gam3a/zzzzzzzzzz/bram/m5/m5/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project m5 
+INFO: [HLS 200-10] Opening project 'D:/gam3a/zzzzzzzzzz/bram/m5/m5'.
+INFO: [HLS 200-1510] Running: set_top BRAM_filter 
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_flt.cpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_flt.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_flt.hpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_flt.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_img.cpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_img.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_img.hpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_img.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/RAM.h 
+INFO: [HLS 200-10] Adding design file '../src/RAM.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/tomatrix.cpp 
+INFO: [HLS 200-10] Adding design file '../src/tomatrix.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/tomatrix.hpp 
+INFO: [HLS 200-10] Adding design file '../src/tomatrix.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../tb/tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '../tb/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
+INFO: [HLS 200-10] Opening solution 'D:/gam3a/zzzzzzzzzz/bram/m5/m5/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Analyzing design file '../src/tomatrix.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/BRAM_img.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/BRAM_flt.cpp' ... 

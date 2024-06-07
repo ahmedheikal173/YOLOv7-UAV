@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="morflt" solutionName="solution1" date="2024-06-07T16:46:42.618+0200"/>
+        <logs message="ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim." projectName="morflt" solutionName="solution1" date="2024-06-07T16:46:42.528+0200"/>
+        <logs message="ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed." projectName="morflt" solutionName="solution1" date="2024-06-07T16:46:42.518+0200"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'flt_interleave_manual_seq/x_in_Din_A' to 0." projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:52.732+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'flt_interleave_manual_seq/x_in_WEN_A' to 0." projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:52.712+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'x_sel_V' is power-on initialization." projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:52.682+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:52.622+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'flt_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_46_2_VITIS_LOOP_48_3/x_in_Din_A' to 0." projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:51.672+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'flt_interleave_manual_seq_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_46_2_VITIS_LOOP_48_3/x_in_WEN_A' to 0." projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:51.642+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 214-238] The INTERFACE pragma actions in object field. If on struct field, the struct argument must be pointer or reference. If struct by value, this interface pragma will be viewed as invalid and ignored. In function 'flt_interleave_manual_seq(ap_int&lt;8> (*) [9][44], ap_int&lt;16> (*) [1][44], bool)' (../../src/interleave_manual_seq.cpp:6:0)" projectName="morflt" solutionName="solution1" date="2024-06-07T16:45:49.342+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

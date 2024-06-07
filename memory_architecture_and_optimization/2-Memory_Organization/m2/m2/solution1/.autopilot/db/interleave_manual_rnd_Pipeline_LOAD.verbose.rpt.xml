@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'interleave_manual_rnd_Pipeline_LOAD'" level="0">
-<item name = "Date">Wed Jun  5 23:29:21 2024
+<item name = "Date">Fri Jun  7 02:24:46 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m2</item>
@@ -80,14 +80,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln13_1_fu_237_p2">+, 0, 0, 49, 42, 22</column>
-<column name="add_ln13_2_fu_243_p2">+, 0, 0, 49, 42, 22</column>
-<column name="add_ln13_fu_231_p2">+, 0, 0, 49, 42, 22</column>
-<column name="add_ln24_1_fu_192_p2">+, 0, 0, 28, 21, 1</column>
-<column name="i_fu_171_p2">+, 0, 0, 28, 21, 1</column>
-<column name="icmp_ln24_1_fu_198_p2">icmp, 0, 0, 15, 21, 2</column>
-<column name="icmp_ln24_fu_165_p2">icmp, 0, 0, 15, 21, 21</column>
-<column name="select_ln24_fu_204_p3">select, 0, 0, 21, 1, 21</column>
+<column name="add_ln13_1_fu_231_p2">+, 0, 0, 49, 42, 22</column>
+<column name="add_ln13_2_fu_237_p2">+, 0, 0, 49, 42, 22</column>
+<column name="add_ln13_fu_225_p2">+, 0, 0, 49, 42, 22</column>
+<column name="add_ln32_3_fu_186_p2">+, 0, 0, 28, 21, 1</column>
+<column name="i_fu_165_p2">+, 0, 0, 28, 21, 1</column>
+<column name="icmp_ln32_1_fu_192_p2">icmp, 0, 0, 15, 21, 2</column>
+<column name="icmp_ln32_fu_159_p2">icmp, 0, 0, 15, 21, 21</column>
+<column name="select_ln32_fu_198_p3">select, 0, 0, 21, 1, 21</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -96,11 +96,11 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
-<column name="i_V_fu_78">9, 2, 21, 42</column>
-<column name="phi_mul7_fu_70">9, 2, 42, 84</column>
-<column name="phi_mul9_fu_66">9, 2, 42, 84</column>
-<column name="phi_mul_fu_74">9, 2, 42, 84</column>
-<column name="ret_fu_62">9, 2, 21, 42</column>
+<column name="i_V_fu_72">9, 2, 21, 42</column>
+<column name="phi_mul21_fu_64">9, 2, 42, 84</column>
+<column name="phi_mul23_fu_60">9, 2, 42, 84</column>
+<column name="phi_mul_fu_68">9, 2, 42, 84</column>
+<column name="ret_fu_56">9, 2, 21, 42</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -109,12 +109,12 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="i_V_fu_78">21, 0, 21, 0</column>
-<column name="phi_mul7_fu_70">42, 0, 42, 0</column>
-<column name="phi_mul9_fu_66">42, 0, 42, 0</column>
-<column name="phi_mul_fu_74">42, 0, 42, 0</column>
-<column name="ret_fu_62">21, 0, 21, 0</column>
-<column name="trunc_ln1559_reg_353">2, 0, 2, 0</column>
+<column name="i_V_fu_72">21, 0, 21, 0</column>
+<column name="phi_mul21_fu_64">42, 0, 42, 0</column>
+<column name="phi_mul23_fu_60">42, 0, 42, 0</column>
+<column name="phi_mul_fu_68">42, 0, 42, 0</column>
+<column name="ret_fu_56">21, 0, 21, 0</column>
+<column name="trunc_ln1559_reg_347">2, 0, 2, 0</column>
 </table>
 </item>
 </section>
@@ -130,11 +130,9 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, interleave_manual_rnd_Pipeline_LOAD, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, interleave_manual_rnd_Pipeline_LOAD, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, interleave_manual_rnd_Pipeline_LOAD, return value</column>
-<column name="x_in_Addr_A">out, 32, bram, x_in, array</column>
-<column name="x_in_EN_A">out, 1, bram, x_in, array</column>
-<column name="x_in_WEN_A">out, 1, bram, x_in, array</column>
-<column name="x_in_Din_A">out, 8, bram, x_in, array</column>
-<column name="x_in_Dout_A">in, 8, bram, x_in, array</column>
+<column name="tmpx_V_address0">out, 21, ap_memory, tmpx_V, array</column>
+<column name="tmpx_V_ce0">out, 1, ap_memory, tmpx_V, array</column>
+<column name="tmpx_V_q0">in, 8, ap_memory, tmpx_V, array</column>
 <column name="x_x0_V_address0">out, 19, ap_memory, x_x0_V, array</column>
 <column name="x_x0_V_ce0">out, 1, ap_memory, x_x0_V, array</column>
 <column name="x_x0_V_we0">out, 1, ap_memory, x_x0_V, array</column>

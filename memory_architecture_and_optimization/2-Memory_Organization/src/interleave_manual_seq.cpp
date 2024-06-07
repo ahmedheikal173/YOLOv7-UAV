@@ -1,8 +1,10 @@
 #include "./interleave.h"
 #include "./interleave_mem_seq.hpp"
+#include "./tomatrix.hpp"
 
-void interleave_manual_seq(ap_int<8> x_in[NUM_WORDS],
-                           ap_int<8> y[NUM_WORDS / 3], bool load) {
+void interleave_manual_seq(mtype x_in,
+                           mtypeI y, bool load) {
+
 //#pragma HLS RESOURCE variable=x_in core=RAM_1P_BRAM
 //#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
 #pragma HLS interface mode=BRAM port=x_in //[OPTIONS]
@@ -10,6 +12,10 @@ void interleave_manual_seq(ap_int<8> x_in[NUM_WORDS],
 //#pragma HLS BIND_STORAGE variable=y type=RAM_T2P impl=BRAM
 #pragma HLS interface mode=BRAM port=y //[OPTIONS]
 
+ap_int<8> tmpy[NUM_WORDS / 3];
+ap_int<8> tmpx[NUM_WORDS];
+
+frommatrix(x_in,tmpx);
 
   static interleave_mem_seq<ap_int<8>, NUM_WORDS> x;
 #pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
@@ -17,13 +23,18 @@ void interleave_manual_seq(ap_int<8> x_in[NUM_WORDS],
 
   if (load)
 LOAD:
-    for (int i = 0; i < NUM_WORDS; i += 1)
+    for (int i = 0; i < NUM_WORDS; i += 1){
 #pragma HLS PIPELINE II=1
-    	x.write_seq(i, x_in);
+    	x.write_seq(i, tmpx);
+    }
+                           
   else
 WRITE:
-    for (int i = 0; i < NUM_WORDS / 3; i += 1)
+    for (int i = 0; i < NUM_WORDS / 3; i += 1){
 #pragma HLS PIPELINE II=1
 
-    	y[idx++] = x.read_seq(i, 0) + x.read_seq(i, 1) + x.read_seq(i, 2);
+    	tmpy[idx++] = x.read_seq(i, 0) + x.read_seq(i, 1) + x.read_seq(i, 2);
+    }
+
+      tomatrixI(tmpy,y);
 }
