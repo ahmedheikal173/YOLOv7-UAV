@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln27_fu_81_p2" SOURCE="../src/BRAM_flt.cpp:27" VARIABLE="icmp_ln27" MODULE="BRAM_filter_Pipeline_VITIS_LOOP_27_2" LOOP="VITIS_LOOP_27_2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_87_p2" SOURCE="../src/BRAM_flt.cpp:27" VARIABLE="i" MODULE="BRAM_filter_Pipeline_VITIS_LOOP_27_2" LOOP="VITIS_LOOP_27_2" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln20_fu_81_p2" SOURCE="../src/BRAM_flt.cpp:20" VARIABLE="icmp_ln20" MODULE="BRAM_filter_Pipeline_VITIS_LOOP_20_1" LOOP="VITIS_LOOP_20_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_87_p2" SOURCE="../src/BRAM_flt.cpp:20" VARIABLE="i" MODULE="BRAM_filter_Pipeline_VITIS_LOOP_20_1" LOOP="VITIS_LOOP_20_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage ram_1p" ID="" IMPL="bram" LATENCY="1" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_mems_V_U" SOURCE="../src/BRAM_flt.cpp:9" VARIABLE="x_mems_V" MODULE="BRAM_filter" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="1" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="BRAM_filter" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

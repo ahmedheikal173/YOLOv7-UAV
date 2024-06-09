@@ -1,0 +1,8 @@
+   Build using "C:/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling tomatrix.cpp_pre.cpp.tb.cpp
+   Compiling apatb_BRAM_filter.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling BRAM_img.cpp_pre.cpp.tb.cpp
+   Compiling BRAM_flt.cpp_pre.cpp.tb.cpp
+   Compiling apatb_BRAM_filter_ir.ll
+   Generating cosim.tv.exe

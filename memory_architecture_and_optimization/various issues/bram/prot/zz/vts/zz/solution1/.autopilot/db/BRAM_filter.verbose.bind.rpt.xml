@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'BRAM_filter'" level="0">
+<item name = "Date">Sun Jun  9 02:29:51 2024
+</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
+<item name = "Project">zz</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.116 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">803, 1203, 8.030 us, 12.030 us, 804, 1204, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_BRAM_filter_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_70_2_VITIS_LOOP_72_3_fu_60">BRAM_filter_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_70_2_VITIS_LOOP_72_3, 401, 401, 4.010 us, 4.010 us, 401, 401, no</column>
+<column name="grp_BRAM_filter_Pipeline_VITIS_LOOP_27_2_fu_68">BRAM_filter_Pipeline_VITIS_LOOP_27_2, 398, 398, 3.980 us, 3.980 us, 398, 398, no</column>
+<column name="grp_BRAM_filter_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_VITIS_LOOP_53_3_fu_75">BRAM_filter_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_51_2_VITIS_LOOP_53_3, 400, 400, 4.000 us, 4.000 us, 400, 400, no</column>
+<column name="grp_BRAM_filter_Pipeline_VITIS_LOOP_20_1_fu_82">BRAM_filter_Pipeline_VITIS_LOOP_20_1, 398, 398, 3.980 us, 3.980 us, 398, 398, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

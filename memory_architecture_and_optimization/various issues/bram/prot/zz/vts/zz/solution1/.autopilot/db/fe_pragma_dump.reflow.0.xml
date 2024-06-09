@@ -1,0 +1,19 @@
+<pragmas>
+<pragma file="../src/BRAM_flt.cpp" line="5" pragmaType="interface" parentfunction="BRAM_filter" mode="ap_memory" port="x_in" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="../src/BRAM_flt.cpp" line="6" pragmaType="interface" parentfunction="BRAM_filter" mode="ap_memory" port="out" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="../src/BRAM_flt.cpp" line="12" pragmaType="bind_storage" parentfunction="BRAM_filter" op="666" impl="18" latency="-1" variable="inn"/>
+<pragma file="../src/BRAM_flt.cpp" line="14" pragmaType="bind_storage" parentfunction="BRAM_filter" op="666" impl="18" latency="-1" variable="outt"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<9, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="../src/./BRAM_flt.hpp" line="18" pragmaType="bind_storage" parentfunction="bram_flt::bram_flt()" op="666" impl="18" latency="-1" variable="mems2"/>
+<pragma file="../src/../include/ap_int.h" line="321" pragmaType="inline" parentfunction="ap_uint<9>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" line="587" pragmaType="inline" parentfunction="ap_int_base<9, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="../src/tomatrix.cpp" line="72" pragmaType="pipeline" parentfunction="frommatrixF" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/tomatrix.cpp" line="62" pragmaType="bind_storage" parentfunction="frommatrixF" op="666" impl="18" latency="-1" variable="mmI_in"/>
+<pragma file="../src/../include/ap_int.h" line="66" pragmaType="inline" parentfunction="ap_int<8>::ap_int()" off="0" region="0" recursive="0"/>
+<pragma file="../src/tomatrix.cpp" line="53" pragmaType="pipeline" parentfunction="tomatrixF" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/tomatrix.cpp" line="43" pragmaType="bind_storage" parentfunction="tomatrixF" op="666" impl="18" latency="-1" variable="mI_out"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_common.h" line="524" pragmaType="inline" parentfunction="ssdm_int<9, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_common.h" line="517" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" line="734" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>
