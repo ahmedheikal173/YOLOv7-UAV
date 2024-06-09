@@ -1,8 +1,13 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
     <sourceFile name="">
-        <directive functionName="window_avg" label="" functionLabel="">
+        <directive functionName="avg" label="" functionLabel="">
             <pragma name="TOP">
-                <option name="name" value="window_avg"/>
+                <option name="name" value="avg"/>
+            </pragma>
+        </directive>
+        <directive functionName="avg" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="avg"/>
             </pragma>
         </directive>
     </sourceFile>

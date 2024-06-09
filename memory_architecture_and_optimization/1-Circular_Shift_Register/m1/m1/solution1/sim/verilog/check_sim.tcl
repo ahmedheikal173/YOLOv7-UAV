@@ -101,7 +101,7 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.circular_shift_reg.autotvout_gmem.dat"
+         "rtl.circular_shift_reg.autotvout_dout.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

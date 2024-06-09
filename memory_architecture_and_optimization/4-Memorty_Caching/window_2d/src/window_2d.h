@@ -8,7 +8,7 @@
 #define NUM_ROW 640
 #define NUM_COL 640
 
-
+void avg(ap_uint<8> din[NUM_ROW][NUM_COL], ap_uint<8> dout[NUM_ROW][NUM_COL]);
 void window_avg(ap_uint<8> din[NUM_ROW][NUM_COL], ap_uint<8> dout[NUM_ROW][NUM_COL]);
 void clip_window(int r, ap_uint<8> window[3]);
 

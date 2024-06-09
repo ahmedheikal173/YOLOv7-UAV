@@ -1,5 +1,5 @@
 <root versionMajor = "1" versionMinor = "5">
-  <kernel name="word_width" language="c" vlnv="xilinx.com:hls:word_width:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="" hwControlProtocol="ap_ctrl_chain">
+  <kernel name="word_width_manual" language="c" vlnv="xilinx.com:hls:word_width_manual:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="" hwControlProtocol="ap_ctrl_chain">
     <ports>
       <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x18" dataWidth="32"/>
     </ports>

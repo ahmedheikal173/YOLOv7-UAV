@@ -83,44 +83,6 @@ void XWord_width_manual_DisableAutoRestart(XWord_width_manual *InstancePtr) {
     XWord_width_manual_WriteReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XWord_width_manual_Set_x_in(XWord_width_manual *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XWord_width_manual_WriteReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_X_IN_DATA, (u32)(Data));
-    XWord_width_manual_WriteReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_X_IN_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XWord_width_manual_Get_x_in(XWord_width_manual *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XWord_width_manual_ReadReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_X_IN_DATA);
-    Data += (u64)XWord_width_manual_ReadReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_X_IN_DATA + 4) << 32;
-    return Data;
-}
-
-void XWord_width_manual_Set_y(XWord_width_manual *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XWord_width_manual_WriteReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_Y_DATA, (u32)(Data));
-    XWord_width_manual_WriteReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_Y_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XWord_width_manual_Get_y(XWord_width_manual *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XWord_width_manual_ReadReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_Y_DATA);
-    Data += (u64)XWord_width_manual_ReadReg(InstancePtr->Control_BaseAddress, XWORD_WIDTH_MANUAL_CONTROL_ADDR_Y_DATA + 4) << 32;
-    return Data;
-}
-
 void XWord_width_manual_Set_load(XWord_width_manual *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

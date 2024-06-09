@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source/>
-  <testbench>
-    <originFiles name="tb_interleave.cpp" path="D:\gam3a\zzzzzzzzzz\2-Memory_Organization\tb\tb_interleave.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>

@@ -4,12 +4,12 @@
 == Synthesis Summary Report of 'interleave_manual_seq'
 ================================================================
 + General Information: 
-    * Date:           Fri Jun  7 15:04:32 2024
+    * Date:           Sun Jun  9 03:22:26 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        morgb
     * Solution:       solution1 (Vitis Kernel Flow Target)
-    * Product family: virtexuplus
-    * Target device:  xcvu11p-flga2577-1-e
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
     
 
 + Performance & Resource Estimates: 
@@ -19,10 +19,10 @@
     |                 Modules                 | Issue|      | Latency |  Latency  | Iteration|         |   Trip  |          |           |    |           |           |     |
     |                 & Loops                 | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|   BRAM    | DSP|     FF    |    LUT    | URAM|
     +-----------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
-    |+ interleave_manual_seq                  |     -|  3.68|  1228804|  1.229e+07|         -|  1228805|        -|        no|  600 (14%)|   -|  219 (~0%)|  554 (~0%)|    -|
-    | + interleave_manual_seq_Pipeline_WRITE  |     -|  3.68|   409602|  4.096e+06|         -|   409602|        -|        no|          -|   -|   41 (~0%)|  116 (~0%)|    -|
+    |+ interleave_manual_seq                  |     -|  3.77|  1228804|  1.229e+07|         -|  1228805|        -|        no|  600 (96%)|   -|  219 (~0%)|  552 (~0%)|    -|
+    | + interleave_manual_seq_Pipeline_WRITE  |     -|  3.77|   409602|  4.096e+06|         -|   409602|        -|        no|          -|   -|   41 (~0%)|  116 (~0%)|    -|
     |  o WRITE                                |     -|  7.30|   409600|  4.096e+06|         2|        1|   409600|       yes|          -|   -|          -|          -|    -|
-    | + interleave_manual_seq_Pipeline_LOAD   |     -|  4.71|  1228802|  1.229e+07|         -|  1228802|        -|        no|          -|   -|   94 (~0%)|  246 (~0%)|    -|
+    | + interleave_manual_seq_Pipeline_LOAD   |     -|  4.83|  1228802|  1.229e+07|         -|  1228802|        -|        no|          -|   -|   94 (~0%)|  244 (~0%)|    -|
     |  o LOAD                                 |     -|  7.30|  1228800|  1.229e+07|         2|        1|  1228800|       yes|          -|   -|          -|          -|    -|
     +-----------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
 
@@ -121,9 +121,9 @@
 | Name                    | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
 +-------------------------+------+------+--------+----------+---------+------+---------+
 | + interleave_manual_seq | 600  | 0    |        |          |         |      |         |
-|   x_x0_V_U              | 200  | -    | pragma | x_x0_V   | ram_t2p | bram | 1       |
-|   x_x1_V_U              | 200  | -    | pragma | x_x1_V   | ram_t2p | bram | 1       |
-|   x_x2_V_U              | 200  | -    | pragma | x_x2_V   | ram_t2p | bram | 1       |
+|   x_x0_V_U              | 200  | -    | pragma | x_x0_V   | ram_1p  | bram | 1       |
+|   x_x1_V_U              | 200  | -    | pragma | x_x1_V   | ram_1p  | bram | 1       |
+|   x_x2_V_U              | 200  | -    | pragma | x_x2_V   | ram_1p  | bram | 1       |
 +-------------------------+------+------+--------+----------+---------+------+---------+
 
 
@@ -131,34 +131,34 @@
 == User Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------------+--------------------------------------+-----------------------------------------------------------------------+
-| Type            | Options                              | Location                                                              |
-+-----------------+--------------------------------------+-----------------------------------------------------------------------+
-| bind_storage    | variable=x0 type=RAM_T2P impl=BRAM   | ../../src/./interleave_mem_rnd.hpp:20 in interleave_mem_rnd<t, n>, x0 |
-| bind_storage    | variable=x1 type=RAM_T2P impl=BRAM   | ../../src/./interleave_mem_rnd.hpp:21 in interleave_mem_rnd<t, n>, x1 |
-| bind_storage    | variable=x2 type=RAM_T2P impl=BRAM   | ../../src/./interleave_mem_rnd.hpp:22 in interleave_mem_rnd<t, n>, x2 |
-| bind_storage    | variable=x0 type=RAM_T2P impl=BRAM   | ../../src/./interleave_mem_seq.hpp:22 in interleave_mem_seq<t, n>, x0 |
-| bind_storage    | variable=x1 type=RAM_T2P impl=BRAM   | ../../src/./interleave_mem_seq.hpp:23 in interleave_mem_seq<t, n>, x1 |
-| bind_storage    | variable=x2 type=RAM_T2P impl=BRAM   | ../../src/./interleave_mem_seq.hpp:24 in interleave_mem_seq<t, n>, x2 |
-| inline          |                                      | ../../src/./read_mem_rnd.hpp:11 in read_rnd                           |
-| bind_storage    | variable=x_in type=RAM_T2P impl=BRAM | ../../src/./write_mem_rnd.hpp:10 in write_rnd, x_in                   |
-| bind_storage    | variable=x_in type=RAM_T2P impl=BRAM | ../../src/./write_mem_seq.hpp:10 in write_seq, x_in                   |
-| interface       | mode=BRAM port=x_in                  | ../../src/interleave.cpp:11 in interleave, x_in                       |
-| interface       | mode=BRAM port=y                     | ../../src/interleave.cpp:12 in interleave, y                          |
-| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../../src/interleave.cpp:16 in interleave, x                          |
-| array_partition | variable=x cyclic factor=3 dim=1     | ../../src/interleave.cpp:17 in interleave, x                          |
-| pipeline        | II=1                                 | ../../src/interleave.cpp:24 in interleave                             |
-| pipeline        | II=1                                 | ../../src/interleave.cpp:29 in interleave                             |
-| interface       | mode=BRAM port=x_in                  | ../../src/interleave_manual_rnd.cpp:12 in interleave_manual_rnd, x_in |
-| interface       | mode=BRAM port=y                     | ../../src/interleave_manual_rnd.cpp:15 in interleave_manual_rnd, y    |
-| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../../src/interleave_manual_rnd.cpp:19 in interleave_manual_rnd, x    |
-| pipeline        | II=1                                 | ../../src/interleave_manual_rnd.cpp:25 in interleave_manual_rnd       |
-| pipeline        | II=1                                 | ../../src/interleave_manual_rnd.cpp:30 in interleave_manual_rnd       |
-| interface       | mode=BRAM port=x_in                  | ../../src/interleave_manual_seq.cpp:8 in interleave_manual_seq, x_in  |
-| interface       | mode=BRAM port=y                     | ../../src/interleave_manual_seq.cpp:11 in interleave_manual_seq, y    |
-| bind_storage    | variable=x type=RAM_T2P impl=BRAM    | ../../src/interleave_manual_seq.cpp:15 in interleave_manual_seq, x    |
-| pipeline        | II=1                                 | ../../src/interleave_manual_seq.cpp:21 in interleave_manual_seq       |
-| pipeline        | II=1                                 | ../../src/interleave_manual_seq.cpp:26 in interleave_manual_seq       |
-+-----------------+--------------------------------------+-----------------------------------------------------------------------+
++-----------------+-------------------------------------+-----------------------------------------------------------------------+
+| Type            | Options                             | Location                                                              |
++-----------------+-------------------------------------+-----------------------------------------------------------------------+
+| bind_storage    | variable=x0 type=RAM_1P impl=BRAM   | ../../src/./interleave_mem_rnd.hpp:20 in interleave_mem_rnd<t, n>, x0 |
+| bind_storage    | variable=x1 type=RAM_1P impl=BRAM   | ../../src/./interleave_mem_rnd.hpp:21 in interleave_mem_rnd<t, n>, x1 |
+| bind_storage    | variable=x2 type=RAM_1P impl=BRAM   | ../../src/./interleave_mem_rnd.hpp:22 in interleave_mem_rnd<t, n>, x2 |
+| bind_storage    | variable=x0 type=RAM_1P impl=BRAM   | ../../src/./interleave_mem_seq.hpp:22 in interleave_mem_seq<t, n>, x0 |
+| bind_storage    | variable=x1 type=RAM_1P impl=BRAM   | ../../src/./interleave_mem_seq.hpp:23 in interleave_mem_seq<t, n>, x1 |
+| bind_storage    | variable=x2 type=RAM_1P impl=BRAM   | ../../src/./interleave_mem_seq.hpp:24 in interleave_mem_seq<t, n>, x2 |
+| inline          |                                     | ../../src/./read_mem_rnd.hpp:11 in read_rnd                           |
+| bind_storage    | variable=x_in type=RAM_1P impl=BRAM | ../../src/./write_mem_rnd.hpp:10 in write_rnd, x_in                   |
+| bind_storage    | variable=x_in type=RAM_1P impl=BRAM | ../../src/./write_mem_seq.hpp:10 in write_seq, x_in                   |
+| interface       | mode=BRAM port=x_in                 | ../../src/interleave.cpp:11 in interleave, x_in                       |
+| interface       | mode=BRAM port=y                    | ../../src/interleave.cpp:12 in interleave, y                          |
+| bind_storage    | variable=x type=RAM_1P impl=BRAM    | ../../src/interleave.cpp:16 in interleave, x                          |
+| array_partition | variable=x cyclic factor=3 dim=1    | ../../src/interleave.cpp:17 in interleave, x                          |
+| pipeline        | II=1                                | ../../src/interleave.cpp:24 in interleave                             |
+| pipeline        | II=1                                | ../../src/interleave.cpp:29 in interleave                             |
+| interface       | mode=BRAM port=x_in                 | ../../src/interleave_manual_rnd.cpp:12 in interleave_manual_rnd, x_in |
+| interface       | mode=BRAM port=y                    | ../../src/interleave_manual_rnd.cpp:15 in interleave_manual_rnd, y    |
+| bind_storage    | variable=x type=RAM_1P impl=BRAM    | ../../src/interleave_manual_rnd.cpp:19 in interleave_manual_rnd, x    |
+| pipeline        | II=1                                | ../../src/interleave_manual_rnd.cpp:25 in interleave_manual_rnd       |
+| pipeline        | II=1                                | ../../src/interleave_manual_rnd.cpp:30 in interleave_manual_rnd       |
+| interface       | mode=BRAM port=x_in                 | ../../src/interleave_manual_seq.cpp:8 in interleave_manual_seq, x_in  |
+| interface       | mode=BRAM port=y                    | ../../src/interleave_manual_seq.cpp:11 in interleave_manual_seq, y    |
+| bind_storage    | variable=x type=RAM_1P impl=BRAM    | ../../src/interleave_manual_seq.cpp:15 in interleave_manual_seq, x    |
+| pipeline        | II=1                                | ../../src/interleave_manual_seq.cpp:21 in interleave_manual_seq       |
+| pipeline        | II=1                                | ../../src/interleave_manual_seq.cpp:26 in interleave_manual_seq       |
++-----------------+-------------------------------------+-----------------------------------------------------------------------+
 
 

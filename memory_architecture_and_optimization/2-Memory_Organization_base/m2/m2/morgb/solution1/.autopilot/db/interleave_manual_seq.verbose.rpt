@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'interleave_manual_seq'
 ================================================================
-* Date:           Fri Jun  7 15:04:32 2024
+* Date:           Sun Jun  9 03:22:26 2024
 
 * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        morgb
 * Solution:       solution1 (Vitis Kernel Flow Target)
-* Product family: virtexuplus
-* Target device:  xcvu11p-flga2577-1-e
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  3.621 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  3.525 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -51,27 +51,23 @@
 == Utilization Estimates
 ================================================================
 * Summary: 
-+---------------------+---------+------+---------+---------+-----+
-|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
-+---------------------+---------+------+---------+---------+-----+
-|DSP                  |        -|     -|        -|        -|    -|
-|Expression           |        -|     -|        0|        2|    -|
-|FIFO                 |        -|     -|        -|        -|    -|
-|Instance             |        0|     -|      185|      406|    0|
-|Memory               |      600|     -|        0|        0|    -|
-|Multiplexer          |        -|     -|        -|      146|    -|
-|Register             |        -|     -|       34|        -|    -|
-+---------------------+---------+------+---------+---------+-----+
-|Total                |      600|     0|      219|      554|    0|
-+---------------------+---------+------+---------+---------+-----+
-|Available SLR        |     1344|  3072|   864000|   432000|  320|
-+---------------------+---------+------+---------+---------+-----+
-|Utilization SLR (%)  |       44|     0|       ~0|       ~0|    0|
-+---------------------+---------+------+---------+---------+-----+
-|Available            |     4032|  9216|  2592000|  1296000|  960|
-+---------------------+---------+------+---------+---------+-----+
-|Utilization (%)      |       14|     0|       ~0|       ~0|    0|
-+---------------------+---------+------+---------+---------+-----+
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        0|     -|     185|     404|    0|
+|Memory           |      600|     -|       0|       0|    -|
+|Multiplexer      |        -|     -|       -|     146|    -|
+|Register         |        -|     -|      34|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |      600|     0|     219|     552|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       96|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
 
 + Detail: 
     * Instance: 
@@ -79,25 +75,25 @@
     |                    Instance                    |                Module                | BRAM_18K| DSP| FF | LUT | URAM|
     +------------------------------------------------+--------------------------------------+---------+----+----+-----+-----+
     |control_s_axi_U                                 |control_s_axi                         |        0|   0|  50|   44|    0|
-    |grp_interleave_manual_seq_Pipeline_LOAD_fu_92   |interleave_manual_seq_Pipeline_LOAD   |        0|   0|  94|  246|    0|
+    |grp_interleave_manual_seq_Pipeline_LOAD_fu_92   |interleave_manual_seq_Pipeline_LOAD   |        0|   0|  94|  244|    0|
     |grp_interleave_manual_seq_Pipeline_WRITE_fu_80  |interleave_manual_seq_Pipeline_WRITE  |        0|   0|  41|  116|    0|
     +------------------------------------------------+--------------------------------------+---------+----+----+-----+-----+
-    |Total                                           |                                      |        0|   0| 185|  406|    0|
+    |Total                                           |                                      |        0|   0| 185|  404|    0|
     +------------------------------------------------+--------------------------------------+---------+----+----+-----+-----+
 
     * DSP: 
     N/A
 
     * Memory: 
-    +----------+--------------------------+---------+---+----+-----+--------+-----+------+-------------+
-    |  Memory  |          Module          | BRAM_18K| FF| LUT| URAM|  Words | Bits| Banks| W*Bits*Banks|
-    +----------+--------------------------+---------+---+----+-----+--------+-----+------+-------------+
-    |x_x0_V_U  |x_x0_V_RAM_T2P_BRAM_1R1W  |      200|  0|   0|    0|  409600|    8|     1|      3276800|
-    |x_x1_V_U  |x_x0_V_RAM_T2P_BRAM_1R1W  |      200|  0|   0|    0|  409600|    8|     1|      3276800|
-    |x_x2_V_U  |x_x0_V_RAM_T2P_BRAM_1R1W  |      200|  0|   0|    0|  409600|    8|     1|      3276800|
-    +----------+--------------------------+---------+---+----+-----+--------+-----+------+-------------+
-    |Total     |                          |      600|  0|   0|    0| 1228800|   24|     3|      9830400|
-    +----------+--------------------------+---------+---+----+-----+--------+-----+------+-------------+
+    +----------+-------------------------+---------+---+----+-----+--------+-----+------+-------------+
+    |  Memory  |          Module         | BRAM_18K| FF| LUT| URAM|  Words | Bits| Banks| W*Bits*Banks|
+    +----------+-------------------------+---------+---+----+-----+--------+-----+------+-------------+
+    |x_x0_V_U  |x_x0_V_RAM_1P_BRAM_1R1W  |      200|  0|   0|    0|  409600|    8|     1|      3276800|
+    |x_x1_V_U  |x_x0_V_RAM_1P_BRAM_1R1W  |      200|  0|   0|    0|  409600|    8|     1|      3276800|
+    |x_x2_V_U  |x_x0_V_RAM_1P_BRAM_1R1W  |      200|  0|   0|    0|  409600|    8|     1|      3276800|
+    +----------+-------------------------+---------+---+----+-----+--------+-----+------+-------------+
+    |Total     |                         |      600|  0|   0|    0| 1228800|   24|     3|      9830400|
+    +----------+-------------------------+---------+---+----+-----+--------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -232,7 +228,7 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.50>
+State 1 <SV = 0> <Delay = 1.47>
 ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%load_read = read i1 @_ssdm_op_Read.ap_none.i1, i1 %load"   --->   Operation 5 'read' 'load_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%t_V_loc = alloca i64 1"   --->   Operation 6 'alloca' 't_V_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x_idx_V_new_0_loc = alloca i64 1"   --->   Operation 7 'alloca' 'x_idx_V_new_0_loc' <Predicate = true> <Delay = 0.00>
@@ -248,30 +244,30 @@ ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %load, void @empty_4, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_2, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load = load i1 %guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x"   --->   Operation 19 'load' 'guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 20 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 20 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln14 = br i1 %guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load, void %codeRepl, void %._crit_edge" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 21 'br' 'br_ln14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 22 'specmemcore' 'specmemcore_ln14' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 23 'specmemcore' 'specmemcore_ln14' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 24 'specmemcore' 'specmemcore_ln14' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 22 'specmemcore' 'specmemcore_ln14' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 23 'specmemcore' 'specmemcore_ln14' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 24 'specmemcore' 'specmemcore_ln14' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%store_ln0 = store i1 1, i1 %guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x"   --->   Operation 25 'store' 'store_ln0' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln0 = br void %._crit_edge"   --->   Operation 26 'br' 'br_ln0' <Predicate = (!guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x_load)> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 27 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 28 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 29 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i21 %x_idx_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 30 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i2 %x_sel_V, i64 666, i64 30, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 31 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 27 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 28 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 29 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i21 %x_idx_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 30 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i2 %x_sel_V, i64 666, i64 18, i64 18446744073709551615" [../../src/interleave_manual_seq.cpp:14]   --->   Operation 31 'specmemcore' 'specmemcore_ln14' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln18 = br i1 %load_read, void %.preheader.preheader, void %codeRepl3" [../../src/interleave_manual_seq.cpp:18]   --->   Operation 32 'br' 'br_ln18' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln0 = call void @interleave_manual_seq_Pipeline_WRITE, i8 %y, i8 %x_x0_V, i8 %x_x1_V, i8 %x_x2_V"   --->   Operation 33 'call' 'call_ln0' <Predicate = (!load_read)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%x_sel_V_load = load i2 %x_sel_V" [../../src/./write_mem_seq.hpp:26]   --->   Operation 34 'load' 'x_sel_V_load' <Predicate = (load_read)> <Delay = 0.00>
 ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%x_idx_V_load = load i21 %x_idx_V"   --->   Operation 35 'load' 'x_idx_V_load' <Predicate = (load_read)> <Delay = 0.00>
-ST_1 : Operation 36 [2/2] (0.50ns)   --->   "%call_ln587 = call void @interleave_manual_seq_Pipeline_LOAD, i21 %x_idx_V_load, i2 %x_sel_V_load, i8 %x_in, i1 %x_idx_V_flag_0_loc, i21 %x_idx_V_new_0_loc, i2 %t_V_loc, i8 %x_x0_V, i8 %x_x1_V, i8 %x_x2_V"   --->   Operation 36 'call' 'call_ln587' <Predicate = (load_read)> <Delay = 0.50> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 36 [2/2] (0.47ns)   --->   "%call_ln587 = call void @interleave_manual_seq_Pipeline_LOAD, i21 %x_idx_V_load, i2 %x_sel_V_load, i8 %x_in, i1 %x_idx_V_flag_0_loc, i21 %x_idx_V_new_0_loc, i2 %t_V_loc, i8 %x_x0_V, i8 %x_x1_V, i8 %x_x2_V"   --->   Operation 36 'call' 'call_ln587' <Predicate = (load_read)> <Delay = 0.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 37 [1/2] (0.00ns)   --->   "%call_ln0 = call void @interleave_manual_seq_Pipeline_WRITE, i8 %y, i8 %x_x0_V, i8 %x_x1_V, i8 %x_x2_V"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.loopexit"   --->   Operation 38 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
-State 3 <SV = 1> <Delay = 0.90>
-ST_3 : Operation 39 [1/2] (0.90ns)   --->   "%call_ln587 = call void @interleave_manual_seq_Pipeline_LOAD, i21 %x_idx_V_load, i2 %x_sel_V_load, i8 %x_in, i1 %x_idx_V_flag_0_loc, i21 %x_idx_V_new_0_loc, i2 %t_V_loc, i8 %x_x0_V, i8 %x_x1_V, i8 %x_x2_V"   --->   Operation 39 'call' 'call_ln587' <Predicate = true> <Delay = 0.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 3 <SV = 1> <Delay = 1.06>
+ST_3 : Operation 39 [1/2] (1.06ns)   --->   "%call_ln587 = call void @interleave_manual_seq_Pipeline_LOAD, i21 %x_idx_V_load, i2 %x_sel_V_load, i8 %x_in, i1 %x_idx_V_flag_0_loc, i21 %x_idx_V_new_0_loc, i2 %t_V_loc, i8 %x_x0_V, i8 %x_x1_V, i8 %x_x2_V"   --->   Operation 39 'call' 'call_ln587' <Predicate = true> <Delay = 1.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 2> <Delay = 0.00>
 ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%x_idx_V_flag_0_loc_load = load i1 %x_idx_V_flag_0_loc"   --->   Operation 40 'load' 'x_idx_V_flag_0_loc_load' <Predicate = (load_read)> <Delay = 0.00>
@@ -300,9 +296,9 @@ Port [ x_in]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; exter
 Port [ y]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=bram:ce=0
 Port [ load]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
-Port [ x_x0_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ x_x1_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ x_x2_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ x_x0_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ x_x1_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ x_x2_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[2]; IO mode=ap_memory:ce=0
 Port [ x_sel_V]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
 Port [ x_idx_V]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
 Port [ ap_local_deadlock]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=1; type=6; pingpong=0; private_global=0; IO mode=ap_none:ce=0
@@ -402,7 +398,7 @@ ret_ln29                                                               (ret     
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="x_x0_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="x_x0_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -412,7 +408,7 @@ ret_ln29                                                               (ret     
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="x_x1_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="x_x1_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -422,7 +418,7 @@ ret_ln29                                                               (ret     
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="x_x2_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="x_x2_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -1011,12 +1007,12 @@ ret_ln29                                                               (ret     
 |----------|------------------------------------------------|---------|---------|---------|
 | Operation|                 Functional Unit                |  Delay  |    FF   |   LUT   |
 |----------|------------------------------------------------|---------|---------|---------|
-|   call   | grp_interleave_manual_seq_Pipeline_WRITE_fu_80 |   1.38  |   140   |   105   |
-|          |  grp_interleave_manual_seq_Pipeline_LOAD_fu_92 |   0.46  |   111   |   158   |
+|   call   | grp_interleave_manual_seq_Pipeline_WRITE_fu_80 |  1.281  |   140   |   105   |
+|          |  grp_interleave_manual_seq_Pipeline_LOAD_fu_92 |  0.427  |   111   |   156   |
 |----------|------------------------------------------------|---------|---------|---------|
 |   read   |              load_read_read_fu_74              |    0    |    0    |    0    |
 |----------|------------------------------------------------|---------|---------|---------|
-|   Total  |                                                |   1.84  |   251   |   263   |
+|   Total  |                                                |  1.708  |   251   |   261   |
 |----------|------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -1051,7 +1047,7 @@ Memories:
 | grp_interleave_manual_seq_Pipeline_LOAD_fu_92 |  p1  |   2  |  21  |   42   ||    9    |
 | grp_interleave_manual_seq_Pipeline_LOAD_fu_92 |  p2  |   2  |   2  |    4   ||    9    |
 |-----------------------------------------------|------|------|------|--------||---------||---------|
-|                     Total                     |      |      |      |   46   ||   0.92  ||    18   |
+|                     Total                     |      |      |      |   46   ||  0.854  ||    18   |
 |-----------------------------------------------|------|------|------|--------||---------||---------|
 
 
@@ -1060,10 +1056,10 @@ Memories:
 +-----------+--------+--------+--------+--------+
 |           |  BRAM  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |    -   |    1   |   251  |   263  |
+|  Function |    -   |    1   |   251  |   261  |
 |   Memory  |   600  |    -   |    0   |    0   |
 |Multiplexer|    -   |    0   |    -   |   18   |
 |  Register |    -   |    -   |   48   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   600  |    2   |   299  |   281  |
+|   Total   |   600  |    2   |   299  |   279  |
 +-----------+--------+--------+--------+--------+

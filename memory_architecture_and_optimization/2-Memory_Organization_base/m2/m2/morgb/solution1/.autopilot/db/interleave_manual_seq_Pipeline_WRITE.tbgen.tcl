@@ -13,9 +13,9 @@ set C_modelName {interleave_manual_seq_Pipeline_WRITE}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ y int 8 regular {bram 409600 { 0 3 } 0 1 }  }
-	{ x_x0_V int 8 regular {array 409600 { 1 3 } 1 1 } {global 0}  }
-	{ x_x1_V int 8 regular {array 409600 { 1 3 } 1 1 } {global 0}  }
-	{ x_x2_V int 8 regular {array 409600 { 1 3 } 1 1 } {global 0}  }
+	{ x_x0_V int 8 regular {array 409600 { 1 } 1 1 } {global 0}  }
+	{ x_x1_V int 8 regular {array 409600 { 1 } 1 1 } {global 0}  }
+	{ x_x2_V int 8 regular {array 409600 { 1 } 1 1 } {global 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "y", "interface" : "bram", "bitwidth" : 8, "direction" : "WRITEONLY"} , 

@@ -1,13 +1,13 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
     <sourceFile name="">
-        <directive functionName="word_width" label="" functionLabel="">
+        <directive functionName="word_width_manual" label="" functionLabel="">
             <pragma name="TOP">
-                <option name="name" value="word_width"/>
+                <option name="name" value="word_width_manual"/>
             </pragma>
         </directive>
-        <directive functionName="word_width" label="" functionLabel="">
+        <directive functionName="word_width_manual" label="" functionLabel="">
             <pragma name="TOP">
-                <option name="name" value="word_width"/>
+                <option name="name" value="word_width_manual"/>
             </pragma>
         </directive>
     </sourceFile>

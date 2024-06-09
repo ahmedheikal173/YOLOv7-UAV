@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="interleave_manual_seq" name="morgb">
+<project xmlns="com.autoesl.autopilot.project" name="morgb" top="interleave_manual_seq">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

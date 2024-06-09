@@ -55259,3 +55259,25 @@ WRITE:
 #pragma HLS PIPELINE II=1
       y[idx++] = x.read_rnd(i, 0) + x.read_rnd(i, 1) + x.read_rnd(i, 2);
 }
+#ifndef HLS_FASTSIM
+#ifdef __cplusplus
+extern "C"
+#endif
+void apatb_interleave_manual_rnd_ir(ap_int<8> *, ap_int<8> *, bool);
+#ifdef __cplusplus
+extern "C"
+#endif
+void interleave_manual_rnd_hw_stub(ap_int<8> *x_in, ap_int<8> *y, bool load){
+interleave_manual_rnd(x_in, y, load);
+return ;
+}
+#ifdef __cplusplus
+extern "C"
+#endif
+void apatb_interleave_manual_rnd_sw(ap_int<8> *x_in, ap_int<8> *y, bool load){
+apatb_interleave_manual_rnd_ir(x_in, y, load);
+return ;
+}
+#endif
+# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/src/interleave_manual_rnd.cpp"
+

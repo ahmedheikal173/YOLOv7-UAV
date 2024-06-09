@@ -5679,7 +5679,7 @@ inline bool operator!=(
 # 395 "../src/../include/ap_int.h" 2
 # 7 "../src/./word_width.h" 2
 
-__attribute__((sdx_kernel("word_width", 0))) void word_width(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+void word_width(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
                 bool load);
 
 void word_width_manual(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
@@ -5707,7 +5707,7 @@ class word_width_mem {
   public:
   word_width_mem():sel_rd(0), sel_wr(0){
 
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x type=RAM_1P impl=BRAM
  }
   void write(ap_uint<(21)> i, ap_int<W> x_in[N]);
   ap_int<W> read(ap_uint<(21)> i, const int offset);
@@ -5774,11 +5774,8 @@ void word_width_mem<W, N>::write(ap_uint<(21)> i,
 # 28 "../src/./word_width_mem.hpp" 2
 # 3 "../src/word_width.cpp" 2
 
-__attribute__((sdx_kernel("word_width", 0))) void word_width(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
-                       bool load) {_ssdm_SpecArrayDimSize(x_in, 1228800);_ssdm_SpecArrayDimSize(y, 409600);
-#pragma HLSDIRECTIVE TOP name=word_width
-# 5 "../src/word_width.cpp"
-
+void word_width(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
+                       bool load) {
 
 
 
@@ -5789,7 +5786,7 @@ __attribute__((sdx_kernel("word_width", 0))) void word_width(ap_int<8> x_in[1228
  static ap_int<8> x[1228800];
 #pragma HLS ARRAY_RESHAPE variable=x cyclic factor=3 dim=1
 
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x type=RAM_1P impl=BRAM
 
  int idx = 0;
 

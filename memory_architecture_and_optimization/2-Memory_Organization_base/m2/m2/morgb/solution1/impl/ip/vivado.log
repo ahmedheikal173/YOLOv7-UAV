@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jun  9 00:42:10 2024
+# Process ID: 22832
+# Current directory: D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip/vivado.log
+# Journal file: D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip\vivado.jou
+# Running On: Hisham-Dell, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16483 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ERROR: '2406090042' is an invalid argument. Please specify an integer value.
+    while executing
+"rdi::set_property core_revision 2406090042 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 940)
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 00:42:16 2024...

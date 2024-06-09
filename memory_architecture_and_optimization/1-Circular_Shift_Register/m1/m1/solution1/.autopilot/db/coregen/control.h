@@ -23,18 +23,11 @@
 //        bit 7~0 - din[7:0] (Read/Write)
 //        others  - reserved
 // 0x14 : reserved
-// 0x18 : Data signal of dout
-//        bit 31~0 - dout[31:0] (Read/Write)
-// 0x1c : Data signal of dout
-//        bit 31~0 - dout[63:32] (Read/Write)
-// 0x20 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define CONTROL_ADDR_AP_CTRL   0x00
-#define CONTROL_ADDR_GIE       0x04
-#define CONTROL_ADDR_IER       0x08
-#define CONTROL_ADDR_ISR       0x0c
-#define CONTROL_ADDR_DIN_DATA  0x10
-#define CONTROL_BITS_DIN_DATA  8
-#define CONTROL_ADDR_DOUT_DATA 0x18
-#define CONTROL_BITS_DOUT_DATA 64
+#define CONTROL_ADDR_AP_CTRL  0x00
+#define CONTROL_ADDR_GIE      0x04
+#define CONTROL_ADDR_IER      0x08
+#define CONTROL_ADDR_ISR      0x0c
+#define CONTROL_ADDR_DIN_DATA 0x10
+#define CONTROL_BITS_DIN_DATA 8

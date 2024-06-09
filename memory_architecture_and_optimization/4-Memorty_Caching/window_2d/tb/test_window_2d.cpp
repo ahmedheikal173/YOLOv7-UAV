@@ -6,6 +6,8 @@
 
 using namespace std;
 
+#define arch 1
+
 static inline int clip(int i) {
     int tmp = i;
     if (tmp < 0)
@@ -35,7 +37,11 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
+#if arch
 	window_avg(din, dout);
+#else
+	avg(din, dout);
+#endif
 
 	int pass = 1;
 	for (int r = 0; r != NUM_ROW; r++) {

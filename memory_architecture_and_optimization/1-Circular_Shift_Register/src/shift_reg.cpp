@@ -3,6 +3,8 @@
 
 
 void circular_shift_reg(dType din, dType dout[N_REGS]) {
+//#pragma HLS interface mode=BRAM port=din //[OPTIONS]
+#pragma HLS interface mode=BRAM port=dout //[OPTIONS]
 
   static circular_shift<dType, N_REGS> regs;
 
@@ -14,5 +16,28 @@ WRITE:
 //	#pragma HLS unroll
 	#pragma HLS pipeline
 	dout[i] = regs[i];
+  }
+}
+
+void shift_reg(dType din, dType dout[N_REGS]) {
+//#pragma HLS interface mode=BRAM port=din //[OPTIONS]
+#pragma HLS interface mode=BRAM port=dout //[OPTIONS]
+
+  static dType regs[N_REGS];
+#pragma HLS BIND_STORAGE variable=regs type=RAM_1P impl=BRAM
+  
+
+SHIFT:
+  for (int i = N_REGS - 1; i >= 0; i--) {
+    #pragma HLS UNROLL
+    if (i == 0)
+      regs[i] = din;
+    else
+      regs[i] = regs[i - 1];
+  }
+
+WRITE:
+  for (int i = 0; i < N_REGS; i++) {
+    dout[i] = regs[i];
   }
 }

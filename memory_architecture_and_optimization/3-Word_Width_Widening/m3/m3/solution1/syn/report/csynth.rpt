@@ -1,30 +1,30 @@
 
 
 ================================================================
-== Synthesis Summary Report of 'word_width'
+== Synthesis Summary Report of 'word_width_manual'
 ================================================================
 + General Information: 
-    * Date:           Wed Jun  5 23:36:33 2024
+    * Date:           Sun Jun  9 03:14:25 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m3
     * Solution:       solution1 (Vitis Kernel Flow Target)
-    * Product family: virtexuplus
-    * Target device:  xcvu11p-flga2577-1-e
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
     
 
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
-    |            Modules           | Issue|      | Latency |  Latency  | Iteration|         |   Trip  |          |           |    |           |           |     |
-    |            & Loops           | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|   BRAM    | DSP|     FF    |    LUT    | URAM|
-    +------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
-    |+ word_width                  |     -|  3.44|  1228803|  1.229e+07|         -|  1228804|        -|        no|  550 (13%)|   -|  186 (~0%)|  778 (~0%)|    -|
-    | + word_width_Pipeline_WRITE  |     -|  3.68|   409602|  4.096e+06|         -|   409602|        -|        no|          -|   -|   41 (~0%)|  116 (~0%)|    -|
-    |  o WRITE                     |     -|  7.30|   409600|  4.096e+06|         2|        1|   409600|       yes|          -|   -|          -|          -|    -|
-    | + word_width_Pipeline_LOAD   |     -|  3.44|  1228802|  1.229e+07|         -|  1228802|        -|        no|          -|   -|   87 (~0%)|  554 (~0%)|    -|
-    |  o LOAD                      |     -|  7.30|  1228800|  1.229e+07|         2|        1|  1228800|       yes|          -|   -|          -|          -|    -|
-    +------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+-----------+-----+
+    +-------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+------------+-----+
+    |               Modules               | Issue|      | Latency |  Latency  | Iteration|         |   Trip  |          |           |    |           |            |     |
+    |               & Loops               | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|   BRAM    | DSP|     FF    |     LUT    | URAM|
+    +-------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+------------+-----+
+    |+ word_width_manual                  |     -|  1.90|  1228804|  1.229e+07|         -|  1228805|        -|        no|  550 (88%)|   -|  345 (~0%)|  1114 (~0%)|    -|
+    | + word_width_manual_Pipeline_WRITE  |     -|  1.90|   409602|  4.096e+06|         -|   409602|        -|        no|          -|   -|   93 (~0%)|   352 (~0%)|    -|
+    |  o WRITE                            |     -|  7.30|   409600|  4.096e+06|         2|        1|   409600|       yes|          -|   -|          -|           -|    -|
+    | + word_width_manual_Pipeline_LOAD   |     -|  3.49|  1228802|  1.229e+07|         -|  1228802|        -|        no|          -|   -|  119 (~0%)|   644 (~0%)|    -|
+    |  o LOAD                             |     -|  7.30|  1228800|  1.229e+07|         2|        1|  1228800|       yes|          -|   -|          -|           -|    -|
+    +-------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+----+-----------+------------+-----+
 
 
 ================================================================
@@ -90,54 +90,64 @@
 
 
 ================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
 == Bind Op Report
 ================================================================
-+------------------------------+-----+--------+------------+-----+--------+---------+
-| Name                         | DSP | Pragma | Variable   | Op  | Impl   | Latency |
-+------------------------------+-----+--------+------------+-----+--------+---------+
-| + word_width                 | 0   |        |            |     |        |         |
-|  + word_width_Pipeline_WRITE | 0   |        |            |     |        |         |
-|    add_ln29_fu_98_p2         | -   |        | add_ln29   | add | fabric | 0       |
-|    add_ln70_fu_138_p2        | -   |        | add_ln70   | add | tadder | 0       |
-|    y_Din_A                   | -   |        | add_ln70_1 | add | tadder | 0       |
-|  + word_width_Pipeline_LOAD  | 0   |        |            |     |        |         |
-|    add_ln22_fu_133_p2        | -   |        | add_ln22   | add | fabric | 0       |
-|    add_ln22_1_fu_155_p2      | -   |        | add_ln22_1 | add | fabric | 0       |
-|    add_ln24_fu_175_p2        | -   |        | add_ln24   | add | fabric | 0       |
-|    sub_ln24_fu_224_p2        | -   |        | sub_ln24   | sub | fabric | 0       |
-|    sub_ln24_1_fu_254_p2      | -   |        | sub_ln24_1 | sub | fabric | 0       |
-+------------------------------+-----+--------+------------+-----+--------+---------+
++-------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + word_width_manual                 | 0   |        |             |     |        |         |
+|  + word_width_manual_Pipeline_WRITE | 0   |        |             |     |        |         |
+|    i_fu_191_p2                      | -   |        | i           | add | fabric | 0       |
+|    add_ln885_fu_216_p2              | -   |        | add_ln885   | add | fabric | 0       |
+|    add_ln885_1_fu_254_p2            | -   |        | add_ln885_1 | add | fabric | 0       |
+|    add_ln885_2_fu_298_p2            | -   |        | add_ln885_2 | add | fabric | 0       |
+|    add_ln70_fu_376_p2               | -   |        | add_ln70    | add | tadder | 0       |
+|    y_Din_A                          | -   |        | add_ln70_1  | add | tadder | 0       |
+|  + word_width_manual_Pipeline_LOAD  | 0   |        |             |     |        |         |
+|    i_fu_226_p2                      | -   |        | i           | add | fabric | 0       |
+|    sub_ln414_fu_339_p2              | -   |        | sub_ln414   | sub | fabric | 0       |
+|    sub_ln414_1_fu_369_p2            | -   |        | sub_ln414_1 | sub | fabric | 0       |
+|    add_ln885_fu_240_p2              | -   |        | add_ln885   | add | fabric | 0       |
+|    add_ln885_2_fu_260_p2            | -   |        | add_ln885_2 | add | fabric | 0       |
++-------------------------------------+-----+--------+-------------+-----+--------+---------+
 
 
 ================================================================
 == Bind Storage Report
 ================================================================
-+-----------------------------------------+------+------+--------+-------------------------------------+---------+------+---------+
-| Name                                    | BRAM | URAM | Pragma | Variable                            | Storage | Impl | Latency |
-+-----------------------------------------+------+------+--------+-------------------------------------+---------+------+---------+
-| + word_width                            | 550  | 0    |        |                                     |         |      |         |
-|   word_width_ap_int_8_ap_int_8_bool_x_U | 550  | -    | pragma | word_width_ap_int_8_ap_int_8_bool_x | ram_t2p | bram | 1       |
-+-----------------------------------------+------+------+--------+-------------------------------------+---------+------+---------+
++---------------------+------+------+--------+----------+---------+------+---------+
+| Name                | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++---------------------+------+------+--------+----------+---------+------+---------+
+| + word_width_manual | 550  | 0    |        |          |         |      |         |
+|   x_x_V_U           | 550  | -    | pragma | x_x_V    | ram_1p  | bram | 1       |
++---------------------+------+------+--------+----------+---------+------+---------+
 
 
 ================================================================
 == User Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+---------------+-----------------------------------+------------------------------------------------------------+
-| Type          | Options                           | Location                                                   |
-+---------------+-----------------------------------+------------------------------------------------------------+
-| bind_storage  | variable=x type=RAM_T2P impl=BRAM | ../src/./word_width_mem.hpp:21 in word_width_mem<w, n>, x  |
-| interface     | mode=BRAM port=x_in               | ../src/word_width.cpp:10 in word_width, x_in               |
-| interface     | mode=BRAM port=y                  | ../src/word_width.cpp:11 in word_width, y                  |
-| array_reshape | variable=x cyclic factor=3 dim=1  | ../src/word_width.cpp:14 in word_width, x                  |
-| bind_storage  | variable=x type=RAM_T2P impl=BRAM | ../src/word_width.cpp:16 in word_width, x                  |
-| pipeline      | II=1                              | ../src/word_width.cpp:23 in word_width                     |
-| pipeline      | II=1                              | ../src/word_width.cpp:28 in word_width                     |
-| interface     | mode=BRAM port=x_in               | ../src/word_width_manual.cpp:11 in word_width_manual, x_in |
-| interface     | mode=BRAM port=y                  | ../src/word_width_manual.cpp:12 in word_width_manual, y    |
-| pipeline      | II=1                              | ../src/word_width_manual.cpp:21 in word_width_manual       |
-| pipeline      | II=1                              | ../src/word_width_manual.cpp:26 in word_width_manual       |
-+---------------+-----------------------------------+------------------------------------------------------------+
++---------------+----------------------------------+------------------------------------------------------------+
+| Type          | Options                          | Location                                                   |
++---------------+----------------------------------+------------------------------------------------------------+
+| bind_storage  | variable=x type=RAM_1P impl=BRAM | ../src/./word_width_mem.hpp:21 in word_width_mem<w, n>, x  |
+| interface     | mode=BRAM port=x_in              | ../src/word_width.cpp:10 in word_width, x_in               |
+| interface     | mode=BRAM port=y                 | ../src/word_width.cpp:11 in word_width, y                  |
+| array_reshape | variable=x cyclic factor=3 dim=1 | ../src/word_width.cpp:14 in word_width, x                  |
+| bind_storage  | variable=x type=RAM_1P impl=BRAM | ../src/word_width.cpp:16 in word_width, x                  |
+| pipeline      | II=1                             | ../src/word_width.cpp:23 in word_width                     |
+| pipeline      | II=1                             | ../src/word_width.cpp:28 in word_width                     |
+| interface     | mode=BRAM port=x_in              | ../src/word_width_manual.cpp:11 in word_width_manual, x_in |
+| interface     | mode=BRAM port=y                 | ../src/word_width_manual.cpp:12 in word_width_manual, y    |
+| pipeline      | II=1                             | ../src/word_width_manual.cpp:21 in word_width_manual       |
+| pipeline      | II=1                             | ../src/word_width_manual.cpp:26 in word_width_manual       |
++---------------+----------------------------------+------------------------------------------------------------+
 
 

@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'interleave_manual_seq'" level="0">
-<item name = "Date">Fri Jun  7 15:04:32 2024
+<item name = "Date">Sun Jun  9 03:22:26 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">morgb</item>
 <item name = "Solution">solution1 (Vitis Kernel Flow Target)</item>
-<item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcvu11p-flga2577-1-e</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.621 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.525 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -51,14 +51,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 185, 406, 0</column>
+<column name="Instance">0, -, 185, 404, 0</column>
 <column name="Memory">600, -, 0, 0, -</column>
 <column name="Multiplexer">-, -, -, 146, -</column>
 <column name="Register">-, -, 34, -, -</column>
-<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">44, 0, ~0, ~0, 0</specialColumn>
-<specialColumn name="Available">4032, 9216, 2592000, 1296000, 960</specialColumn>
-<specialColumn name="Utilization (%)">14, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
+<specialColumn name="Utilization (%)">96, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -66,7 +64,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 50, 44, 0</column>
-<column name="grp_interleave_manual_seq_Pipeline_LOAD_fu_92">interleave_manual_seq_Pipeline_LOAD, 0, 0, 94, 246, 0</column>
+<column name="grp_interleave_manual_seq_Pipeline_LOAD_fu_92">interleave_manual_seq_Pipeline_LOAD, 0, 0, 94, 244, 0</column>
 <column name="grp_interleave_manual_seq_Pipeline_WRITE_fu_80">interleave_manual_seq_Pipeline_WRITE, 0, 0, 41, 116, 0</column>
 </table>
 </item>
@@ -76,9 +74,9 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="x_x0_V_U">x_x0_V_RAM_T2P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
-<column name="x_x1_V_U">x_x0_V_RAM_T2P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
-<column name="x_x2_V_U">x_x0_V_RAM_T2P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
+<column name="x_x0_V_U">x_x0_V_RAM_1P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
+<column name="x_x1_V_U">x_x0_V_RAM_1P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
+<column name="x_x2_V_U">x_x0_V_RAM_1P_BRAM_1R1W, 200, 0, 0, 0, 409600, 8, 1, 3276800</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">

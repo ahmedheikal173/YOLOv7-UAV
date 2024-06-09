@@ -33,7 +33,7 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 struct __cosim_s1__ { char data[1]; };
-extern "C" void circular_shift_reg(char*, __cosim_s1__, int);
+extern "C" void circular_shift_reg(__cosim_s1__, char*);
 extern "C" void apatb_circular_shift_reg_hw(__cosim_s1__* __xlx_apatb_param_din, volatile void * __xlx_apatb_param_dout) {
   // Collect __xlx_dout__tmp_vec
   vector<sc_bv<8> >__xlx_dout__tmp_vec;
@@ -48,7 +48,7 @@ extern "C" void apatb_circular_shift_reg_hw(__cosim_s1__* __xlx_apatb_param_din,
     __xlx_dout__input_buffer[i] = __xlx_dout__tmp_vec[i].range(7, 0).to_uint64();
   }
   // DUT call
-  circular_shift_reg(__xlx_dout__input_buffer, *__xlx_apatb_param_din, __xlx_offset_byte_param_dout);
+  circular_shift_reg(*__xlx_apatb_param_din, __xlx_dout__input_buffer);
 // print __xlx_apatb_param_dout
   sc_bv<8>*__xlx_dout_output_buffer = new sc_bv<8>[__xlx_size_param_dout];
   for (int i = 0; i < __xlx_size_param_dout; ++i) {

@@ -7,7 +7,7 @@ template <typename T, int N>
 void interleave_mem_rnd<T, N>::write_rnd(ap_uint<ADDRESS_BITWIDTH> i,
                                  T x_in[N]) {
                                   
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_1P impl=BRAM
 
   T tmp = x_in[i];
   switch (i % 3) {

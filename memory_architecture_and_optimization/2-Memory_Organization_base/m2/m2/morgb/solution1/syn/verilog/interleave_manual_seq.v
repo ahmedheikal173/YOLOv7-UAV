@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="interleave_manual_seq_interleave_manual_seq,hls_ip_2021_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu11p-flga2577-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.621000,HLS_SYN_LAT=819204,HLS_SYN_TPT=none,HLS_SYN_MEM=600,HLS_SYN_DSP=0,HLS_SYN_FF=219,HLS_SYN_LUT=554,HLS_VERSION=2021_2}" *)
+(* CORE_GENERATION_INFO="interleave_manual_seq_interleave_manual_seq,hls_ip_2021_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu7ev-ffvc1156-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.525000,HLS_SYN_LAT=819204,HLS_SYN_TPT=none,HLS_SYN_MEM=600,HLS_SYN_DSP=0,HLS_SYN_FF=219,HLS_SYN_LUT=552,HLS_VERSION=2021_2}" *)
 
 module interleave_manual_seq (
         ap_local_block,
@@ -194,7 +194,7 @@ initial begin
 #0 grp_interleave_manual_seq_Pipeline_LOAD_fu_92_ap_start_reg = 1'b0;
 end
 
-interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W #(
+interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 409600 ),
     .AddressWidth( 19 ))
@@ -208,7 +208,7 @@ x_x0_V_U(
     .q0(x_x0_V_q0)
 );
 
-interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W #(
+interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 409600 ),
     .AddressWidth( 19 ))
@@ -222,7 +222,7 @@ x_x1_V_U(
     .q0(x_x1_V_q0)
 );
 
-interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W #(
+interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 409600 ),
     .AddressWidth( 19 ))

@@ -3,9 +3,9 @@
 # Memory (RAM/ROM)  definition:
 set ID 12
 set hasByteEnable 0
-set MemName interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W
+set MemName interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 }
 set DataWd 8
 set AddrRange 409600
 set AddrWd 19
@@ -16,7 +16,7 @@ set ROMData { }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
-set DelayBudget 1.297
+set DelayBudget 1.237
 set ClkPeriod 10
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -29,7 +29,7 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
     reset_level 1 \
     sync_rst true \
     stage_num ${NumOfStage}  \
-    port_num 2 \
+    port_num 1 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -48,11 +48,11 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {ram_t2p} IMPL {bram} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {ram_1p} IMPL {bram} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
-set CoreName RAM_T2P_BRAM
+set CoreName RAM_1P_BRAM
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
 if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
     eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
@@ -64,7 +64,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
     reset_level 1 \
     sync_rst true \
     stage_num ${NumOfStage}  \
-    port_num 2 \
+    port_num 1 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \

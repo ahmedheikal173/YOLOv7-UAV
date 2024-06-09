@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'word_width_manual'" level="0">
-<item name = "Date">Mon Jun  3 15:16:41 2024
+<item name = "Date">Sun Jun  9 03:14:24 2024
 </item>
 <item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">m3</item>
 <item name = "Solution">solution1 (Vitis Kernel Flow Target)</item>
-<item name = "Product family">virtexuplus</item>
-<item name = "Target device">xcvu11p-flga2577-1-e</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 5.401 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">409675, 1228876, 4.097 ms, 12.289 ms, 409676, 1228877, no</column>
+<column name="">409604, 1228804, 4.096 ms, 12.288 ms, 409605, 1228805, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_word_width_manual_Pipeline_WRITE_fu_153">word_width_manual_Pipeline_WRITE, 409603, 409603, 4.096 ms, 4.096 ms, 409603, 409603, no</column>
-<column name="grp_word_width_manual_Pipeline_LOAD_fu_167">word_width_manual_Pipeline_LOAD, 1228803, 1228803, 12.288 ms, 12.288 ms, 1228803, 1228803, no</column>
+<column name="grp_word_width_manual_Pipeline_WRITE_fu_94">word_width_manual_Pipeline_WRITE, 409602, 409602, 4.096 ms, 4.096 ms, 409602, 409602, no</column>
+<column name="grp_word_width_manual_Pipeline_LOAD_fu_107">word_width_manual_Pipeline_LOAD, 1228802, 1228802, 12.288 ms, 12.288 ms, 1228802, 1228802, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

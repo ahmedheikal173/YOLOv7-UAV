@@ -5709,9 +5709,9 @@ class interleave_mem_seq {
 
 
 
-#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=BRAM
-#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=BRAM
-#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_1P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_1P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_1P impl=BRAM
 
  idx = 0;
     sel = 0;
@@ -5758,7 +5758,7 @@ template <typename T, int N>
 void interleave_mem_seq<T, N>::write_seq(ap_uint<(21)> i,
                                          T x_in[N]) {
 
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_1P impl=BRAM
 
  int tmp = x_in[i];
   switch (sel++) {
@@ -5793,7 +5793,7 @@ __attribute__((sdx_kernel("interleave_manual_seq", 0))) void interleave_manual_s
 
 
  static interleave_mem_seq<ap_int<8>, 1228800> x;
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x type=RAM_1P impl=BRAM
  int idx = 0;
 
   if (load)

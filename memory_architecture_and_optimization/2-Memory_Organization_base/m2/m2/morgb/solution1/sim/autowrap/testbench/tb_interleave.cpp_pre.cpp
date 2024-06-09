@@ -55169,12 +55169,10 @@ int main(int argc, char **argv){
   sw_out[i] = in[i*3] +
      in[i*3 + 1] +
      in[i*3 + 2] ;
-# 37 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
- interleave_manual_seq(in, hw_out, true);
- interleave_manual_seq(in, hw_out, false);
-
-
-
+# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
+ interleave_manual_rnd(in, hw_out, true);
+ interleave_manual_rnd(in, hw_out, false);
+# 42 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
  bool pass = true;
  for (int i=0; i<1228800/3; i++){
   printf("sw= %d, hw= %d\n", sw_out[i].to_int(), hw_out[i].to_int());

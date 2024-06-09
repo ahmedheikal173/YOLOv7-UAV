@@ -1,5 +1,5 @@
 
-set TopModule "window_avg"
+set TopModule "avg"
 set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 3
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix window_avg_
+set RtlSubPrefix avg_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -41,9 +41,9 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xcvu11p:-flga2577:-1-e
-set SourceFiles {sc {} c ../../../src/window_2d.cpp}
-set SourceFlags {sc {} c {{}}}
+set TargetInfo xczu7ev:-ffvc1156:-2-e
+set SourceFiles {sc {} c {../../../src/window_2d_poor_arch.cpp ../../../src/window_2d.cpp}}
+set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/m42/m42/solution1/solution1.directive
 set TBFiles {verilog ../../../tb/test_window_2d.cpp bc ../../../tb/test_window_2d.cpp vhdl ../../../tb/test_window_2d.cpp sc ../../../tb/test_window_2d.cpp cas ../../../tb/test_window_2d.cpp c {}}
 set SpecLanguage C
@@ -61,5 +61,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynquplus/zynquplus}}}
 set HPFPO 0

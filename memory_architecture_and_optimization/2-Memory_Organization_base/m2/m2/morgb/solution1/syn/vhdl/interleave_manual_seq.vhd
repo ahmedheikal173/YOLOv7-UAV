@@ -55,7 +55,7 @@ end;
 architecture behav of interleave_manual_seq is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "interleave_manual_seq_interleave_manual_seq,hls_ip_2021_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu11p-flga2577-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.621000,HLS_SYN_LAT=819204,HLS_SYN_TPT=none,HLS_SYN_MEM=600,HLS_SYN_DSP=0,HLS_SYN_FF=219,HLS_SYN_LUT=554,HLS_VERSION=2021_2}";
+    "interleave_manual_seq_interleave_manual_seq,hls_ip_2021_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu7ev-ffvc1156-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.525000,HLS_SYN_LAT=819204,HLS_SYN_TPT=none,HLS_SYN_MEM=600,HLS_SYN_DSP=0,HLS_SYN_FF=219,HLS_SYN_LUT=552,HLS_VERSION=2021_2}";
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_logic_1 : STD_LOGIC := '1';
@@ -229,7 +229,7 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
     end component;
 
 
-    component interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W IS
+    component interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -283,7 +283,7 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
 
 
 begin
-    x_x0_V_U : component interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W
+    x_x0_V_U : component interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 409600,
@@ -297,7 +297,7 @@ begin
         d0 => grp_interleave_manual_seq_Pipeline_LOAD_fu_92_x_x0_V_d0,
         q0 => x_x0_V_q0);
 
-    x_x1_V_U : component interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W
+    x_x1_V_U : component interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 409600,
@@ -311,7 +311,7 @@ begin
         d0 => grp_interleave_manual_seq_Pipeline_LOAD_fu_92_x_x1_V_d0,
         q0 => x_x1_V_q0);
 
-    x_x2_V_U : component interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W
+    x_x2_V_U : component interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 409600,

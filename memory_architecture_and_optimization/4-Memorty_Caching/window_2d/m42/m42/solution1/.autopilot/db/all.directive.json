@@ -2,26 +2,26 @@
       "name": "",
       "directive": [
         {
-          "functionName": "window_avg",
+          "functionName": "avg",
           "label": "",
           "functionLabel": "",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "window_avg"
+                "value": "avg"
               }]
           }
         },
         {
-          "functionName": "window_avg",
+          "functionName": "avg",
           "label": "",
           "functionLabel": "",
           "pragma": {
             "name": "TOP",
             "option": [{
                 "name": "name",
-                "value": "window_avg"
+                "value": "avg"
               }]
           }
         }

@@ -55139,7 +55139,7 @@ inline bool operator!=(
 
 
 
-
+void avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void clip_window(int r, ap_uint<8> window[3]);
 # 4 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/src/window_2d.cpp" 2
@@ -55174,9 +55174,6 @@ class singleport_ram {
 
 #pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=BRAM
     }
-
-
-
 
 
 

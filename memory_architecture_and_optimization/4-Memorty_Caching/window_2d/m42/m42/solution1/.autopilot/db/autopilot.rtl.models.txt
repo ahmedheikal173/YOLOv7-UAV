@@ -1,6 +1,3 @@
-window_avg_buff_buff1_ram_V_RAM_1P_BRAM_1R1W
-window_avg_control_s_axi
-window_avg_gmem_m_axi
-window_avg_flow_control_loop_pipe
-buff
-window_avg
+avg_control_s_axi
+avg_flow_control_loop_pipe
+avg

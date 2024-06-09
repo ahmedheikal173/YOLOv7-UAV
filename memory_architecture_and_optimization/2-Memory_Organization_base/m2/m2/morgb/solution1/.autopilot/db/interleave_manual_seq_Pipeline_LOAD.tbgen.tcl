@@ -18,9 +18,9 @@ set C_modelArgList {
 	{ x_idx_V_flag_0_out int 1 regular {pointer 1}  }
 	{ x_idx_V_new_0_out int 21 regular {pointer 1}  }
 	{ t_V_out int 2 regular {pointer 1}  }
-	{ x_x0_V int 8 regular {array 409600 { 0 3 } 0 1 } {global 1}  }
-	{ x_x1_V int 8 regular {array 409600 { 0 3 } 0 1 } {global 1}  }
-	{ x_x2_V int 8 regular {array 409600 { 0 3 } 0 1 } {global 1}  }
+	{ x_x0_V int 8 regular {array 409600 { 0 } 0 1 } {global 1}  }
+	{ x_x1_V int 8 regular {array 409600 { 0 } 0 1 } {global 1}  }
+	{ x_x2_V int 8 regular {array 409600 { 0 } 0 1 } {global 1}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "x_idx_V_load", "interface" : "wire", "bitwidth" : 21, "direction" : "READONLY"} , 

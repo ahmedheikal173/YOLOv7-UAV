@@ -5707,9 +5707,9 @@ class interleave_mem_rnd {
 
 
 
-#pragma HLS BIND_STORAGE variable=x0 type=RAM_T2P impl=BRAM
-#pragma HLS BIND_STORAGE variable=x1 type=RAM_T2P impl=BRAM
-#pragma HLS BIND_STORAGE variable=x2 type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x0 type=RAM_1P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x1 type=RAM_1P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x2 type=RAM_1P impl=BRAM
  }
 
   void write_rnd(ap_uint<(21)> i, T x_in[N]);
@@ -5756,7 +5756,7 @@ template <typename T, int N>
 void interleave_mem_rnd<T, N>::write_rnd(ap_uint<(21)> i,
                                  T x_in[N]) {
 
-#pragma HLS BIND_STORAGE variable=x_in type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x_in type=RAM_1P impl=BRAM
 
  T tmp = x_in[i];
   switch (i % 3) {
@@ -5789,7 +5789,7 @@ void interleave_manual_rnd(ap_int<8> x_in[1228800],
 
  static interleave_mem_rnd<ap_int<8>, 1228800> x;
 
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x type=RAM_1P impl=BRAM
  int idx = 0;
 
   if (load)

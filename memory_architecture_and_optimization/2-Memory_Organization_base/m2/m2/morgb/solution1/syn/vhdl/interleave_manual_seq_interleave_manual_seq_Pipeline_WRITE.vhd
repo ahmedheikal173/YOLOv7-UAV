@@ -257,7 +257,7 @@ begin
 
     ap_sig_allocacmp_i_V_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, i_V_1_fu_46, ap_loop_init)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
+        if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             ap_sig_allocacmp_i_V <= ap_const_lv19_0;
         else 
             ap_sig_allocacmp_i_V <= i_V_1_fu_46;

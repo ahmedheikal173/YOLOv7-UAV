@@ -4,8 +4,8 @@
     </ReportVersion>
     <UserAssignments>
         <unit>ns</unit>
-        <ProductFamily>virtexuplus</ProductFamily>
-        <Part>xcvu11p-flga2577-1-e</Part>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
         <TopModelName>interleave_manual_seq</TopModelName>
         <TargetClockPeriod>10.00</TargetClockPeriod>
         <ClockUncertainty>2.70</ClockUncertainty>
@@ -15,7 +15,7 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>3.621</EstimatedClockPeriod>
+            <EstimatedClockPeriod>3.525</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
@@ -33,16 +33,16 @@
         <Resources>
             <BRAM_18K>600</BRAM_18K>
             <FF>219</FF>
-            <LUT>554</LUT>
+            <LUT>552</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
         <AvailableResources>
-            <BRAM_18K>4032</BRAM_18K>
-            <DSP>9216</DSP>
-            <FF>2592000</FF>
-            <LUT>1296000</LUT>
-            <URAM>960</URAM>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
         </AvailableResources>
     </AreaEstimates>
     <InterfaceSummary>
@@ -478,7 +478,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>3.621</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>3.525</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>409602</Best-caseLatency>
@@ -506,19 +506,19 @@
             <AreaEstimates>
                 <Resources>
                     <FF>41</FF>
-                    <AVAIL_FF>2592000</AVAIL_FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
                     <LUT>116</LUT>
-                    <AVAIL_LUT>1296000</AVAIL_LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
-                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
                     <DSP>0</DSP>
-                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
                     <UTIL_DSP>0</UTIL_DSP>
                     <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
@@ -537,7 +537,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.594</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>2.474</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>1228802</Best-caseLatency>
@@ -565,19 +565,19 @@
             <AreaEstimates>
                 <Resources>
                     <FF>94</FF>
-                    <AVAIL_FF>2592000</AVAIL_FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>246</LUT>
-                    <AVAIL_LUT>1296000</AVAIL_LUT>
+                    <LUT>244</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
-                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
                     <DSP>0</DSP>
-                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
                     <UTIL_DSP>0</UTIL_DSP>
                     <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
@@ -593,7 +593,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>3.621</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>3.525</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>409604</Best-caseLatency>
@@ -609,31 +609,33 @@
             <AreaEstimates>
                 <Resources>
                     <BRAM_18K>600</BRAM_18K>
-                    <AVAIL_BRAM>4032</AVAIL_BRAM>
-                    <UTIL_BRAM>14</UTIL_BRAM>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>96</UTIL_BRAM>
                     <FF>219</FF>
-                    <AVAIL_FF>2592000</AVAIL_FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>554</LUT>
-                    <AVAIL_LUT>1296000</AVAIL_LUT>
+                    <LUT>552</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
-                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                     <DSP>0</DSP>
-                    <AVAIL_DSP>9216</AVAIL_DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
                     <UTIL_DSP>0</UTIL_DSP>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x0_V_U" SOURCE="../../src/interleave_manual_seq.cpp:14" URAM="0" VARIABLE="x_x0_V"/>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x1_V_U" SOURCE="../../src/interleave_manual_seq.cpp:14" URAM="0" VARIABLE="x_x1_V"/>
-                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="pragma" RTLNAME="x_x2_V_U" SOURCE="../../src/interleave_manual_seq.cpp:14" URAM="0" VARIABLE="x_x2_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x0_V_U" SOURCE="../../src/interleave_manual_seq.cpp:14" URAM="0" VARIABLE="x_x0_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x1_V_U" SOURCE="../../src/interleave_manual_seq.cpp:14" URAM="0" VARIABLE="x_x1_V"/>
+                <BindNode BINDTYPE="storage" BRAM="200" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="pragma" RTLNAME="x_x2_V_U" SOURCE="../../src/interleave_manual_seq.cpp:14" URAM="0" VARIABLE="x_x2_V"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
-    <UserConfigCommands/>
+    <UserConfigCommands>
+        <config_export ip_xdc_file="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip/constraints/interleave.xdc" ip_xdc_ooc_file="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip/constraints/interleave_ooc.xdc" output="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb" vivado_clock="10"/>
+    </UserConfigCommands>
     <Args>
         <Arg ArgName="x_in" index="0" direction="in" srcType="ap_int&lt;8&gt;*" srcSize="8">
             <hwRefs>
@@ -873,29 +875,29 @@
         <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
     </ReportBurst>
     <PragmaReport>
-        <Pragma type="bind_storage" location="../../src/./interleave_mem_rnd.hpp:20" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 type=RAM_T2P impl=BRAM"/>
-        <Pragma type="bind_storage" location="../../src/./interleave_mem_rnd.hpp:21" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 type=RAM_T2P impl=BRAM"/>
-        <Pragma type="bind_storage" location="../../src/./interleave_mem_rnd.hpp:22" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 type=RAM_T2P impl=BRAM"/>
-        <Pragma type="bind_storage" location="../../src/./interleave_mem_seq.hpp:22" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 type=RAM_T2P impl=BRAM"/>
-        <Pragma type="bind_storage" location="../../src/./interleave_mem_seq.hpp:23" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 type=RAM_T2P impl=BRAM"/>
-        <Pragma type="bind_storage" location="../../src/./interleave_mem_seq.hpp:24" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./interleave_mem_rnd.hpp:20" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 type=RAM_1P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./interleave_mem_rnd.hpp:21" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 type=RAM_1P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./interleave_mem_rnd.hpp:22" status="valid" parentFunction="interleave_mem_rnd&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 type=RAM_1P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./interleave_mem_seq.hpp:22" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x0" isDirective="0" options="variable=x0 type=RAM_1P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./interleave_mem_seq.hpp:23" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x1" isDirective="0" options="variable=x1 type=RAM_1P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./interleave_mem_seq.hpp:24" status="valid" parentFunction="interleave_mem_seq&lt;t, n&gt;" variable="x2" isDirective="0" options="variable=x2 type=RAM_1P impl=BRAM"/>
         <Pragma type="inline" location="../../src/./read_mem_rnd.hpp:11" status="valid" parentFunction="read_rnd" variable="" isDirective="0" options=""/>
-        <Pragma type="bind_storage" location="../../src/./write_mem_rnd.hpp:10" status="valid" parentFunction="write_rnd" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=BRAM"/>
-        <Pragma type="bind_storage" location="../../src/./write_mem_seq.hpp:10" status="valid" parentFunction="write_seq" variable="x_in" isDirective="0" options="variable=x_in type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./write_mem_rnd.hpp:10" status="valid" parentFunction="write_rnd" variable="x_in" isDirective="0" options="variable=x_in type=RAM_1P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/./write_mem_seq.hpp:10" status="valid" parentFunction="write_seq" variable="x_in" isDirective="0" options="variable=x_in type=RAM_1P impl=BRAM"/>
         <Pragma type="interface" location="../../src/interleave.cpp:11" status="valid" parentFunction="interleave" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
         <Pragma type="interface" location="../../src/interleave.cpp:12" status="valid" parentFunction="interleave" variable="y" isDirective="0" options="mode=BRAM port=y"/>
-        <Pragma type="bind_storage" location="../../src/interleave.cpp:16" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/interleave.cpp:16" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x type=RAM_1P impl=BRAM"/>
         <Pragma type="array_partition" location="../../src/interleave.cpp:17" status="valid" parentFunction="interleave" variable="x" isDirective="0" options="variable=x cyclic factor=3 dim=1"/>
         <Pragma type="pipeline" location="../../src/interleave.cpp:24" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
         <Pragma type="pipeline" location="../../src/interleave.cpp:29" status="valid" parentFunction="interleave" variable="" isDirective="0" options="II=1"/>
         <Pragma type="interface" location="../../src/interleave_manual_rnd.cpp:12" status="valid" parentFunction="interleave_manual_rnd" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
         <Pragma type="interface" location="../../src/interleave_manual_rnd.cpp:15" status="valid" parentFunction="interleave_manual_rnd" variable="y" isDirective="0" options="mode=BRAM port=y"/>
-        <Pragma type="bind_storage" location="../../src/interleave_manual_rnd.cpp:19" status="valid" parentFunction="interleave_manual_rnd" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/interleave_manual_rnd.cpp:19" status="valid" parentFunction="interleave_manual_rnd" variable="x" isDirective="0" options="variable=x type=RAM_1P impl=BRAM"/>
         <Pragma type="pipeline" location="../../src/interleave_manual_rnd.cpp:25" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
         <Pragma type="pipeline" location="../../src/interleave_manual_rnd.cpp:30" status="valid" parentFunction="interleave_manual_rnd" variable="" isDirective="0" options="II=1"/>
         <Pragma type="interface" location="../../src/interleave_manual_seq.cpp:8" status="valid" parentFunction="interleave_manual_seq" variable="x_in" isDirective="0" options="mode=BRAM port=x_in"/>
         <Pragma type="interface" location="../../src/interleave_manual_seq.cpp:11" status="valid" parentFunction="interleave_manual_seq" variable="y" isDirective="0" options="mode=BRAM port=y"/>
-        <Pragma type="bind_storage" location="../../src/interleave_manual_seq.cpp:15" status="valid" parentFunction="interleave_manual_seq" variable="x" isDirective="0" options="variable=x type=RAM_T2P impl=BRAM"/>
+        <Pragma type="bind_storage" location="../../src/interleave_manual_seq.cpp:15" status="valid" parentFunction="interleave_manual_seq" variable="x" isDirective="0" options="variable=x type=RAM_1P impl=BRAM"/>
         <Pragma type="pipeline" location="../../src/interleave_manual_seq.cpp:21" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
         <Pragma type="pipeline" location="../../src/interleave_manual_seq.cpp:26" status="valid" parentFunction="interleave_manual_seq" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>

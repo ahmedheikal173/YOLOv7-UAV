@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717761871815">
-  <ports id="1" name="y" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717892546264">
+  <ports id="1" name="y" type="PortType" coreName="RAM" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="409600">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="2" name="x_x0_V" type="PortType" coreName="RAM_T2P_BRAM" coreId="220" bitwidth="8" iftype="IfTypeRegister" arraysize="409600">
+  <ports id="2" name="x_x0_V" type="PortType" coreName="RAM_1P_BRAM" coreId="220" bitwidth="8" iftype="IfTypeRegister" arraysize="409600">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="3" name="x_x1_V" type="PortType" coreName="RAM_T2P_BRAM" coreId="0" bitwidth="8" iftype="IfTypeRegister" arraysize="409600">
+  <ports id="3" name="x_x1_V" type="PortType" coreName="RAM_1P_BRAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="409600">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="4" name="x_x2_V" type="PortType" coreName="RAM_T2P_BRAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="409600">
+  <ports id="4" name="x_x2_V" type="PortType" coreName="RAM_1P_BRAM" coreId="1953391988" bitwidth="8" iftype="IfTypeRegister" arraysize="409600">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <edges id="41" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -56,18 +56,18 @@
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_V_1_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_V_1_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln0" coreId="0" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln0" coreId="4294967295" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <controlInputObjs>.preheader</controlInputObjs>
     </node_objs>
   </blocks>
   <blocks id="36" name=".loopexit.loopexit2.exitStub" type="BlockType">
     <controlInputObjs>.preheader</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln0" coreId="1769104758" opcode="ret" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln0" coreId="386821536" opcode="ret" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1"/>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="119" pipe_depth="2" RegionName="WRITE">
     <basic_blocks id="18" name=".preheader" type="BlockType">
@@ -77,26 +77,26 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.loopexit.loopexit2.exitStub</controlOutputObjs>
       <controlOutputObjs>.split3</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="i_V" lineNumber="28" originalName="val" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="0" contextFuncName="interleave_manual_seq" bitwidth="19" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="i_V" lineNumber="28" originalName="val" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="interleave_manual_seq" bitwidth="19" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="28" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln25" lineNumber="25" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." rtlName="icmp_ln25_fu_110_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="interleave_manual_seq" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.92" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln25" lineNumber="25" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." rtlName="icmp_ln25_fu_110_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="interleave_manual_seq" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.08" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="25" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i" lineNumber="28" originalName="i" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." rtlName="i_fu_116_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="interleave_manual_seq" bitwidth="19" opcode="add" m_display="0" m_delay="1.12" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i" lineNumber="28" originalName="i" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." rtlName="i_fu_116_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="interleave_manual_seq" bitwidth="19" opcode="add" m_display="0" m_delay="0.88" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="28" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln25" lineNumber="25" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="0" contextFuncName="interleave_manual_seq" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln25" lineNumber="25" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="1601465961" contextFuncName="interleave_manual_seq" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="25" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>.split3</controlInputObjs>
@@ -111,7 +111,7 @@
       <controlInputObjs>.preheader</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>.preheader</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="zext_ln25" lineNumber="25" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." rtlName="zext_ln25_fu_122_p1" coreId="4294967295" contextFuncName="interleave_manual_seq" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="zext_ln25" lineNumber="25" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." rtlName="zext_ln25_fu_122_p1" coreId="415366784" contextFuncName="interleave_manual_seq" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="25" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -119,38 +119,38 @@
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="x_x0_V_addr" lineNumber="12" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreId="825368659" contextFuncName="read_seq" bitwidth="19" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="x_x0_V_addr" lineNumber="12" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreId="1852399472" contextFuncName="read_seq" bitwidth="19" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/./read_mem_seq.hpp" linenumber="12" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="read_seq"/>
         <dataInputObjs>x_x0_V</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_V" lineNumber="12" originalName="tmp.V" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreName="RAM_T2P_BRAM" implIndex="bram" control="no" opType="ram_t2p" coreId="99" contextFuncName="read_seq" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_V" lineNumber="12" originalName="tmp.V" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreName="RAM_1P_BRAM" implIndex="bram" control="no" opType="ram_1p" coreId="90" contextFuncName="read_seq" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/./read_mem_seq.hpp" linenumber="12" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="read_seq"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="x_x1_V_addr" lineNumber="15" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreId="1948254257" contextFuncName="read_seq" bitwidth="19" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="x_x1_V_addr" lineNumber="15" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreId="4294967292" contextFuncName="read_seq" bitwidth="19" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/./read_mem_seq.hpp" linenumber="15" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="read_seq"/>
         <dataInputObjs>x_x1_V</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="tmp_V_1" lineNumber="15" originalName="tmp.V" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreName="RAM_T2P_BRAM" implIndex="bram" control="no" opType="ram_t2p" coreId="99" contextFuncName="read_seq" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="tmp_V_1" lineNumber="15" originalName="tmp.V" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreName="RAM_1P_BRAM" implIndex="bram" control="no" opType="ram_1p" coreId="90" contextFuncName="read_seq" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/./read_mem_seq.hpp" linenumber="15" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="read_seq"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_x2_V_addr" lineNumber="18" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreId="1953852527" contextFuncName="read_seq" bitwidth="19" opcode="getelementptr" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="x_x2_V_addr" lineNumber="18" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreId="4294967295" contextFuncName="read_seq" bitwidth="19" opcode="getelementptr" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/./read_mem_seq.hpp" linenumber="18" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="read_seq"/>
         <dataInputObjs>x_x2_V</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_V_2" lineNumber="18" originalName="tmp.V" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreName="RAM_T2P_BRAM" implIndex="bram" control="no" opType="ram_t2p" coreId="99" contextFuncName="read_seq" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_V_2" lineNumber="18" originalName="tmp.V" fileName="../../src/./read_mem_seq.hpp" fileDirectory=".." coreName="RAM_1P_BRAM" implIndex="bram" control="no" opType="ram_1p" coreId="90" contextFuncName="read_seq" bitwidth="8" opcode="load" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/./read_mem_seq.hpp" linenumber="18" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="read_seq"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -161,30 +161,30 @@
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="add_ln70_1" lineNumber="70" fileName="../../src/../include/ap_int.h" fileDirectory=".." rtlName="y_Din_A" coreName="TAddSub" implIndex="tadder" control="no" opType="add" coreId="10" contextFuncName="ap_int_10_s" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.02" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="add_ln70_1" lineNumber="70" fileName="../../src/../include/ap_int.h" fileDirectory=".." rtlName="y_Din_A" coreName="TAddSub" implIndex="tadder" control="no" opType="add" coreId="10" contextFuncName="ap_int_10_s" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.05" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/../include/ap_int.h" linenumber="70" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="ap_int&amp;lt;10&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="y_addr" lineNumber="28" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="1702064225" contextFuncName="interleave_manual_seq" bitwidth="19" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="y_addr" lineNumber="28" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="1852399472" contextFuncName="interleave_manual_seq" bitwidth="19" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="28" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>y</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="y_addr_write_ln28" lineNumber="28" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="interleave_manual_seq" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.29" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="y_addr_write_ln28" lineNumber="28" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="interleave_manual_seq" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.23" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="28" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="i_V_1_write_ln28" lineNumber="28" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="1819167010" contextFuncName="interleave_manual_seq" opcode="store" m_display="0" m_delay="0.46" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="i_V_1_write_ln28" lineNumber="28" fileName="../../src/interleave_manual_seq.cpp" fileDirectory=".." coreId="1718511904" contextFuncName="interleave_manual_seq" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="../../src/interleave_manual_seq.cpp" linenumber="28" fileDirectory="D:\gam3a\zzzzzzzzzz\2-Memory_Organization_base\m2\m2" functionName="interleave_manual_seq"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln0" coreId="1919250543" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln0" coreId="428504096" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <controlInputObjs>.preheader</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="../../src/interleave_manual_seq.cpp">

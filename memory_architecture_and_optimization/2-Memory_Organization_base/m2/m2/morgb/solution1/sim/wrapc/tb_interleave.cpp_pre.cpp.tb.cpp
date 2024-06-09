@@ -55162,7 +55162,7 @@ void interleave_manual_seq(ap_int<8> x_in[1228800], ap_int<8> y[1228800 / 3],
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_interleave_manual_seq_sw(ap_int<8> *, ap_int<8> *, bool);
+void apatb_interleave_manual_rnd_sw(ap_int<8> *, ap_int<8> *, bool);
 # 9 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
 int main(int argc, char **argv){
 
@@ -55179,28 +55179,26 @@ int main(int argc, char **argv){
   sw_out[i] = in[i*3] +
      in[i*3 + 1] +
      in[i*3 + 2] ;
-# 37 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
+# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
  
 #ifndef HLS_FASTSIM
-#define interleave_manual_seq apatb_interleave_manual_seq_sw
+#define interleave_manual_rnd apatb_interleave_manual_rnd_sw
 #endif
-# 37 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
-interleave_manual_seq(in, hw_out, true);
-#undef interleave_manual_seq
-# 37 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
+# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
+interleave_manual_rnd(in, hw_out, true);
+#undef interleave_manual_rnd
+# 32 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
 
  
 #ifndef HLS_FASTSIM
-#define interleave_manual_seq apatb_interleave_manual_seq_sw
+#define interleave_manual_rnd apatb_interleave_manual_rnd_sw
 #endif
-# 38 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
-interleave_manual_seq(in, hw_out, false);
-#undef interleave_manual_seq
-# 38 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
+# 33 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
+interleave_manual_rnd(in, hw_out, false);
+#undef interleave_manual_rnd
+# 33 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
 
-
-
-
+# 42 "D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/tb/tb_interleave.cpp"
  bool pass = true;
  for (int i=0; i<1228800/3; i++){
   printf("sw= %d, hw= %d\n", sw_out[i].to_int(), hw_out[i].to_int());

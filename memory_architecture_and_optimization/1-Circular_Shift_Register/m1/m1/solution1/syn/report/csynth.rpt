@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'circular_shift_reg'
 ================================================================
 + General Information: 
-    * Date:           Wed Jun  5 23:09:13 2024
+    * Date:           Sun Jun  9 05:13:08 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m1
     * Solution:       solution1 (Vitis Kernel Flow Target)
@@ -15,32 +15,24 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
-    |                Modules               |  Issue |       | Latency | Latency | Iteration|         | Trip |          |         |    |           |            |     |
-    |                & Loops               |  Type  | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |     LUT    | URAM|
-    +--------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
-    |+ circular_shift_reg                  |  Timing|  -0.00|       83|  830.000|         -|       84|     -|        no|  3 (~0%)|   -|  779 (~0%)|  1602 (~0%)|    -|
-    | + circular_shift_reg_Pipeline_WRITE  |  Timing|  -0.00|       12|  120.000|         -|       12|     -|        no|        -|   -|   17 (~0%)|    98 (~0%)|    -|
-    |  o WRITE                             |       -|   7.30|       10|  100.000|         3|        1|     9|       yes|        -|   -|          -|           -|    -|
-    +--------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    +--------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+----------+-----------+-----+
+    |                Modules               | Issue|      | Latency | Latency | Iteration|         | Trip |          |         |    |          |           |     |
+    |                & Loops               | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|    FF    |    LUT    | URAM|
+    +--------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+----------+-----------+-----+
+    |+ circular_shift_reg                  |     -|  1.34|       13|  130.000|         -|       14|     -|        no|  1 (~0%)|   -|  86 (~0%)|  242 (~0%)|    -|
+    | + circular_shift_reg_Pipeline_WRITE  |     -|  4.09|       11|  110.000|         -|       11|     -|        no|        -|   -|  11 (~0%)|   87 (~0%)|    -|
+    |  o WRITE                             |     -|  7.30|        9|   90.000|         2|        1|     9|       yes|        -|   -|         -|          -|    -|
+    +--------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+----------+-----------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
-* M_AXI
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
-|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| m_axi_gmem | 8 -> 8     | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=2            |
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-
 * S_AXILITE Interfaces
 +---------------+------------+---------------+--------+----------+
 | Interface     | Data Width | Address Width | Offset | Register |
 +---------------+------------+---------------+--------+----------+
-| s_axi_control | 32         | 6             | 16     | 0        |
+| s_axi_control | 32         | 5             | 16     | 0        |
 +---------------+------------+---------------+--------+----------+
 
 * S_AXILITE Registers
@@ -52,9 +44,14 @@
 | s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN                           |
 | s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST                           |
 | s_axi_control | din      | 0x10   | 32    | W      | Data signal of din               |                                                                        |
-| s_axi_control | dout_1   | 0x18   | 32    | W      | Data signal of dout              |                                                                        |
-| s_axi_control | dout_2   | 0x1c   | 32    | W      | Data signal of dout              |                                                                        |
 +---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------+
+
+* BRAM
++------------+------------+---------------+
+| Interface  | Data Width | Address Width |
++------------+------------+---------------+
+| dout_PORTA | 8          | 32            |
++------------+------------+---------------+
 
 * TOP LEVEL CONTROL
 +-----------+---------------+-----------+
@@ -79,14 +76,12 @@
 +----------+-----------+-------------+
 
 * SW-to-HW Mapping
-+----------+---------------+-----------+----------+----------------------------------+
-| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
-+----------+---------------+-----------+----------+----------------------------------+
-| din      | s_axi_control | register  |          | name=din offset=0x10 range=32    |
-| dout     | m_axi_gmem    | interface |          |                                  |
-| dout     | s_axi_control | register  | offset   | name=dout_1 offset=0x18 range=32 |
-| dout     | s_axi_control | register  | offset   | name=dout_2 offset=0x1c range=32 |
-+----------+---------------+-----------+----------+----------------------------------+
++----------+---------------+-----------+-------------------------------+
+| Argument | HW Interface  | HW Type   | HW Info                       |
++----------+---------------+-----------+-------------------------------+
+| din      | s_axi_control | register  | name=din offset=0x10 range=32 |
+| dout     | dout_PORTA    | interface |                               |
++----------+---------------+-----------+-------------------------------+
 
 
 ================================================================
@@ -94,21 +89,7 @@
 ================================================================
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
-* Inferred Burst Summary
-+--------------+-------+-----------+--------+-------+---------------------------+
-| HW Interface | Loop  | Direction | Length | Width | Location                  |
-+--------------+-------+-----------+--------+-------+---------------------------+
-| m_axi_gmem   | WRITE | write     | 9      | 8     | ../src/shift_reg.cpp:13:3 |
-+--------------+-------+-----------+--------+-------+---------------------------+
-
-* Inferred Bursts and Widening Missed
-+--------------+----------+-------+------------------------------------------------+------------+---------------------------+
-| HW Interface | Variable | Loop  | Problem                                        | Resolution | Location                  |
-+--------------+----------+-------+------------------------------------------------+------------+---------------------------+
-| m_axi_gmem   | dout     | WRITE | Sequential access length is not divisible by 2 | 214-234    | ../src/shift_reg.cpp:13:3 |
-+--------------+----------+-------+------------------------------------------------+------------+---------------------------+
-
-    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+  No burst in design
 
 ================================================================
 == Bind Op Report
@@ -117,12 +98,12 @@
 | Name                                 | DSP | Pragma | Variable   | Op  | Impl   | Latency |
 +--------------------------------------+-----+--------+------------+-----+--------+---------+
 | + circular_shift_reg                 | 0   |        |            |     |        |         |
-|   add_ln885_fu_135_p2                | -   |        | add_ln885  | add | fabric | 0       |
-|   add_ln70_fu_160_p2                 | -   |        | add_ln70   | add | fabric | 0       |
+|   add_ln885_fu_94_p2                 | -   |        | add_ln885  | add | fabric | 0       |
+|   add_ln70_fu_119_p2                 | -   |        | add_ln70   | add | fabric | 0       |
 |  + circular_shift_reg_Pipeline_WRITE | 0   |        |            |     |        |         |
-|    i_fu_125_p2                       | -   |        | i          | add | fabric | 0       |
-|    sub_ln70_fu_135_p2                | -   |        | sub_ln70   | sub | fabric | 0       |
-|    add_ln70_1_fu_153_p2              | -   |        | add_ln70_1 | add | fabric | 0       |
+|    i_fu_101_p2                       | -   |        | i          | add | fabric | 0       |
+|    sub_ln70_fu_111_p2                | -   |        | sub_ln70   | sub | fabric | 0       |
+|    add_ln70_1_fu_129_p2              | -   |        | add_ln70_1 | add | fabric | 0       |
 +--------------------------------------+-----+--------+------------+-----+--------+---------+
 
 
@@ -132,7 +113,7 @@
 +----------------------+------+------+--------+------------+---------+------+---------+
 | Name                 | BRAM | URAM | Pragma | Variable   | Storage | Impl | Latency |
 +----------------------+------+------+--------+------------+---------+------+---------+
-| + circular_shift_reg | 3    | 0    |        |            |         |      |         |
+| + circular_shift_reg | 1    | 0    |        |            |         |      |         |
 |   regs_mem_V_U       | 1    | -    | pragma | regs_mem_V | ram_t2p | bram | 1       |
 +----------------------+------+------+--------+------------+---------+------+---------+
 
@@ -146,7 +127,11 @@
 +--------------+-------------------------------------+-----------------------------------------------------------+
 | bind_storage | variable=mem type=RAM_T2P impl=BRAM | ../src/./circular_shift.h:23 in circular_shift<t, n>, mem |
 | pipeline     |                                     | ../src/./circular_shift.h:30 in circular_shift<t, n>      |
-| pipeline     |                                     | ../src/shift_reg.cpp:15 in circular_shift_reg             |
+| interface    | mode=BRAM port=dout                 | ../src/shift_reg.cpp:7 in circular_shift_reg, dout        |
+| pipeline     |                                     | ../src/shift_reg.cpp:17 in circular_shift_reg             |
+| interface    | mode=BRAM port=dout                 | ../src/shift_reg.cpp:24 in shift_reg, dout                |
+| bind_storage | variable=regs type=RAM_1P impl=BRAM | ../src/shift_reg.cpp:27 in shift_reg, regs                |
+| unroll       |                                     | ../src/shift_reg.cpp:32 in shift_reg                      |
 +--------------+-------------------------------------+-----------------------------------------------------------+
 
 

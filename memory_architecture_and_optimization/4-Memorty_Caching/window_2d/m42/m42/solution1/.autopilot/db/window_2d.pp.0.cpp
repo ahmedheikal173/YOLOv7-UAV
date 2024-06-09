@@ -5686,8 +5686,8 @@ inline bool operator!=(
 
 
 
-
-__attribute__((sdx_kernel("window_avg", 0))) void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
+void avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
+void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void clip_window(int r, ap_uint<8> window[3]);
 # 4 "../src/window_2d.cpp" 2
 # 1 "../src/./singleport_ram.hpp" 1
@@ -5721,9 +5721,6 @@ class singleport_ram {
 
 #pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=BRAM
  }
-
-
-
 
 
 
@@ -30292,10 +30289,7 @@ void buff(ap_uint<8> din, int c, ap_uint<8> window[3]) {
     window[2] = din;
 }
 
-__attribute__((sdx_kernel("window_avg", 0))) void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]) {_ssdm_SpecArrayDimSize(din, 640);_ssdm_SpecArrayDimSize(dout, 640);
-#pragma HLSDIRECTIVE TOP name=window_avg
-# 50 "../src/window_2d.cpp"
-
+void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]) {
 
     const ap_ufixed<3, 1> coeffs[3] = {0.25, 0.5, 0.25};
     ap_fixed<13, 11> tmp;

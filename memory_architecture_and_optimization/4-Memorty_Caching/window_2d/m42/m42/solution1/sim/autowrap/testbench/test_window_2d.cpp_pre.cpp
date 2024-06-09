@@ -55152,7 +55152,7 @@ inline bool operator!=(
 
 
 
-
+void avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void clip_window(int r, ap_uint<8> window[3]);
 # 4 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp" 2
@@ -55162,6 +55162,8 @@ void clip_window(int r, ap_uint<8> window[3]);
 # 6 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp" 2
 
 using namespace std;
+
+
 
 static inline int clip(int i) {
     int tmp = i;
@@ -55192,7 +55194,11 @@ int main(int argc, char *argv[]) {
   }
  }
 
+
  window_avg(din, dout);
+
+
+
 
  int pass = 1;
  for (int r = 0; r != 640; r++) {

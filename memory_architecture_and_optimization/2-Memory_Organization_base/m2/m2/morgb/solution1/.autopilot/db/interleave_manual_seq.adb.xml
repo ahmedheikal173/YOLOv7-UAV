@@ -270,7 +270,7 @@
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-:15 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615
+:15 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -301,7 +301,7 @@
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-codeRepl:0 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615
+codeRepl:0 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -317,7 +317,7 @@ codeRepl:0 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-codeRepl:1 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 30, i64 18446744073709551615
+codeRepl:1 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -333,7 +333,7 @@ codeRepl:1 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-codeRepl:2 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 30, i64 18446744073709551615
+codeRepl:2 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -380,7 +380,7 @@ codeRepl:4 %br_ln0 = br void %._crit_edge
 
 <Node id="34" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:0 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615
+._crit_edge:0 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -395,7 +395,7 @@ codeRepl:4 %br_ln0 = br void %._crit_edge
 
 <Node id="35" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:1 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 30, i64 18446744073709551615
+._crit_edge:1 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -410,7 +410,7 @@ codeRepl:4 %br_ln0 = br void %._crit_edge
 
 <Node id="36" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:2 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 30, i64 18446744073709551615
+._crit_edge:2 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -425,7 +425,7 @@ codeRepl:4 %br_ln0 = br void %._crit_edge
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="21" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:3 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i21 %x_idx_V, i64 666, i64 30, i64 18446744073709551615
+._crit_edge:3 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i21 %x_idx_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -440,7 +440,7 @@ codeRepl:4 %br_ln0 = br void %._crit_edge
 
 <Node id="38" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-._crit_edge:4 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i2 %x_sel_V, i64 666, i64 30, i64 18446744073709551615
+._crit_edge:4 %specmemcore_ln14 = specmemcore void @_ssdm_op_SpecMemCore, i2 %x_sel_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln14"/></StgValue>
@@ -743,15 +743,15 @@ mergeST:1 %br_ln0 = br void %.loopexit.loopexit.new
 <core>NULL</core><StgValue><ssdm name="guard_variable_for_interleave_manual_seq_ap_int_8_ap_int_8_bool_x"/></StgValue>
 </port>
 <port id="59" name="x_x0_V" dir="2" iftype="1">
-<core>RAM_T2P_BRAM</core><StgValue><ssdm name="x_x0_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM_1P_BRAM</core><StgValue><ssdm name="x_x0_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="60" name="x_x1_V" dir="2" iftype="1">
-<core>RAM_T2P_BRAM</core><StgValue><ssdm name="x_x1_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM_1P_BRAM</core><StgValue><ssdm name="x_x1_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="61" name="x_x2_V" dir="2" iftype="1">
-<core>RAM_T2P_BRAM</core><StgValue><ssdm name="x_x2_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM_1P_BRAM</core><StgValue><ssdm name="x_x2_V"/><MemPortTyVec>2 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="62" name="x_sel_V" dir="2" iftype="0">

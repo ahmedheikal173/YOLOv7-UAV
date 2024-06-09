@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity circular_shift_reg_control_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -33,7 +33,6 @@ port (
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
     din                   :out  STD_LOGIC_VECTOR(7 downto 0);
-    dout                  :out  STD_LOGIC_VECTOR(63 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
@@ -69,11 +68,6 @@ end entity circular_shift_reg_control_s_axi;
 --        bit 7~0 - din[7:0] (Read/Write)
 --        others  - reserved
 -- 0x14 : reserved
--- 0x18 : Data signal of dout
---        bit 31~0 - dout[31:0] (Read/Write)
--- 0x1c : Data signal of dout
---        bit 31~0 - dout[63:32] (Read/Write)
--- 0x20 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of circular_shift_reg_control_s_axi is
@@ -81,16 +75,13 @@ architecture behave of circular_shift_reg_control_s_axi is
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL     : INTEGER := 16#00#;
-    constant ADDR_GIE         : INTEGER := 16#04#;
-    constant ADDR_IER         : INTEGER := 16#08#;
-    constant ADDR_ISR         : INTEGER := 16#0c#;
-    constant ADDR_DIN_DATA_0  : INTEGER := 16#10#;
-    constant ADDR_DIN_CTRL    : INTEGER := 16#14#;
-    constant ADDR_DOUT_DATA_0 : INTEGER := 16#18#;
-    constant ADDR_DOUT_DATA_1 : INTEGER := 16#1c#;
-    constant ADDR_DOUT_CTRL   : INTEGER := 16#20#;
-    constant ADDR_BITS         : INTEGER := 6;
+    constant ADDR_AP_CTRL    : INTEGER := 16#00#;
+    constant ADDR_GIE        : INTEGER := 16#04#;
+    constant ADDR_IER        : INTEGER := 16#08#;
+    constant ADDR_ISR        : INTEGER := 16#0c#;
+    constant ADDR_DIN_DATA_0 : INTEGER := 16#10#;
+    constant ADDR_DIN_CTRL   : INTEGER := 16#14#;
+    constant ADDR_BITS         : INTEGER := 5;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
@@ -119,7 +110,6 @@ architecture behave of circular_shift_reg_control_s_axi is
     signal int_ier             : UNSIGNED(5 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(5 downto 0) := (others => '0');
     signal int_din             : UNSIGNED(7 downto 0) := (others => '0');
-    signal int_dout            : UNSIGNED(63 downto 0) := (others => '0');
 
 
 begin
@@ -250,10 +240,6 @@ begin
                         rdata_data(5 downto 0) <= int_isr;
                     when ADDR_DIN_DATA_0 =>
                         rdata_data <= RESIZE(int_din(7 downto 0), 32);
-                    when ADDR_DOUT_DATA_0 =>
-                        rdata_data <= RESIZE(int_dout(31 downto 0), 32);
-                    when ADDR_DOUT_DATA_1 =>
-                        rdata_data <= RESIZE(int_dout(63 downto 32), 32);
                     when others =>
                         NULL;
                     end case;
@@ -269,7 +255,6 @@ begin
     task_ap_ready        <= ap_ready and not int_auto_restart;
     ap_continue          <= int_ap_continue or auto_restart_status;
     din                  <= STD_LOGIC_VECTOR(int_din);
-    dout                 <= STD_LOGIC_VECTOR(int_dout);
 
     process (ACLK)
     begin
@@ -475,28 +460,6 @@ begin
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DIN_DATA_0) then
                     int_din(7 downto 0) <= (UNSIGNED(WDATA(7 downto 0)) and wmask(7 downto 0)) or ((not wmask(7 downto 0)) and int_din(7 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_DOUT_DATA_0) then
-                    int_dout(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dout(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_DOUT_DATA_1) then
-                    int_dout(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_dout(63 downto 32));
                 end if;
             end if;
         end if;

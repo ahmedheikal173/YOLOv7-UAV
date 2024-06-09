@@ -2562,3 +2562,652 @@ INFO: [COSIM 212-12] Generating RTL test bench ...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 17.258 seconds; current allocated memory: 1.504 MB.
 INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 1 seconds. Total elapsed time: 19.354 seconds; peak allocated memory: 1.175 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Analyzing design file '../src/word_width.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/word_width_manual.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.825 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, true>::ap_range_ref(ap_int_base<8, true>*, int, int)' into 'ap_int_base<8, true>::range(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::range(int, int)' into 'ap_int_base<8, true>::operator()(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<2, false>(ap_int_base<2, false> const&)' into 'ap_int_base<2, false>::RType<32, true>::mult operator*<2, false, 32, true>(ap_int_base<2, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1539:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<2, false>::RType<32, true>::mult operator*<2, false, 32, true>(ap_int_base<2, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1539:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::RType<32, true>::mult operator*<2, false, 32, true>(ap_int_base<2, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::ap_int_base<34, true>(ap_int_base<34, true> const&)' into 'ap_int_base<34, true>::RType<32, true>::plus operator+<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<34, true>::RType<32, true>::plus operator+<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<34, true>::RType<($_0)32, true>::plus operator+<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<32, true>::plus operator+<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<34, true>::RType<($_0)32, true>::plus operator+<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::minus operator-<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::minus operator-<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<35, true>::RType<($_0)32, true>::minus operator-<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<32, true>::minus operator-<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<($_0)32, true>::minus operator-<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1529)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::ap_range_ref(ap_int_base<24, false>*, int, int)' into 'ap_int_base<24, false>::range(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::to_int() const' into 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1141:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1143:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::to_int() const' into 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1142:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, true>::get() const' into 'ap_int_base<8, false>::ap_int_base<8, true>(ap_range_ref<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<8, true>(ap_range_ref<8, true> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, true>(ap_range_ref<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:428:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, true>(ap_range_ref<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:428:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<2, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>& ap_int_base<2, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<2, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<2, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<21, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>& ap_int_base<21, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<21, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<21, false>(ap_int_base<21, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<21, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<21, false>(ap_int_base<21, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator unsigned long long() const' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:49)
+INFO: [HLS 214-131] Inlining function 'bool operator==<21, false>(ap_int_base<21, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:18:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator unsigned long long() const' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:14:7)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator++(int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:14:7)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:13:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator++(int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:11:3)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, true>(ap_range_ref<8, true> const&)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:42)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:3)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<($_0)32, true>::minus operator-<35, true>(ap_int_base<35, true> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<($_0)32, true>::plus operator+<34, true>(ap_int_base<34, true> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::operator()(int, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_int_base<24, false>::operator()(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::get() const' into 'ap_int_base<8, true>::ap_int_base<24, false>(ap_range_ref<24, false> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::ap_int_base<24, false>(ap_range_ref<24, false> const&)' into 'ap_int<8>::ap_int<24, false>(ap_range_ref<24, false> const&)' (../src/../include/ap_int.h:102:91)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:27:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:24:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:21:13)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:17:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator unsigned long long() const' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:15:15)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:14:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator++(int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:14:7)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<9, true>(ap_int_base<9, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:27:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:27:26)
+INFO: [HLS 214-178] Inlining function 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:5:0)
+INFO: [HLS 214-241] Aggregating bram variable '1' with compact=bit mode in 8-bits
+INFO: [HLS 214-241] Aggregating bram variable 'x_in' with compact=bit mode in 8-bits
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.798 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:414: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 1.173 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'word_width_manual'... converting 7 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'word_width_manual' (../src/word_width_manual.cpp:13:1)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.219 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x.x.V' (../src/ww_write_mem.hpp:14:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (../src/word_width_manual.cpp:27:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'word_width_manual' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_manual_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'WRITE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_manual_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_manual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 1.173 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_manual_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_manual_Pipeline_WRITE' pipeline 'WRITE' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_manual_Pipeline_WRITE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_manual_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_manual_Pipeline_LOAD' pipeline 'LOAD' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual_Pipeline_LOAD/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual_Pipeline_LOAD/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_manual_Pipeline_LOAD'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.279 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_manual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width_manual/x_in' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width_manual/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width_manual/load' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'word_width_manual' to 's_axilite & ap_ctrl_chain'.
+WARNING: [RTGEN 206-101] Register 'x_sel_wr_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_write3_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_idx_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_sel_rd_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_read3_V' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'load', 'return' and 'ap_local_deadlock' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_manual'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 1.173 GB.
+INFO: [RTMG 210-278] Implementing memory 'word_width_manual_x_x_V_RAM_T2P_BRAM_1R1W_ram (RAM_T2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.68 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.674 seconds; current allocated memory: 1.173 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for word_width_manual.
+INFO: [VLOG 209-307] Generating Verilog RTL for word_width_manual.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 185.15 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 18.305 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 20.847 seconds; peak allocated memory: 1.173 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: cosim_design -setup -O 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 21.756 seconds; current allocated memory: 2.434 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 23.762 seconds; peak allocated memory: 1.176 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Analyzing design file '../src/word_width.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/word_width_manual.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.794 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<9, true>(ap_int_base<9, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' into 'word_width(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width.cpp:29:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' into 'word_width(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width.cpp:29:33)
+INFO: [HLS 214-241] Aggregating bram variable '1' with compact=bit mode in 8-bits
+INFO: [HLS 214-241] Aggregating bram variable 'x_in' with compact=bit mode in 8-bits
+INFO: [HLS 214-248] Applying array_reshape to '_ZZ10word_widthP6ap_intILi8EES1_bE1x': Cyclic reshaping with factor 3 on dimension 1. (../src/word_width.cpp:13:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.257 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] ../src/word_width.cpp:24: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'word_width(ap_int<8>*, ap_int<8>*, bool)x' (../src/word_width.cpp:24:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (../src/word_width.cpp:29:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'word_width' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'WRITE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'LOAD'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_Pipeline_WRITE' pipeline 'WRITE' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_Pipeline_WRITE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_Pipeline_LOAD' pipeline 'LOAD' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_Pipeline_LOAD'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width/x_in' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width/load' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'word_width' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'load', 'return' and 'ap_local_deadlock' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.324 seconds; current allocated memory: 1.174 GB.
+INFO: [RTMG 210-278] Implementing memory 'word_width_word_width_ap_int_8_ap_int_8_bool_x_RAM_T2P_BRAM_1R1W_ram (RAM_T2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.492 seconds; current allocated memory: 1.174 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for word_width.
+INFO: [VLOG 209-307] Generating Verilog RTL for word_width.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 262.43 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.588 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.53 seconds; peak allocated memory: 1.174 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: cosim_design -setup -O 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 15.804 seconds; current allocated memory: 2.055 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.959 seconds; peak allocated memory: 1.175 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Analyzing design file '../src/word_width.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/word_width_manual.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.662 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<9, true>(ap_int_base<9, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' into 'word_width(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width.cpp:29:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' into 'word_width(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width.cpp:29:33)
+INFO: [HLS 214-241] Aggregating bram variable '1' with compact=bit mode in 8-bits
+INFO: [HLS 214-241] Aggregating bram variable 'x_in' with compact=bit mode in 8-bits
+INFO: [HLS 214-248] Applying array_reshape to '_ZZ10word_widthP6ap_intILi8EES1_bE1x': Cyclic reshaping with factor 3 on dimension 1. (../src/word_width.cpp:13:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.872 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] ../src/word_width.cpp:24: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'word_width(ap_int<8>*, ap_int<8>*, bool)x' (../src/word_width.cpp:24:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (../src/word_width.cpp:29:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'word_width' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'WRITE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'LOAD'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_Pipeline_WRITE' pipeline 'WRITE' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_Pipeline_WRITE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_Pipeline_LOAD' pipeline 'LOAD' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_Pipeline_LOAD'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width/x_in' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width/load' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'word_width' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'load', 'return' and 'ap_local_deadlock' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.286 seconds; current allocated memory: 1.174 GB.
+INFO: [RTMG 210-278] Implementing memory 'word_width_word_width_ap_int_8_ap_int_8_bool_x_RAM_1P_BRAM_1R1W_ram (RAM_1P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.503 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.397 seconds; current allocated memory: 1.174 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for word_width.
+INFO: [VLOG 209-307] Generating Verilog RTL for word_width.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 262.43 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 14.81 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.959 seconds; peak allocated memory: 1.174 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Analyzing design file '../src/word_width.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../src/word_width_manual.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.164 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, true>::ap_range_ref(ap_int_base<8, true>*, int, int)' into 'ap_int_base<8, true>::range(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::range(int, int)' into 'ap_int_base<8, true>::operator()(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<2, false>(ap_int_base<2, false> const&)' into 'ap_int_base<2, false>::RType<32, true>::mult operator*<2, false, 32, true>(ap_int_base<2, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1539:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<2, false>::RType<32, true>::mult operator*<2, false, 32, true>(ap_int_base<2, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1539:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::RType<32, true>::mult operator*<2, false, 32, true>(ap_int_base<2, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::ap_int_base<34, true>(ap_int_base<34, true> const&)' into 'ap_int_base<34, true>::RType<32, true>::plus operator+<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<34, true>::RType<32, true>::plus operator+<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<34, true>::RType<($_0)32, true>::plus operator+<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<32, true>::plus operator+<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<34, true>::RType<($_0)32, true>::plus operator+<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::minus operator-<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::minus operator-<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<35, true>::RType<($_0)32, true>::minus operator-<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<32, true>::minus operator-<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<($_0)32, true>::minus operator-<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1529)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::ap_range_ref(ap_int_base<24, false>*, int, int)' into 'ap_int_base<24, false>::range(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::to_int() const' into 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1141:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1143:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::to_int() const' into 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1142:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, true>::get() const' into 'ap_int_base<8, false>::ap_int_base<8, true>(ap_range_ref<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<8, true>(ap_range_ref<8, true> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, true>(ap_range_ref<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:428:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, true>(ap_range_ref<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:428:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<2, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>& ap_int_base<2, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<2, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<2, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<21, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>& ap_int_base<21, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<21, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<21, false>(ap_int_base<21, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<21, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<21, false>(ap_int_base<21, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator unsigned long long() const' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:49)
+INFO: [HLS 214-131] Inlining function 'bool operator==<21, false>(ap_int_base<21, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:18:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator unsigned long long() const' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:14:7)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator++(int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:14:7)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:13:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator++(int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:11:3)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, true>(ap_range_ref<8, true> const&)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:42)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false> ap_int_base<24, false>::operator()<36, true, 34, true>(ap_int_base<36, true> const&, ap_int_base<34, true> const&)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:3)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<($_0)32, true>::minus operator-<35, true>(ap_int_base<35, true> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<($_0)32, true>::plus operator+<34, true>(ap_int_base<34, true> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::RType<($_0)32, true>::mult operator*<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::operator()(int, int)' into 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' (../src/ww_write_mem.hpp:9:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_int_base<24, false>::operator()(int, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::get() const' into 'ap_int_base<8, true>::ap_int_base<24, false>(ap_range_ref<24, false> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::ap_int_base<24, false>(ap_range_ref<24, false> const&)' into 'ap_int<8>::ap_int<24, false>(ap_range_ref<24, false> const&)' (../src/../include/ap_int.h:102:91)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:27:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:24:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:21:13)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:17:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<21, false>::operator unsigned long long() const' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:15:15)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:14:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator++(int)' into 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' (../src/ww_read_mem.hpp:14:7)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<9, true>(ap_int_base<9, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<10, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, true>::RType<8, true>::plus operator+<9, true, 8, true>(ap_int_base<9, true> const&, ap_int_base<8, true> const&)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:27:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::RType<8, true>::plus operator+<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:27:26)
+INFO: [HLS 214-178] Inlining function 'word_width_mem<8, 1228800>::write(ap_uint<21>, ap_int<8>*)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'word_width_mem<8, 1228800>::read(ap_uint<21>, int)' into 'word_width_manual(ap_int<8>*, ap_int<8>*, bool)' (../src/word_width_manual.cpp:5:0)
+INFO: [HLS 214-241] Aggregating bram variable '1' with compact=bit mode in 8-bits
+INFO: [HLS 214-241] Aggregating bram variable 'x_in' with compact=bit mode in 8-bits
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.578 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:414: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.174 GB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'word_width_manual'... converting 7 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'word_width_manual' (../src/word_width_manual.cpp:13:1)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.231 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'x.x.V' (../src/ww_write_mem.hpp:14:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'y' (../src/word_width_manual.cpp:27:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'word_width_manual' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_manual_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'WRITE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.202 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_manual_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'LOAD'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'word_width_manual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 1.174 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_manual_Pipeline_WRITE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_manual_Pipeline_WRITE' pipeline 'WRITE' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_manual_Pipeline_WRITE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_manual_Pipeline_LOAD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'word_width_manual_Pipeline_LOAD' pipeline 'LOAD' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual_Pipeline_LOAD/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual_Pipeline_LOAD/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_manual_Pipeline_LOAD'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'word_width_manual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width_manual/x_in' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width_manual/y' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'word_width_manual/load' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'word_width_manual' to 's_axilite & ap_ctrl_chain'.
+WARNING: [RTGEN 206-101] Register 'x_sel_wr_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_write3_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_idx_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_sel_rd_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_read3_V' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'load', 'return' and 'ap_local_deadlock' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual/x_in_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual/x_in_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'word_width_manual'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.461 seconds; current allocated memory: 1.174 GB.
+INFO: [RTMG 210-278] Implementing memory 'word_width_manual_x_x_V_RAM_1P_BRAM_1R1W_ram (RAM_1P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.663 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.708 seconds; current allocated memory: 1.174 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for word_width_manual.
+INFO: [VLOG 209-307] Generating Verilog RTL for word_width_manual.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 185.15 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 19.594 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 22.834 seconds; peak allocated memory: 1.174 GB.

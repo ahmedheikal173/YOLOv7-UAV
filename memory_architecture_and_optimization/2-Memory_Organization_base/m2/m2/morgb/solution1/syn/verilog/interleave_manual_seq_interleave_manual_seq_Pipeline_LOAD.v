@@ -135,8 +135,8 @@ reg    ap_done_int;
 reg   [0:0] ap_NS_fsm;
 wire    ap_enable_pp0;
 wire    ap_start_int;
+reg    ap_condition_290;
 reg    ap_condition_293;
-reg    ap_condition_296;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -222,7 +222,7 @@ always @ (posedge ap_clk) begin
             t_V_1_fu_88 <= x_idx_V_load;
         end else if (((icmp_ln20_fu_218_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1))) begin
             t_V_1_fu_88 <= select_ln25_1_fu_274_p3;
-        end else if ((1'b1 == ap_condition_293)) begin
+        end else if ((1'b1 == ap_condition_290)) begin
             t_V_1_fu_88 <= add_ln885_1_fu_244_p2;
         end
     end
@@ -242,7 +242,7 @@ always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
         if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
             x_idx_V_flag_0_fu_96 <= 1'd0;
-        end else if ((1'b1 == ap_condition_296)) begin
+        end else if ((1'b1 == ap_condition_293)) begin
             x_idx_V_flag_0_fu_96 <= 1'd1;
         end else if ((ap_enable_reg_pp0_iter2 == 1'b1)) begin
             x_idx_V_flag_0_fu_96 <= or_ln25_fu_332_p2;
@@ -252,7 +252,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        if ((1'b1 == ap_condition_296)) begin
+        if ((1'b1 == ap_condition_293)) begin
             x_idx_V_new_0_fu_92 <= add_ln885_1_fu_244_p2;
         end else if ((ap_enable_reg_pp0_iter2 == 1'b1)) begin
             x_idx_V_new_0_fu_92 <= select_ln25_fu_337_p3;
@@ -433,11 +433,11 @@ assign ap_block_state2_pp0_stage0_iter1 = ~(1'b1 == 1'b1);
 assign ap_block_state3_pp0_stage0_iter2 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_condition_293 = ((t_V_load_load_fu_230_p1 == 2'd2) & (icmp_ln20_fu_218_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1));
+    ap_condition_290 = ((t_V_load_load_fu_230_p1 == 2'd2) & (icmp_ln20_fu_218_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1));
 end
 
 always @ (*) begin
-    ap_condition_296 = ((t_V_load_load_fu_230_p1 == 2'd2) & (icmp_ln20_fu_218_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0));
+    ap_condition_293 = ((t_V_load_load_fu_230_p1 == 2'd2) & (icmp_ln20_fu_218_p2 == 1'd0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0));
 end
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);

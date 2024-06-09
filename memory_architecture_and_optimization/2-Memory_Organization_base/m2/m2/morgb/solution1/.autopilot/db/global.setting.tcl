@@ -2,7 +2,7 @@
 set TopModule "interleave_manual_seq"
 set ClockPeriod 10
 set ClockList ap_clk
-set HasVivadoClockPeriod 0
+set HasVivadoClockPeriod 1
 set CombLogicFlag 0
 set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
@@ -41,7 +41,7 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xcvu11p:-flga2577:-1-e
+set TargetInfo xczu7ev:-ffvc1156:-2-e
 set SourceFiles {sc {} c {../../../../src/interleave_manual_seq.cpp ../../../../src/interleave_manual_rnd.cpp ../../../../src/interleave.cpp}}
 set SourceFlags {sc {} c {{} {} {}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/solution1.directive
@@ -61,5 +61,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynquplus/zynquplus}}}
 set HPFPO 0

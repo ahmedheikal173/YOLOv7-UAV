@@ -1,47 +1,38 @@
 
 
 ================================================================
-== Synthesis Summary Report of 'window_avg'
+== Synthesis Summary Report of 'avg'
 ================================================================
 + General Information: 
-    * Date:           Thu Jun  6 00:39:32 2024
+    * Date:           Sun Jun  9 03:51:15 2024
     * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
     * Project:        m42
     * Solution:       solution1 (Vitis Kernel Flow Target)
-    * Product family: virtexuplus
-    * Target device:  xcvu11p-flga2577-1-e
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
     
 
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------+--------+-------+---------+-----------+----------+---------+--------+----------+---------+----+------------+------------+-----+
-    |    Modules   |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |         |    |            |            |     |
-    |    & Loops   |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|  BRAM   | DSP|     FF     |     LUT    | URAM|
-    +--------------+--------+-------+---------+-----------+----------+---------+--------+----------+---------+----+------------+------------+-----+
-    |+ window_avg  |  Timing|  -0.00|   410384|  4.104e+06|         -|   410385|       -|        no|  4 (~0%)|   -|  1661 (~0%)|  2183 (~0%)|    -|
-    | o ROW_COL    |       -|   7.30|   410382|  4.104e+06|       144|        1|  410240|       yes|        -|   -|           -|           -|    -|
-    |  + buff      |       -|   4.62|        2|     20.000|         -|        1|       -|       yes|  2 (~0%)|   -|   123 (~0%)|   405 (~0%)|    -|
-    +--------------+--------+-------+---------+-----------+----------+---------+--------+----------+---------+----+------------+------------+-----+
+    +------------+------+------+---------+-----------+----------+---------+--------+----------+------+----+-----------+-----------+-----+
+    |   Modules  | Issue|      | Latency |  Latency  | Iteration|         |  Trip  |          |      |    |           |           |     |
+    |   & Loops  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +------------+------+------+---------+-----------+----------+---------+--------+----------+------+----+-----------+-----------+-----+
+    |+ avg       |     -|  3.39|   819202|  8.192e+06|         -|   819203|       -|        no|     -|   -|  145 (~0%)|  567 (~0%)|    -|
+    | o ROW_COL  |    II|  7.30|   819200|  8.192e+06|         3|        2|  409600|       yes|     -|   -|          -|          -|    -|
+    +------------+------+------+---------+-----------+----------+---------+--------+----------+------+----+-----------+-----------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
-* M_AXI
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
-|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| m_axi_gmem | 8 -> 8     | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=2            |
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-
 * S_AXILITE Interfaces
-+---------------+------------+---------------+--------+----------+
-| Interface     | Data Width | Address Width | Offset | Register |
-+---------------+------------+---------------+--------+----------+
-| s_axi_control | 32         | 6             | 16     | 0        |
-+---------------+------------+---------------+--------+----------+
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
 
 * S_AXILITE Registers
 +---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------+
@@ -51,11 +42,16 @@
 | s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                               |
 | s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN                           |
 | s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST                           |
-| s_axi_control | din_1    | 0x10   | 32    | W      | Data signal of din               |                                                                        |
-| s_axi_control | din_2    | 0x14   | 32    | W      | Data signal of din               |                                                                        |
-| s_axi_control | dout_1   | 0x1c   | 32    | W      | Data signal of dout              |                                                                        |
-| s_axi_control | dout_2   | 0x20   | 32    | W      | Data signal of dout              |                                                                        |
 +---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------+
+
+* BRAM
++------------+------------+---------------+
+| Interface  | Data Width | Address Width |
++------------+------------+---------------+
+| din_PORTA  | 8          | 32            |
+| din_PORTB  | 8          | 32            |
+| dout_PORTA | 8          | 32            |
++------------+------------+---------------+
 
 * TOP LEVEL CONTROL
 +-----------+---------------+-----------+
@@ -75,72 +71,49 @@
 +----------+-----------+-------------+
 | Argument | Direction | Datatype    |
 +----------+-----------+-------------+
-| din      | inout     | ap_uint<8>* |
-| dout     | inout     | ap_uint<8>* |
+| din      | in        | ap_uint<8>* |
+| dout     | out       | ap_uint<8>* |
 +----------+-----------+-------------+
 
 * SW-to-HW Mapping
-+----------+---------------+-----------+----------+----------------------------------+
-| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
-+----------+---------------+-----------+----------+----------------------------------+
-| din      | m_axi_gmem    | interface |          |                                  |
-| din      | s_axi_control | register  | offset   | name=din_1 offset=0x10 range=32  |
-| din      | s_axi_control | register  | offset   | name=din_2 offset=0x14 range=32  |
-| dout     | m_axi_gmem    | interface |          |                                  |
-| dout     | s_axi_control | register  | offset   | name=dout_1 offset=0x1c range=32 |
-| dout     | s_axi_control | register  | offset   | name=dout_2 offset=0x20 range=32 |
-+----------+---------------+-----------+----------+----------------------------------+
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| din      | din_PORTA    | interface |
+| din      | din_PORTB    | interface |
+| dout     | dout_PORTA   | interface |
++----------+--------------+-----------+
 
-
-================================================================
-== M_AXI Burst Information
-================================================================
- Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
-
-* Inferred Bursts and Widening Missed
-+--------------+----------+------+-------------------------------------------+------------+---------------------------+
-| HW Interface | Variable | Loop | Problem                                   | Resolution | Location                  |
-+--------------+----------+------+-------------------------------------------+------------+---------------------------+
-| m_axi_gmem   | din      | COL  | Access load is in the conditional branch  | 214-232    | ../src/window_2d.cpp:61:9 |
-| m_axi_gmem   | dout     | COL  | Access store is in the conditional branch | 214-232    | ../src/window_2d.cpp:61:9 |
-+--------------+----------+------+-------------------------------------------+------------+---------------------------+
-
-    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+------------------------+-----+--------+------------+-----+--------+---------+
-| Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
-+------------------------+-----+--------+------------+-----+--------+---------+
-| + window_avg           | 0   |        |            |     |        |         |
-|   add_ln69_fu_273_p2   | -   |        | add_ln69   | add | fabric | 0       |
-|   add_ln59_fu_285_p2   | -   |        | add_ln59   | add | fabric | 0       |
-|   add_ln59_2_fu_308_p2 | -   |        | add_ln59_2 | add | fabric | 0       |
-|   add_ln69_1_fu_370_p2 | -   |        | add_ln69_1 | add | fabric | 0       |
-|   add_ln59_1_fu_388_p2 | -   |        | add_ln59_1 | add | fabric | 0       |
-|   add_ln64_fu_410_p2   | -   |        | add_ln64   | add | tadder | 0       |
-|   add_ln64_1_fu_416_p2 | -   |        | add_ln64_1 | add | tadder | 0       |
-|   ret_V_fu_522_p2      | -   |        | ret_V      | add | tadder | 0       |
-|   ret_V_1_fu_532_p2    | -   |        | ret_V_1    | add | tadder | 0       |
-|   add_ln69_3_fu_428_p2 | -   |        | add_ln69_3 | add | fabric | 0       |
-|   add_ln69_2_fu_438_p2 | -   |        | add_ln69_2 | add | fabric | 0       |
-|   add_ln61_fu_450_p2   | -   |        | add_ln61   | add | fabric | 0       |
-+------------------------+-----+--------+------------+-----+--------+---------+
++-------------------------------------+-----+--------+-------------------------+-----+--------+---------+
+| Name                                | DSP | Pragma | Variable                | Op  | Impl   | Latency |
++-------------------------------------+-----+--------+-------------------------+-----+--------+---------+
+| + avg                               | 0   |        |                         |     |        |         |
+|   empty_fu_167_p2                   | -   |        | empty                   | add | fabric | 0       |
+|   indvars_iv_next175_fu_173_p2      | -   |        | indvars_iv_next175      | add | fabric | 0       |
+|   add_ln7_fu_187_p2                 | -   |        | add_ln7                 | add | fabric | 0       |
+|   add_ln22_fu_221_p2                | -   |        | add_ln22                | add | fabric | 0       |
+|   add_ln455_fu_272_p2               | -   |        | add_ln455               | add | tadder | 0       |
+|   p_mid1_fu_282_p2                  | -   |        | p_mid1                  | add | fabric | 0       |
+|   indvars_iv_next175_mid1_fu_288_p2 | -   |        | indvars_iv_next175_mid1 | add | fabric | 0       |
+|   add_ln455_1_fu_338_p2             | -   |        | add_ln455_1             | add | tadder | 0       |
+|   add_ln455_2_fu_386_p2             | -   |        | add_ln455_2             | add | tadder | 0       |
+|   add_ln455_3_fu_396_p2             | -   |        | add_ln455_3             | add | tadder | 0       |
+|   add_ln455_4_fu_407_p2             | -   |        | add_ln455_4             | add | tadder | 0       |
+|   add_ln455_5_fu_418_p2             | -   |        | add_ln455_5             | add | tadder | 0       |
+|   ret_V_fu_463_p2                   | -   |        | ret_V                   | add | tadder | 0       |
+|   ret_V_1_fu_473_p2                 | -   |        | ret_V_1                 | add | tadder | 0       |
+|   add_ln24_fu_424_p2                | -   |        | add_ln24                | add | fabric | 0       |
++-------------------------------------+-----+--------+-------------------------+-----+--------+---------+
 
 
 ================================================================
 == Bind Storage Report
 ================================================================
-+------------------+------+------+--------+-------------+---------+------+---------+
-| Name             | BRAM | URAM | Pragma | Variable    | Storage | Impl | Latency |
-+------------------+------+------+--------+-------------+---------+------+---------+
-| + window_avg     | 4    | 0    |        |             |         |      |         |
-|  + buff          | 2    | 0    |        |             |         |      |         |
-|    buff1_ram_V_U | 1    | -    | pragma | buff1_ram_V | ram_1p  | bram | 1       |
-|    buff0_ram_V_U | 1    | -    | pragma | buff0_ram_V | ram_1p  | bram | 1       |
-+------------------+------+------+--------+-------------+---------+------+---------+
-
+  No bind storage info in design
 
 ================================================================
 == User Pragma Report
@@ -150,10 +123,13 @@
 | Type         | Options                            | Location                                                    |
 +--------------+------------------------------------+-------------------------------------------------------------+
 | bind_storage | variable=ram type=RAM_1P impl=BRAM | ../src/./singleport_ram.hpp:28 in singleport_ram<n, w>, ram |
-| inline       |                                    | ../src/./singleport_ram.hpp:37 in exec                      |
+| inline       |                                    | ../src/./singleport_ram.hpp:34 in exec                      |
 | interface    | mode=BRAM port=window              | ../src/window_2d.cpp:11 in clip_window, window              |
 | interface    | mode=BRAM port=window              | ../src/window_2d.cpp:29 in buff, window                     |
 | pipeline     | II=1                               | ../src/window_2d.cpp:62 in window_avg                       |
+| interface    | mode=BRAM port=din                 | ../src/window_2d_poor_arch.cpp:16 in avg, din               |
+| interface    | mode=BRAM port=dout                | ../src/window_2d_poor_arch.cpp:17 in avg, dout              |
+| pipeline     | II=1                               | ../src/window_2d_poor_arch.cpp:25 in avg                    |
 +--------------+------------------------------------+-------------------------------------------------------------+
 
 

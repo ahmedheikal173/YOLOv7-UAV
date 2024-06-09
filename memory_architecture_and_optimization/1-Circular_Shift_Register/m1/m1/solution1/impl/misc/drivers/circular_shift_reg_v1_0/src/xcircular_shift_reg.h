@@ -90,8 +90,6 @@ void XCircular_shift_reg_DisableAutoRestart(XCircular_shift_reg *InstancePtr);
 
 void XCircular_shift_reg_Set_din(XCircular_shift_reg *InstancePtr, u32 Data);
 u32 XCircular_shift_reg_Get_din(XCircular_shift_reg *InstancePtr);
-void XCircular_shift_reg_Set_dout(XCircular_shift_reg *InstancePtr, u64 Data);
-u64 XCircular_shift_reg_Get_dout(XCircular_shift_reg *InstancePtr);
 
 void XCircular_shift_reg_InterruptGlobalEnable(XCircular_shift_reg *InstancePtr);
 void XCircular_shift_reg_InterruptGlobalDisable(XCircular_shift_reg *InstancePtr);

@@ -9,7 +9,40 @@
         <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./word_width_mem.hpp:21:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width_mem&lt;W, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="word_width_mem&lt;W, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x cyclic factor=3 dim=1" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./word_width_mem.hpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_width_mem&lt;W, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width_manual.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="word_width_manual" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=word_width_manual" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width_manual.cpp:11:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="word_width_manual" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
@@ -23,38 +56,164 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width_manual.cpp:26:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="word_width_manual" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1093:12" msg_body="Inlining function 'ap_range_ref&lt;8, true&gt;::ap_range_ref(ap_int_base&lt;8, true&gt;*, int, int)' into 'ap_int_base&lt;8, true&gt;::range(int, int)'">
+        <args Callee="ap_range_ref&lt;8, true&gt;::ap_range_ref(ap_int_base&lt;8, true&gt;*, int, int)" Caller="ap_int_base&lt;8, true&gt;::range(int, int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:732:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1130:18" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::range(int, int)' into 'ap_int_base&lt;8, true&gt;::operator()(int, int)'">
+        <args Callee="ap_int_base&lt;8, true&gt;::range(int, int)" Caller="ap_int_base&lt;8, true&gt;::operator()(int, int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1539:339" msg_body="Inlining function 'ap_int_base&lt;34, true&gt;::ap_int_base&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;)' into 'ap_int_base&lt;2, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;2, false, 32, true&gt;(ap_int_base&lt;2, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;34, true&gt;::ap_int_base&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;)" Caller="ap_int_base&lt;2, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;2, false, 32, true&gt;(ap_int_base&lt;2, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/./word_width_mem.hpp:21:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width_mem&lt;W, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1539:427" msg_body="Inlining function 'ap_int_base&lt;34, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;2, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;2, false, 32, true&gt;(ap_int_base&lt;2, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;34, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;2, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;2, false, 32, true&gt;(ap_int_base&lt;2, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:6:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=word_width" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:483" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:10:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=x_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:481" msg_body="Inlining function 'ap_int_base&lt;2, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;2, false, 32, true&gt;(ap_int_base&lt;2, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;2, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;2, false, 32, true&gt;(ap_int_base&lt;2, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:11:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339" msg_body="Inlining function 'ap_int_base&lt;35, true&gt;::ap_int_base&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;)' into 'ap_int_base&lt;34, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;34, true, 32, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;35, true&gt;::ap_int_base&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;)" Caller="ap_int_base&lt;34, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;34, true, 32, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:14:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x cyclic factor=3 dim=1" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427" msg_body="Inlining function 'ap_int_base&lt;35, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;34, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;34, true, 32, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;35, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;34, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;34, true, 32, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:16:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1006" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;34, true&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;34, true&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:23:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1004" msg_body="Inlining function 'ap_int_base&lt;34, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;34, true, 32, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;34, true&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;34, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;34, true, 32, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;34, true&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/word_width.cpp:28:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="word_width" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341" msg_body="Inlining function 'ap_int_base&lt;36, true&gt;::ap_int_base&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;)' into 'ap_int_base&lt;35, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;35, true, 32, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;36, true&gt;::ap_int_base&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;)" Caller="ap_int_base&lt;35, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;35, true, 32, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:430" msg_body="Inlining function 'ap_int_base&lt;36, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;35, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;35, true, 32, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;36, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;35, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;35, true, 32, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1531" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;35, true&gt;::RType&lt;($_0)32, true&gt;::minus operator-&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;35, true&gt;::RType&lt;($_0)32, true&gt;::minus operator-&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:1529" msg_body="Inlining function 'ap_int_base&lt;35, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;35, true, 32, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;35, true&gt;::RType&lt;($_0)32, true&gt;::minus operator-&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;35, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;35, true, 32, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;35, true&gt;::RType&lt;($_0)32, true&gt;::minus operator-&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1093:12" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;::ap_range_ref(ap_int_base&lt;24, false&gt;*, int, int)' into 'ap_int_base&lt;24, false&gt;::range(int, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;::ap_range_ref(ap_int_base&lt;24, false&gt;*, int, int)" Caller="ap_int_base&lt;24, false&gt;::range(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1141:20" msg_body="Inlining function 'ap_int_base&lt;36, true&gt;::to_int() const' into 'ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;36, true&gt;::to_int() const" Caller="ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1143:18" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::range(int, int)' into 'ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::range(int, int)" Caller="ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1142:20" msg_body="Inlining function 'ap_int_base&lt;34, true&gt;::to_int() const' into 'ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;34, true&gt;::to_int() const" Caller="ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:404:20" msg_body="Inlining function 'ap_range_ref&lt;8, true&gt;::get() const' into 'ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;8, true&gt;::get() const" Caller="ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:413:31" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)' into 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)" Caller="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:428:22" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)' into 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)" Caller="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:428:12" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)' into 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)" Caller="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;2, false&gt;::operator++(int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;2, false&gt;::operator++(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5" msg_body="Inlining function 'ap_int_base&lt;2, false&gt;&amp; ap_int_base&lt;2, false&gt;::operator+=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)' into 'ap_int_base&lt;2, false&gt;::operator++(int)'">
+        <args Callee="ap_int_base&lt;2, false&gt;&amp; ap_int_base&lt;2, false&gt;::operator+=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)" Caller="ap_int_base&lt;2, false&gt;::operator++(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850" msg_body="Inlining function 'bool ap_int_base&lt;2, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)'">
+        <args Callee="bool ap_int_base&lt;2, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;21, false&gt;::operator++(int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;21, false&gt;::operator++(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;&amp; ap_int_base&lt;21, false&gt;::operator+=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)' into 'ap_int_base&lt;21, false&gt;::operator++(int)'">
+        <args Callee="ap_int_base&lt;21, false&gt;&amp; ap_int_base&lt;21, false&gt;::operator+=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)" Caller="ap_int_base&lt;21, false&gt;::operator++(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator==&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator==&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850" msg_body="Inlining function 'bool ap_int_base&lt;21, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'bool operator==&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)'">
+        <args Callee="bool ap_int_base&lt;21, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="bool operator==&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:49" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;21, false&gt;::operator unsigned long long() const" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:18:11" msg_body="Inlining function 'bool operator==&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="bool operator==&lt;21, false&gt;(ap_int_base&lt;21, false&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:14:7" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;21, false&gt;::operator unsigned long long() const" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:14:7" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator++(int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;21, false&gt;::operator++(int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:13:14" msg_body="Inlining function 'bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:11:3" msg_body="Inlining function 'ap_int_base&lt;2, false&gt;::operator++(int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;2, false&gt;::operator++(int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:42" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;8, true&gt;(ap_range_ref&lt;8, true&gt; const&amp;)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:3" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_range_ref&lt;24, false&gt; ap_int_base&lt;24, false&gt;::operator()&lt;36, true, 34, true&gt;(ap_int_base&lt;36, true&gt; const&amp;, ap_int_base&lt;34, true&gt; const&amp;)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:37" msg_body="Inlining function 'ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:25" msg_body="Inlining function 'ap_int_base&lt;35, true&gt;::RType&lt;($_0)32, true&gt;::minus operator-&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;35, true&gt;::RType&lt;($_0)32, true&gt;::minus operator-&lt;35, true&gt;(ap_int_base&lt;35, true&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:21" msg_body="Inlining function 'ap_int_base&lt;34, true&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;34, true&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;34, true&gt;(ap_int_base&lt;34, true&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:17" msg_body="Inlining function 'ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;2, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_write_mem.hpp:9:44" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::operator()(int, int)' into 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)'">
+        <args Callee="ap_int_base&lt;8, true&gt;::operator()(int, int)" Caller="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1130:18" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::range(int, int)' into 'ap_int_base&lt;24, false&gt;::operator()(int, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::range(int, int)" Caller="ap_int_base&lt;24, false&gt;::operator()(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:404:20" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;::get() const' into 'ap_int_base&lt;8, true&gt;::ap_int_base&lt;24, false&gt;(ap_range_ref&lt;24, false&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;::get() const" Caller="ap_int_base&lt;8, true&gt;::ap_int_base&lt;24, false&gt;(ap_range_ref&lt;24, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/../include/ap_int.h:102:91" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::ap_int_base&lt;24, false&gt;(ap_range_ref&lt;24, false&gt; const&amp;)' into 'ap_int&lt;8&gt;::ap_int&lt;24, false&gt;(ap_range_ref&lt;24, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;8, true&gt;::ap_int_base&lt;24, false&gt;(ap_range_ref&lt;24, false&gt; const&amp;)" Caller="ap_int&lt;8&gt;::ap_int&lt;24, false&gt;(ap_range_ref&lt;24, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:27:13" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:24:13" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:21:13" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:17:14" msg_body="Inlining function 'bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:15:15" msg_body="Inlining function 'ap_int_base&lt;21, false&gt;::operator unsigned long long() const' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="ap_int_base&lt;21, false&gt;::operator unsigned long long() const" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:14:16" msg_body="Inlining function 'bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="bool operator==&lt;2, false&gt;(ap_int_base&lt;2, false&gt; const&amp;, int)" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/ww_read_mem.hpp:14:7" msg_body="Inlining function 'ap_int_base&lt;2, false&gt;::operator++(int)' into 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)'">
+        <args Callee="ap_int_base&lt;2, false&gt;::operator++(int)" Caller="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339" msg_body="Inlining function 'ap_int_base&lt;9, true&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)' into 'ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)'">
         <args Callee="ap_int_base&lt;9, true&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)" Caller="ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)"/>
@@ -68,14 +227,17 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427" msg_body="Inlining function 'ap_int_base&lt;10, true&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)' into 'ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)'">
         <args Callee="ap_int_base&lt;10, true&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)" Caller="ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/word_width.cpp:29:22" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'word_width(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
-        <args Callee="ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)" Caller="word_width(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/word_width_manual.cpp:27:41" msg_body="Inlining function 'ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+        <args Callee="ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)" Caller="word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/word_width.cpp:29:33" msg_body="Inlining function 'ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'word_width(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
-        <args Callee="ap_int_base&lt;9, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;9, true, 8, true&gt;(ap_int_base&lt;9, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)" Caller="word_width(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/word_width_manual.cpp:27:26" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)' into 'word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+        <args Callee="ap_int_base&lt;8, true&gt;::RType&lt;8, true&gt;::plus operator+&lt;8, true, 8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;, ap_int_base&lt;8, true&gt; const&amp;)" Caller="word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/word_width.cpp:13:0" msg_body="Applying array_reshape to '_ZZ10word_widthP6ap_intILi8EES1_bE1x': Cyclic reshaping with factor 3 on dimension 1.">
-        <args Dim="1" Factor="3" Mode="Cyclic" UOName="_ZZ10word_widthP6ap_intILi8EES1_bE1x"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/word_width_manual.cpp:5:0" msg_body="Inlining function 'word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)' into 'word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+        <args Callee="word_width_mem&lt;8, 1228800&gt;::write(ap_uint&lt;21&gt;, ap_int&lt;8&gt;*)" Caller="word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/word_width_manual.cpp:5:0" msg_body="Inlining function 'word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)' into 'word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)'">
+        <args Callee="word_width_mem&lt;8, 1228800&gt;::read(ap_uint&lt;21&gt;, int)" Caller="word_width_manual(ap_int&lt;8&gt;*, ap_int&lt;8&gt;*, bool)"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

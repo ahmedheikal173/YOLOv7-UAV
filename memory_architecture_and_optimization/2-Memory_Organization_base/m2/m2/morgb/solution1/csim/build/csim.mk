@@ -6,8 +6,6 @@ CSIM_DESIGN = 1
 
 __SIM_FPO__ = 1
 
-__HLS_FPO_v6_1__ = 1
-
 __SIM_MATHHLS__ = 1
 
 __SIM_FFT__ = 1
@@ -18,7 +16,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../../tb/tb_interleave.cpp ../../../../../../src/interleave_manual_seq.cpp ../../../../../../src/interleave_manual_rnd.cpp ../../../../../../src/interleave.cpp
+HLS_SOURCES = ../../../../../../tb/tb_interleave.cpp ../../../../../../src/interleave.cpp ../../../../../../src/interleave_manual_rnd.cpp ../../../../../../src/interleave_manual_seq.cpp
 
 override TARGET := csim.exe
 
@@ -46,8 +44,6 @@ IFLAG += -I "${AUTOPILOT_TOOL}/auto_cc/include"
 IFLAG += -D__VITIS_HLS__
 
 IFLAG += -D__SIM_FPO__
-
-IFLAG += -D__HLS_FPO_v6_1__
 
 IFLAG += -D__SIM_FFT__
 
@@ -78,11 +74,11 @@ $(ObjDir)/tb_interleave.o: ../../../../../../tb/tb_interleave.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/tb_interleave.d
 
-$(ObjDir)/interleave_manual_seq.o: ../../../../../../src/interleave_manual_seq.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../../src/interleave_manual_seq.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/interleave.o: ../../../../../../src/interleave.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../../src/interleave.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/interleave_manual_seq.d
+-include $(ObjDir)/interleave.d
 
 $(ObjDir)/interleave_manual_rnd.o: ../../../../../../src/interleave_manual_rnd.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../../src/interleave_manual_rnd.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -90,8 +86,8 @@ $(ObjDir)/interleave_manual_rnd.o: ../../../../../../src/interleave_manual_rnd.c
 
 -include $(ObjDir)/interleave_manual_rnd.d
 
-$(ObjDir)/interleave.o: ../../../../../../src/interleave.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../../src/interleave.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/interleave_manual_seq.o: ../../../../../../src/interleave_manual_seq.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../../src/interleave_manual_seq.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/interleave.d
+-include $(ObjDir)/interleave_manual_seq.d

@@ -55143,7 +55143,7 @@ inline bool operator!=(
 
 
 
-
+void avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void clip_window(int r, ap_uint<8> window[3]);
 # 4 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/src/window_2d.cpp" 2
@@ -55178,9 +55178,6 @@ class singleport_ram {
 
 #pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=BRAM
     }
-
-
-
 
 
 
@@ -55287,25 +55284,3 @@ ROW:
         }
     }
 }
-#ifndef HLS_FASTSIM
-#ifdef __cplusplus
-extern "C"
-#endif
-void apatb_window_avg_ir(ap_uint<8> (*)[640], ap_uint<8> (*)[640]);
-#ifdef __cplusplus
-extern "C"
-#endif
-void window_avg_hw_stub(ap_uint<8> (*din)[640], ap_uint<8> (*dout)[640]){
-window_avg(din, dout);
-return ;
-}
-#ifdef __cplusplus
-extern "C"
-#endif
-void apatb_window_avg_sw(ap_uint<8> (*din)[640], ap_uint<8> (*dout)[640]){
-apatb_window_avg_ir(din, dout);
-return ;
-}
-#endif
-# 72 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/src/window_2d.cpp"
-

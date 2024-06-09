@@ -3,31 +3,27 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="m42" solutionName="solution1" date="2024-06-09T03:39:13.648+0200"/>
+        <logs message="ERROR: [COSIM 212-330] Aborting co-simulation: top function 'avg' is not invoked in the test bench." projectName="m42" solutionName="solution1" date="2024-06-09T03:39:13.578+0200"/>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="m42" solutionName="solution1" date="2024-06-09T02:55:07.643+0200"/>
+        <logs message="ERROR: [COSIM 212-330] Aborting co-simulation: top function 'avg' is not invoked in the test bench." projectName="m42" solutionName="solution1" date="2024-06-09T02:55:07.573+0200"/>
+      </simLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.709+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'buff0_read_data_V' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.439+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'buff0_write_data_V' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.429+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'buff0_cnt_V' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.409+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'buff1_read_data_V' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.399+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'buff1_write_data_V' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.389+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'buff1_cnt_V' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.379+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'sel' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.359+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_buff_ap_uint_8_int_ap_uint_8_sel' is power-on initialization." projectName="m42" solutionName="solution1" date="2024-06-05T23:39:31.359+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'avg/din_Din_B' to 0." projectName="m42" solutionName="solution1" date="2024-06-09T02:51:14.724+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'avg/din_WEN_B' to 0." projectName="m42" solutionName="solution1" date="2024-06-09T02:51:14.718+0200" type="Warning"/>
       </synLog>
       <simLog>
-        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m42" solutionName="solution1" date="2024-06-05T23:39:43.807+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m42" solutionName="solution1" date="2024-06-09T03:38:48.184+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m42" solutionName="solution1" date="2024-06-09T02:54:43.177+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m42" solutionName="solution1" date="2024-06-09T02:53:00.086+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m42" solutionName="solution1" date="2024-06-09T02:52:17.069+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="m42" solutionName="solution1" date="2024-06-09T02:51:39.183+0200" type="Warning"/>
       </simLog>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

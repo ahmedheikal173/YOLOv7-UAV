@@ -12,12 +12,17 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.395+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.375+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.325+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.085+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_Pipeline_LOAD/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:33.075+0200" type="Warning"/>
-        <logs message="WARNING: [SYNCHK 200-23] ../src/word_width.cpp:24: variable-indexed range selection may cause suboptimal QoR." projectName="m3" solutionName="solution1" date="2024-06-05T22:36:32.017+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:25.035+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:25.015+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'x_read3_V' is power-on initialization." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:25.005+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'x_sel_rd_V' is power-on initialization." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.985+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'x_idx_V' is power-on initialization." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.975+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'x_write3_V' is power-on initialization." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.955+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'x_sel_wr_V' is power-on initialization." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.935+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.875+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual_Pipeline_LOAD/x_in_Din_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.565+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'word_width_manual_Pipeline_LOAD/x_in_WEN_A' to 0." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:24.555+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:414: variable-indexed range selection may cause suboptimal QoR." projectName="m3" solutionName="solution1" date="2024-06-09T02:14:22.856+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

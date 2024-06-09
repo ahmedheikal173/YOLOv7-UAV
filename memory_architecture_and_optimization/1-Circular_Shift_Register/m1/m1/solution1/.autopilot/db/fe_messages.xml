@@ -17,8 +17,20 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="circular_shift_reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=circular_shift_reg" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:15:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="circular_shift_reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=dout" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:17:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="circular_shift_reg" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=BRAM port=dout" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=regs type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../src/shift_reg.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_reg" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;5, true&gt;::operator++(int)'">
         <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;5, true&gt;::operator++(int)"/>
@@ -98,11 +110,8 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/shift_reg.cpp:5:0" msg_body="Inlining function 'circular_shift&lt;ap_uint&lt;8&gt;, 9&gt;::operator[](ap_uint&lt;4&gt;)' into 'circular_shift_reg(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;*)'">
         <args Callee="circular_shift&lt;ap_uint&lt;8&gt;, 9&gt;::operator[](ap_uint&lt;4&gt;)" Caller="circular_shift_reg(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;*)"/>
     </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../src/shift_reg.cpp:5:0" msg_body="Aggregating maxi variable 'dout' with compact=none mode in 8-bits">
-        <args AggregateTypeName="compact=none" Bitwidth="8" HwTyName="maxi" Name="dout"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../src/shift_reg.cpp:16:10" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into 'circular_shift_reg(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;*)'">
-        <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s" Caller="circular_shift_reg(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;*)"/>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../src/shift_reg.cpp:5:0" msg_body="Aggregating bram variable 'dout' with compact=bit mode in 8-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="8" HwTyName="bram" Name="dout"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

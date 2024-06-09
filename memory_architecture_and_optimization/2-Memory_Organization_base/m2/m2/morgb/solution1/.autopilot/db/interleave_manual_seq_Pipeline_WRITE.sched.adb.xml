@@ -40,7 +40,7 @@ newFuncRoot:0 %i_V_1 = alloca i32 1
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 30, i64 18446744073709551615
+newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x2_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -55,7 +55,7 @@ newFuncRoot:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 30, i64 18446744073709551615
+newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x1_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 30, i64 18446744073709551615
+newFuncRoot:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %x_x0_V, i64 666, i64 18, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -229,7 +229,7 @@ newFuncRoot:6 %br_ln0 = br void %.preheader
 </operation>
 
 <operation id="19" st_id="1" stage="2" lat="2">
-<core>RAM_T2P_BRAM</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln25" val="0"/>
@@ -261,7 +261,7 @@ newFuncRoot:6 %br_ln0 = br void %.preheader
 </operation>
 
 <operation id="21" st_id="1" stage="2" lat="2">
-<core>RAM_T2P_BRAM</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln25" val="0"/>
@@ -293,7 +293,7 @@ newFuncRoot:6 %br_ln0 = br void %.preheader
 </operation>
 
 <operation id="23" st_id="1" stage="2" lat="2">
-<core>RAM_T2P_BRAM</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln25" val="0"/>
@@ -374,7 +374,7 @@ newFuncRoot:6 %br_ln0 = br void %.preheader
 </operation>
 
 <operation id="27" st_id="2" stage="1" lat="2">
-<core>RAM_T2P_BRAM</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -389,7 +389,7 @@ newFuncRoot:6 %br_ln0 = br void %.preheader
 </operation>
 
 <operation id="28" st_id="2" stage="1" lat="2">
-<core>RAM_T2P_BRAM</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -404,7 +404,7 @@ newFuncRoot:6 %br_ln0 = br void %.preheader
 </operation>
 
 <operation id="29" st_id="2" stage="1" lat="2">
-<core>RAM_T2P_BRAM</core>
+<core>RAM_1P_BRAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>

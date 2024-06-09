@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 5
+set ID 3
 set hasByteEnable 0
 set MemName circular_shift_reg_regs_mem_V_RAM_T2P_BRAM_1R1W
 set CoreName ap_simcore_mem
@@ -99,14 +99,6 @@ din {
 	offset 16
 	offset_end 23
 }
-dout { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 24
-	offset_end 35
-}
 ap_start {
 	mailbox_input_ctrl 0
 	mailbox_output_ctrl 0
@@ -138,7 +130,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 6 \
+			id 4 \
 			corename circular_shift_reg_control_axilite \
 			name circular_shift_reg_control_s_axi \
 			ports {$port_control} \
@@ -154,27 +146,6 @@ if {${::AESL::PGuard_simmodel_gen}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler circular_shift_reg_control_s_axi BINDTYPE interface TYPE interface_s_axilite
-}
-
-# Native M_AXI:
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
-eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 7 \
-    corename {m_axi} \
-    op interface \
-    delay_budget 7.3 \ 
-    is_flushable 0 \ 
-    mem_style block \ 
-    name {circular_shift_reg_gmem_m_axi} \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find AXI interface model in the library. Ignored generation of AXI interface for 'gmem'"
-}
-}
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler circular_shift_reg_gmem_m_axi BINDTYPE interface TYPE interface_m_axi
 }
 
 

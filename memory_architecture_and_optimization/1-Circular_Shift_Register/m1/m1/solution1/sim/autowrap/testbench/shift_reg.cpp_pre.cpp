@@ -55133,6 +55133,7 @@ inline bool operator!=(
 typedef ap_uint<8> dType;
 
 void circular_shift_reg(dType din, dType dout[9]);
+void shift_reg(dType din, dType dout[9]);
 # 2 "D:/gam3a/zzzzzzzzzz/1-Circular_Shift_Register/src/shift_reg.cpp" 2
 # 1 "D:/gam3a/zzzzzzzzzz/1-Circular_Shift_Register/src/circular_shift.h" 1
 
@@ -55192,6 +55193,8 @@ class circular_shift {
 
 void circular_shift_reg(dType din, dType dout[9]) {
 
+#pragma HLS interface mode=BRAM port=dout
+
   static circular_shift<dType, 9> regs;
 
 SHIFT:
@@ -55202,5 +55205,28 @@ WRITE:
 
 #pragma HLS pipeline
  dout[i] = regs[i];
+  }
+}
+
+void shift_reg(dType din, dType dout[9]) {
+
+#pragma HLS interface mode=BRAM port=dout
+
+  static dType regs[9];
+#pragma HLS BIND_STORAGE variable=regs type=RAM_1P impl=BRAM
+
+
+SHIFT:
+  for (int i = 9 - 1; i >= 0; i--) {
+#pragma HLS UNROLL
+    if (i == 0)
+      regs[i] = din;
+    else
+      regs[i] = regs[i - 1];
+  }
+
+WRITE:
+  for (int i = 0; i < 9; i++) {
+    dout[i] = regs[i];
   }
 }

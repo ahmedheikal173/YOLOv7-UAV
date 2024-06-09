@@ -8,10 +8,10 @@
   "FunctionProtocol": "ap_ctrl_chain",
   "ResetStyle": "control",
   "Target": {
-    "Family": "virtexuplus",
-    "Device": "xcvu11p",
-    "Package": "-flga2577",
-    "Speed": "-1-e",
+    "Family": "zynquplus",
+    "Device": "xczu7ev",
+    "Package": "-ffvc1156",
+    "Speed": "-2-e",
     "Triple": "fpga64-xilinx-none"
   },
   "Args": {
@@ -58,10 +58,16 @@
   "HlsSolution": {
     "FlowTarget": "vitis",
     "ConfigTcl": [
-      "config_interface -m_axi_latency=64",
-      "config_interface -m_axi_alignment_byte_size=64",
-      "config_interface -m_axi_max_widen_bitwidth=512",
+      "config_export -format=ip_catalog",
+      "config_export -ip_xdc_file=D:\/gam3a\/zzzzzzzzzz\/2-Memory_Organization_base\/m2\/m2\/morgb\/solution1\/impl\/ip\/constraints\/interleave.xdc",
+      "config_export -ip_xdc_ooc_file=D:\/gam3a\/zzzzzzzzzz\/2-Memory_Organization_base\/m2\/m2\/morgb\/solution1\/impl\/ip\/constraints\/interleave_ooc.xdc",
+      "config_export -output=D:\/gam3a\/zzzzzzzzzz\/2-Memory_Organization_base\/m2\/m2\/morgb",
+      "config_export -rtl=verilog",
+      "config_export -vivado_clock=10",
       "config_interface -default_interface=kernel",
+      "config_interface -m_axi_alignment_byte_size=64",
+      "config_interface -m_axi_latency=64",
+      "config_interface -m_axi_max_widen_bitwidth=512",
       "config_rtl -register_reset_num=3"
     ],
     "DirectiveTcl": [
@@ -101,18 +107,53 @@
       "..\/..\/..\/..\/src\/interleave.cpp"
     ],
     "Vhdl": [
+      "impl\/vhdl\/interleave.vhd",
+      "impl\/vhdl\/interleave_control_s_axi.vhd",
+      "impl\/vhdl\/interleave_flow_control_loop_pipe_sequential_init.vhd",
+      "impl\/vhdl\/interleave_interleave_ap_int_8_ap_int_8_bool_x_RAM_1P_BRAM_1R1W.vhd",
+      "impl\/vhdl\/interleave_interleave_ap_int_8_ap_int_8_bool_x_RAM_T2P_BRAM_1R1W.vhd",
+      "impl\/vhdl\/interleave_interleave_Pipeline_LOAD.vhd",
+      "impl\/vhdl\/interleave_interleave_Pipeline_WRITE.vhd",
+      "impl\/vhdl\/interleave_manual_rnd.vhd",
+      "impl\/vhdl\/interleave_manual_rnd_control_s_axi.vhd",
+      "impl\/vhdl\/interleave_manual_rnd_flow_control_loop_pipe_sequential_init.vhd",
+      "impl\/vhdl\/interleave_manual_rnd_interleave_manual_rnd_Pipeline_LOAD.vhd",
+      "impl\/vhdl\/interleave_manual_rnd_interleave_manual_rnd_Pipeline_WRITE.vhd",
+      "impl\/vhdl\/interleave_manual_rnd_x_x0_V_RAM_1P_BRAM_1R1W.vhd",
+      "impl\/vhdl\/interleave_manual_rnd_x_x0_V_RAM_T2P_BRAM_1R1W.vhd",
       "impl\/vhdl\/interleave_manual_seq_control_s_axi.vhd",
       "impl\/vhdl\/interleave_manual_seq_flow_control_loop_pipe_sequential_init.vhd",
       "impl\/vhdl\/interleave_manual_seq_interleave_manual_seq_Pipeline_LOAD.vhd",
       "impl\/vhdl\/interleave_manual_seq_interleave_manual_seq_Pipeline_WRITE.vhd",
+      "impl\/vhdl\/interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W.vhd",
       "impl\/vhdl\/interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W.vhd",
       "impl\/vhdl\/interleave_manual_seq.vhd"
     ],
     "Verilog": [
+      "impl\/verilog\/interleave.v",
+      "impl\/verilog\/interleave_control_s_axi.v",
+      "impl\/verilog\/interleave_flow_control_loop_pipe_sequential_init.v",
+      "impl\/verilog\/interleave_interleave_ap_int_8_ap_int_8_bool_x_RAM_1P_BRAM_1R1W.dat",
+      "impl\/verilog\/interleave_interleave_ap_int_8_ap_int_8_bool_x_RAM_1P_BRAM_1R1W.v",
+      "impl\/verilog\/interleave_interleave_ap_int_8_ap_int_8_bool_x_RAM_T2P_BRAM_1R1W.dat",
+      "impl\/verilog\/interleave_interleave_ap_int_8_ap_int_8_bool_x_RAM_T2P_BRAM_1R1W.v",
+      "impl\/verilog\/interleave_interleave_Pipeline_LOAD.v",
+      "impl\/verilog\/interleave_interleave_Pipeline_WRITE.v",
+      "impl\/verilog\/interleave_manual_rnd.v",
+      "impl\/verilog\/interleave_manual_rnd_control_s_axi.v",
+      "impl\/verilog\/interleave_manual_rnd_flow_control_loop_pipe_sequential_init.v",
+      "impl\/verilog\/interleave_manual_rnd_interleave_manual_rnd_Pipeline_LOAD.v",
+      "impl\/verilog\/interleave_manual_rnd_interleave_manual_rnd_Pipeline_WRITE.v",
+      "impl\/verilog\/interleave_manual_rnd_x_x0_V_RAM_1P_BRAM_1R1W.dat",
+      "impl\/verilog\/interleave_manual_rnd_x_x0_V_RAM_1P_BRAM_1R1W.v",
+      "impl\/verilog\/interleave_manual_rnd_x_x0_V_RAM_T2P_BRAM_1R1W.dat",
+      "impl\/verilog\/interleave_manual_rnd_x_x0_V_RAM_T2P_BRAM_1R1W.v",
       "impl\/verilog\/interleave_manual_seq_control_s_axi.v",
       "impl\/verilog\/interleave_manual_seq_flow_control_loop_pipe_sequential_init.v",
       "impl\/verilog\/interleave_manual_seq_interleave_manual_seq_Pipeline_LOAD.v",
       "impl\/verilog\/interleave_manual_seq_interleave_manual_seq_Pipeline_WRITE.v",
+      "impl\/verilog\/interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W.dat",
+      "impl\/verilog\/interleave_manual_seq_x_x0_V_RAM_1P_BRAM_1R1W.v",
       "impl\/verilog\/interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W.dat",
       "impl\/verilog\/interleave_manual_seq_x_x0_V_RAM_T2P_BRAM_1R1W.v",
       "impl\/verilog\/interleave_manual_seq.v"
@@ -128,12 +169,18 @@
       "impl\/misc\/drivers\/interleave_manual_seq_v1_0\/src\/xinterleave_manual_seq_sinit.c"
     ],
     "IpMisc": ["impl\/misc\/logo.png"],
+    "XdcIpOoc": ["impl\/ip\/constraints\/interleave_ooc.xdc"],
+    "XdcIp": ["impl\/ip\/constraints\/interleave.xdc"],
     "CsynthXml": "syn\/report\/csynth.xml",
     "DebugDir": ".debug",
     "KernelXml": "..\/kernel.xml",
     "Xo": "",
     "XoHlsDir": "",
-    "ProtoInst": [".debug\/interleave_manual_seq.protoinst"]
+    "ProtoInst": [
+      ".debug\/interleave.protoinst",
+      ".debug\/interleave_manual_rnd.protoinst",
+      ".debug\/interleave_manual_seq.protoinst"
+    ]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -687,7 +734,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "3.621"
+          "Estimate": "3.525"
         },
         "Loops": [{
             "Name": "WRITE",
@@ -698,19 +745,19 @@
           }],
         "Area": {
           "FF": "41",
-          "AVAIL_FF": "2592000",
+          "AVAIL_FF": "460800",
           "UTIL_FF": "~0",
           "LUT": "116",
-          "AVAIL_LUT": "1296000",
+          "AVAIL_LUT": "230400",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
-          "AVAIL_BRAM": "4032",
+          "AVAIL_BRAM": "624",
           "UTIL_BRAM": "0",
           "DSP": "0",
-          "AVAIL_DSP": "9216",
+          "AVAIL_DSP": "1728",
           "UTIL_DSP": "0",
           "URAM": "0",
-          "AVAIL_URAM": "960",
+          "AVAIL_URAM": "96",
           "UTIL_URAM": "0"
         }
       },
@@ -726,7 +773,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "2.594"
+          "Estimate": "2.474"
         },
         "Loops": [{
             "Name": "LOAD",
@@ -737,19 +784,19 @@
           }],
         "Area": {
           "FF": "94",
-          "AVAIL_FF": "2592000",
+          "AVAIL_FF": "460800",
           "UTIL_FF": "~0",
-          "LUT": "246",
-          "AVAIL_LUT": "1296000",
+          "LUT": "244",
+          "AVAIL_LUT": "230400",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
-          "AVAIL_BRAM": "4032",
+          "AVAIL_BRAM": "624",
           "UTIL_BRAM": "0",
           "DSP": "0",
-          "AVAIL_DSP": "9216",
+          "AVAIL_DSP": "1728",
           "UTIL_DSP": "0",
           "URAM": "0",
-          "AVAIL_URAM": "960",
+          "AVAIL_URAM": "96",
           "UTIL_URAM": "0"
         }
       },
@@ -767,23 +814,23 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "3.621"
+          "Estimate": "3.525"
         },
         "Area": {
           "BRAM_18K": "600",
-          "AVAIL_BRAM": "4032",
-          "UTIL_BRAM": "14",
+          "AVAIL_BRAM": "624",
+          "UTIL_BRAM": "96",
           "FF": "219",
-          "AVAIL_FF": "2592000",
+          "AVAIL_FF": "460800",
           "UTIL_FF": "~0",
-          "LUT": "554",
-          "AVAIL_LUT": "1296000",
+          "LUT": "552",
+          "AVAIL_LUT": "230400",
           "UTIL_LUT": "~0",
           "URAM": "0",
-          "AVAIL_URAM": "960",
+          "AVAIL_URAM": "96",
           "UTIL_URAM": "0",
           "DSP": "0",
-          "AVAIL_DSP": "9216",
+          "AVAIL_DSP": "1728",
           "UTIL_DSP": "0"
         }
       }
@@ -792,7 +839,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-06-07 15:04:33 +0300",
+    "Time": "2024-06-09 03:22:27 +0300",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

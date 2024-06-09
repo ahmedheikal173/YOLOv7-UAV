@@ -7,13 +7,13 @@
     </downStreamTool>
     <synthesis askAgain="true"/>
     <config>
-        <config_interface m_axi_latency="64" m_axi_alignment_byte_size="64" m_axi_max_widen_bitwidth="512" default_interface="kernel"/>
+        <config_export format="ip_catalog" ip_xdc_file="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip/constraints/interleave.xdc" ip_xdc_ooc_file="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb/solution1/impl/ip/constraints/interleave_ooc.xdc" output="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb" rtl="verilog" vivado_clock="10"/>
+        <config_interface default_interface="kernel" m_axi_alignment_byte_size="64" m_axi_latency="64" m_axi_max_widen_bitwidth="512"/>
         <config_rtl register_reset_num="3"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
-            <Platform>xilinx/Versal AI Core Series/Versal AI Core Series</Platform>
-            <Platform>xilinx/Versal AI Core Series/Versal AI Core Series_fpv7</Platform>
+        <UIAutosynConf boardInfo="Zynq UltraScale+ ZCU104 Evaluation Board (xczu7ev-ffvc1156-2-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
+            <Platform>xilinx/zynquplus/zynquplus</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -42,15 +42,16 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" rtl="verilog" rtlButton="false" rtlCombo="verilog">
+    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="impl" formatName="ip_catalog" output="D:/gam3a/zzzzzzzzzz/2-Memory_Organization_base/m2/m2/morgb" rtl="verilog" rtlButton="true" rtlCombo="verilog">
         <Format formatName="ip_catalog"/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
+        <Format formatName="xo"/>
     </ExportDesign>
-    <Simulation argv="">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="true" random_stall="false" reduce_diskspace="false" setup="true" toolName="auto" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
+    <Simulation>
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="true" random_stall="false" reduce_diskspace="false" setup="true" toolName="Auto" waveDebug="false">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
@@ -64,13 +65,13 @@
     </project>
     <flowTarget value="vitis"/>
     <targetInfo>
-        <TargetInfo value="xcvu11p:-flga2577:-1-e"/>
+        <TargetInfo value="xczu7ev:-ffvc1156:-2-e"/>
     </targetInfo>
     <libraryList>
-        <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
+        <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="10"/>
+        <clock name="default" default="false" period="10"/>
     </clockList>
 </solution>
 

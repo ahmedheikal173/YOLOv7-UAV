@@ -55145,6 +55145,7 @@ inline bool operator!=(
 typedef ap_uint<8> dType;
 
 void circular_shift_reg(dType din, dType dout[9]);
+void shift_reg(dType din, dType dout[9]);
 # 3 "D:/gam3a/zzzzzzzzzz/1-Circular_Shift_Register/tb/tb_shift_reg.cpp" 2
 
 #ifndef HLS_FASTSIM

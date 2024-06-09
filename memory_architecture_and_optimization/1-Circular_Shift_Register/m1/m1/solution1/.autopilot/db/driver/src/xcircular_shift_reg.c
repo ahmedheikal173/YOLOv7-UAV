@@ -100,25 +100,6 @@ u32 XCircular_shift_reg_Get_din(XCircular_shift_reg *InstancePtr) {
     return Data;
 }
 
-void XCircular_shift_reg_Set_dout(XCircular_shift_reg *InstancePtr, u64 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XCircular_shift_reg_WriteReg(InstancePtr->Control_BaseAddress, XCIRCULAR_SHIFT_REG_CONTROL_ADDR_DOUT_DATA, (u32)(Data));
-    XCircular_shift_reg_WriteReg(InstancePtr->Control_BaseAddress, XCIRCULAR_SHIFT_REG_CONTROL_ADDR_DOUT_DATA + 4, (u32)(Data >> 32));
-}
-
-u64 XCircular_shift_reg_Get_dout(XCircular_shift_reg *InstancePtr) {
-    u64 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XCircular_shift_reg_ReadReg(InstancePtr->Control_BaseAddress, XCIRCULAR_SHIFT_REG_CONTROL_ADDR_DOUT_DATA);
-    Data += (u64)XCircular_shift_reg_ReadReg(InstancePtr->Control_BaseAddress, XCIRCULAR_SHIFT_REG_CONTROL_ADDR_DOUT_DATA + 4) << 32;
-    return Data;
-}
-
 void XCircular_shift_reg_InterruptGlobalEnable(XCircular_shift_reg *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

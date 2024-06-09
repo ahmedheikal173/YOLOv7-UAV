@@ -14,24 +14,23 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
-`define AESL_DEPTH_gmem 1
 `define AESL_DEPTH_din 1
-`define AESL_DEPTH_dout 1
+`define AESL_BRAM_dout AESL_autobram_dout
+`define AESL_BRAM_INST_dout bram_inst_dout
 `define AESL_DEPTH_ap_local_deadlock 1
 `define AUTOTB_TVIN_din  "../tv/cdatafile/c.circular_shift_reg.autotvin_din.dat"
 `define AUTOTB_TVIN_dout  "../tv/cdatafile/c.circular_shift_reg.autotvin_dout.dat"
 `define AUTOTB_TVIN_din_out_wrapc  "../tv/rtldatafile/rtl.circular_shift_reg.autotvin_din.dat"
 `define AUTOTB_TVIN_dout_out_wrapc  "../tv/rtldatafile/rtl.circular_shift_reg.autotvin_dout.dat"
-`define AUTOTB_TVOUT_gmem  "../tv/cdatafile/c.circular_shift_reg.autotvout_gmem.dat"
-`define AUTOTB_TVOUT_gmem_out_wrapc  "../tv/rtldatafile/rtl.circular_shift_reg.autotvout_gmem.dat"
+`define AUTOTB_TVOUT_dout  "../tv/cdatafile/c.circular_shift_reg.autotvout_dout.dat"
+`define AUTOTB_TVOUT_dout_out_wrapc  "../tv/rtldatafile/rtl.circular_shift_reg.autotvout_dout.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 100;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 83;
-parameter LENGTH_gmem = 9;
+parameter LATENCY_ESTIMATION = 13;
 parameter LENGTH_din = 1;
-parameter LENGTH_dout = 1;
+parameter LENGTH_dout = 9;
 
 task read_token;
     input integer fp;
@@ -62,14 +61,14 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire [5 : 0] control_AWADDR;
+wire [4 : 0] control_AWADDR;
 wire  control_AWVALID;
 wire  control_AWREADY;
 wire  control_WVALID;
 wire  control_WREADY;
 wire [31 : 0] control_WDATA;
 wire [3 : 0] control_WSTRB;
-wire [5 : 0] control_ARADDR;
+wire [4 : 0] control_ARADDR;
 wire  control_ARVALID;
 wire  control_ARREADY;
 wire  control_RVALID;
@@ -81,51 +80,13 @@ wire  control_BREADY;
 wire [1 : 0] control_BRESP;
 wire  control_INTERRUPT;
 wire  ap_local_block;
-wire  gmem_AWVALID;
-wire  gmem_AWREADY;
-wire [63 : 0] gmem_AWADDR;
-wire [0 : 0] gmem_AWID;
-wire [7 : 0] gmem_AWLEN;
-wire [2 : 0] gmem_AWSIZE;
-wire [1 : 0] gmem_AWBURST;
-wire [1 : 0] gmem_AWLOCK;
-wire [3 : 0] gmem_AWCACHE;
-wire [2 : 0] gmem_AWPROT;
-wire [3 : 0] gmem_AWQOS;
-wire [3 : 0] gmem_AWREGION;
-wire [0 : 0] gmem_AWUSER;
-wire  gmem_WVALID;
-wire  gmem_WREADY;
-wire [31 : 0] gmem_WDATA;
-wire [3 : 0] gmem_WSTRB;
-wire  gmem_WLAST;
-wire [0 : 0] gmem_WID;
-wire [0 : 0] gmem_WUSER;
-wire  gmem_ARVALID;
-wire  gmem_ARREADY;
-wire [63 : 0] gmem_ARADDR;
-wire [0 : 0] gmem_ARID;
-wire [7 : 0] gmem_ARLEN;
-wire [2 : 0] gmem_ARSIZE;
-wire [1 : 0] gmem_ARBURST;
-wire [1 : 0] gmem_ARLOCK;
-wire [3 : 0] gmem_ARCACHE;
-wire [2 : 0] gmem_ARPROT;
-wire [3 : 0] gmem_ARQOS;
-wire [3 : 0] gmem_ARREGION;
-wire [0 : 0] gmem_ARUSER;
-wire  gmem_RVALID;
-wire  gmem_RREADY;
-wire [31 : 0] gmem_RDATA;
-wire  gmem_RLAST;
-wire [0 : 0] gmem_RID;
-wire [0 : 0] gmem_RUSER;
-wire [1 : 0] gmem_RRESP;
-wire  gmem_BVALID;
-wire  gmem_BREADY;
-wire [1 : 0] gmem_BRESP;
-wire [0 : 0] gmem_BID;
-wire [0 : 0] gmem_BUSER;
+wire [31 : 0] dout_ADDR_A;
+wire  dout_EN_A;
+wire [0 : 0] dout_WEN_A;
+wire [7 : 0] dout_DIN_A;
+wire [7 : 0] dout_DOUT_A;
+wire  dout_CLK_A;
+wire  dout_RST_A;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -176,51 +137,13 @@ wire ap_rst_n_n;
     .ap_local_block(ap_local_block),
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
-    .m_axi_gmem_AWVALID(gmem_AWVALID),
-    .m_axi_gmem_AWREADY(gmem_AWREADY),
-    .m_axi_gmem_AWADDR(gmem_AWADDR),
-    .m_axi_gmem_AWID(gmem_AWID),
-    .m_axi_gmem_AWLEN(gmem_AWLEN),
-    .m_axi_gmem_AWSIZE(gmem_AWSIZE),
-    .m_axi_gmem_AWBURST(gmem_AWBURST),
-    .m_axi_gmem_AWLOCK(gmem_AWLOCK),
-    .m_axi_gmem_AWCACHE(gmem_AWCACHE),
-    .m_axi_gmem_AWPROT(gmem_AWPROT),
-    .m_axi_gmem_AWQOS(gmem_AWQOS),
-    .m_axi_gmem_AWREGION(gmem_AWREGION),
-    .m_axi_gmem_AWUSER(gmem_AWUSER),
-    .m_axi_gmem_WVALID(gmem_WVALID),
-    .m_axi_gmem_WREADY(gmem_WREADY),
-    .m_axi_gmem_WDATA(gmem_WDATA),
-    .m_axi_gmem_WSTRB(gmem_WSTRB),
-    .m_axi_gmem_WLAST(gmem_WLAST),
-    .m_axi_gmem_WID(gmem_WID),
-    .m_axi_gmem_WUSER(gmem_WUSER),
-    .m_axi_gmem_ARVALID(gmem_ARVALID),
-    .m_axi_gmem_ARREADY(gmem_ARREADY),
-    .m_axi_gmem_ARADDR(gmem_ARADDR),
-    .m_axi_gmem_ARID(gmem_ARID),
-    .m_axi_gmem_ARLEN(gmem_ARLEN),
-    .m_axi_gmem_ARSIZE(gmem_ARSIZE),
-    .m_axi_gmem_ARBURST(gmem_ARBURST),
-    .m_axi_gmem_ARLOCK(gmem_ARLOCK),
-    .m_axi_gmem_ARCACHE(gmem_ARCACHE),
-    .m_axi_gmem_ARPROT(gmem_ARPROT),
-    .m_axi_gmem_ARQOS(gmem_ARQOS),
-    .m_axi_gmem_ARREGION(gmem_ARREGION),
-    .m_axi_gmem_ARUSER(gmem_ARUSER),
-    .m_axi_gmem_RVALID(gmem_RVALID),
-    .m_axi_gmem_RREADY(gmem_RREADY),
-    .m_axi_gmem_RDATA(gmem_RDATA),
-    .m_axi_gmem_RLAST(gmem_RLAST),
-    .m_axi_gmem_RID(gmem_RID),
-    .m_axi_gmem_RUSER(gmem_RUSER),
-    .m_axi_gmem_RRESP(gmem_RRESP),
-    .m_axi_gmem_BVALID(gmem_BVALID),
-    .m_axi_gmem_BREADY(gmem_BREADY),
-    .m_axi_gmem_BRESP(gmem_BRESP),
-    .m_axi_gmem_BID(gmem_BID),
-    .m_axi_gmem_BUSER(gmem_BUSER));
+    .dout_Addr_A(dout_ADDR_A),
+    .dout_EN_A(dout_EN_A),
+    .dout_WEN_A(dout_WEN_A),
+    .dout_Din_A(dout_DIN_A),
+    .dout_Dout_A(dout_DOUT_A),
+    .dout_Clk_A(dout_CLK_A),
+    .dout_Rst_A(dout_RST_A));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -285,64 +208,50 @@ begin
     end
 end
 
+//------------------------bramdout Instantiation--------------
 
+// The input and output of bramdout
+wire  bramdout_Clk_A, bramdout_Clk_B;
+wire  bramdout_EN_A, bramdout_EN_B;
+wire  [1 - 1 : 0] bramdout_WEN_A, bramdout_WEN_B;
+wire    [31 : 0]    bramdout_Addr_A, bramdout_Addr_B;
+wire    [7 : 0]    bramdout_Din_A, bramdout_Din_B;
+wire    [7 : 0]    bramdout_Dout_A, bramdout_Dout_B;
+wire    bramdout_ready;
+wire    bramdout_done;
 
-
-wire    AESL_axi_master_gmem_ready;
-wire    AESL_axi_master_gmem_done;
-AESL_axi_master_gmem AESL_AXI_MASTER_gmem(
-    .clk   (AESL_clock),
-    .reset (AESL_reset),
-    .TRAN_gmem_AWVALID (gmem_AWVALID),
-    .TRAN_gmem_AWREADY (gmem_AWREADY),
-    .TRAN_gmem_AWADDR (gmem_AWADDR),
-    .TRAN_gmem_AWID (gmem_AWID),
-    .TRAN_gmem_AWLEN (gmem_AWLEN),
-    .TRAN_gmem_AWSIZE (gmem_AWSIZE),
-    .TRAN_gmem_AWBURST (gmem_AWBURST),
-    .TRAN_gmem_AWLOCK (gmem_AWLOCK),
-    .TRAN_gmem_AWCACHE (gmem_AWCACHE),
-    .TRAN_gmem_AWPROT (gmem_AWPROT),
-    .TRAN_gmem_AWQOS (gmem_AWQOS),
-    .TRAN_gmem_AWREGION (gmem_AWREGION),
-    .TRAN_gmem_AWUSER (gmem_AWUSER),
-    .TRAN_gmem_WVALID (gmem_WVALID),
-    .TRAN_gmem_WREADY (gmem_WREADY),
-    .TRAN_gmem_WDATA (gmem_WDATA),
-    .TRAN_gmem_WSTRB (gmem_WSTRB),
-    .TRAN_gmem_WLAST (gmem_WLAST),
-    .TRAN_gmem_WID (gmem_WID),
-    .TRAN_gmem_WUSER (gmem_WUSER),
-    .TRAN_gmem_ARVALID (gmem_ARVALID),
-    .TRAN_gmem_ARREADY (gmem_ARREADY),
-    .TRAN_gmem_ARADDR (gmem_ARADDR),
-    .TRAN_gmem_ARID (gmem_ARID),
-    .TRAN_gmem_ARLEN (gmem_ARLEN),
-    .TRAN_gmem_ARSIZE (gmem_ARSIZE),
-    .TRAN_gmem_ARBURST (gmem_ARBURST),
-    .TRAN_gmem_ARLOCK (gmem_ARLOCK),
-    .TRAN_gmem_ARCACHE (gmem_ARCACHE),
-    .TRAN_gmem_ARPROT (gmem_ARPROT),
-    .TRAN_gmem_ARQOS (gmem_ARQOS),
-    .TRAN_gmem_ARREGION (gmem_ARREGION),
-    .TRAN_gmem_ARUSER (gmem_ARUSER),
-    .TRAN_gmem_RVALID (gmem_RVALID),
-    .TRAN_gmem_RREADY (gmem_RREADY),
-    .TRAN_gmem_RDATA (gmem_RDATA),
-    .TRAN_gmem_RLAST (gmem_RLAST),
-    .TRAN_gmem_RID (gmem_RID),
-    .TRAN_gmem_RUSER (gmem_RUSER),
-    .TRAN_gmem_RRESP (gmem_RRESP),
-    .TRAN_gmem_BVALID (gmem_BVALID),
-    .TRAN_gmem_BREADY (gmem_BREADY),
-    .TRAN_gmem_BRESP (gmem_BRESP),
-    .TRAN_gmem_BID (gmem_BID),
-    .TRAN_gmem_BUSER (gmem_BUSER),
-    .ready (AESL_axi_master_gmem_ready),
-    .done  (AESL_axi_master_gmem_done)
+`AESL_BRAM_dout `AESL_BRAM_INST_dout(
+    .Clk_A    (bramdout_Clk_A),
+    .Rst_A    (bramdout_Rst_A),
+    .EN_A     (bramdout_EN_A),
+    .WEN_A    (bramdout_WEN_A),
+    .Addr_A   (bramdout_Addr_A),
+    .Din_A    (bramdout_Din_A),
+    .Dout_A   (bramdout_Dout_A),
+    .Clk_B    (bramdout_Clk_B),
+    .Rst_B    (bramdout_Rst_B),
+    .EN_B     (bramdout_EN_B),
+    .WEN_B    (bramdout_WEN_B),
+    .Addr_B   (bramdout_Addr_B),
+    .Din_B    (bramdout_Din_B),
+    .Dout_B   (bramdout_Dout_B),
+    .ready    (bramdout_ready),
+    .done        (bramdout_done)
 );
-assign    AESL_axi_master_gmem_ready    =   ready;
-assign    AESL_axi_master_gmem_done    =   AESL_done_delay;
+
+// Assignment between dut and bramdout
+assign bramdout_Clk_A = dout_CLK_A;
+assign bramdout_Rst_A = dout_RST_A;
+assign bramdout_Addr_A = dout_ADDR_A;
+assign bramdout_EN_A = dout_EN_A;
+assign bramdout_WEN_A = dout_WEN_A;
+assign bramdout_Din_A = dout_DIN_A;
+assign bramdout_WEN_B = 0;
+assign bramdout_Din_B = 0;
+assign bramdout_ready= ready_initial | bramdout_done;
+assign bramdout_done =    AESL_done_delay;
+
+
 
 AESL_axi_slave_control AESL_AXI_SLAVE_control(
     .clk   (AESL_clock),
@@ -441,9 +350,6 @@ reg [31:0] size_din_backup;
 reg end_dout;
 reg [31:0] size_dout;
 reg [31:0] size_dout_backup;
-reg end_gmem;
-reg [31:0] size_gmem;
-reg [31:0] size_gmem_backup;
 reg end_ap_local_deadlock;
 reg [31:0] size_ap_local_deadlock;
 reg [31:0] size_ap_local_deadlock_backup;
@@ -592,30 +498,30 @@ task write_binary;
     end
 endtask;
 
-reg dump_tvout_finish_gmem;
+reg dump_tvout_finish_dout;
 
-initial begin : dump_tvout_runtime_sign_gmem
+initial begin : dump_tvout_runtime_sign_dout
     integer fp;
-    dump_tvout_finish_gmem = 0;
-    fp = $fopen(`AUTOTB_TVOUT_gmem_out_wrapc, "wb");
+    dump_tvout_finish_dout = 0;
+    fp = $fopen(`AUTOTB_TVOUT_dout_out_wrapc, "wb");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_gmem_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_dout_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     $fclose(fp);
     wait (done_cnt == AUTOTB_TRANSACTION_NUM);
     repeat(5) @ (posedge AESL_clock);
-    fp = $fopen(`AUTOTB_TVOUT_gmem_out_wrapc, "ab");
+    fp = $fopen(`AUTOTB_TVOUT_dout_out_wrapc, "ab");
     if (fp == 0) begin
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_gmem_out_wrapc);
+        $display("Failed to open file \"%s\"!", `AUTOTB_TVOUT_dout_out_wrapc);
         $display("ERROR: Simulation using HLS TB failed.");
         $finish;
     end
     write_binary(fp,64'h5a5aa5a50f0ff0f0,64);
     $fclose(fp);
     repeat(5) @ (posedge AESL_clock);
-    dump_tvout_finish_gmem = 1;
+    dump_tvout_finish_dout = 1;
 end
 
 

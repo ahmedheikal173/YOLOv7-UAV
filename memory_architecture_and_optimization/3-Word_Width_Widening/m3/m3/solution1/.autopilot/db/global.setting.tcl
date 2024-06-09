@@ -1,5 +1,5 @@
 
-set TopModule "word_width"
+set TopModule "word_width_manual"
 set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 3
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix word_width_
+set RtlSubPrefix word_width_manual_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -41,8 +41,8 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xcvu11p:-flga2577:-1-e
-set SourceFiles {sc {} c {../../../src/word_width_manual.cpp ../../../src/word_width.cpp}}
+set TargetInfo xczu7ev:-ffvc1156:-2-e
+set SourceFiles {sc {} c {../../../src/word_width.cpp ../../../src/word_width_manual.cpp}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile D:/gam3a/zzzzzzzzzz/3-Word_Width_Widening/m3/m3/solution1/solution1.directive
 set TBFiles {verilog ../../../tb/tb_word_width.cpp bc ../../../tb/tb_word_width.cpp vhdl ../../../tb/tb_word_width.cpp sc ../../../tb/tb_word_width.cpp cas ../../../tb/tb_word_width.cpp c {}}
@@ -61,5 +61,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtexuplus/virtexuplus}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynquplus/zynquplus}}}
 set HPFPO 0

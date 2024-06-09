@@ -3,7 +3,7 @@
 #include "../include/ap_int.h"
 #include "cstdlib"
 
-#define AUTO 1
+#define AUTO 0
 
 int main(int argc, char **argv){
 

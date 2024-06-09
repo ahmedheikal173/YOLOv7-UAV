@@ -55156,7 +55156,7 @@ inline bool operator!=(
 
 
 
-
+void avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void window_avg(ap_uint<8> din[640][640], ap_uint<8> dout[640][640]);
 void clip_window(int r, ap_uint<8> window[3]);
 # 4 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp" 2
@@ -55167,6 +55167,8 @@ void clip_window(int r, ap_uint<8> window[3]);
 
 using namespace std;
 
+
+
 static inline int clip(int i) {
     int tmp = i;
     if (tmp < 0)
@@ -55176,12 +55178,6 @@ static inline int clip(int i) {
     return tmp;
 }
 
-#ifndef HLS_FASTSIM
-#ifdef __cplusplus
-extern "C"
-#endif
-void apatb_window_avg_sw(ap_uint<8> (*)[640], ap_uint<8> (*)[640]);
-# 18 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp"
 int main(int argc, char *argv[]) {
  ap_uint<8> din[640][640];
  ap_uint<8> dout[640][640];
@@ -55202,14 +55198,10 @@ int main(int argc, char *argv[]) {
   }
  }
 
- 
-#ifndef HLS_FASTSIM
-#define window_avg apatb_window_avg_sw
-#endif
-# 38 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp"
-window_avg(din, dout);
-#undef window_avg
-# 38 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp"
+
+ window_avg(din, dout);
+
+
 
 
  int pass = 1;
@@ -55232,6 +55224,3 @@ window_avg(din, dout);
  cout << "------------------------" << endl;
  return 0;
 }
-#endif
-# 59 "D:/gam3a/zzzzzzzzzz/4-Memorty_Caching/window_2d/tb/test_window_2d.cpp"
-

@@ -5700,7 +5700,7 @@ void interleave(
 
  static ap_int<8> x[1228800];
 
-#pragma HLS BIND_STORAGE variable=x type=RAM_T2P impl=BRAM
+#pragma HLS BIND_STORAGE variable=x type=RAM_1P impl=BRAM
 #pragma HLS ARRAY_PARTITION variable=x cyclic factor=3 dim=1
 
  int idx = 0;

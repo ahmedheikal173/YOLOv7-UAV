@@ -19,5 +19,6 @@
 typedef ap_uint<8> dType;
 
 void circular_shift_reg(dType din, dType dout[N_REGS]);
+void shift_reg(dType din, dType dout[N_REGS]);
 
 #endif

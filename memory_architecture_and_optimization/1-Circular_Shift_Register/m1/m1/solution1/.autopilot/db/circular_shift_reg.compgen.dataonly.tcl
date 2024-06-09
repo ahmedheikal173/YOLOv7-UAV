@@ -10,14 +10,6 @@ din {
 	offset 16
 	offset_end 23
 }
-dout { 
-	dir I
-	width 64
-	depth 1
-	mode ap_none
-	offset 24
-	offset_end 35
-}
 ap_start {
 	mailbox_input_ctrl 0
 	mailbox_output_ctrl 0

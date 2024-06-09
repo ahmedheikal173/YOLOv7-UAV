@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity word_width_manual_control_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -32,8 +32,6 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    x_in                  :out  STD_LOGIC_VECTOR(63 downto 0);
-    y                     :out  STD_LOGIC_VECTOR(63 downto 0);
     load                  :out  STD_LOGIC_VECTOR(0 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
@@ -66,20 +64,10 @@ end entity word_width_manual_control_s_axi;
 --        bit 1 - ap_ready (COR/TOW)
 --        bit 5 - ap_local_deadlock (COR/TOW)
 --        others - reserved
--- 0x10 : Data signal of x_in
---        bit 31~0 - x_in[31:0] (Read/Write)
--- 0x14 : Data signal of x_in
---        bit 31~0 - x_in[63:32] (Read/Write)
--- 0x18 : reserved
--- 0x1c : Data signal of y
---        bit 31~0 - y[31:0] (Read/Write)
--- 0x20 : Data signal of y
---        bit 31~0 - y[63:32] (Read/Write)
--- 0x24 : reserved
--- 0x28 : Data signal of load
+-- 0x10 : Data signal of load
 --        bit 0  - load[0] (Read/Write)
 --        others - reserved
--- 0x2c : reserved
+-- 0x14 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of word_width_manual_control_s_axi is
@@ -91,15 +79,9 @@ architecture behave of word_width_manual_control_s_axi is
     constant ADDR_GIE         : INTEGER := 16#04#;
     constant ADDR_IER         : INTEGER := 16#08#;
     constant ADDR_ISR         : INTEGER := 16#0c#;
-    constant ADDR_X_IN_DATA_0 : INTEGER := 16#10#;
-    constant ADDR_X_IN_DATA_1 : INTEGER := 16#14#;
-    constant ADDR_X_IN_CTRL   : INTEGER := 16#18#;
-    constant ADDR_Y_DATA_0    : INTEGER := 16#1c#;
-    constant ADDR_Y_DATA_1    : INTEGER := 16#20#;
-    constant ADDR_Y_CTRL      : INTEGER := 16#24#;
-    constant ADDR_LOAD_DATA_0 : INTEGER := 16#28#;
-    constant ADDR_LOAD_CTRL   : INTEGER := 16#2c#;
-    constant ADDR_BITS         : INTEGER := 6;
+    constant ADDR_LOAD_DATA_0 : INTEGER := 16#10#;
+    constant ADDR_LOAD_CTRL   : INTEGER := 16#14#;
+    constant ADDR_BITS         : INTEGER := 5;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
@@ -127,8 +109,6 @@ architecture behave of word_width_manual_control_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(5 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(5 downto 0) := (others => '0');
-    signal int_x_in            : UNSIGNED(63 downto 0) := (others => '0');
-    signal int_y               : UNSIGNED(63 downto 0) := (others => '0');
     signal int_load            : UNSIGNED(0 downto 0) := (others => '0');
 
 
@@ -258,14 +238,6 @@ begin
                         rdata_data(5 downto 0) <= int_ier;
                     when ADDR_ISR =>
                         rdata_data(5 downto 0) <= int_isr;
-                    when ADDR_X_IN_DATA_0 =>
-                        rdata_data <= RESIZE(int_x_in(31 downto 0), 32);
-                    when ADDR_X_IN_DATA_1 =>
-                        rdata_data <= RESIZE(int_x_in(63 downto 32), 32);
-                    when ADDR_Y_DATA_0 =>
-                        rdata_data <= RESIZE(int_y(31 downto 0), 32);
-                    when ADDR_Y_DATA_1 =>
-                        rdata_data <= RESIZE(int_y(63 downto 32), 32);
                     when ADDR_LOAD_DATA_0 =>
                         rdata_data <= RESIZE(int_load(0 downto 0), 32);
                     when others =>
@@ -282,8 +254,6 @@ begin
     task_ap_done         <= (ap_done and not auto_restart_status) or auto_restart_done;
     task_ap_ready        <= ap_ready and not int_auto_restart;
     ap_continue          <= int_ap_continue or auto_restart_status;
-    x_in                 <= STD_LOGIC_VECTOR(int_x_in);
-    y                    <= STD_LOGIC_VECTOR(int_y);
     load                 <= STD_LOGIC_VECTOR(int_load);
 
     process (ACLK)
@@ -479,50 +449,6 @@ begin
                     int_isr(5) <= '1';
                 elsif (w_hs = '1' and waddr = ADDR_ISR and WSTRB(0) = '1') then
                     int_isr(5) <= int_isr(5) xor WDATA(5); -- toggle on write
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_X_IN_DATA_0) then
-                    int_x_in(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_x_in(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_X_IN_DATA_1) then
-                    int_x_in(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_x_in(63 downto 32));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_Y_DATA_0) then
-                    int_y(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_y(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_Y_DATA_1) then
-                    int_y(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_y(63 downto 32));
                 end if;
             end if;
         end if;

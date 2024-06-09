@@ -28,11 +28,8 @@ class singleport_ram {
 #pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=BRAM
     }
     // implement read/write method for the class (data_in => ram => return)
-    // return type: ap_int<W, S> (sampe as original data type)
-    // arguments:
-    //      data_in: the data to be written
-    //      addr: the read/write address
-    //      write: flag to indicate the write should occur (ram array can be read-only)
+    
+    
     ap_uint<W> exec(ap_uint<W> data_in, int addr, bool write) {
 #pragma HLS INLINE
     	ap_uint<W> tmp;
