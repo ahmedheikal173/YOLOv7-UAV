@@ -11,21 +11,21 @@
 // N: numbers of array elements
 // W: word width
 template <int N, int W>
-class singleport_ram {
+class dualport_ram {
     // internal address
     int addr_int;
     // internal ram: width: W * 2, elements: N / 2 (assume N to be evenly divisable by two)
-    ap_uint<W * 2> ram[N / 2];
+    ap_uint<W> ram[N];
     // single bit counter that is used to control reading and writing of data
-    ap_uint<1> cnt;
+    //ap_uint<1> cnt;
     // internal caching: width: W * 2
-    ap_uint<W * 2> read_data;
-    ap_uint<W * 2> write_data;
+    ap_uint<W> read_data;
+    ap_uint<W> write_data;
 
    public:
-    singleport_ram (): addr_int(0), cnt(0), read_data(0), write_data(0) {
+    dualport_ram (): addr_int(0), read_data(0), write_data(0) {
 // #pragma HLS RESOURCE variable=ram core=RAM_1P_BRAM
-#pragma HLS BIND_STORAGE variable=ram type=RAM_1P impl=BRAM
+#pragma HLS BIND_STORAGE variable=ram type=RAM_T2P impl=BRAM
     }
     // implement read/write method for the class (data_in => ram => return)
     
@@ -37,7 +37,7 @@ class singleport_ram {
         // manipulate write cache
         if (write) {
             if (cnt == 0) { // write to lower halves
-            	write_data = (ap_uint<W * 2>(write_data.range(W * 2 - 1, W)) << W) | data_in;
+            	write_data = (ap_uint<W>(write_data.range(W * 2 - 1, W)) << W) | data_in;
             }
             else { // write to upper halves
             	write_data = (ap_uint<W * 2>(data_in) << W) | ap_uint<W>(write_data.range(W - 1, 0));
