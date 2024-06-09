@@ -1,0 +1,24 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="interleave_manual_rnd" language="c" hwCtrl="ap_ctrl_chain" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="x_in" src_type="ap_int&lt;8&gt;*" src_isptr="1" src_bitwidth="8" src_size_or_depth="1228800">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="x_in" hw_bitwidth="8" hw_size_or_depth="1228800">
+          <constraint constraint_type="pragma interface" mode="bram" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="w" src_name="y" src_type="ap_int&lt;8&gt;*" src_isptr="1" src_bitwidth="8" src_size_or_depth="409600">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="y" hw_bitwidth="8" hw_size_or_depth="409600">
+          <constraint constraint_type="pragma interface" mode="bram" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="r" src_name="load" src_type="bool" src_isptr="0" src_bitwidth="1" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="S_AXILite" hw_name="control" hw_bitwidth="1" hw_size_or_depth="1">
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0"/>
+    </return>
+  </kernel>
+</root>
