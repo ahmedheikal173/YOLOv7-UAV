@@ -1,24 +1,26 @@
 `timescale 1ns / 1ps
 module CBS_File(
     input clk,reset,
-    output [11:0] state_out,
-    output final_state_reached,cout2,
-    output [24:0]S,
-    output [7:0]Out_Memory,
-    output [109:0]Out_Memory_9,
-    output [71:0]to_conv
+    output [19:0] convolution_result
+    
     
     );
-    wire clk_db,finish_flag,finish_Img,finish_row;
-    wire final_state_reached_9;
-    wire [3:0]state_out_address;
-    wire [24:0]Add_Gen;
-    reg [24:0]Add_Gen_sum;
-    wire c_out,For_Memory;
-    wire [14:0] counter_Row;
-    wire [14:0] counter_Col;
-    wire zero_col,zero_row,final_col,final_row;
+    
 
+    wire final_state_reached,finish_row,finish_flag,clk_db,For_Memory,final_state_reached_9;
+    wire zero_col,final_col,finish_Img,zero_row,final_row,final_filter_24;
+    wire [14:0] counter_Col,counter_Row;
+    wire [24:0] Add_Gen,S;
+    wire [3:0] state_out_filters,state_out_address;
+    wire [4:0] state_out24;
+    wire [8:0] filter_address;
+    wire [7:0] Out_Memory,filter_out;
+    wire [10:0] state_out;
+    wire [105:0] Out_Memory_9;
+    wire [71:0] from_filter,to_conv;
+    wire [4:0]q;
+
+    
 
     counter_640_Col inst_row(
                     .clk(final_state_reached),
@@ -44,11 +46,32 @@ module CBS_File(
                     .counter_Row(counter_Row),
                     .counter_Col(counter_Col),
                     .S(Add_Gen),
-                    .c_out(c_out),
                     .clk_db(clk_db),
                     .finish_flag(finish_flag)
      );
 
+    FSM_9_Filters inst_FSM_9_Filters(
+                    .clk(finish_flag),
+                    .reset(reset),
+                    .state_out_ff(state_out_filters)
+    );
+
+    Counter_24 inst_counter_24(
+                    .clk(finish_Img),
+                    .reset(reset),
+                    .state_out24(state_out24),
+                    .final_filter_24(final_filter_24)
+    );
+
+    filter_address_generator inst_filter_address_generator(
+                    .clk_mul(clk),
+                    .clk_add(clk_db),
+                    .counter_9(state_out_filters),
+                    .counter_24(state_out24),
+                    .Res_Coun(filter_address)
+    );
+
+    (* dont_touch = "true" *)
      FSM_Img inst_FSM(
                     .clk(finish_flag),
                     .reset(reset),
@@ -57,30 +80,47 @@ module CBS_File(
                     .For_Memory(For_Memory)
      );
 
+
      c_addsub_0 instsum(
                         .A(Add_Gen),
-                        .B({13'b0,state_out}),
+                        .B({14'b0,state_out}),
                         .CLK(clk),
                         .SCLR(reset),
-                        .C_OUT(cout2),
                         .S(S)
      );
-    image_page1 inst_img(
-                    .addr1_1(S),
-                    .r_enable(1'b1),
-                    .we(1'b0),
-                    .clk(finish_flag),
-                    .rst(reset),
-                    .data_out1_1(Out_Memory)
-    );
+   (* dont_touch = "true" *)
     FSM_9 inst_FSM_9(
                     .clk(finish_flag),
                     .main_clk(clk),
                     .reset(reset),
                     .For_Memory(For_Memory),
-                    .state_out(state_out_address),
+                    .state_out_9(state_out_address),
                     .final_state_reached(final_state_reached_9)
     );
+
+    
+    image_page1 inst_img(
+                    .addr1_1(S),
+                    .clk(finish_flag),
+                    .rst(reset),
+                  .data_out1_1(Out_Memory)
+  );
+    //(* dont_touch = "true" *)
+    //blk_mem_gen_1 inst_img_mem(
+      //             .addra(S[18:0]),
+        //           .clka(finish_flag),
+          //         .douta(Out_Memory)
+        //);
+
+    (* dont_touch = "true" *)
+    Filters inst_filters(
+                    .clk(finish_flag),
+                    .reset(reset),
+                    .address(filter_address),
+                    .filter_out(filter_out)
+    );
+
+    (* dont_touch = "true" *)
     Storage_Conv_Mem Storage_Conv_Mem_inst(
                     .clk(clk),
                     .reset(reset),
@@ -96,16 +136,43 @@ module CBS_File(
                     .final_row(final_row),
                     .Out_Memory(Out_Memory_9)
     );
+
+    (* dont_touch = "true" *)
+    Storage_filter_Mem Storage_filter_Mem_inst(
+                    .clk(clk),
+                    .reset(reset),
+                    .we(For_Memory),
+                    .re(final_state_reached_9),
+                    .In_Memory(filter_out),
+                    .address(state_out_address),
+                    .Out_Memory(from_filter)
+    );
+
     Padding_CBS_File padding_inst(
                     .clk(final_state_reached),
                     .reset(reset),
                     .from_9_Reg(Out_Memory_9),
                     .to_conv(to_conv)
     );
-     always @(posedge clk , posedge reset) begin
-        if(reset)
-            Add_Gen_sum<=0;
-        else if(clk)
-            Add_Gen_sum<=Add_Gen;
-     end
+
+    clk_Domain instclks(
+        .clk(clk),
+        .rst(reset),
+        .SIPO(final_state_reached_9),
+        .q(q[4:0])
+    );
+
+    
+
+    Convolution_Process inst_conv(
+        .Image(to_conv),
+        .filter(from_filter),
+       // .clk(clk),
+        //.reset(reset),
+        .clks(q[4:0]),
+        .clk1(final_state_reached_9),
+        .convolution_result(convolution_result)
+    );
+
+
 endmodule

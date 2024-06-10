@@ -8,7 +8,7 @@ module counter_640_Row(
     output reg final_row
 );
 
-always @(posedge clk or posedge reset ) 
+always @(posedge clk or posedge reset) 
 begin
     if(reset) 
         begin

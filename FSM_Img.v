@@ -1,7 +1,8 @@
+(* dont_touch = "true" *)
 module FSM_Img(
     input wire clk,
     input wire reset,
-    output reg [11:0] state_out,
+    output reg [10:0] state_out,
     output reg final_state_reached,
     output reg For_Memory
 );
@@ -18,7 +19,7 @@ parameter STATE_1281 = 11'd1281;
 parameter STATE_1282 = 11'd1282;
 
 // State register
-reg [11:0] current_state, next_state;
+reg [10:0] current_state, next_state;
 // State machine logic
 always @(posedge clk or posedge reset) begin
     if (reset) begin

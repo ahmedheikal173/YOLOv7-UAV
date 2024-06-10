@@ -2,11 +2,10 @@ module FSM_9(
     input wire clk,
     input wire main_clk,
     input wire reset,For_Memory,
-    output reg [3:0] state_out,
-    output reg final_state_reached,
-    output reg [1:0] count4
-    //output reg For_Memory
+    output reg [3:0] state_out_9,
+    output reg final_state_reached    //output reg For_Memory
 );
+reg [1:0] count4;
 
 // State parameters
 parameter STATE_0 = 4'd0;
@@ -23,12 +22,12 @@ parameter STATE_8 = 4'd8;
 reg [3:0] current_state, next_state;
 reg count2;
 // State machine logic
-always @(posedge clk or posedge reset) begin
+always @(posedge clk) begin
        
     if (reset) begin
-        count4<=0;
+        //count4<=0;
         current_state <= STATE_0;
-        count2<=0;
+//        count2<=0;
     end else begin
             current_state <= next_state;
     end
@@ -55,17 +54,17 @@ end
 always @(posedge clk or posedge reset) 
 begin
     if (reset) begin
-        state_out <= STATE_0;
-        final_state_reached <= 0;
+        state_out_9 <= STATE_0;
+        //final_state_reached <= 0;
     end 
     else 
     begin
-            state_out <= current_state;
+            state_out_9 <= current_state;
             if(current_state == STATE_0)
             begin
                if(count2==0)
                 begin
-                      count2<=1;
+                      //count2<=1;
                       //final_state_reached <= 0;
                 end
                 else
@@ -79,17 +78,25 @@ begin
     end
 end
 
-always @(posedge main_clk)
+always @(posedge main_clk or posedge reset)
 begin
+    if(reset)
+    begin
+        final_state_reached<=1;
+        count4<=0;
+    end
+    else if (main_clk)
+    begin
     if(count4==3)
         count4<=0;
     else
         count4<=count4+1;
-     if(state_out==STATE_8 && count4==1)
+     if(state_out_9==STATE_8 && count4==1)
      begin 
         final_state_reached<=1;
      end
      else 
         final_state_reached<=0;
+    end
 end
 endmodule

@@ -2,25 +2,25 @@
 module FSM_9_Filters(
     input wire clk,
     input wire reset,
-    output reg [2:0] state_out,
-    output reg final_filter
+    output reg [3:0] state_out_ff
+     
     );
-
-    always @(posedge clk ) begin
+    always @(posedge clk or posedge reset) begin
         if(reset)
         begin
-            state_out<=3'b0
+           
+            state_out_ff<=4'b0;
         end
-        else if(state_out==8) begin
-            state_out<=3'b0;
-            final_filter<=1'b1;
+        else if(state_out_ff==8) begin
+            state_out_ff<=4'b0;
+            
         end
         else begin
-            state_out<=state_out+1;
-            final_filter<=1'b0;
+            state_out_ff<=state_out_ff+1;
+            
         end
     end
+
+   
 endmodule
 
-
-count_9 + counter_24*9

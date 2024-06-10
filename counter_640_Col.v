@@ -9,7 +9,7 @@ module counter_640_Col(
 
 );
 
-always @(posedge clk or posedge reset ) 
+always @(posedge clk or posedge reset) 
 begin
     if(reset) 
         begin
