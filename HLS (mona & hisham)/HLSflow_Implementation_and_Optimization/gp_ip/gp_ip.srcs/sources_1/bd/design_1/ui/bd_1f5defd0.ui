@@ -1,0 +1,56 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.618071",
+   "Default View_TopLeft":"-455,-91",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port ap_ctrl_0 -pg 1 -lvl 0 -x -260 -y 20 -defaultsOSRD
+preplace port port-id_ap_local_block_0 -pg 1 -lvl 4 -x 800 -y -30 -defaultsOSRD
+preplace port port-id_ap_local_deadlock_0 -pg 1 -lvl 4 -x 800 -y -10 -defaultsOSRD
+preplace port port-id_image_r_ce0_0 -pg 1 -lvl 4 -x 800 -y 10 -defaultsOSRD
+preplace port port-id_output_conv_ce0_0 -pg 1 -lvl 4 -x 800 -y 70 -defaultsOSRD
+preplace port port-id_output_conv_we0_0 -pg 1 -lvl 4 -x 800 -y 90 -defaultsOSRD
+preplace port port-id_weights_ce0_0 -pg 1 -lvl 4 -x 800 -y 30 -defaultsOSRD
+preplace port port-id_weights_ce1_0 -pg 1 -lvl 4 -x 800 -y 50 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x -260 -y 330 -defaultsOSRD
+preplace port port-id_ext_reset_in_0 -pg 1 -lvl 0 -x -260 -y 310 -defaultsOSRD
+preplace portBus image_r_address0_0 -pg 1 -lvl 4 -x 800 -y 110 -defaultsOSRD
+preplace portBus image_r_q0_0 -pg 1 -lvl 0 -x -260 -y 80 -defaultsOSRD
+preplace portBus output_conv_address0_0 -pg 1 -lvl 4 -x 800 -y 170 -defaultsOSRD
+preplace portBus output_conv_d0_0 -pg 1 -lvl 4 -x 800 -y 190 -defaultsOSRD
+preplace portBus output_conv_q0_0 -pg 1 -lvl 0 -x -260 -y 140 -defaultsOSRD
+preplace portBus weights_address0_0 -pg 1 -lvl 4 -x 800 -y 130 -defaultsOSRD
+preplace portBus weights_address1_0 -pg 1 -lvl 4 -x 800 -y 150 -defaultsOSRD
+preplace portBus weights_q0_0 -pg 1 -lvl 0 -x -260 -y 100 -defaultsOSRD
+preplace portBus weights_q1_0 -pg 1 -lvl 0 -x -260 -y 120 -defaultsOSRD
+preplace inst conv_ref_0 -pg 1 -lvl 3 -x 570 -y 80 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 180 -y 330 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -140 -y 300 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out2 1 1 1 -40 290n
+preplace netloc clk_wiz_0_clk_out1 1 1 2 -50 40 NJ
+preplace netloc proc_sys_reset_0_mb_reset 1 2 1 350 60n
+preplace netloc conv_ref_0_ap_local_block 1 3 1 NJ -30
+preplace netloc conv_ref_0_ap_local_deadlock 1 3 1 NJ -10
+preplace netloc conv_ref_0_image_r_address0 1 3 1 NJ 110
+preplace netloc conv_ref_0_image_r_ce0 1 3 1 NJ 10
+preplace netloc image_r_q0_0_1 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc conv_ref_0_output_conv_address0 1 3 1 NJ 170
+preplace netloc conv_ref_0_output_conv_ce0 1 3 1 NJ 70
+preplace netloc conv_ref_0_output_conv_d0 1 3 1 NJ 190
+preplace netloc output_conv_q0_0_1 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc conv_ref_0_output_conv_we0 1 3 1 NJ 90
+preplace netloc conv_ref_0_weights_address0 1 3 1 NJ 130
+preplace netloc conv_ref_0_weights_address1 1 3 1 NJ 150
+preplace netloc conv_ref_0_weights_ce0 1 3 1 NJ 30
+preplace netloc conv_ref_0_weights_ce1 1 3 1 NJ 50
+preplace netloc weights_q0_0_1 1 0 3 NJ 100 NJ 100 NJ
+preplace netloc weights_q1_0_1 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc clk_in1_0_1 1 0 1 -230 300n
+preplace netloc ext_reset_in_0_1 1 0 2 -240J 370 -30J
+preplace netloc ap_ctrl_0_1 1 0 3 NJ 20 NJ 20 NJ
+levelinfo -pg 1 -260 -140 180 570 800
+pagesize -pg 1 -db -bbox -sgen -460 -90 1050 430
+"
+}
+

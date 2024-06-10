@@ -1,0 +1,37 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "F:/xilinx-/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx-/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_conv_test_top glbl -prj conv_test.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile F:/xilinx-/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s conv_test 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/AESL_automem_image_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_image_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/AESL_automem_output_conv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_output_conv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/AESL_automem_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/conv_test.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_conv_test_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/conv_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_test
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/conv_test_image_pbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_test_image_pbkb_ram
+INFO: [VRFC 10-311] analyzing module conv_test_image_pbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/padding_r_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module padding_r_test
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_test_image_pbkb_ram
+Compiling module xil_defaultlib.conv_test_image_pbkb(DataWidth=3...
+Compiling module xil_defaultlib.padding_r_test
+Compiling module xil_defaultlib.conv_test
+Compiling module xil_defaultlib.AESL_automem_image_r
+Compiling module xil_defaultlib.AESL_automem_weights
+Compiling module xil_defaultlib.AESL_automem_output_conv
+Compiling module xil_defaultlib.apatb_conv_test_top
+Compiling module work.glbl
+Built simulation snapshot conv_test

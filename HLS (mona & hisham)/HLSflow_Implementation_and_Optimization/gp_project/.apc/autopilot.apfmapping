@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="reluCBS3.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\reluCBS3.cpp"/>
+    <originFiles name="reluCBS2.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\reluCBS2.cpp"/>
+    <originFiles name="relu.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\relu.cpp"/>
+    <originFiles name="maxpooling.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\maxpooling.cpp"/>
+    <originFiles name="conv_test.h" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\conv_test.h"/>
+    <originFiles name="conv_test.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\conv_test.cpp"/>
+    <originFiles name="conv_ref.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\conv_ref.cpp"/>
+    <originFiles name="convMP1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\convMP1.cpp"/>
+    <originFiles name="convCBS3.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\convCBS3.cpp"/>
+    <originFiles name="convCBS2.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\convCBS2.cpp"/>
+    <originFiles name="catELAN1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\catELAN1.cpp"/>
+    <originFiles name="arch.h" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\arch.h"/>
+    <originFiles name="MaxPoolingMP1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\MaxPoolingMP1.cpp"/>
+    <originFiles name="MP1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\MP1.cpp"/>
+    <originFiles name="LRNCBS3.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\LRNCBS3.cpp"/>
+    <originFiles name="LRNCBS2.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\LRNCBS2.cpp"/>
+    <originFiles name="LRN.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\LRN.cpp"/>
+    <originFiles name="ELAN1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\ELAN1.cpp"/>
+    <originFiles name="CBSInput_ELAN1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\CBSInput_ELAN1.cpp"/>
+    <originFiles name="CBSELAN1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\CBSELAN1.cpp"/>
+    <originFiles name="CBS3.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\CBS3.cpp"/>
+    <originFiles name="CBS2.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\CBS2.cpp"/>
+    <originFiles name="CBS1.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\CBS1.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="CBS1_tb.cpp" path="C:\Users\DELL\AppData\Roaming\Xilinx\Vivado\gp_project\CBS1_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

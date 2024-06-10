@@ -1,0 +1,352 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1392.332 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/export'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/xilinx/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental F:/verilog/trials/gp_ip/gp_ip.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/verilog/trials/gp_ip/gp_ip.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1969.391 ; gain = 255.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [F:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/.Xil/Vivado-14620-DESKTOP-KVLS732/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (1#1) [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/.Xil/Vivado-14620-DESKTOP-KVLS732/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_conv_ref_0_0' [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/.Xil/Vivado-14620-DESKTOP-KVLS732/realtime/design_1_conv_ref_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_ref_0_0' (2#1) [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/.Xil/Vivado-14620-DESKTOP-KVLS732/realtime/design_1_conv_ref_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/.Xil/Vivado-14620-DESKTOP-KVLS732/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (3#1) [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/.Xil/Vivado-14620-DESKTOP-KVLS732/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:134]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:134]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:134]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:134]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (4#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (5#1) [F:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 2026.312 ; gain = 312.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 2044.234 ; gain = 330.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 2044.234 ; gain = 330.648
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2044.234 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/design_1_conv_ref_0_0/design_1_conv_ref_0_0_in_context.xdc] for cell 'design_1_i/conv_ref_0'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/design_1_conv_ref_0_0/design_1_conv_ref_0_0_in_context.xdc] for cell 'design_1_i/conv_ref_0'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+create_clock: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2094.785 ; gain = 20.145
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[10]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[13]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[8]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[9]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[14]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[15]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[16]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[17]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:15]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:16]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[11]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:17]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[18]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:18]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[19]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:19]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:20]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:21]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:22]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[12]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:23]
+WARNING: [Vivado 12-507] No nets matched 'image_r_address0_0_OBUF[20]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:24]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:26]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:27]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:28]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:29]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:30]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:31]
+WARNING: [Vivado 12-507] No nets matched 'image_r_q0_0_IBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:32]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:33]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[10]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:34]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[14]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:35]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[22]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:36]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:37]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:38]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[9]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:39]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[13]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:40]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[17]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[18]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:42]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[23]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[12]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[15]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[16]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[21]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:50]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[8]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:53]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[11]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:54]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[19]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:55]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_address0_0_OBUF[20]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_d0_0_OBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:65]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'output_conv_q0_0_IBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:72]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:73]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:74]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[9]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:78]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:81]
+WARNING: [Vivado 12-507] No nets matched 'weights_address0_0_OBUF[8]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:85]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:86]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[8]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:87]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:89]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:90]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:91]
+WARNING: [Vivado 12-507] No nets matched 'weights_address1_0_OBUF[9]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:95]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[3]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[4]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[5]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[6]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:99]
+WARNING: [Vivado 12-507] No nets matched 'weights_q0_0_IBUF[7]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'weights_q1_0_IBUF[0]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'weights_q1_0_IBUF[1]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'weights_q1_0_IBUF[2]'. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:103]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:103]
+Finished Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2094.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2094.785 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2094.785 ; gain = 381.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2094.785 ; gain = 381.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/conv_ref_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:01:21 . Memory (MB): peak = 2094.785 ; gain = 381.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:01:22 . Memory (MB): peak = 2094.785 ; gain = 381.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:26 . Memory (MB): peak = 2094.785 ; gain = 381.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_in1_0'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:01:52 . Memory (MB): peak = 2665.078 ; gain = 951.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:01:52 . Memory (MB): peak = 2665.078 ; gain = 951.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:01:53 . Memory (MB): peak = 2684.176 ; gain = 970.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |design_1_clk_wiz_0_0        |         1|
+|2     |design_1_conv_ref_0_0       |         1|
+|3     |design_1_proc_sys_reset_0_0 |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |design_1_clk_wiz_0        |     1|
+|2     |design_1_conv_ref_0       |     1|
+|3     |design_1_proc_sys_reset_0 |     1|
+|4     |IBUF                      |    34|
+|5     |OBUF                      |    83|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:01:26 . Memory (MB): peak = 2689.934 ; gain = 925.797
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:02:03 . Memory (MB): peak = 2689.934 ; gain = 976.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2702.012 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2736.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 34 instances
+
+Synth Design complete, checksum: b9f26ad9
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:02:32 . Memory (MB): peak = 2736.297 ; gain = 1343.965
+INFO: [Common 17-1381] The checkpoint 'F:/verilog/trials/gp_ip/gp_ip.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 23:04:03 2024...

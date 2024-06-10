@@ -1,0 +1,35 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../CBS1_tb.cpp in debug mode
+csim.mk:77: recipe for target 'obj/CBS1_tb.o' failed
+In file included from F:/xilinx-/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from F:/xilinx-/Vivado/2018.3/include/hls_fpo.h:186,
+                 from F:/xilinx-/Vivado/2018.3/include/hls_half.h:44,
+                 from F:/xilinx-/Vivado/2018.3/include/etc/ap_private.h:90,
+                 from F:/xilinx-/Vivado/2018.3/include/ap_common.h:641,
+                 from F:/xilinx-/Vivado/2018.3/include/ap_fixed.h:54,
+                 from ../../../arch.h:3,
+                 from ../../../CBS1_tb.cpp:3:
+F:/xilinx-/Vivado/2018.3/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from F:/xilinx-/Vivado/2018.3/include/hls_fpo.h:186:0,
+                 from F:/xilinx-/Vivado/2018.3/include/hls_half.h:44,
+                 from F:/xilinx-/Vivado/2018.3/include/etc/ap_private.h:90,
+                 from F:/xilinx-/Vivado/2018.3/include/ap_common.h:641,
+                 from F:/xilinx-/Vivado/2018.3/include/ap_fixed.h:54,
+                 from ../../../arch.h:3,
+                 from ../../../CBS1_tb.cpp:3:
+F:/xilinx-/Vivado/2018.3/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../CBS1_tb.cpp: In function 'int main()':
+../../../CBS1_tb.cpp:52:23: error: cannot convert 'int (*)[5][2]' to 'int (*)[640][24]' for argument '1' to 'void load_image(int (*)[640][24])'
+  load_image(imageInput);
+                       ^
+../../../CBS1_tb.cpp:58:36: error: 'padding_r2' was not declared in this scope
+  padding_r2(imageInput,image_padded);
+                                    ^
+make: *** [obj/CBS1_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

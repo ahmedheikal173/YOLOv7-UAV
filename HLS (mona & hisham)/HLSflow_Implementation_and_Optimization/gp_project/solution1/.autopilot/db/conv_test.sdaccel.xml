@@ -1,0 +1,196 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'conv_test'" level="0">
+<item name = "Date">Thu Jun  6 02:15:23 2024
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">gp_project</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-1lv-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">6.435</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">3179219, 3179219, 3179219, 3179219, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_padding_r_test_fu_227">padding_r_test, 309770, 309770, 309770, 309770, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- memset_image_padded">104005, 104005, 323, -, -, 322, no</column>
+<column name=" + memset_image_padded">321, 321, 1, -, -, 322, no</column>
+<column name="- Loop 2">2765440, 2765440, 8642, -, -, 320, no</column>
+<column name=" + Loop 2.1">8640, 8640, 27, -, -, 320, no</column>
+<column name="  ++ conv_ref_label2">24, 24, 8, -, -, 3, no</column>
+<column name="   +++ conv_ref_label1">6, 6, 2, -, -, 3, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, 3, 0, 483, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 0, 148, 401, -</column>
+<column name="Memory">186, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 215, -</column>
+<column name="Register">-, -, 232, -, -</column>
+<specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
+<specialColumn name="Utilization (%)">29, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_padding_r_test_fu_227">padding_r_test, 0, 0, 148, 401</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="image_padded_0_U">conv_test_image_pbkb, 186, 0, 0, 103684, 32, 1, 3317888</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_12_fu_359_p2">*, 0, 0, 50, 9, 9</column>
+<column name="tmp_13_fu_451_p2">*, 3, 0, 20, 32, 32</column>
+<column name="i_3_fu_285_p2">+, 0, 0, 16, 9, 1</column>
+<column name="indvarinc1_fu_246_p2">+, 0, 0, 16, 9, 1</column>
+<column name="indvarinc_fu_240_p2">+, 0, 0, 16, 9, 1</column>
+<column name="j_3_fu_327_p2">+, 0, 0, 16, 9, 1</column>
+<column name="next_mul_fu_234_p2">+, 0, 0, 24, 17, 9</column>
+<column name="output_conv_d0">+, 0, 0, 39, 32, 32</column>
+<column name="r_1_fu_343_p2">+, 0, 0, 9, 2, 1</column>
+<column name="s_1_fu_411_p2">+, 0, 0, 9, 2, 1</column>
+<column name="sum_3_fu_457_p2">+, 0, 0, 39, 32, 32</column>
+<column name="tmp_10_fu_417_p2">+, 0, 0, 16, 9, 9</column>
+<column name="tmp_11_fu_391_p2">+, 0, 0, 25, 18, 18</column>
+<column name="tmp_16_fu_427_p2">+, 0, 0, 25, 18, 18</column>
+<column name="tmp_17_fu_441_p2">+, 0, 0, 15, 5, 5</column>
+<column name="tmp_4_fu_349_p2">+, 0, 0, 16, 9, 9</column>
+<column name="tmp_9_fu_315_p2">+, 0, 0, 25, 18, 18</column>
+<column name="tmp_s_fu_256_p2">+, 0, 0, 24, 17, 17</column>
+<column name="tmp_15_fu_381_p2">-, 0, 0, 15, 5, 5</column>
+<column name="exitcond1_fu_405_p2">icmp, 0, 0, 8, 2, 2</column>
+<column name="exitcond2_fu_337_p2">icmp, 0, 0, 8, 2, 2</column>
+<column name="exitcond3_fu_321_p2">icmp, 0, 0, 13, 9, 9</column>
+<column name="exitcond4_fu_279_p2">icmp, 0, 0, 13, 9, 9</column>
+<column name="tmp_5_fu_267_p2">icmp, 0, 0, 13, 9, 9</column>
+<column name="tmp_6_fu_273_p2">icmp, 0, 0, 13, 9, 9</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">53, 12, 1, 12</column>
+<column name="i_reg_157">9, 2, 9, 18</column>
+<column name="image_padded_0_address0">21, 4, 17, 68</column>
+<column name="image_padded_0_ce0">15, 3, 1, 3</column>
+<column name="image_padded_0_d0">15, 3, 32, 96</column>
+<column name="image_padded_0_we0">15, 3, 1, 3</column>
+<column name="invdar9_reg_146">9, 2, 9, 18</column>
+<column name="invdar_reg_122">9, 2, 9, 18</column>
+<column name="j_reg_169">9, 2, 9, 18</column>
+<column name="output_conv_address0">15, 3, 17, 51</column>
+<column name="phi_mul_reg_134">9, 2, 17, 34</column>
+<column name="r_reg_193">9, 2, 2, 4</column>
+<column name="s_reg_216">9, 2, 2, 4</column>
+<column name="sum_1_reg_204">9, 2, 32, 64</column>
+<column name="sum_reg_181">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">11, 0, 11, 0</column>
+<column name="grp_padding_r_test_fu_227_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_3_reg_494">9, 0, 9, 0</column>
+<column name="i_reg_157">9, 0, 9, 0</column>
+<column name="indvarinc_reg_475">9, 0, 9, 0</column>
+<column name="invdar9_reg_146">9, 0, 9, 0</column>
+<column name="invdar_reg_122">9, 0, 9, 0</column>
+<column name="j_3_reg_507">9, 0, 9, 0</column>
+<column name="j_reg_169">9, 0, 9, 0</column>
+<column name="next_mul_reg_470">17, 0, 17, 0</column>
+<column name="output_conv_addr_reg_530">17, 0, 17, 0</column>
+<column name="phi_mul_reg_134">17, 0, 17, 0</column>
+<column name="r_1_reg_515">2, 0, 2, 0</column>
+<column name="r_reg_193">2, 0, 2, 0</column>
+<column name="s_1_reg_538">2, 0, 2, 0</column>
+<column name="s_reg_216">2, 0, 2, 0</column>
+<column name="sum_1_reg_204">32, 0, 32, 0</column>
+<column name="sum_reg_181">32, 0, 32, 0</column>
+<column name="tmp_12_reg_520">17, 0, 18, 1</column>
+<column name="tmp_15_reg_525">5, 0, 5, 0</column>
+<column name="tmp_9_reg_499">12, 0, 18, 6</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, conv_test, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, conv_test, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, conv_test, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, conv_test, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, conv_test, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, conv_test, return value</column>
+<column name="image_r_address0">out, 17, ap_memory, image_r, array</column>
+<column name="image_r_ce0">out, 1, ap_memory, image_r, array</column>
+<column name="image_r_q0">in, 32, ap_memory, image_r, array</column>
+<column name="weights_address0">out, 4, ap_memory, weights, array</column>
+<column name="weights_ce0">out, 1, ap_memory, weights, array</column>
+<column name="weights_q0">in, 32, ap_memory, weights, array</column>
+<column name="output_conv_address0">out, 17, ap_memory, output_conv, array</column>
+<column name="output_conv_ce0">out, 1, ap_memory, output_conv, array</column>
+<column name="output_conv_we0">out, 1, ap_memory, output_conv, array</column>
+<column name="output_conv_d0">out, 32, ap_memory, output_conv, array</column>
+<column name="output_conv_q0">in, 32, ap_memory, output_conv, array</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">6.44</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'image_padded_0_load', gp_project/conv_test.cpp:44">load, 1.35, 1.35, -, -, -, -, -, -, &apos;image_padded[0]&apos;, gp_project/conv_test.cpp:25, -, -, -, -</column>
+<column name="'tmp_13', gp_project/conv_test.cpp:44">mul, 3.88, 5.23, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sum_3', gp_project/conv_test.cpp:44">add, 1.20, 6.44, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

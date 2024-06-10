@@ -1,0 +1,733 @@
+
+*** Running vivado
+    with args -log design_1_conv_ref_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_conv_ref_0_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_conv_ref_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1419.324 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/export'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_conv_ref_0_0 -part xczu7ev-ffvc1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 1962.961 ; gain = 255.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_conv_ref_0_0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/synth/design_1_conv_ref_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref.v:12]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W' (1#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W.v:6]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0' (2#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1' (3#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_flow_control_loop_pipe_sequential_init' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_flow_control_loop_pipe_sequential_init' (4#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1' (5#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0' (6#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mul_2ns_9ns_10_1_1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mul_2ns_9ns_10_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mul_2ns_9ns_10_1_1' (7#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mul_2ns_9ns_10_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mul_mul_10ns_10ns_20_4_1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mul_mul_10ns_10ns_20_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mul_mul_10ns_10ns_20_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1' (8#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mul_mul_10ns_10ns_20_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mul_mul_10ns_10ns_20_4_1' (9#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mul_mul_10ns_10ns_20_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mac_muladd_8s_8s_16ns_16_4_1' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2' [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2' (10#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_mac_muladd_8s_8s_16ns_16_4_1' (11#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2' (12#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'conv_ref' (13#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_ref_0_0' (14#1) [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/synth/design_1_conv_ref_0_0.v:58]
+WARNING: [Synth 8-7129] Port rst in module conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:46 . Memory (MB): peak = 2183.152 ; gain = 475.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:48 . Memory (MB): peak = 2183.152 ; gain = 475.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:48 . Memory (MB): peak = 2183.152 ; gain = 475.551
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 2183.152 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/constraints/conv_ref_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2189.039 ; gain = 4.031
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/constraints/conv_ref_ooc.xdc] for cell 'inst'
+Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.runs/design_1_conv_ref_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.runs/design_1_conv_ref_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2189.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2189.039 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 2189.039 ; gain = 481.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:01:13 . Memory (MB): peak = 2189.039 ; gain = 481.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  F:/verilog/trials/gp_ip/gp_ip.runs/design_1_conv_ref_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:01:14 . Memory (MB): peak = 2189.039 ; gain = 481.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 6 because memory depth for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 6 and width 8 for RAM "conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W:/ram0_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:01:16 . Memory (MB): peak = 2189.039 ; gain = 481.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   24 Bit       Adders := 1     
+	   4 Input   21 Bit       Adders := 3     
+	   3 Input   21 Bit       Adders := 4     
+	   2 Input   21 Bit       Adders := 6     
+	   3 Input   20 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 13    
+	   3 Input   10 Bit       Adders := 9     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               21 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 11    
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 17    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 39    
++---RAMs : 
+	            9660K Bit	(1236492 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 3     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 9     
+	   2 Input    9 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_8s_8s_16ns_16_4_1.v:30]
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U10/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U11/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U12/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U13/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U14/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U15/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U16/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg, operation Mode is: (C+(A''*B2)')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U9/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U17/conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (A2*(B:0x282)')'.
+DSP Report: register mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_tmp_reg is absorbed into DSP mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_tmp0 is absorbed into DSP mul_mul_10ns_10ns_20_4_1_U8/conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1_U/p_reg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '20' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '20' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '20' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '20' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '20' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '20' bits. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ipshared/6408/hdl/verilog/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1.v:30]
+DSP Report: Generating DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A2*(B:0x282)')')'.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/m is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+(A2*(B:0x282)')')'.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label3_VITIS_LOOP_13_1_padding_r_label1_fu_53/mac_muladd_10ns_10ns_10ns_20_4_1_U1/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/m is absorbed into DSP grp_conv_ref_Pipeline_padding_r_label2_VITIS_LOOP_20_2_padding_r_label0_fu_58/mac_muladd_10ns_10ns_10ns_20_4_1_U4/conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0_U/p_reg_reg.
+WARNING: [Synth 8-7129] Port reset in module conv_ref_image_padded_V_RAM_1WNR_AUTO_1R1W is either unconnected or has no load
+INFO: [Synth 8-7124] RAM ("inst/image_padded_V_U/ram0_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 6 because memory depth for RAM "inst/image_padded_V_U/ram0_reg" is not power of 2. 
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 6 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 2189.039 ; gain = 481.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------------------------------------------------------------------+
+|Module Name           | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights                                                             | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------------------------------------------------------------------+
+|inst/image_padded_V_U | ram0_reg   | 1207 K x 8(READ_FIRST) | W | R |                        |   |   | Port A           | 0      | 302    | 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6 | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------------------------------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------------------------------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                                | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------------------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2                              | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_mac_muladd_8s_8s_16ns_16_4_1_DSP48_2                              | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2 | (C+(A''*B2)')'         | 9      | 9      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|conv_ref_mul_mul_10ns_10ns_20_4_1_DSP48_1                                  | (A2*(B:0x282)')'       | 11     | 11     | -      | -      | 22     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0                          | (C'+(A2*(B:0x282)')')' | 20     | 18     | 11     | -      | 20     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|conv_ref_mac_muladd_10ns_10ns_10ns_20_4_1_DSP48_0                          | (C'+(A2*(B:0x282)')')' | 20     | 18     | 11     | -      | 20     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
++---------------------------------------------------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:02:01 . Memory (MB): peak = 2713.051 ; gain = 1005.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+INFO: [Common 17-14] Message 'Synth 8-6779' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5556] The block RAM "inst/image_padded_V_U/ram0_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7124] RAM ("inst/image_padded_V_U/ram0_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/image_padded_V_U/ram0_reg"
+INFO: [Common 17-14] Message 'Synth 8-5555' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5800] Cascade chain of height 8 reduced to 6 because memory depth for RAM "inst/image_padded_V_U/ram0_reg" is not power of 2. 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:02:16 . Memory (MB): peak = 2815.305 ; gain = 1107.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------------------------------------------------------------------+
+|Module Name           | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights                                                             | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------------------------------------------------------------------+
+|inst/image_padded_V_U | ram0_reg   | 1207 K x 8(READ_FIRST) | W | R |                        |   |   | Port A           | 0      | 302    | 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,6 | 
++----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------------------------------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_37 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_45 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_53 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_61 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_77 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_85 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_93 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_101 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_109 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_117 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_125 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_133 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_141 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_149 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_157 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_165 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_173 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_181 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_189 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_197 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_205 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_213 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_221 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_229 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_237 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_245 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_253 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_261 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_269 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_277 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_285 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_293 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_301 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/image_padded_V_U/ram0_reg_bram_307 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:02:21 . Memory (MB): peak = 2855.613 ; gain = 1148.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:02:37 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:02:37 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:02:38 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:02:38 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:02:38 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:02:38 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    80|
+|2     |DSP_ALU         |    12|
+|3     |DSP_A_B_DATA    |    12|
+|5     |DSP_C_DATA      |    12|
+|7     |DSP_MULTIPLIER  |    12|
+|8     |DSP_M_DATA      |    12|
+|9     |DSP_OUTPUT      |    12|
+|10    |DSP_PREADD      |    12|
+|11    |DSP_PREADD_DATA |    12|
+|12    |LUT1            |    38|
+|13    |LUT2            |   256|
+|14    |LUT3            |   290|
+|15    |LUT4            |   128|
+|16    |LUT5            |   194|
+|17    |LUT6            |  1176|
+|18    |MUXF7           |    40|
+|19    |MUXF8           |    16|
+|20    |RAMB36E2        |   302|
+|23    |FDRE            |   478|
+|24    |FDSE            |     2|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:02:38 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1576 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:02:24 . Memory (MB): peak = 2870.176 ; gain = 1156.688
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:02:39 . Memory (MB): peak = 2870.176 ; gain = 1162.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.457 . Memory (MB): peak = 2882.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2899.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 12 instances
+
+Synth Design complete, checksum: d6db8fe9
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:03:19 . Memory (MB): peak = 2899.348 ; gain = 1480.023
+INFO: [Common 17-1381] The checkpoint 'F:/verilog/trials/gp_ip/gp_ip.runs/design_1_conv_ref_0_0_synth_1/design_1_conv_ref_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_conv_ref_0_0, cache-ID = f23c846b0ab9f492
+INFO: [Coretcl 2-1174] Renamed 32 cell refs.
+INFO: [Common 17-1381] The checkpoint 'F:/verilog/trials/gp_ip/gp_ip.runs/design_1_conv_ref_0_0_synth_1/design_1_conv_ref_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_conv_ref_0_0_utilization_synth.rpt -pb design_1_conv_ref_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 19:55:58 2024...

@@ -1,0 +1,28 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../CBS1_tb.cpp in debug mode
+   Compiling ../../../CBS1.cpp in debug mode
+   Compiling ../../../CBS2.cpp in debug mode
+   Compiling ../../../CBS3.cpp in debug mode
+   Compiling ../../../CBSELAN1.cpp in debug mode
+   Compiling ../../../CBSInput_ELAN1.cpp in debug mode
+   Compiling ../../../ELAN1.cpp in debug mode
+   Compiling ../../../LRN.cpp in debug mode
+   Compiling ../../../LRNCBS2.cpp in debug mode
+   Compiling ../../../LRNCBS3.cpp in debug mode
+   Compiling ../../../MP1.cpp in debug mode
+   Compiling ../../../MaxPoolingMP1.cpp in debug mode
+   Compiling ../../../catELAN1.cpp in debug mode
+   Compiling ../../../conv1_test.cpp in debug mode
+   Compiling ../../../convCBS2.cpp in debug mode
+   Compiling ../../../convCBS3.cpp in debug mode
+   Compiling ../../../convMP1.cpp in debug mode
+   Compiling ../../../conv_ref.cpp in debug mode
+   Compiling ../../../conv_test.cpp in debug mode
+   Compiling ../../../maxpooling.cpp in debug mode
+   Compiling ../../../relu.cpp in debug mode
+   Compiling ../../../reluCBS2.cpp in debug mode
+   Compiling ../../../reluCBS3.cpp in debug mode
+   Generating csim.exe
+INFO: [SIM 1] CSim file generation done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri May 31 21:50:02 2024
+# Process ID: 13432
+# Current directory: F:/verilog/trials/gp_ip/gp_ip.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: F:/verilog/trials/gp_ip/gp_ip.runs/impl_1/design_1_wrapper.vdi
+# Journal file: F:/verilog/trials/gp_ip/gp_ip.runs/impl_1\vivado.jou
+# Running On: DESKTOP-KVLS732, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 2, Host memory: 8476 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.051 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/export'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/xilinx/Vivado/2021.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xczu7ev-ffvc1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-454] Reading design checkpoint 'f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/design_1_conv_ref_0_0.dcp' for cell 'design_1_i/conv_ref_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/proc_sys_reset_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1715.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.297 ; gain = 32.625
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2138.148 ; gain = 324.852
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]
+CRITICAL WARNING: [Chipscope 16-577] u_ila_2_clk_out2 is a flow generated net. This net cannot be used in connect_debug_port command for dbg_hub core. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:472]
+Finished Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2627.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 12 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 35 instances
+
+15 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:45 . Memory (MB): peak = 2627.984 ; gain = 1208.934
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2627.984 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1488c57da
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2627.984 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_1 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_1_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_2 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_2_CV.
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri May 31 22:02:32 2024
+# Process ID: 5176
+# Current directory: F:/verilog/trials/gp_ip/gp_ip.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: F:/verilog/trials/gp_ip/gp_ip.runs/impl_1/design_1_wrapper.vdi
+# Journal file: F:/verilog/trials/gp_ip/gp_ip.runs/impl_1\vivado.jou
+# Running On: DESKTOP-KVLS732, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 2, Host memory: 8476 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1459.582 ; gain = 27.570
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/export'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/xilinx/Vivado/2021.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xczu7ev-ffvc1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-454] Reading design checkpoint 'f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_conv_ref_0_0/design_1_conv_ref_0_0.dcp' for cell 'design_1_i/conv_ref_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/proc_sys_reset_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1713.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1810.457 ; gain = 31.848
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2137.047 ; gain = 326.590
+Finished Parsing XDC File [f:/verilog/trials/gp_ip/gp_ip.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]
+CRITICAL WARNING: [Chipscope 16-577] u_ila_2_clk_out2 is a flow generated net. This net cannot be used in connect_debug_port command for dbg_hub core. [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc:472]
+Finished Parsing XDC File [F:/verilog/trials/gp_ip/gp_ip.srcs/constrs_1/new/constraint1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2625.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 12 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 35 instances
+
+15 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:58 . Memory (MB): peak = 2625.766 ; gain = 1166.184
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2625.766 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1488c57da
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2625.766 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_1 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_1_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_2 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_2_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 439b41c07948e17b.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:ila:6.2, cache-ID = 2972ee2d132c2649.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:ila:6.2, cache-ID = 720dfce6bf7b0b2f.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:ila:6.2, cache-ID = 86b55664321255e0.
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2992.977 ; gain = 9.234
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 2992.977 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1acfc20be
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:02:58 . Memory (MB): peak = 2992.977 ; gain = 54.129
+
+Phase 2 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/conv_ref_0/inst/grp_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2_fu_65/icmp_ln35_1_reg_1534[0]_i_1 into driver instance design_1_i/conv_ref_0/inst/grp_conv_ref_Pipeline_conv_ref_label3_VITIS_LOOP_31_4_conv_ref_label2_fu_65/weights_address0[8]_INST_0_i_4, which resulted in an inversion of 7 pins
+INFO: [Opt 31-1287] Pulled Inverter u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_1__17 into driver instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state[0]_i_2, which resulted in an inversion of 13 pins
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 55 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_1/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: cd311e23
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:03:01 . Memory (MB): peak = 2992.977 ; gain = 54.129
+INFO: [Opt 31-389] Phase Retarget created 17 cells and removed 35 cells
+INFO: [Opt 31-1021] In phase Retarget, 221 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 149a2e7aa
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:03:01 . Memory (MB): peak = 2992.977 ; gain = 54.129
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 48 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 55 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 188eb2f2f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:03:02 . Memory (MB): peak = 2992.977 ; gain = 54.129
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 186 cells
+INFO: [Opt 31-1021] In phase Sweep, 1690 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 5 BUFG optimization | Checksum: 188eb2f2f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:03:04 . Memory (MB): peak = 2992.977 ; gain = 54.129
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 188eb2f2f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:03:04 . Memory (MB): peak = 2992.977 ; gain = 54.129
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 188eb2f2f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:03:04 . Memory (MB): peak = 2992.977 ; gain = 54.129
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 63 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              17  |              35  |                                            221  |
+|  Constant propagation         |               0  |              48  |                                             55  |
+|  Sweep                        |               0  |             186  |                                           1690  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             63  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 2992.977 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1a192db79
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:03:06 . Memory (MB): peak = 2992.977 ; gain = 54.129
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 307 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 5 newly gated: 0 Total Ports: 614
+Ending PowerOpt Patch Enables Task | Checksum: 1a2f49ef6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3381.766 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1a2f49ef6
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 3381.766 ; gain = 388.789
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1a2f49ef6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3381.766 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3381.766 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1dba74e45
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3381.766 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 18 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:13 ; elapsed = 00:04:11 . Memory (MB): peak = 3381.766 ; gain = 756.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3381.766 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/verilog/trials/gp_ip/gp_ip.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 3381.766 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/verilog/trials/gp_ip/gp_ip.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 4212.832 ; gain = 831.066
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4212.832 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1658c1a58
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.294 . Memory (MB): peak = 4212.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 4212.832 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fd15a433
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 4212.832 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 110c31e11
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 4212.832 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 110c31e11
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 4212.832 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 110c31e11
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 4212.832 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement

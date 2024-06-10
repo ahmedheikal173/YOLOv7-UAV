@@ -1,0 +1,1823 @@
+==============================================================
+File generated on Thu Jun 06 03:48:15 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:04:47 . Memory (MB): peak = 107.551 ; gain = 23.477
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:04:47 . Memory (MB): peak = 107.551 ; gain = 23.477
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:04:52 . Memory (MB): peak = 294.613 ; gain = 210.539
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:04:54 . Memory (MB): peak = 449.895 ; gain = 365.820
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (gp_project/conv_ref.cpp:43) in function 'conv_ref'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:38) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:40) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label3' (gp_project/conv_ref.cpp:5) in function 'padding_r' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label2' (gp_project/conv_ref.cpp:12) in function 'padding_r' automatically.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:40) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:42) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label3' (gp_project/conv_ref.cpp:5) in function 'padding_r' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label2' (gp_project/conv_ref.cpp:12) in function 'padding_r' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'image_padded.V' (gp_project/conv_ref.cpp:25) in dimension 3 automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:04:56 . Memory (MB): peak = 632.023 ; gain = 547.949
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (gp_project/conv_ref.cpp:33:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (gp_project/conv_ref.cpp:31:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:30:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:04:57 . Memory (MB): peak = 700.145 ; gain = 616.070
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'padding_r' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 298.029 seconds; current allocated memory: 622.935 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.514 seconds; current allocated memory: 623.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('image_padded_0_V_lo_2', gp_project/conv_ref.cpp:44) on array 'image_padded[0].V', gp_project/conv_ref.cpp:25 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'image_padded_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.512 seconds; current allocated memory: 623.579 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.346 seconds; current allocated memory: 624.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'padding_r' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_10ns_11ns_19_1_1' to 'conv_ref_mul_mul_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'padding_r'.
+INFO: [HLS 200-111]  Elapsed time: 0.685 seconds; current allocated memory: 624.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_0_V' to 'conv_ref_image_pacud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 0.715 seconds; current allocated memory: 625.507 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pacud_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:05:04 . Memory (MB): peak = 701.434 ; gain = 617.359
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 304.26 seconds; peak allocated memory: 625.507 MB.
+==============================================================
+File generated on Thu Jun 06 04:27:51 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_schedule -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -relax_ii_for_timing=0
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 04:33:04 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 04:35:06 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 04:37:39 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Jun 06 04:38:20 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 04:40:11 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 04:45:17 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 04:55:23 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu Jun 06 05:00:51 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Sat Jun 08 21:28:43 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:04:10 . Memory (MB): peak = 108.504 ; gain = 26.414
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:04:10 . Memory (MB): peak = 108.504 ; gain = 26.414
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:04:15 . Memory (MB): peak = 295.457 ; gain = 213.367
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:04:17 . Memory (MB): peak = 450.746 ; gain = 368.656
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (gp_project/conv_ref.cpp:43) in function 'conv_ref'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:38) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:40) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label3' (gp_project/conv_ref.cpp:5) in function 'padding_r' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label2' (gp_project/conv_ref.cpp:12) in function 'padding_r' automatically.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:40) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:42) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label3' (gp_project/conv_ref.cpp:5) in function 'padding_r' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label2' (gp_project/conv_ref.cpp:12) in function 'padding_r' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'image_padded.V' (gp_project/conv_ref.cpp:25) in dimension 3 automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:04:19 . Memory (MB): peak = 634.152 ; gain = 552.062
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (gp_project/conv_ref.cpp:33:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (gp_project/conv_ref.cpp:31:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:30:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:04:21 . Memory (MB): peak = 701.445 ; gain = 619.355
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'padding_r' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 261.702 seconds; current allocated memory: 623.029 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.486 seconds; current allocated memory: 623.250 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('image_padded_0_V_lo_2', gp_project/conv_ref.cpp:44) on array 'image_padded[0].V', gp_project/conv_ref.cpp:25 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'image_padded_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 623.658 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.325 seconds; current allocated memory: 624.162 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'padding_r' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_10ns_11ns_19_1_1' to 'conv_ref_mul_mul_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'padding_r'.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 624.549 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_0_V' to 'conv_ref_image_pacud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 0.685 seconds; current allocated memory: 625.579 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pacud_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:04:28 . Memory (MB): peak = 702.387 ; gain = 620.297
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 268.114 seconds; peak allocated memory: 625.579 MB.
+==============================================================
+File generated on Sat Jun 08 21:37:54 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:04:06 . Memory (MB): peak = 108.641 ; gain = 24.223
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:04:06 . Memory (MB): peak = 108.641 ; gain = 24.223
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:04:11 . Memory (MB): peak = 294.703 ; gain = 210.285
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:04:14 . Memory (MB): peak = 450.141 ; gain = 365.723
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:04:18 . Memory (MB): peak = 632.391 ; gain = 547.973
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:04:20 . Memory (MB): peak = 700.094 ; gain = 615.676
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'catELAN1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'catELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 260.901 seconds; current allocated memory: 612.969 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 12 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.729 seconds; current allocated memory: 613.546 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'catELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image1_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image2_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image3_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image4_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/output_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'catELAN1' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'catELAN1'.
+INFO: [HLS 200-111]  Elapsed time: 1.162 seconds; current allocated memory: 614.631 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:04:27 . Memory (MB): peak = 700.094 ; gain = 615.676
+INFO: [SYSC 207-301] Generating SystemC RTL for catELAN1.
+INFO: [VHDL 208-304] Generating VHDL RTL for catELAN1.
+INFO: [VLOG 209-307] Generating Verilog RTL for catELAN1.
+INFO: [HLS 200-112] Total elapsed time: 266.902 seconds; peak allocated memory: 614.631 MB.
+==============================================================
+File generated on Sat Jun 08 21:46:21 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:04:04 . Memory (MB): peak = 108.930 ; gain = 25.203
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:04:04 . Memory (MB): peak = 108.930 ; gain = 25.203
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:04:10 . Memory (MB): peak = 294.816 ; gain = 211.090
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:04:14 . Memory (MB): peak = 450.676 ; gain = 366.949
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:04:17 . Memory (MB): peak = 633.613 ; gain = 549.887
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (gp_project/catELAN1.cpp:10:23) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (gp_project/catELAN1.cpp:9:19) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (gp_project/catELAN1.cpp:19:23) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (gp_project/catELAN1.cpp:18:19) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (gp_project/catELAN1.cpp:28:23) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3' (gp_project/catELAN1.cpp:27:19) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-4.1' (gp_project/catELAN1.cpp:37:23) in function 'catELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-4' (gp_project/catELAN1.cpp:36:19) in function 'catELAN1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:04:19 . Memory (MB): peak = 700.480 ; gain = 616.754
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'catELAN1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'catELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L_L_catELAN1_label3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'L_L_catELAN1_label2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'L_L_catELAN1_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'L_L_catELAN1_label0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 260.239 seconds; current allocated memory: 613.625 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.693 seconds; current allocated memory: 614.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'catELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image1_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image2_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image3_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/image4_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'catELAN1/output_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'catELAN1' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'catELAN1'.
+INFO: [HLS 200-111]  Elapsed time: 1.104 seconds; current allocated memory: 615.944 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:04:27 . Memory (MB): peak = 700.480 ; gain = 616.754
+INFO: [SYSC 207-301] Generating SystemC RTL for catELAN1.
+INFO: [VHDL 208-304] Generating VHDL RTL for catELAN1.
+INFO: [VLOG 209-307] Generating Verilog RTL for catELAN1.
+INFO: [HLS 200-112] Total elapsed time: 266.794 seconds; peak allocated memory: 615.944 MB.
+==============================================================
+File generated on Sat Jun 08 21:56:13 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:04:28 . Memory (MB): peak = 109.086 ; gain = 24.191
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:04:28 . Memory (MB): peak = 109.086 ; gain = 24.191
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:04:37 . Memory (MB): peak = 392.160 ; gain = 307.266
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'minELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:61) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:04:40 . Memory (MB): peak = 551.938 ; gain = 467.043
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'minELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:61) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (gp_project/CBSInput_ELAN1.cpp:25:71) to (gp_project/CBSInput_ELAN1.cpp:25:65) in function 'CBSInput_ELAN1'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:11)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:04:43 . Memory (MB): peak = 771.988 ; gain = 687.094
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label1' (gp_project/CBSInput_ELAN1.cpp:23:66) in function 'CBSInput_ELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label2' (gp_project/CBSInput_ELAN1.cpp:21:62) in function 'CBSInput_ELAN1'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1.1' (gp_project/CBSInput_ELAN1.cpp:19:27) in function 'CBSInput_ELAN1' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (gp_project/CBSInput_ELAN1.cpp:18:23) in function 'CBSInput_ELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/CBSInput_ELAN1.cpp:17:51) in function 'CBSInput_ELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (gp_project/CBSInput_ELAN1.cpp:68:17) in function 'CBSInput_ELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (gp_project/CBSInput_ELAN1.cpp:66:13) in function 'CBSInput_ELAN1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:04:44 . Memory (MB): peak = 837.512 ; gain = 752.617
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CBSInput_ELAN1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CBSInput_ELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label2_conv_ref_label1_convCBS3_label0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-61] Pipelining loop 'L_L_CBSInput_ELAN1_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 285.041 seconds; current allocated memory: 734.151 MB.
+INFO: [HLS 200-434] Only 2 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.631 seconds; current allocated memory: 734.935 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CBSInput_ELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/input_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CBSInput_ELAN1' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'CBSInput_ELAN1_mac_muladd_8s_8s_16ns_16_1_1' to 'CBSInput_ELAN1_mabkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CBSInput_ELAN1_mabkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CBSInput_ELAN1'.
+INFO: [HLS 200-111]  Elapsed time: 1.115 seconds; current allocated memory: 736.364 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:15 ; elapsed = 00:04:50 . Memory (MB): peak = 837.512 ; gain = 752.617
+INFO: [SYSC 207-301] Generating SystemC RTL for CBSInput_ELAN1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CBSInput_ELAN1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CBSInput_ELAN1.
+INFO: [HLS 200-112] Total elapsed time: 290.715 seconds; peak allocated memory: 736.364 MB.
+==============================================================
+File generated on Sat Jun 08 22:02:47 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:04:24 . Memory (MB): peak = 109.020 ; gain = 26.195
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:04:24 . Memory (MB): peak = 109.020 ; gain = 26.195
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:04:34 . Memory (MB): peak = 390.504 ; gain = 307.680
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'minELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:61) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:04:39 . Memory (MB): peak = 550.117 ; gain = 467.293
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'minELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:61) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (gp_project/CBSInput_ELAN1.cpp:25:71) to (gp_project/CBSInput_ELAN1.cpp:25:65) in function 'CBSInput_ELAN1'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:11)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:04:43 . Memory (MB): peak = 770.293 ; gain = 687.469
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:04:45 . Memory (MB): peak = 836.645 ; gain = 753.820
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CBSInput_ELAN1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CBSInput_ELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 286.101 seconds; current allocated memory: 733.342 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.615 seconds; current allocated memory: 733.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CBSInput_ELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/input_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CBSInput_ELAN1' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'CBSInput_ELAN1_mac_muladd_8s_8s_16ns_16_1_1' to 'CBSInput_ELAN1_mabkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CBSInput_ELAN1_mabkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CBSInput_ELAN1'.
+INFO: [HLS 200-111]  Elapsed time: 0.946 seconds; current allocated memory: 734.818 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:04:50 . Memory (MB): peak = 836.645 ; gain = 753.820
+INFO: [SYSC 207-301] Generating SystemC RTL for CBSInput_ELAN1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CBSInput_ELAN1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CBSInput_ELAN1.
+INFO: [HLS 200-112] Total elapsed time: 290.749 seconds; peak allocated memory: 734.818 MB.
+==============================================================
+File generated on Sat Jun 08 22:18:23 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:04:06 . Memory (MB): peak = 108.891 ; gain = 24.344
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:04:06 . Memory (MB): peak = 108.891 ; gain = 24.344
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:04:16 . Memory (MB): peak = 392.145 ; gain = 307.598
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'minELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:61) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:04:19 . Memory (MB): peak = 550.363 ; gain = 465.816
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label1' (gp_project/CBSInput_ELAN1.cpp:23) in function 'CBSInput_ELAN1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'CBSInput_ELAN1_label2' (gp_project/CBSInput_ELAN1.cpp:52) in function 'CBSInput_ELAN1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'CBSInput_ELAN1_label4' (gp_project/CBSInput_ELAN1.cpp:68) in function 'CBSInput_ELAN1' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'convCBS3_label0' (gp_project/CBSInput_ELAN1.cpp:25) in function 'CBSInput_ELAN1' completely with a factor of 24.
+WARNING: [XFORM 203-503] Cannot unroll loop 'CBSInput_ELAN1_label0' (gp_project/CBSInput_ELAN1.cpp:57) in function 'CBSInput_ELAN1' completely: variable loop bound.
+INFO: [HLS 200-489] Unrolling loop 'CBSInput_ELAN1_label1' (gp_project/CBSInput_ELAN1.cpp:69) in function 'CBSInput_ELAN1' completely with a factor of 320.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'minELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxELAN1' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:56) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:61) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (gp_project/CBSInput_ELAN1.cpp:23:66) to (gp_project/CBSInput_ELAN1.cpp:23:60) in function 'CBSInput_ELAN1'... converting 49 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'CBSInput_ELAN1' (gp_project/CBSInput_ELAN1.cpp:11)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:04:27 . Memory (MB): peak = 780.219 ; gain = 695.672
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label2' (gp_project/CBSInput_ELAN1.cpp:21:62) in function 'CBSInput_ELAN1'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1.1' (gp_project/CBSInput_ELAN1.cpp:19:27) in function 'CBSInput_ELAN1' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (gp_project/CBSInput_ELAN1.cpp:18:23) in function 'CBSInput_ELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/CBSInput_ELAN1.cpp:17:51) in function 'CBSInput_ELAN1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (gp_project/CBSInput_ELAN1.cpp:66:13) in function 'CBSInput_ELAN1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:05:23 . Memory (MB): peak = 970.539 ; gain = 885.992
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CBSInput_ELAN1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CBSInput_ELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label2_conv_ref_label1'.
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label2_conv_ref_label1'.
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label2_conv_ref_label1'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('input_V_load_2', gp_project/CBSInput_ELAN1.cpp:30) on array 'input_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 12, Depth = 15.
+INFO: [SCHED 204-61] Pipelining loop 'L_CBSInput_ELAN1_label4'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('output_conv_V_load_2', gp_project/CBSInput_ELAN1.cpp:70) on array 'output_conv_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'output_conv_V'.
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive: Unable to pipeline the region.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 950.601 seconds; current allocated memory: 935.609 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 14.378 seconds; current allocated memory: 966.854 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CBSInput_ELAN1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/input_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CBSInput_ELAN1/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CBSInput_ELAN1' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'CBSInput_ELAN1_mac_muladd_8s_8s_16ns_16_1_1' to 'CBSInput_ELAN1_mabkb' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'CBSInput_ELAN1' is 7040 from HDL expression: (1'b1 == ap_CS_fsm_state26)
+INFO: [RTGEN 206-100] Generating core module 'CBSInput_ELAN1_mabkb': 20 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CBSInput_ELAN1'.
+INFO: [HLS 200-111]  Elapsed time: 34.022 seconds; current allocated memory: 1.009 GB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:06:18 ; elapsed = 00:17:11 . Memory (MB): peak = 1234.180 ; gain = 1149.633
+INFO: [SYSC 207-301] Generating SystemC RTL for CBSInput_ELAN1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CBSInput_ELAN1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CBSInput_ELAN1.
+INFO: [HLS 200-112] Total elapsed time: 1031.76 seconds; peak allocated memory: 1.009 GB.
+==============================================================
+File generated on Sat Jun 08 22:51:59 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:03:53 . Memory (MB): peak = 108.883 ; gain = 41.766
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:03:53 . Memory (MB): peak = 108.883 ; gain = 41.766
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:03:59 . Memory (MB): peak = 296.430 ; gain = 229.312
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:04:00 . Memory (MB): peak = 451.406 ; gain = 384.289
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (gp_project/conv_ref.cpp:38) in function 'conv_ref'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label3' (gp_project/conv_ref.cpp:9) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label2' (gp_project/conv_ref.cpp:16) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:33) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:35) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label3' (gp_project/conv_ref.cpp:9) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label2' (gp_project/conv_ref.cpp:16) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:35) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:37) in function 'conv_ref' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'image_padded.V' (gp_project/conv_ref.cpp:8) in dimension 3 automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:04:03 . Memory (MB): peak = 634.480 ; gain = 567.363
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (gp_project/conv_ref.cpp:28:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (gp_project/conv_ref.cpp:26:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:25:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:04:04 . Memory (MB): peak = 701.457 ; gain = 634.340
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('image_padded_0_V_lo_2', gp_project/conv_ref.cpp:39) on array 'image_padded[0].V', gp_project/conv_ref.cpp:8 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'image_padded_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 245.222 seconds; current allocated memory: 614.138 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.537 seconds; current allocated memory: 614.774 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_0_V' to 'conv_ref_image_pabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_10ns_11ns_19_1_1' to 'conv_ref_mul_mul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 0.981 seconds; current allocated memory: 616.010 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pabkb_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:04:10 . Memory (MB): peak = 701.457 ; gain = 634.340
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 250.432 seconds; peak allocated memory: 616.010 MB.
+==============================================================
+File generated on Sat Jun 08 22:59:22 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:03:51 . Memory (MB): peak = 108.941 ; gain = 24.020
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:03:51 . Memory (MB): peak = 108.941 ; gain = 24.020
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:03:56 . Memory (MB): peak = 295.965 ; gain = 211.043
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:03:58 . Memory (MB): peak = 451.406 ; gain = 366.484
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (gp_project/conv_ref.cpp:38) in function 'conv_ref'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label3' (gp_project/conv_ref.cpp:9) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label2' (gp_project/conv_ref.cpp:16) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:33) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:35) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label3' (gp_project/conv_ref.cpp:9) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label2' (gp_project/conv_ref.cpp:16) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:35) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:37) in function 'conv_ref' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'image_padded.V' (gp_project/conv_ref.cpp:8) in dimension 3 automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:04:01 . Memory (MB): peak = 633.547 ; gain = 548.625
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (gp_project/conv_ref.cpp:10:23) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (gp_project/conv_ref.cpp:17:22) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (gp_project/conv_ref.cpp:28:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (gp_project/conv_ref.cpp:26:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:25:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:04:02 . Memory (MB): peak = 700.801 ; gain = 615.879
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L_padding_r_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'L_padding_r_label0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('image_padded_0_V_lo_2', gp_project/conv_ref.cpp:39) on array 'image_padded[0].V', gp_project/conv_ref.cpp:8 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'image_padded_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 243.209 seconds; current allocated memory: 614.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.574 seconds; current allocated memory: 614.947 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_0_V' to 'conv_ref_image_pabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_10ns_11ns_10ns_20_1_1' to 'conv_ref_mac_mulacud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulacud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 0.924 seconds; current allocated memory: 616.252 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pabkb_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:04:08 . Memory (MB): peak = 700.801 ; gain = 615.879
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 248.563 seconds; peak allocated memory: 616.252 MB.
+==============================================================
+File generated on Sat Jun 08 23:09:54 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv1_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:42:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:43:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:46:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:47:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:05:50 . Memory (MB): peak = 108.793 ; gain = 23.949
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:05:50 . Memory (MB): peak = 108.793 ; gain = 23.949
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:10 ; elapsed = 00:06:10 . Memory (MB): peak = 295.875 ; gain = 211.031
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:06:30 . Memory (MB): peak = 451.562 ; gain = 366.719
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (gp_project/conv_ref.cpp:38) in function 'conv_ref'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label3' (gp_project/conv_ref.cpp:9) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label2' (gp_project/conv_ref.cpp:16) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:33) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:35) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label3' (gp_project/conv_ref.cpp:9) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label2' (gp_project/conv_ref.cpp:16) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:35) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:37) in function 'conv_ref' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'image_padded.V' (gp_project/conv_ref.cpp:8) in dimension 3 automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:06:47 . Memory (MB): peak = 635.156 ; gain = 550.312
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (gp_project/conv_ref.cpp:28:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (gp_project/conv_ref.cpp:26:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:25:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:06:53 . Memory (MB): peak = 700.566 ; gain = 615.723
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 9, Final II = 5, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 415.179 seconds; current allocated memory: 614.163 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.182 seconds; current allocated memory: 614.802 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_0_V' to 'conv_ref_image_pabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_10ns_11ns_19_1_1' to 'conv_ref_mul_mul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 3.6 seconds; current allocated memory: 615.978 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pabkb_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:23 ; elapsed = 00:07:52 . Memory (MB): peak = 700.566 ; gain = 615.723
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 472.763 seconds; peak allocated memory: 615.978 MB.
+==============================================================
+File generated on Sun Jun 09 17:53:41 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Sun Jun 09 18:05:58 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Mon Jun 10 01:14:02 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:17:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:18:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:43:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:44:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:47:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:48:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:04:47 . Memory (MB): peak = 108.770 ; gain = 23.219
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:04:47 . Memory (MB): peak = 108.770 ; gain = 23.219
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:04:54 . Memory (MB): peak = 293.562 ; gain = 208.012
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:04:57 . Memory (MB): peak = 446.359 ; gain = 360.809
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (gp_project/conv_ref.cpp:37) in function 'conv_ref'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label3' (gp_project/conv_ref.cpp:8) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'padding_r_label2' (gp_project/conv_ref.cpp:15) in function 'conv_ref' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:32) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:34) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label3' (gp_project/conv_ref.cpp:8) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'padding_r_label2' (gp_project/conv_ref.cpp:15) in function 'conv_ref' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:34) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:36) in function 'conv_ref' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'image_padded.V' (gp_project/conv_ref.cpp:7) in dimension 3 automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:04:59 . Memory (MB): peak = 628.023 ; gain = 542.473
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (gp_project/conv_ref.cpp:27:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (gp_project/conv_ref.cpp:25:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:24:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:05:01 . Memory (MB): peak = 696.797 ; gain = 611.246
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 9, Final II = 5, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 301.834 seconds; current allocated memory: 606.557 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.21 seconds; current allocated memory: 607.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_0_V' to 'conv_ref_image_pabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_10ns_11ns_19_1_1' to 'conv_ref_mul_mul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 0.818 seconds; current allocated memory: 608.372 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pabkb_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:05:09 . Memory (MB): peak = 696.797 ; gain = 611.246
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 309.424 seconds; peak allocated memory: 608.372 MB.
+==============================================================
+File generated on Mon Jun 10 01:32:26 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Jun 10 01:33:44 +0200 2024
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/reluCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/relu.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/maxpooling.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/conv_ref.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/convCBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/catELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MaxPoolingMP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/MP1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS3.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRNCBS2.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/LRN.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:17:16: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:18:17: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/ELAN1.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSInput_ELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:43:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:44:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBSELAN1.cpp' ... 
+WARNING: [HLS 200-40] In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:47:13: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:48:14: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'int' [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS3.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS2.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'gp_project/CBS1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:04:38 . Memory (MB): peak = 108.281 ; gain = 23.441
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:04:38 . Memory (MB): peak = 108.281 ; gain = 23.441
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:04:47 . Memory (MB): peak = 293.359 ; gain = 208.520
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:04:49 . Memory (MB): peak = 445.555 ; gain = 360.715
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_ref_label2' (gp_project/conv_ref.cpp:32) in function 'conv_ref' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label1' (gp_project/conv_ref.cpp:34) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'conv_ref_label0' (gp_project/conv_ref.cpp:36) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label1' (gp_project/conv_ref.cpp:34) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'conv_ref_label0' (gp_project/conv_ref.cpp:36) in function 'conv_ref' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:04:52 . Memory (MB): peak = 627.914 ; gain = 543.074
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1.1' (gp_project/conv_ref.cpp:27:15) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3.1' (gp_project/conv_ref.cpp:25:14) in function 'conv_ref'.
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_ref_label3' (gp_project/conv_ref.cpp:24:3) in function 'conv_ref'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:04:54 . Memory (MB): peak = 698.090 ; gain = 613.250
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_ref' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'conv_ref_label3_L_conv_ref_label2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 9, Final II = 8, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 295.382 seconds; current allocated memory: 607.727 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 7 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.568 seconds; current allocated memory: 608.748 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_ref' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/image_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/weights_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_ref/output_conv_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_ref' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'conv_ref_image_padded_V' to 'conv_ref_image_pabkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_10ns_11ns_19_1_1' to 'conv_ref_mul_mul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mul_mul_11ns_10ns_20_1_1' to 'conv_ref_mul_mul_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_ref_mac_muladd_8s_8s_16ns_16_1_1' to 'conv_ref_mac_mulaeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mac_mulaeOg': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'conv_ref_mul_mul_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_ref'.
+INFO: [HLS 200-111]  Elapsed time: 1.454 seconds; current allocated memory: 610.502 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv_ref_image_pabkb_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:05:05 . Memory (MB): peak = 698.090 ; gain = 613.250
+INFO: [SYSC 207-301] Generating SystemC RTL for conv_ref.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_ref.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_ref.
+INFO: [HLS 200-112] Total elapsed time: 304.928 seconds; peak allocated memory: 610.502 MB.

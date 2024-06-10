@@ -1,0 +1,233 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "conv_ref",
+          "label": "conv_ref_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "conv_ref",
+          "label": "conv_ref_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "conv_ref",
+          "label": "conv_ref_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "maxpooling",
+          "label": "maxpooling_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "reluCBS2",
+          "label": "relu_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "LRNCBS3",
+          "label": "LRN_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "reluCBS3",
+          "label": "relu_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "relu",
+          "label": "relu_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "LRN",
+          "label": "LRN_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "LRNCBS2",
+          "label": "LRN_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convCBS2",
+          "label": "convCBS2_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convCBS2",
+          "label": "conv_ref_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convCBS3",
+          "label": "convCBS3_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convCBS3",
+          "label": "conv_ref_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convCBS2",
+          "label": "convCBS2_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSELAN1",
+          "label": "convCBS3_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSInput_ELAN1",
+          "label": "convCBS3_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSInput_ELAN1",
+          "label": "CBSInput_ELAN1_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSInput_ELAN1",
+          "label": "CBSInput_ELAN1_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSELAN1",
+          "label": "CBSELAN1_label3",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSELAN1",
+          "label": "CBSELAN1_label4",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSELAN1",
+          "label": "CBSELAN1_label5",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "CBSELAN1",
+          "label": "conv_ref_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "MaxPoolingMP1",
+          "label": "MaxPoolingMP1_label4",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convMP1",
+          "label": "convMP1_label5",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "convMP1",
+          "label": "convMP1_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "ELAN1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "output1",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "XPM_MEMORY"
+              },
+              {
+                "name": "uram",
+                "value": "",
+                "positionalBoolean": "memory_style"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "ELAN1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "output2",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "XPM_MEMORY"
+              },
+              {
+                "name": "uram",
+                "value": "",
+                "positionalBoolean": "memory_style"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "ELAN1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "output3",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "XPM_MEMORY"
+              },
+              {
+                "name": "uram",
+                "value": "",
+                "positionalBoolean": "memory_style"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

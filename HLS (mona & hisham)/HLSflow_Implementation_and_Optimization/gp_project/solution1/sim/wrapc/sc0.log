@@ -1,0 +1,26 @@
+   Build using "F:/xilinx-/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling relu.cpp_pre.cpp.tb.cpp
+   Compiling ELAN1.cpp_pre.cpp.tb.cpp
+   Compiling CBS1.cpp_pre.cpp.tb.cpp
+   Compiling conv_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_conv_test.cpp
+   Compiling reluCBS2.cpp_pre.cpp.tb.cpp
+   Compiling maxpooling.cpp_pre.cpp.tb.cpp
+   Compiling LRNCBS3.cpp_pre.cpp.tb.cpp
+   Compiling convCBS3.cpp_pre.cpp.tb.cpp
+   Compiling CBS2.cpp_pre.cpp.tb.cpp
+   Compiling LRN.cpp_pre.cpp.tb.cpp
+   Compiling convMP1.cpp_pre.cpp.tb.cpp
+   Compiling CBSInput_ELAN1.cpp_pre.cpp.tb.cpp
+   Compiling conv_ref.cpp_pre.cpp.tb.cpp
+   Compiling MaxPoolingMP1.cpp_pre.cpp.tb.cpp
+   Compiling CBS1_tb.cpp_pre.cpp.tb.cpp
+   Compiling LRNCBS2.cpp_pre.cpp.tb.cpp
+   Compiling catELAN1.cpp_pre.cpp.tb.cpp
+   Compiling convCBS2.cpp_pre.cpp.tb.cpp
+   Compiling reluCBS3.cpp_pre.cpp.tb.cpp
+   Compiling MP1.cpp_pre.cpp.tb.cpp
+   Compiling CBSELAN1.cpp_pre.cpp.tb.cpp
+   Compiling conv1_test.cpp_pre.cpp.tb.cpp
+   Compiling CBS3.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

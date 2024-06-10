@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/reluCBS3.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/reluCBS2.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/relu.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/maxpooling.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/conv_test.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/conv_ref.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/convMP1.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/convCBS3.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/convCBS2.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/catELAN1.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/MaxPoolingMP1.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/MP1.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/LRNCBS3.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from gp_project/LRNCBS3.cpp:1:
+gp_project/LRNCBS3.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS3.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/LRNCBS2.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from gp_project/LRNCBS2.cpp:1:
+gp_project/LRNCBS2.cpp:18:16: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRNCBS2.cpp:19:17: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/LRN.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from gp_project/LRN.cpp:1:
+gp_project/LRN.cpp:17:16: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+    int beta = 0.75;
+        ~~~~   ^~~~
+gp_project/LRN.cpp:18:17: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+    int alpha = 0.0001;
+        ~~~~~   ^~~~~~
+2 warnings generated."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/ELAN1.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/CBSInput_ELAN1.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from gp_project/CBSInput_ELAN1.cpp:1:
+gp_project/CBSInput_ELAN1.cpp:43:13: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSInput_ELAN1.cpp:44:14: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/CBSELAN1.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from gp_project/CBSELAN1.cpp:1:
+gp_project/CBSELAN1.cpp:47:13: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+ int beta = 0.75;
+     ~~~~   ^~~~
+gp_project/CBSELAN1.cpp:48:14: warning: implicit conversion turns literal floating-point number into integer: &apos;double&apos; to &apos;int&apos; [-Wliteral-conversion]
+ int alpha = 0.0001;
+     ~~~~~   ^~~~~~
+2 warnings generated."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/CBS3.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/CBS2.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;gp_project/CBS1.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:04:38 . Memory (MB): peak = 108.281 ; gain = 23.441"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:04:38 . Memory (MB): peak = 108.281 ; gain = 23.441"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:04:47 . Memory (MB): peak = 293.359 ; gain = 208.520"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:04:49 . Memory (MB): peak = 445.555 ; gain = 360.715"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;conv_ref_label2&apos; (gp_project/conv_ref.cpp:32) in function &apos;conv_ref&apos; for pipelining."/>
+	<Message severity="WARNING" prefix="[XFORM 203-505]" key="XFORM_UNROLL_DEAD_PIPELINE_247" tag="" content="Ignored pipeline directive for loop &apos;conv_ref_label1&apos; (gp_project/conv_ref.cpp:34) because its parent loop or function is pipelined."/>
+	<Message severity="WARNING" prefix="[XFORM 203-505]" key="XFORM_UNROLL_DEAD_PIPELINE_247" tag="" content="Ignored pipeline directive for loop &apos;conv_ref_label0&apos; (gp_project/conv_ref.cpp:36) because its parent loop or function is pipelined."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;conv_ref_label1&apos; (gp_project/conv_ref.cpp:34) in function &apos;conv_ref&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;conv_ref_label0&apos; (gp_project/conv_ref.cpp:36) in function &apos;conv_ref&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:04:52 . Memory (MB): peak = 627.914 ; gain = 543.074"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-3.1.1&apos; (gp_project/conv_ref.cpp:27:15) in function &apos;conv_ref&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-3.1&apos; (gp_project/conv_ref.cpp:25:14) in function &apos;conv_ref&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;conv_ref_label3&apos; (gp_project/conv_ref.cpp:24:3) in function &apos;conv_ref&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:04:54 . Memory (MB): peak = 698.090 ; gain = 613.250"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;conv_ref&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;conv_ref&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;conv_ref_label3_L_conv_ref_label2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 9, Final II = 8, Depth = 8."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 295.382 seconds; current allocated memory: 607.727 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 1 loops out of a total 7 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.568 seconds; current allocated memory: 608.748 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;conv_ref&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;conv_ref/image_V&apos; to &apos;ap_memory&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;conv_ref/weights_V&apos; to &apos;ap_memory&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;conv_ref/output_conv_V&apos; to &apos;ap_memory&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;conv_ref&apos; to &apos;ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;conv_ref_image_padded_V&apos; to &apos;conv_ref_image_pabkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;conv_ref_mul_mul_10ns_11ns_19_1_1&apos; to &apos;conv_ref_mul_mul_cud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;conv_ref_mul_mul_11ns_10ns_20_1_1&apos; to &apos;conv_ref_mul_mul_dEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;conv_ref_mac_muladd_8s_8s_16ns_16_1_1&apos; to &apos;conv_ref_mac_mulaeOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;conv_ref_mac_mulaeOg&apos;: 9 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;conv_ref_mul_mul_cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;conv_ref_mul_mul_dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;conv_ref&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.454 seconds; current allocated memory: 610.502 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;conv_ref_image_pabkb_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:05:05 . Memory (MB): peak = 698.090 ; gain = 613.250"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for conv_ref."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for conv_ref."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for conv_ref."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 304.928 seconds; peak allocated memory: 610.502 MB."/>
+</Messages>

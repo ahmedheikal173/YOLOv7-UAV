@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_image_r.v"
+sv xil_defaultlib "AESL_automem_output_conv.v"
+sv xil_defaultlib "AESL_automem_weights.v"
+sv xil_defaultlib "conv_test.autotb.v"
+sv xil_defaultlib "conv_test.v"
+sv xil_defaultlib "conv_test_image_pbkb.v"
+sv xil_defaultlib "padding_r_test.v"
+

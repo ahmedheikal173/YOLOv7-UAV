@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jun  6 02:27:24 2024
+# Process ID: 15116
+# Current directory: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/conv_test/xsim_script.tcl}
+# Log file: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/conv_test/xsim_script.tcl
+# xsim {conv_test} -autoloadwcfg -tclbatch {conv_test.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source conv_test.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "31792335000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 31792375 ns : File "C:/Users/DELL/AppData/Roaming/Xilinx/Vivado/gp_project/solution1/sim/verilog/conv_test.autotb.v" Line 322
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:58 . Memory (MB): peak = 217.883 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jun  6 02:28:43 2024...
