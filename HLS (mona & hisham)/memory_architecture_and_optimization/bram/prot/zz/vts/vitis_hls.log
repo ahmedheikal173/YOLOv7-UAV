@@ -1,0 +1,61 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'hisha' on host 'hisham-dell' (Windows NT_amd64 version 6.2) on Sun Jun 09 02:29:59 +0300 2024
+INFO: [HLS 200-10] In directory 'D:/gam3a/zzzzzzzzzz/bram/prot/zz/vts'
+Sourcing Tcl script 'D:/gam3a/zzzzzzzzzz/bram/prot/zz/vts/zz/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: open_project zz 
+INFO: [HLS 200-10] Opening project 'D:/gam3a/zzzzzzzzzz/bram/prot/zz/vts/zz'.
+INFO: [HLS 200-1510] Running: set_top BRAM_filter 
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_flt.cpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_flt.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_flt.hpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_flt.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_img.cpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_img.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/BRAM_img.hpp 
+INFO: [HLS 200-10] Adding design file '../src/BRAM_img.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/RAM.h 
+INFO: [HLS 200-10] Adding design file '../src/RAM.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/tomatrix.cpp 
+INFO: [HLS 200-10] Adding design file '../src/tomatrix.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../src/tomatrix.hpp 
+INFO: [HLS 200-10] Adding design file '../src/tomatrix.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../tb/tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '../tb/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/gam3a/zzzzzzzzzz/bram/prot/zz/vts/zz/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_directive_top -name BRAM_filter BRAM_filter 
+INFO: [HLS 200-1510] Running: cosim_design -setup -O 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling tomatrix.cpp_pre.cpp.tb.cpp
+   Compiling apatb_BRAM_filter.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling BRAM_img.cpp_pre.cpp.tb.cpp
+   Compiling BRAM_flt.cpp_pre.cpp.tb.cpp
+   Compiling apatb_BRAM_filter_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 12.511 seconds; current allocated memory: 1.945 MB.
+command 'ap_source' returned error code
+    while executing
+"source D:/gam3a/zzzzzzzzzz/bram/prot/zz/vts/zz/solution1/cosim.tcl"
+    invoked from within
+"hls::main D:/gam3a/zzzzzzzzzz/bram/prot/zz/vts/zz/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.485 seconds; peak allocated memory: 1.175 GB.

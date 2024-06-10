@@ -1,0 +1,5 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="NonByteSizeMemoryAccessMissed" src_info="" msg_id="214-226" msg_severity="INFO" msg_body="Non byte size access is unsupported" resolution="214-226" ID="bb1.store.1" VarName="_ZGVZ11BRAM_filterPA3_A44_6ap_intILi8EES3_bE1x" ParentFunc="BRAM_filter(ap_int&lt;8&gt; (*) [3][44], ap_int&lt;8&gt; (*) [3][44], bool)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="NonByteSizeMemoryAccessMissed" src_info="" msg_id="214-226" msg_severity="INFO" msg_body="Non byte size access is unsupported" resolution="214-226" ID="bb0.load.5" VarName="_ZGVZ11BRAM_filterPA3_A44_6ap_intILi8EES3_bE1x" ParentFunc="BRAM_filter(ap_int&lt;8&gt; (*) [3][44], ap_int&lt;8&gt; (*) [3][44], bool)"/>
+</VitisHLS:BurstInfo>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="BRAM_flt.cpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\BRAM_flt.cpp"/>
+    <originFiles name="BRAM_flt.hpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\BRAM_flt.hpp"/>
+    <originFiles name="BRAM_img.cpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\BRAM_img.cpp"/>
+    <originFiles name="BRAM_img.hpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\BRAM_img.hpp"/>
+    <originFiles name="RAM.h" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\RAM.h"/>
+    <originFiles name="tomatrix.cpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\tomatrix.cpp"/>
+    <originFiles name="tomatrix.hpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\src\tomatrix.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="D:\gam3a\zzzzzzzzzz\bram\prot\zz\tb\tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
