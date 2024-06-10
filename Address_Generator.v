@@ -4,7 +4,7 @@ module Address_Generator(
     input [14:0] counter_Row,
     input [14:0] counter_Col,
     output [24:0]S,
-    output c_out,clk_db,
+    output clk_db,
     output reg finish_flag
     );
     wire [24:0]Mul;
@@ -20,12 +20,11 @@ module Address_Generator(
                         .B({10'b0,counter_Col}),
                         .CLK(clk_db),
                         .SCLR(reset),
-                        .C_OUT(c_out),
                         .S(S)
      );
      
-     reg clk_db_reg;
-          always @(posedge clk or posedge reset) begin
+    reg clk_db_reg;
+          always @(posedge clk) begin
              if (reset)
                  clk_db_reg <= 1'b0;
              else
@@ -33,7 +32,7 @@ module Address_Generator(
           end
           
      assign clk_db = clk_db_reg;
-     always @(posedge clk , posedge reset)
+     always @(posedge clk)
      begin 
         if(reset)
             begin
